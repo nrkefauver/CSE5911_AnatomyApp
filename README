@@ -1,7 +1,9 @@
 ANATOMY APP
-5-23: NRK initial commit
+5-23 2:15pm: NRK initial commit
 
-5-23: BJL added do’s, do not’s, adding changes process, and conventions
+5-23 2:40pm: BJL added do’s, do not’s, adding changes process, and conventions
+
+5-23 2:50pm: BJL Finished ‘adding changes process’
 
 
 ********** STANDARDS **********
@@ -30,25 +32,30 @@ DO NOT (without consent from rest of team):
 
 
 Process to add new changes:
-1. Pull any new changes made by other team members to local:
+1. Make sure you are in the project directory
+
+2. Pull any new changes made by other team members to local:
 
 	% git pull
 
-2. Make any changes / additions to your local clone.
+3. Make any changes / additions to your local clone.
 
-3. Commit changes (local):
+4. Commit changes (local):
 
 	% git add TestFile.h
 	OR
 	% git add *
-
+	THEN
 	% git commit
 
-4. Push commit to remote repository under your branch:
+5. This will bring up Vim text editor.  Add your commit message to the top (You should see INSERT) at the bottom of the page.  Once finished with your commit message, hit ESC, then type :x to save and close Vim.
 
-	// TODO
+6. Push commit to remote repository under your branch:
 
-5. Fix any merge conflicts created.
+	% git push https://github.com/nrkefauver/CSE5911_AnatomyApp.git (myBranch)
+	WHERE myBranch is the name of your specified branch (Example: bjl)
+
+5. Fix any merge conflicts created (unlikely).  See the Git tutorial to see how this works.
 
 
 Convention:
