@@ -1,2 +1,58 @@
 ANATOMY APP
 5-23: NRK initial commit
+
+5-23: BJL added do’s, do not’s, adding changes process, and conventions
+
+
+********** STANDARDS **********
+Git general info:
+- Will NOT be using Shared server (afp://od1/Projects) for master version
+- Will be using Shared server for master version backup (to be discussed later)
+- Each developer will have access to the Git repository
+- Each developer will need to clone the remote repository to their local machine:
+
+	% git clone https://github.com/nrkefauver/CSE5911_AnatomyApp.git
+
+	- This clone will only exist on the machine you clone it to
+	- If using a different machine, you MUST clone the repository again
+
+
+DO:
+- DO use meaningful commit messages, file names, variable names
+- DO update readme with brief explanation about EVERY commit
+	- Include name, date, time, explanation
+
+
+DO NOT (without consent from rest of team):
+- DO NOT rename or delete files
+- DO NOT commit temporary files
+- DO NOT force commits to dev branch
+
+
+Process to add new changes:
+1. Pull any new changes made by other team members to local:
+
+	% git pull
+
+2. Make any changes / additions to your local clone.
+
+3. Commit changes (local):
+
+	% git add TestFile.h
+	OR
+	% git add *
+
+	% git commit
+
+4. Push commit to remote repository under your branch:
+
+	// TODO
+
+5. Fix any merge conflicts created.
+
+
+Convention:
+- Use “Camel Case” for class names / variables
+	Example class name: TestClass.h
+	Example variable name: testVarible
+- Use “// TODO” to indicate more work is to be done at a later time
