@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1115" y="-194"/>
+            <point key="canvasLocation" x="355" y="-538"/>
         </scene>
         <!--Index All View Controller-->
         <scene sceneID="sFC-Al-GIf">
@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vof-kY-caO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="-194"/>
+            <point key="canvasLocation" x="2292" y="-650"/>
         </scene>
         <!--Embryo View Controller-->
         <scene sceneID="6gF-am-Wrc">
@@ -235,7 +235,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVI-pu-Qak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242" y="-194"/>
+            <point key="canvasLocation" x="-574" y="-538"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

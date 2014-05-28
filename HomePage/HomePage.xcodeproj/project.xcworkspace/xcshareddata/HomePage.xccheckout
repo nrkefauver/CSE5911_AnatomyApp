@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4DA12763-232A-4874-9FF7-2371E8975982</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HomePage</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6E97421D-65E2-498C-96F4-2926928317A3</key>
+		<string>https://github.com/nrkefauver/CSE5911_AnatomyApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HomePage/HomePage.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6E97421D-65E2-498C-96F4-2926928317A3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nrkefauver/CSE5911_AnatomyApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6E97421D-65E2-498C-96F4-2926928317A3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6E97421D-65E2-498C-96F4-2926928317A3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CSE5911_AnatomyApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
