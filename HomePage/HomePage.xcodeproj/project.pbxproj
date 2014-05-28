@@ -26,6 +26,7 @@
 		D074CE6A192FF77E00A2BAB1 /* GrossViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE69192FF77E00A2BAB1 /* GrossViewController.m */; };
 		D074CE6D192FF79300A2BAB1 /* EmbryoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */; };
 		D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */; };
+		D0EC0C1A19369684005A9138 /* Histo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0EC0C1919369684005A9138 /* Histo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoViewController.m; sourceTree = "<group>"; };
 		D074CE6E192FF7A000A2BAB1 /* NeuroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuroViewController.h; sourceTree = "<group>"; };
 		D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroViewController.m; sourceTree = "<group>"; };
+		D0EC0C1919369684005A9138 /* Histo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Histo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		D06E5E37192FA51D00A12651 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				D0EC0C1919369684005A9138 /* Histo.png */,
 				D06E5E40192FA51D00A12651 /* HomePageAppDelegate.h */,
 				D06E5E41192FA51D00A12651 /* HomePageAppDelegate.m */,
 				D06E5E43192FA51D00A12651 /* Main.storyboard */,
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
+				D0EC0C1A19369684005A9138 /* Histo.png in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
 			);
