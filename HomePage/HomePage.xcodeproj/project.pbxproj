@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466C49B2193BB914000B2A78 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AC193BB914000B2A78 /* burger.png */; };
+		466C49B3193BB914000B2A78 /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AD193BB914000B2A78 /* burger@2x.png */; };
+		466C49B4193BB914000B2A78 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AE193BB914000B2A78 /* home.png */; };
+		466C49B5193BB914000B2A78 /* Index.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AF193BB914000B2A78 /* Index.png */; };
+		466C49B6193BB914000B2A78 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B0193BB914000B2A78 /* videos.png */; };
+		466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B7193BBA0F000B2A78 /* Black Burger.png */; };
+		466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */; };
+		466C49BF193BC2AF000B2A78 /* g_black copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49BE193BC2AF000B2A78 /* g_black copy.png */; };
+		466C49C3193BC606000B2A78 /* 3D Models.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49C2193BC606000B2A78 /* 3D Models.png */; };
 		D06E5E32192FA51D00A12651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E31192FA51D00A12651 /* Foundation.framework */; };
 		D06E5E34192FA51D00A12651 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E33192FA51D00A12651 /* CoreGraphics.framework */; };
 		D06E5E36192FA51D00A12651 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E35192FA51D00A12651 /* UIKit.framework */; };
@@ -40,6 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		466C49AC193BB914000B2A78 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = burger.png; path = Images/burger.png; sourceTree = "<group>"; };
+		466C49AD193BB914000B2A78 /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "burger@2x.png"; path = "Images/burger@2x.png"; sourceTree = "<group>"; };
+		466C49AE193BB914000B2A78 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Images/home.png; sourceTree = "<group>"; };
+		466C49AF193BB914000B2A78 /* Index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Index.png; path = Images/Index.png; sourceTree = "<group>"; };
+		466C49B0193BB914000B2A78 /* videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = videos.png; path = Images/videos.png; sourceTree = "<group>"; };
+		466C49B7193BBA0F000B2A78 /* Black Burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Black Burger.png"; path = "Images/Black Burger.png"; sourceTree = "<group>"; };
+		466C49B9193BBA7D000B2A78 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
+		466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
+		466C49BE193BC2AF000B2A78 /* g_black copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "g_black copy.png"; path = "Images/g_black copy.png"; sourceTree = "<group>"; };
+		466C49C2193BC606000B2A78 /* 3D Models.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3D Models.png"; path = "Images/3D Models.png"; sourceTree = "<group>"; };
 		D06E5E2E192FA51D00A12651 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E5E31192FA51D00A12651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D06E5E33192FA51D00A12651 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,10 +162,20 @@
 				D074CE63192FF3CB00A2BAB1 /* HistologyViewController.m */,
 				D074CE68192FF77E00A2BAB1 /* GrossViewController.h */,
 				D074CE69192FF77E00A2BAB1 /* GrossViewController.m */,
+				466C49C2193BC606000B2A78 /* 3D Models.png */,
 				D074CE6B192FF79300A2BAB1 /* EmbryoViewController.h */,
 				D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */,
 				D074CE6E192FF7A000A2BAB1 /* NeuroViewController.h */,
 				D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */,
+				466C49B9193BBA7D000B2A78 /* RNFrostedSidebar.h */,
+				466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */,
+				466C49BE193BC2AF000B2A78 /* g_black copy.png */,
+				466C49B7193BBA0F000B2A78 /* Black Burger.png */,
+				466C49AC193BB914000B2A78 /* burger.png */,
+				466C49AD193BB914000B2A78 /* burger@2x.png */,
+				466C49AE193BB914000B2A78 /* home.png */,
+				466C49AF193BB914000B2A78 /* Index.png */,
+				466C49B0193BB914000B2A78 /* videos.png */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -257,9 +286,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */,
+				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
+				466C49BF193BC2AF000B2A78 /* g_black copy.png in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
 				D0EC0C1A19369684005A9138 /* Histo.png in Resources */,
+				466C49B2193BB914000B2A78 /* burger.png in Resources */,
+				466C49B6193BB914000B2A78 /* videos.png in Resources */,
+				466C49B3193BB914000B2A78 /* burger@2x.png in Resources */,
+				466C49B4193BB914000B2A78 /* home.png in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
+				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +324,7 @@
 				D06E5E6B192FA9F600A12651 /* IndexAllViewController.m in Sources */,
 				D074CE6D192FF79300A2BAB1 /* EmbryoViewController.m in Sources */,
 				D074CE6A192FF77E00A2BAB1 /* GrossViewController.m in Sources */,
+				466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

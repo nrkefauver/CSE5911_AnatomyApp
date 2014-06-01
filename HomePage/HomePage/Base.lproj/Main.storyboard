@@ -213,14 +213,35 @@
                                 <rect key="frame" x="96" y="245" width="490" height="402"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NA5-5H-E5a">
+                                <rect key="frame" x="688" y="84" width="74" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="burger.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6R8-Ej-fBb">
+                                <rect key="frame" x="685" y="84" width="63" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Black Burger.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBurger:" destination="W8x-iU-qGh" eventType="touchUpInside" id="deZ-YT-JmG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="LPj-dZ-41W"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="GrossToHomeSegue" id="AQY-Il-FFY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Pv-Rx-LeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2847" y="927"/>
+            <point key="canvasLocation" x="2863" y="927"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TQf-PG-tmx">
@@ -241,9 +262,16 @@
             <point key="canvasLocation" x="-574" y="-538"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Black Burger.png" width="45" height="45"/>
+        <image name="burger.png" width="19" height="17"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="AQY-Il-FFY"/>
+    </inferredMetricsTieBreakers>
 </document>
