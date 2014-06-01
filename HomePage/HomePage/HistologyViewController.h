@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HistologyViewController : UIViewController 
+@interface HistologyViewController : UIViewController {
+    UIImageView* imageView;
+}
 
+@property (nonatomic, retain) IBOutlet UIImageView* imageView;
 @end

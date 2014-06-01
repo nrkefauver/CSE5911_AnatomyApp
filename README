@@ -11,6 +11,10 @@ ANATOMY APP
 
 5-28 6:12pm: XJS test commit
 
+5-29 3:36pm: BJL test commit to my branch
+
+5-29 4:06pm: BJL Updated README to include committing to personal branches
+
 ********** STANDARDS **********
 Git general info:
 - Will NOT be using Shared server (afp://od1/Projects) for master version
@@ -20,8 +24,13 @@ Git general info:
 
 	% git clone https://github.com/nrkefauver/CSE5911_AnatomyApp.git
 
-	- This clone will only exist on the machine you clone it to
-	- If using a different machine, you MUST clone the repository again
+- Each developer will need to switch to their own branch after cloning:
+
+	% git checkout (myBranch)
+	WHERE myBranch is the name of your branch (Example: bjl)
+
+- This clone will only exist on the machine you clone it to
+- If using a different machine, you MUST clone the repository again and switch to your branch!
 
 
 DO:
@@ -36,28 +45,33 @@ DO NOT (without consent from rest of team):
 - DO NOT force commits to dev branch
 
 
-Process to add new changes:
-1. Make sure you are in the project directory
+Process to add new changes TO YOUR BRANCH:
+1. Make sure you are in the project directory and on your branch.
+	- To see which branch you are on: % git branch
+	- To switch to your branch: % git checkout (myBranch)
 
-2. Pull any new changes made by other team members to local:
+2. Pull any new changes made by other team members from master to your branch:
+	*** If you have any uncommitted changes to your branch, commit them to your branch now! ***
 
-	% git pull
+	% git rebase master
 
-3. Make any changes / additions to your local clone.
+	- Your branch should be up to date with master now
 
-4. Commit changes (local):
+3. Make any changes / additions to your local clone on your branch.
+
+4. Commit changes to your branch:
 
 	% git add TestFile.h
 	OR
 	% git add *
 	THEN
-	% git commit
+	% git commit 
 
 5. This will bring up Vim text editor.  Add your commit message to the top (You should see INSERT) at the bottom of the page.  Once finished with your commit message, hit ESC, then type :x to save and close Vim.
 
 6. Push commit to remote repository under your branch:
 
-	% git push https://github.com/nrkefauver/CSE5911_AnatomyApp.git (myBranch)
+	% git push origin (myBranch)
 	WHERE myBranch is the name of your specified branch (Example: bjl)
 
 5. Fix any merge conflicts created (unlikely).  See the Git tutorial to see how this works.
