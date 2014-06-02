@@ -26,6 +26,14 @@
 		D074CE6A192FF77E00A2BAB1 /* GrossViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE69192FF77E00A2BAB1 /* GrossViewController.m */; };
 		D074CE6D192FF79300A2BAB1 /* EmbryoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */; };
 		D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */; };
+		D0774D84193CC7D600821D51 /* NeuroC.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D80193CC7D600821D51 /* NeuroC.png */; };
+		D0774D85193CC7D600821D51 /* NeuroL.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D81193CC7D600821D51 /* NeuroL.png */; };
+		D0774D86193CC7D600821D51 /* NeuroS.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D82193CC7D600821D51 /* NeuroS.png */; };
+		D0774D87193CC7D600821D51 /* NeuroT.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D83193CC7D600821D51 /* NeuroT.png */; };
+		D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0774D89193CD5D400821D51 /* ExpandingCell.xib */; };
+		D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0774D8C193CD8D300821D51 /* ExpandingCell.m */; };
+		D0774D8F193CF63300821D51 /* Gross.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D8E193CF63300821D51 /* Gross.png */; };
+		D0774D9F193D0ABF00821D51 /* Embryo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D9E193D0ABF00821D51 /* Embryo.png */; };
 		D0EC0C1A19369684005A9138 /* Histo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0EC0C1919369684005A9138 /* Histo.png */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +77,15 @@
 		D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoViewController.m; sourceTree = "<group>"; };
 		D074CE6E192FF7A000A2BAB1 /* NeuroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuroViewController.h; sourceTree = "<group>"; };
 		D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroViewController.m; sourceTree = "<group>"; };
+		D0774D80193CC7D600821D51 /* NeuroC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroC.png; path = ../../../NeuroC.png; sourceTree = "<group>"; };
+		D0774D81193CC7D600821D51 /* NeuroL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroL.png; path = ../../../NeuroL.png; sourceTree = "<group>"; };
+		D0774D82193CC7D600821D51 /* NeuroS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroS.png; path = ../../../NeuroS.png; sourceTree = "<group>"; };
+		D0774D83193CC7D600821D51 /* NeuroT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroT.png; path = ../../../NeuroT.png; sourceTree = "<group>"; };
+		D0774D89193CD5D400821D51 /* ExpandingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandingCell.xib; sourceTree = "<group>"; };
+		D0774D8B193CD8D300821D51 /* ExpandingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingCell.h; sourceTree = "<group>"; };
+		D0774D8C193CD8D300821D51 /* ExpandingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingCell.m; sourceTree = "<group>"; };
+		D0774D8E193CF63300821D51 /* Gross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gross.png; path = ../../../Gross.png; sourceTree = "<group>"; };
+		D0774D9E193D0ABF00821D51 /* Embryo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Embryo.png; path = ../../../Embryo.png; sourceTree = "<group>"; };
 		D0EC0C1919369684005A9138 /* Histo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Histo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +146,13 @@
 		D06E5E37192FA51D00A12651 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				D0774D9E193D0ABF00821D51 /* Embryo.png */,
+				D0774D8E193CF63300821D51 /* Gross.png */,
+				D0774D88193CD51900821D51 /* ExpandingCell */,
+				D0774D80193CC7D600821D51 /* NeuroC.png */,
+				D0774D81193CC7D600821D51 /* NeuroL.png */,
+				D0774D82193CC7D600821D51 /* NeuroS.png */,
+				D0774D83193CC7D600821D51 /* NeuroT.png */,
 				D0EC0C1919369684005A9138 /* Histo.png */,
 				D06E5E40192FA51D00A12651 /* HomePageAppDelegate.h */,
 				D06E5E41192FA51D00A12651 /* HomePageAppDelegate.m */,
@@ -178,6 +202,16 @@
 				D06E5E59192FA51D00A12651 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0774D88193CD51900821D51 /* ExpandingCell */ = {
+			isa = PBXGroup;
+			children = (
+				D0774D89193CD5D400821D51 /* ExpandingCell.xib */,
+				D0774D8B193CD8D300821D51 /* ExpandingCell.h */,
+				D0774D8C193CD8D300821D51 /* ExpandingCell.m */,
+			);
+			name = ExpandingCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,10 +291,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0774D85193CC7D600821D51 /* NeuroL.png in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
+				D0774D87193CC7D600821D51 /* NeuroT.png in Resources */,
+				D0774D86193CC7D600821D51 /* NeuroS.png in Resources */,
+				D0774D8F193CF63300821D51 /* Gross.png in Resources */,
+				D0774D9F193D0ABF00821D51 /* Embryo.png in Resources */,
 				D0EC0C1A19369684005A9138 /* Histo.png in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
+				D0774D84193CC7D600821D51 /* NeuroC.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
+				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */,
 				D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */,
 				D06E5E42192FA51D00A12651 /* HomePageAppDelegate.m in Sources */,
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,

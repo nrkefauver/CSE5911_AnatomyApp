@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GrossViewController : UIViewController
+@interface GrossViewController : UIViewController{
+    UIImageView* imageView;
+}
 
+@property (nonatomic, retain) IBOutlet UIImageView* imageView;
 @end

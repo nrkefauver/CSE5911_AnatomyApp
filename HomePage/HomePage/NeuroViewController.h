@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NeuroViewController : UIViewController
+@interface NeuroViewController : UIViewController{
+    UIImageView* imageView;
+}
+
+@property (nonatomic, retain) IBOutlet UIImageView* imageView;
+
+- (IBAction) contentModeChanged: (UISegmentedControl*)segmentedControl;
 
 @end
