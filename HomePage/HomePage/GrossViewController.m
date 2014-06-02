@@ -37,22 +37,22 @@
 
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
-                        [UIImage imageNamed:@"videos"],
+                        [UIImage imageNamed:@"Videos"],
                         [UIImage imageNamed:@"3D Models"],
                         [UIImage imageNamed:@"Index"],
-                        [UIImage imageNamed:@"g_black copy"],
-                        [UIImage imageNamed:@"home"],
+                        [UIImage imageNamed:@"Letter G"],
+                        [UIImage imageNamed:@"Home"],
                         ];
-    //NSArray *colors = @[
-      //                  [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-        //                [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-          //              [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-            //            [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-              //          [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                //        ];
+    NSArray *colors = @[
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                       [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                       [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                       [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                        ];
     
-    //RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
-    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
+    //RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
     callout.delegate = self;
     callout.showFromRight = YES;
     [callout show];

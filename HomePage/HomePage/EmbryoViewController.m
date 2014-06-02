@@ -9,7 +9,7 @@
 #import "EmbryoViewController.h"
 
 @interface EmbryoViewController ()
-
+@property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 @end
 
 @implementation EmbryoViewController
@@ -34,6 +34,66 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)onBurger:(id)sender {
+    NSArray *images = @[
+                        [UIImage imageNamed:@"Animations"],
+                        [UIImage imageNamed:@"Index"],
+                        [UIImage imageNamed:@"Letter E"],
+                        [UIImage imageNamed:@"Home"],
+                        ];
+    NSArray *colors = @[
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+                        ];
+    
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
+    //RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+    callout.delegate = self;
+    callout.showFromRight = YES;
+    [callout show];
+}
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    NSLog(@"Tapped item at index %i",index);
+    
+    
+    //Animations clicked
+    if (index == 0) {
+        [sidebar dismissAnimated:YES completion:nil];
+        //TODO
+    }
+    
+    //Index clicked
+    else if (index == 1) {
+        [sidebar dismissAnimated:YES completion:nil];
+        //TODO
+    }
+    
+    //Embryo Home clicked
+    else if (index == 2) {
+        // Do nothing
+    }
+    
+    //Home clicked
+    else if (index == 3) {
+        [sidebar dismissAnimated:YES completion:nil];
+        [self performSegueWithIdentifier:@"EmbryoToHomeSegue" sender:self];
+    }
+    
+}
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
+    if (itemEnabled) {
+        [self.optionIndices addIndex:index];
+    }
+    else {
+        [self.optionIndices removeIndex:index];
+    }
+}
+
 
 /*
 #pragma mark - Navigation
