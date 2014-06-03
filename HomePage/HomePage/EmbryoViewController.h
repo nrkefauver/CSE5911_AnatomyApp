@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
 
-@interface EmbryoViewController : UIViewController
+@interface EmbryoViewController : UIViewController{
+    UIImageView* imageView;
+}
+
+@property (nonatomic, retain) IBOutlet UIImageView* imageView;
 
 @end

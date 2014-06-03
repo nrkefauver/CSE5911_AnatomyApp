@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
 
-@interface GrossViewController : UIViewController
+@interface GrossViewController : UIViewController{
+    UIImageView* imageView;
+}
 
+@property (nonatomic, retain) IBOutlet UIImageView* imageView;
 @end

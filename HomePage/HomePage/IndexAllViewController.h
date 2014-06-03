@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IndexAllViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface IndexAllViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    
+    int selectedIndex;
+    NSMutableArray *titleArray;
+    NSArray *subtitleArray;
+    NSArray *textArray;
+    
+    
+    
+}
 
 @end
