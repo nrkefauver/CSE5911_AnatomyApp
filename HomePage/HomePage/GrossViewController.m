@@ -43,16 +43,16 @@
                         [UIImage imageNamed:@"Letter G"],
                         [UIImage imageNamed:@"Home"],
                         ];
-    NSArray *colors = @[
-                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                       [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                       [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                       [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-                        ];
-    
-    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
-    //RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+//    NSArray *colors = @[
+//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+//                        ];
+//    
+//    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
     callout.delegate = self;
     callout.showFromRight = YES;
     [callout show];
