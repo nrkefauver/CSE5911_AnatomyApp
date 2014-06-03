@@ -41,6 +41,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload
+{
+    self.imageView = nil;
+    [super viewDidUnload];
+}
+
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
                         [UIImage imageNamed:@"Videos"],

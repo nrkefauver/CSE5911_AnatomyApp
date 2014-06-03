@@ -21,6 +21,13 @@
 		466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B7193BBA0F000B2A78 /* Black Burger.png */; };
 		466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */; };
 		466C49C3193BC606000B2A78 /* 3D Models.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49C2193BC606000B2A78 /* 3D Models.png */; };
+		46AC5F13193E6461003F1E12 /* Embryo.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0C193E6461003F1E12 /* Embryo.png */; };
+		46AC5F14193E6461003F1E12 /* Gross.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0D193E6461003F1E12 /* Gross.png */; };
+		46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0E193E6461003F1E12 /* NeuroC.png */; };
+		46AC5F16193E6461003F1E12 /* NeuroL.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0F193E6461003F1E12 /* NeuroL.png */; };
+		46AC5F17193E6461003F1E12 /* NeuroS.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F10193E6461003F1E12 /* NeuroS.png */; };
+		46AC5F18193E6461003F1E12 /* NeuroT.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F11193E6461003F1E12 /* NeuroT.png */; };
+		46AC5F19193E6461003F1E12 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F12193E6461003F1E12 /* white.png */; };
 		D06E5E32192FA51D00A12651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E31192FA51D00A12651 /* Foundation.framework */; };
 		D06E5E34192FA51D00A12651 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E33192FA51D00A12651 /* CoreGraphics.framework */; };
 		D06E5E36192FA51D00A12651 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E35192FA51D00A12651 /* UIKit.framework */; };
@@ -40,14 +47,8 @@
 		D074CE6A192FF77E00A2BAB1 /* GrossViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE69192FF77E00A2BAB1 /* GrossViewController.m */; };
 		D074CE6D192FF79300A2BAB1 /* EmbryoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */; };
 		D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */; };
-		D0774D84193CC7D600821D51 /* NeuroC.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D80193CC7D600821D51 /* NeuroC.png */; };
-		D0774D85193CC7D600821D51 /* NeuroL.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D81193CC7D600821D51 /* NeuroL.png */; };
-		D0774D86193CC7D600821D51 /* NeuroS.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D82193CC7D600821D51 /* NeuroS.png */; };
-		D0774D87193CC7D600821D51 /* NeuroT.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D83193CC7D600821D51 /* NeuroT.png */; };
 		D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0774D89193CD5D400821D51 /* ExpandingCell.xib */; };
 		D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0774D8C193CD8D300821D51 /* ExpandingCell.m */; };
-		D0774D8F193CF63300821D51 /* Gross.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D8E193CF63300821D51 /* Gross.png */; };
-		D0774D9F193D0ABF00821D51 /* Embryo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0774D9E193D0ABF00821D51 /* Embryo.png */; };
 		D0EC0C1A19369684005A9138 /* Histo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0EC0C1919369684005A9138 /* Histo.png */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,13 @@
 		466C49B9193BBA7D000B2A78 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
 		466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
 		466C49C2193BC606000B2A78 /* 3D Models.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3D Models.png"; path = "Images/3D Models.png"; sourceTree = "<group>"; };
+		46AC5F0C193E6461003F1E12 /* Embryo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Embryo.png; path = Images/Embryo.png; sourceTree = "<group>"; };
+		46AC5F0D193E6461003F1E12 /* Gross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gross.png; path = Images/Gross.png; sourceTree = "<group>"; };
+		46AC5F0E193E6461003F1E12 /* NeuroC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroC.png; path = Images/NeuroC.png; sourceTree = "<group>"; };
+		46AC5F0F193E6461003F1E12 /* NeuroL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroL.png; path = Images/NeuroL.png; sourceTree = "<group>"; };
+		46AC5F10193E6461003F1E12 /* NeuroS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroS.png; path = Images/NeuroS.png; sourceTree = "<group>"; };
+		46AC5F11193E6461003F1E12 /* NeuroT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroT.png; path = Images/NeuroT.png; sourceTree = "<group>"; };
+		46AC5F12193E6461003F1E12 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = Images/white.png; sourceTree = "<group>"; };
 		D06E5E2E192FA51D00A12651 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E5E31192FA51D00A12651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D06E5E33192FA51D00A12651 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,15 +114,9 @@
 		D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoViewController.m; sourceTree = "<group>"; };
 		D074CE6E192FF7A000A2BAB1 /* NeuroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuroViewController.h; sourceTree = "<group>"; };
 		D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroViewController.m; sourceTree = "<group>"; };
-		D0774D80193CC7D600821D51 /* NeuroC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroC.png; path = ../../../NeuroC.png; sourceTree = "<group>"; };
-		D0774D81193CC7D600821D51 /* NeuroL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroL.png; path = ../../../NeuroL.png; sourceTree = "<group>"; };
-		D0774D82193CC7D600821D51 /* NeuroS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroS.png; path = ../../../NeuroS.png; sourceTree = "<group>"; };
-		D0774D83193CC7D600821D51 /* NeuroT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroT.png; path = ../../../NeuroT.png; sourceTree = "<group>"; };
 		D0774D89193CD5D400821D51 /* ExpandingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandingCell.xib; sourceTree = "<group>"; };
 		D0774D8B193CD8D300821D51 /* ExpandingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingCell.h; sourceTree = "<group>"; };
 		D0774D8C193CD8D300821D51 /* ExpandingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingCell.m; sourceTree = "<group>"; };
-		D0774D8E193CF63300821D51 /* Gross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gross.png; path = ../../../Gross.png; sourceTree = "<group>"; };
-		D0774D9E193D0ABF00821D51 /* Embryo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Embryo.png; path = ../../../Embryo.png; sourceTree = "<group>"; };
 		D0EC0C1919369684005A9138 /* Histo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Histo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,17 +195,18 @@
 		D06E5E37192FA51D00A12651 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				D0774D9E193D0ABF00821D51 /* Embryo.png */,
-				D0774D8E193CF63300821D51 /* Gross.png */,
 				D0774D88193CD51900821D51 /* ExpandingCell */,
-				D0774D80193CC7D600821D51 /* NeuroC.png */,
-				D0774D81193CC7D600821D51 /* NeuroL.png */,
-				D0774D82193CC7D600821D51 /* NeuroS.png */,
-				D0774D83193CC7D600821D51 /* NeuroT.png */,
 				D0EC0C1919369684005A9138 /* Histo.png */,
 				D06E5E40192FA51D00A12651 /* HomePageAppDelegate.h */,
 				D06E5E41192FA51D00A12651 /* HomePageAppDelegate.m */,
 				D06E5E43192FA51D00A12651 /* Main.storyboard */,
+				46AC5F0C193E6461003F1E12 /* Embryo.png */,
+				46AC5F0D193E6461003F1E12 /* Gross.png */,
+				46AC5F0E193E6461003F1E12 /* NeuroC.png */,
+				46AC5F0F193E6461003F1E12 /* NeuroL.png */,
+				46AC5F10193E6461003F1E12 /* NeuroS.png */,
+				46AC5F11193E6461003F1E12 /* NeuroT.png */,
+				46AC5F12193E6461003F1E12 /* white.png */,
 				D06E5E46192FA51D00A12651 /* HomePageViewController.h */,
 				D06E5E47192FA51D00A12651 /* HomePageViewController.m */,
 				D06E5E49192FA51D00A12651 /* Images.xcassets */,
@@ -343,18 +346,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46AC5F14193E6461003F1E12 /* Gross.png in Resources */,
 				466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */,
+				46AC5F16193E6461003F1E12 /* NeuroL.png in Resources */,
 				462CB05C193D053E00B6CF72 /* Slides.png in Resources */,
 				462CB055193CFDB200B6CF72 /* Letter N.png in Resources */,
 				462CB05D193D053E00B6CF72 /* Stains.png in Resources */,
+				46AC5F19193E6461003F1E12 /* white.png in Resources */,
 				462CB059193CFEDA00B6CF72 /* Animations.png in Resources */,
 				462CB054193CFDB200B6CF72 /* Letter H.png in Resources */,
+				46AC5F17193E6461003F1E12 /* NeuroS.png in Resources */,
+				46AC5F13193E6461003F1E12 /* Embryo.png in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
-				D0774D87193CC7D600821D51 /* NeuroT.png in Resources */,
-				D0774D86193CC7D600821D51 /* NeuroS.png in Resources */,
-				D0774D8F193CF63300821D51 /* Gross.png in Resources */,
-				D0774D9F193D0ABF00821D51 /* Embryo.png in Resources */,
 				D0EC0C1A19369684005A9138 /* Histo.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
@@ -363,7 +367,9 @@
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
+				46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
+				46AC5F18193E6461003F1E12 /* NeuroT.png in Resources */,
 				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
