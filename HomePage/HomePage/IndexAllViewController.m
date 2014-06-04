@@ -91,9 +91,12 @@
         //Do closed cell stuff
     }
     
-    cell.titleLabel.text = [titleArray objectAtIndex:indexPath.row];
-    cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [textArray objectAtIndex:indexPath.row];
+    if (indexPath.row < 34) {
+        cell.titleLabel.text = [titleArray objectAtIndex:indexPath.row];
+        cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = [textArray objectAtIndex:indexPath.row];
+    }
+    
     cell.clipsToBounds = YES;
     return cell;
 }

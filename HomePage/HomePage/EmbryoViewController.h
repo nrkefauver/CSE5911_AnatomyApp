@@ -15,4 +15,6 @@
 
 @property (nonatomic, retain) IBOutlet UIImageView* imageView;
 
+- (IBAction) contentModeChanged: (UISegmentedControl*)segmentedControl;
+
 @end

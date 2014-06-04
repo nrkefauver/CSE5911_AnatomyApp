@@ -13,7 +13,7 @@
 @end
 
 @implementation EmbryoViewController
-
+@synthesize imageView = eImageView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,11 +28,43 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //Loads main image to Gross main screen
-    UIImage* image = [UIImage imageNamed:@"Embryo"];
+    UIImage* image = [UIImage imageNamed:@"E0"];
     NSAssert(image, @"image is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
     self.imageView.backgroundColor = [UIColor blackColor];
     self.imageView.clipsToBounds = YES;
     self.imageView.image = image;
+}
+
+- (IBAction)contentModeChanged:(UISegmentedControl *)segmentedControl
+{
+    //Switches images based on tab clicked on Neuro main page
+    switch(segmentedControl.selectedSegmentIndex)
+    {
+        case 0:
+            self.imageView.image = [UIImage imageNamed:@"E0"];
+            break;
+        case 1:
+            self.imageView.image = [UIImage imageNamed:@"E1"];
+            break;
+        case 2:
+            self.imageView.image = [UIImage imageNamed:@"E2"];
+            break;
+        case 3:
+            self.imageView.image = [UIImage imageNamed:@"E3"];
+            break;
+        case 4:
+            self.imageView.image = [UIImage imageNamed:@"E4"];
+            break;
+        case 5:
+            self.imageView.image = [UIImage imageNamed:@"E5"];
+            break;
+        case 6:
+            self.imageView.image = [UIImage imageNamed:@"E6"];
+            break;
+        case 7:
+            self.imageView.image = [UIImage imageNamed:@"E7"];
+            break;
+    }
 }
 
 - (void)viewDidUnload

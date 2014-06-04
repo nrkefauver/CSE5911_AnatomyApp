@@ -21,13 +21,20 @@
 		466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B7193BBA0F000B2A78 /* Black Burger.png */; };
 		466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */; };
 		466C49C3193BC606000B2A78 /* 3D Models.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49C2193BC606000B2A78 /* 3D Models.png */; };
-		46AC5F13193E6461003F1E12 /* Embryo.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0C193E6461003F1E12 /* Embryo.png */; };
 		46AC5F14193E6461003F1E12 /* Gross.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0D193E6461003F1E12 /* Gross.png */; };
 		46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0E193E6461003F1E12 /* NeuroC.png */; };
 		46AC5F16193E6461003F1E12 /* NeuroL.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0F193E6461003F1E12 /* NeuroL.png */; };
 		46AC5F17193E6461003F1E12 /* NeuroS.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F10193E6461003F1E12 /* NeuroS.png */; };
 		46AC5F18193E6461003F1E12 /* NeuroT.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F11193E6461003F1E12 /* NeuroT.png */; };
 		46AC5F19193E6461003F1E12 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F12193E6461003F1E12 /* white.png */; };
+		D0253F32193FDB1400CFE2AC /* E0.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F2A193FDB1400CFE2AC /* E0.png */; };
+		D0253F33193FDB1400CFE2AC /* E1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F2B193FDB1400CFE2AC /* E1.png */; };
+		D0253F34193FDB1400CFE2AC /* E2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F2C193FDB1400CFE2AC /* E2.png */; };
+		D0253F35193FDB1400CFE2AC /* E3.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F2D193FDB1400CFE2AC /* E3.png */; };
+		D0253F36193FDB1400CFE2AC /* E4.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F2E193FDB1400CFE2AC /* E4.png */; };
+		D0253F37193FDB1400CFE2AC /* E5.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F2F193FDB1400CFE2AC /* E5.png */; };
+		D0253F38193FDB1400CFE2AC /* E6.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F30193FDB1400CFE2AC /* E6.png */; };
+		D0253F39193FDB1400CFE2AC /* E7.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F31193FDB1400CFE2AC /* E7.png */; };
 		D06E5E32192FA51D00A12651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E31192FA51D00A12651 /* Foundation.framework */; };
 		D06E5E34192FA51D00A12651 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E33192FA51D00A12651 /* CoreGraphics.framework */; };
 		D06E5E36192FA51D00A12651 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E35192FA51D00A12651 /* UIKit.framework */; };
@@ -78,13 +85,20 @@
 		466C49B9193BBA7D000B2A78 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
 		466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
 		466C49C2193BC606000B2A78 /* 3D Models.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3D Models.png"; path = "Images/3D Models.png"; sourceTree = "<group>"; };
-		46AC5F0C193E6461003F1E12 /* Embryo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Embryo.png; path = Images/Embryo.png; sourceTree = "<group>"; };
 		46AC5F0D193E6461003F1E12 /* Gross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gross.png; path = Images/Gross.png; sourceTree = "<group>"; };
 		46AC5F0E193E6461003F1E12 /* NeuroC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroC.png; path = Images/NeuroC.png; sourceTree = "<group>"; };
 		46AC5F0F193E6461003F1E12 /* NeuroL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroL.png; path = Images/NeuroL.png; sourceTree = "<group>"; };
 		46AC5F10193E6461003F1E12 /* NeuroS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroS.png; path = Images/NeuroS.png; sourceTree = "<group>"; };
 		46AC5F11193E6461003F1E12 /* NeuroT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroT.png; path = Images/NeuroT.png; sourceTree = "<group>"; };
 		46AC5F12193E6461003F1E12 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = Images/white.png; sourceTree = "<group>"; };
+		D0253F2A193FDB1400CFE2AC /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E0.png; path = ../../../E0.png; sourceTree = "<group>"; };
+		D0253F2B193FDB1400CFE2AC /* E1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E1.png; path = ../../../E1.png; sourceTree = "<group>"; };
+		D0253F2C193FDB1400CFE2AC /* E2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E2.png; path = ../../../E2.png; sourceTree = "<group>"; };
+		D0253F2D193FDB1400CFE2AC /* E3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E3.png; path = ../../../E3.png; sourceTree = "<group>"; };
+		D0253F2E193FDB1400CFE2AC /* E4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E4.png; path = ../../../E4.png; sourceTree = "<group>"; };
+		D0253F2F193FDB1400CFE2AC /* E5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E5.png; path = ../../../E5.png; sourceTree = "<group>"; };
+		D0253F30193FDB1400CFE2AC /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E6.png; path = ../../../E6.png; sourceTree = "<group>"; };
+		D0253F31193FDB1400CFE2AC /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E7.png; path = ../../../E7.png; sourceTree = "<group>"; };
 		D06E5E2E192FA51D00A12651 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E5E31192FA51D00A12651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D06E5E33192FA51D00A12651 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +161,23 @@
 		462CB057193CFDD100B6CF72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D0253F2A193FDB1400CFE2AC /* E0.png */,
+				D0253F2B193FDB1400CFE2AC /* E1.png */,
+				D0253F2C193FDB1400CFE2AC /* E2.png */,
+				D0253F2D193FDB1400CFE2AC /* E3.png */,
+				D0253F2E193FDB1400CFE2AC /* E4.png */,
+				D0253F2F193FDB1400CFE2AC /* E5.png */,
+				D0253F30193FDB1400CFE2AC /* E6.png */,
+				D0253F31193FDB1400CFE2AC /* E7.png */,
+				D0EC0C1919369684005A9138 /* Histo.png */,
+				462CB05B193D053E00B6CF72 /* Stains.png */,
+				462CB05A193D053E00B6CF72 /* Slides.png */,
+				46AC5F12193E6461003F1E12 /* white.png */,
+				46AC5F11193E6461003F1E12 /* NeuroT.png */,
+				46AC5F10193E6461003F1E12 /* NeuroS.png */,
+				46AC5F0F193E6461003F1E12 /* NeuroL.png */,
+				46AC5F0E193E6461003F1E12 /* NeuroC.png */,
+				46AC5F0D193E6461003F1E12 /* Gross.png */,
 				462CB058193CFEDA00B6CF72 /* Animations.png */,
 				466C49C2193BC606000B2A78 /* 3D Models.png */,
 				466C49B7193BBA0F000B2A78 /* Black Burger.png */,
@@ -160,6 +191,60 @@
 				462CB051193CFDB200B6CF72 /* Tracts.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		D0253F24193FD6F700CFE2AC /* Embryology */ = {
+			isa = PBXGroup;
+			children = (
+				D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */,
+				D074CE6B192FF79300A2BAB1 /* EmbryoViewController.h */,
+			);
+			name = Embryology;
+			sourceTree = "<group>";
+		};
+		D0253F25193FD70F00CFE2AC /* Histology */ = {
+			isa = PBXGroup;
+			children = (
+				D074CE63192FF3CB00A2BAB1 /* HistologyViewController.m */,
+				D074CE62192FF3CB00A2BAB1 /* HistologyViewController.h */,
+			);
+			name = Histology;
+			sourceTree = "<group>";
+		};
+		D0253F26193FD71900CFE2AC /* Gross Anatomy */ = {
+			isa = PBXGroup;
+			children = (
+				D074CE69192FF77E00A2BAB1 /* GrossViewController.m */,
+				D074CE68192FF77E00A2BAB1 /* GrossViewController.h */,
+			);
+			name = "Gross Anatomy";
+			sourceTree = "<group>";
+		};
+		D0253F27193FD72100CFE2AC /* Neuroanatomy */ = {
+			isa = PBXGroup;
+			children = (
+				D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */,
+				D074CE6E192FF7A000A2BAB1 /* NeuroViewController.h */,
+			);
+			name = Neuroanatomy;
+			sourceTree = "<group>";
+		};
+		D0253F28193FD73400CFE2AC /* IndexAll */ = {
+			isa = PBXGroup;
+			children = (
+				D06E5E6A192FA9F600A12651 /* IndexAllViewController.m */,
+				D06E5E69192FA9F600A12651 /* IndexAllViewController.h */,
+			);
+			name = IndexAll;
+			sourceTree = "<group>";
+		};
+		D0253F29193FD77C00CFE2AC /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */,
+				466C49B9193BBA7D000B2A78 /* RNFrostedSidebar.h */,
+			);
+			name = Sidebar;
 			sourceTree = "<group>";
 		};
 		D06E5E25192FA51D00A12651 = {
@@ -195,36 +280,15 @@
 		D06E5E37192FA51D00A12651 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				D0253F29193FD77C00CFE2AC /* Sidebar */,
 				D0774D88193CD51900821D51 /* ExpandingCell */,
-				D0EC0C1919369684005A9138 /* Histo.png */,
 				D06E5E40192FA51D00A12651 /* HomePageAppDelegate.h */,
 				D06E5E41192FA51D00A12651 /* HomePageAppDelegate.m */,
 				D06E5E43192FA51D00A12651 /* Main.storyboard */,
-				46AC5F0C193E6461003F1E12 /* Embryo.png */,
-				46AC5F0D193E6461003F1E12 /* Gross.png */,
-				46AC5F0E193E6461003F1E12 /* NeuroC.png */,
-				46AC5F0F193E6461003F1E12 /* NeuroL.png */,
-				46AC5F10193E6461003F1E12 /* NeuroS.png */,
-				46AC5F11193E6461003F1E12 /* NeuroT.png */,
-				46AC5F12193E6461003F1E12 /* white.png */,
 				D06E5E46192FA51D00A12651 /* HomePageViewController.h */,
 				D06E5E47192FA51D00A12651 /* HomePageViewController.m */,
 				D06E5E49192FA51D00A12651 /* Images.xcassets */,
 				D06E5E38192FA51D00A12651 /* Supporting Files */,
-				D06E5E69192FA9F600A12651 /* IndexAllViewController.h */,
-				D06E5E6A192FA9F600A12651 /* IndexAllViewController.m */,
-				D074CE62192FF3CB00A2BAB1 /* HistologyViewController.h */,
-				D074CE63192FF3CB00A2BAB1 /* HistologyViewController.m */,
-				D074CE68192FF77E00A2BAB1 /* GrossViewController.h */,
-				D074CE69192FF77E00A2BAB1 /* GrossViewController.m */,
-				D074CE6B192FF79300A2BAB1 /* EmbryoViewController.h */,
-				D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */,
-				D074CE6E192FF7A000A2BAB1 /* NeuroViewController.h */,
-				D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */,
-				462CB05A193D053E00B6CF72 /* Slides.png */,
-				462CB05B193D053E00B6CF72 /* Stains.png */,
-				466C49B9193BBA7D000B2A78 /* RNFrostedSidebar.h */,
-				466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -232,6 +296,11 @@
 		D06E5E38192FA51D00A12651 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0253F28193FD73400CFE2AC /* IndexAll */,
+				D0253F27193FD72100CFE2AC /* Neuroanatomy */,
+				D0253F26193FD71900CFE2AC /* Gross Anatomy */,
+				D0253F25193FD70F00CFE2AC /* Histology */,
+				D0253F24193FD6F700CFE2AC /* Embryology */,
 				462CB057193CFDD100B6CF72 /* Images */,
 				D06E5E39192FA51D00A12651 /* HomePage-Info.plist */,
 				D06E5E3A192FA51D00A12651 /* InfoPlist.strings */,
@@ -346,29 +415,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0253F32193FDB1400CFE2AC /* E0.png in Resources */,
 				46AC5F14193E6461003F1E12 /* Gross.png in Resources */,
 				466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */,
 				46AC5F16193E6461003F1E12 /* NeuroL.png in Resources */,
 				462CB05C193D053E00B6CF72 /* Slides.png in Resources */,
+				D0253F37193FDB1400CFE2AC /* E5.png in Resources */,
 				462CB055193CFDB200B6CF72 /* Letter N.png in Resources */,
 				462CB05D193D053E00B6CF72 /* Stains.png in Resources */,
 				46AC5F19193E6461003F1E12 /* white.png in Resources */,
 				462CB059193CFEDA00B6CF72 /* Animations.png in Resources */,
+				D0253F36193FDB1400CFE2AC /* E4.png in Resources */,
 				462CB054193CFDB200B6CF72 /* Letter H.png in Resources */,
 				46AC5F17193E6461003F1E12 /* NeuroS.png in Resources */,
-				46AC5F13193E6461003F1E12 /* Embryo.png in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
+				D0253F33193FDB1400CFE2AC /* E1.png in Resources */,
 				D0EC0C1A19369684005A9138 /* Histo.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
 				462CB053193CFDB200B6CF72 /* Letter G.png in Resources */,
 				466C49B4193BB914000B2A78 /* home.png in Resources */,
+				D0253F39193FDB1400CFE2AC /* E7.png in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
+				D0253F34193FDB1400CFE2AC /* E2.png in Resources */,
+				D0253F35193FDB1400CFE2AC /* E3.png in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
 				46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
+				D0253F38193FDB1400CFE2AC /* E6.png in Resources */,
 				46AC5F18193E6461003F1E12 /* NeuroT.png in Resources */,
 				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
 			);

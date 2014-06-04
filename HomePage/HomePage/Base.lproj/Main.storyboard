@@ -124,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bPj-dp-wGM">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1093"/>
+                                <rect key="frame" x="0.0" y="79" width="768" height="1014"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -136,8 +136,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="sQE-eN-dmv"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="uTX-Vj-FKf" id="HDv-Iw-IMI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vof-kY-caO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="udU-kg-pvt">
+                    <connections>
+                        <outlet property="delegate" destination="0HC-13-e6l" id="Oix-Oa-yrt"/>
+                        <outlet property="searchContentsController" destination="0HC-13-e6l" id="67e-pc-4zs"/>
+                        <outlet property="searchResultsDataSource" destination="0HC-13-e6l" id="RVG-Ta-kjY"/>
+                        <outlet property="searchResultsDelegate" destination="0HC-13-e6l" id="Nbo-0p-0hj"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="uTX-Vj-FKf">
+                    <connections>
+                        <outlet property="delegate" destination="0HC-13-e6l" id="Wyr-ae-dLR"/>
+                        <outlet property="searchContentsController" destination="0HC-13-e6l" id="aQy-bK-ih7"/>
+                        <outlet property="searchResultsDataSource" destination="0HC-13-e6l" id="krD-5U-hph"/>
+                        <outlet property="searchResultsDelegate" destination="0HC-13-e6l" id="vGj-Wr-hLc"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1768" y="-528"/>
         </scene>
@@ -163,7 +182,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Embryo.png" id="XKw-ib-z0b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="E0.png" id="XKw-ib-z0b">
                                 <rect key="frame" x="181" y="231" width="406" height="324"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -177,11 +196,29 @@
                                     <action selector="onBurger:" destination="Zc9-b7-UI4" eventType="touchUpInside" id="TAB-dM-BcF"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="liJ-M2-NKb">
+                                <rect key="frame" x="142" y="570" width="484" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Day 1"/>
+                                    <segment title="Day 2"/>
+                                    <segment title="Day 3"/>
+                                    <segment title="Day 4"/>
+                                    <segment title="Day 5"/>
+                                    <segment title="Day 6"/>
+                                    <segment title="Day 7"/>
+                                    <segment title="Day 8"/>
+                                </segments>
+                                <connections>
+                                    <action selector="contentModeChanged:" destination="Zc9-b7-UI4" eventType="valueChanged" id="bDr-MH-3Hh"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="w9O-Cg-kAC"/>
                     <connections>
+                        <outlet property="imageView" destination="XKw-ib-z0b" id="Nin-a8-Nun"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="EmbryoToHomeSegue" id="TtF-se-HDQ"/>
                     </connections>
                 </viewController>
@@ -262,7 +299,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stains.png" id="PQu-w0-D3b">
-                                <rect key="frame" x="193" y="253" width="453" height="366"/>
+                                <rect key="frame" x="193" y="251" width="453" height="366"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5mu-Rk-vQB">
@@ -379,7 +416,7 @@
     </scenes>
     <resources>
         <image name="Black Burger.png" width="45" height="45"/>
-        <image name="Embryo.png" width="141" height="222"/>
+        <image name="E0.png" width="147" height="195"/>
         <image name="Gross.png" width="322" height="305"/>
         <image name="Histo.png" width="578" height="561"/>
         <image name="Stains.png" width="156" height="156"/>
@@ -392,6 +429,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HR3-33-3xN"/>
+        <segue reference="TtF-se-HDQ"/>
     </inferredMetricsTieBreakers>
 </document>
