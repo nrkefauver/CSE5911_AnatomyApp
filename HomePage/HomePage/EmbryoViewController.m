@@ -84,7 +84,7 @@
                         [UIImage imageNamed:@"Animations"],
                         [UIImage imageNamed:@"Index"],
                         [UIImage imageNamed:@"Letter E"],
-                        [UIImage imageNamed:@"Home"],
+                        [UIImage imageNamed:@"home"],
                         ];
 //    NSArray *colors = @[
 //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],

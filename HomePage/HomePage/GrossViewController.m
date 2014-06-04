@@ -49,11 +49,11 @@
 
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
-                        [UIImage imageNamed:@"Videos"],
+                        [UIImage imageNamed:@"videos"],
                         [UIImage imageNamed:@"3D Models"],
                         [UIImage imageNamed:@"Index"],
                         [UIImage imageNamed:@"Letter G"],
-                        [UIImage imageNamed:@"Home"],
+                        [UIImage imageNamed:@"home"],
                         ];
 //    NSArray *colors = @[
 //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
