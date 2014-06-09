@@ -102,17 +102,15 @@
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
     NSLog(@"Tapped item at index %i",index);
-    
+    [sidebar dismissAnimated:YES completion:nil];
     
     //Animations clicked
     if (index == 0) {
-        [sidebar dismissAnimated:YES completion:nil];
         //TODO
     }
     
     //Index clicked
     else if (index == 1) {
-        [sidebar dismissAnimated:YES completion:nil];
         //TODO
     }
     
@@ -123,7 +121,6 @@
     
     //Home clicked
     else if (index == 3) {
-        [sidebar dismissAnimated:YES completion:nil];
         [self performSegueWithIdentifier:@"EmbryoToHomeSegue" sender:self];
     }
     

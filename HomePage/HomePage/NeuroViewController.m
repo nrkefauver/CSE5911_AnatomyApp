@@ -96,23 +96,20 @@
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
     NSLog(@"Tapped item at index %i",index);
-    
+    [sidebar dismissAnimated:YES completion:nil];
     
     //Tracts clicked
     if (index == 0) {
-        [sidebar dismissAnimated:YES completion:nil];
         //TODO
     }
     
     //Animations clicked
     else if (index == 1) {
-        [sidebar dismissAnimated:YES completion:nil];
         //TODO
     }
     
     //Index clicked
     else if (index == 2) {
-        [sidebar dismissAnimated:YES completion:nil];
         //TODO
     }
     
@@ -123,7 +120,6 @@
     
     //Home clicked
     else if (index == 4) {
-        [sidebar dismissAnimated:YES completion:nil];
         [self performSegueWithIdentifier:@"NeuroToHomeSegue" sender:self];
     }
     
