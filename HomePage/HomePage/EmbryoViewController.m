@@ -97,7 +97,7 @@
     RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
     callout.delegate = self;
     callout.showFromRight = YES;
-    [callout show];
+    [callout showInViewController:self animated:YES];
 }
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
@@ -138,6 +138,13 @@
     }
 }
 
+- (void)sidebar:(RNFrostedSidebar *)sidebar willDismissFromScreenAnimated:(BOOL)animatedYesOrNo {
+    [self.navigationController setNavigationBarHidden:NO animated:animatedYesOrNo];
+}
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
+    [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
+}
 
 /*
 #pragma mark - Navigation
