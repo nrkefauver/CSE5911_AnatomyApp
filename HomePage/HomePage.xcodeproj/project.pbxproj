@@ -27,7 +27,6 @@
 		46AC5F17193E6461003F1E12 /* NeuroS.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F10193E6461003F1E12 /* NeuroS.png */; };
 		46AC5F18193E6461003F1E12 /* NeuroT.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F11193E6461003F1E12 /* NeuroT.png */; };
 		46AC5F19193E6461003F1E12 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F12193E6461003F1E12 /* white.png */; };
-		D02074EA1944E48200AADFDA /* Term.m in Sources */ = {isa = PBXBuildFile; fileRef = D02074E91944E48200AADFDA /* Term.m */; };
 		D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */ = {isa = PBXBuildFile; fileRef = D02074EB1944FE9F00AADFDA /* Blue Button.gif */; };
 		D02074EE1944FF8700AADFDA /* White Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = D02074ED1944FF8700AADFDA /* White Burger.png */; };
 		D0253F42193FE10A00CFE2AC /* E0.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F3A193FE10A00CFE2AC /* E0.png */; };
@@ -95,8 +94,6 @@
 		46AC5F10193E6461003F1E12 /* NeuroS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroS.png; path = Images/NeuroS.png; sourceTree = "<group>"; };
 		46AC5F11193E6461003F1E12 /* NeuroT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroT.png; path = Images/NeuroT.png; sourceTree = "<group>"; };
 		46AC5F12193E6461003F1E12 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = Images/white.png; sourceTree = "<group>"; };
-		D02074E81944E48200AADFDA /* Term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Term.h; sourceTree = "<group>"; };
-		D02074E91944E48200AADFDA /* Term.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Term.m; sourceTree = "<group>"; };
 		D02074EB1944FE9F00AADFDA /* Blue Button.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Blue Button.gif"; path = "Images/Blue Button.gif"; sourceTree = "<group>"; };
 		D02074ED1944FF8700AADFDA /* White Burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "White Burger.png"; path = "Images/White Burger.png"; sourceTree = "<group>"; };
 		D0253F3A193FE10A00CFE2AC /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E0.png; path = Images/E0.png; sourceTree = "<group>"; };
@@ -300,8 +297,6 @@
 				D06E5E47192FA51D00A12651 /* HomePageViewController.m */,
 				D06E5E49192FA51D00A12651 /* Images.xcassets */,
 				D06E5E38192FA51D00A12651 /* Supporting Files */,
-				D02074E81944E48200AADFDA /* Term.h */,
-				D02074E91944E48200AADFDA /* Term.m */,
 				D02F1CFA194644350095A8E9 /* Neuroterms.plist */,
 			);
 			path = HomePage;
@@ -483,7 +478,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */,
-				D02074EA1944E48200AADFDA /* Term.m in Sources */,
 				D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */,
 				D06E5E42192FA51D00A12651 /* HomePageAppDelegate.m in Sources */,
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,
