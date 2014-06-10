@@ -31,6 +31,14 @@
 		5953AA101946802C00677409 /* Gross3DModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA0F1946802C00677409 /* Gross3DModelViewController.m */; };
 		5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */; };
 		5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA15194683B000677409 /* EmbryoAnimationsListViewController.m */; };
+		D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA833194785A700C01BBF /* Embryoterms.plist */; };
+		D00CA836194785B500C01BBF /* Histoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA835194785B500C01BBF /* Histoterms.plist */; };
+		D00CA838194785C200C01BBF /* Grossterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA837194785C200C01BBF /* Grossterms.plist */; };
+		D00CA83B194792CB00C01BBF /* NeuroIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA83A194792CB00C01BBF /* NeuroIndexViewController.m */; };
+		D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA83D1947936900C01BBF /* GrossIndexViewController.m */; };
+		D00CA8411947941900C01BBF /* HistoIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA8401947941900C01BBF /* HistoIndexViewController.m */; };
+		D00CA8441947948F00C01BBF /* EmbryoIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA8431947948F00C01BBF /* EmbryoIndexViewController.m */; };
+		D00CA84A19479FB300C01BBF /* SRExpandableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA84919479FB300C01BBF /* SRExpandableTableViewController.m */; };
 		D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */ = {isa = PBXBuildFile; fileRef = D02074EB1944FE9F00AADFDA /* Blue Button.gif */; };
 		D02074EE1944FF8700AADFDA /* White Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = D02074ED1944FF8700AADFDA /* White Burger.png */; };
 		D0253F42193FE10A00CFE2AC /* E0.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F3A193FE10A00CFE2AC /* E0.png */; };
@@ -106,6 +114,19 @@
 		5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroAnimationsListViewController.m; sourceTree = "<group>"; };
 		5953AA14194683B000677409 /* EmbryoAnimationsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbryoAnimationsListViewController.h; sourceTree = "<group>"; };
 		5953AA15194683B000677409 /* EmbryoAnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoAnimationsListViewController.m; sourceTree = "<group>"; };
+		D00CA833194785A700C01BBF /* Embryoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Embryoterms.plist; sourceTree = "<group>"; };
+		D00CA835194785B500C01BBF /* Histoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Histoterms.plist; sourceTree = "<group>"; };
+		D00CA837194785C200C01BBF /* Grossterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grossterms.plist; sourceTree = "<group>"; };
+		D00CA839194792CB00C01BBF /* NeuroIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuroIndexViewController.h; sourceTree = "<group>"; };
+		D00CA83A194792CB00C01BBF /* NeuroIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroIndexViewController.m; sourceTree = "<group>"; };
+		D00CA83C1947936900C01BBF /* GrossIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrossIndexViewController.h; sourceTree = "<group>"; };
+		D00CA83D1947936900C01BBF /* GrossIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrossIndexViewController.m; sourceTree = "<group>"; };
+		D00CA83F1947941900C01BBF /* HistoIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoIndexViewController.h; sourceTree = "<group>"; };
+		D00CA8401947941900C01BBF /* HistoIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoIndexViewController.m; sourceTree = "<group>"; };
+		D00CA8421947948F00C01BBF /* EmbryoIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbryoIndexViewController.h; sourceTree = "<group>"; };
+		D00CA8431947948F00C01BBF /* EmbryoIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoIndexViewController.m; sourceTree = "<group>"; };
+		D00CA84819479FB300C01BBF /* SRExpandableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRExpandableTableViewController.h; sourceTree = "<group>"; };
+		D00CA84919479FB300C01BBF /* SRExpandableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRExpandableTableViewController.m; sourceTree = "<group>"; };
 		D02074EB1944FE9F00AADFDA /* Blue Button.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Blue Button.gif"; path = "Images/Blue Button.gif"; sourceTree = "<group>"; };
 		D02074ED1944FF8700AADFDA /* White Burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "White Burger.png"; path = "Images/White Burger.png"; sourceTree = "<group>"; };
 		D0253F3A193FE10A00CFE2AC /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E0.png; path = Images/E0.png; sourceTree = "<group>"; };
@@ -219,6 +240,8 @@
 				D074CE6B192FF79300A2BAB1 /* EmbryoViewController.h */,
 				5953AA14194683B000677409 /* EmbryoAnimationsListViewController.h */,
 				5953AA15194683B000677409 /* EmbryoAnimationsListViewController.m */,
+				D00CA8421947948F00C01BBF /* EmbryoIndexViewController.h */,
+				D00CA8431947948F00C01BBF /* EmbryoIndexViewController.m */,
 			);
 			name = Embryology;
 			sourceTree = "<group>";
@@ -228,6 +251,8 @@
 			children = (
 				D074CE63192FF3CB00A2BAB1 /* HistologyViewController.m */,
 				D074CE62192FF3CB00A2BAB1 /* HistologyViewController.h */,
+				D00CA83F1947941900C01BBF /* HistoIndexViewController.h */,
+				D00CA8401947941900C01BBF /* HistoIndexViewController.m */,
 			);
 			name = Histology;
 			sourceTree = "<group>";
@@ -241,6 +266,8 @@
 				D074CE68192FF77E00A2BAB1 /* GrossViewController.h */,
 				5953AA0E1946802C00677409 /* Gross3DModelViewController.h */,
 				5953AA0F1946802C00677409 /* Gross3DModelViewController.m */,
+				D00CA83C1947936900C01BBF /* GrossIndexViewController.h */,
+				D00CA83D1947936900C01BBF /* GrossIndexViewController.m */,
 			);
 			name = "Gross Anatomy";
 			sourceTree = "<group>";
@@ -252,6 +279,8 @@
 				D074CE6E192FF7A000A2BAB1 /* NeuroViewController.h */,
 				5953AA111946828B00677409 /* NeuroAnimationsListViewController.h */,
 				5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */,
+				D00CA839194792CB00C01BBF /* NeuroIndexViewController.h */,
+				D00CA83A194792CB00C01BBF /* NeuroIndexViewController.m */,
 			);
 			name = Neuroanatomy;
 			sourceTree = "<group>";
@@ -261,6 +290,8 @@
 			children = (
 				D06E5E6A192FA9F600A12651 /* IndexAllViewController.m */,
 				D06E5E69192FA9F600A12651 /* IndexAllViewController.h */,
+				D00CA84819479FB300C01BBF /* SRExpandableTableViewController.h */,
+				D00CA84919479FB300C01BBF /* SRExpandableTableViewController.m */,
 			);
 			name = IndexAll;
 			sourceTree = "<group>";
@@ -318,6 +349,9 @@
 				D06E5E49192FA51D00A12651 /* Images.xcassets */,
 				D06E5E38192FA51D00A12651 /* Supporting Files */,
 				D02F1CFA194644350095A8E9 /* Neuroterms.plist */,
+				D00CA833194785A700C01BBF /* Embryoterms.plist */,
+				D00CA835194785B500C01BBF /* Histoterms.plist */,
+				D00CA837194785C200C01BBF /* Grossterms.plist */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -465,17 +499,20 @@
 				D0EC0C1A19369684005A9138 /* Histo.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
+				D00CA838194785C200C01BBF /* Grossterms.plist in Resources */,
 				462CB053193CFDB200B6CF72 /* Letter G.png in Resources */,
 				466C49B4193BB914000B2A78 /* home.png in Resources */,
 				D0253F49193FE10A00CFE2AC /* E7.png in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
 				D0253F44193FE10A00CFE2AC /* E2.png in Resources */,
 				D0253F45193FE10A00CFE2AC /* E3.png in Resources */,
+				D00CA836194785B500C01BBF /* Histoterms.plist in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
 				46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
 				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
+				D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */,
 				D0253F48193FE10A00CFE2AC /* E6.png in Resources */,
 				46AC5F18193E6461003F1E12 /* NeuroT.png in Resources */,
 				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
@@ -505,12 +542,17 @@
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,
 				5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */,
 				D06E5E3E192FA51D00A12651 /* main.m in Sources */,
+				D00CA84A19479FB300C01BBF /* SRExpandableTableViewController.m in Sources */,
 				D06E5E48192FA51D00A12651 /* HomePageViewController.m in Sources */,
 				5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */,
+				D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */,
 				D06E5E6B192FA9F600A12651 /* IndexAllViewController.m in Sources */,
+				D00CA83B194792CB00C01BBF /* NeuroIndexViewController.m in Sources */,
 				D074CE6D192FF79300A2BAB1 /* EmbryoViewController.m in Sources */,
 				D074CE6A192FF77E00A2BAB1 /* GrossViewController.m in Sources */,
 				466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */,
+				D00CA8411947941900C01BBF /* HistoIndexViewController.m in Sources */,
+				D00CA8441947948F00C01BBF /* EmbryoIndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
