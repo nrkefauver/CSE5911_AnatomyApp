@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RNFrostedSidebar.h"
 
 @interface EmbryoAnimationsListViewController : UIViewController
 

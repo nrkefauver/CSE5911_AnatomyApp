@@ -111,7 +111,7 @@
     
     //Index clicked
     else if (index == 1) {
-        //TODO
+        [self performSegueWithIdentifier:@"EmbryoHomeToIndexSegue" sender:self];
     }
     
     //Embryo Home clicked

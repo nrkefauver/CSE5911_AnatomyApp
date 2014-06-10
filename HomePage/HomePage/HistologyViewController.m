@@ -51,14 +51,11 @@
 
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
-                        [UIImage imageNamed:@"Stains"],
-                        [UIImage imageNamed:@"Slides"],
                         [UIImage imageNamed:@"Index"],
                         [UIImage imageNamed:@"Letter H"],
                         [UIImage imageNamed:@"home"],
                         ];
 //    NSArray *colors = @[
-//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
 //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
 //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
 //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
@@ -76,28 +73,18 @@
     NSLog(@"Tapped item at index %i",index);
     [sidebar dismissAnimated:YES completion:nil];
     
-    //Stains clicked
-    if (index == 0) {
-        //TODO
-    }
-    
-    //Slides clicked
-    else if (index == 1) {
-        //TODO
-    }
-    
     //Index clicked
-    else if (index == 2) {
-        //TODO
+    if (index == 0) {
+        [self performSegueWithIdentifier:@"HistoHomeToIndexSegue" sender:self];
     }
     
     //Histo Home clicked
-    else if (index == 3) {
+    else if (index == 1) {
         // Do nothing
     }
     
     //Home clicked
-    else if (index == 4) {
+    else if (index == 2) {
         [self performSegueWithIdentifier:@"HistoToHomeSegue" sender:self];
     }
     

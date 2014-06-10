@@ -86,7 +86,7 @@
     
     //Index clicked
     else if (index == 2) {
-        //TODO
+        [self performSegueWithIdentifier:@"GrossHomeToIndexSegue" sender:self];
     }
     
     //Gross Home clicked
