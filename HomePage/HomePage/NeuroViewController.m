@@ -105,7 +105,7 @@
     
     //Animations clicked
     else if (index == 1) {
-        //TODO
+        [self performSegueWithIdentifier:@"NeuroHomeToAnimationsListSegue" sender:self];
     }
     
     //Index clicked

@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="371" y="-544"/>
+            <point key="canvasLocation" x="139" y="-1002"/>
         </scene>
         <!--Index All View Controller-->
         <scene sceneID="sFC-Al-GIf">
@@ -219,7 +219,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1768" y="-528"/>
+            <point key="canvasLocation" x="2152" y="-1002"/>
         </scene>
         <!--Embryo View Controller-->
         <scene sceneID="6gF-am-Wrc">
@@ -281,11 +281,35 @@
                     <connections>
                         <outlet property="imageView" destination="XKw-ib-z0b" id="Nin-a8-Nun"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="EmbryoToHomeSegue" id="TtF-se-HDQ"/>
+                        <segue destination="7sD-q7-0nW" kind="push" identifier="EmbryoHomeToAnimationsListSegue" id="KNf-OE-a5W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbc-B6-6I1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="927"/>
+            <point key="canvasLocation" x="1968" y="835"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1l7-Mp-HsZ">
+            <objects>
+                <viewController id="7sD-q7-0nW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DpV-hd-KVf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Embryo Animations List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CYv-mt-5PS">
+                                <rect key="frame" x="293" y="420" width="182" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CTo-lh-NlA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQ7-7e-non" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968" y="2193"/>
         </scene>
         <!--Histology View Controller-->
         <scene sceneID="gpV-p3-EIy">
@@ -334,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pvu-Oo-gaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143" y="927"/>
+            <point key="canvasLocation" x="-121" y="835"/>
         </scene>
         <!--Neuro View Controller-->
         <scene sceneID="3Rl-AI-FEK">
@@ -393,11 +417,35 @@
                     <connections>
                         <outlet property="imageView" destination="PQu-w0-D3b" id="nuB-10-3Bh"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroToHomeSegue" id="hOH-RS-S2g"/>
+                        <segue destination="A0d-hn-6U1" kind="push" identifier="NeuroHomeToAnimationsListSegue" id="32O-Pf-eqc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igv-Zk-Ffw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2006" y="927"/>
+            <point key="canvasLocation" x="4098" y="835"/>
+        </scene>
+        <!--Neuro Animations List View Controller-->
+        <scene sceneID="BCY-Hm-ZMe">
+            <objects>
+                <viewController id="A0d-hn-6U1" customClass="NeuroAnimationsListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHV-82-mzu">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neuro Animations List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UMI-Id-NhS">
+                                <rect key="frame" x="300" y="226" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="urP-bW-kRm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwd-uP-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4098" y="2201"/>
         </scene>
         <!--Gross View Controller-->
         <scene sceneID="ZqH-ui-cXm">
@@ -449,11 +497,59 @@
                     <navigationItem key="navigationItem" id="LPj-dZ-41W"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="GrossToHomeSegue" id="HR3-33-3xN"/>
+                        <segue destination="PDT-Rl-dT5" kind="push" identifier="GrossHomeToGrossVideosSegue" id="fdm-bw-BD5"/>
+                        <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossHomeToGross3DModelSegue" id="xIp-rp-Izy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Pv-Rx-LeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2867" y="927"/>
+            <point key="canvasLocation" x="-2185" y="835"/>
+        </scene>
+        <!--Gross Video List View Controller-->
+        <scene sceneID="g7j-7A-wzl">
+            <objects>
+                <viewController id="PDT-Rl-dT5" customClass="GrossVideoListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="op4-9I-tuU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gross Videos List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="syA-FM-CPC">
+                                <rect key="frame" x="316" y="236" width="136" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bP6-XA-xSQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LzE-Cd-Edf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2666" y="2161"/>
+        </scene>
+        <!--Gross3D Model View Controller-->
+        <scene sceneID="0AS-eI-oEG">
+            <objects>
+                <viewController id="VUO-9Z-0Vc" customClass="Gross3DModelViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Sn-hZ-Bbc">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gross 3D Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rb9-nQ-Y4O">
+                                <rect key="frame" x="322" y="227" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="35b-8p-HNF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNE-rw-DzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1713" y="2177"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TQf-PG-tmx">
@@ -472,7 +568,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVI-pu-Qak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-574" y="-538"/>
+            <point key="canvasLocation" x="-1342" y="-1002"/>
         </scene>
     </scenes>
     <resources>
@@ -490,6 +586,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hyT-vW-0Jk"/>
+        <segue reference="TtF-se-HDQ"/>
     </inferredMetricsTieBreakers>
 </document>

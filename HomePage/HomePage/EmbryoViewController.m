@@ -106,7 +106,7 @@
     
     //Animations clicked
     if (index == 0) {
-        //TODO
+        [self performSegueWithIdentifier:@"EmbryoHomeToAnimationsListSegue" sender:self];
     }
     
     //Index clicked
