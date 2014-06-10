@@ -51,7 +51,6 @@
 
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
-                        [UIImage imageNamed:@"Stains"],
                         [UIImage imageNamed:@"Index"],
                         [UIImage imageNamed:@"Letter H"],
                         [UIImage imageNamed:@"home"],
@@ -74,23 +73,18 @@
     NSLog(@"Tapped item at index %i",index);
     [sidebar dismissAnimated:YES completion:nil];
     
-    //Stains clicked
-    if (index == 0) {
-        //TODO
-    }
-    
     //Index clicked
-    else if (index == 1) {
-        //TODO
+    if (index == 0) {
+        [self performSegueWithIdentifier:@"HistoHomeToIndexSegue" sender:self];
     }
     
     //Histo Home clicked
-    else if (index == 2) {
+    else if (index == 1) {
         // Do nothing
     }
     
     //Home clicked
-    else if (index == 3) {
+    else if (index == 2) {
         [self performSegueWithIdentifier:@"HistoToHomeSegue" sender:self];
     }
     
