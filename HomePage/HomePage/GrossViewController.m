@@ -76,12 +76,12 @@
     
     //Videos clicked
     if (index == 0) {
-        //TODO
+        [self performSegueWithIdentifier:@"GrossHomeToGrossVideosSegue" sender:self];
     }
     
     //3D Models clicked
     else if (index == 1) {
-        //TODO
+        [self performSegueWithIdentifier:@"GrossHomeToGross3DModelSegue" sender:self];
     }
     
     //Index clicked

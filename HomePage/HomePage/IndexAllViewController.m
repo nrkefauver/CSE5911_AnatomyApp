@@ -105,8 +105,9 @@ NSArray *searchResults;
         if (tableView == self.searchDisplayController.searchResultsTableView) {
             term =[searchResults objectAtIndex:indexPath.row];
             cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
-            cell.subtitleLabel.text = @"test";
-            cell.textLabel.text = @"test";
+            cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+            int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+            cell.textLabel.text = [textArray objectAtIndex:pos];
         } else {
             cell.titleLabel.text = [titleArray objectAtIndex:indexPath.row];
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
@@ -151,7 +152,7 @@ NSArray *searchResults;
 
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
-    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"key beginswith [c] %@", searchText];
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith [c] %@", searchText];
     searchResults = [titleArray filteredArrayUsingPredicate:resultPredicate];
     
 }
