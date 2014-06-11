@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Xz-2E-juG">
-                                <rect key="frame" x="125" y="235" width="518" height="55"/>
+                                <rect key="frame" x="125" y="120" width="518" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Spinal Cord Anatomy">
@@ -27,12 +27,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="FAM-74-hfo">
-                                <rect key="frame" x="95" y="417" width="180" height="30"/>
+                                <rect key="frame" x="116" y="259" width="252" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <state key="normal" backgroundImage="Blue Button.gif">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Histology">
                                             <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="23" name="Georgia-Bold"/>
                                             </attributes>
                                         </fragment>
@@ -43,12 +44,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="HJD-HM-QnG">
-                                <rect key="frame" x="501" y="417" width="168" height="30"/>
+                                <rect key="frame" x="409" y="259" width="234" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <state key="normal" backgroundImage="Blue Button.gif">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Embryology">
                                             <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="23" name="Georgia-Bold"/>
                                             </attributes>
                                         </fragment>
@@ -59,12 +61,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="nYF-HJ-C2Y">
-                                <rect key="frame" x="95" y="610" width="221" height="30"/>
+                                <rect key="frame" x="116" y="508" width="252" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <state key="normal" backgroundImage="Blue Button.gif">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Gross Anatomy">
                                             <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="23" name="Georgia-Bold"/>
                                             </attributes>
                                         </fragment>
@@ -75,12 +78,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="JU3-2x-Iqw">
-                                <rect key="frame" x="485" y="610" width="200" height="30"/>
+                                <rect key="frame" x="409" y="508" width="234" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <state key="normal" backgroundImage="Blue Button.gif">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Neuroanatomy">
                                             <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="23" name="Georgia-Bold"/>
                                             </attributes>
                                         </fragment>
@@ -91,12 +95,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="aow-vj-q69">
-                                <rect key="frame" x="330" y="716" width="108" height="30"/>
+                                <rect key="frame" x="116" y="741" width="527" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Index">
+                                <state key="normal" title="Index" backgroundImage="Blue Button.gif">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Index">
                                             <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="23" name="Georgia-Bold"/>
                                             </attributes>
                                         </fragment>
@@ -113,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="371" y="-544"/>
+            <point key="canvasLocation" x="139" y="-1002"/>
         </scene>
         <!--Index All View Controller-->
         <scene sceneID="sFC-Al-GIf">
@@ -123,21 +128,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bPj-dp-wGM">
-                                <rect key="frame" x="0.0" y="79" width="768" height="1014"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <searchBar contentMode="redraw" showsSearchResultsButton="YES" showsCancelButton="YES" id="hC0-o0-TYa">
+                                <rect key="frame" x="0.0" y="64" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                                 <connections>
-                                    <outlet property="dataSource" destination="0HC-13-e6l" id="y24-Xl-IKk"/>
-                                    <outlet property="delegate" destination="0HC-13-e6l" id="qJK-80-JYy"/>
+                                    <outlet property="delegate" destination="0HC-13-e6l" id="WYb-GY-G07"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Itw-7R-c1T">
+                                <rect key="frame" x="0.0" y="108" width="768" height="916"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="0HC-13-e6l" id="7al-lf-BMA"/>
+                                    <outlet property="delegate" destination="0HC-13-e6l" id="e55-rr-PUa"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="sQE-eN-dmv"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="uTX-Vj-FKf" id="HDv-Iw-IMI"/>
+                        <outlet property="searchDisplayController" destination="qQT-DS-eTX" id="R5a-LZ-WXx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vof-kY-caO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -157,8 +177,49 @@
                         <outlet property="searchResultsDelegate" destination="0HC-13-e6l" id="vGj-Wr-hLc"/>
                     </connections>
                 </searchDisplayController>
+                <searchDisplayController id="l7T-rg-Zu6">
+                    <connections>
+                        <outlet property="delegate" destination="0HC-13-e6l" id="V5g-nE-pb3"/>
+                        <outlet property="searchContentsController" destination="0HC-13-e6l" id="owc-8H-WQr"/>
+                        <outlet property="searchResultsDataSource" destination="0HC-13-e6l" id="ZP4-m9-ek3"/>
+                        <outlet property="searchResultsDelegate" destination="0HC-13-e6l" id="0iJ-My-ak1"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="wF3-Jz-NiZ">
+                    <connections>
+                        <outlet property="delegate" destination="0HC-13-e6l" id="VzF-Er-Q0S"/>
+                        <outlet property="searchContentsController" destination="0HC-13-e6l" id="6PV-uR-b4g"/>
+                        <outlet property="searchResultsDataSource" destination="0HC-13-e6l" id="Sq5-r9-0hd"/>
+                        <outlet property="searchResultsDelegate" destination="0HC-13-e6l" id="Vdg-SP-qdA"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="duf-uw-Frg">
+                    <connections>
+                        <outlet property="delegate" destination="0HC-13-e6l" id="FBc-HG-3Ef"/>
+                        <outlet property="searchContentsController" destination="0HC-13-e6l" id="43L-Vj-PCU"/>
+                        <outlet property="searchResultsDataSource" destination="0HC-13-e6l" id="7Xz-mp-yC5"/>
+                        <outlet property="searchResultsDelegate" destination="0HC-13-e6l" id="DFh-YX-6jk"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="DN5-mh-wN8">
+                    <connections>
+                        <outlet property="delegate" destination="0HC-13-e6l" id="QFr-BU-B3M"/>
+                        <outlet property="searchContentsController" destination="0HC-13-e6l" id="ky1-Mf-mxh"/>
+                        <outlet property="searchResultsDataSource" destination="0HC-13-e6l" id="Maf-rv-Jfo"/>
+                        <outlet property="searchResultsDelegate" destination="0HC-13-e6l" id="vOt-ez-gYo"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="qQT-DS-eTX">
+                    <connections>
+                        <outlet property="delegate" destination="0HC-13-e6l" id="4I7-g3-PW1"/>
+                        <outlet property="searchBar" destination="hC0-o0-TYa" id="X8i-1R-WkY"/>
+                        <outlet property="searchContentsController" destination="0HC-13-e6l" id="iyU-Fc-xFO"/>
+                        <outlet property="searchResultsDataSource" destination="0HC-13-e6l" id="raC-cp-tT7"/>
+                        <outlet property="searchResultsDelegate" destination="0HC-13-e6l" id="gsn-Kx-2zu"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1768" y="-528"/>
+            <point key="canvasLocation" x="2152" y="-1002"/>
         </scene>
         <!--Embryo View Controller-->
         <scene sceneID="6gF-am-Wrc">
@@ -189,7 +250,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ojw-pU-8PF">
                                 <rect key="frame" x="700" y="80" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Black Burger.png" backgroundImage="white.png">
+                                <state key="normal" image="White Burger.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -220,11 +281,51 @@
                     <connections>
                         <outlet property="imageView" destination="XKw-ib-z0b" id="Nin-a8-Nun"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="EmbryoToHomeSegue" id="TtF-se-HDQ"/>
+                        <segue destination="7sD-q7-0nW" kind="push" identifier="EmbryoHomeToAnimationsListSegue" id="KNf-OE-a5W"/>
+                        <segue destination="0HC-13-e6l" kind="push" identifier="EmbryoHomeToIndexSegue" id="Xgb-47-Ueh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbc-B6-6I1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="927"/>
+            <point key="canvasLocation" x="1968" y="835"/>
+        </scene>
+        <!--Embryo Animations List View Controller-->
+        <scene sceneID="1l7-Mp-HsZ">
+            <objects>
+                <viewController id="7sD-q7-0nW" customClass="EmbryoAnimationsListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DpV-hd-KVf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Embryo Animations List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CYv-mt-5PS">
+                                <rect key="frame" x="293" y="420" width="182" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hHd-1S-T3S">
+                                <rect key="frame" x="700" y="80" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="White Burger.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBurger:" destination="7sD-q7-0nW" eventType="touchUpInside" id="1g3-CQ-4hZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CTo-lh-NlA"/>
+                    <connections>
+                        <segue destination="Zc9-b7-UI4" kind="push" identifier="EmbryoAnimationsListToEmbryoHomeSegue" id="sOv-Ov-78j"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="EmbryoAnimationsListToHomeSegue" id="qkd-fC-WYx"/>
+                        <segue destination="0HC-13-e6l" kind="push" identifier="EmbryoAnimationsListToIndexSegue" id="zwu-sI-Crc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQ7-7e-non" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976" y="2201"/>
         </scene>
         <!--Histology View Controller-->
         <scene sceneID="gpV-p3-EIy">
@@ -255,7 +356,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jo3-9s-Mgk">
                                 <rect key="frame" x="700" y="80" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Black Burger.png" backgroundImage="white.png">
+                                <state key="normal" image="White Burger.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -269,11 +370,12 @@
                     <connections>
                         <outlet property="imageView" destination="WGx-Rd-P6H" id="Xb1-1X-JMF"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="HistoToHomeSegue" id="AwG-wi-xhT"/>
+                        <segue destination="0HC-13-e6l" kind="push" identifier="HistoHomeToIndexSegue" id="far-xO-xjq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pvu-Oo-gaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143" y="927"/>
+            <point key="canvasLocation" x="-17" y="835"/>
         </scene>
         <!--Neuro View Controller-->
         <scene sceneID="3Rl-AI-FEK">
@@ -305,7 +407,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5mu-Rk-vQB">
                                 <rect key="frame" x="700" y="80" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Black Burger.png" backgroundImage="white.png">
+                                <state key="normal" title="Button" image="White Burger.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -332,11 +434,51 @@
                     <connections>
                         <outlet property="imageView" destination="PQu-w0-D3b" id="nuB-10-3Bh"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroToHomeSegue" id="hOH-RS-S2g"/>
+                        <segue destination="A0d-hn-6U1" kind="push" identifier="NeuroHomeToAnimationsListSegue" id="32O-Pf-eqc"/>
+                        <segue destination="0HC-13-e6l" kind="push" identifier="NeuroHomeToIndexSegue" id="xgI-CB-z14"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igv-Zk-Ffw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2006" y="927"/>
+            <point key="canvasLocation" x="4130" y="835"/>
+        </scene>
+        <!--Neuro Animations List View Controller-->
+        <scene sceneID="BCY-Hm-ZMe">
+            <objects>
+                <viewController id="A0d-hn-6U1" customClass="NeuroAnimationsListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHV-82-mzu">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neuro Animations List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UMI-Id-NhS">
+                                <rect key="frame" x="300" y="226" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="shX-yt-Mq4">
+                                <rect key="frame" x="700" y="80" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="White Burger.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBurger:" destination="A0d-hn-6U1" eventType="touchUpInside" id="IRV-JN-GcR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="urP-bW-kRm"/>
+                    <connections>
+                        <segue destination="Z1N-LW-t3Y" kind="push" identifier="NeuroAnimationsListToNeuroHomeSegue" id="c2K-YH-DqR"/>
+                        <segue destination="0HC-13-e6l" kind="push" identifier="NeuroAnimationsListToIndexSegue" id="mhj-Cf-taw"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroAnimationsListToHomeSegue" id="Reg-0P-VLu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwd-uP-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4170" y="2193"/>
         </scene>
         <!--Gross View Controller-->
         <scene sceneID="ZqH-ui-cXm">
@@ -375,7 +517,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6R8-Ej-fBb">
                                 <rect key="frame" x="700" y="80" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Black Burger.png" backgroundImage="white.png">
+                                <state key="normal" image="White Burger.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -388,11 +530,92 @@
                     <navigationItem key="navigationItem" id="LPj-dZ-41W"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="GrossToHomeSegue" id="HR3-33-3xN"/>
+                        <segue destination="PDT-Rl-dT5" kind="push" identifier="GrossHomeToGrossVideosSegue" id="fdm-bw-BD5"/>
+                        <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossHomeToGross3DModelSegue" id="xIp-rp-Izy"/>
+                        <segue destination="0HC-13-e6l" kind="push" identifier="GrossHomeToIndexSegue" id="bsx-wD-Vbr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Pv-Rx-LeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2867" y="927"/>
+            <point key="canvasLocation" x="-2097" y="835"/>
+        </scene>
+        <!--Gross Video List View Controller-->
+        <scene sceneID="g7j-7A-wzl">
+            <objects>
+                <viewController id="PDT-Rl-dT5" customClass="GrossVideoListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="op4-9I-tuU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gross Videos List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="syA-FM-CPC">
+                                <rect key="frame" x="316" y="236" width="136" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FAC-e1-1sb">
+                                <rect key="frame" x="700" y="80" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="White Burger.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBurger:" destination="PDT-Rl-dT5" eventType="touchUpInside" id="a5D-cV-Ass"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bP6-XA-xSQ"/>
+                    <connections>
+                        <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossVideosToGross3DSegue" id="ZhW-aB-a9p"/>
+                        <segue destination="W8x-iU-qGh" kind="push" identifier="GrossVideosToGrossHomeSegue" id="8Xb-OS-vit"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="GrossVideosToHomeSegue" id="OIt-Pe-zxd"/>
+                        <segue destination="0HC-13-e6l" kind="push" identifier="GrossVideosToIndexSegue" id="XQG-MY-c3D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LzE-Cd-Edf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2692" y="2193"/>
+        </scene>
+        <!--Gross3D Model View Controller-->
+        <scene sceneID="0AS-eI-oEG">
+            <objects>
+                <viewController id="VUO-9Z-0Vc" customClass="Gross3DModelViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Sn-hZ-Bbc">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gross 3D Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rb9-nQ-Y4O">
+                                <rect key="frame" x="322" y="227" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ml8-WB-lKK">
+                                <rect key="frame" x="700" y="80" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="White Burger.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBurger:" destination="VUO-9Z-0Vc" eventType="touchUpInside" id="Edq-up-65q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="35b-8p-HNF"/>
+                    <connections>
+                        <segue destination="PDT-Rl-dT5" kind="push" identifier="Gross3DToGrossVideosSegue" id="8VA-9P-1Ft"/>
+                        <segue destination="W8x-iU-qGh" kind="push" identifier="Gross3DToGrossHomeSegue" id="fBN-DZ-xZq"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="Gross3DToHomeSegue" id="EZM-zG-zgc"/>
+                        <segue destination="0HC-13-e6l" kind="push" identifier="Gross3DToIndexSegue" id="P9c-qm-8dT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNE-rw-DzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1743" y="2201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TQf-PG-tmx">
@@ -411,17 +634,17 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVI-pu-Qak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-574" y="-538"/>
+            <point key="canvasLocation" x="-1342" y="-1002"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Black Burger.png" width="45" height="45"/>
+        <image name="Blue Button.gif" width="312" height="308"/>
         <image name="E0.png" width="147" height="195"/>
         <image name="Gross.png" width="322" height="305"/>
         <image name="Histo.png" width="578" height="561"/>
         <image name="Stains.png" width="156" height="156"/>
+        <image name="White Burger.png" width="65" height="67"/>
         <image name="burger.png" width="19" height="17"/>
-        <image name="white.png" width="146" height="133"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -429,6 +652,12 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TtF-se-HDQ"/>
+        <segue reference="sOv-Ov-78j"/>
+        <segue reference="fBN-DZ-xZq"/>
+        <segue reference="xIp-rp-Izy"/>
+        <segue reference="fdm-bw-BD5"/>
+        <segue reference="c2K-YH-DqR"/>
+        <segue reference="mhj-Cf-taw"/>
+        <segue reference="Reg-0P-VLu"/>
     </inferredMetricsTieBreakers>
 </document>

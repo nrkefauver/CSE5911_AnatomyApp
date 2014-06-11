@@ -1,19 +1,19 @@
 //
-//  HistologyViewController.m
+//  GrossVideoListViewController.m
 //  HomePage
 //
-//  Created by oblena, erika danielle on 5/23/14.
+//  Created by lutz, bryan jeffrey on 6/9/14.
 //  Copyright (c) 2014 TeamRocket. All rights reserved.
 //
 
-#import "HistologyViewController.h"
+#import "GrossVideoListViewController.h"
 
-@interface HistologyViewController ()
+@interface GrossVideoListViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 @end
 
-@implementation HistologyViewController
-@synthesize imageView = hImageView;
+@implementation GrossVideoListViewController
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,20 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSAssert(self.imageView, @"self.imageView is nil. Check your IBOutlet connections");
-    
-    //Loads main image to Histology main screen
-    UIImage* image = [UIImage imageNamed:@"Histo"];
-    NSAssert(image, @"image is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
-    self.imageView.backgroundColor = [UIColor blackColor];
-    self.imageView.clipsToBounds = YES;
-    self.imageView.image = image;
-}
-
-- (void)viewDidUnload
-{
-    self.imageView = nil;
-    [super viewDidUnload];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,18 +37,21 @@
 
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
+                        [UIImage imageNamed:@"videos"],
+                        [UIImage imageNamed:@"3D Models"],
                         [UIImage imageNamed:@"Index"],
-                        [UIImage imageNamed:@"Letter H"],
+                        [UIImage imageNamed:@"Letter G"],
                         [UIImage imageNamed:@"home"],
                         ];
-//    NSArray *colors = @[
-//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-//                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-//                        ];
-//    
-//    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
+    //    NSArray *colors = @[
+    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
+    //                        ];
+    //
+    //    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
     RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
     callout.delegate = self;
     callout.showFromRight = YES;
@@ -73,19 +62,29 @@
     NSLog(@"Tapped item at index %i",index);
     [sidebar dismissAnimated:YES completion:nil];
     
-    //Index clicked
+    //Videos clicked
     if (index == 0) {
-        [self performSegueWithIdentifier:@"HistoHomeToIndexSegue" sender:self];
+        //Do nothing
     }
     
-    //Histo Home clicked
+    //3D Models clicked
     else if (index == 1) {
-        // Do nothing
+        [self performSegueWithIdentifier:@"GrossVideosToGross3DSegue" sender:self];
+    }
+    
+    //Index clicked
+    else if (index == 2) {
+        [self performSegueWithIdentifier:@"GrossVideosToIndexSegue" sender:self];
+    }
+    
+    //Gross Home clicked
+    else if (index == 3) {
+        [self performSegueWithIdentifier:@"GrossVideosToGrossHomeSegue" sender:self];
     }
     
     //Home clicked
-    else if (index == 2) {
-        [self performSegueWithIdentifier:@"HistoToHomeSegue" sender:self];
+    else if (index == 4) {
+        [self performSegueWithIdentifier:@"GrossVideosToHomeSegue" sender:self];
     }
     
 }
@@ -106,7 +105,6 @@
 - (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
-
 
 
 /*

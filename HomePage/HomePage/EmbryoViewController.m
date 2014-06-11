@@ -97,23 +97,21 @@
     RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
     callout.delegate = self;
     callout.showFromRight = YES;
-    [callout show];
+    [callout showInViewController:self animated:YES];
 }
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
     NSLog(@"Tapped item at index %i",index);
-    
+    [sidebar dismissAnimated:YES completion:nil];
     
     //Animations clicked
     if (index == 0) {
-        [sidebar dismissAnimated:YES completion:nil];
-        //TODO
+        [self performSegueWithIdentifier:@"EmbryoHomeToAnimationsListSegue" sender:self];
     }
     
     //Index clicked
     else if (index == 1) {
-        [sidebar dismissAnimated:YES completion:nil];
-        //TODO
+        [self performSegueWithIdentifier:@"EmbryoHomeToIndexSegue" sender:self];
     }
     
     //Embryo Home clicked
@@ -123,7 +121,6 @@
     
     //Home clicked
     else if (index == 3) {
-        [sidebar dismissAnimated:YES completion:nil];
         [self performSegueWithIdentifier:@"EmbryoToHomeSegue" sender:self];
     }
     
@@ -138,6 +135,13 @@
     }
 }
 
+- (void)sidebar:(RNFrostedSidebar *)sidebar willDismissFromScreenAnimated:(BOOL)animatedYesOrNo {
+    [self.navigationController setNavigationBarHidden:NO animated:animatedYesOrNo];
+}
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
+    [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
+}
 
 /*
 #pragma mark - Navigation
