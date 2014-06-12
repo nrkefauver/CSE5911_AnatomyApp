@@ -110,7 +110,7 @@
     
     //Index clicked
     else if (index == 2) {
-        [self performSegueWithIdentifier:@"NeuroHomeToIndexSegue" sender:self];
+        [self performSegueWithIdentifier:@"NeuroHomeToNeuroIndex" sender:self];
     }
     
     //Neuro Home clicked

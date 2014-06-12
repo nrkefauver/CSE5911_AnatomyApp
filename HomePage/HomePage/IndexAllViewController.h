@@ -8,13 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IndexAllViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate> {
-    
+@interface IndexAllViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate>
+{
     int selectedIndex;
     NSArray *titleArray;
     NSArray *subtitleArray;
     NSArray *textArray;
-    
 }
+
+
 
 @end

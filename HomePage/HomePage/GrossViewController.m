@@ -13,7 +13,6 @@
 @end
 
 @implementation GrossViewController
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -86,7 +85,7 @@
     
     //Index clicked
     else if (index == 2) {
-        [self performSegueWithIdentifier:@"GrossHomeToIndexSegue" sender:self];
+        [self performSegueWithIdentifier:@"GrossHomeToGrossIndex" sender:self];
     }
     
     //Gross Home clicked

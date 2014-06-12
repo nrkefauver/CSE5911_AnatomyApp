@@ -75,7 +75,7 @@
     
     //Index clicked
     if (index == 0) {
-        [self performSegueWithIdentifier:@"HistoHomeToIndexSegue" sender:self];
+        [self performSegueWithIdentifier:@"HistoHomeToHistoIndex" sender:self];
     }
     
     //Histo Home clicked

@@ -42,7 +42,6 @@ NSArray *searchResults;
     titleArray = [[NSMutableArray alloc] init];
    
     
-    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Neuroterms" ofType:@"plist"];
     
     //Creates dictionary of Neuroanatomy terms
@@ -57,9 +56,10 @@ NSArray *searchResults;
     
     //Creates array of definitions
     textArray = [dict allValues];
+    
+
   
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -164,7 +164,6 @@ NSArray *searchResults;
                                                                         selectedScopeButtonIndex]]];
     return YES;
 }
-
 
 /*
 #pragma mark - Navigation

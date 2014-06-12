@@ -7,7 +7,6 @@
 //
 
 #import "GrossVideoListViewController.h"
-
 @interface GrossVideoListViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 @end
@@ -74,7 +73,8 @@
     
     //Index clicked
     else if (index == 2) {
-        [self performSegueWithIdentifier:@"GrossVideosToIndexSegue" sender:self];
+        [self performSegueWithIdentifier:@"GrossIndex" sender:self];
+        
     }
     
     //Gross Home clicked
@@ -88,6 +88,8 @@
     }
     
 }
+
+
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
     if (itemEnabled) {

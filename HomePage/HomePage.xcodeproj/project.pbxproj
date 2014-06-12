@@ -38,7 +38,6 @@
 		D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA83D1947936900C01BBF /* GrossIndexViewController.m */; };
 		D00CA8411947941900C01BBF /* HistoIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA8401947941900C01BBF /* HistoIndexViewController.m */; };
 		D00CA8441947948F00C01BBF /* EmbryoIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA8431947948F00C01BBF /* EmbryoIndexViewController.m */; };
-		D00CA84A19479FB300C01BBF /* SRExpandableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA84919479FB300C01BBF /* SRExpandableTableViewController.m */; };
 		D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */ = {isa = PBXBuildFile; fileRef = D02074EB1944FE9F00AADFDA /* Blue Button.gif */; };
 		D02074EE1944FF8700AADFDA /* White Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = D02074ED1944FF8700AADFDA /* White Burger.png */; };
 		D0253F42193FE10A00CFE2AC /* E0.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F3A193FE10A00CFE2AC /* E0.png */; };
@@ -125,8 +124,6 @@
 		D00CA8401947941900C01BBF /* HistoIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoIndexViewController.m; sourceTree = "<group>"; };
 		D00CA8421947948F00C01BBF /* EmbryoIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbryoIndexViewController.h; sourceTree = "<group>"; };
 		D00CA8431947948F00C01BBF /* EmbryoIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoIndexViewController.m; sourceTree = "<group>"; };
-		D00CA84819479FB300C01BBF /* SRExpandableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRExpandableTableViewController.h; sourceTree = "<group>"; };
-		D00CA84919479FB300C01BBF /* SRExpandableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRExpandableTableViewController.m; sourceTree = "<group>"; };
 		D02074EB1944FE9F00AADFDA /* Blue Button.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Blue Button.gif"; path = "Images/Blue Button.gif"; sourceTree = "<group>"; };
 		D02074ED1944FF8700AADFDA /* White Burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "White Burger.png"; path = "Images/White Burger.png"; sourceTree = "<group>"; };
 		D0253F3A193FE10A00CFE2AC /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E0.png; path = Images/E0.png; sourceTree = "<group>"; };
@@ -200,6 +197,7 @@
 		462CB057193CFDD100B6CF72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D02074ED1944FF8700AADFDA /* White Burger.png */,
 				D02074EB1944FE9F00AADFDA /* Blue Button.gif */,
 				D0253F3A193FE10A00CFE2AC /* E0.png */,
 				D0253F3B193FE10A00CFE2AC /* E1.png */,
@@ -290,8 +288,6 @@
 			children = (
 				D06E5E6A192FA9F600A12651 /* IndexAllViewController.m */,
 				D06E5E69192FA9F600A12651 /* IndexAllViewController.h */,
-				D00CA84819479FB300C01BBF /* SRExpandableTableViewController.h */,
-				D00CA84919479FB300C01BBF /* SRExpandableTableViewController.m */,
 			);
 			name = IndexAll;
 			sourceTree = "<group>";
@@ -343,7 +339,6 @@
 				D06E5E40192FA51D00A12651 /* HomePageAppDelegate.h */,
 				D06E5E41192FA51D00A12651 /* HomePageAppDelegate.m */,
 				D06E5E43192FA51D00A12651 /* Main.storyboard */,
-				D02074ED1944FF8700AADFDA /* White Burger.png */,
 				D06E5E46192FA51D00A12651 /* HomePageViewController.h */,
 				D06E5E47192FA51D00A12651 /* HomePageViewController.m */,
 				D06E5E49192FA51D00A12651 /* Images.xcassets */,
@@ -542,7 +537,6 @@
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,
 				5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */,
 				D06E5E3E192FA51D00A12651 /* main.m in Sources */,
-				D00CA84A19479FB300C01BBF /* SRExpandableTableViewController.m in Sources */,
 				D06E5E48192FA51D00A12651 /* HomePageViewController.m in Sources */,
 				5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */,
 				D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */,

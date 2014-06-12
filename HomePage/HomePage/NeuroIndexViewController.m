@@ -159,6 +159,7 @@ NSArray *searchResults;
 }
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    controller.displaysSearchBarInNavigationBar = YES;
     [controller.searchResultsTableView setBackgroundColor:[UIColor blackColor]];
     [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
                                                          objectAtIndex:[self.searchDisplayController.searchBar

@@ -39,7 +39,6 @@ NSArray *searchResults;
     
     //Set index to -1 saying no cell is expanded or should expand.
     selectedIndex = -1;
-    
     titleArray = [[NSMutableArray alloc] init];
     
     
