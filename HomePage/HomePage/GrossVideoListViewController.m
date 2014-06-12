@@ -34,6 +34,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)onVideoPlay:(id)sender {
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"sample" ofType:@"mp4"];
+    NSURL *streamURL = [NSURL fileURLWithPath:videoPath];
+    MPMoviePlayerController *moviplayer =[[MPMoviePlayerController alloc] initWithContentURL:     streamURL];
+    
+    [moviplayer prepareToPlay];
+    [moviplayer.view setFrame: self.view.bounds];
+    [self.view addSubview: moviplayer.view];
+    
+    moviplayer.fullscreen = NO;
+    moviplayer.shouldAutoplay = YES;
+    moviplayer.repeatMode = MPMovieRepeatModeOne;
+    moviplayer.movieSourceType = MPMovieSourceTypeFile;
+    [moviplayer play];
+}
+
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
                         [UIImage imageNamed:@"videos"],

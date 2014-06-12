@@ -740,10 +740,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gross Videos List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="syA-FM-CPC">
-                                <rect key="frame" x="316" y="236" width="136" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="syA-FM-CPC">
+                                <rect key="frame" x="313" y="109" width="214" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Gross Videos List">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="25" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FAC-e1-1sb">
@@ -756,8 +764,25 @@
                                     <action selector="onBurger:" destination="PDT-Rl-dT5" eventType="touchUpInside" id="a5D-cV-Ass"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="tkJ-xt-ON0">
+                                <rect key="frame" x="120" y="197" width="248" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Blue Button.gif">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sample">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="onVideoPlay:" destination="PDT-Rl-dT5" eventType="touchUpInside" id="YqV-c8-XD9"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="bP6-XA-xSQ"/>
                     <connections>
@@ -934,12 +959,12 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sOv-Ov-78j"/>
-        <segue reference="hOH-RS-S2g"/>
-        <segue reference="Cbj-Qs-rfV"/>
-        <segue reference="xgI-CB-z14"/>
+        <segue reference="XQG-MY-c3D"/>
         <segue reference="fdm-bw-BD5"/>
-        <segue reference="fBN-DZ-xZq"/>
-        <segue reference="xIp-rp-Izy"/>
+        <segue reference="8Xb-OS-vit"/>
+        <segue reference="OIt-Pe-zxd"/>
+        <segue reference="ZhW-aB-a9p"/>
+        <segue reference="8Ym-jz-PyO"/>
+        <segue reference="Cbj-Qs-rfV"/>
     </inferredMetricsTieBreakers>
 </document>

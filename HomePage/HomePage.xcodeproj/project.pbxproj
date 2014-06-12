@@ -31,6 +31,7 @@
 		5953AA101946802C00677409 /* Gross3DModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA0F1946802C00677409 /* Gross3DModelViewController.m */; };
 		5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */; };
 		5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA15194683B000677409 /* EmbryoAnimationsListViewController.m */; };
+		59B307CB194A42BF00B4D251 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 59B307CA194A42BF00B4D251 /* sample.mp4 */; };
 		D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA833194785A700C01BBF /* Embryoterms.plist */; };
 		D00CA836194785B500C01BBF /* Histoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA835194785B500C01BBF /* Histoterms.plist */; };
 		D00CA838194785C200C01BBF /* Grossterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA837194785C200C01BBF /* Grossterms.plist */; };
@@ -113,6 +114,7 @@
 		5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroAnimationsListViewController.m; sourceTree = "<group>"; };
 		5953AA14194683B000677409 /* EmbryoAnimationsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbryoAnimationsListViewController.h; sourceTree = "<group>"; };
 		5953AA15194683B000677409 /* EmbryoAnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoAnimationsListViewController.m; sourceTree = "<group>"; };
+		59B307CA194A42BF00B4D251 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
 		D00CA833194785A700C01BBF /* Embryoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Embryoterms.plist; sourceTree = "<group>"; };
 		D00CA835194785B500C01BBF /* Histoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Histoterms.plist; sourceTree = "<group>"; };
 		D00CA837194785C200C01BBF /* Grossterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grossterms.plist; sourceTree = "<group>"; };
@@ -231,6 +233,25 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		59B307C6194A3C3200B4D251 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				59B307CA194A42BF00B4D251 /* sample.mp4 */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+		59B307C9194A418C00B4D251 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				D02F1CFA194644350095A8E9 /* Neuroterms.plist */,
+				D00CA833194785A700C01BBF /* Embryoterms.plist */,
+				D00CA835194785B500C01BBF /* Histoterms.plist */,
+				D00CA837194785C200C01BBF /* Grossterms.plist */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
 		D0253F24193FD6F700CFE2AC /* Embryology */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,10 +364,6 @@
 				D06E5E47192FA51D00A12651 /* HomePageViewController.m */,
 				D06E5E49192FA51D00A12651 /* Images.xcassets */,
 				D06E5E38192FA51D00A12651 /* Supporting Files */,
-				D02F1CFA194644350095A8E9 /* Neuroterms.plist */,
-				D00CA833194785A700C01BBF /* Embryoterms.plist */,
-				D00CA835194785B500C01BBF /* Histoterms.plist */,
-				D00CA837194785C200C01BBF /* Grossterms.plist */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -354,6 +371,8 @@
 		D06E5E38192FA51D00A12651 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				59B307C9194A418C00B4D251 /* XML */,
+				59B307C6194A3C3200B4D251 /* Videos */,
 				D0253F28193FD73400CFE2AC /* IndexAll */,
 				D0253F27193FD72100CFE2AC /* Neuroanatomy */,
 				D0253F26193FD71900CFE2AC /* Gross Anatomy */,
@@ -504,6 +523,7 @@
 				D00CA836194785B500C01BBF /* Histoterms.plist in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
+				59B307CB194A42BF00B4D251 /* sample.mp4 in Resources */,
 				46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
 				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
