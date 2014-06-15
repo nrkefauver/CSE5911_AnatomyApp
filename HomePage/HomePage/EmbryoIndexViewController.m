@@ -49,8 +49,11 @@ NSArray *searchResults;
     //Creates dictionary of Neuroanatomy terms
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     
-    //Create alphabetical list of keys
+    //Create alphabetical list of definition names
     NSArray * sortedKeys = [[dict allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+    
+    //Create alphabetical list of definitions
+    NSArray * sortedValues = [dict objectsForKeys: sortedKeys notFoundMarker: [NSNull null]];
     
     //Creates an array of all the definition names to be searched through
     titleArray = sortedKeys;
@@ -59,7 +62,7 @@ NSArray *searchResults;
     subtitleArray = sortedKeys;
     
     //Creates array of definitions
-    textArray = [dict allValues];
+    textArray = sortedValues;
     
 }
 
