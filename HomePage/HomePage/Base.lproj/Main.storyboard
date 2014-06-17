@@ -654,8 +654,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Cervical"/>
-                                    <segment title="Lumbar"/>
                                     <segment title="Thoracic"/>
+                                    <segment title="Lumbar"/>
                                     <segment title="Sacral"/>
                                 </segments>
                                 <connections>
