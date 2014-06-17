@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461B45E61950CE980000189B /* Cervical_Drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45DE1950CE980000189B /* Cervical_Drawing.png */; };
+		461B45E71950CE980000189B /* Cervical_Scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45DF1950CE980000189B /* Cervical_Scan.png */; };
+		461B45E81950CE980000189B /* Lumbar_Drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45E01950CE980000189B /* Lumbar_Drawing.png */; };
+		461B45E91950CE980000189B /* Lumbar_Scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45E11950CE980000189B /* Lumbar_Scan.png */; };
+		461B45EA1950CE980000189B /* Sacral_Drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45E21950CE980000189B /* Sacral_Drawing.png */; };
+		461B45EB1950CE980000189B /* Sacral_Scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45E31950CE980000189B /* Sacral_Scan.png */; };
+		461B45EC1950CE980000189B /* Thoracic_Drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45E41950CE980000189B /* Thoracic_Drawing.png */; };
+		461B45ED1950CE980000189B /* Thoracic_Scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45E51950CE980000189B /* Thoracic_Scan.png */; };
 		462CB052193CFDB200B6CF72 /* Letter E.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB04D193CFDB200B6CF72 /* Letter E.png */; };
 		462CB053193CFDB200B6CF72 /* Letter G.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB04E193CFDB200B6CF72 /* Letter G.png */; };
 		462CB054193CFDB200B6CF72 /* Letter H.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB04F193CFDB200B6CF72 /* Letter H.png */; };
@@ -105,6 +113,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		461B45DE1950CE980000189B /* Cervical_Drawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cervical_Drawing.png; sourceTree = "<group>"; };
+		461B45DF1950CE980000189B /* Cervical_Scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cervical_Scan.png; sourceTree = "<group>"; };
+		461B45E01950CE980000189B /* Lumbar_Drawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lumbar_Drawing.png; sourceTree = "<group>"; };
+		461B45E11950CE980000189B /* Lumbar_Scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lumbar_Scan.png; sourceTree = "<group>"; };
+		461B45E21950CE980000189B /* Sacral_Drawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sacral_Drawing.png; sourceTree = "<group>"; };
+		461B45E31950CE980000189B /* Sacral_Scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sacral_Scan.png; sourceTree = "<group>"; };
+		461B45E41950CE980000189B /* Thoracic_Drawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thoracic_Drawing.png; sourceTree = "<group>"; };
+		461B45E51950CE980000189B /* Thoracic_Scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thoracic_Scan.png; sourceTree = "<group>"; };
 		462CB04D193CFDB200B6CF72 /* Letter E.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Letter E.png"; path = "Images/Letter E.png"; sourceTree = "<group>"; };
 		462CB04E193CFDB200B6CF72 /* Letter G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Letter G.png"; path = "Images/Letter G.png"; sourceTree = "<group>"; };
 		462CB04F193CFDB200B6CF72 /* Letter H.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Letter H.png"; path = "Images/Letter H.png"; sourceTree = "<group>"; };
@@ -325,6 +341,14 @@
 		5962242419508A3A00701B76 /* Neuro */ = {
 			isa = PBXGroup;
 			children = (
+				461B45DE1950CE980000189B /* Cervical_Drawing.png */,
+				461B45DF1950CE980000189B /* Cervical_Scan.png */,
+				461B45E01950CE980000189B /* Lumbar_Drawing.png */,
+				461B45E11950CE980000189B /* Lumbar_Scan.png */,
+				461B45E21950CE980000189B /* Sacral_Drawing.png */,
+				461B45E31950CE980000189B /* Sacral_Scan.png */,
+				461B45E41950CE980000189B /* Thoracic_Drawing.png */,
+				461B45E51950CE980000189B /* Thoracic_Scan.png */,
 				5962242519508A3A00701B76 /* neuro-cerv-scan.jpg */,
 				5962242619508A3A00701B76 /* neuro-cerv.jpg */,
 				5962242719508A3A00701B76 /* neuro-lumb-scan.jpg */,
@@ -607,11 +631,14 @@
 				5962243019508A3A00701B76 /* Neural Tube Labelled.png in Resources */,
 				466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */,
 				5962243819508A3A00701B76 /* neuro-cerv.jpg in Resources */,
+				461B45EA1950CE980000189B /* Sacral_Drawing.png in Resources */,
 				D02074EE1944FF8700AADFDA /* White Burger.png in Resources */,
 				46AC5F16193E6461003F1E12 /* NeuroL.png in Resources */,
+				461B45E71950CE980000189B /* Cervical_Scan.png in Resources */,
 				462CB05C193D053E00B6CF72 /* Slides.png in Resources */,
 				D0253F47193FE10A00CFE2AC /* E5.png in Resources */,
 				5962243219508A3A00701B76 /* Neuroepithelium.png in Resources */,
+				461B45E61950CE980000189B /* Cervical_Drawing.png in Resources */,
 				5962242D19508A3A00701B76 /* CNS Development.png in Resources */,
 				462CB055193CFDB200B6CF72 /* Letter N.png in Resources */,
 				5962243519508A3A00701B76 /* histo1.jpg in Resources */,
@@ -629,6 +656,7 @@
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
 				5962241519508A1500701B76 /* Neuraltube_001.mp4 in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
+				461B45EC1950CE980000189B /* Thoracic_Drawing.png in Resources */,
 				D0253F43193FE10A00CFE2AC /* E1.png in Resources */,
 				D0EC0C1A19369684005A9138 /* Histo.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
@@ -643,9 +671,11 @@
 				D0253F44193FE10A00CFE2AC /* E2.png in Resources */,
 				D0253F45193FE10A00CFE2AC /* E3.png in Resources */,
 				D00CA836194785B500C01BBF /* Histoterms.plist in Resources */,
+				461B45E91950CE980000189B /* Lumbar_Scan.png in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
 				5962243B19508A3A00701B76 /* neuro-sacral-scan.jpg in Resources */,
+				461B45EB1950CE980000189B /* Sacral_Scan.png in Resources */,
 				46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
 				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
@@ -658,6 +688,8 @@
 				5962243419508A3A00701B76 /* Spinal Cord Further Development.png in Resources */,
 				5962243919508A3A00701B76 /* neuro-lumb-scan.jpg in Resources */,
 				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
+				461B45E81950CE980000189B /* Lumbar_Drawing.png in Resources */,
+				461B45ED1950CE980000189B /* Thoracic_Scan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

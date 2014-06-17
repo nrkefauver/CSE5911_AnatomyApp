@@ -15,6 +15,17 @@
 
 @property (nonatomic, retain) IBOutlet UIImageView* imageView;
 
+enum NeuroImageSelected {
+    cervicalScan,
+    cervicalDrawing,
+    thoracicScan,
+    thoracicDrawing,
+    lumbarScan,
+    lumbarDrawing,
+    sacralScan,
+    sacralDrawing
+};
+
 - (IBAction) contentModeChanged: (UISegmentedControl*)segmentedControl;
 
 @end

@@ -635,7 +635,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stains.png" id="PQu-w0-D3b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cervical_Scan.png" id="PQu-w0-D3b">
                                 <rect key="frame" x="158" y="253" width="453" height="366"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -662,6 +662,16 @@
                                     <action selector="contentModeChanged:" destination="Z1N-LW-t3Y" eventType="valueChanged" id="FiD-gu-sgL"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h98-tw-9Oj">
+                                <rect key="frame" x="158" y="253" width="453" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageClicked:" destination="Z1N-LW-t3Y" eventType="touchUpInside" id="6Yk-eI-wWJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1061,9 +1071,9 @@
     </scenes>
     <resources>
         <image name="Blue Button.gif" width="312" height="308"/>
+        <image name="Cervical_Scan.png" width="786" height="502"/>
         <image name="E0.png" width="147" height="195"/>
         <image name="Gross.png" width="322" height="305"/>
-        <image name="Stains.png" width="156" height="156"/>
         <image name="White Burger.png" width="65" height="67"/>
         <image name="burger.png" width="19" height="17"/>
         <image name="histo1.jpg" width="1280" height="1024"/>
