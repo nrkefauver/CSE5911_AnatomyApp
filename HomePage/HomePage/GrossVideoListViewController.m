@@ -35,7 +35,7 @@
 }
 
 -(IBAction)onVideoPlay:(id)sender {
-    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"sample" ofType:@"mp4"];
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"Neuraltube_001" ofType:@"mp4"];
     NSURL *streamURL = [NSURL fileURLWithPath:videoPath];
     MPMoviePlayerController *moviplayer =[[MPMoviePlayerController alloc] initWithContentURL:     streamURL];
     

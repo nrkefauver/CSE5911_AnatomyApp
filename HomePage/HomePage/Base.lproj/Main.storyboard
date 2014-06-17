@@ -399,10 +399,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Histo.png" id="WGx-Rd-P6H">
-                                <rect key="frame" x="148" y="208" width="473" height="370"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t18-ve-D91">
                                 <rect key="frame" x="289" y="89" width="191" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -427,12 +423,45 @@
                                     <action selector="onBurger:" destination="Ifm-8S-R9e" eventType="touchUpInside" id="R3z-8d-l64"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Tlg-fq-N2E">
+                                <rect key="frame" x="235" y="183" width="298" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Blue Button.gif">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Slide 1">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="1Hf-Ur-mTZ" kind="push" id="cJR-WW-2h7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="49i-9e-Lyw">
+                                <rect key="frame" x="228" y="313" width="313" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Blue Button.gif">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Slide 2">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="6wj-W4-l34" kind="push" id="5sh-3G-Icl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bd9-pL-xqp"/>
                     <connections>
-                        <outlet property="imageView" destination="WGx-Rd-P6H" id="Xb1-1X-JMF"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="HistoToHomeSegue" id="AwG-wi-xhT"/>
                         <segue destination="0HC-13-e6l" kind="push" identifier="HistoHomeToIndexSegue" id="far-xO-xjq"/>
                         <segue destination="zrV-VM-hcI" kind="push" identifier="HistoHomeToHistoIndex" id="iXe-hZ-jWL"/>
@@ -440,7 +469,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pvu-Oo-gaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17" y="835"/>
+            <point key="canvasLocation" x="-737" y="827"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DEZ-54-Fyx">
+            <objects>
+                <viewController id="1Hf-Ur-mTZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hly-wK-FfP">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="histo1.jpg" id="UDp-6O-roh">
+                                <rect key="frame" x="-172" y="180" width="956" height="765"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Histo slide 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZBO-NV-QiH">
+                                <rect key="frame" x="287" y="101" width="111" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z9M-fH-5ft"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcg-Mk-wn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1174" y="2193"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8cG-m2-GEk">
+            <objects>
+                <viewController id="6wj-W4-l34" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EoW-Ke-XnU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Histo slide 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lml-r0-W0u">
+                                <rect key="frame" x="363" y="94" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="histo2.jpg" id="02c-Uf-04b">
+                                <rect key="frame" x="-862" y="142" width="2453" height="1864"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ttK-YO-I66"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2QC-DX-m7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="2193"/>
         </scene>
         <!--Histo Index View Controller-->
         <scene sceneID="axA-tU-bwz">
@@ -569,7 +652,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igv-Zk-Ffw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4130" y="835"/>
+            <point key="canvasLocation" x="4954" y="835"/>
         </scene>
         <!--Neuro Animations List View Controller-->
         <scene sceneID="BCY-Hm-ZMe">
@@ -607,7 +690,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwd-uP-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3758" y="2185"/>
+            <point key="canvasLocation" x="4582" y="2185"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eGR-tf-YJC">
@@ -621,7 +704,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csN-7P-DJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4598" y="2185"/>
+            <point key="canvasLocation" x="5422" y="2185"/>
         </scene>
         <!--Gross Index View Controller-->
         <scene sceneID="jOQ-yD-bpZ">
@@ -670,7 +753,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="4244" y="3375"/>
+            <point key="canvasLocation" x="5068" y="3375"/>
         </scene>
         <!--Gross View Controller-->
         <scene sceneID="ZqH-ui-cXm">
@@ -730,7 +813,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Pv-Rx-LeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2097" y="835"/>
+            <point key="canvasLocation" x="-4201" y="835"/>
         </scene>
         <!--Gross Video List View Controller-->
         <scene sceneID="g7j-7A-wzl">
@@ -741,7 +824,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="syA-FM-CPC">
-                                <rect key="frame" x="313" y="109" width="214" height="50"/>
+                                <rect key="frame" x="277" y="80" width="214" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Gross Videos List">
@@ -765,11 +848,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="tkJ-xt-ON0">
-                                <rect key="frame" x="120" y="197" width="248" height="56"/>
+                                <rect key="frame" x="240" y="163" width="289" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Blue Button.gif">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Sample">
+                                        <fragment content="Neural Tube 01">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="23" name="Georgia-Bold"/>
@@ -794,7 +877,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzE-Cd-Edf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2692" y="2193"/>
+            <point key="canvasLocation" x="-4796" y="2193"/>
         </scene>
         <!--Gross3D Model View Controller-->
         <scene sceneID="0AS-eI-oEG">
@@ -833,7 +916,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNE-rw-DzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1743" y="2201"/>
+            <point key="canvasLocation" x="-3847" y="2201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TQf-PG-tmx">
@@ -941,17 +1024,18 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-1743" y="3362"/>
+            <point key="canvasLocation" x="-3847" y="3362"/>
         </scene>
     </scenes>
     <resources>
         <image name="Blue Button.gif" width="312" height="308"/>
         <image name="E0.png" width="147" height="195"/>
         <image name="Gross.png" width="322" height="305"/>
-        <image name="Histo.png" width="578" height="561"/>
         <image name="Stains.png" width="156" height="156"/>
         <image name="White Burger.png" width="65" height="67"/>
         <image name="burger.png" width="19" height="17"/>
+        <image name="histo1.jpg" width="1280" height="1024"/>
+        <image name="histo2.jpg" width="2453" height="1864"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -959,12 +1043,12 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="XQG-MY-c3D"/>
         <segue reference="fdm-bw-BD5"/>
-        <segue reference="8Xb-OS-vit"/>
-        <segue reference="OIt-Pe-zxd"/>
+        <segue reference="2YT-sS-ArM"/>
+        <segue reference="AwG-wi-xhT"/>
+        <segue reference="far-xO-xjq"/>
         <segue reference="ZhW-aB-a9p"/>
-        <segue reference="8Ym-jz-PyO"/>
-        <segue reference="Cbj-Qs-rfV"/>
+        <segue reference="sOv-Ov-78j"/>
+        <segue reference="c2K-YH-DqR"/>
     </inferredMetricsTieBreakers>
 </document>

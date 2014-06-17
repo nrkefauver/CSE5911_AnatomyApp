@@ -27,14 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSAssert(self.imageView, @"self.imageView is nil. Check your IBOutlet connections");
-    
-    //Loads main image to Histology main screen
-    UIImage* image = [UIImage imageNamed:@"Histo"];
-    NSAssert(image, @"image is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
-    self.imageView.backgroundColor = [UIColor blackColor];
-    self.imageView.clipsToBounds = YES;
-    self.imageView.image = image;
 }
 
 - (void)viewDidUnload

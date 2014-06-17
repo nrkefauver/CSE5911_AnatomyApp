@@ -31,7 +31,27 @@
 		5953AA101946802C00677409 /* Gross3DModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA0F1946802C00677409 /* Gross3DModelViewController.m */; };
 		5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */; };
 		5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA15194683B000677409 /* EmbryoAnimationsListViewController.m */; };
-		59B307CB194A42BF00B4D251 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 59B307CA194A42BF00B4D251 /* sample.mp4 */; };
+		5962241519508A1500701B76 /* Neuraltube_001.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5962241319508A1500701B76 /* Neuraltube_001.mp4 */; };
+		5962242D19508A3A00701B76 /* CNS Development.png in Resources */ = {isa = PBXBuildFile; fileRef = 5962241819508A3A00701B76 /* CNS Development.png */; };
+		5962242E19508A3A00701B76 /* Initial Spinal Cord.png in Resources */ = {isa = PBXBuildFile; fileRef = 5962241919508A3A00701B76 /* Initial Spinal Cord.png */; };
+		5962242F19508A3A00701B76 /* Neural Tube Formation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5962241A19508A3A00701B76 /* Neural Tube Formation.png */; };
+		5962243019508A3A00701B76 /* Neural Tube Labelled.png in Resources */ = {isa = PBXBuildFile; fileRef = 5962241B19508A3A00701B76 /* Neural Tube Labelled.png */; };
+		5962243119508A3A00701B76 /* Neural Tube Patterning.png in Resources */ = {isa = PBXBuildFile; fileRef = 5962241C19508A3A00701B76 /* Neural Tube Patterning.png */; };
+		5962243219508A3A00701B76 /* Neuroepithelium.png in Resources */ = {isa = PBXBuildFile; fileRef = 5962241D19508A3A00701B76 /* Neuroepithelium.png */; };
+		5962243319508A3A00701B76 /* SC change position.png in Resources */ = {isa = PBXBuildFile; fileRef = 5962241E19508A3A00701B76 /* SC change position.png */; };
+		5962243419508A3A00701B76 /* Spinal Cord Further Development.png in Resources */ = {isa = PBXBuildFile; fileRef = 5962241F19508A3A00701B76 /* Spinal Cord Further Development.png */; };
+		5962243519508A3A00701B76 /* histo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242219508A3A00701B76 /* histo1.jpg */; };
+		5962243619508A3A00701B76 /* histo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242319508A3A00701B76 /* histo2.jpg */; };
+		5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242519508A3A00701B76 /* neuro-cerv-scan.jpg */; };
+		5962243819508A3A00701B76 /* neuro-cerv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242619508A3A00701B76 /* neuro-cerv.jpg */; };
+		5962243919508A3A00701B76 /* neuro-lumb-scan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242719508A3A00701B76 /* neuro-lumb-scan.jpg */; };
+		5962243A19508A3A00701B76 /* neuro-lumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242819508A3A00701B76 /* neuro-lumb.jpg */; };
+		5962243B19508A3A00701B76 /* neuro-sacral-scan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242919508A3A00701B76 /* neuro-sacral-scan.jpg */; };
+		5962243C19508A3A00701B76 /* neuro-sacral.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242A19508A3A00701B76 /* neuro-sacral.jpg */; };
+		5962243D19508A3A00701B76 /* neuro-thoracic-scan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242B19508A3A00701B76 /* neuro-thoracic-scan.jpg */; };
+		5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242C19508A3A00701B76 /* neuro-thoracic.jpg */; };
+		5962244119508F4000701B76 /* HistoSlide1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962244019508F4000701B76 /* HistoSlide1ViewController.m */; };
+		596224441950907000701B76 /* HistoSlide2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596224431950907000701B76 /* HistoSlide2ViewController.m */; };
 		D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA833194785A700C01BBF /* Embryoterms.plist */; };
 		D00CA836194785B500C01BBF /* Histoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA835194785B500C01BBF /* Histoterms.plist */; };
 		D00CA838194785C200C01BBF /* Grossterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA837194785C200C01BBF /* Grossterms.plist */; };
@@ -114,7 +134,29 @@
 		5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroAnimationsListViewController.m; sourceTree = "<group>"; };
 		5953AA14194683B000677409 /* EmbryoAnimationsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbryoAnimationsListViewController.h; sourceTree = "<group>"; };
 		5953AA15194683B000677409 /* EmbryoAnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoAnimationsListViewController.m; sourceTree = "<group>"; };
-		59B307CA194A42BF00B4D251 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		5962241319508A1500701B76 /* Neuraltube_001.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neuraltube_001.mp4; sourceTree = "<group>"; };
+		5962241819508A3A00701B76 /* CNS Development.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CNS Development.png"; sourceTree = "<group>"; };
+		5962241919508A3A00701B76 /* Initial Spinal Cord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Initial Spinal Cord.png"; sourceTree = "<group>"; };
+		5962241A19508A3A00701B76 /* Neural Tube Formation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Neural Tube Formation.png"; sourceTree = "<group>"; };
+		5962241B19508A3A00701B76 /* Neural Tube Labelled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Neural Tube Labelled.png"; sourceTree = "<group>"; };
+		5962241C19508A3A00701B76 /* Neural Tube Patterning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Neural Tube Patterning.png"; sourceTree = "<group>"; };
+		5962241D19508A3A00701B76 /* Neuroepithelium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Neuroepithelium.png; sourceTree = "<group>"; };
+		5962241E19508A3A00701B76 /* SC change position.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SC change position.png"; sourceTree = "<group>"; };
+		5962241F19508A3A00701B76 /* Spinal Cord Further Development.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spinal Cord Further Development.png"; sourceTree = "<group>"; };
+		5962242219508A3A00701B76 /* histo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = histo1.jpg; sourceTree = "<group>"; };
+		5962242319508A3A00701B76 /* histo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = histo2.jpg; sourceTree = "<group>"; };
+		5962242519508A3A00701B76 /* neuro-cerv-scan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro-cerv-scan.jpg"; sourceTree = "<group>"; };
+		5962242619508A3A00701B76 /* neuro-cerv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro-cerv.jpg"; sourceTree = "<group>"; };
+		5962242719508A3A00701B76 /* neuro-lumb-scan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro-lumb-scan.jpg"; sourceTree = "<group>"; };
+		5962242819508A3A00701B76 /* neuro-lumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro-lumb.jpg"; sourceTree = "<group>"; };
+		5962242919508A3A00701B76 /* neuro-sacral-scan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro-sacral-scan.jpg"; sourceTree = "<group>"; };
+		5962242A19508A3A00701B76 /* neuro-sacral.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro-sacral.jpg"; sourceTree = "<group>"; };
+		5962242B19508A3A00701B76 /* neuro-thoracic-scan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro-thoracic-scan.jpg"; sourceTree = "<group>"; };
+		5962242C19508A3A00701B76 /* neuro-thoracic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro-thoracic.jpg"; sourceTree = "<group>"; };
+		5962243F19508F4000701B76 /* HistoSlide1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoSlide1ViewController.h; sourceTree = "<group>"; };
+		5962244019508F4000701B76 /* HistoSlide1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoSlide1ViewController.m; sourceTree = "<group>"; };
+		596224421950907000701B76 /* HistoSlide2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoSlide2ViewController.h; sourceTree = "<group>"; };
+		596224431950907000701B76 /* HistoSlide2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoSlide2ViewController.m; sourceTree = "<group>"; };
 		D00CA833194785A700C01BBF /* Embryoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Embryoterms.plist; sourceTree = "<group>"; };
 		D00CA835194785B500C01BBF /* Histoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Histoterms.plist; sourceTree = "<group>"; };
 		D00CA837194785C200C01BBF /* Grossterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grossterms.plist; sourceTree = "<group>"; };
@@ -199,6 +241,10 @@
 		462CB057193CFDD100B6CF72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5962241719508A3A00701B76 /* Embryo */,
+				5962242019508A3A00701B76 /* Gross */,
+				5962242119508A3A00701B76 /* Histo */,
+				5962242419508A3A00701B76 /* Neuro */,
 				D02074ED1944FF8700AADFDA /* White Burger.png */,
 				D02074EB1944FE9F00AADFDA /* Blue Button.gif */,
 				D0253F3A193FE10A00CFE2AC /* E0.png */,
@@ -233,10 +279,69 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		5962241219508A1500701B76 /* Embryo */ = {
+			isa = PBXGroup;
+			children = (
+				5962241319508A1500701B76 /* Neuraltube_001.mp4 */,
+			);
+			name = Embryo;
+			path = Videos/Embryo;
+			sourceTree = "<group>";
+		};
+		5962241719508A3A00701B76 /* Embryo */ = {
+			isa = PBXGroup;
+			children = (
+				5962241819508A3A00701B76 /* CNS Development.png */,
+				5962241919508A3A00701B76 /* Initial Spinal Cord.png */,
+				5962241A19508A3A00701B76 /* Neural Tube Formation.png */,
+				5962241B19508A3A00701B76 /* Neural Tube Labelled.png */,
+				5962241C19508A3A00701B76 /* Neural Tube Patterning.png */,
+				5962241D19508A3A00701B76 /* Neuroepithelium.png */,
+				5962241E19508A3A00701B76 /* SC change position.png */,
+				5962241F19508A3A00701B76 /* Spinal Cord Further Development.png */,
+			);
+			name = Embryo;
+			path = Images/Embryo;
+			sourceTree = "<group>";
+		};
+		5962242019508A3A00701B76 /* Gross */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Gross;
+			path = Images/Gross;
+			sourceTree = "<group>";
+		};
+		5962242119508A3A00701B76 /* Histo */ = {
+			isa = PBXGroup;
+			children = (
+				5962242219508A3A00701B76 /* histo1.jpg */,
+				5962242319508A3A00701B76 /* histo2.jpg */,
+			);
+			name = Histo;
+			path = Images/Histo;
+			sourceTree = "<group>";
+		};
+		5962242419508A3A00701B76 /* Neuro */ = {
+			isa = PBXGroup;
+			children = (
+				5962242519508A3A00701B76 /* neuro-cerv-scan.jpg */,
+				5962242619508A3A00701B76 /* neuro-cerv.jpg */,
+				5962242719508A3A00701B76 /* neuro-lumb-scan.jpg */,
+				5962242819508A3A00701B76 /* neuro-lumb.jpg */,
+				5962242919508A3A00701B76 /* neuro-sacral-scan.jpg */,
+				5962242A19508A3A00701B76 /* neuro-sacral.jpg */,
+				5962242B19508A3A00701B76 /* neuro-thoracic-scan.jpg */,
+				5962242C19508A3A00701B76 /* neuro-thoracic.jpg */,
+			);
+			name = Neuro;
+			path = Images/Neuro;
+			sourceTree = "<group>";
+		};
 		59B307C6194A3C3200B4D251 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				59B307CA194A42BF00B4D251 /* sample.mp4 */,
+				5962241219508A1500701B76 /* Embryo */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -272,6 +377,10 @@
 				D074CE62192FF3CB00A2BAB1 /* HistologyViewController.h */,
 				D00CA83F1947941900C01BBF /* HistoIndexViewController.h */,
 				D00CA8401947941900C01BBF /* HistoIndexViewController.m */,
+				5962243F19508F4000701B76 /* HistoSlide1ViewController.h */,
+				5962244019508F4000701B76 /* HistoSlide1ViewController.m */,
+				596224421950907000701B76 /* HistoSlide2ViewController.h */,
+				596224431950907000701B76 /* HistoSlide2ViewController.m */,
 			);
 			name = Histology;
 			sourceTree = "<group>";
@@ -493,26 +602,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0253F42193FE10A00CFE2AC /* E0.png in Resources */,
+				5962243D19508A3A00701B76 /* neuro-thoracic-scan.jpg in Resources */,
 				46AC5F14193E6461003F1E12 /* Gross.png in Resources */,
+				5962243019508A3A00701B76 /* Neural Tube Labelled.png in Resources */,
 				466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */,
+				5962243819508A3A00701B76 /* neuro-cerv.jpg in Resources */,
 				D02074EE1944FF8700AADFDA /* White Burger.png in Resources */,
 				46AC5F16193E6461003F1E12 /* NeuroL.png in Resources */,
 				462CB05C193D053E00B6CF72 /* Slides.png in Resources */,
 				D0253F47193FE10A00CFE2AC /* E5.png in Resources */,
+				5962243219508A3A00701B76 /* Neuroepithelium.png in Resources */,
+				5962242D19508A3A00701B76 /* CNS Development.png in Resources */,
 				462CB055193CFDB200B6CF72 /* Letter N.png in Resources */,
+				5962243519508A3A00701B76 /* histo1.jpg in Resources */,
+				5962243119508A3A00701B76 /* Neural Tube Patterning.png in Resources */,
 				462CB05D193D053E00B6CF72 /* Stains.png in Resources */,
 				46AC5F19193E6461003F1E12 /* white.png in Resources */,
 				462CB059193CFEDA00B6CF72 /* Animations.png in Resources */,
 				D0253F46193FE10A00CFE2AC /* E4.png in Resources */,
+				5962242E19508A3A00701B76 /* Initial Spinal Cord.png in Resources */,
 				462CB054193CFDB200B6CF72 /* Letter H.png in Resources */,
+				5962243A19508A3A00701B76 /* neuro-lumb.jpg in Resources */,
 				46AC5F17193E6461003F1E12 /* NeuroS.png in Resources */,
 				D02F1CFB194644350095A8E9 /* Neuroterms.plist in Resources */,
+				5962243619508A3A00701B76 /* histo2.jpg in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
+				5962241519508A1500701B76 /* Neuraltube_001.mp4 in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
 				D0253F43193FE10A00CFE2AC /* E1.png in Resources */,
 				D0EC0C1A19369684005A9138 /* Histo.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
+				5962243319508A3A00701B76 /* SC change position.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
+				5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */,
 				D00CA838194785C200C01BBF /* Grossterms.plist in Resources */,
 				462CB053193CFDB200B6CF72 /* Letter G.png in Resources */,
 				466C49B4193BB914000B2A78 /* home.png in Resources */,
@@ -523,13 +645,18 @@
 				D00CA836194785B500C01BBF /* Histoterms.plist in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
-				59B307CB194A42BF00B4D251 /* sample.mp4 in Resources */,
+				5962243B19508A3A00701B76 /* neuro-sacral-scan.jpg in Resources */,
 				46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
 				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
+				5962243C19508A3A00701B76 /* neuro-sacral.jpg in Resources */,
 				D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */,
+				5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */,
 				D0253F48193FE10A00CFE2AC /* E6.png in Resources */,
 				46AC5F18193E6461003F1E12 /* NeuroT.png in Resources */,
+				5962242F19508A3A00701B76 /* Neural Tube Formation.png in Resources */,
+				5962243419508A3A00701B76 /* Spinal Cord Further Development.png in Resources */,
+				5962243919508A3A00701B76 /* neuro-lumb-scan.jpg in Resources */,
 				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,7 +687,9 @@
 				D06E5E48192FA51D00A12651 /* HomePageViewController.m in Sources */,
 				5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */,
 				D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */,
+				596224441950907000701B76 /* HistoSlide2ViewController.m in Sources */,
 				D06E5E6B192FA9F600A12651 /* IndexAllViewController.m in Sources */,
+				5962244119508F4000701B76 /* HistoSlide1ViewController.m in Sources */,
 				D00CA83B194792CB00C01BBF /* NeuroIndexViewController.m in Sources */,
 				D074CE6D192FF79300A2BAB1 /* EmbryoViewController.m in Sources */,
 				D074CE6A192FF77E00A2BAB1 /* GrossViewController.m in Sources */,
