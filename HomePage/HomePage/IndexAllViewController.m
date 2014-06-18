@@ -106,7 +106,7 @@ NSArray *searchResults;
     }
     
     NSString *term;
-    if (indexPath.row < 47) {
+    if (indexPath.row <= titleArray.count) {
         if (tableView == self.searchDisplayController.searchResultsTableView) {
             term =[searchResults objectAtIndex:indexPath.row];
             cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];

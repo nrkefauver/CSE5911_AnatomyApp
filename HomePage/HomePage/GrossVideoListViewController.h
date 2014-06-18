@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
-#import <MediaPlayer/MediaPlayer.h>
 
 @interface GrossVideoListViewController : UIViewController
 
