@@ -78,6 +78,7 @@
 		D0253F48193FE10A00CFE2AC /* E6.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F40193FE10A00CFE2AC /* E6.png */; };
 		D0253F49193FE10A00CFE2AC /* E7.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F41193FE10A00CFE2AC /* E7.png */; };
 		D02F1CFB194644350095A8E9 /* Neuroterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D02F1CFA194644350095A8E9 /* Neuroterms.plist */; };
+		D05B5769195233B90098D846 /* SRExpandableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D05B5768195233B90098D846 /* SRExpandableTableViewController.m */; };
 		D06E5E32192FA51D00A12651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E31192FA51D00A12651 /* Foundation.framework */; };
 		D06E5E34192FA51D00A12651 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E33192FA51D00A12651 /* CoreGraphics.framework */; };
 		D06E5E36192FA51D00A12651 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E35192FA51D00A12651 /* UIKit.framework */; };
@@ -195,6 +196,8 @@
 		D0253F40193FE10A00CFE2AC /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E6.png; path = Images/E6.png; sourceTree = "<group>"; };
 		D0253F41193FE10A00CFE2AC /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E7.png; path = Images/E7.png; sourceTree = "<group>"; };
 		D02F1CFA194644350095A8E9 /* Neuroterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Neuroterms.plist; sourceTree = "<group>"; };
+		D05B5767195233B90098D846 /* SRExpandableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRExpandableTableViewController.h; sourceTree = "<group>"; };
+		D05B5768195233B90098D846 /* SRExpandableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRExpandableTableViewController.m; sourceTree = "<group>"; };
 		D06E5E2E192FA51D00A12651 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E5E31192FA51D00A12651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D06E5E33192FA51D00A12651 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -442,6 +445,8 @@
 			children = (
 				D06E5E6A192FA9F600A12651 /* IndexAllViewController.m */,
 				D06E5E69192FA9F600A12651 /* IndexAllViewController.h */,
+				D05B5767195233B90098D846 /* SRExpandableTableViewController.h */,
+				D05B5768195233B90098D846 /* SRExpandableTableViewController.m */,
 			);
 			name = IndexAll;
 			sourceTree = "<group>";
@@ -715,6 +720,7 @@
 				D06E5E42192FA51D00A12651 /* HomePageAppDelegate.m in Sources */,
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,
 				5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */,
+				D05B5769195233B90098D846 /* SRExpandableTableViewController.m in Sources */,
 				D06E5E3E192FA51D00A12651 /* main.m in Sources */,
 				D06E5E48192FA51D00A12651 /* HomePageViewController.m in Sources */,
 				5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */,
