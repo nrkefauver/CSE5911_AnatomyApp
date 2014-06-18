@@ -42,14 +42,7 @@
                         [UIImage imageNamed:@"Letter E"],
                         [UIImage imageNamed:@"home"],
                         ];
-    //    NSArray *colors = @[
-    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-    //                        ];
-    //
-    //    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
+ 
     RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
     callout.delegate = self;
     callout.showFromRight = YES;
@@ -97,6 +90,22 @@
 
 - (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
+}
+
+-(IBAction)onVideoPlay:(id)sender {
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"Neuraltube_001" ofType:@"mp4"];
+    NSURL *streamURL = [NSURL fileURLWithPath:videoPath];
+    MPMoviePlayerController *moviplayer =[[MPMoviePlayerController alloc] initWithContentURL:     streamURL];
+    
+    [moviplayer prepareToPlay];
+    [moviplayer.view setFrame: self.view.bounds];
+    [self.view addSubview: moviplayer.view];
+    
+    moviplayer.fullscreen = NO;
+    moviplayer.shouldAutoplay = YES;
+    moviplayer.repeatMode = MPMovieRepeatModeOne;
+    moviplayer.movieSourceType = MPMovieSourceTypeFile;
+    [moviplayer play];
 }
 
 /*

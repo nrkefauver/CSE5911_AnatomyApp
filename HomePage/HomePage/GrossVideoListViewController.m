@@ -34,22 +34,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)onVideoPlay:(id)sender {
-    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"Neuraltube_001" ofType:@"mp4"];
-    NSURL *streamURL = [NSURL fileURLWithPath:videoPath];
-    MPMoviePlayerController *moviplayer =[[MPMoviePlayerController alloc] initWithContentURL:     streamURL];
-    
-    [moviplayer prepareToPlay];
-    [moviplayer.view setFrame: self.view.bounds];
-    [self.view addSubview: moviplayer.view];
-    
-    moviplayer.fullscreen = NO;
-    moviplayer.shouldAutoplay = YES;
-    moviplayer.repeatMode = MPMovieRepeatModeOne;
-    moviplayer.movieSourceType = MPMovieSourceTypeFile;
-    [moviplayer play];
-}
-
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
                         [UIImage imageNamed:@"videos"],
@@ -58,15 +42,7 @@
                         [UIImage imageNamed:@"Letter G"],
                         [UIImage imageNamed:@"home"],
                         ];
-    //    NSArray *colors = @[
-    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-    //                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1],
-    //                        ];
-    //
-    //    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
+
     RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
     callout.delegate = self;
     callout.showFromRight = YES;
@@ -89,7 +65,7 @@
     
     //Index clicked
     else if (index == 2) {
-        [self performSegueWithIdentifier:@"GrossIndex" sender:self];
+        [self performSegueWithIdentifier:@"GrossVideosToIndexSegue" sender:self];
         
     }
     

@@ -322,6 +322,23 @@
                                     <action selector="onBurger:" destination="7sD-q7-0nW" eventType="touchUpInside" id="1g3-CQ-4hZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="JEi-Xj-tuB">
+                                <rect key="frame" x="240" y="203" width="289" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Blue Button.gif">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Neural Tube 01">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="onVideoPlay:" destination="7sD-q7-0nW" eventType="touchUpInside" id="llh-zh-dND"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -889,23 +906,6 @@
                                     <action selector="onBurger:" destination="PDT-Rl-dT5" eventType="touchUpInside" id="a5D-cV-Ass"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="tkJ-xt-ON0">
-                                <rect key="frame" x="240" y="163" width="289" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Neural Tube 01">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="onVideoPlay:" destination="PDT-Rl-dT5" eventType="touchUpInside" id="YqV-c8-XD9"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -914,12 +914,12 @@
                         <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossVideosToGross3DSegue" id="ZhW-aB-a9p"/>
                         <segue destination="W8x-iU-qGh" kind="push" identifier="GrossVideosToGrossHomeSegue" id="8Xb-OS-vit"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="GrossVideosToHomeSegue" id="OIt-Pe-zxd"/>
-                        <segue destination="0HC-13-e6l" kind="push" identifier="GrossVideosToIndexSegue" id="XQG-MY-c3D"/>
+                        <segue destination="1zj-il-MAi" kind="push" identifier="GrossVideosToIndexSegue" id="rGW-JB-R7R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzE-Cd-Edf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4796" y="2193"/>
+            <point key="canvasLocation" x="-4740" y="2201"/>
         </scene>
         <!--Gross3D Model View Controller-->
         <scene sceneID="0AS-eI-oEG">
@@ -1085,12 +1085,13 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hOH-RS-S2g"/>
-        <segue reference="c2K-YH-DqR"/>
-        <segue reference="xgI-CB-z14"/>
-        <segue reference="2YT-sS-ArM"/>
-        <segue reference="fdm-bw-BD5"/>
+        <segue reference="P9c-qm-8dT"/>
         <segue reference="ZhW-aB-a9p"/>
+        <segue reference="8VA-9P-1Ft"/>
+        <segue reference="8Xb-OS-vit"/>
+        <segue reference="rGW-JB-R7R"/>
+        <segue reference="OIt-Pe-zxd"/>
         <segue reference="sOv-Ov-78j"/>
+        <segue reference="c2K-YH-DqR"/>
     </inferredMetricsTieBreakers>
 </document>
