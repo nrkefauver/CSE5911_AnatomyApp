@@ -150,9 +150,8 @@ NSArray *searchResults;
     
     //User taps different row
     else if (selectedIndex != -1) {
-        NSIndexPath *prevPath = [NSIndexPath indexPathForRow: selectedIndex inSection:0];
         selectedIndex = indexPath.row;
-        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:prevPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
     
 }
