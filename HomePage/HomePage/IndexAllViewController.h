@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface IndexAllViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate>
+#import "EMAccordionTableViewController.h"
+@interface IndexAllViewController : UIViewController <EMAccordionTableDelegate, UITableViewDataSource, UISearchDisplayDelegate>
 {
     int selectedIndex;
     NSArray *titleArray;

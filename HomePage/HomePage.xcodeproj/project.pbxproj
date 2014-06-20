@@ -78,7 +78,6 @@
 		D0253F48193FE10A00CFE2AC /* E6.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F40193FE10A00CFE2AC /* E6.png */; };
 		D0253F49193FE10A00CFE2AC /* E7.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F41193FE10A00CFE2AC /* E7.png */; };
 		D02F1CFB194644350095A8E9 /* Neuroterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D02F1CFA194644350095A8E9 /* Neuroterms.plist */; };
-		D05B5769195233B90098D846 /* SRExpandableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D05B5768195233B90098D846 /* SRExpandableTableViewController.m */; };
 		D06E5E32192FA51D00A12651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E31192FA51D00A12651 /* Foundation.framework */; };
 		D06E5E34192FA51D00A12651 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E33192FA51D00A12651 /* CoreGraphics.framework */; };
 		D06E5E36192FA51D00A12651 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E35192FA51D00A12651 /* UIKit.framework */; };
@@ -100,6 +99,10 @@
 		D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */; };
 		D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0774D89193CD5D400821D51 /* ExpandingCell.xib */; };
 		D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0774D8C193CD8D300821D51 /* ExpandingCell.m */; };
+		D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115319524DB80051A7F4 /* EMAccordionSection.m */; };
+		D0A0115719524E340051A7F4 /* EMAccordionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */; };
+		D0A0115919524E740051A7F4 /* closedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A0115819524E740051A7F4 /* closedIcon.png */; };
+		D0A0115B19524E830051A7F4 /* openedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A0115A19524E830051A7F4 /* openedIcon.png */; };
 		D0EC0C1A19369684005A9138 /* Histo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0EC0C1919369684005A9138 /* Histo.png */; };
 /* End PBXBuildFile section */
 
@@ -196,8 +199,6 @@
 		D0253F40193FE10A00CFE2AC /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E6.png; path = Images/E6.png; sourceTree = "<group>"; };
 		D0253F41193FE10A00CFE2AC /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E7.png; path = Images/E7.png; sourceTree = "<group>"; };
 		D02F1CFA194644350095A8E9 /* Neuroterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Neuroterms.plist; sourceTree = "<group>"; };
-		D05B5767195233B90098D846 /* SRExpandableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRExpandableTableViewController.h; sourceTree = "<group>"; };
-		D05B5768195233B90098D846 /* SRExpandableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRExpandableTableViewController.m; sourceTree = "<group>"; };
 		D06E5E2E192FA51D00A12651 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E5E31192FA51D00A12651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D06E5E33192FA51D00A12651 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -230,6 +231,12 @@
 		D0774D89193CD5D400821D51 /* ExpandingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandingCell.xib; sourceTree = "<group>"; };
 		D0774D8B193CD8D300821D51 /* ExpandingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingCell.h; sourceTree = "<group>"; };
 		D0774D8C193CD8D300821D51 /* ExpandingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingCell.m; sourceTree = "<group>"; };
+		D0A0115219524DB80051A7F4 /* EMAccordionSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAccordionSection.h; sourceTree = "<group>"; };
+		D0A0115319524DB80051A7F4 /* EMAccordionSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAccordionSection.m; sourceTree = "<group>"; };
+		D0A0115519524E340051A7F4 /* EMAccordionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAccordionTableViewController.h; sourceTree = "<group>"; };
+		D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAccordionTableViewController.m; sourceTree = "<group>"; };
+		D0A0115819524E740051A7F4 /* closedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closedIcon.png; sourceTree = "<group>"; };
+		D0A0115A19524E830051A7F4 /* openedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = openedIcon.png; sourceTree = "<group>"; };
 		D0EC0C1919369684005A9138 /* Histo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Histo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -260,6 +267,8 @@
 		462CB057193CFDD100B6CF72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D0A0115A19524E830051A7F4 /* openedIcon.png */,
+				D0A0115819524E740051A7F4 /* closedIcon.png */,
 				5962241719508A3A00701B76 /* Embryo */,
 				5962242019508A3A00701B76 /* Gross */,
 				5962242119508A3A00701B76 /* Histo */,
@@ -445,8 +454,6 @@
 			children = (
 				D06E5E6A192FA9F600A12651 /* IndexAllViewController.m */,
 				D06E5E69192FA9F600A12651 /* IndexAllViewController.h */,
-				D05B5767195233B90098D846 /* SRExpandableTableViewController.h */,
-				D05B5768195233B90098D846 /* SRExpandableTableViewController.m */,
 			);
 			name = IndexAll;
 			sourceTree = "<group>";
@@ -493,6 +500,7 @@
 		D06E5E37192FA51D00A12651 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				D0A0115119524D760051A7F4 /* EMAccordionTable */,
 				D0253F29193FD77C00CFE2AC /* Sidebar */,
 				D0774D88193CD51900821D51 /* ExpandingCell */,
 				D06E5E40192FA51D00A12651 /* HomePageAppDelegate.h */,
@@ -551,6 +559,17 @@
 				D0774D8C193CD8D300821D51 /* ExpandingCell.m */,
 			);
 			name = ExpandingCell;
+			sourceTree = "<group>";
+		};
+		D0A0115119524D760051A7F4 /* EMAccordionTable */ = {
+			isa = PBXGroup;
+			children = (
+				D0A0115219524DB80051A7F4 /* EMAccordionSection.h */,
+				D0A0115319524DB80051A7F4 /* EMAccordionSection.m */,
+				D0A0115519524E340051A7F4 /* EMAccordionTableViewController.h */,
+				D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */,
+			);
+			name = EMAccordionTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -667,6 +686,7 @@
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				5962243319508A3A00701B76 /* SC change position.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
+				D0A0115B19524E830051A7F4 /* openedIcon.png in Resources */,
 				5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */,
 				D00CA838194785C200C01BBF /* Grossterms.plist in Resources */,
 				462CB053193CFDB200B6CF72 /* Letter G.png in Resources */,
@@ -676,6 +696,7 @@
 				D0253F44193FE10A00CFE2AC /* E2.png in Resources */,
 				D0253F45193FE10A00CFE2AC /* E3.png in Resources */,
 				D00CA836194785B500C01BBF /* Histoterms.plist in Resources */,
+				D0A0115919524E740051A7F4 /* closedIcon.png in Resources */,
 				461B45E91950CE980000189B /* Lumbar_Scan.png in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
@@ -717,10 +738,10 @@
 				D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */,
 				D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */,
 				5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */,
+				D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */,
 				D06E5E42192FA51D00A12651 /* HomePageAppDelegate.m in Sources */,
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,
 				5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */,
-				D05B5769195233B90098D846 /* SRExpandableTableViewController.m in Sources */,
 				D06E5E3E192FA51D00A12651 /* main.m in Sources */,
 				D06E5E48192FA51D00A12651 /* HomePageViewController.m in Sources */,
 				5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */,
@@ -729,6 +750,7 @@
 				D06E5E6B192FA9F600A12651 /* IndexAllViewController.m in Sources */,
 				5962244119508F4000701B76 /* HistoSlide1ViewController.m in Sources */,
 				D00CA83B194792CB00C01BBF /* NeuroIndexViewController.m in Sources */,
+				D0A0115719524E340051A7F4 /* EMAccordionTableViewController.m in Sources */,
 				D074CE6D192FF79300A2BAB1 /* EmbryoViewController.m in Sources */,
 				D074CE6A192FF77E00A2BAB1 /* GrossViewController.m in Sources */,
 				466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */,
