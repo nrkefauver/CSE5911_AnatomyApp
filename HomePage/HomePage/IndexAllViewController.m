@@ -300,23 +300,23 @@ CGFloat origin;
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    //User taps new row with none expanded
+    if (selectedIndex == -1) {
+        selectedIndex = indexPath.row;
+        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+    
     //User taps expanded row
-    if (selectedIndex == indexPath.row) {
+    else if (selectedIndex == indexPath.row) {
         selectedIndex = -1;
         [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
     
     //User taps different row
-    
-    if (selectedIndex != -1) {
-        NSIndexPath *prevPath = [NSIndexPath indexPathForRow: selectedIndex inSection:0];
+    else if (selectedIndex != -1) {
         selectedIndex = indexPath.row;
-        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:prevPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
-    
-    //User taps new row with none expanded
-    selectedIndex = indexPath.row;
-    [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
@@ -327,6 +327,8 @@ CGFloat origin;
 }
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+   //controller.displaysSearchBarInNavigationBar = YES;
+
     [controller.searchResultsTableView setBackgroundColor:[UIColor blackColor]];
     [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
                                                          objectAtIndex:[self.searchDisplayController.searchBar
