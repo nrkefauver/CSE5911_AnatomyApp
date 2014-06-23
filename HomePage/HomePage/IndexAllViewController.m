@@ -61,7 +61,8 @@ CGFloat origin;
     
     
     searchArray = [[NSMutableArray alloc] init];
-    
+    searchSubtitles = [[NSMutableArray alloc] init];
+    searchText = [[NSMutableArray alloc] init];
     
     NSString *nPath = [[NSBundle mainBundle] pathForResource:@"Neuroterms" ofType:@"plist"];
     
@@ -82,11 +83,11 @@ CGFloat origin;
     
     //Creates an array of definition names
     subtitleNArray = sortedNKeys;
-    [searchSubtitles addObjectsFromArray:sortedNKeys];
+    [searchSubtitles addObjectsFromArray:subtitleNArray];
     
     //Creates array of definitions
     textNArray = sortedNValues;
-    [searchText addObjectsFromArray:sortedNValues];
+    [searchText addObjectsFromArray:textNArray];
     
     // Setup some test data
     dataSection01 = nTitleArray;
