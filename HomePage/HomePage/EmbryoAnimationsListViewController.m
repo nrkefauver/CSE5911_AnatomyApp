@@ -60,7 +60,7 @@
     
     //Index clicked
     else if (index == 1) {
-        [self performSegueWithIdentifier:@"EmbryoAnimationsListToIndexSegue" sender:self];
+        [self performSegueWithIdentifier:@"EmbryoAnimationsListToEmbryoIndexSegue" sender:self];
     }
     
     //Embryo Home clicked

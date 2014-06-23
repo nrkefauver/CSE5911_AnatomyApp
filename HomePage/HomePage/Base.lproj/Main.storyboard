@@ -360,7 +360,7 @@
                     <connections>
                         <segue destination="Zc9-b7-UI4" kind="push" identifier="EmbryoAnimationsListToEmbryoHomeSegue" id="sOv-Ov-78j"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="EmbryoAnimationsListToHomeSegue" id="qkd-fC-WYx"/>
-                        <segue destination="0HC-13-e6l" kind="push" identifier="EmbryoAnimationsListToIndexSegue" id="zwu-sI-Crc"/>
+                        <segue destination="i3k-1k-qne" kind="push" identifier="EmbryoAnimationsListToEmbryoIndexSegue" id="psJ-mD-Iz2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQ7-7e-non" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -788,8 +788,8 @@
                     <navigationItem key="navigationItem" id="urP-bW-kRm"/>
                     <connections>
                         <segue destination="Z1N-LW-t3Y" kind="push" identifier="NeuroAnimationsListToNeuroHomeSegue" id="c2K-YH-DqR"/>
-                        <segue destination="0HC-13-e6l" kind="push" identifier="NeuroAnimationsListToIndexSegue" id="mhj-Cf-taw"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroAnimationsListToHomeSegue" id="Reg-0P-VLu"/>
+                        <segue destination="0zu-PB-8PX" kind="push" identifier="NeuroAnimationsListToNeuroIndexSegue" id="MZo-Sv-XyI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwd-uP-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -998,7 +998,7 @@
                         <segue destination="PDT-Rl-dT5" kind="push" identifier="Gross3DToGrossVideosSegue" id="8VA-9P-1Ft"/>
                         <segue destination="W8x-iU-qGh" kind="push" identifier="Gross3DToGrossHomeSegue" id="fBN-DZ-xZq"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="Gross3DToHomeSegue" id="EZM-zG-zgc"/>
-                        <segue destination="0HC-13-e6l" kind="push" identifier="Gross3DToIndexSegue" id="P9c-qm-8dT"/>
+                        <segue destination="1zj-il-MAi" kind="push" identifier="Gross3DModelsToGrossIndexSegue" id="TJa-hY-aVm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNE-rw-DzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1042,7 +1042,7 @@
                                     <outlet property="delegate" destination="1zj-il-MAi" id="crw-DF-ETC"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="scaleAspectFit" showsCancelButton="YES" id="gaM-0s-Pqy">
+                            <searchBar contentMode="scaleAspectFit" text="" showsCancelButton="YES" id="gaM-0s-Pqy">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1130,13 +1130,15 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="c2K-YH-DqR"/>
-        <segue reference="qkd-fC-WYx"/>
-        <segue reference="sOv-Ov-78j"/>
-        <segue reference="zwu-sI-Crc"/>
         <segue reference="ZhW-aB-a9p"/>
         <segue reference="8VA-9P-1Ft"/>
-        <segue reference="8Xb-OS-vit"/>
-        <segue reference="rGW-JB-R7R"/>
+        <segue reference="fBN-DZ-xZq"/>
+        <segue reference="TJa-hY-aVm"/>
+        <segue reference="Reg-0P-VLu"/>
+        <segue reference="c2K-YH-DqR"/>
+        <segue reference="xgI-CB-z14"/>
+        <segue reference="MZo-Sv-XyI"/>
+        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="sOv-Ov-78j"/>
     </inferredMetricsTieBreakers>
 </document>
