@@ -61,6 +61,7 @@
 		5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242C19508A3A00701B76 /* neuro-thoracic.jpg */; };
 		5962244119508F4000701B76 /* HistoSlide1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962244019508F4000701B76 /* HistoSlide1ViewController.m */; };
 		596224441950907000701B76 /* HistoSlide2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596224431950907000701B76 /* HistoSlide2ViewController.m */; };
+		7CC1BD291958E24B00B70823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC1BD281958E24B00B70823 /* MapKit.framework */; };
 		D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA833194785A700C01BBF /* Embryoterms.plist */; };
 		D00CA836194785B500C01BBF /* Histoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA835194785B500C01BBF /* Histoterms.plist */; };
 		D00CA838194785C200C01BBF /* Grossterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA837194785C200C01BBF /* Grossterms.plist */; };
@@ -179,6 +180,7 @@
 		5962244019508F4000701B76 /* HistoSlide1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoSlide1ViewController.m; sourceTree = "<group>"; };
 		596224421950907000701B76 /* HistoSlide2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoSlide2ViewController.h; sourceTree = "<group>"; };
 		596224431950907000701B76 /* HistoSlide2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoSlide2ViewController.m; sourceTree = "<group>"; };
+		7CC1BD281958E24B00B70823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D00CA833194785A700C01BBF /* Embryoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Embryoterms.plist; sourceTree = "<group>"; };
 		D00CA835194785B500C01BBF /* Histoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Histoterms.plist; sourceTree = "<group>"; };
 		D00CA837194785C200C01BBF /* Grossterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grossterms.plist; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC1BD291958E24B00B70823 /* MapKit.framework in Frameworks */,
 				D06E5E34192FA51D00A12651 /* CoreGraphics.framework in Frameworks */,
 				D06E5E36192FA51D00A12651 /* UIKit.framework in Frameworks */,
 				D06E5E32192FA51D00A12651 /* Foundation.framework in Frameworks */,
@@ -492,6 +495,7 @@
 		D06E5E30192FA51D00A12651 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CC1BD281958E24B00B70823 /* MapKit.framework */,
 				D06E5E31192FA51D00A12651 /* Foundation.framework */,
 				D06E5E33192FA51D00A12651 /* CoreGraphics.framework */,
 				D06E5E35192FA51D00A12651 /* UIKit.framework */,
