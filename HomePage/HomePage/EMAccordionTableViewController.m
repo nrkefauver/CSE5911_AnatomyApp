@@ -40,21 +40,22 @@
 - (void) setEmTableView:(UITableView *)tv {
     self.view = [[UIView alloc] initWithFrame:tv.frame];
     
+    
     _tableView = tv;
     [_tableView setDataSource:self];
     [_tableView setDelegate:self];
-    
     [self.view addSubview:_tableView];
 }
 
 - (id) initWithTable:(UITableView *)tableView {
     if (self = [super init]) {
         self.view = [[UIView alloc] initWithFrame:tableView.frame];
-        
         _tableView = tableView;
+        
         [_tableView setDataSource:self];
         [_tableView setDelegate:self];
-        
+        [_tableView setBackgroundColor:[UIColor blackColor]];
+        [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
         sections = [[NSMutableArray alloc] initWithCapacity:0];
         sectionsOpened = [[NSMutableArray alloc] initWithCapacity:0];
     }
@@ -114,8 +115,7 @@
 - (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     EMAccordionSection *emAccordionSection = [sections objectAtIndex:section];
     
-    
-    UIView *sectionView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableView.frame.size.width, tableView.sectionHeaderHeight)];
+    UIView *sectionView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 500.0f, tableView.sectionHeaderHeight)];
     [sectionView setBackgroundColor:emAccordionSection.backgroundColor];
     
     UIButton *sectionBtn = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, sectionView.bounds.size.width, sectionView.bounds.size.height)];
@@ -125,6 +125,7 @@
     
     UILabel *cellTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 0.0f, self.tableView.frame.size.width - 50.0f, sectionView.bounds.size.height)];
     [cellTitle setText:emAccordionSection.title];
+    [cellTitle setFont:[UIFont fontWithName:@"Georgia-Bold" size:24.0f]];
     [cellTitle setTextColor:emAccordionSection.titleColor];
     [cellTitle setBackgroundColor:[UIColor clearColor]];
     [sectionView addSubview:cellTitle];

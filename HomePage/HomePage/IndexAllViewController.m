@@ -60,77 +60,162 @@ CGFloat origin;
     [emTV setOpenedSectionIcon:[UIImage imageNamed:@"openedIcon"]];
     
     
-    titleArray = [[NSMutableArray alloc] init];
+    searchArray = [[NSMutableArray alloc] init];
     
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Neuroterms" ofType:@"plist"];
+    NSString *nPath = [[NSBundle mainBundle] pathForResource:@"Neuroterms" ofType:@"plist"];
     
     //Creates dictionary of Neuroanatomy terms
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSDictionary *dictN = [[NSDictionary alloc] initWithContentsOfFile:nPath];
     
     //Create alphabetical list of definition names
-    NSArray * sortedKeys = [[dict allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+    NSArray * sortedNKeys = [[dictN allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
     
     //Create alphabetical list of definitions
-    NSArray * sortedValues = [dict objectsForKeys: sortedKeys notFoundMarker: [NSNull null]];
+    NSArray * sortedNValues = [dictN objectsForKeys: sortedNKeys notFoundMarker: [NSNull null]];
     
     //Creates an array of all the definition names to be searched through
-    titleArray = sortedKeys;
+    nTitleArray = sortedNKeys;
+    
+    //Adds to overall list of definitions for searching
+    [searchArray addObjectsFromArray:sortedNKeys];
     
     //Creates an array of definition names
-    subtitleArray = sortedKeys;
+    subtitleNArray = sortedNKeys;
+    [searchSubtitles addObjectsFromArray:sortedNKeys];
     
     //Creates array of definitions
-    textArray = sortedValues;
+    textNArray = sortedNValues;
+    [searchText addObjectsFromArray:sortedNValues];
     
     // Setup some test data
-    dataSection01 = [[NSMutableArray alloc] initWithObjects:titleArray, nil];
-//    dataSection02 = [[NSMutableArray alloc] initWithObjects:@"Federer", @"Nadal", nil];
-//    dataSection03 = [[NSMutableArray alloc] initWithObjects:@"Naples", @"Genoa", @"New York", nil];
-//    dataSection04 = [[NSMutableArray alloc] initWithObjects:@"Adele", @"Arisa", @"Clementino", nil];
-//    dataSection05 = [[NSMutableArray alloc] initWithObjects:@"Red", @"Orange", @"Blue", @"Yello", @"Black", nil];
-//    dataSection06 = [[NSMutableArray alloc] initWithObjects:@"Italy", @"Spain", @"Ireland", @"Scotland", @"Poland", nil];
+    dataSection01 = nTitleArray;
+    
+    
+    NSString *hPath = [[NSBundle mainBundle] pathForResource:@"Histoterms" ofType:@"plist"];
+    
+    //Creates dictionary of Neuroanatomy terms
+    NSDictionary *dictH = [[NSDictionary alloc] initWithContentsOfFile:hPath];
+    
+    //Create alphabetical list of definition names
+    NSArray * sortedHKeys = [[dictH allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+    
+    //Create alphabetical list of definitions
+    NSArray * sortedHValues = [dictH objectsForKeys: sortedHKeys notFoundMarker: [NSNull null]];
+    
+    //Creates an array of all the definition names to be searched through
+    hTitleArray = sortedHKeys;
+    
+    //Adds to overall list of definitions for searching
+    [searchArray addObjectsFromArray:sortedHKeys];
+    
+    //Creates an array of definition names
+    subtitleHArray = sortedHKeys;
+    [searchSubtitles addObjectsFromArray:sortedHKeys];
+    
+    //Creates array of definitions
+    textHArray = sortedHValues;
+    [searchText addObjectsFromArray:sortedHValues];
+
+    dataSection02 = hTitleArray;
+    
+    
+    NSString *ePath = [[NSBundle mainBundle] pathForResource:@"Embryoterms" ofType:@"plist"];
+    
+    //Creates dictionary of Neuroanatomy terms
+    NSDictionary *dictE = [[NSDictionary alloc] initWithContentsOfFile:ePath];
+    
+    //Create alphabetical list of definition names
+    NSArray * sortedEKeys = [[dictE allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+    
+    //Create alphabetical list of definitions
+    NSArray * sortedEValues = [dictE objectsForKeys: sortedEKeys notFoundMarker: [NSNull null]];
+    
+    //Creates an array of all the definition names to be searched through
+    eTitleArray = sortedEKeys;
+    
+    //Adds to overall list of definitions for searching
+    [searchArray addObjectsFromArray:sortedEKeys];
+    
+    //Creates an array of definition names
+    subtitleEArray = sortedEKeys;
+    [searchSubtitles addObjectsFromArray:sortedEKeys];
+    
+    //Creates array of definitions
+    textEArray = sortedEValues;
+    [searchText addObjectsFromArray:sortedEValues];
+    
+    dataSection03 = eTitleArray;
+    
+    
+    NSString *gPath = [[NSBundle mainBundle] pathForResource:@"Grossterms" ofType:@"plist"];
+    
+    //Creates dictionary of Neuroanatomy terms
+    NSDictionary *dictG = [[NSDictionary alloc] initWithContentsOfFile:gPath];
+    
+    //Create alphabetical list of definition names
+    NSArray * sortedGKeys = [[dictG allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+    
+    //Create alphabetical list of definitions
+    NSArray * sortedGValues = [dictG objectsForKeys: sortedGKeys notFoundMarker: [NSNull null]];
+    
+    //Creates an array of all the definition names to be searched through
+    gTitleArray = sortedGKeys;
+    
+    //Adds to overall list of definitions for searching
+    [searchArray addObjectsFromArray:sortedGKeys];
+    
+    //Creates an array of definition names
+    subtitleGArray = sortedGKeys;
+    [searchSubtitles addObjectsFromArray:sortedGKeys];
+    
+    //Creates array of definitions
+    textGArray = sortedGValues;
+    [searchText addObjectsFromArray:sortedGValues];
+    
+    dataSection04 = gTitleArray;
+
     //
     
     // Section graphics
-    UIColor *sectionsColor = [UIColor colorWithRed:62.0f/255.0f green:119.0f/255.0f blue:190.0f/255.0f alpha:1.0f];
+    UIColor *sectionsColor = [UIColor blackColor];
     UIColor *sectionTitleColor = [UIColor whiteColor];
-    UIFont *sectionTitleFont = [UIFont fontWithName:@"Futura" size:24.0f];
+    UIFont *sectionTitleFont = [UIFont fontWithName:@"Georgia-Bold" size:24.0f];
     
     // Add the sections to the controller
     EMAccordionSection *section01 = [[EMAccordionSection alloc] init];
     [section01 setBackgroundColor:sectionsColor];
     [section01 setItems:dataSection01];
     [section01 setTitle:@"Neuroanatomy"];
-    [section01 setTitleFont:sectionTitleFont];
+    [section01 setTitleFont:[UIFont fontWithName:@"Georgia-Bold" size:24.0f]];
     [section01 setTitleColor:sectionTitleColor];
     [emTV addAccordionSection:section01];
     
-//    EMAccordionSection *section02 = [[EMAccordionSection alloc] init];
-//    [section02 setBackgroundColor:sectionsColor];
-//    [section02 setItems:dataSection02];
-//    [section02 setTitle:@"NeuroAnatomy"];
-//    [section02 setTitleColor:sectionTitleColor];
-//    [section02 setTitleFont:sectionTitleFont];
-//    [emTV addAccordionSection:section02];
-//    
-//    EMAccordionSection *section03 = [[EMAccordionSection alloc] init];
-//    [section03 setBackgroundColor:sectionsColor];
-//    [section03 setItems:dataSection03];
-//    [section03 setTitle:@"Gross Anatomy"];
-//    [section03 setTitleColor:sectionTitleColor];
-//    [section03 setTitleFont:sectionTitleFont];
-//    [emTV addAccordionSection:section03];
-//    
-//    EMAccordionSection *section04 = [[EMAccordionSection alloc] init];
-//    [section04 setBackgroundColor:sectionsColor];
-//    [section04 setItems:dataSection04];
-//    [section04 setTitle:@"Embryology"];
-//    [section04 setTitleColor:sectionTitleColor];
-//    [section04 setTitleFont:sectionTitleFont];
-//    [emTV addAccordionSection:section04];
+    EMAccordionSection *section02 = [[EMAccordionSection alloc] init];
+    [section02 setBackgroundColor:sectionsColor];
+    [section02 setItems:dataSection02];
+    [section02 setTitle:@"Histology"];
+    [section02 setTitleColor:sectionTitleColor];
+    [section02 setTitleFont:sectionTitleFont];
+    [emTV addAccordionSection:section02];
+    
+    EMAccordionSection *section03 = [[EMAccordionSection alloc] init];
+    [section03 setBackgroundColor:sectionsColor];
+    [section03 setItems:dataSection03];
+    [section03 setTitle:@"Embryology"];
+    [section03 setTitleColor:sectionTitleColor];
+    [section03 setTitleFont:sectionTitleFont];
+    [emTV addAccordionSection:section03];
+    
+    EMAccordionSection *section04 = [[EMAccordionSection alloc] init];
+    [section04 setBackgroundColor:sectionsColor];
+    [section04 setItems:dataSection04];
+    [section04 setTitle:@"Gross Anatomy"];
+    [section04 setTitleColor:sectionTitleColor];
+    [section04 setTitleFont:sectionTitleFont];
+    [emTV addAccordionSection:section04];
 
-    sections = [[NSArray alloc] initWithObjects:section01, nil];
+    sections = [[NSArray alloc] initWithObjects:section01,section02,section03, section04, nil];
     
     [self.view addSubview:emTV.tableView];
 }
@@ -141,37 +226,6 @@ CGFloat origin;
     
     return NULL;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -194,30 +248,6 @@ CGFloat origin;
     //Set index to -1 saying no cell is expanded or should expand.
     selectedIndex = -1;
     
-//    titleArray = [[NSMutableArray alloc] init];
-//   
-//    
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Neuroterms" ofType:@"plist"];
-//    
-//    //Creates dictionary of Neuroanatomy terms
-//   NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-//    
-//    //Create alphabetical list of definition names
-//    NSArray * sortedKeys = [[dict allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
-//    
-//    //Create alphabetical list of definitions
-//    NSArray * sortedValues = [dict objectsForKeys: sortedKeys notFoundMarker: [NSNull null]];
-//    
-//    //Creates an array of all the definition names to be searched through
-//    titleArray = sortedKeys;
-//    
-//    //Creates an array of definition names
-//    subtitleArray = sortedKeys;
-//    
-//    //Creates array of definitions
-//    textArray = sortedValues;
-    
-
   
 }
 
@@ -236,7 +266,7 @@ CGFloat origin;
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [searchResults count];
     } else {
-        return titleArray.count;
+        return searchArray.count;
     }
 }
 
@@ -261,29 +291,37 @@ CGFloat origin;
     }
     
     //COLLAPSIBLE CODE
-//    UILabel *titleLbl = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 0.0f, self.view.bounds.size.width - origin*2 - 10.0f, kTableRowHeight)];
-//    [titleLbl setFont:[UIFont fontWithName:@"DINAlternate-Bold" size:12.0f]];
-//    [titleLbl setText:[items objectAtIndex:indexPath.row]];
-//    [titleLbl setBackgroundColor:[UIColor clearColor]];
-//    
-//    [[cell contentView] addSubview:titleLbl];
 
     
     NSString *term;
-    if (indexPath.row <= titleArray.count) {
+    int pos = indexPath.row;
+    if (pos<= searchArray.count) {
         if (tableView == self.searchDisplayController.searchResultsTableView) {
             term =[searchResults objectAtIndex:indexPath.row];
             cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
             cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
-            int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
-            cell.textLabel.text = [textArray objectAtIndex:pos];
-        } else {
-            cell.titleLabel.text = [titleArray objectAtIndex:indexPath.row];
-            cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-            cell.textLabel.text = [textArray objectAtIndex:indexPath.row];
+            int pos = [searchSubtitles indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+            cell.textLabel.text = [searchText objectAtIndex:pos];
+        } else if (indexPath.section==0) {
+            cell.titleLabel.text = [nTitleArray objectAtIndex:indexPath.row];
+            cell.subtitleLabel.text = [subtitleNArray objectAtIndex:indexPath.row];
+            cell.textLabel.text = [textNArray objectAtIndex:indexPath.row];
+        } else if (indexPath.section==1) {
+        cell.titleLabel.text = [hTitleArray objectAtIndex:indexPath.row];
+        cell.subtitleLabel.text = [subtitleHArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = [textHArray objectAtIndex:indexPath.row];
+        } else if (indexPath.section==2) {
+        cell.titleLabel.text = [eTitleArray objectAtIndex:indexPath.row];
+        cell.subtitleLabel.text = [subtitleEArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = [textEArray objectAtIndex:indexPath.row];
+        } else if (indexPath.section == 3) {
+        cell.titleLabel.text = [gTitleArray objectAtIndex:indexPath.row];
+        cell.subtitleLabel.text = [subtitleGArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = [textGArray objectAtIndex:indexPath.row];
         }
-        
+    
     }
+
     
     cell.clipsToBounds = YES;
     return cell;
@@ -294,7 +332,7 @@ CGFloat origin;
     if (selectedIndex == indexPath.row) {
         return 200;
     } else {
-        return 38;
+        return 36;
     }
 }
 
@@ -322,7 +360,7 @@ CGFloat origin;
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith [c] %@", searchText];
-    searchResults = [titleArray filteredArrayUsingPredicate:resultPredicate];
+    searchResults = [searchArray filteredArrayUsingPredicate:resultPredicate];
     
 }
 

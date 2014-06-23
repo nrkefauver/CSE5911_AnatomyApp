@@ -11,9 +11,29 @@
 @interface IndexAllViewController : UIViewController <EMAccordionTableDelegate, UITableViewDataSource, UISearchDisplayDelegate>
 {
     int selectedIndex;
-    NSArray *titleArray;
-    NSArray *subtitleArray;
-    NSArray *textArray;
+    NSMutableArray *searchArray;
+    NSMutableArray *searchSubtitles;
+    NSMutableArray *searchText;
+    
+    NSArray *nTitleArray;
+    NSArray *nArray;
+    NSArray *subtitleNArray;
+    NSArray *textNArray;
+    
+    NSArray *gTitleArray;
+    NSArray *gArray;
+    NSArray *subtitleGArray;
+    NSArray *textGArray;
+    
+    NSArray *hTitleArray;
+    NSArray *hArray;
+    NSArray *subtitleHArray;
+    NSArray *textHArray;
+    
+    NSArray *eTitleArray;
+    NSArray *eArray;
+    NSArray *subtitleEArray;
+    NSArray *textEArray;
 }
 
 
