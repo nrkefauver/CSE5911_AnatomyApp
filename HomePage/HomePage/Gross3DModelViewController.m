@@ -66,7 +66,7 @@
     
     //Index clicked
     else if (index == 2) {
-        [self performSegueWithIdentifier:@"Gross3DToIndexSegue" sender:self];
+        [self performSegueWithIdentifier:@"Gross3DModelsToGrossIndexSegue" sender:self];
     }
     
     //Gross Home clicked

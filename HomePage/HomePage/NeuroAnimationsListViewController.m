@@ -66,7 +66,7 @@
     
     //Index clicked
     else if (index == 2) {
-        [self performSegueWithIdentifier:@"NeuroAnimationsListToIndexSegue" sender:self];
+        [self performSegueWithIdentifier:@"NeuroAnimationsListToNeuroIndexSegue" sender:self];
     }
     
     //Neuro Home clicked

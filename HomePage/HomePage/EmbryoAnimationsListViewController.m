@@ -60,7 +60,7 @@
     
     //Index clicked
     else if (index == 1) {
-        [self performSegueWithIdentifier:@"EmbryoAnimationsListToIndexSegue" sender:self];
+        [self performSegueWithIdentifier:@"EmbryoAnimationsListToEmbryoIndexSegue" sender:self];
     }
     
     //Embryo Home clicked
@@ -92,9 +92,19 @@
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
 
--(void)playMovie:(id)sender
+- (IBAction)onNeuralTube001:(id)sender
 {
-    NSString*path=[[NSBundle mainBundle] pathForResource:@"Neuraltube_001" ofType:@"mp4"];
+    [self playMovie:(id)sender movieName:(NSString*)@"Neuraltube_001" fileType:(NSString*)@"mp4"];
+}
+
+- (IBAction)onSampleVideo:(id)sender
+{
+    [self playMovie:(id)sender movieName:(NSString*)@"SampleVideo" fileType:(NSString*)@"MOV"];
+}
+
+-(void)playMovie:(id)sender movieName:(NSString*)moviePath fileType:(NSString*)fileType
+{
+    NSString*path=[[NSBundle mainBundle] pathForResource:moviePath ofType:fileType];
     NSURL*url=[NSURL fileURLWithPath:path];
     
     _moviePlayer =  [[MPMoviePlayerController alloc]
