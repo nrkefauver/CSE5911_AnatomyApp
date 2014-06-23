@@ -333,11 +333,28 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="playMovie:" destination="7sD-q7-0nW" eventType="touchUpInside" id="NF1-k9-CoY"/>
+                                    <action selector="onNeuralTube001:" destination="7sD-q7-0nW" eventType="touchUpInside" id="8he-kC-HbF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="6w1-WI-hd3">
+                                <rect key="frame" x="240" y="303" width="289" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Blue Button.gif">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sample Video">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Georgia-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="onSampleVideo:" destination="7sD-q7-0nW" eventType="touchUpInside" id="g6N-ca-o0a"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CTo-lh-NlA"/>
                     <connections>

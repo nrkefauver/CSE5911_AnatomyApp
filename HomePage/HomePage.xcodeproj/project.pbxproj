@@ -23,6 +23,7 @@
 		462CB059193CFEDA00B6CF72 /* Animations.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB058193CFEDA00B6CF72 /* Animations.png */; };
 		462CB05C193D053E00B6CF72 /* Slides.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB05A193D053E00B6CF72 /* Slides.png */; };
 		462CB05D193D053E00B6CF72 /* Stains.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB05B193D053E00B6CF72 /* Stains.png */; };
+		463EB8631958EBCF00D04530 /* SampleVideo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 463EB8621958EBCF00D04530 /* SampleVideo.MOV */; };
 		466C49B4193BB914000B2A78 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AE193BB914000B2A78 /* home.png */; };
 		466C49B5193BB914000B2A78 /* Index.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AF193BB914000B2A78 /* Index.png */; };
 		466C49B6193BB914000B2A78 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B0193BB914000B2A78 /* videos.png */; };
@@ -133,6 +134,7 @@
 		462CB058193CFEDA00B6CF72 /* Animations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Animations.png; path = Images/Animations.png; sourceTree = "<group>"; };
 		462CB05A193D053E00B6CF72 /* Slides.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Slides.png; path = Images/Slides.png; sourceTree = "<group>"; };
 		462CB05B193D053E00B6CF72 /* Stains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stains.png; path = Images/Stains.png; sourceTree = "<group>"; };
+		463EB8621958EBCF00D04530 /* SampleVideo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SampleVideo.MOV; sourceTree = "<group>"; };
 		466C49AE193BB914000B2A78 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Images/home.png; sourceTree = "<group>"; };
 		466C49AF193BB914000B2A78 /* Index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Index.png; path = Images/Index.png; sourceTree = "<group>"; };
 		466C49B0193BB914000B2A78 /* videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = videos.png; path = Images/videos.png; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				5962241319508A1500701B76 /* Neuraltube_001.mp4 */,
+				463EB8621958EBCF00D04530 /* SampleVideo.MOV */,
 			);
 			name = Embryo;
 			path = Videos/Embryo;
@@ -677,6 +680,7 @@
 				46AC5F17193E6461003F1E12 /* NeuroS.png in Resources */,
 				D02F1CFB194644350095A8E9 /* Neuroterms.plist in Resources */,
 				5962243619508A3A00701B76 /* histo2.jpg in Resources */,
+				463EB8631958EBCF00D04530 /* SampleVideo.MOV in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
 				5962241519508A1500701B76 /* Neuraltube_001.mp4 in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
