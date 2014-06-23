@@ -21,8 +21,6 @@
 		462CB055193CFDB200B6CF72 /* Letter N.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB050193CFDB200B6CF72 /* Letter N.png */; };
 		462CB056193CFDB200B6CF72 /* Tracts.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB051193CFDB200B6CF72 /* Tracts.png */; };
 		462CB059193CFEDA00B6CF72 /* Animations.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB058193CFEDA00B6CF72 /* Animations.png */; };
-		462CB05C193D053E00B6CF72 /* Slides.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB05A193D053E00B6CF72 /* Slides.png */; };
-		462CB05D193D053E00B6CF72 /* Stains.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB05B193D053E00B6CF72 /* Stains.png */; };
 		466C49B4193BB914000B2A78 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AE193BB914000B2A78 /* home.png */; };
 		466C49B5193BB914000B2A78 /* Index.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AF193BB914000B2A78 /* Index.png */; };
 		466C49B6193BB914000B2A78 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B0193BB914000B2A78 /* videos.png */; };
@@ -30,11 +28,6 @@
 		466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */; };
 		466C49C3193BC606000B2A78 /* 3D Models.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49C2193BC606000B2A78 /* 3D Models.png */; };
 		46AC5F14193E6461003F1E12 /* Gross.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0D193E6461003F1E12 /* Gross.png */; };
-		46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0E193E6461003F1E12 /* NeuroC.png */; };
-		46AC5F16193E6461003F1E12 /* NeuroL.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0F193E6461003F1E12 /* NeuroL.png */; };
-		46AC5F17193E6461003F1E12 /* NeuroS.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F10193E6461003F1E12 /* NeuroS.png */; };
-		46AC5F18193E6461003F1E12 /* NeuroT.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F11193E6461003F1E12 /* NeuroT.png */; };
-		46AC5F19193E6461003F1E12 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F12193E6461003F1E12 /* white.png */; };
 		5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA0C19467D6500677409 /* GrossVideoListViewController.m */; };
 		5953AA101946802C00677409 /* Gross3DModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA0F1946802C00677409 /* Gross3DModelViewController.m */; };
 		5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */; };
@@ -104,7 +97,6 @@
 		D08A365019588BCB005E5C77 /* Terms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D08A364F19588BCB005E5C77 /* Terms.plist */; };
 		D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115319524DB80051A7F4 /* EMAccordionSection.m */; };
 		D0A0115719524E340051A7F4 /* EMAccordionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */; };
-		D0EC0C1A19369684005A9138 /* Histo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0EC0C1919369684005A9138 /* Histo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,8 +124,6 @@
 		462CB050193CFDB200B6CF72 /* Letter N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Letter N.png"; path = "Images/Letter N.png"; sourceTree = "<group>"; };
 		462CB051193CFDB200B6CF72 /* Tracts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tracts.png; path = Images/Tracts.png; sourceTree = "<group>"; };
 		462CB058193CFEDA00B6CF72 /* Animations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Animations.png; path = Images/Animations.png; sourceTree = "<group>"; };
-		462CB05A193D053E00B6CF72 /* Slides.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Slides.png; path = Images/Slides.png; sourceTree = "<group>"; };
-		462CB05B193D053E00B6CF72 /* Stains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stains.png; path = Images/Stains.png; sourceTree = "<group>"; };
 		466C49AE193BB914000B2A78 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Images/home.png; sourceTree = "<group>"; };
 		466C49AF193BB914000B2A78 /* Index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Index.png; path = Images/Index.png; sourceTree = "<group>"; };
 		466C49B0193BB914000B2A78 /* videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = videos.png; path = Images/videos.png; sourceTree = "<group>"; };
@@ -141,12 +131,7 @@
 		466C49B9193BBA7D000B2A78 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
 		466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
 		466C49C2193BC606000B2A78 /* 3D Models.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3D Models.png"; path = "Images/3D Models.png"; sourceTree = "<group>"; };
-		46AC5F0D193E6461003F1E12 /* Gross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gross.png; path = Images/Gross.png; sourceTree = "<group>"; };
-		46AC5F0E193E6461003F1E12 /* NeuroC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroC.png; path = Images/NeuroC.png; sourceTree = "<group>"; };
-		46AC5F0F193E6461003F1E12 /* NeuroL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroL.png; path = Images/NeuroL.png; sourceTree = "<group>"; };
-		46AC5F10193E6461003F1E12 /* NeuroS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroS.png; path = Images/NeuroS.png; sourceTree = "<group>"; };
-		46AC5F11193E6461003F1E12 /* NeuroT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NeuroT.png; path = Images/NeuroT.png; sourceTree = "<group>"; };
-		46AC5F12193E6461003F1E12 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = Images/white.png; sourceTree = "<group>"; };
+		46AC5F0D193E6461003F1E12 /* Gross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gross.png; path = HomePage/Images/Gross.png; sourceTree = SOURCE_ROOT; };
 		5953AA0B19467D6500677409 /* GrossVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrossVideoListViewController.h; sourceTree = "<group>"; };
 		5953AA0C19467D6500677409 /* GrossVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrossVideoListViewController.m; sourceTree = "<group>"; };
 		5953AA0E1946802C00677409 /* Gross3DModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gross3DModelViewController.h; sourceTree = "<group>"; };
@@ -191,14 +176,14 @@
 		D00CA8431947948F00C01BBF /* EmbryoIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoIndexViewController.m; sourceTree = "<group>"; };
 		D02074EB1944FE9F00AADFDA /* Blue Button.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Blue Button.gif"; path = "Images/Blue Button.gif"; sourceTree = "<group>"; };
 		D02074ED1944FF8700AADFDA /* White Burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "White Burger.png"; path = "Images/White Burger.png"; sourceTree = "<group>"; };
-		D0253F3A193FE10A00CFE2AC /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E0.png; path = Images/E0.png; sourceTree = "<group>"; };
-		D0253F3B193FE10A00CFE2AC /* E1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E1.png; path = Images/E1.png; sourceTree = "<group>"; };
-		D0253F3C193FE10A00CFE2AC /* E2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E2.png; path = Images/E2.png; sourceTree = "<group>"; };
-		D0253F3D193FE10A00CFE2AC /* E3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E3.png; path = Images/E3.png; sourceTree = "<group>"; };
-		D0253F3E193FE10A00CFE2AC /* E4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E4.png; path = Images/E4.png; sourceTree = "<group>"; };
-		D0253F3F193FE10A00CFE2AC /* E5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E5.png; path = Images/E5.png; sourceTree = "<group>"; };
-		D0253F40193FE10A00CFE2AC /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E6.png; path = Images/E6.png; sourceTree = "<group>"; };
-		D0253F41193FE10A00CFE2AC /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E7.png; path = Images/E7.png; sourceTree = "<group>"; };
+		D0253F3A193FE10A00CFE2AC /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E0.png; path = ../E0.png; sourceTree = "<group>"; };
+		D0253F3B193FE10A00CFE2AC /* E1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E1.png; path = ../E1.png; sourceTree = "<group>"; };
+		D0253F3C193FE10A00CFE2AC /* E2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E2.png; path = ../E2.png; sourceTree = "<group>"; };
+		D0253F3D193FE10A00CFE2AC /* E3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E3.png; path = ../E3.png; sourceTree = "<group>"; };
+		D0253F3E193FE10A00CFE2AC /* E4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E4.png; path = ../E4.png; sourceTree = "<group>"; };
+		D0253F3F193FE10A00CFE2AC /* E5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E5.png; path = ../E5.png; sourceTree = "<group>"; };
+		D0253F40193FE10A00CFE2AC /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E6.png; path = ../E6.png; sourceTree = "<group>"; };
+		D0253F41193FE10A00CFE2AC /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E7.png; path = ../E7.png; sourceTree = "<group>"; };
 		D02F1CFA194644350095A8E9 /* Neuroterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Neuroterms.plist; sourceTree = "<group>"; };
 		D06E5E2E192FA51D00A12651 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E5E31192FA51D00A12651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -239,7 +224,6 @@
 		D0A0115319524DB80051A7F4 /* EMAccordionSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAccordionSection.m; sourceTree = "<group>"; };
 		D0A0115519524E340051A7F4 /* EMAccordionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAccordionTableViewController.h; sourceTree = "<group>"; };
 		D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAccordionTableViewController.m; sourceTree = "<group>"; };
-		D0EC0C1919369684005A9138 /* Histo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Histo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,42 +253,11 @@
 		462CB057193CFDD100B6CF72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D08A364D19587780005E5C77 /* openedIcon.png */,
-				D08A364B1958762F005E5C77 /* closedIcon.png */,
+				D082566B1958C92800620469 /* Icons */,
 				5962241719508A3A00701B76 /* Embryo */,
 				5962242019508A3A00701B76 /* Gross */,
 				5962242119508A3A00701B76 /* Histo */,
 				5962242419508A3A00701B76 /* Neuro */,
-				D02074ED1944FF8700AADFDA /* White Burger.png */,
-				D02074EB1944FE9F00AADFDA /* Blue Button.gif */,
-				D0253F3A193FE10A00CFE2AC /* E0.png */,
-				D0253F3B193FE10A00CFE2AC /* E1.png */,
-				D0253F3C193FE10A00CFE2AC /* E2.png */,
-				D0253F3D193FE10A00CFE2AC /* E3.png */,
-				D0253F3E193FE10A00CFE2AC /* E4.png */,
-				D0253F3F193FE10A00CFE2AC /* E5.png */,
-				D0253F40193FE10A00CFE2AC /* E6.png */,
-				D0253F41193FE10A00CFE2AC /* E7.png */,
-				D0EC0C1919369684005A9138 /* Histo.png */,
-				462CB05B193D053E00B6CF72 /* Stains.png */,
-				462CB05A193D053E00B6CF72 /* Slides.png */,
-				46AC5F12193E6461003F1E12 /* white.png */,
-				46AC5F11193E6461003F1E12 /* NeuroT.png */,
-				46AC5F10193E6461003F1E12 /* NeuroS.png */,
-				46AC5F0F193E6461003F1E12 /* NeuroL.png */,
-				46AC5F0E193E6461003F1E12 /* NeuroC.png */,
-				46AC5F0D193E6461003F1E12 /* Gross.png */,
-				462CB058193CFEDA00B6CF72 /* Animations.png */,
-				466C49C2193BC606000B2A78 /* 3D Models.png */,
-				466C49B7193BBA0F000B2A78 /* Black Burger.png */,
-				466C49AE193BB914000B2A78 /* home.png */,
-				466C49AF193BB914000B2A78 /* Index.png */,
-				466C49B0193BB914000B2A78 /* videos.png */,
-				462CB04D193CFDB200B6CF72 /* Letter E.png */,
-				462CB04E193CFDB200B6CF72 /* Letter G.png */,
-				462CB04F193CFDB200B6CF72 /* Letter H.png */,
-				462CB050193CFDB200B6CF72 /* Letter N.png */,
-				462CB051193CFDB200B6CF72 /* Tracts.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -321,6 +274,14 @@
 		5962241719508A3A00701B76 /* Embryo */ = {
 			isa = PBXGroup;
 			children = (
+				D0253F3A193FE10A00CFE2AC /* E0.png */,
+				D0253F3B193FE10A00CFE2AC /* E1.png */,
+				D0253F3C193FE10A00CFE2AC /* E2.png */,
+				D0253F3D193FE10A00CFE2AC /* E3.png */,
+				D0253F3E193FE10A00CFE2AC /* E4.png */,
+				D0253F3F193FE10A00CFE2AC /* E5.png */,
+				D0253F40193FE10A00CFE2AC /* E6.png */,
+				D0253F41193FE10A00CFE2AC /* E7.png */,
 				5962241819508A3A00701B76 /* CNS Development.png */,
 				5962241919508A3A00701B76 /* Initial Spinal Cord.png */,
 				5962241A19508A3A00701B76 /* Neural Tube Formation.png */,
@@ -337,6 +298,7 @@
 		5962242019508A3A00701B76 /* Gross */ = {
 			isa = PBXGroup;
 			children = (
+				46AC5F0D193E6461003F1E12 /* Gross.png */,
 			);
 			name = Gross;
 			path = Images/Gross;
@@ -564,6 +526,28 @@
 			name = ExpandingCell;
 			sourceTree = "<group>";
 		};
+		D082566B1958C92800620469 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				466C49AF193BB914000B2A78 /* Index.png */,
+				462CB051193CFDB200B6CF72 /* Tracts.png */,
+				462CB050193CFDB200B6CF72 /* Letter N.png */,
+				462CB04F193CFDB200B6CF72 /* Letter H.png */,
+				462CB04E193CFDB200B6CF72 /* Letter G.png */,
+				462CB04D193CFDB200B6CF72 /* Letter E.png */,
+				462CB058193CFEDA00B6CF72 /* Animations.png */,
+				466C49C2193BC606000B2A78 /* 3D Models.png */,
+				466C49AE193BB914000B2A78 /* home.png */,
+				466C49B0193BB914000B2A78 /* videos.png */,
+				466C49B7193BBA0F000B2A78 /* Black Burger.png */,
+				D02074EB1944FE9F00AADFDA /* Blue Button.gif */,
+				D02074ED1944FF8700AADFDA /* White Burger.png */,
+				D08A364B1958762F005E5C77 /* closedIcon.png */,
+				D08A364D19587780005E5C77 /* openedIcon.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		D0A0115119524D760051A7F4 /* EMAccordionTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,9 +644,7 @@
 				5962243819508A3A00701B76 /* neuro-cerv.jpg in Resources */,
 				461B45EA1950CE980000189B /* Sacral_Drawing.png in Resources */,
 				D02074EE1944FF8700AADFDA /* White Burger.png in Resources */,
-				46AC5F16193E6461003F1E12 /* NeuroL.png in Resources */,
 				461B45E71950CE980000189B /* Cervical_Scan.png in Resources */,
-				462CB05C193D053E00B6CF72 /* Slides.png in Resources */,
 				D0253F47193FE10A00CFE2AC /* E5.png in Resources */,
 				5962243219508A3A00701B76 /* Neuroepithelium.png in Resources */,
 				461B45E61950CE980000189B /* Cervical_Drawing.png in Resources */,
@@ -671,14 +653,11 @@
 				D08A365019588BCB005E5C77 /* Terms.plist in Resources */,
 				5962243519508A3A00701B76 /* histo1.jpg in Resources */,
 				5962243119508A3A00701B76 /* Neural Tube Patterning.png in Resources */,
-				462CB05D193D053E00B6CF72 /* Stains.png in Resources */,
-				46AC5F19193E6461003F1E12 /* white.png in Resources */,
 				462CB059193CFEDA00B6CF72 /* Animations.png in Resources */,
 				D0253F46193FE10A00CFE2AC /* E4.png in Resources */,
 				5962242E19508A3A00701B76 /* Initial Spinal Cord.png in Resources */,
 				462CB054193CFDB200B6CF72 /* Letter H.png in Resources */,
 				5962243A19508A3A00701B76 /* neuro-lumb.jpg in Resources */,
-				46AC5F17193E6461003F1E12 /* NeuroS.png in Resources */,
 				D02F1CFB194644350095A8E9 /* Neuroterms.plist in Resources */,
 				5962243619508A3A00701B76 /* histo2.jpg in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
@@ -686,7 +665,6 @@
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
 				461B45EC1950CE980000189B /* Thoracic_Drawing.png in Resources */,
 				D0253F43193FE10A00CFE2AC /* E1.png in Resources */,
-				D0EC0C1A19369684005A9138 /* Histo.png in Resources */,
 				D08A364C1958762F005E5C77 /* closedIcon.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				5962243319508A3A00701B76 /* SC change position.png in Resources */,
@@ -706,14 +684,12 @@
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
 				5962243B19508A3A00701B76 /* neuro-sacral-scan.jpg in Resources */,
 				461B45EB1950CE980000189B /* Sacral_Scan.png in Resources */,
-				46AC5F15193E6461003F1E12 /* NeuroC.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
 				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
 				5962243C19508A3A00701B76 /* neuro-sacral.jpg in Resources */,
 				D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */,
 				5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */,
 				D0253F48193FE10A00CFE2AC /* E6.png in Resources */,
-				46AC5F18193E6461003F1E12 /* NeuroT.png in Resources */,
 				5962242F19508A3A00701B76 /* Neural Tube Formation.png in Resources */,
 				5962243419508A3A00701B76 /* Spinal Cord Further Development.png in Resources */,
 				5962243919508A3A00701B76 /* neuro-lumb-scan.jpg in Resources */,
