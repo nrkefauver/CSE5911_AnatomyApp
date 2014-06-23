@@ -12,4 +12,7 @@
 
 @interface EmbryoAnimationsListViewController : UIViewController
 
+@property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
+- (IBAction)playMovie:(id)sender;
+
 @end

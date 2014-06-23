@@ -333,7 +333,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="onVideoPlay:" destination="7sD-q7-0nW" eventType="touchUpInside" id="llh-zh-dND"/>
+                                    <action selector="playMovie:" destination="7sD-q7-0nW" eventType="touchUpInside" id="NF1-k9-CoY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1082,13 +1082,13 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="P9c-qm-8dT"/>
+        <segue reference="c2K-YH-DqR"/>
+        <segue reference="qkd-fC-WYx"/>
+        <segue reference="sOv-Ov-78j"/>
+        <segue reference="zwu-sI-Crc"/>
         <segue reference="ZhW-aB-a9p"/>
         <segue reference="8VA-9P-1Ft"/>
         <segue reference="8Xb-OS-vit"/>
         <segue reference="rGW-JB-R7R"/>
-        <segue reference="OIt-Pe-zxd"/>
-        <segue reference="sOv-Ov-78j"/>
-        <segue reference="c2K-YH-DqR"/>
     </inferredMetricsTieBreakers>
 </document>
