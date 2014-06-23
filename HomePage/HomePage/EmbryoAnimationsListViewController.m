@@ -92,20 +92,32 @@
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
 
--(IBAction)onVideoPlay:(id)sender {
-    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"Neuraltube_001" ofType:@"mp4"];
-    NSURL *streamURL = [NSURL fileURLWithPath:videoPath];
-    MPMoviePlayerController *moviplayer =[[MPMoviePlayerController alloc] initWithContentURL:     streamURL];
+-(void)playMovie:(id)sender
+{
+    NSString*path=[[NSBundle mainBundle] pathForResource:@"Neuraltube_001" ofType:@"mp4"];
+    NSURL*url=[NSURL fileURLWithPath:path];
     
-    [moviplayer prepareToPlay];
-    [moviplayer.view setFrame: self.view.bounds];
-    [self.view addSubview: moviplayer.view];
+    _moviePlayer =  [[MPMoviePlayerController alloc]
+                     initWithContentURL:url];
     
-    moviplayer.fullscreen = NO;
-    moviplayer.shouldAutoplay = YES;
-    moviplayer.repeatMode = MPMovieRepeatModeOne;
-    moviplayer.movieSourceType = MPMovieSourceTypeFile;
-    [moviplayer play];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(moviePlayBackDidFinish:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:_moviePlayer];
+    
+    _moviePlayer.controlStyle = MPMovieControlStyleDefault;
+    _moviePlayer.shouldAutoplay = NO;
+    [self.view addSubview:_moviePlayer.view];
+    [_moviePlayer setFullscreen:YES animated:YES];
+
+}
+
+- (void) moviePlayBackDidFinish:(NSNotification*)notification {
+    MPMoviePlayerController *player = [notification object];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:MPMoviePlayerPlaybackDidFinishNotification
+     object:player];
 }
 
 /*
