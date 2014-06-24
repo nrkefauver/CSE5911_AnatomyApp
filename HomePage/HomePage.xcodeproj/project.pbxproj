@@ -62,6 +62,9 @@
 		5962244119508F4000701B76 /* HistoSlide1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962244019508F4000701B76 /* HistoSlide1ViewController.m */; };
 		596224441950907000701B76 /* HistoSlide2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596224431950907000701B76 /* HistoSlide2ViewController.m */; };
 		7CC1BD291958E24B00B70823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC1BD281958E24B00B70823 /* MapKit.framework */; };
+		B14A1B651958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B14A1B641958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m */; };
+		B14A1B681958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B14A1B671958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m */; };
+		B14A1B6B1958F8C60017119A /* HistologyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B14A1B6A1958F8C60017119A /* HistologyCollectionViewCell.m */; };
 		D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA833194785A700C01BBF /* Embryoterms.plist */; };
 		D00CA836194785B500C01BBF /* Histoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA835194785B500C01BBF /* Histoterms.plist */; };
 		D00CA838194785C200C01BBF /* Grossterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA837194785C200C01BBF /* Grossterms.plist */; };
@@ -181,6 +184,12 @@
 		596224421950907000701B76 /* HistoSlide2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoSlide2ViewController.h; sourceTree = "<group>"; };
 		596224431950907000701B76 /* HistoSlide2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoSlide2ViewController.m; sourceTree = "<group>"; };
 		7CC1BD281958E24B00B70823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B14A1B631958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistologyCollectionViewFlowSmallLayout.h; sourceTree = "<group>"; };
+		B14A1B641958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistologyCollectionViewFlowSmallLayout.m; sourceTree = "<group>"; };
+		B14A1B661958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistologyCollectionViewFlowLargeLayout.h; sourceTree = "<group>"; };
+		B14A1B671958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistologyCollectionViewFlowLargeLayout.m; sourceTree = "<group>"; };
+		B14A1B691958F8C60017119A /* HistologyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistologyCollectionViewCell.h; sourceTree = "<group>"; };
+		B14A1B6A1958F8C60017119A /* HistologyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistologyCollectionViewCell.m; sourceTree = "<group>"; };
 		D00CA833194785A700C01BBF /* Embryoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Embryoterms.plist; sourceTree = "<group>"; };
 		D00CA835194785B500C01BBF /* Histoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Histoterms.plist; sourceTree = "<group>"; };
 		D00CA837194785C200C01BBF /* Grossterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grossterms.plist; sourceTree = "<group>"; };
@@ -423,6 +432,12 @@
 				5962244019508F4000701B76 /* HistoSlide1ViewController.m */,
 				596224421950907000701B76 /* HistoSlide2ViewController.h */,
 				596224431950907000701B76 /* HistoSlide2ViewController.m */,
+				B14A1B631958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.h */,
+				B14A1B641958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m */,
+				B14A1B661958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.h */,
+				B14A1B671958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m */,
+				B14A1B691958F8C60017119A /* HistologyCollectionViewCell.h */,
+				B14A1B6A1958F8C60017119A /* HistologyCollectionViewCell.m */,
 			);
 			name = Histology;
 			sourceTree = "<group>";
@@ -744,15 +759,18 @@
 			files = (
 				5953AA101946802C00677409 /* Gross3DModelViewController.m in Sources */,
 				D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */,
+				B14A1B6B1958F8C60017119A /* HistologyCollectionViewCell.m in Sources */,
 				D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */,
 				5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */,
 				D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */,
+				B14A1B681958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m in Sources */,
 				D06E5E42192FA51D00A12651 /* HomePageAppDelegate.m in Sources */,
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,
 				5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */,
 				D06E5E3E192FA51D00A12651 /* main.m in Sources */,
 				D06E5E48192FA51D00A12651 /* HomePageViewController.m in Sources */,
 				5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */,
+				B14A1B651958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m in Sources */,
 				D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */,
 				596224441950907000701B76 /* HistoSlide2ViewController.m in Sources */,
 				D06E5E6B192FA9F600A12651 /* IndexAllViewController.m in Sources */,

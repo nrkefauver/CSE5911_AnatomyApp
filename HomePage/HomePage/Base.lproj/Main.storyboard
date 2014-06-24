@@ -453,7 +453,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jo3-9s-Mgk">
-                                <rect key="frame" x="700" y="80" width="40" height="40"/>
+                                <rect key="frame" x="677" y="86" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="White Burger.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -462,45 +462,27 @@
                                     <action selector="onBurger:" destination="Ifm-8S-R9e" eventType="touchUpInside" id="R3z-8d-l64"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Tlg-fq-N2E">
-                                <rect key="frame" x="235" y="183" width="298" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Slide 1">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="zSF-22-1Vf">
+                                <rect key="frame" x="75" y="283" width="473" height="528"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x2J-Ra-E8M">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
                                 <connections>
-                                    <segue destination="1Hf-Ur-mTZ" kind="push" id="cJR-WW-2h7"/>
+                                    <outlet property="dataSource" destination="Ifm-8S-R9e" id="m5d-do-cXE"/>
+                                    <outlet property="delegate" destination="Ifm-8S-R9e" id="RqN-qQ-dsB"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="49i-9e-Lyw">
-                                <rect key="frame" x="228" y="313" width="313" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Slide 2">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="6wj-W4-l34" kind="push" id="5sh-3G-Icl"/>
-                                </connections>
-                            </button>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bd9-pL-xqp"/>
                     <connections>
+                        <outlet property="collectionview" destination="zSF-22-1Vf" id="1em-d0-EX4"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="HistoToHomeSegue" id="AwG-wi-xhT"/>
                         <segue destination="0HC-13-e6l" kind="push" identifier="HistoHomeToIndexSegue" id="far-xO-xjq"/>
                         <segue destination="zrV-VM-hcI" kind="push" identifier="HistoHomeToHistoIndex" id="iXe-hZ-jWL"/>
@@ -1130,15 +1112,15 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="AwG-wi-xhT"/>
+        <segue reference="far-xO-xjq"/>
         <segue reference="ZhW-aB-a9p"/>
         <segue reference="8VA-9P-1Ft"/>
         <segue reference="fBN-DZ-xZq"/>
         <segue reference="TJa-hY-aVm"/>
-        <segue reference="Reg-0P-VLu"/>
-        <segue reference="c2K-YH-DqR"/>
-        <segue reference="xgI-CB-z14"/>
-        <segue reference="MZo-Sv-XyI"/>
-        <segue reference="psJ-mD-Iz2"/>
         <segue reference="sOv-Ov-78j"/>
+        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="c2K-YH-DqR"/>
+        <segue reference="MZo-Sv-XyI"/>
     </inferredMetricsTieBreakers>
 </document>
