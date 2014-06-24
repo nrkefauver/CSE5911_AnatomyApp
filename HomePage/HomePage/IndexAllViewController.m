@@ -338,7 +338,8 @@ CGFloat origin;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+
     //User taps new row with none expanded
     if (selectedIndex == -1) {
         selectedIndex = indexPath.row;

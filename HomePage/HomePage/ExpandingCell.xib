@@ -41,6 +41,17 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="3St-Pc-wPa">
+                        <rect key="frame" x="20" y="134" width="496" height="29"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <segments>
+                            <segment title="Neuroanatomy"/>
+                            <segment title="Histology"/>
+                            <segment title="Embryology"/>
+                            <segment title="Gross Anatomy"/>
+                        </segments>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </segmentedControl>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>

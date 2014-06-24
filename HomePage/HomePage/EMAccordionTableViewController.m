@@ -133,11 +133,14 @@
     UIImageView *accessoryIV = [[UIImageView alloc] initWithFrame:CGRectMake(sectionView.frame.size.width - 40.0f, (sectionView.frame.size.height / 2) - 15.0f, 30.0f, 30.0f)];
     BOOL value = [[sectionsOpened objectAtIndex:section] boolValue];
     [accessoryIV setBackgroundColor:[UIColor clearColor]];
-    if (value)
+    if (value){
         [accessoryIV setImage:self.openedSectionIcon];
-    else
+    }else {
         [accessoryIV setImage:self.closedSectionIcon];
     
+    [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+
+    }
     [sectionView addSubview:accessoryIV];
     
     return sectionView;
