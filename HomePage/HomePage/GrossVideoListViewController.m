@@ -34,6 +34,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
                         [UIImage imageNamed:@"videos"],
@@ -49,6 +50,7 @@
     [callout showInViewController:self animated:YES];
 }
 
+// Set sidebar navigation
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
     NSLog(@"Tapped item at index %i",index);
     [sidebar dismissAnimated:YES completion:nil];

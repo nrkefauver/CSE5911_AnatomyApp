@@ -13,7 +13,7 @@
 @interface HistoIndexViewController ()
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 @end
 
 @implementation HistoIndexViewController
@@ -171,16 +171,58 @@ NSArray *searchResults;
     return YES;
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+// Create navigation sidebar
+- (IBAction)onBurger:(id)sender {
+    NSArray *images = @[
+                        [UIImage imageNamed:@"Index"],
+                        [UIImage imageNamed:@"Letter H"],
+                        [UIImage imageNamed:@"home"],
+                        ];
+    
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+    callout.delegate = self;
+    callout.showFromRight = YES;
+    [callout showInViewController:self animated:YES];
+}
+
+// Set sidebar navigation
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    NSLog(@"Tapped item at index %i",index);
+    [sidebar dismissAnimated:YES completion:nil];
+    
+    //Index clicked
+    if (index == 0) {
+        //Do nothing
+    }
+    
+    //Histo Home clicked
+    else if (index == 1) {
+        [self performSegueWithIdentifier:@"HistoIndexToHistoHomeSegue" sender:self];
+    }
+    
+    //Home clicked
+    else if (index == 2) {
+        [self performSegueWithIdentifier:@"HistoIndexToHomeSegue" sender:self];
+    }
+    
+}
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
+    if (itemEnabled) {
+        [self.optionIndices addIndex:index];
+    }
+    else {
+        [self.optionIndices removeIndex:index];
+    }
+}
+
+// Hide navigation bar when sidebar is open
+- (void)sidebar:(RNFrostedSidebar *)sidebar willDismissFromScreenAnimated:(BOOL)animatedYesOrNo {
+    [self.navigationController setNavigationBarHidden:NO animated:animatedYesOrNo];
+}
+- (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
+    [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
+}
 
 @end
 
