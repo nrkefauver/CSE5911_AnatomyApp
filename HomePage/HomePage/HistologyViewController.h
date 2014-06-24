@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
 
-@interface HistologyViewController : UIViewController {
-    UIImageView* imageView;
-}
+@interface HistologyViewController : UICollectionViewController
+
+-(void)setImage:(UIImage *)image;
 
 @property (nonatomic, retain) IBOutlet UIImageView* imageView;
+
 @end
