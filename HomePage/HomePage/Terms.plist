@@ -268,25 +268,259 @@
 		<string></string>
 		<string></string>
 	</array>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
+	<array>
+		<string>Intermediolateral cell column</string>
+		<string>Column of preganglionic sympathetic neurons located between T1-L2. On the gross spinal cord this column of cells is evident as the lateral horn of gray matter. Axons of these neurons exit the spinal cord via the ventral roots. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Lateral corticospinal tract</string>
+		<string>Descending motor tract consisting of axons from the contralateral motor cortex (upper motor neurons). These fibers crossed within the caudal medulla at the pyramidal decussation to descend the remainder of the spinal cord on the contralateral side. Axons within this tract will synapse with neurons in the spinal cord along its length (lower motor neurons). The lower motor neurons leave the spinal cord to innervate skeletal muscle allowing for voluntary movement. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Lateral spinothalamic tract</string>
+		<string>Together with the anterior spinothalamic tract, collectively referred to as the anterolateral system. Axons within the lateral spinothalamic tract convey pain and temperature sensation from the contralateral side of the body. The axons occupying the tract ascend to synapse with neurons within the thalamus as well as axons within reticular formation. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Lissauer’s tract</string>
+		<string>Located between the substantia gelatinosa and the surface of the spinal cord. Consists of centrally projecting axons from neurons within the dorsal root ganglion specifically relaying pain and temperature information. The axons within this tract ascend 1-2 spinal segments before synapsing with second-order neurons within the substantia gelatinosa.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Lower motor neuron</string>
+		<string>Alpha motor neurons located within the ventral horn of gray matter responsible for innervating skeletal muscles. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Lumbar cistern</string>
+		<string>Enlarged space between the termination of the spinal cord (L1-2) and the inferior extent of the arachnoid and dura mater (S2). Occupants within the space include: ventral and dorsal roots (cauda equina), filum terminale and cerebrospinal fluid.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Lumbar enlargement</string>
+		<string>Enlarged segment of the spinal cord usually spanning from the second lumbar level to the third sacral level. The lumbar (or lumbosacral) enlargement is involved with innervation of the lower extremities.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Onuf’s nucleus</string>
+		<string>Located in the lateral portion of the ventral horn of gray matter between S1-3 spinal levels. Responsible for innervating sphincter and erectile musculature. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Phrenic nucleus</string>
+		<string>Motor neurons located in the medial aspect of the ventral horn of gray matter between spinal levels C3-5. The axons emerge from these neurons to form the phrenic nerve, responsible for innervation of the diaphragm. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Posterolateral sulcus</string>
+		<string>Shallow longitudinal groove found at the posterolateral surface of the spinal. This groove denotes the entrance of dorsal rootlets into the spinal cord.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Reticulospinal tract</string>
+		<string>Descending motor tract consisting of axons from reticular formation neurons. The reticulospinal tract is made up of two smaller tracts: the medial (pontine) reticulospinal tract and the lateral (medullary) reticulospinal tract.  This tract has many functions including: integration of information to aid in automatic movements of posture and locomotion, facilitates and inhibits voluntary movement and modulates pain impulses.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Rubrospinal tract</string>
+		<string>Descending motor tract consisting of axons from neurons located within the red nucleus. The descending axons cross immediately upon exiting the red nucleus to occupy the contralateral brainstem and thus spinal cord. This tract functions to provide strong output to limbs and allowing for accurate hand shape and placement (particularly in primates).</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Sacral parasympathetic nucleus</string>
+		<string>Column of preganglionic parasympathetic neurons located between S2-4. This column of cells does not form a distinct lateral horn of gray matter, though in a similar location as the intermediolateral cell column. Axons of these neurons exit the spinal cord via the ventral roots. Project to and synapse with postganglionic neurons for the bladder, bowel and genitals.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Somatotopic </string>
+		<string>Common organization of both motor and sensory pathways in which particular portions of the body are represented in particular regions of a pathway or nucleus. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Spastic paralysis</string>
+		<string>Type of paralysis caused by lesion of upper motor neurons. The muscles supplied by the damaged upper motor neurons present with hyperactive reflexes, are hypertonic and present with paralysis and/or weakness specifically in regards to fine voluntary movements. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Spinal accessory nucleus</string>
+		<string>Collection of motor neurons spanning from the caudal medulla to the C5 spinal level. The axons emerge from these neurons to form the rootlets of the spinal accessory nerve (CN XI).</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Spinal nerve</string>
+		<string>Generally a mixed nerve formed by the combination of the ventral and dorsal roots. There are thirty-one pairs of spinal nerves. These nerves are responsible for carrying motor, sensory and autonomic fibers. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Substantia gelatinosa</string>
+		<string>Distinctive region of gray matter capping the dorsal horn of gray matter. Primary, or first order neurons within the dorsal root ganglia involved in the spinothalamic tract synapse with the neurons located within this space.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Upper motor neuron</string>
+		<string>Neurons whose cell bodies begin in the cerebral cortex, and whose axons descend through the spinal cord to synapse on lower motor neurons. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Ventral horn of gray matter</string>
+		<string>This column of gray matter consists predominately of a large aggregation of basophilic alpha motor neuron cell bodies, dendrites, axons and central neuroglia. This section of the spinal cord in the adult is derived from the embryological basal plates. Axons of neurons located within the ventral horn of gray matter grow out of the spinal cord and form the majority of the ventral root of spinal nerves. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Ventral median fissure</string>
+		<string>A deep longitudinal groove that extends almost to the center of the cord. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Ventral roots of spinal nerves</string>
+		<string>The ventral roots are made up of axons from multipolar motor neurons located in the ventral horn of gray mater, as well as axons of preganglionic sympathetic neurons. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Ventral rootlets</string>
+		<string>Collection of somatic and visceral efferent fibers exiting the spinal cord at the anterolateral sulcus.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
 	<array/>
 	<array/>
 	<array/>
