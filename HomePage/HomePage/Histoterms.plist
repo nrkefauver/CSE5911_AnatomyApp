@@ -8,7 +8,7 @@
 	<string>Carries cellular parts from the nerve cell body to the periphery along the axon. The cytoskeletal track used for the transport is made up largely of the protein kinesin. </string>
 	<key>Astrocyte</key>
 	<string>Largest neuroglial cells that provide physical and metabolic support to neurons. There are two types of astrocytes: protoplasmic (predominately found in the gray matter) and fibrous (predominately found in the white matter). Also play an important role in maintaining the blood-brain barrier.</string>
-	<key>Axoaxonic synapse.</key>
+	<key>Axoaxonic synapse</key>
 	<string>Synapse between the axon of one neuron (presynaptic) and axon of another neuron (postsynaptic).</string>
 	<key>Axodendritic synapse</key>
 	<string>Synapse between the axon of one neuron (presynaptic) and dendrite of another neuron (postsynaptic).</string>

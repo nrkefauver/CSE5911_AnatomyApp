@@ -34,6 +34,12 @@
     self.imageView.image = image;
 }
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Set navigation bar color
+    return YES;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -46,6 +52,7 @@
     [super viewDidUnload];
 }
 
+// Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
                         [UIImage imageNamed:@"videos"],
@@ -61,6 +68,7 @@
     [callout showInViewController:self animated:YES];
 }
 
+// Set sidebar navigation
 - (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
     NSLog(@"Tapped item at index %i",index);
     [sidebar dismissAnimated:YES completion:nil];
@@ -101,23 +109,12 @@
     }
 }
 
+// Hide navigation bar when sidebar is open
 - (void)sidebar:(RNFrostedSidebar *)sidebar willDismissFromScreenAnimated:(BOOL)animatedYesOrNo {
     [self.navigationController setNavigationBarHidden:NO animated:animatedYesOrNo];
 }
-
 - (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
