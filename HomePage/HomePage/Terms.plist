@@ -13,27 +13,239 @@
 		<string></string>
 		<string></string>
 	</array>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
-	<array/>
+	<array>
+		<string>Anterior spinothalamic tract</string>
+		<string>Also referred to as the ventral spinothalamic system, this spinal tract is responsible for carrying crude touch and firm pressure information from the periphery. The tract consists of axons from second order neurons from the contralateral side of the spinal cord. The axons within the tract ascend the spinal cord and synapse with third order neurons within the thalamus (VPL) and reticular formation.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Anterior white commissure</string>
+		<string>Thin zone of white mater located dorsal to the ventral median fissure. Consists of nerve fibers crossing over to the contralateral side of the spinal cord.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Anterolateral sulcus</string>
+		<string>Structural landmark on the spinal cord denoting the location in which the ventral rootlets exit the spinal cord. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Cauda equina</string>
+		<string>The large bundle of dorsal and ventral nerve roots that continue within the vertebral canal below the termination of the spinal cord within the lumbar cistern. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Cervical enlargement</string>
+		<string>Enlarged segment of the spinal cord usually spanning from the fifth cervical level to the first thoracic level. The cervical enlargement is involved with innervation of the upper extremities.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Clarke’s nucleus (nucleus dorsalis)</string>
+		<string>Rounded collection of interneurons on the medial surface of the posterior horn base between the T1-L3 spinal levels. Main function is as a relay nucleus for information to the cerebellum via the dorsal spinocerebellar tract, such as proprioception.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Conus medullaris
+        Conus medullaris
+    </string>
+		<string>The termination of the spinal cord, which traditionally is located in the adult between vertebral levels L1-L2.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dermatome	</string>
+		<string>A strip of skin that is innervated by a single spinal nerve. C1 is the only spinal nerve without a dermatome.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dorsal Column-Medial Lemniscus System</string>
+		<string>Ascending tract responsible for convey fine touch, vibration and conscious proprioception from the periphery. The dorsal column of white matter inferior to T6 is organized into one group called the fasciculus gracilis. Superior to T6 the dorsal column is divided into the fasciculus gracilis (medially) and the fasciculus cuneatus (laterally). All first order sensory axons responsible for relaying fine touch, vibration and conscious proprioception at T6 and below enter the spinal cord and ascend within the fasciculus gracilis. All first order sensory axons responsible for relaying fine touch, vibration and conscious proprioception above T6 enter the spinal cord and ascend within the fasciculus cuneatus. Axons within each fasciculus ascend on the ipsilateral side of the spinal cord until reaching their respective nucleus within the caudal medulla. The axons of the second order neurons cross to the contralateral side of the brainstem within a group of axons called the medial lemniscus, which synapse with third order neurons within the thalamus. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dorsal horn of gray matter</string>
+		<string>This column of gray matter is formed mainly by interneurons, afferent projection nuclei, and central neuroglia. Sensory information from the periphery is relayed from the afferent nuclei in the dorsal root ganglia to synapse with the afferent nuclei within the dorsal gray horn. Two prominent parts of the dorsal horn of gray mater are the substantia gelatinosa and the body of the dorsal horn. This section of the spinal cord in the adult is derived from the embryological alar plates.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dorsal intermediate sulcus</string>
+		<string>Longitudinal groove located in only the cervical and upper thoracic levels of the spinal cord. This denotes the separation of the fasciculus gracilis and fasciculus cuneatus. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dorsal median sulcus</string>
+		<string>Shallow narrow groove extending to the gray mater surrounding the central canal.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dorsal roots of spinal nerves</string>
+		<string>Collection of central axon processes from pseudounipolar neurons within the dorsal root ganglion carrying sensory information. Continues as the dorsal rootlets into the spinal cord.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dorsal root ganglion</string>
+		<string>Aggregation of pseudounipolar neurons situated within the dorsal roots. These are the cell bodies of the primary sensory neurons whose central processes pass into the spinal cord and peripheral processes travel through the spinal nerve. These pseudounipolar neurons are derived from neural crest cells. Satellite neuroglial cells are also present within the ganglion.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dorsal rootlets</string>
+		<string>Continuation of the nerve cell processes from the dorsal root. The dorsal rootlets enter the spinal cord at the posterolateral sulcus.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dorsal spinocerebellar tract</string>
+		<string>Ascending tract responsible for conveying proprioceptive information from skeletal muscles and joints to the cerebellum. Axons relaying this sensory information synapse with Clarke’s nucleus. Axons from Clarke’s nucleus project to a portion of the lateral funiculus, which is the organized dorsal spinocerebellar tract. These axons enter the cerebellum through the inferior cerebellar peduncle and terminate within the ipsilateral side of the cerebellum, thus no part of this tract crosses to the contralateral side. Clarke’s nucleus does not extend below the L3 spinal cord level, and thus neither does the dorsal spinocerebellar tract.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Fasciculus cuneatus</string>
+		<string>Rostral to T6 the dorsal column of spinal cord white matter is divided by the posterior intermediate septum into the fasciculus cuneatus and gracilis. Consist of the first order axons for the medial lemniscus system rostral to T6.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Fasciculus gracilis</string>
+		<string>Caudal to T6 each dorsal column of spinal cord white matter consists of the undivided fasciculus gracilis. This fiber tract consists of large central processes of neuron cell bodies within dorsal root ganglia carrying information from various mechanoreceptors. Consist of the first order axons for the medial lemniscus system caudal to T6.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Fasciculus propius</string>
+		<string>Collection of nerve fibers located within the white matter of the spinal cord on the border of the gray matter. These nerve fibers within this tract can be ascending, descending, crossed or uncrossed in interconnecting various spinal cord levels. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Filum terminale</string>
+		<string>A long fibrous thread formed distal to the conus medullaris by the continuation of pia mater. The filum terminale continues inferiorly to attach to the coccyx, representing the original location of the developing spinal cord</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Flaccid paralysis</string>
+		<string>Type of paralysis caused by lesion of lower motor neurons. The muscles supplied by the damaged lower motor neurons become limp and unable to contract. Reflex contractions are no longer attainable and the muscle will begin to atrophy.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
 	<array/>
 	<array/>
 	<array/>

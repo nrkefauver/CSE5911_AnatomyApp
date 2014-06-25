@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UILabel  *subtitleLabel;
 @property (strong, nonatomic) IBOutlet UILabel  *textLabel;
 @property (strong, nonatomic) IBOutlet UILabel  *definitionLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 
 @end
