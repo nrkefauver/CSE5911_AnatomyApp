@@ -246,8 +246,28 @@
 		<string></string>
 		<string></string>
 	</array>
-	<array/>
-	<array/>
+	<array>
+		<string>Funiculus</string>
+		<string>Common division of the spinal cord white matter. Divided into ventral, dorsal and lateral funiculi. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Fusimotor neurons</string>
+		<string>Gamma motor neurons scattered within groups of alpha motor neurons. These motor neurons are responsible for innervating muscle spindles.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
 	<array/>
 	<array/>
 	<array/>
