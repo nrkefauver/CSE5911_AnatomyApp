@@ -13,7 +13,7 @@
 @end
 
 @implementation NeuroViewController
-enum NeuroImageSelected currentImage = cervicalScan;
+
 
 @synthesize imageView = nImageView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,7 +31,7 @@ enum NeuroImageSelected currentImage = cervicalScan;
     // Do any additional setup after loading the view.
     
     //Loads main image to Neuro main screen
-    UIImage* image = [UIImage imageNamed:@"Cervical_Scan"];
+    UIImage* image = [UIImage imageNamed:@"Cervical"];
     NSAssert(image, @"image is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
     
     self.imageView.backgroundColor = [UIColor blackColor];
@@ -53,60 +53,16 @@ enum NeuroImageSelected currentImage = cervicalScan;
     switch(segmentedControl.selectedSegmentIndex)
     {
         case 0:
-            self.imageView.image = [UIImage imageNamed:@"Cervical_Scan"];
-            currentImage = cervicalScan;
+            self.imageView.image = [UIImage imageNamed:@"Cervical"];
             break;
         case 1:
-            self.imageView.image = [UIImage imageNamed:@"Thoracic_Scan"];
-            currentImage = thoracicScan;
+            self.imageView.image = [UIImage imageNamed:@"Thoracic"];
             break;
         case 2:
-           self.imageView.image = [UIImage imageNamed:@"Lumbar_Scan"];
-            currentImage = lumbarScan;
+           self.imageView.image = [UIImage imageNamed:@"Lumbar"];
             break;
         case 3:
-            self.imageView.image = [UIImage imageNamed:@"Sacral_Scan"];
-            currentImage = sacralScan;
-            break;
-    }
-}
-
-//Based on which tab has been clicked, switches between the scan and the drawing
-- (IBAction)imageClicked:(id)sender
-{
-    switch(currentImage)
-    {
-        case 0:
-            self.imageView.image = [UIImage imageNamed:@"Cervical_Drawing"];
-            currentImage = cervicalDrawing;
-            break;
-        case 1:
-            self.imageView.image = [UIImage imageNamed:@"Cervical_Scan"];
-            currentImage = cervicalScan;
-            break;
-        case 2:
-            self.imageView.image = [UIImage imageNamed:@"Thoracic_Drawing"];
-            currentImage = thoracicDrawing;
-            break;
-        case 3:
-            self.imageView.image = [UIImage imageNamed:@"Thoracic_Scan"];
-            currentImage = thoracicScan;
-            break;
-        case 4:
-            self.imageView.image = [UIImage imageNamed:@"Lumbar_Drawing"];
-            currentImage = lumbarDrawing;
-            break;
-        case 5:
-            self.imageView.image = [UIImage imageNamed:@"Lumbar_Scan"];
-            currentImage = lumbarScan;
-            break;
-        case 6:
-            self.imageView.image = [UIImage imageNamed:@"Sacral_Drawing"];
-            currentImage = sacralDrawing;
-            break;
-        case 7:
-            self.imageView.image = [UIImage imageNamed:@"Sacral_Scan"];
-            currentImage = sacralScan;
+            self.imageView.image = [UIImage imageNamed:@"Sacral"];
             break;
     }
 }

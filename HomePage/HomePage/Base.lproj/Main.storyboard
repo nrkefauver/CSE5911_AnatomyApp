@@ -15,7 +15,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="FAM-74-hfo">
                                 <rect key="frame" x="121" y="141" width="252" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
+                                <state key="normal" backgroundImage="Grey Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Histology">
                                             <attributes>
@@ -32,7 +32,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="HJD-HM-QnG">
                                 <rect key="frame" x="414" y="141" width="234" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
+                                <state key="normal" backgroundImage="Grey Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Embryology">
                                             <attributes>
@@ -49,7 +49,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="nYF-HJ-C2Y">
                                 <rect key="frame" x="121" y="390" width="252" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
+                                <state key="normal" backgroundImage="Grey Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Gross Anatomy">
                                             <attributes>
@@ -66,7 +66,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="JU3-2x-Iqw">
                                 <rect key="frame" x="414" y="390" width="234" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
+                                <state key="normal" backgroundImage="Grey Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Neuroanatomy">
                                             <attributes>
@@ -83,7 +83,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="aow-vj-q69">
                                 <rect key="frame" x="121" y="623" width="527" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Index" backgroundImage="Blue Button.gif">
+                                <state key="normal" title="Index" backgroundImage="Grey Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Index">
                                             <attributes>
@@ -281,7 +281,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="JEi-Xj-tuB">
                                 <rect key="frame" x="240" y="203" width="289" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
+                                <state key="normal" backgroundImage="Grey Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Neural Tube 01">
                                             <attributes>
@@ -298,7 +298,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="6w1-WI-hd3">
                                 <rect key="frame" x="240" y="303" width="289" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
+                                <state key="normal" backgroundImage="Grey Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Sample Video">
                                             <attributes>
@@ -433,7 +433,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Tlg-fq-N2E">
                                 <rect key="frame" x="235" y="183" width="298" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
+                                <state key="normal" backgroundImage="Grey Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Slide 1">
                                             <attributes>
@@ -450,7 +450,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="49i-9e-Lyw">
                                 <rect key="frame" x="228" y="313" width="313" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Blue Button.gif">
+                                <state key="normal" backgroundImage="Grey Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Slide 2">
                                             <attributes>
@@ -699,16 +699,6 @@
                                     <action selector="contentModeChanged:" destination="Z1N-LW-t3Y" eventType="valueChanged" id="FiD-gu-sgL"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h98-tw-9Oj">
-                                <rect key="frame" x="158" y="253" width="453" height="366"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="imageClicked:" destination="Z1N-LW-t3Y" eventType="touchUpInside" id="6Yk-eI-wWJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1123,9 +1113,9 @@
     </scenes>
     <resources>
         <image name="Black Burger.png" width="45" height="45"/>
-        <image name="Blue Button.gif" width="312" height="308"/>
         <image name="Cervical_Scan.png" width="786" height="502"/>
         <image name="E0.png" width="147" height="195"/>
+        <image name="Grey Button.png" width="200" height="200"/>
         <image name="Gross.png" width="322" height="305"/>
         <image name="histo1.jpg" width="1280" height="1024"/>
         <image name="histo2.jpg" width="2453" height="1864"/>
@@ -1136,18 +1126,18 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="yHH-64-pgG"/>
-        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="SbS-2b-D5Y"/>
+        <segue reference="AwG-wi-xhT"/>
+        <segue reference="TMk-2L-1Y4"/>
+        <segue reference="2YT-sS-ArM"/>
+        <segue reference="Cbj-Qs-rfV"/>
+        <segue reference="8Ym-jz-PyO"/>
+        <segue reference="32O-Pf-eqc"/>
+        <segue reference="Rde-ZO-HXw"/>
         <segue reference="psJ-mD-Iz2"/>
-        <segue reference="gyO-mB-WHb"/>
-        <segue reference="S6H-Ku-lpQ"/>
+        <segue reference="qEZ-5V-GMV"/>
         <segue reference="TJa-hY-aVm"/>
         <segue reference="xBs-ZS-VPb"/>
         <segue reference="9Yg-Nh-qkQ"/>
-        <segue reference="f8e-Mr-dEL"/>
-        <segue reference="Rde-ZO-HXw"/>
-        <segue reference="PdE-pb-my7"/>
-        <segue reference="xgI-CB-z14"/>
-        <segue reference="Wkm-CE-bDW"/>
     </inferredMetricsTieBreakers>
 </document>

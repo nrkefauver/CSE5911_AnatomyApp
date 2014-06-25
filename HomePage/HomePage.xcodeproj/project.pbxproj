@@ -28,6 +28,11 @@
 		466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */; };
 		466C49C3193BC606000B2A78 /* 3D Models.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49C2193BC606000B2A78 /* 3D Models.png */; };
 		46AC5F14193E6461003F1E12 /* Gross.png in Resources */ = {isa = PBXBuildFile; fileRef = 46AC5F0D193E6461003F1E12 /* Gross.png */; };
+		46EC9755195B84EF00E05CEB /* Cervical.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9751195B84EF00E05CEB /* Cervical.png */; };
+		46EC9756195B84EF00E05CEB /* Lumbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9752195B84EF00E05CEB /* Lumbar.png */; };
+		46EC9757195B84EF00E05CEB /* Sacral.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9753195B84EF00E05CEB /* Sacral.png */; };
+		46EC9758195B84EF00E05CEB /* Thoracic.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9754195B84EF00E05CEB /* Thoracic.png */; };
+		46EC975A195B85D300E05CEB /* Grey Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9759195B85D300E05CEB /* Grey Button.png */; };
 		5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA0C19467D6500677409 /* GrossVideoListViewController.m */; };
 		5953AA101946802C00677409 /* Gross3DModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA0F1946802C00677409 /* Gross3DModelViewController.m */; };
 		5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */; };
@@ -143,6 +148,11 @@
 		466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
 		466C49C2193BC606000B2A78 /* 3D Models.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3D Models.png"; path = "Images/3D Models.png"; sourceTree = "<group>"; };
 		46AC5F0D193E6461003F1E12 /* Gross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gross.png; path = HomePage/Images/Gross.png; sourceTree = SOURCE_ROOT; };
+		46EC9751195B84EF00E05CEB /* Cervical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cervical.png; sourceTree = "<group>"; };
+		46EC9752195B84EF00E05CEB /* Lumbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lumbar.png; sourceTree = "<group>"; };
+		46EC9753195B84EF00E05CEB /* Sacral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sacral.png; sourceTree = "<group>"; };
+		46EC9754195B84EF00E05CEB /* Thoracic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thoracic.png; sourceTree = "<group>"; };
+		46EC9759195B85D300E05CEB /* Grey Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Grey Button.png"; path = "HomePage/Images/Grey Button.png"; sourceTree = "<group>"; };
 		5953AA0B19467D6500677409 /* GrossVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrossVideoListViewController.h; sourceTree = "<group>"; };
 		5953AA0C19467D6500677409 /* GrossVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrossVideoListViewController.m; sourceTree = "<group>"; };
 		5953AA0E1946802C00677409 /* Gross3DModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gross3DModelViewController.h; sourceTree = "<group>"; };
@@ -342,6 +352,10 @@
 		5962242419508A3A00701B76 /* Neuro */ = {
 			isa = PBXGroup;
 			children = (
+				46EC9751195B84EF00E05CEB /* Cervical.png */,
+				46EC9752195B84EF00E05CEB /* Lumbar.png */,
+				46EC9753195B84EF00E05CEB /* Sacral.png */,
+				46EC9754195B84EF00E05CEB /* Thoracic.png */,
 				461B45DE1950CE980000189B /* Cervical_Drawing.png */,
 				461B45DF1950CE980000189B /* Cervical_Scan.png */,
 				461B45E01950CE980000189B /* Lumbar_Drawing.png */,
@@ -476,6 +490,7 @@
 		D06E5E25192FA51D00A12651 = {
 			isa = PBXGroup;
 			children = (
+				46EC9759195B85D300E05CEB /* Grey Button.png */,
 				D06E5E37192FA51D00A12651 /* HomePage */,
 				D06E5E56192FA51D00A12651 /* HomePageTests */,
 				D06E5E30192FA51D00A12651 /* Frameworks */,
@@ -693,7 +708,9 @@
 				5962243219508A3A00701B76 /* Neuroepithelium.png in Resources */,
 				D0D8CC25195B7125009ECF3E /* E6.png in Resources */,
 				461B45E61950CE980000189B /* Cervical_Drawing.png in Resources */,
+				46EC9756195B84EF00E05CEB /* Lumbar.png in Resources */,
 				5962242D19508A3A00701B76 /* CNS Development.png in Resources */,
+				46EC9758195B84EF00E05CEB /* Thoracic.png in Resources */,
 				462CB055193CFDB200B6CF72 /* Letter N.png in Resources */,
 				5962243519508A3A00701B76 /* 0.jpg in Resources */,
 				5962243119508A3A00701B76 /* Neural Tube Patterning.png in Resources */,
@@ -710,6 +727,8 @@
 				5962243619508A3A00701B76 /* 1.jpg in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
 				5962241519508A1500701B76 /* Neuraltube_001.mp4 in Resources */,
+				46EC9757195B84EF00E05CEB /* Sacral.png in Resources */,
+				46EC9755195B84EF00E05CEB /* Cervical.png in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
 				461B45EC1950CE980000189B /* Thoracic_Drawing.png in Resources */,
 				D0253F43193FE10A00CFE2AC /* E1.png in Resources */,
@@ -743,6 +762,7 @@
 				5962243419508A3A00701B76 /* Spinal Cord Further Development.png in Resources */,
 				5962243919508A3A00701B76 /* neuro-lumb-scan.jpg in Resources */,
 				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
+				46EC975A195B85D300E05CEB /* Grey Button.png in Resources */,
 				461B45E81950CE980000189B /* Lumbar_Drawing.png in Resources */,
 				461B45ED1950CE980000189B /* Thoracic_Scan.png in Resources */,
 			);
