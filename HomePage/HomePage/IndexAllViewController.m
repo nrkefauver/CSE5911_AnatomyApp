@@ -281,19 +281,34 @@ CGFloat origin;
     if (cell == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
         cell = [nib objectAtIndex:0];
-    }
-
-    //Later
-    if (selectedIndex == indexPath.row) {
-        //Do expanded cell stuff
-    }
-    else {
-        //Do closed cell stuff
+        
+        // Set preselected term in the segmented control (tag 1000):
+        UIView *nibView = [nib objectAtIndex:0];
+        UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+        
+        // in Neuro
+        if(indexPath.section==0)
+        {
+            segmentedControl.selectedSegmentIndex = 0;
+        }
+        // in Histo
+        else if(indexPath.section==1)
+        {
+            segmentedControl.selectedSegmentIndex = 1;
+        }
+        // in Embryo
+        else if(indexPath.section==2)
+        {
+            segmentedControl.selectedSegmentIndex = 2;
+        }
+        // in Gross
+        else if(indexPath.section==3)
+        {
+            segmentedControl.selectedSegmentIndex = 3;
+        }
     }
     
-    //COLLAPSIBLE CODE
-
-    
+    // Populate terms and definitions
     NSString *term;
     int pos = indexPath.row;
     if (pos<= searchArray.count) {
@@ -322,7 +337,6 @@ CGFloat origin;
         }
     
     }
-
     
     cell.clipsToBounds = YES;
     return cell;

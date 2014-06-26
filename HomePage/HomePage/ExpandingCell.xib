@@ -41,7 +41,7 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="3St-Pc-wPa">
+                    <segmentedControl opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="3St-Pc-wPa">
                         <rect key="frame" x="20" y="134" width="496" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <segments>
