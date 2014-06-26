@@ -248,8 +248,6 @@ CGFloat origin;
     
     //Set index to -1 saying no cell is expanded or should expand.
     selectedIndex = -1;
-    
-  
 }
 
 - (void)didReceiveMemoryWarning
@@ -289,22 +287,22 @@ CGFloat origin;
         // in Neuro
         if(indexPath.section==0)
         {
-            segmentedControl.selectedSegmentIndex = 0;
+            [segmentedControl setSelectedSegmentIndex:0];
         }
         // in Histo
         else if(indexPath.section==1)
         {
-            segmentedControl.selectedSegmentIndex = 1;
+            [segmentedControl setSelectedSegmentIndex:1];
         }
         // in Embryo
         else if(indexPath.section==2)
         {
-            segmentedControl.selectedSegmentIndex = 2;
+            [segmentedControl setSelectedSegmentIndex:2];
         }
         // in Gross
         else if(indexPath.section==3)
         {
-            segmentedControl.selectedSegmentIndex = 3;
+            [segmentedControl setSelectedSegmentIndex:3];
         }
     }
     
@@ -354,6 +352,40 @@ CGFloat origin;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
 
+    // Access expandingCell's segmented controller
+    static NSString *cellIdentifier = @"expandingCell";
+    
+    ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
+    cell = [nib objectAtIndex:0];
+    
+    // Set preselected term in the segmented control (tag 1000):
+    UIView *nibView = [nib objectAtIndex:0];
+    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+    
+    // in Neuro
+    if(indexPath.section==0)
+    {
+        [segmentedControl setSelectedSegmentIndex:0];
+    }
+    // in Histo
+    else if(indexPath.section==1)
+    {
+        [segmentedControl setSelectedSegmentIndex:1];
+    }
+    // in Embryo
+    else if(indexPath.section==2)
+    {
+        [segmentedControl setSelectedSegmentIndex:2];
+    }
+    // in Gross
+    else if(indexPath.section==3)
+    {
+        [segmentedControl setSelectedSegmentIndex:3];
+    }
+    
+    
     //User taps new row with none expanded
     if (selectedIndex == -1) {
         selectedIndex = indexPath.row;
@@ -390,15 +422,5 @@ CGFloat origin;
     return YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
