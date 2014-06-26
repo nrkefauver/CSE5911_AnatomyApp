@@ -8,6 +8,7 @@
 
 #import "PopoverTableViewController.h"
 #import "ExpandingCell.h"
+#import "PopoverTableViewCell.h"
 
 @interface PopoverTableViewController ()
 
@@ -52,6 +53,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    static NSString *cellIdentifier = @"popoverCell";
+    
+    PopoverTableViewCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"PopoverTableViewCell"  owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+
+    /*
     static NSString *cellIdentifier = @"expandingCell";
     
     ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -60,7 +71,7 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
-
+     */
     
     /*
     static NSString *cellIdentifier = @"expandingCell";
@@ -72,7 +83,10 @@
     return cell;
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 600;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

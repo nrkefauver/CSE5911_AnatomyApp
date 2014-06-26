@@ -60,6 +60,8 @@
 		596224441950907000701B76 /* HistoSlide2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596224431950907000701B76 /* HistoSlide2ViewController.m */; };
 		597F1799195C82D600A722CD /* PopoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597F1797195C82D600A722CD /* PopoverTableViewController.m */; };
 		597F179A195C82D600A722CD /* PopoverTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F1798195C82D600A722CD /* PopoverTableViewController.xib */; };
+		597F179E195C873500A722CD /* PopoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 597F179C195C873500A722CD /* PopoverTableViewCell.m */; };
+		597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F179D195C873500A722CD /* PopoverTableViewCell.xib */; };
 		7CC1BD291958E24B00B70823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC1BD281958E24B00B70823 /* MapKit.framework */; };
 		D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA833194785A700C01BBF /* Embryoterms.plist */; };
 		D00CA836194785B500C01BBF /* Histoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA835194785B500C01BBF /* Histoterms.plist */; };
@@ -186,6 +188,9 @@
 		597F1796195C82D600A722CD /* PopoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverTableViewController.h; sourceTree = "<group>"; };
 		597F1797195C82D600A722CD /* PopoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverTableViewController.m; sourceTree = "<group>"; };
 		597F1798195C82D600A722CD /* PopoverTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverTableViewController.xib; sourceTree = "<group>"; };
+		597F179B195C873500A722CD /* PopoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverTableViewCell.h; sourceTree = "<group>"; };
+		597F179C195C873500A722CD /* PopoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverTableViewCell.m; sourceTree = "<group>"; };
+		597F179D195C873500A722CD /* PopoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverTableViewCell.xib; sourceTree = "<group>"; };
 		7CC1BD281958E24B00B70823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D00CA833194785A700C01BBF /* Embryoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Embryoterms.plist; sourceTree = "<group>"; };
 		D00CA835194785B500C01BBF /* Histoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Histoterms.plist; sourceTree = "<group>"; };
@@ -379,6 +384,9 @@
 				597F1796195C82D600A722CD /* PopoverTableViewController.h */,
 				597F1797195C82D600A722CD /* PopoverTableViewController.m */,
 				597F1798195C82D600A722CD /* PopoverTableViewController.xib */,
+				597F179B195C873500A722CD /* PopoverTableViewCell.h */,
+				597F179C195C873500A722CD /* PopoverTableViewCell.m */,
+				597F179D195C873500A722CD /* PopoverTableViewCell.xib */,
 			);
 			name = PopoverTable;
 			sourceTree = "<group>";
@@ -737,6 +745,7 @@
 				D08A364C1958762F005E5C77 /* closedIcon.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				5962243319508A3A00701B76 /* SC change position.png in Resources */,
+				597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */,
 				D08A364E19587780005E5C77 /* openedIcon.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
 				5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */,
@@ -792,6 +801,7 @@
 				D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */,
 				D06E5E42192FA51D00A12651 /* HomePageAppDelegate.m in Sources */,
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,
+				597F179E195C873500A722CD /* PopoverTableViewCell.m in Sources */,
 				5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */,
 				D06E5E3E192FA51D00A12651 /* main.m in Sources */,
 				D06E5E48192FA51D00A12651 /* HomePageViewController.m in Sources */,
