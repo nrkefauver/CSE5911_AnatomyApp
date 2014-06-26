@@ -44,6 +44,8 @@
 	<string>Membrane that covers the neural tube. The meninges form three different layers, the dura, arachnoid and pia mater. The dura mater develops from the overlying mesenchyme, while the arachnoid and pia mater layers develop from neural crest cells.</string>
 	<key>Meningocele</key>
 	<string>Classification of spina bifida cystica, in which meningeal layers and cerebrospinal fluid protrude through the neural arch defect.</string>
+	<key>Meningomyelocele</key>
+	<string>Classification of spina bifida cystica, in which the spinal cord/nerve roots and mingeal layers/cerebrospinal fluid protrude through the neural arch defect</string>
 	<key>Mesenchymal cells</key>
 	<string>A type of embryonic connective tissue derived from mesoderm. Have the ability to differentiate into various cell types including: osteoblasts, chondroblasts, myocytes and adipocytes. </string>
 	<key>Microglial cells</key>

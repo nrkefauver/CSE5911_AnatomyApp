@@ -521,6 +521,781 @@
 		<string></string>
 		<string></string>
 	</array>
+	<array>
+		<string>Action potential</string>
+		<string></string>
+		<string>Electrochemical process initiated by impulses carried from the neuron cell body or dendrites to the axon hillock. The impulse then will continue to travel along the length of the axon. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Anterograde transport</string>
+		<string></string>
+		<string>Carries cellular parts from the nerve cell body to the periphery along the axon. The cytoskeletal track used for the transport is made up largely of the protein kinesin. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Astrocyte</string>
+		<string></string>
+		<string>Largest neuroglial cells that provide physical and metabolic support to neurons. There are two types of astrocytes: protoplasmic (predominately found in the gray matter) and fibrous (predominately found in the white matter). Also play an important role in maintaining the blood-brain barrier.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Axoaxonic synapse</string>
+		<string></string>
+		<string>Synapse between the axon of one neuron (presynaptic) and axon of another neuron (postsynaptic).</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Axodendritic synapse</string>
+		<string></string>
+		<string>Synapse between the axon of one neuron (presynaptic) and dendrite of another neuron (postsynaptic).</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Axon</string>
+		<string></string>
+		<string>Process extending from the neuron cell body, responsible for transmitting impulses away from the cell body usually to other neurons or effector cells.</string>
+		<string></string>
+		<string>Process extending from the neuron cell body, responsible for transmitting impulses away from the cell body usually to other neurons or effector cells.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Axon hillock</string>
+		<string></string>
+		<string>Connection between the axon and the neuron cell body. Location of action potential initiation.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Axosomatic synapse	</string>
+		<string></string>
+		<string>Synapse between the axon of one neuron (presynaptic) and the cell body of another neuron (postsynaptic).</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Bipolar neuron</string>
+		<string></string>
+		<string>Neurons that have a single axon and single dendrite. Bipolar neurons are rare and are most often associated with receptors for the special senses (smell, taste, hearing, sight and equilibrium).</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Chemical synapse	</string>
+		<string></string>
+		<string>Transmission of impulses is done via the release of chemical substances, neurotransmitters from the presynaptic neuron to bind on receptors of postsynaptic neurons or effector cells.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Choroid plexus</string>
+		<string></string>
+		<string>Combination of the ependymal cells and associated capillaries. Responsible for producing cerebrospinal fluid. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dendrite</string>
+		<string></string>
+		<string>Process(es) extending from the neuron cell body that transmits impulses from the periphery towards the neuron cell body. Larger diameters compared to axons and are unmyelinated. </string>
+		<string></string>
+		<string>Process(es) extending from the neuron cell body that transmits impulses from the periphery towards the neuron cell body. Larger diameters compared to axons and are unmyelinated. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dendritic tree</string>
+		<string></string>
+		<string>Term used to describe the arborization of all dendritic extensions for a single neuron. Greatly increase the receptor surface area of a neuron. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Electrical synapse</string>
+		<string></string>
+		<string>Transmission of impulses is done via gap junctions, allowing the spread of electrical current from one cell to the next. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Ependymal cells</string>
+		<string></string>
+		<string>Epithelial-type cells lining the ventricular cavities of the central nervous system. Cuboidal to columnar in morphological classification. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Ganglion</string>
+		<string></string>
+		<string>General term used to define an aggregation of neuron cell bodies specifically located in the peripheral nervous system.</string>
+		<string></string>
+		<string>General term used to define an aggregation of neuron cell bodies specifically located in the peripheral nervous system.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Gap junctions</string>
+		<string></string>
+		<string>Form of cell-to-cell communication. Each gap junction consists of two connexons, one per cell. Gap junctions allow molecules and ions to freely move between cells. 
+</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Gray Matter</string>
+		<string></string>
+		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is gray in appearance due to the large aggregation of neuron cell bodies. Also contains dendrites, axons and central neuroglia.</string>
+		<string></string>
+		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is gray in appearance due to the large aggregation of neuron cell bodies. Also contains dendrites, axons and central neuroglia.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Microglia</string>
+		<string></string>
+		<string>Small elongated phagocytic cells, which are considered to be a part of the mononuclear phagocytic system. The microglia precursor cells enter the central nervous system by way of the vascular system. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Multipolar neuron</string>
+		<string></string>
+		<string>Neurons that have a single axons and two or more dendrites. Motor neurons and interneurons are the most common examples within the nervous system.</string>
+		<string></string>
+		<string>Neurons that have a single axons and two or more dendrites. Motor neurons and interneurons are the most common examples within the nervous system.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neuroglial cells</string>
+		<string></string>
+		<string>Supporting, nonconducting cells located in close proximity to neurons.</string>
+		<string></string>
+		<string>Supporting, nonconducting cells located in close proximity to neurons.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neuron cell body (perikaryon)</string>
+		<string></string>
+		<string>Contains the euchromatic nucleus and organelles that maintain the neuron.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neurotransmitters</string>
+		<string></string>
+		<string>Endogenous chemicals that are involved in chemical synapses. Located within synaptic vesicles of neurons, the neurotransmitters are released in response to an action potential across the synaptic cleft to bind to the postsynaptic receptors. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Nissl bodies</string>
+		<string></string>
+		<string>Appearance of each stack of rough endoplasmic reticulum within the nucleus of the neuron. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Oligodendrocytes</string>
+		<string></string>
+		<string>Neuroglial cells found exclusively in the central nervous system. Responsible for the formation and maintenance of myelin along multiple axons.  </string>
+		<string>Derived from glioblasts that differentiated into oligodendroblasts. Oligodendroblasts will further differentiate into oligodendrocytes. These cells are responsible for myelinating axons within the central nervous system. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Pseudounipolar neuron</string>
+		<string></string>
+		<string>Neurons have a single axonal process. One end of the axon extends into the periphery and the other end of the axon extends into the central nervous system. Majority of the pseudounipolar neurons are sensory neurons.</string>
+		<string></string>
+		<string>Neurons have a single axonal process. One end of the axon extends into the periphery and the other end of the axon extends into the central nervous system. Majority of the pseudounipolar neurons are sensory neurons.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Retrograde transport</string>
+		<string></string>
+		<string>Carries cellular parts away from the periphery and towards the neuron cell body. The cytoskeletal track used for transport is made up largely of the protein dynein. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Satellite cells</string>
+		<string></string>
+		<string>Neuroglial cells found in the peripheral nervous system, surrounding nerve cell bodies within ganglia to help support the microenvironment.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Schwann cells</string>
+		<string></string>
+		<string>Neuroglial cells found only in the peripheral nervous system. Responsible for supporting both myelinated and unmyelinated nerve cell fibers. Each segment of myelin along peripheral axons is composed of a single schwann cell. </string>
+		<string>Neuroglial cells found only in the peripheral nervous system. Responsible for supporting both myelinated and unmyelinated nerve cell fibers. Each segment of myelin along peripheral axons is composed of a single schwann cell. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Synapse</string>
+		<string></string>
+		<string>Specialized junction between neurons that facilitates the transmission of impulses from one neuron to another neuron, or between axons and effector cells. 
+</string>
+		<string></string>
+		<string>Specialized junction between neurons that facilitates the transmission of impulses from one neuron to another neuron, or between axons and effector cells. 
+</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>White matter</string>
+		<string></string>
+		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is white in appearance due to the large aggregation of myelinated axons. Also contains unmyelinated axons and neuroglial cells.</string>
+		<string></string>
+		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is white in appearance due to the large aggregation of myelinated axons. Also contains unmyelinated axons and neuroglial cells.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Alar plate (lamina)</string>
+		<string></string>
+		<string></string>
+		<string>Portion of the developing neural tube located dorsal to the sulcus limitans. Develops into the future dorsal horn of gray matter and is associated with afferent functions.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Arachnoid mater</string>
+		<string></string>
+		<string></string>
+		<string>Middle meningeal layer surrounding the tissue of the central nervous system. Both the arachnoid and pia mater make up the leptomeninges, and both are derived from neural crest cells.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Arachnoid trabeculae</string>
+		<string></string>
+		<string></string>
+		<string>Connective tissue structures found in the adult that connects the pia and arachnoid mater. These represent the origin of the pia and arachnoid mater as a single layer.</string>
+		<string>Connective tissue structures found in the adult that connects the pia and arachnoid mater. These represent the origin of the pia and arachnoid mater as a single layer.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Astrocytes</string>
+		<string></string>
+		<string></string>
+		<string>Derived from glioblasts that differentiated into astroblasts. Astroblasts will further differentiate into either protoplasmic astrocytes or fibrous astrocytes. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Basal plate (lamina)</string>
+		<string></string>
+		<string>Portion of the developing neural tube located ventral to the sulcus limitans. Develops into the future ventral and lateral horns of gray matter and contains predominately primary motor neurons. The basal plates are separated on each side by the floor plate, which forms the future ventral median fissure. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Caudal neuropore</string>
+		<string></string>
+		<string></string>
+		<string>Caudal opening of the neural tube; closes approximately on day 27.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Dura mater</string>
+		<string></string>
+		<string></string>
+		<string>The outer-most layer of meninges surrounding the central nervous system. This is the thickest of the three meningeal layers, and is the only layer to be derived from mesenchymal tissue surrounding the neural tube. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Ependyma</string>
+		<string></string>
+		<string></string>
+		<string>Ependymal epithelial layer which forms following the formation of neuroblasts and glioblasts from the neuroepithelium. Ependymal cells will line the central canal of the spinal cord and the ventricles of the brain. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Glioblasts</string>
+		<string></string>
+		<string></string>
+		<string>Primordial supporting cells of the central nervous system, which differentiate from the neuroepithelial cells following cessation of neuroblast formation. These glial cell precursors migrate from the ventricular zone to the marginal zone and mantle zones.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Glioblasts</string>
+		<string></string>
+		<string></string>
+		<string>Primordial supporting cells of the central nervous system, which differentiate from the neuroepithelial cells following cessation of neuroblast formation. These glial cell precursors migrate from the ventricular zone to the marginal zone and mantle zones.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Lateral gray horn</string>
+		<string></string>
+		<string></string>
+		<string>Adult portion of the spinal cord derived from the embryological basal plates. Axons of neurons located within the lateral gray horn grow out of the spinal cord and form a portion the ventral root of spinal nerves. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Leptomeninges</string>
+		<string></string>
+		<string></string>
+		<string>Name given to both the pia and arachnoid mater meningeal layers. The two layers are combined into one name due to both coming from the same origin, neural crest cells.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Mantle zone</string>
+		<string></string>
+		<string></string>
+		<string>Intermediate layer of the developing spinal cord. Neuroblasts that originated in the ventricular zone migrate superficially to occupy this space. Eventually this zone will form the gray matter of the spinal cord.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Marginal zone</string>
+		<string></string>
+		<string></string>
+		<string>Superficial layer of the developing spinal cord. Composed of the outer parts of the neuroepithelial cells. Eventually this zone will form the white matter of the spinal cord. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Meninges</string>
+		<string></string>
+		<string></string>
+		<string>Membrane that covers the neural tube. The meninges form three different layers, the dura, arachnoid and pia mater. The dura mater develops from the overlying mesenchyme, while the arachnoid and pia mater layers develop from neural crest cells.</string>
+		<string>Membrane that covers the neural tube. The meninges form three different layers, the dura, arachnoid and pia mater. The dura mater develops from the overlying mesenchyme, while the arachnoid and pia mater layers develop from neural crest cells.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Meningomyelocele</string>
+		<string></string>
+		<string></string>
+		<string>Classification of spina bifida cystica, in which the spinal cord/nerve roots and mingeal layers/cerebrospinal fluid protrude through the neural arch defect</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Mesenchymal cells</string>
+		<string></string>
+		<string></string>
+		<string>A type of embryonic connective tissue derived from mesoderm. Have the ability to differentiate into various cell types including: osteoblasts, chondroblasts, myocytes and adipocytes. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Microglial cells</string>
+		<string></string>
+		<string></string>
+		<string>Derived from mesenchymal cells within the bone marrow and located throughout the gray and white matter.  Microglial cells invade the central nervous system late in the fetal period via blood vessels. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neural canal</string>
+		<string></string>
+		<string></string>
+		<string>The lumen of the neural tube, which communicates openly with the amniotic cavity. Forms the future central canal of the spinal cord and ventricular system of the brain.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neural crest</string>
+		<string></string>
+		<string></string>
+		<string>An area of cells that originate from the neural plate and non-neural ectoderm. During neurulation, both sides of the neural plate approach each other and fuse forming the neural tube. The neural crest is separated from the remaining ectoderm to occupy the location between the neural tube and ectoderm. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neural crest cells</string>
+		<string></string>
+		<string></string>
+		<string>The neural crest tissue separates into neural crest cells following neurulation. Neural crest cells have the ability to differentiate into numerous cells such as: smooth muscle cells, peripheral ganglia, glial cells, melanocytes and the craniofacial cartilage and bone.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neural folds</string>
+		<string></string>
+		<string></string>
+		<string>Structure that arises from the neural plate (ectoderm) and during neurulation is induced to approach the other neural fold. Fusion of the neural folds forms the neural tube.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neural groove</string>
+		<string></string>
+		<string></string>
+		<string>A shallow groove that develops within the neural plate between both neural folds. The neural groove upon fusion of the neural tube will form the ventricular system within the central nervous system.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neural plate</string>
+		<string></string>
+		<string></string>
+		<string>Thickened area of ectoderm formed by both the neural folds and neural groove. Proliferation of the plate is induced by the notochord and underlying paraxial mesoderm.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neural tube</string>
+		<string></string>
+		<string></string>
+		<string>Precursor to the central nervous system. Formed by fusion of the bilateral neural folds.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neural tube defects</string>
+		<string></string>
+		<string></string>
+		<string>General term used to describe any congenital anomalies affecting the developing neural tube. Commonly neural tube defects are caused by a failure of closing the neural tube.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neuroblasts</string>
+		<string></string>
+		<string></string>
+		<string>Primordial neurons, which are the first cells to develop from the neuroepithelial cells within the ventricular zone. These neuron precursors migrate from the ventricular zone to occupy the mantle zone. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neuroectoderm</string>
+		<string></string>
+		<string></string>
+		<string>Specialized section of ectoderm that receives protein signals to develop into the nervous system. The neuroectoderm will develop into the neural crest cells and the neural tube.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neurula</string>
+		<string></string>
+		<string></string>
+		<string>The name given to the developing embryo during the stage of neurulation.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Neurulation</string>
+		<string></string>
+		<string></string>
+		<string>Term describing the formation of the neural plate and neural tube. Begins around days 22-23 near the region of somites 4-6.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Notochord</string>
+		<string></string>
+		<string></string>
+		<string>Rod-shaped structure that is derived from mesodermal tissue, and serves as the primitive axis of the developing embryo. Formation of the notochord induces the overlying ectoderm to thicken and form the neural plate. The notochord largely degenerates, but small portions persist as the nucleus pulposus portion of the intervertebral discs. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Pia mater</string>
+		<string></string>
+		<string></string>
+		<string>Deepest meningeal layer surrounding the tissue of the central nervous system. Both the pia and arachnoid mater make up the leptomeninges, and both are derived from neural crest cells.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Rostral neuropore</string>
+		<string></string>
+		<string></string>
+		<string>Cranial opening of the developing neural tube; closes approximately on day 25.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Spina bifida cystica</string>
+		<string></string>
+		<string></string>
+		<string>Neural tube defect in which the neural arches do not grow and fuse together in the midline. This is the more severe case of spina bifida, where protrusion of the spinal cord and nervous tissue (meningomyelocele) and/or meninges (meningocele) may occupy a cyst-like space.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Spina bifida occulta</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string>Neural tube defect in which the neural arches do not grow and fuse together in the midline. This is generally a small space between the neural arches and mostly produces no clinical symptoms. In the minor form, the patient may present with a small dimple and a tuft of hair in the lower back.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Spinal ganglion cells</string>
+		<string></string>
+		<string></string>
+		<string>The pseudounipolar neurons that occupy the dorsal root ganglion. The peripheral processes convey sensory endings from somatic and visceral structures. The central processes occupy the dorsal roots of spinal nerves and enter the spinal cord.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Subarachnoid space</string>
+		<string></string>
+		<string></string>
+		<string>Fluid filled space that develops within the leptomeninges of the developing embryo. This space separates the pia and arachnoid mater in the adult. Cerebrospinal fluid occupies this space around the central nervous system. </string>
+		<string>Fluid filled space that develops within the leptomeninges of the developing embryo. This space separates the pia and arachnoid mater in the adult. Cerebrospinal fluid occupies this space around the central nervous system. </string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Sulcus limitans</string>
+		<string></string>
+		<string></string>
+		<string>Shallow groove found bilaterally on the lateral side of the developing spinal cord. The sulcus limitans separates the alar and basal plates.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<array>
+		<string>Ventricular zone</string>
+		<string></string>
+		<string></string>
+		<string>The deepest layer (adjacent to the neural canal) of the developing spinal cord. Consists of neuroepithelial cells, which will give rise to all neurons and macroglial cells of the spinal cord.</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
 	<array/>
 	<array/>
 	<array/>
