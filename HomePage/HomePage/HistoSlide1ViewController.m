@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad
 {
-    UIImage *BSpinal = [UIImage imageNamed:@"0.jpg"];
+    UIImage *BSpinal = [UIImage imageNamed:@"1.jpg"];
     [super viewDidLoad];
     
     [imageView setImage:BSpinal];
