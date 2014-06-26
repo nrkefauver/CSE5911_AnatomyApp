@@ -25,6 +25,10 @@
 
 - (void)viewDidLoad
 {
+    UIImage *RSpinal = [UIImage imageNamed:@"1.jpg"];
+    [super viewDidLoad];
+    
+    [imageView setImage:RSpinal];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

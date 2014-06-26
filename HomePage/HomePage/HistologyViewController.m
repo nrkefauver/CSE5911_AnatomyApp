@@ -8,37 +8,16 @@
 
 #import "HistologyViewController.h"
 
-#import "HistologyCollectionViewFlowLargeLayout.h"
-#import "HistologyCollectionViewFlowSmallLayout.h"
-#import "HistologyCollectionViewCell.h"
 
 @interface HistologyViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
-@property (nonatomic, strong) HistologyCollectionViewFlowLargeLayout *largeLayout;
-@property (nonatomic, strong) HistologyCollectionViewFlowSmallLayout *smallLayout;
-@property (nonatomic, strong) NSArray *images;
 @end
 
 static NSString *ItemIdentifier = @"ItemIdentifier";
 
 @implementation HistologyViewController
-@synthesize imageView = hImageView;
-
--(void)loadView
-{
-    // Important to override this when not using a nib. Otherwise, the collection
-    // view will be instantiated with a nil layout, crashing the app.
-    
-    self.smallLayout = [[HistologyCollectionViewFlowSmallLayout alloc] init];
-    self.largeLayout = [[HistologyCollectionViewFlowLargeLayout alloc] init];
-    
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.smallLayout];
-    [self.collectionView registerClass:[HistologyCollectionViewCell class] forCellWithReuseIdentifier:ItemIdentifier];
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
-    
-    self.collectionView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
-}
+@synthesize BlueSpinal;
+@synthesize RedSpinal;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -51,19 +30,19 @@ static NSString *ItemIdentifier = @"ItemIdentifier";
 
 - (void)viewDidLoad
 {
-    
+    UIImage *BSpinal = [UIImage imageNamed:@"0.jpg"];
     [super viewDidLoad];
-    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"Small", @"Large"]];
-    segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
-    segmentedControl.selectedSegmentIndex = 0;
-    [segmentedControl addTarget:self action:@selector(segmentedControlValueDidChange:) forControlEvents:UIControlEventValueChanged];
-    self.navigationItem.titleView = segmentedControl;
+    
+    UIImage *RSpinal = [UIImage imageNamed:@"1.jpg"];
+    [super viewDidLoad];
+ 
+    [BlueSpinal setImage:BSpinal];
+    [RedSpinal setImage:RSpinal];
     // Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload
 {
-    self.imageView = nil;
     [super viewDidUnload];
 }
 
@@ -72,35 +51,9 @@ static NSString *ItemIdentifier = @"ItemIdentifier";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)segmentedControlValueDidChange:(id)sender
-{
-    if (self.collectionView.collectionViewLayout == self.smallLayout)
-    {
-        [self.largeLayout invalidateLayout];
-        [self.collectionView setCollectionViewLayout:self.largeLayout animated:YES];
-    }
-    else
-    {
-        [self.smallLayout invalidateLayout];
-        [self.collectionView setCollectionViewLayout:self.smallLayout animated:YES];
-    }
-}
 
 #pragma mark - UICollectionView DataSource & Delegate methods
 
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 2;
-}
-
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    HistologyCollectionViewCell *cell = (HistologyCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:ItemIdentifier forIndexPath:indexPath];
-    
-    [cell setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", indexPath.item % 4]]];
-    
-    return cell;
-}
 
 // Create navigation sidebar
 - (IBAction)onBurger:(id)sender {

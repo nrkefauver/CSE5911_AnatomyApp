@@ -58,10 +58,11 @@
 		5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5962242C19508A3A00701B76 /* neuro-thoracic.jpg */; };
 		5962244119508F4000701B76 /* HistoSlide1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962244019508F4000701B76 /* HistoSlide1ViewController.m */; };
 		596224441950907000701B76 /* HistoSlide2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596224431950907000701B76 /* HistoSlide2ViewController.m */; };
+		597F1799195C82D600A722CD /* PopoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597F1797195C82D600A722CD /* PopoverTableViewController.m */; };
+		597F179A195C82D600A722CD /* PopoverTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F1798195C82D600A722CD /* PopoverTableViewController.xib */; };
+		597F179E195C873500A722CD /* PopoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 597F179C195C873500A722CD /* PopoverTableViewCell.m */; };
+		597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F179D195C873500A722CD /* PopoverTableViewCell.xib */; };
 		7CC1BD291958E24B00B70823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC1BD281958E24B00B70823 /* MapKit.framework */; };
-		B14A1B651958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B14A1B641958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m */; };
-		B14A1B681958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B14A1B671958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m */; };
-		B14A1B6B1958F8C60017119A /* HistologyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B14A1B6A1958F8C60017119A /* HistologyCollectionViewCell.m */; };
 		D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA833194785A700C01BBF /* Embryoterms.plist */; };
 		D00CA836194785B500C01BBF /* Histoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA835194785B500C01BBF /* Histoterms.plist */; };
 		D00CA838194785C200C01BBF /* Grossterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA837194785C200C01BBF /* Grossterms.plist */; };
@@ -184,13 +185,13 @@
 		5962244019508F4000701B76 /* HistoSlide1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoSlide1ViewController.m; sourceTree = "<group>"; };
 		596224421950907000701B76 /* HistoSlide2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoSlide2ViewController.h; sourceTree = "<group>"; };
 		596224431950907000701B76 /* HistoSlide2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoSlide2ViewController.m; sourceTree = "<group>"; };
+		597F1796195C82D600A722CD /* PopoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverTableViewController.h; sourceTree = "<group>"; };
+		597F1797195C82D600A722CD /* PopoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverTableViewController.m; sourceTree = "<group>"; };
+		597F1798195C82D600A722CD /* PopoverTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverTableViewController.xib; sourceTree = "<group>"; };
+		597F179B195C873500A722CD /* PopoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverTableViewCell.h; sourceTree = "<group>"; };
+		597F179C195C873500A722CD /* PopoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverTableViewCell.m; sourceTree = "<group>"; };
+		597F179D195C873500A722CD /* PopoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverTableViewCell.xib; sourceTree = "<group>"; };
 		7CC1BD281958E24B00B70823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B14A1B631958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistologyCollectionViewFlowSmallLayout.h; sourceTree = "<group>"; };
-		B14A1B641958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistologyCollectionViewFlowSmallLayout.m; sourceTree = "<group>"; };
-		B14A1B661958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistologyCollectionViewFlowLargeLayout.h; sourceTree = "<group>"; };
-		B14A1B671958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistologyCollectionViewFlowLargeLayout.m; sourceTree = "<group>"; };
-		B14A1B691958F8C60017119A /* HistologyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistologyCollectionViewCell.h; sourceTree = "<group>"; };
-		B14A1B6A1958F8C60017119A /* HistologyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistologyCollectionViewCell.m; sourceTree = "<group>"; };
 		D00CA833194785A700C01BBF /* Embryoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Embryoterms.plist; sourceTree = "<group>"; };
 		D00CA835194785B500C01BBF /* Histoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Histoterms.plist; sourceTree = "<group>"; };
 		D00CA837194785C200C01BBF /* Grossterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grossterms.plist; sourceTree = "<group>"; };
@@ -377,6 +378,19 @@
 			path = Images/Neuro;
 			sourceTree = "<group>";
 		};
+		597F1795195C829400A722CD /* PopoverTable */ = {
+			isa = PBXGroup;
+			children = (
+				597F1796195C82D600A722CD /* PopoverTableViewController.h */,
+				597F1797195C82D600A722CD /* PopoverTableViewController.m */,
+				597F1798195C82D600A722CD /* PopoverTableViewController.xib */,
+				597F179B195C873500A722CD /* PopoverTableViewCell.h */,
+				597F179C195C873500A722CD /* PopoverTableViewCell.m */,
+				597F179D195C873500A722CD /* PopoverTableViewCell.xib */,
+			);
+			name = PopoverTable;
+			sourceTree = "<group>";
+		};
 		59B307C6194A3C3200B4D251 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,12 +445,6 @@
 				5962244019508F4000701B76 /* HistoSlide1ViewController.m */,
 				596224421950907000701B76 /* HistoSlide2ViewController.h */,
 				596224431950907000701B76 /* HistoSlide2ViewController.m */,
-				B14A1B631958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.h */,
-				B14A1B641958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m */,
-				B14A1B661958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.h */,
-				B14A1B671958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m */,
-				B14A1B691958F8C60017119A /* HistologyCollectionViewCell.h */,
-				B14A1B6A1958F8C60017119A /* HistologyCollectionViewCell.m */,
 			);
 			name = Histology;
 			sourceTree = "<group>";
@@ -522,6 +530,7 @@
 		D06E5E37192FA51D00A12651 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				597F1795195C829400A722CD /* PopoverTable */,
 				D0A0115119524D760051A7F4 /* EMAccordionTable */,
 				D0253F29193FD77C00CFE2AC /* Sidebar */,
 				D0774D88193CD51900821D51 /* ExpandingCell */,
@@ -718,6 +727,7 @@
 				462CB059193CFEDA00B6CF72 /* Animations.png in Resources */,
 				D0253F46193FE10A00CFE2AC /* E4.png in Resources */,
 				5962242E19508A3A00701B76 /* Initial Spinal Cord.png in Resources */,
+				597F179A195C82D600A722CD /* PopoverTableViewController.xib in Resources */,
 				D0D8CC22195B7125009ECF3E /* E3.png in Resources */,
 				462CB054193CFDB200B6CF72 /* Letter H.png in Resources */,
 				D0D8CC1F195B7125009ECF3E /* E0.png in Resources */,
@@ -735,6 +745,7 @@
 				D08A364C1958762F005E5C77 /* closedIcon.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				5962243319508A3A00701B76 /* SC change position.png in Resources */,
+				597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */,
 				D08A364E19587780005E5C77 /* openedIcon.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
 				5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */,
@@ -785,20 +796,19 @@
 			files = (
 				5953AA101946802C00677409 /* Gross3DModelViewController.m in Sources */,
 				D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */,
-				B14A1B6B1958F8C60017119A /* HistologyCollectionViewCell.m in Sources */,
 				D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */,
 				5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */,
 				D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */,
-				B14A1B681958F88D0017119A /* HistologyCollectionViewFlowLargeLayout.m in Sources */,
 				D06E5E42192FA51D00A12651 /* HomePageAppDelegate.m in Sources */,
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,
+				597F179E195C873500A722CD /* PopoverTableViewCell.m in Sources */,
 				5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */,
 				D06E5E3E192FA51D00A12651 /* main.m in Sources */,
 				D06E5E48192FA51D00A12651 /* HomePageViewController.m in Sources */,
 				5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */,
-				B14A1B651958F83B0017119A /* HistologyCollectionViewFlowSmallLayout.m in Sources */,
 				D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */,
 				596224441950907000701B76 /* HistoSlide2ViewController.m in Sources */,
+				597F1799195C82D600A722CD /* PopoverTableViewController.m in Sources */,
 				D06E5E6B192FA9F600A12651 /* IndexAllViewController.m in Sources */,
 				5962244119508F4000701B76 /* HistoSlide1ViewController.m in Sources */,
 				D00CA83B194792CB00C01BBF /* NeuroIndexViewController.m in Sources */,

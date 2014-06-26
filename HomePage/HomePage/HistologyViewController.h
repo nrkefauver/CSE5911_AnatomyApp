@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
 
-@interface HistologyViewController : UICollectionViewController
+@interface HistologyViewController : UIViewController
 
--(void)setImage:(UIImage *)image;
+@property (weak, nonatomic) IBOutlet UIImageView *BlueSpinal;
 
-@property (nonatomic, retain) IBOutlet UIImageView* imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *RedSpinal;
+
 
 @end
