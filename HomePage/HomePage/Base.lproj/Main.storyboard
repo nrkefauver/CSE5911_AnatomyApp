@@ -430,38 +430,35 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Tlg-fq-N2E">
-                                <rect key="frame" x="235" y="183" width="298" height="90"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zoZ-9K-97c">
+                                <rect key="frame" x="419" y="116" width="300" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Grey Button.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Slide 1">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="7mq-mO-TCq">
+                                <rect key="frame" x="56" y="116" width="300" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J6z-eV-z9z" colorLabel="IBBuiltInLabel-Green">
+                                <rect key="frame" x="423" y="116" width="292" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" title="Red Spinal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1Hf-Ur-mTZ" kind="push" id="cJR-WW-2h7"/>
+                                    <segue destination="6wj-W4-l34" kind="push" id="vZj-IL-hzz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="49i-9e-Lyw">
-                                <rect key="frame" x="228" y="313" width="313" height="97"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lqm-Wk-X23">
+                                <rect key="frame" x="56" y="120" width="294" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Grey Button.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Slide 2">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <state key="normal" title="Blue Spinal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6wj-W4-l34" kind="push" id="5sh-3G-Icl"/>
+                                    <segue destination="1Hf-Ur-mTZ" kind="push" id="bUz-uz-hug"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -484,6 +481,8 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="BlueSpinal" destination="7mq-mO-TCq" id="cvd-a4-yAb"/>
+                        <outlet property="RedSpinal" destination="zoZ-9K-97c" id="KnF-WL-GXQ"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="HistoToHomeSegue" id="AwG-wi-xhT"/>
                         <segue destination="0HC-13-e6l" kind="push" identifier="HistoHomeToIndexSegue" id="far-xO-xjq"/>
                         <segue destination="zrV-VM-hcI" kind="push" identifier="HistoHomeToHistoIndex" id="iXe-hZ-jWL"/>
@@ -491,7 +490,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pvu-Oo-gaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-737" y="827"/>
+            <point key="canvasLocation" x="-527" y="1005"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DEZ-54-Fyx">
@@ -501,8 +500,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="histo1.jpg" id="UDp-6O-roh">
-                                <rect key="frame" x="92" y="262" width="500" height="500"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="96C964B6-DE23-491F-B6F5-2E543B339372" id="UDp-6O-roh">
+                                <rect key="frame" x="122" y="262" width="500" height="500"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZBO-NV-QiH">
@@ -536,7 +535,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcg-Mk-wn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1174" y="2193"/>
+            <point key="canvasLocation" x="-1316" y="1069"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="09j-vo-O7n">
@@ -592,7 +591,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2QC-DX-m7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-220" y="2193"/>
+            <point key="canvasLocation" x="276" y="2193"/>
         </scene>
         <!--Histo Index View Controller - Histology Index-->
         <scene sceneID="axA-tU-bwz">
@@ -1112,12 +1111,28 @@
         </scene>
     </scenes>
     <resources>
+        <image name="96C964B6-DE23-491F-B6F5-2E543B339372" width="1280" height="1024">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGPD1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
+GR4fJSYtMDY5VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
+V05TQ29sb3KAAoAMEiTAAACAA4AKXHsxMjgwLCAxMDI0fdIVChYYWk5TLm9iamVjdHOhF4AEgAnSFQoa
+GKIbHIAFgAaACRAF0yAKISIjJFdOUy5iYXNlW05TLnJlbGF0aXZlgACACIAHXxDXZmlsZTovLy9BcHBs
+aWNhdGlvbnMvWGNvZGUuYXBwL0NvbnRlbnRzL0RldmVsb3Blci9QbGF0Zm9ybXMvaVBob25lU2ltdWxh
+dG9yLnBsYXRmb3JtL0RldmVsb3Blci9MaWJyYXJ5L1hjb2RlL1ByaXZhdGVQbHVnSW5zL0lERUludGVy
+ZmFjZUJ1aWxkZXJDb2NvYVRvdWNoSW50ZWdyYXRpb24uaWRlcGx1Z2luL0NvbnRlbnRzL1Jlc291cmNl
+cy9JQlVJTWlzc2luZ0ltYWdlLnRpZmbSJygpKlokY2xhc3NuYW1lWCRjbGFzc2VzVU5TVVJMoissVU5T
+VVJMWE5TT2JqZWN00icoLi9XTlNBcnJheaIuLNMxMgozNDVXTlNXaGl0ZVxOU0NvbG9yU3BhY2VEMCAw
+ABADgAvSJyg3OFdOU0NvbG9yojcs0icoOjtXTlNJbWFnZaI6LF8QD05TS2V5ZWRBcmNoaXZlctE+P1Ry
+b290gAEACAARABoAIwAtADIANwBFAEsAVgBdAGQAcQB4AIAAggCEAIkAiwCNAJoAnwCqAKwArgCwALUA
+uAC6ALwAvgDAAMcAzwDbAN0A3wDhAbsBwAHLAdQB2gHdAeMB7AHxAfkB/AIDAgsCGAIdAh8CIQImAi4C
+MQI2Aj4CQQJTAlYCWwAAAAAAAAIBAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAJdA
+</mutableData>
+        </image>
         <image name="Black Burger.png" width="45" height="45"/>
         <image name="Cervical_Scan.png" width="786" height="502"/>
         <image name="E0.png" width="147" height="195"/>
         <image name="Grey Button.png" width="200" height="200"/>
         <image name="Gross.png" width="322" height="305"/>
-        <image name="histo1.jpg" width="1280" height="1024"/>
         <image name="histo2.jpg" width="2453" height="1864"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1126,18 +1141,18 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="SbS-2b-D5Y"/>
-        <segue reference="AwG-wi-xhT"/>
         <segue reference="TMk-2L-1Y4"/>
-        <segue reference="2YT-sS-ArM"/>
+        <segue reference="AwG-wi-xhT"/>
         <segue reference="Cbj-Qs-rfV"/>
+        <segue reference="2YT-sS-ArM"/>
         <segue reference="8Ym-jz-PyO"/>
-        <segue reference="32O-Pf-eqc"/>
         <segue reference="Rde-ZO-HXw"/>
-        <segue reference="psJ-mD-Iz2"/>
-        <segue reference="qEZ-5V-GMV"/>
-        <segue reference="TJa-hY-aVm"/>
+        <segue reference="32O-Pf-eqc"/>
+        <segue reference="far-xO-xjq"/>
         <segue reference="xBs-ZS-VPb"/>
+        <segue reference="TJa-hY-aVm"/>
         <segue reference="9Yg-Nh-qkQ"/>
+        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="psJ-mD-Iz2"/>
     </inferredMetricsTieBreakers>
 </document>
