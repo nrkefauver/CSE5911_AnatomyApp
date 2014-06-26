@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HistoSlide2ViewController : UIViewController
+@interface HistoSlide2ViewController : UIViewController {
+    UIImageView* imageView;
+}
 
+@property (nonatomic, retain) IBOutlet UIImageView* imageView;
 @end

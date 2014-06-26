@@ -7,9 +7,14 @@
 //
 
 #import "GrossViewController.h"
+#import "PopoverTableViewController.h"
 
 @interface GrossViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
+
+// Popover
+- (IBAction)showPopover:(UIButton *)sender;
+@property (nonatomic,strong) UIPopoverController *popOver;
 @end
 
 @implementation GrossViewController
@@ -115,6 +120,14 @@
 }
 - (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
+}
+
+// Popover
+- (IBAction)showPopover:(UIButton *)sender
+{
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverViewController" bundle:nil];
+    self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
+    [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 }
 
 @end
