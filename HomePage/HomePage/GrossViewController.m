@@ -125,7 +125,7 @@
 // Popover
 - (IBAction)showPopover:(UIButton *)sender
 {
-    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverViewController" bundle:nil];
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil];
     self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
     [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 }
