@@ -153,7 +153,7 @@
 		46EC9752195B84EF00E05CEB /* Lumbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lumbar.png; sourceTree = "<group>"; };
 		46EC9753195B84EF00E05CEB /* Sacral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sacral.png; sourceTree = "<group>"; };
 		46EC9754195B84EF00E05CEB /* Thoracic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thoracic.png; sourceTree = "<group>"; };
-		46EC9759195B85D300E05CEB /* Grey Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Grey Button.png"; path = "HomePage/Images/Grey Button.png"; sourceTree = "<group>"; };
+		46EC9759195B85D300E05CEB /* Grey Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Grey Button.png"; path = "Images/Grey Button.png"; sourceTree = "<group>"; };
 		5953AA0B19467D6500677409 /* GrossVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrossVideoListViewController.h; sourceTree = "<group>"; };
 		5953AA0C19467D6500677409 /* GrossVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrossVideoListViewController.m; sourceTree = "<group>"; };
 		5953AA0E1946802C00677409 /* Gross3DModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gross3DModelViewController.h; sourceTree = "<group>"; };
@@ -498,7 +498,6 @@
 		D06E5E25192FA51D00A12651 = {
 			isa = PBXGroup;
 			children = (
-				46EC9759195B85D300E05CEB /* Grey Button.png */,
 				D06E5E37192FA51D00A12651 /* HomePage */,
 				D06E5E56192FA51D00A12651 /* HomePageTests */,
 				D06E5E30192FA51D00A12651 /* Frameworks */,
@@ -595,6 +594,7 @@
 		D082566B1958C92800620469 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				46EC9759195B85D300E05CEB /* Grey Button.png */,
 				466C49AF193BB914000B2A78 /* Index.png */,
 				462CB051193CFDB200B6CF72 /* Tracts.png */,
 				462CB050193CFDB200B6CF72 /* Letter N.png */,

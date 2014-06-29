@@ -96,6 +96,13 @@ NSArray *searchResults;
     if (cell == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
         cell = [nib objectAtIndex:0];
+        
+        // Set preselected term in the segmented control (tag 1000):
+        UIView *nibView = [nib objectAtIndex:0];
+        UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+        
+        // in Embryo
+        [segmentedControl setSelectedSegmentIndex:2];
     }
     
     //Later
@@ -137,6 +144,18 @@ NSArray *searchResults;
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    // Access expandingCell's segmented controller
+    static NSString *cellIdentifier = @"expandingCell";
+    ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
+    cell = [nib objectAtIndex:0];
+    // Set preselected term in the segmented control (tag 1000):
+    UIView *nibView = [nib objectAtIndex:0];
+    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+    // Set segController to Embryo
+    [segmentedControl setSelectedSegmentIndex:2];
+    
+    
     //User taps new row with none expanded
     if (selectedIndex == -1) {
         selectedIndex = indexPath.row;
@@ -169,6 +188,12 @@ NSArray *searchResults;
                                                          objectAtIndex:[self.searchDisplayController.searchBar
                                                                         selectedScopeButtonIndex]]];
     return YES;
+}
+
+// Prevent other indices from crashing if "cancel" was hit while results were being displayed
+- (void) searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller
+{
+    [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
 }
 
 // Create navigation sidebar

@@ -354,34 +354,26 @@ CGFloat origin;
 
     // Access expandingCell's segmented controller
     static NSString *cellIdentifier = @"expandingCell";
-    
     ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    
     NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
     cell = [nib objectAtIndex:0];
-    
     // Set preselected term in the segmented control (tag 1000):
     UIView *nibView = [nib objectAtIndex:0];
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
-    
     // in Neuro
-    if(indexPath.section==0)
-    {
+    if(indexPath.section==0){
         [segmentedControl setSelectedSegmentIndex:0];
     }
     // in Histo
-    else if(indexPath.section==1)
-    {
+    else if(indexPath.section==1){
         [segmentedControl setSelectedSegmentIndex:1];
     }
     // in Embryo
-    else if(indexPath.section==2)
-    {
+    else if(indexPath.section==2){
         [segmentedControl setSelectedSegmentIndex:2];
     }
     // in Gross
-    else if(indexPath.section==3)
-    {
+    else if(indexPath.section==3){
         [segmentedControl setSelectedSegmentIndex:3];
     }
     
@@ -422,5 +414,17 @@ CGFloat origin;
     return YES;
 }
 
+// Prevent other indices from crashing if "cancel" was hit while results were being displayed
+- (void) searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller
+{
+    [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
+}
+
+//- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if ([emDelegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)])
+//        return [emDelegate tableView:tableView didSelectRowAtIndexPath:indexPath];
+//    else
+//        [NSException raise:@"The delegate doesn't respond tableView:didSelectRowAtIndexPath:" format:@"The delegate doesn't respond tableView:didSelectRowAtIndexPath:"];
+//}
 
 @end
