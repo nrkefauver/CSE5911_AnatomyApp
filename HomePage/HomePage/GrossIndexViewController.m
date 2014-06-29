@@ -186,6 +186,9 @@ NSArray *searchResults;
     [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
                                                          objectAtIndex:[self.searchDisplayController.searchBar
                                                                         selectedScopeButtonIndex]]];
+    // close any open cells
+    selectedIndex = -1;
+    
     return YES;
 }
 

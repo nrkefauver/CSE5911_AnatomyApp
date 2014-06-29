@@ -19,6 +19,7 @@
 @implementation NeuroIndexViewController
 NSArray *searchResults;
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -90,7 +91,6 @@ NSArray *searchResults;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"expandingCell";
-    
     ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil) {
@@ -104,14 +104,6 @@ NSArray *searchResults;
         // in Neuro
         [segmentedControl setSelectedSegmentIndex:0];
         
-    }
-    
-    //Later
-    if (selectedIndex == indexPath.row) {
-        //Do expanded cell stuff
-    }
-    else {
-        //Do closed cell stuff
     }
     
     NSString *term;
@@ -188,6 +180,9 @@ NSArray *searchResults;
     [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
                                                          objectAtIndex:[self.searchDisplayController.searchBar
                                                                         selectedScopeButtonIndex]]];
+    // close any open cells
+    selectedIndex = -1;
+    
     return YES;
 }
 
