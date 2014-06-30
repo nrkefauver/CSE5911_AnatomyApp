@@ -25,6 +25,10 @@
 
 @implementation IndexAllViewController
 NSArray *searchResults;
+NSIndexPath *globalIndexPath;
+UITableView *globalTableView;
+bool tableViewIAIsCreated = false;
+
 
 //COLLAPSIBLE TABLE CODE
 NSMutableArray *dataSection01;
@@ -441,19 +445,21 @@ CGFloat origin;
         [segmentedControl setSelectedSegmentIndex:3];
     }
     
+    // Track indexPath and table view
+    globalIndexPath = indexPath;
+    globalTableView = tableView;
+    tableViewIAIsCreated = true;
     
     //User taps new row with none expanded
     if (selectedIndex == -1) {
         selectedIndex = indexPath.row;
         [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
-    
     //User taps expanded row
     else if (selectedIndex == indexPath.row) {
         selectedIndex = -1;
         [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
-    
     //User taps different row
     else if (selectedIndex != -1) {
         selectedIndex = indexPath.row;
@@ -479,6 +485,22 @@ CGFloat origin;
     selectedIndex = -1;
     
     return YES;
+}
+
+// If cells have been opened, close them when starting search
+- (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
+{
+    if (tableViewIAIsCreated)
+    {
+        selectedIndex = -1;
+        [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+// Don't let searchDisplayControllerWillBeginSearch reload globalTableView if it hasn't been established
+- (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
+{
+    tableViewIAIsCreated = false;
 }
 
 // Prevent other indices from crashing if "cancel" was hit while results were being displayed

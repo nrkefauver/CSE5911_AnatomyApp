@@ -18,6 +18,9 @@
 
 @implementation EmbryoIndexViewController
 NSArray *searchResults;
+NSIndexPath *globalIndexPath;
+UITableView *globalTableView;
+bool tableViewEIsCreated = false;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -174,19 +177,21 @@ NSArray *searchResults;
     // Set segController to Embryo
     [segmentedControl setSelectedSegmentIndex:2];
     
+    // Track indexPath and table view
+    globalIndexPath = indexPath;
+    globalTableView = tableView;
+    tableViewEIsCreated = true;
     
     //User taps new row with none expanded
     if (selectedIndex == -1) {
         selectedIndex = indexPath.row;
         [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
-    
     //User taps expanded row
     else if (selectedIndex == indexPath.row) {
         selectedIndex = -1;
         [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
-    
     //User taps different row
     else if (selectedIndex != -1) {
         selectedIndex = indexPath.row;
@@ -210,6 +215,22 @@ NSArray *searchResults;
     selectedIndex = -1;
     
     return YES;
+}
+
+// If cells have been opened, close them when starting search
+- (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
+{
+    if (tableViewEIsCreated)
+    {
+        selectedIndex = -1;
+        [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+// Don't let searchDisplayControllerWillBeginSearch reload globalTableView if it hasn't been established
+- (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
+{
+    tableViewEIsCreated = false;
 }
 
 // Prevent other indices from crashing if "cancel" was hit while results were being displayed
