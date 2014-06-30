@@ -12,9 +12,9 @@
 @interface EmbryoIndexViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate> {
     
     int selectedIndex;
-    NSArray *titleArray;
-    NSArray *subtitleArray;
-    NSArray *textArray;
+    NSMutableArray *titleArray;
+    NSMutableArray *subtitleArray;
+    NSMutableArray *textArray;
 }
 
 @end

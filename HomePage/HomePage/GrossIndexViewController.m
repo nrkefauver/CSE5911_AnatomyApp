@@ -39,20 +39,42 @@ NSArray *searchResults;
     
     //Set index to -1 saying no cell is expanded or should expand.
     selectedIndex = -1;
+    
+    
     titleArray = [[NSMutableArray alloc] init];
+    subtitleArray = [[NSMutableArray alloc] init];
+    textArray = [[NSMutableArray alloc] init];
     
     
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Grossterms" ofType:@"plist"];
+    //This declares the path to the Terms.plist where all the terms for the entire project are found
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
     
-    //Creates dictionary of Neuroanatomy terms
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    //Iterates through entire terms list and creates array containing all the Neuroanatomy (array) terms
+    NSArray *terms = [[NSArray alloc] initWithContentsOfFile:path];
+    
+    //Create temp array for keys
+    NSMutableArray *tempNames = [[NSMutableArray alloc] init];
+    NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
+    for (int i=0; i< 141; i++) {
+        if ([terms objectAtIndex:i]!= nil) {
+            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
+            if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:4] isEqualToString:@""]) {
+                [titleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+            }
+        }
+    }
+    
+    //Create Dictionary for terms and their definitions
+    NSDictionary *nTerms = [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
     
     //Create alphabetical list of definition names
-    NSArray * sortedKeys = [[dict allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+    NSArray * sortedKeys = [[nTerms allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
     
     //Create alphabetical list of definitions
-    NSArray * sortedValues = [dict objectsForKeys: sortedKeys notFoundMarker: [NSNull null]];
+    NSArray * sortedValues = [nTerms objectsForKeys: sortedKeys notFoundMarker: [NSNull null]];
     
     //Creates an array of all the definition names to be searched through
     titleArray = sortedKeys;
@@ -104,14 +126,7 @@ NSArray *searchResults;
         [segmentedControl setSelectedSegmentIndex:3];   
     }
     
-    //Later
-    if (selectedIndex == indexPath.row) {
-        //Do expanded cell stuff
-    }
-    else {
-        //Do closed cell stuff
-    }
-    
+
     NSString *term;
     if (indexPath.row <= titleArray.count) {
         if (tableView == self.searchDisplayController.searchResultsTableView) {
@@ -135,7 +150,7 @@ NSArray *searchResults;
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (selectedIndex == indexPath.row) {
-        return 200;
+        return 275;
     } else {
         return 38;
     }

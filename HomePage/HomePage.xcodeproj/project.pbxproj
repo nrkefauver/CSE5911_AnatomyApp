@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22BF50741960CA15007C5FA7 /* Terms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D08A364F19588BCB005E5C77 /* Terms.plist */; };
 		461B45E61950CE980000189B /* Cervical_Drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45DE1950CE980000189B /* Cervical_Drawing.png */; };
 		461B45E71950CE980000189B /* Cervical_Scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45DF1950CE980000189B /* Cervical_Scan.png */; };
 		461B45E81950CE980000189B /* Lumbar_Drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 461B45E01950CE980000189B /* Lumbar_Drawing.png */; };
@@ -707,6 +708,7 @@
 				D0D8CC24195B7125009ECF3E /* E5.png in Resources */,
 				46AC5F14193E6461003F1E12 /* Gross.png in Resources */,
 				5962243019508A3A00701B76 /* Neural Tube Labelled.png in Resources */,
+				22BF50741960CA15007C5FA7 /* Terms.plist in Resources */,
 				466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */,
 				5962243819508A3A00701B76 /* neuro-cerv.jpg in Resources */,
 				461B45EA1950CE980000189B /* Sacral_Drawing.png in Resources */,

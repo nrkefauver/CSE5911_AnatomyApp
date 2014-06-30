@@ -15,25 +15,25 @@
     NSMutableArray *searchSubtitles;
     NSMutableArray *searchText;
     
-    NSArray *nTitleArray;
-    NSArray *nArray;
-    NSArray *subtitleNArray;
-    NSArray *textNArray;
+    NSMutableArray *nTitleArray;
+    NSMutableArray  *nArray;
+    NSMutableArray  *subtitleNArray;
+    NSMutableArray  *textNArray;
     
-    NSArray *gTitleArray;
-    NSArray *gArray;
-    NSArray *subtitleGArray;
-    NSArray *textGArray;
+    NSMutableArray  *gTitleArray;
+    NSMutableArray  *gArray;
+    NSMutableArray  *subtitleGArray;
+    NSMutableArray  *textGArray;
     
-    NSArray *hTitleArray;
-    NSArray *hArray;
-    NSArray *subtitleHArray;
-    NSArray *textHArray;
+    NSMutableArray  *hTitleArray;
+    NSMutableArray  *hArray;
+    NSMutableArray  *subtitleHArray;
+    NSMutableArray  *textHArray;
     
-    NSArray *eTitleArray;
-    NSArray *eArray;
-    NSArray *subtitleEArray;
-    NSArray *textEArray;
+    NSMutableArray  *eTitleArray;
+    NSMutableArray  *eArray;
+    NSMutableArray  *subtitleEArray;
+    NSMutableArray  *textEArray;
 }
 
 

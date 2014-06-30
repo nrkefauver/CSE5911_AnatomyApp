@@ -26,11 +26,6 @@
 @implementation IndexAllViewController
 NSArray *searchResults;
 
-
-
-
-
-
 //COLLAPSIBLE TABLE CODE
 NSMutableArray *dataSection01;
 NSMutableArray *dataSection02;
@@ -64,10 +59,33 @@ CGFloat origin;
     searchSubtitles = [[NSMutableArray alloc] init];
     searchText = [[NSMutableArray alloc] init];
     
-    NSString *nPath = [[NSBundle mainBundle] pathForResource:@"Neuroterms" ofType:@"plist"];
     
-    //Creates dictionary of Neuroanatomy terms
-    NSDictionary *dictN = [[NSDictionary alloc] initWithContentsOfFile:nPath];
+    
+    
+
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
+    
+    //Iterates through entire terms list and creates array containing all the Neuroanatomy (array) terms
+    NSArray *terms = [[NSArray alloc] initWithContentsOfFile:path];
+    
+    //Create temp array for keys
+    NSMutableArray *tempNames = [[NSMutableArray alloc] init];
+    NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
+    for (int i=0; i< 141; i++) {
+        if ([terms objectAtIndex:i]!= nil) {
+            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
+            if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:1] isEqualToString:@""]) {
+                [nTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+            }
+        }
+    }
+    
+    //Create Dictionary for terms and their definitions
+    NSDictionary *dictN= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
+    
     
     //Create alphabetical list of definition names
     NSArray * sortedNKeys = [[dictN allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
@@ -93,10 +111,25 @@ CGFloat origin;
     dataSection01 = nTitleArray;
     
     
-    NSString *hPath = [[NSBundle mainBundle] pathForResource:@"Histoterms" ofType:@"plist"];
     
-    //Creates dictionary of Neuroanatomy terms
-    NSDictionary *dictH = [[NSDictionary alloc] initWithContentsOfFile:hPath];
+
+    //Create temp array for keys
+    [tempNames removeAllObjects];
+    [tempDefs removeAllObjects];
+    for (int i=0; i< 141; i++) {
+        if ([terms objectAtIndex:i]!= nil) {
+            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
+            if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:2] isEqualToString:@""]) {
+                [hTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+            }
+        }
+    }
+    
+    //Create Dictionary for terms and their definitions
+    NSDictionary *dictH= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
+    
     
     //Create alphabetical list of definition names
     NSArray * sortedHKeys = [[dictH allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
@@ -106,7 +139,7 @@ CGFloat origin;
     
     //Creates an array of all the definition names to be searched through
     hTitleArray = sortedHKeys;
-    
+
     //Adds to overall list of definitions for searching
     [searchArray addObjectsFromArray:sortedHKeys];
     
@@ -120,11 +153,25 @@ CGFloat origin;
 
     dataSection02 = hTitleArray;
     
+   
+  
+    //Create temp array for keys
+    [tempNames removeAllObjects];
+    [tempDefs removeAllObjects];
+    for (int i=0; i< 141; i++) {
+        if ([terms objectAtIndex:i]!= nil) {
+            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
+            if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:3] isEqualToString:@""]) {
+                [eTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+            }
+        }
+    }
     
-    NSString *ePath = [[NSBundle mainBundle] pathForResource:@"Embryoterms" ofType:@"plist"];
+    //Create Dictionary for terms and their definitions
+    NSDictionary *dictE= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
     
-    //Creates dictionary of Neuroanatomy terms
-    NSDictionary *dictE = [[NSDictionary alloc] initWithContentsOfFile:ePath];
     
     //Create alphabetical list of definition names
     NSArray * sortedEKeys = [[dictE allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
@@ -134,7 +181,7 @@ CGFloat origin;
     
     //Creates an array of all the definition names to be searched through
     eTitleArray = sortedEKeys;
-    
+
     //Adds to overall list of definitions for searching
     [searchArray addObjectsFromArray:sortedEKeys];
     
@@ -149,10 +196,23 @@ CGFloat origin;
     dataSection03 = eTitleArray;
     
     
-    NSString *gPath = [[NSBundle mainBundle] pathForResource:@"Grossterms" ofType:@"plist"];
+    //Create temp array for keys
+    [tempNames removeAllObjects];
+    [tempDefs removeAllObjects];
+    for (int i=0; i< 141; i++) {
+        if ([terms objectAtIndex:i]!= nil) {
+            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
+            if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:4] isEqualToString:@""]) {
+                [gTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+            }
+        }
+    }
     
-    //Creates dictionary of Neuroanatomy terms
-    NSDictionary *dictG = [[NSDictionary alloc] initWithContentsOfFile:gPath];
+    //Create Dictionary for terms and their definitions
+    NSDictionary *dictG= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
+    
     
     //Create alphabetical list of definition names
     NSArray * sortedGKeys = [[dictG allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
@@ -162,7 +222,7 @@ CGFloat origin;
     
     //Creates an array of all the definition names to be searched through
     gTitleArray = sortedGKeys;
-    
+
     //Adds to overall list of definitions for searching
     [searchArray addObjectsFromArray:sortedGKeys];
     
