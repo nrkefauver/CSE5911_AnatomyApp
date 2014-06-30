@@ -10,4 +10,8 @@
 
 @interface PopoverTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel  *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *subtitleLabel;
+@property (weak, nonatomic) IBOutlet UITextView *textLabel;
+
 @end

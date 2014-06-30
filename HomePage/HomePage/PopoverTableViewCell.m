@@ -9,7 +9,7 @@
 #import "PopoverTableViewCell.h"
 
 @implementation PopoverTableViewCell
-
+@synthesize titleLabel, subtitleLabel, textLabel;
 - (void)awakeFromNib
 {
     // Initialization code
