@@ -9,13 +9,14 @@
 #import "ExpandingCell.h"
 
 @implementation ExpandingCell
-@synthesize textLabel, definitionLabel, titleLabel, subtitleLabel,segmentedControl;
+@synthesize textLabel, titleLabel, subtitleLabel,segmentedControl;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
    
     if (self) {
         // Initialization code
+       
     }
     return self;
 }

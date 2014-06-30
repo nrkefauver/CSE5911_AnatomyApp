@@ -64,9 +64,6 @@
 		597F179E195C873500A722CD /* PopoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 597F179C195C873500A722CD /* PopoverTableViewCell.m */; };
 		597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F179D195C873500A722CD /* PopoverTableViewCell.xib */; };
 		7CC1BD291958E24B00B70823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC1BD281958E24B00B70823 /* MapKit.framework */; };
-		D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA833194785A700C01BBF /* Embryoterms.plist */; };
-		D00CA836194785B500C01BBF /* Histoterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA835194785B500C01BBF /* Histoterms.plist */; };
-		D00CA838194785C200C01BBF /* Grossterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00CA837194785C200C01BBF /* Grossterms.plist */; };
 		D00CA83B194792CB00C01BBF /* NeuroIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA83A194792CB00C01BBF /* NeuroIndexViewController.m */; };
 		D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA83D1947936900C01BBF /* GrossIndexViewController.m */; };
 		D00CA8411947941900C01BBF /* HistoIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA8401947941900C01BBF /* HistoIndexViewController.m */; };
@@ -81,7 +78,6 @@
 		D0253F47193FE10A00CFE2AC /* E5.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F3F193FE10A00CFE2AC /* E5.png */; };
 		D0253F48193FE10A00CFE2AC /* E6.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F40193FE10A00CFE2AC /* E6.png */; };
 		D0253F49193FE10A00CFE2AC /* E7.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F41193FE10A00CFE2AC /* E7.png */; };
-		D02F1CFB194644350095A8E9 /* Neuroterms.plist in Resources */ = {isa = PBXBuildFile; fileRef = D02F1CFA194644350095A8E9 /* Neuroterms.plist */; };
 		D06E5E32192FA51D00A12651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E31192FA51D00A12651 /* Foundation.framework */; };
 		D06E5E34192FA51D00A12651 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E33192FA51D00A12651 /* CoreGraphics.framework */; };
 		D06E5E36192FA51D00A12651 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06E5E35192FA51D00A12651 /* UIKit.framework */; };
@@ -193,9 +189,6 @@
 		597F179C195C873500A722CD /* PopoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverTableViewCell.m; sourceTree = "<group>"; };
 		597F179D195C873500A722CD /* PopoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverTableViewCell.xib; sourceTree = "<group>"; };
 		7CC1BD281958E24B00B70823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D00CA833194785A700C01BBF /* Embryoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Embryoterms.plist; sourceTree = "<group>"; };
-		D00CA835194785B500C01BBF /* Histoterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Histoterms.plist; sourceTree = "<group>"; };
-		D00CA837194785C200C01BBF /* Grossterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grossterms.plist; sourceTree = "<group>"; };
 		D00CA839194792CB00C01BBF /* NeuroIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuroIndexViewController.h; sourceTree = "<group>"; };
 		D00CA83A194792CB00C01BBF /* NeuroIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroIndexViewController.m; sourceTree = "<group>"; };
 		D00CA83C1947936900C01BBF /* GrossIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrossIndexViewController.h; sourceTree = "<group>"; };
@@ -214,7 +207,6 @@
 		D0253F3F193FE10A00CFE2AC /* E5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E5.png; path = ../E5.png; sourceTree = "<group>"; };
 		D0253F40193FE10A00CFE2AC /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E6.png; path = ../E6.png; sourceTree = "<group>"; };
 		D0253F41193FE10A00CFE2AC /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E7.png; path = ../E7.png; sourceTree = "<group>"; };
-		D02F1CFA194644350095A8E9 /* Neuroterms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Neuroterms.plist; sourceTree = "<group>"; };
 		D06E5E2E192FA51D00A12651 /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E5E31192FA51D00A12651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D06E5E33192FA51D00A12651 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -292,6 +284,14 @@
 		462CB057193CFDD100B6CF72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D0D8CBE6195B7125009ECF3E /* E0.png */,
+				D0D8CBE7195B7125009ECF3E /* E1.png */,
+				D0D8CBE8195B7125009ECF3E /* E2.png */,
+				D0D8CBE9195B7125009ECF3E /* E3.png */,
+				D0D8CBEA195B7125009ECF3E /* E4.png */,
+				D0D8CBEB195B7125009ECF3E /* E5.png */,
+				D0D8CBEC195B7125009ECF3E /* E6.png */,
+				D0D8CBED195B7125009ECF3E /* E7.png */,
 				D082566B1958C92800620469 /* Icons */,
 				5962241719508A3A00701B76 /* Embryo */,
 				5962242019508A3A00701B76 /* Gross */,
@@ -403,10 +403,6 @@
 		59B307C9194A418C00B4D251 /* XML */ = {
 			isa = PBXGroup;
 			children = (
-				D02F1CFA194644350095A8E9 /* Neuroterms.plist */,
-				D00CA835194785B500C01BBF /* Histoterms.plist */,
-				D00CA833194785A700C01BBF /* Embryoterms.plist */,
-				D00CA837194785C200C01BBF /* Grossterms.plist */,
 				D08A364F19588BCB005E5C77 /* Terms.plist */,
 			);
 			name = XML;
@@ -415,14 +411,6 @@
 		D0253F24193FD6F700CFE2AC /* Embryology */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8CBE6195B7125009ECF3E /* E0.png */,
-				D0D8CBE7195B7125009ECF3E /* E1.png */,
-				D0D8CBE8195B7125009ECF3E /* E2.png */,
-				D0D8CBE9195B7125009ECF3E /* E3.png */,
-				D0D8CBEA195B7125009ECF3E /* E4.png */,
-				D0D8CBEB195B7125009ECF3E /* E5.png */,
-				D0D8CBEC195B7125009ECF3E /* E6.png */,
-				D0D8CBED195B7125009ECF3E /* E7.png */,
 				D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */,
 				D074CE6B192FF79300A2BAB1 /* EmbryoViewController.h */,
 				5953AA14194683B000677409 /* EmbryoAnimationsListViewController.h */,
@@ -734,7 +722,6 @@
 				462CB054193CFDB200B6CF72 /* Letter H.png in Resources */,
 				D0D8CC1F195B7125009ECF3E /* E0.png in Resources */,
 				5962243A19508A3A00701B76 /* neuro-lumb.jpg in Resources */,
-				D02F1CFB194644350095A8E9 /* Neuroterms.plist in Resources */,
 				D0D8CC26195B7125009ECF3E /* E7.png in Resources */,
 				5962243619508A3A00701B76 /* 1.jpg in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
@@ -751,14 +738,12 @@
 				D08A364E19587780005E5C77 /* openedIcon.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
 				5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */,
-				D00CA838194785C200C01BBF /* Grossterms.plist in Resources */,
 				462CB053193CFDB200B6CF72 /* Letter G.png in Resources */,
 				466C49B4193BB914000B2A78 /* home.png in Resources */,
 				D0253F49193FE10A00CFE2AC /* E7.png in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
 				D0253F44193FE10A00CFE2AC /* E2.png in Resources */,
 				D0253F45193FE10A00CFE2AC /* E3.png in Resources */,
-				D00CA836194785B500C01BBF /* Histoterms.plist in Resources */,
 				461B45E91950CE980000189B /* Lumbar_Scan.png in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
@@ -767,7 +752,6 @@
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
 				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
 				5962243C19508A3A00701B76 /* neuro-sacral.jpg in Resources */,
-				D00CA834194785A700C01BBF /* Embryoterms.plist in Resources */,
 				5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */,
 				D0D8CC20195B7125009ECF3E /* E1.png in Resources */,
 				D0253F48193FE10A00CFE2AC /* E6.png in Resources */,

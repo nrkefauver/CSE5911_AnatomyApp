@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>15D00B86-5090-470B-81F8-BBFB6D895B8A</string>
+	<string>9FEF578C-2A67-43C1-AE21-311C7C6A9D0F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HomePage</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7BD09978-73FA-4726-9C0E-25B1CB72F159</key>
-		<string>http://github.com/nrkefauver/CSE5911_AnatomyApp</string>
+		<key>79BAF277-3907-49FE-8F07-A71A4BBF35E3</key>
+		<string>https://github.com/nrkefauver/CSE5911_AnatomyApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HomePage/HomePage.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7BD09978-73FA-4726-9C0E-25B1CB72F159</key>
+		<key>79BAF277-3907-49FE-8F07-A71A4BBF35E3</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>http://github.com/nrkefauver/CSE5911_AnatomyApp</string>
+	<string>https://github.com/nrkefauver/CSE5911_AnatomyApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7BD09978-73FA-4726-9C0E-25B1CB72F159</string>
+	<string>79BAF277-3907-49FE-8F07-A71A4BBF35E3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7BD09978-73FA-4726-9C0E-25B1CB72F159</string>
+			<string>79BAF277-3907-49FE-8F07-A71A4BBF35E3</string>
 			<key>IDESourceControlWCCName</key>
-			<string>dev</string>
+			<string>CSE5911_AnatomyApp</string>
 		</dict>
 	</array>
 </dict>

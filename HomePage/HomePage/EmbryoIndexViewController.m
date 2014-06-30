@@ -142,6 +142,12 @@ NSArray *searchResults;
         
     }
     
+    //Formatting for definition text view
+    cell.textLabel.layer.borderWidth = 2.0f;
+    cell.textLabel.layer.borderColor = [[UIColor whiteColor] CGColor];
+    cell.textLabel.layer.cornerRadius = 8.0f;
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.font = [UIFont fontWithName:@"Georgia" size:14.0];
     cell.clipsToBounds = YES;
     return cell;
 }
@@ -149,7 +155,7 @@ NSArray *searchResults;
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (selectedIndex == indexPath.row) {
-        return 275;
+        return 350;
     } else {
         return 38;
     }

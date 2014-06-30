@@ -9,11 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ExpandingCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UITextView *textLabel;
 
 @property (strong, nonatomic) IBOutlet UILabel  *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel  *subtitleLabel;
-@property (strong, nonatomic) IBOutlet UILabel  *textLabel;
-@property (strong, nonatomic) IBOutlet UILabel  *definitionLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 
