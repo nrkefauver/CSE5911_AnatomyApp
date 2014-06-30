@@ -116,7 +116,7 @@
                                                object:_moviePlayer];
     
     _moviePlayer.controlStyle = MPMovieControlStyleDefault;
-    _moviePlayer.shouldAutoplay = NO;
+    _moviePlayer.shouldAutoplay = YES;
     [self.view addSubview:_moviePlayer.view];
     [_moviePlayer setFullscreen:YES animated:YES];
 

@@ -63,6 +63,7 @@
 		597F179A195C82D600A722CD /* PopoverTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F1798195C82D600A722CD /* PopoverTableViewController.xib */; };
 		597F179E195C873500A722CD /* PopoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 597F179C195C873500A722CD /* PopoverTableViewCell.m */; };
 		597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F179D195C873500A722CD /* PopoverTableViewCell.xib */; };
+		59CAAC0C1962152900F06D88 /* SampleVideo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 59CAAC0B1962152900F06D88 /* SampleVideo.MOV */; };
 		7CC1BD291958E24B00B70823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC1BD281958E24B00B70823 /* MapKit.framework */; };
 		D00CA83B194792CB00C01BBF /* NeuroIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA83A194792CB00C01BBF /* NeuroIndexViewController.m */; };
 		D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA83D1947936900C01BBF /* GrossIndexViewController.m */; };
@@ -188,6 +189,7 @@
 		597F179B195C873500A722CD /* PopoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverTableViewCell.h; sourceTree = "<group>"; };
 		597F179C195C873500A722CD /* PopoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverTableViewCell.m; sourceTree = "<group>"; };
 		597F179D195C873500A722CD /* PopoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverTableViewCell.xib; sourceTree = "<group>"; };
+		59CAAC0B1962152900F06D88 /* SampleVideo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SampleVideo.MOV; sourceTree = "<group>"; };
 		7CC1BD281958E24B00B70823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D00CA839194792CB00C01BBF /* NeuroIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuroIndexViewController.h; sourceTree = "<group>"; };
 		D00CA83A194792CB00C01BBF /* NeuroIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroIndexViewController.m; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 		5962241219508A1500701B76 /* Embryo */ = {
 			isa = PBXGroup;
 			children = (
+				59CAAC0B1962152900F06D88 /* SampleVideo.MOV */,
 				5962241319508A1500701B76 /* Neuraltube_001.mp4 */,
 			);
 			name = Embryo;
@@ -739,6 +742,7 @@
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
 				5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */,
 				462CB053193CFDB200B6CF72 /* Letter G.png in Resources */,
+				59CAAC0C1962152900F06D88 /* SampleVideo.MOV in Resources */,
 				466C49B4193BB914000B2A78 /* home.png in Resources */,
 				D0253F49193FE10A00CFE2AC /* E7.png in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
