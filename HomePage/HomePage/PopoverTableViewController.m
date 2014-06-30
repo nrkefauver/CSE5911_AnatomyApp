@@ -52,7 +52,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     static NSString *cellIdentifier = @"popoverCell";
     
     PopoverTableViewCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -61,25 +60,16 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"PopoverTableViewCell"  owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
+    
+    NSArray *terms = [[NSArray alloc] initWithContentsOfFile:path];
+    
+    cell.titleLabel.text = [[terms objectAtIndex:0] objectAtIndex:0];
+    cell.subtitleLabel.text =[[terms objectAtIndex:0] objectAtIndex:0];
+    cell.textLabel.text = [[terms objectAtIndex:0] objectAtIndex:1];
 
-    /*
-    static NSString *cellIdentifier = @"expandingCell";
     
-    ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-    }
-     */
-    
-    /*
-    static NSString *cellIdentifier = @"expandingCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
-    
-    // Configure the cell...
-    cell.textLabel.text=[NSString stringWithFormat:@"Row number %d",indexPath.row];
-    */
     return cell;
 }
 
