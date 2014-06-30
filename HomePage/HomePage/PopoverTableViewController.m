@@ -15,6 +15,7 @@
 @end
 
 @implementation PopoverTableViewController
+int termIndex;
 
 - (void)viewDidLoad
 {
@@ -65,9 +66,9 @@
     
     NSArray *terms = [[NSArray alloc] initWithContentsOfFile:path];
     
-    cell.titleLabel.text = [[terms objectAtIndex:0] objectAtIndex:0];
-    cell.subtitleLabel.text =[[terms objectAtIndex:0] objectAtIndex:0];
-    cell.textLabel.text = [[terms objectAtIndex:0] objectAtIndex:1];
+    cell.titleLabel.text = [[terms objectAtIndex: termIndex] objectAtIndex:0];
+    cell.subtitleLabel.text =[[terms objectAtIndex: termIndex] objectAtIndex:0];
+    cell.textLabel.text = [[terms objectAtIndex: termIndex] objectAtIndex:1];
 
     
     return cell;
@@ -77,6 +78,12 @@
 {
     return 600;
 }
+
+- (void)setIndex:(int)index
+{
+    termIndex = index;
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

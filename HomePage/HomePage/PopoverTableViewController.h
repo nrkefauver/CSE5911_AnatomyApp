@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PopoverTableViewController : UITableViewController
+- (void)setIndex:(int)index;
 
 @end

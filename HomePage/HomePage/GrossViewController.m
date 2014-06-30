@@ -122,12 +122,38 @@
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
 
-// Popover
-- (IBAction)showPopover:(UIButton *)sender
+// Show popover menu when user clicks button1
+- (IBAction)onPopupButton1:(id)sender
 {
-    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil];
+    // Set index for term 7: Conus Medullaris
+    int index = 7;
+    [self showPopoverBelow:(id)sender index:(int)index];
+}
+
+// Show popover menu when user clicks button2
+- (IBAction)onPopupButton2:(id)sender
+{
+    // Set index for term 5: Cervical Enlargement
+    int index = 5;
+    [self showPopoverAbove:(id)sender index:(int)index];
+}
+
+// Create Popover menu BELOW button
+- (void)showPopoverBelow:(UIButton *)sender index:(int)termIndex
+{
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];
+    [PopoverView setIndex:(int)termIndex];
     self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
     [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+}
+
+// Create Popover menu ABOVE button
+- (void)showPopoverAbove:(UIButton *)sender index:(int)termIndex
+{
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];
+    [PopoverView setIndex:(int)termIndex];
+    self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
+    [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
 }
 
 @end
