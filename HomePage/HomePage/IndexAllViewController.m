@@ -27,8 +27,8 @@
 NSArray *searchResults;
 static NSIndexPath *globalIndexPath;
 static UITableView *globalTableView;
-static bool tableViewIsCreated = false;
-//static bool sectionOpen[4]={NO,NO,NO,NO};
+static int nonsearchSelectedIndex;
+static bool afterSearch = false;
 
 
 //COLLAPSIBLE TABLE CODE
@@ -63,8 +63,6 @@ CGFloat origin;
     searchArray = [[NSMutableArray alloc] init];
     searchSubtitles = [[NSMutableArray alloc] init];
     searchText = [[NSMutableArray alloc] init];
-    
-    
     
     
 
@@ -283,6 +281,7 @@ CGFloat origin;
 
     sections = [[NSArray alloc] initWithObjects:section01,section02,section03, section04, nil];
     
+    emTV.tableView.tag = 100;
     [self.view addSubview:emTV.tableView];
 }
 
@@ -370,13 +369,7 @@ CGFloat origin;
         }
     }
     
-//    // Close all sections except current one
-//    sectionOpen[0]=NO;
-//	sectionOpen[1]=NO;
-//	sectionOpen[2]=NO;
-//	sectionOpen[3]=NO;
-//    sectionOpen[indexPath.row]=YES;
-//    [tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+
     
     // Populate terms and definitions
     NSString *term;
@@ -456,22 +449,46 @@ CGFloat origin;
     // Track indexPath and table view
     globalIndexPath = indexPath;
     globalTableView = tableView;
-    tableViewIsCreated = true;
     
-    //User taps new row with none expanded
-    if (selectedIndex == -1) {
-        selectedIndex = indexPath.row;
-        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    // If immediately after a search, base action off of index stored in nonsearchSelectedIndex
+    if (afterSearch)
+    {
+        afterSearch = false;
+        
+        //User taps new row with none expanded
+        if (nonsearchSelectedIndex == -1) {
+            selectedIndex = indexPath.row;
+            [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
+        //User taps expanded row
+        else if (nonsearchSelectedIndex == indexPath.row) {
+            selectedIndex = -1;
+            [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
+        //User taps different row
+        else if (nonsearchSelectedIndex != -1) {
+            selectedIndex = indexPath.row;
+            [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
     }
-    //User taps expanded row
-    else if (selectedIndex == indexPath.row) {
-        selectedIndex = -1;
-        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }
-    //User taps different row
-    else if (selectedIndex != -1) {
-        selectedIndex = indexPath.row;
-        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    // Not immediately after a search
+    else
+    {
+        //User taps new row with none expanded
+        if (selectedIndex == -1) {
+            selectedIndex = indexPath.row;
+            [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
+        //User taps expanded row
+        else if (selectedIndex == indexPath.row) {
+            selectedIndex = -1;
+            [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
+        //User taps different row
+        else if (selectedIndex != -1) {
+            selectedIndex = indexPath.row;
+            [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
     }
 }
 
@@ -495,33 +512,22 @@ CGFloat origin;
     return YES;
 }
 
-//// If cells have been opened, close them when starting search
-//- (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
-//{
-//    if (tableViewIsCreated)
-//    {
-//        selectedIndex = -1;
-//        [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-//    }
-//}
-//
-//// Don't let searchDisplayControllerWillBeginSearch reload globalTableView if it hasn't been established
-//- (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
-//{
-//    tableViewIsCreated = false;
-//}
+// If cells have been opened, close them when starting search
+- (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
+{
+    nonsearchSelectedIndex = selectedIndex;
+}
+
+// Don't let searchDisplayControllerWillBeginSearch reload globalTableView if it hasn't been established
+- (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
+{
+    afterSearch = true;
+}
 
 // Prevent other indices from crashing if "cancel" was hit while results were being displayed
 - (void) searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller
 {
     [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
 }
-
-//- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    if ([emDelegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)])
-//        return [emDelegate tableView:tableView didSelectRowAtIndexPath:indexPath];
-//    else
-//        [NSException raise:@"The delegate doesn't respond tableView:didSelectRowAtIndexPath:" format:@"The delegate doesn't respond tableView:didSelectRowAtIndexPath:"];
-//}
 
 @end
