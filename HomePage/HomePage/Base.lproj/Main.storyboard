@@ -854,28 +854,80 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gross.png" id="2Xx-2C-RZC">
-                                <rect key="frame" x="139" y="224" width="490" height="402"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OGJ-fo-5Uz">
+                                <rect key="frame" x="20" y="88" width="728" height="762"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zPV-3S-LQJ">
-                                <rect key="frame" x="118" y="123" width="100" height="30"/>
+                            <button opaque="NO" alpha="0.49999999999999961" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lbo-vY-zCP">
+                                <rect key="frame" x="131" y="186" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PopupButton1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="onPopupButton1:" destination="W8x-iU-qGh" eventType="touchUpInside" id="W8i-AX-s2o"/>
+                                    <action selector="onDorsalRoots:" destination="W8x-iU-qGh" eventType="touchUpInside" id="Ofe-kC-JLc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p4b-Cu-goU">
-                                <rect key="frame" x="515" y="779" width="100" height="30"/>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iSj-mv-JPj">
+                                <rect key="frame" x="88" y="708" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PopupButton2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="onPopupButton2:" destination="W8x-iU-qGh" eventType="touchUpInside" id="jth-eZ-t1J"/>
+                                    <action selector="onSpinalNerve:" destination="W8x-iU-qGh" eventType="touchUpInside" id="tJr-MP-wCu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cXo-of-LIz">
+                                <rect key="frame" x="212" y="729" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onVentralRoots:" destination="W8x-iU-qGh" eventType="touchUpInside" id="eA1-7o-khh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vID-ub-hG1">
+                                <rect key="frame" x="308" y="783" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onVentralMedianFissure:" destination="W8x-iU-qGh" eventType="touchUpInside" id="XFY-Mf-gLy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fgx-O3-qgn">
+                                <rect key="frame" x="207" y="130" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onDorsalHornOfGrayMatter:" destination="W8x-iU-qGh" eventType="touchUpInside" id="0fd-5v-I01"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DKU-yT-dKC">
+                                <rect key="frame" x="462" y="175" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onVentralHornOfGrayMatter:" destination="W8x-iU-qGh" eventType="touchUpInside" id="t2R-Eu-xOO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S9U-ls-Hko">
+                                <rect key="frame" x="549" y="318" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onDorsalRootGanglion:" destination="W8x-iU-qGh" eventType="touchUpInside" id="jWh-Iz-QlI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j90-wk-RDX">
+                                <rect key="frame" x="630" y="492" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onVentralPrimaryRamus:" destination="W8x-iU-qGh" eventType="touchUpInside" id="g9p-nS-MzQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jps-Gh-7sS">
+                                <rect key="frame" x="590" y="572" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onDorsalPrimaryRamus:" destination="W8x-iU-qGh" eventType="touchUpInside" id="1sZ-Ek-KeB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -898,6 +950,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="LabeledImage" destination="OGJ-fo-5Uz" id="g05-aU-H8u"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="GrossToHomeSegue" id="HR3-33-3xN"/>
                         <segue destination="PDT-Rl-dT5" kind="push" identifier="GrossHomeToGrossVideosSegue" id="fdm-bw-BD5"/>
                         <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossHomeToGross3DModelSegue" id="xIp-rp-Izy"/>
@@ -1124,7 +1177,6 @@
         <image name="Cervical_Scan.png" width="786" height="502"/>
         <image name="E0.png" width="147" height="195"/>
         <image name="Grey Button.png" width="200" height="200"/>
-        <image name="Gross.png" width="322" height="305"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1132,18 +1184,18 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fdm-bw-BD5"/>
+        <segue reference="xIp-rp-Izy"/>
         <segue reference="2YT-sS-ArM"/>
         <segue reference="HR3-33-3xN"/>
         <segue reference="8Ym-jz-PyO"/>
         <segue reference="Cbj-Qs-rfV"/>
         <segue reference="TMk-2L-1Y4"/>
-        <segue reference="Rde-ZO-HXw"/>
         <segue reference="32O-Pf-eqc"/>
-        <segue reference="xIp-rp-Izy"/>
-        <segue reference="bsx-wD-Vbr"/>
+        <segue reference="Rde-ZO-HXw"/>
         <segue reference="zth-Qd-6wy"/>
-        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="fdm-bw-BD5"/>
+        <segue reference="bsx-wD-Vbr"/>
         <segue reference="psJ-mD-Iz2"/>
+        <segue reference="qEZ-5V-GMV"/>
     </inferredMetricsTieBreakers>
 </document>

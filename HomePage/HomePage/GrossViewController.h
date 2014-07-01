@@ -13,6 +13,8 @@
     UIImageView* imageView;
 }
 
-@property (nonatomic, retain) IBOutlet UIImageView* imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *LabeledImage;
+
+
 
 @end

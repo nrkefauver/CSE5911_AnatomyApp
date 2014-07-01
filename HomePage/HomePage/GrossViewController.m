@@ -17,7 +17,10 @@
 @property (nonatomic,strong) UIPopoverController *popOver;
 @end
 
-@implementation GrossViewController
+@implementation GrossViewController;
+
+@synthesize LabeledImage;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,13 +33,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    //Loads main image to Gross main screen
-    UIImage* image = [UIImage imageNamed:@"Gross"];
-    NSAssert(image, @"image is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
-    self.imageView.backgroundColor = [UIColor blackColor];
-    self.imageView.clipsToBounds = YES;
-    self.imageView.image = image;
+    // Do any additional setup after loading the view.    
+    // Load labeled image to home
+    UIImage *labeledImage = [UIImage imageNamed:@"Gross_labeled.jpg"];
+    [super viewDidLoad];
+    [LabeledImage setImage:labeledImage];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -53,7 +54,7 @@
 
 - (void)viewDidUnload
 {
-    self.imageView = nil;
+    self.LabeledImage = nil;
     [super viewDidUnload];
 }
 
@@ -122,20 +123,76 @@
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
 
-// Show popover menu when user clicks button1
-- (IBAction)onPopupButton1:(id)sender
+// Show popover menu when user clicks "Dorsal Roots"
+- (IBAction)onDorsalRoots:(id)sender
 {
-    // Set index for term 7: Conus Medullaris
-    int index = 7;
+    // Set index for term 15: DoralRoots
+    int index = 15;
     [self showPopoverBelow:(id)sender index:(int)index];
 }
 
-// Show popover menu when user clicks button2
-- (IBAction)onPopupButton2:(id)sender
+// Show popover menu when user clicks "Dorsal Horn of Gray Matter"
+- (IBAction)onDorsalHornOfGrayMatter:(id)sender
 {
-    // Set index for term 5: Cervical Enlargement
-    int index = 5;
+    // Set index for term 10: DoralHornOfGrayMatter
+    int index = 10;
+    [self showPopoverBelow:(id)sender index:(int)index];
+}
+
+// Show popover menu when user clicks "Dorsal Root Ganglion"
+- (IBAction)onDorsalRootGanglion:(id)sender
+{
+    // Set index for term 14: DorsalRootGanglion
+    int index = 14;
+    [self showPopoverBelow:(id)sender index:(int)index];
+}
+
+// Show popover menu when user clicks "Spinal Nerve"
+- (IBAction)onSpinalNerve:(id)sender
+{
+    // Set index for term 40: SpinalNerve
+    int index = 40;
     [self showPopoverAbove:(id)sender index:(int)index];
+}
+
+// Show popover menu when user clicks "Ventral Median Fissure"
+- (IBAction)onVentralMedianFissure:(id)sender
+{
+    // Set index for term 44: VentralMedianFissure
+    int index = 44;
+    [self showPopoverAbove:(id)sender index:(int)index];
+}
+
+// Show popover menu when user clicks "Ventral Roots"
+- (IBAction)onVentralRoots:(id)sender
+{
+    // Set index for term 45: VentralRoots
+    int index = 45;
+    [self showPopoverAbove:(id)sender index:(int)index];
+}
+
+// Show popover menu when user clicks "Ventral Horn of Gray Matter"
+- (IBAction)onVentralHornOfGrayMatter:(id)sender
+{
+    // Set index for term 43: VentralHornOfGrayMatter
+    int index = 43;
+    [self showPopoverBelow:(id)sender index:(int)index];
+}
+
+// Show popover menu when user clicks "Dorsal Primary Ramus"
+- (IBAction)onDorsalPrimaryRamus:(id)sender
+{
+    // Set index for term 124: DorsalPrimaryRamus
+    int index = 124;
+    [self showPopoverAbove:(id)sender index:(int)index];
+}
+
+// Show popover menu when user clicks "Ventral Primary Ramus"
+- (IBAction)onVentralPrimaryRamus:(id)sender
+{
+    // Set index for term 140: VentralPrimaryRamus
+    int index = 140;
+    [self showPopoverBelow:(id)sender index:(int)index];
 }
 
 // Create Popover menu BELOW button
