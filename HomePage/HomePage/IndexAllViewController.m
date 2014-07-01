@@ -25,9 +25,10 @@
 
 @implementation IndexAllViewController
 NSArray *searchResults;
-NSIndexPath *globalIndexPath;
-UITableView *globalTableView;
-bool tableViewIAIsCreated = false;
+static NSIndexPath *globalIndexPath;
+static UITableView *globalTableView;
+static bool tableViewIsCreated = false;
+//static bool sectionOpen[4]={NO,NO,NO,NO};
 
 
 //COLLAPSIBLE TABLE CODE
@@ -337,7 +338,6 @@ CGFloat origin;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"expandingCell";
-    
     ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil) {
@@ -369,6 +369,14 @@ CGFloat origin;
             [segmentedControl setSelectedSegmentIndex:3];
         }
     }
+    
+//    // Close all sections except current one
+//    sectionOpen[0]=NO;
+//	sectionOpen[1]=NO;
+//	sectionOpen[2]=NO;
+//	sectionOpen[3]=NO;
+//    sectionOpen[indexPath.row]=YES;
+//    [tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
     
     // Populate terms and definitions
     NSString *term;
@@ -419,7 +427,7 @@ CGFloat origin;
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
-
+    
     // Access expandingCell's segmented controller
     static NSString *cellIdentifier = @"expandingCell";
     ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -448,7 +456,7 @@ CGFloat origin;
     // Track indexPath and table view
     globalIndexPath = indexPath;
     globalTableView = tableView;
-    tableViewIAIsCreated = true;
+    tableViewIsCreated = true;
     
     //User taps new row with none expanded
     if (selectedIndex == -1) {
@@ -487,21 +495,21 @@ CGFloat origin;
     return YES;
 }
 
-// If cells have been opened, close them when starting search
-- (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
-{
-    if (tableViewIAIsCreated)
-    {
-        selectedIndex = -1;
-        [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }
-}
-
-// Don't let searchDisplayControllerWillBeginSearch reload globalTableView if it hasn't been established
-- (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
-{
-    tableViewIAIsCreated = false;
-}
+//// If cells have been opened, close them when starting search
+//- (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
+//{
+//    if (tableViewIsCreated)
+//    {
+//        selectedIndex = -1;
+//        [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+//    }
+//}
+//
+//// Don't let searchDisplayControllerWillBeginSearch reload globalTableView if it hasn't been established
+//- (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
+//{
+//    tableViewIsCreated = false;
+//}
 
 // Prevent other indices from crashing if "cancel" was hit while results were being displayed
 - (void) searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller
