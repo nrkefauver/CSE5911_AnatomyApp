@@ -18,9 +18,9 @@
 
 @implementation HistoIndexViewController
 NSArray *searchResults;
-NSIndexPath *globalIndexPath;
-UITableView *globalTableView;
-bool tableViewHIsCreated = false;
+static NSIndexPath *globalIndexPath;
+static UITableView *globalTableView;
+static bool tableViewIsCreated = false;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -179,7 +179,7 @@ bool tableViewHIsCreated = false;
     // Track indexPath and table view
     globalIndexPath = indexPath;
     globalTableView = tableView;
-    tableViewHIsCreated = true;
+    tableViewIsCreated = true;
     
     //User taps new row with none expanded
     if (selectedIndex == -1) {
@@ -219,7 +219,7 @@ bool tableViewHIsCreated = false;
 // If cells have been opened, close them when starting search
 - (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
 {
-    if (tableViewHIsCreated)
+    if (tableViewIsCreated)
     {
         selectedIndex = -1;
         [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -229,7 +229,7 @@ bool tableViewHIsCreated = false;
 // Don't let searchDisplayControllerWillBeginSearch reload globalTableView if it hasn't been established
 - (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
 {
-    tableViewHIsCreated = false;
+    tableViewIsCreated = false;
 }
 
 // Prevent other indices from crashing if "cancel" was hit while results were being displayed

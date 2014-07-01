@@ -18,9 +18,9 @@
 
 @implementation GrossIndexViewController
 NSArray *searchResults;
-NSIndexPath *globalIndexPath;
-UITableView *globalTableView;
-bool tableViewGIsCreated = false;
+static NSIndexPath *globalIndexPath;
+static UITableView *globalTableView;
+static bool tableViewIsCreated = false;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -179,7 +179,7 @@ bool tableViewGIsCreated = false;
     // Track indexPath and table view
     globalIndexPath = indexPath;
     globalTableView = tableView;
-    tableViewGIsCreated = true;
+    tableViewIsCreated = true;
     
     //User taps new row with none expanded
     if (selectedIndex == -1) {
@@ -220,7 +220,7 @@ bool tableViewGIsCreated = false;
 // If cells have been opened, close them when starting search
 - (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
 {
-    if (tableViewGIsCreated)
+    if (tableViewIsCreated)
     {
         selectedIndex = -1;
         [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -230,7 +230,7 @@ bool tableViewGIsCreated = false;
 // Don't let searchDisplayControllerWillBeginSearch reload globalTableView if it hasn't been established
 - (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
 {
-    tableViewGIsCreated = false;
+    tableViewIsCreated = false;
 }
 
 // Prevent other indices from crashing if "cancel" was hit while results were being displayed
