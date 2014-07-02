@@ -70,6 +70,9 @@ int termIndex;
     cell.subtitleLabel.text =[[terms objectAtIndex: termIndex] objectAtIndex:0];
     cell.textLabel.text = [[terms objectAtIndex: termIndex] objectAtIndex:1];
 
+    int height = 250;
+    CGSize size = CGSizeMake(300, height);
+    self.preferredContentSize = size;
     
     return cell;
 }
