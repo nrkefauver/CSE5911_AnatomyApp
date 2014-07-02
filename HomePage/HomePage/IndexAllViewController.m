@@ -592,16 +592,12 @@ CGFloat origin;
     switch(segmentedControl.selectedSegmentIndex)
     {
         case 0:
-            self.imageView.image = [UIImage imageNamed:@"Cervical"];
             break;
         case 1:
-            self.imageView.image = [UIImage imageNamed:@"Thoracic"];
             break;
         case 2:
-            self.imageView.image = [UIImage imageNamed:@"Lumbar"];
             break;
         case 3:
-            self.imageView.image = [UIImage imageNamed:@"Sacral"];
             break;
     }
 }

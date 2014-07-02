@@ -105,6 +105,12 @@
 		D08A364E19587780005E5C77 /* openedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D08A364D19587780005E5C77 /* openedIcon.png */; };
 		D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115319524DB80051A7F4 /* EMAccordionSection.m */; };
 		D0A0115719524E340051A7F4 /* EMAccordionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */; };
+		D0CE26041964C55E00E39DFC /* Embryo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26001964C55E00E39DFC /* Embryo.jpg */; };
+		D0CE26051964C55E00E39DFC /* Gross.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26011964C55E00E39DFC /* Gross.jpg */; };
+		D0CE26061964C55E00E39DFC /* histology.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26021964C55E00E39DFC /* histology.jpg */; };
+		D0CE26071964C55E00E39DFC /* Neuro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26031964C55E00E39DFC /* Neuro.jpg */; };
+		D0CE26091964C93500E39DFC /* green-book.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26081964C93500E39DFC /* green-book.png */; };
+		D0CE260B1964CB4900E39DFC /* books-icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CE260A1964CB4900E39DFC /* books-icon-128.png */; };
 		D0D8CC1F195B7125009ECF3E /* E0.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBE6195B7125009ECF3E /* E0.png */; };
 		D0D8CC20195B7125009ECF3E /* E1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBE7195B7125009ECF3E /* E1.png */; };
 		D0D8CC21195B7125009ECF3E /* E2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBE8195B7125009ECF3E /* E2.png */; };
@@ -250,6 +256,12 @@
 		D0A0115319524DB80051A7F4 /* EMAccordionSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAccordionSection.m; sourceTree = "<group>"; };
 		D0A0115519524E340051A7F4 /* EMAccordionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAccordionTableViewController.h; sourceTree = "<group>"; };
 		D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAccordionTableViewController.m; sourceTree = "<group>"; };
+		D0CE26001964C55E00E39DFC /* Embryo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Embryo.jpg; path = Images/Embryo.jpg; sourceTree = "<group>"; };
+		D0CE26011964C55E00E39DFC /* Gross.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Gross.jpg; path = Images/Gross.jpg; sourceTree = "<group>"; };
+		D0CE26021964C55E00E39DFC /* histology.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = histology.jpg; path = Images/histology.jpg; sourceTree = "<group>"; };
+		D0CE26031964C55E00E39DFC /* Neuro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Neuro.jpg; path = Images/Neuro.jpg; sourceTree = "<group>"; };
+		D0CE26081964C93500E39DFC /* green-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "green-book.png"; path = "Images/green-book.png"; sourceTree = "<group>"; };
+		D0CE260A1964CB4900E39DFC /* books-icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "books-icon-128.png"; path = "Images/books-icon-128.png"; sourceTree = "<group>"; };
 		D0D8CBE6195B7125009ECF3E /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E0.png; path = Images/E0.png; sourceTree = "<group>"; };
 		D0D8CBE7195B7125009ECF3E /* E1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E1.png; path = Images/E1.png; sourceTree = "<group>"; };
 		D0D8CBE8195B7125009ECF3E /* E2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E2.png; path = Images/E2.png; sourceTree = "<group>"; };
@@ -589,6 +601,12 @@
 		D082566B1958C92800620469 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D0CE260A1964CB4900E39DFC /* books-icon-128.png */,
+				D0CE26081964C93500E39DFC /* green-book.png */,
+				D0CE26001964C55E00E39DFC /* Embryo.jpg */,
+				D0CE26011964C55E00E39DFC /* Gross.jpg */,
+				D0CE26021964C55E00E39DFC /* histology.jpg */,
+				D0CE26031964C55E00E39DFC /* Neuro.jpg */,
 				46EC9759195B85D300E05CEB /* Grey Button.png */,
 				466C49AF193BB914000B2A78 /* Index.png */,
 				462CB051193CFDB200B6CF72 /* Tracts.png */,
@@ -701,6 +719,7 @@
 				5962243D19508A3A00701B76 /* neuro-thoracic-scan.jpg in Resources */,
 				D0D8CC24195B7125009ECF3E /* E5.png in Resources */,
 				5962243019508A3A00701B76 /* Neural Tube Labelled.png in Resources */,
+				D0CE26071964C55E00E39DFC /* Neuro.jpg in Resources */,
 				22BF50741960CA15007C5FA7 /* Terms.plist in Resources */,
 				466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */,
 				5962243819508A3A00701B76 /* neuro-cerv.jpg in Resources */,
@@ -716,6 +735,7 @@
 				5962242D19508A3A00701B76 /* CNS Development.png in Resources */,
 				46EC9758195B84EF00E05CEB /* Thoracic.png in Resources */,
 				462CB055193CFDB200B6CF72 /* Letter N.png in Resources */,
+				D0CE26051964C55E00E39DFC /* Gross.jpg in Resources */,
 				5962243519508A3A00701B76 /* 0.jpg in Resources */,
 				5962243119508A3A00701B76 /* Neural Tube Patterning.png in Resources */,
 				D0D8CC23195B7125009ECF3E /* E4.png in Resources */,
@@ -750,10 +770,12 @@
 				D0253F49193FE10A00CFE2AC /* E7.png in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
 				D0253F44193FE10A00CFE2AC /* E2.png in Resources */,
+				D0CE26061964C55E00E39DFC /* histology.jpg in Resources */,
 				D0253F45193FE10A00CFE2AC /* E3.png in Resources */,
 				461B45E91950CE980000189B /* Lumbar_Scan.png in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
+				D0CE26091964C93500E39DFC /* green-book.png in Resources */,
 				5962243B19508A3A00701B76 /* neuro-sacral-scan.jpg in Resources */,
 				461B45EB1950CE980000189B /* Sacral_Scan.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
@@ -762,8 +784,10 @@
 				5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */,
 				D0D8CC20195B7125009ECF3E /* E1.png in Resources */,
 				D0253F48193FE10A00CFE2AC /* E6.png in Resources */,
+				D0CE260B1964CB4900E39DFC /* books-icon-128.png in Resources */,
 				5962242F19508A3A00701B76 /* Neural Tube Formation.png in Resources */,
 				5962243419508A3A00701B76 /* Spinal Cord Further Development.png in Resources */,
+				D0CE26041964C55E00E39DFC /* Embryo.jpg in Resources */,
 				5962243919508A3A00701B76 /* neuro-lumb-scan.jpg in Resources */,
 				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
 				46EC975A195B85D300E05CEB /* Grey Button.png in Resources */,
