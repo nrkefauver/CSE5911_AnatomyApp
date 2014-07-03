@@ -17,6 +17,27 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self addButton];
+}
+
+-(void) addButton
+{
+    // Create a button
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self
+               action:@selector(doAThing)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"PROGRAMMATIC ACTION" forState:UIControlStateNormal];
+    UIImage *img = [UIImage imageNamed:@"home.png"];
+    [button setImage:img forState:UIControlStateNormal];
+    button.frame = CGRectMake(20.0, 70.0, 300.0, 40.0);
+    [self.view addSubview:button];
+}
+
+- (void) doAThing
+{
+    self.title = @"Succhess!";
 }
 
 - (void)didReceiveMemoryWarning

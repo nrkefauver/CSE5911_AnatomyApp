@@ -17,4 +17,7 @@
     NSMutableArray *textArray;
     
 }
+
+- (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl;
+
 @end
