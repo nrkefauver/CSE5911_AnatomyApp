@@ -64,7 +64,8 @@ CGFloat origin;
     searchSubtitles = [[NSMutableArray alloc] init];
     searchText = [[NSMutableArray alloc] init];
     
-    
+    //Initialize the dictionary that will contain all the definition options
+    masterDictionary = [[NSMutableDictionary alloc] init];
 
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
@@ -75,6 +76,7 @@ CGFloat origin;
     //Create temp array for keys
     NSMutableArray *tempNames = [[NSMutableArray alloc] init];
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
+    NSMutableArray *defOptions = [[NSMutableArray alloc] init];
     for (int i=0; i< 141; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
@@ -82,9 +84,21 @@ CGFloat origin;
                 [nTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+
+                //Creates array of all the possible definitions for each term
+                NSMutableArray *temp = [[NSMutableArray alloc]init];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                [defOptions addObject:temp];
             }
         }
     }
+    
+    //Adds all Neuro terms and their designated definitions to the overall dictionary
+    NSDictionary *tempDict = [[NSDictionary alloc] initWithObjects:tempNames forKeys:defOptions];
+    [masterDictionary addEntriesFromDictionary:tempDict];
     
     //Create Dictionary for terms and their definitions
     NSDictionary *dictN= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
@@ -119,6 +133,7 @@ CGFloat origin;
     //Create temp array for keys
     [tempNames removeAllObjects];
     [tempDefs removeAllObjects];
+    [defOptions removeAllObjects];
     for (int i=0; i< 141; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
@@ -126,9 +141,22 @@ CGFloat origin;
                 [hTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                
+                
+                //Creates array of all the possible definitions for each term
+                NSMutableArray *temp = [[NSMutableArray alloc]init];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                [defOptions addObject:temp];
             }
         }
     }
+    
+    //Adds all Histology terms and their designated definitions to the overall dictionary
+    tempDict = [[NSDictionary alloc] initWithObjects:tempNames forKeys:defOptions];
+    [masterDictionary addEntriesFromDictionary:tempDict];
     
     //Create Dictionary for terms and their definitions
     NSDictionary *dictH= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
@@ -161,6 +189,7 @@ CGFloat origin;
     //Create temp array for keys
     [tempNames removeAllObjects];
     [tempDefs removeAllObjects];
+    [defOptions removeAllObjects];
     for (int i=0; i< 141; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
@@ -168,10 +197,22 @@ CGFloat origin;
                 [eTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                
+                //Creates array of all the possible definitions for each term
+                NSMutableArray *temp = [[NSMutableArray alloc]init];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                [defOptions addObject:temp];
             }
         }
     }
     
+    //Adds all Embryology terms and their designated definitions to the overall dictionary
+    tempDict = [[NSDictionary alloc] initWithObjects:tempNames forKeys:defOptions];
+    [masterDictionary addEntriesFromDictionary:tempDict];
+
     //Create Dictionary for terms and their definitions
     NSDictionary *dictE= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
     
@@ -202,16 +243,31 @@ CGFloat origin;
     //Create temp array for keys
     [tempNames removeAllObjects];
     [tempDefs removeAllObjects];
+    [defOptions removeAllObjects];
     for (int i=0; i< 141; i++) {
         if ([terms objectAtIndex:i]!= nil) {
+            
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:4] isEqualToString:@""]) {
                 [gTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                
+                //Creates array of all the possible definitions for each term
+                NSMutableArray *temp = [[NSMutableArray alloc]init];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                [defOptions addObject:temp];
             }
         }
     }
+    
+    //Adds all Gross terms and their designated definitions to the overall dictionary
+    tempDict = [[NSDictionary alloc] initWithObjects:tempNames forKeys:defOptions];
+    [masterDictionary addEntriesFromDictionary:tempDict];
+
     
     //Create Dictionary for terms and their definitions
     NSDictionary *dictG= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
@@ -530,4 +586,19 @@ CGFloat origin;
     [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
 }
 
+- (IBAction)defContentChanged:(UISegmentedControl *)segmentedControl
+{
+    //Switches images based on tab clicked on Neuro main page
+    switch(segmentedControl.selectedSegmentIndex)
+    {
+        case 0:
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+    }
+}
 @end
