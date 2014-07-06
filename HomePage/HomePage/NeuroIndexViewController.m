@@ -206,14 +206,14 @@ static bool tableViewIsCreated = false;
     cell = [nib objectAtIndex:0];
     
     // Create media buttons
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    [button addTarget:self
+//   UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    [button addTarget:cell
 //               action:@selector(doAThing)
 //     forControlEvents:UIControlEventTouchUpInside];
 //    [button setTitle:@":(" forState:UIControlStateNormal];
 //    UIImage *img = [UIImage imageNamed:@"home.png"];
 //    [button setImage:img forState:UIControlStateNormal];
-//    button.frame = CGRectMake(300.0, 282.0, 30.0, 40.0);
+//    button.frame = CGRectMake(20.0, 282.0, 45.0, 45.0);
 //    [cell addSubview:button];
     
     //Switches definitions and media based on selected subdiscipline
@@ -229,6 +229,8 @@ static bool tableViewIsCreated = false;
 //            [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             self.title = @"Hip!";
             [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:1];
+            
+            [cell addButton:0];
             break;
         case 2:
             self.title = @"Hip Hip!";

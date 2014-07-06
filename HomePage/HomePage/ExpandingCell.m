@@ -33,4 +33,45 @@
     // Configure the view for the selected state
 }
 
+- (void)addButton:(NSInteger)buttonNumber
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    
+    [button addTarget:self
+               action:@selector(doAThing)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"Does this matter?" forState:UIControlStateNormal];
+    UIImage *img = [UIImage imageNamed:@"home.png"];
+    [button setImage:img forState:UIControlStateNormal];
+    button.frame = CGRectMake(220.0, 100.0, 45.0, 45.0);
+    //[self.view addSubview:button];  <--------------------- Don't know why/how to get 'view'
+    [self addSubview:button];
+    
+    
+//    // Create button at location based on buttonNumber
+//    switch (buttonNumber) {
+//        {case 0:
+//            [button addTarget:self
+//                       action:@selector(doAThing)
+//             forControlEvents:UIControlEventTouchUpInside];
+//            UIImage *img = [UIImage imageNamed:@"home.png"];
+//            [button setImage:img forState:UIControlStateNormal];
+//            button.frame = CGRectMake(20.0, 285.0, 45.0, 45.0);
+//            break;}
+//            
+//        {case 1:
+//            
+//            break;}
+//        {default:
+//            break;}
+//    }
+    
+    
+}
+
+- (void) doAThing
+{
+    NSLog(@"Expanding Cell programmatic button was clicked");
+}
+
 @end
