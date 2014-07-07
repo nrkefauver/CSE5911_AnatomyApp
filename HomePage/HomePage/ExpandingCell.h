@@ -15,5 +15,6 @@
 @property (strong, nonatomic) IBOutlet UILabel  *subtitleLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
+- (void)addButton:(NSInteger)buttonNumber;
 
 @end

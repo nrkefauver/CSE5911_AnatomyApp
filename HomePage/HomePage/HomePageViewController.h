@@ -10,4 +10,6 @@
 
 @interface HomePageViewController : UIViewController
 
+- (void) doAThing;
+
 @end

@@ -197,6 +197,57 @@ static bool tableViewIsCreated = false;
     }
 }
 
+- (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl
+{
+    // Access cell
+    static NSString *cellIdentifier = @"expandingCell";
+    ExpandingCell *cell = (ExpandingCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
+    cell = [nib objectAtIndex:0];
+    
+    // Create media buttons
+//   UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    [button addTarget:cell
+//               action:@selector(doAThing)
+//     forControlEvents:UIControlEventTouchUpInside];
+//    [button setTitle:@":(" forState:UIControlStateNormal];
+//    UIImage *img = [UIImage imageNamed:@"home.png"];
+//    [button setImage:img forState:UIControlStateNormal];
+//    button.frame = CGRectMake(20.0, 282.0, 45.0, 45.0);
+//    [cell addSubview:button];
+    
+    //Switches definitions and media based on selected subdiscipline
+    switch(segmentedControl.selectedSegmentIndex)
+    {
+        case 0:
+            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
+            break;
+        case 1:
+//            cell.titleLabel.text = @"Hitso title";
+//            cell.subtitleLabel.text = @"Histo subtitle";
+//            cell.textLabel.text = @"What is this?";
+//            [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            self.title = @"Hip!";
+            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:1];
+            
+            [cell addButton:0];
+            break;
+        case 2:
+            self.title = @"Hip Hip!";
+        
+            
+            
+            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:2];
+            break;
+        case 3:
+            self.title = @"Hip Hip Hooray!";
+            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
+            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:3];
+            break;
+    }
+}
+
+#pragma Search Bar
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith [c] %@", searchText];
@@ -237,6 +288,12 @@ static bool tableViewIsCreated = false;
     [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
 }
 
+- (void) doAThing
+{
+    self.title = @"Success Unlikely";
+}
+
+#pragma Sidebar
 // Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
