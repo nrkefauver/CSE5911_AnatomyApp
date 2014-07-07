@@ -101,6 +101,7 @@
 		D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */; };
 		D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0774D89193CD5D400821D51 /* ExpandingCell.xib */; };
 		D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0774D8C193CD8D300821D51 /* ExpandingCell.m */; };
+		D085395F196B3B7D000962D8 /* IndexAll.png in Resources */ = {isa = PBXBuildFile; fileRef = D085395E196B3B7D000962D8 /* IndexAll.png */; };
 		D08A364C1958762F005E5C77 /* closedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D08A364B1958762F005E5C77 /* closedIcon.png */; };
 		D08A364E19587780005E5C77 /* openedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D08A364D19587780005E5C77 /* openedIcon.png */; };
 		D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115319524DB80051A7F4 /* EMAccordionSection.m */; };
@@ -249,6 +250,7 @@
 		D0774D89193CD5D400821D51 /* ExpandingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandingCell.xib; sourceTree = "<group>"; };
 		D0774D8B193CD8D300821D51 /* ExpandingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingCell.h; sourceTree = "<group>"; };
 		D0774D8C193CD8D300821D51 /* ExpandingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingCell.m; sourceTree = "<group>"; };
+		D085395E196B3B7D000962D8 /* IndexAll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IndexAll.png; path = Images/IndexAll.png; sourceTree = "<group>"; };
 		D08A364B1958762F005E5C77 /* closedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = closedIcon.png; path = Images/closedIcon.png; sourceTree = "<group>"; };
 		D08A364D19587780005E5C77 /* openedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = openedIcon.png; path = Images/openedIcon.png; sourceTree = "<group>"; };
 		D08A364F19588BCB005E5C77 /* Terms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Terms.plist; sourceTree = "<group>"; };
@@ -543,6 +545,7 @@
 				D06E5E40192FA51D00A12651 /* HomePageAppDelegate.h */,
 				D06E5E41192FA51D00A12651 /* HomePageAppDelegate.m */,
 				D06E5E43192FA51D00A12651 /* Main.storyboard */,
+				D085395E196B3B7D000962D8 /* IndexAll.png */,
 				D06E5E46192FA51D00A12651 /* HomePageViewController.h */,
 				D06E5E47192FA51D00A12651 /* HomePageViewController.m */,
 				D06E5E49192FA51D00A12651 /* Images.xcassets */,
@@ -779,6 +782,7 @@
 				5962243B19508A3A00701B76 /* neuro-sacral-scan.jpg in Resources */,
 				461B45EB1950CE980000189B /* Sacral_Scan.png in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
+				D085395F196B3B7D000962D8 /* IndexAll.png in Resources */,
 				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
 				5962243C19508A3A00701B76 /* neuro-sacral.jpg in Resources */,
 				5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */,

@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Home Page View Controller - Spinal Chord Anatomy-->
+        <!--Home Page View Controller - Spinal Cord Anatomy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomePageViewController" sceneMemberID="viewController">
@@ -56,19 +56,10 @@
                                     <segue destination="Z1N-LW-t3Y" kind="push" id="Cbj-Qs-rfV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="aow-vj-q69">
-                                <rect key="frame" x="121" y="644" width="527" height="73"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="aow-vj-q69">
+                                <rect key="frame" x="247" y="676" width="275" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Index" backgroundImage="Grey Button.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Index">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                                <state key="normal" title="Index" backgroundImage="IndexAll.png"/>
                                 <connections>
                                     <segue destination="0HC-13-e6l" kind="push" id="SbS-2b-D5Y"/>
                                 </connections>
@@ -129,10 +120,24 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MZX-lp-fBh">
+                                <rect key="frame" x="348" y="878" width="72" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Index">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Georgia-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Spinal Chord Anatomy" id="xix-xz-vc8">
+                    <navigationItem key="navigationItem" title="Spinal Cord Anatomy" id="xix-xz-vc8">
                         <barButtonItem key="backBarButtonItem" title="Home" id="XsP-GI-RLq"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -1037,15 +1042,7 @@
                     <view key="view" contentMode="scaleToFill" id="7Sn-hZ-Bbc">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gross 3D Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rb9-nQ-Y4O">
-                                <rect key="frame" x="322" y="227" width="125" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gross Anatomy 3D Model" id="35b-8p-HNF">
                         <barButtonItem key="backBarButtonItem" title="Gross 3D Model" id="UeC-Xo-zvj"/>
@@ -1211,6 +1208,7 @@
         <image name="Embryo.jpg" width="948" height="995"/>
         <image name="Grey Button.png" width="200" height="200"/>
         <image name="Gross.jpg" width="570" height="704"/>
+        <image name="IndexAll.png" width="226" height="151"/>
         <image name="histology.jpg" width="971" height="800"/>
         <image name="neuro-lumb-scan.jpg" width="1264" height="1189"/>
     </resources>
@@ -1220,18 +1218,18 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="qEZ-5V-GMV"/>
-        <segue reference="psJ-mD-Iz2"/>
-        <segue reference="TMk-2L-1Y4"/>
-        <segue reference="HR3-33-3xN"/>
-        <segue reference="2YT-sS-ArM"/>
-        <segue reference="fdm-bw-BD5"/>
         <segue reference="xIp-rp-Izy"/>
-        <segue reference="zth-Qd-6wy"/>
-        <segue reference="SbS-2b-D5Y"/>
-        <segue reference="Cbj-Qs-rfV"/>
+        <segue reference="2YT-sS-ArM"/>
+        <segue reference="EZM-zG-zgc"/>
+        <segue reference="TMk-2L-1Y4"/>
         <segue reference="8Ym-jz-PyO"/>
+        <segue reference="Cbj-Qs-rfV"/>
+        <segue reference="SbS-2b-D5Y"/>
         <segue reference="32O-Pf-eqc"/>
         <segue reference="Rde-ZO-HXw"/>
+        <segue reference="TJa-hY-aVm"/>
+        <segue reference="8VA-9P-1Ft"/>
+        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="psJ-mD-Iz2"/>
     </inferredMetricsTieBreakers>
 </document>
