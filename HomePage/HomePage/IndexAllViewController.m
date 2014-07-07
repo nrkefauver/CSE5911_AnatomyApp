@@ -601,7 +601,7 @@ CGFloat origin;
     switch(segmentedControl.selectedSegmentIndex)
     {
         case 0:
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
+            //[segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
             key =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
             break;
         case 1:
