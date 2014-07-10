@@ -112,73 +112,126 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
 }
 
 
+// Create cell contents
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // Access expanding cell
     static NSString *cellIdentifier = @"expandingCell";
     ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
+    cell = [nib objectAtIndex:0];
     
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-        
-        // Set preselected term in the segmented control (tag 1000):
-        UIView *nibView = [nib objectAtIndex:0];
-        UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
-        UIButton *button = (UIButton*)[nibView viewWithTag:10];
-        
-        // in Neuro
-        switch(selectedDiscipline)
-        {
-            case 0:
-                [segmentedControl setSelectedSegmentIndex:0];
-                break;
-            case 1:
-                [segmentedControl setSelectedSegmentIndex:1];
-                break;
-            case 2:
-                [segmentedControl setSelectedSegmentIndex:2];
-                break;
-            case 3:
-                [segmentedControl setSelectedSegmentIndex:3];
-                break;
-        }
-        
-        [button setTitle:@"Newb" forState:UIControlStateNormal];
-        
+    // Set segmentedController and Media Buttons:
+    UIView *nibView = [nib objectAtIndex:0];
+    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+    UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
+    UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
+    
+    switch(selectedDiscipline)
+    {
+        {case 0: //Neuro
+            [segmentedControl setSelectedSegmentIndex:0];
+            
+            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            UIImage* button1Image = [UIImage imageNamed:@"Letter N"];
+            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+            
+            [button1 addTarget:self
+                       action:@selector(doAThing)
+             forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 1: //Histo
+            [segmentedControl setSelectedSegmentIndex:1];
+            
+            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            //[button2 setBackgroundImage:(UIImage*)@"histology.png" forState:UIControlStateNormal];
+            
+            [button1 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 2: //Embryo
+            [segmentedControl setSelectedSegmentIndex:2];
+            
+            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
+            //[button2 setBackgroundImage:(UIImage*)@"Embryo.png" forState:UIControlStateNormal];
+            
+            [button1 addTarget:self
+                        action:@selector(doADifferentThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 3: //Gross
+            [segmentedControl setSelectedSegmentIndex:3];
+            
+            [button1 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
+            
+            [button1 addTarget:self
+                        action:@selector(doADifferentThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
     }
-    
+
+
+    NSString *term;
     if (selectedDiscipline == neuro)
     {
-    NSString *term;
-    if (indexPath.row <= titleArray.count) {
+        if (indexPath.row <= titleArray.count) {
+            if (tableView == self.searchDisplayController.searchResultsTableView) {
+                term =[searchResults objectAtIndex:indexPath.row];
+                cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                cell.textLabel.text = [textArray objectAtIndex:pos];
+            } else {
+                cell.titleLabel.text = [titleArray objectAtIndex:indexPath.row];
+                cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+                cell.textLabel.text = [textArray objectAtIndex:indexPath.row];
+            }
+        }
+    }
+    else if (selectedDiscipline == histo){
         if (tableView == self.searchDisplayController.searchResultsTableView) {
             term =[searchResults objectAtIndex:indexPath.row];
             cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
             cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
-            int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
-            cell.textLabel.text = [textArray objectAtIndex:pos];
+            //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+            cell.textLabel.text = @"this could grow up to be a searched histo definition one day";
         } else {
-            cell.titleLabel.text = [titleArray objectAtIndex:indexPath.row];
+            cell.titleLabel.text = @"hist";
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-            cell.textLabel.text = [textArray objectAtIndex:indexPath.row];
+            cell.textLabel.text = @"this could grow up to be a histo definition one day";
         }
-        
-    }
-    }
-    else if (selectedDiscipline == histo){
-        cell.titleLabel.text = @"hist";
-        cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-        cell.textLabel.text = @"this could grow up to be a histo definition one day";
     }
     else if (selectedDiscipline == embryo){
-        cell.titleLabel.text = @"emb";
-        cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-        cell.textLabel.text = @"Embryo-yo";
+        if (tableView == self.searchDisplayController.searchResultsTableView) {
+            term =[searchResults objectAtIndex:indexPath.row];
+            cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+            cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+            //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+            cell.textLabel.text = @"Embryo searched def";
+        } else {
+            cell.titleLabel.text = @"emb";
+            cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+            cell.textLabel.text = @"Embryo-yo";
+        }
     }
     else{
-        cell.titleLabel.text = @"goss";
-        cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-        cell.textLabel.text = @"Gross Defintion";
+        if (tableView == self.searchDisplayController.searchResultsTableView) {
+            term =[searchResults objectAtIndex:indexPath.row];
+            cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+            cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+            //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+            cell.textLabel.text = @"Searching for the answers, all I'm getting is gross anatomy";
+        } else {
+            cell.titleLabel.text = @"gro";
+            cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+            cell.textLabel.text = @"Gross";
+        }
     }
     cell.textLabel.layer.borderWidth = 2.0f;
     cell.textLabel.layer.borderColor = [[UIColor whiteColor] CGColor];
@@ -253,7 +306,7 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             break;
     }
     
-    [self tableView:globalTableView cellForRowAtIndexPath:globalIndexPath];
+    //[self tableView:globalTableView cellForRowAtIndexPath:globalIndexPath];
     [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
@@ -272,6 +325,7 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
                                                                         selectedScopeButtonIndex]]];
     // close any open cells
     selectedIndex = -1;
+    selectedDiscipline = neuro;
     
     return YES;
 }
@@ -300,7 +354,12 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
 
 - (void) doAThing
 {
-    self.title = @"Success Unlikely";
+    self.title = @"Success";
+}
+
+- (void) doADifferentThing
+{
+    self.title = @"This is different!";
 }
 
 #pragma Sidebar
