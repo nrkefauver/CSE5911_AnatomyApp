@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
+
 @end
 
 @implementation NeuroIndexViewController
@@ -21,7 +22,7 @@ NSArray *searchResults;
 static NSIndexPath *globalIndexPath;
 static UITableView *globalTableView;
 static bool tableViewIsCreated = false;
-
+static enum selectedDisciplineEnum selectedDiscipline = neuro;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -123,12 +124,31 @@ static bool tableViewIsCreated = false;
         // Set preselected term in the segmented control (tag 1000):
         UIView *nibView = [nib objectAtIndex:0];
         UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+        UIButton *button = (UIButton*)[nibView viewWithTag:10];
         
         // in Neuro
-        [segmentedControl setSelectedSegmentIndex:0];
+        switch(selectedDiscipline)
+        {
+            case 0:
+                [segmentedControl setSelectedSegmentIndex:0];
+                break;
+            case 1:
+                [segmentedControl setSelectedSegmentIndex:1];
+                break;
+            case 2:
+                [segmentedControl setSelectedSegmentIndex:2];
+                break;
+            case 3:
+                [segmentedControl setSelectedSegmentIndex:3];
+                break;
+        }
+        
+        [button setTitle:@"Newb" forState:UIControlStateNormal];
         
     }
     
+    if (selectedDiscipline == neuro)
+    {
     NSString *term;
     if (indexPath.row <= titleArray.count) {
         if (tableView == self.searchDisplayController.searchResultsTableView) {
@@ -143,6 +163,22 @@ static bool tableViewIsCreated = false;
             cell.textLabel.text = [textArray objectAtIndex:indexPath.row];
         }
         
+    }
+    }
+    else if (selectedDiscipline == histo){
+        cell.titleLabel.text = @"hist";
+        cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = @"this could grow up to be a histo definition one day";
+    }
+    else if (selectedDiscipline == embryo){
+        cell.titleLabel.text = @"emb";
+        cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = @"Embryo-yo";
+    }
+    else{
+        cell.titleLabel.text = @"goss";
+        cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = @"Gross Defintion";
     }
     cell.textLabel.layer.borderWidth = 2.0f;
     cell.textLabel.layer.borderColor = [[UIColor whiteColor] CGColor];
@@ -173,7 +209,8 @@ static bool tableViewIsCreated = false;
     UIView *nibView = [nib objectAtIndex:0];
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
     // Set segController to Neuro
-    [segmentedControl setSelectedSegmentIndex:1];
+    selectedDiscipline = neuro;
+    //[segmentedControl setSelectedSegmentIndex:0];
     
     // Track indexPath and table view
     globalIndexPath = indexPath;
@@ -199,52 +236,25 @@ static bool tableViewIsCreated = false;
 
 - (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl
 {
-    // Access cell
-    static NSString *cellIdentifier = @"expandingCell";
-    ExpandingCell *cell = (ExpandingCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
-    cell = [nib objectAtIndex:0];
-    
-    // Create media buttons
-//   UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    [button addTarget:cell
-//               action:@selector(doAThing)
-//     forControlEvents:UIControlEventTouchUpInside];
-//    [button setTitle:@":(" forState:UIControlStateNormal];
-//    UIImage *img = [UIImage imageNamed:@"home.png"];
-//    [button setImage:img forState:UIControlStateNormal];
-//    button.frame = CGRectMake(20.0, 282.0, 45.0, 45.0);
-//    [cell addSubview:button];
-    
     //Switches definitions and media based on selected subdiscipline
     switch(segmentedControl.selectedSegmentIndex)
     {
         case 0:
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
+            selectedDiscipline = neuro;
             break;
         case 1:
-//            cell.titleLabel.text = @"Hitso title";
-//            cell.subtitleLabel.text = @"Histo subtitle";
-//            cell.textLabel.text = @"What is this?";
-//            [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            self.title = @"Hip!";
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:1];
-            
-            [cell addButton:0];
+            selectedDiscipline = histo;
             break;
         case 2:
-            self.title = @"Hip Hip!";
-        
-            
-            
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:2];
+            selectedDiscipline = embryo;
             break;
         case 3:
-            self.title = @"Hip Hip Hooray!";
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:3];
+            selectedDiscipline = gross;
             break;
     }
+    
+    [self tableView:globalTableView cellForRowAtIndexPath:globalIndexPath];
+    [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
 #pragma Search Bar

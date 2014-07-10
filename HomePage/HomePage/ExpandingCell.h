@@ -16,5 +16,8 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 - (void)addButton:(NSInteger)buttonNumber;
+- (IBAction)doAThing;
+@property (weak, nonatomic) IBOutlet UIButton *mediaButton1;
+@property (weak, nonatomic) IBOutlet UIButton *mediaButton2;
 
 @end

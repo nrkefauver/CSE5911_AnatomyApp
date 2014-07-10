@@ -63,14 +63,36 @@
                         <attributedString key="attributedText"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <button opaque="NO" tag="10" contentMode="scaleToFill" restorationIdentifier="mediaButton1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="guK-w3-m18">
+                        <rect key="frame" x="249" y="272" width="119" height="64"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button" backgroundImage="3D Models.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="doAThing" destination="-2" eventType="touchUpInside" id="Kyt-xL-DMb"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="huk-WJ-PFP">
+                        <rect key="frame" x="386" y="283" width="102" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>
             <connections>
+                <outlet property="mediaButton1" destination="guK-w3-m18" id="bfR-HA-kfh"/>
+                <outlet property="mediaButton2" destination="huk-WJ-PFP" id="nMy-7E-XFq"/>
                 <outlet property="segmentedControl" destination="3St-Pc-wPa" id="6wD-Hd-IG2"/>
                 <outlet property="subtitleLabel" destination="1Kx-ei-uyr" id="ipw-bu-44u"/>
                 <outlet property="textLabel" destination="kup-79-7J1" id="eDT-dw-84w"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="3D Models.png" width="64" height="64"/>
+    </resources>
 </document>

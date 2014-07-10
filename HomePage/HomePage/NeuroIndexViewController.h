@@ -16,8 +16,17 @@
     NSMutableArray *subtitleArray;
     NSMutableArray *textArray;
     
+    
 }
 
 - (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl;
+
+enum selectedDisciplineEnum
+{
+    neuro,
+    histo,
+    embryo,
+    gross
+};
 
 @end
