@@ -22,7 +22,6 @@
 
 - (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl;
 
-
 enum selectedDisciplineEnum
 {
     neuro,

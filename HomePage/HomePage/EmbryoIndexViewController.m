@@ -21,6 +21,7 @@ NSArray *searchResults;
 static NSIndexPath *globalIndexPath;
 static UITableView *globalTableView;
 static bool tableViewIsCreated = false;
+static enum selectedDisciplineEnum selectedDiscipline = embryo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,7 +47,8 @@ static bool tableViewIsCreated = false;
     titleArray = [[NSMutableArray alloc] init];
     subtitleArray = [[NSMutableArray alloc] init];
     textArray = [[NSMutableArray alloc] init];
-    
+    masterDictionary = [[NSMutableDictionary alloc] init];
+
     
     
     //This declares the path to the Terms.plist where all the terms for the entire project are found
@@ -58,16 +60,30 @@ static bool tableViewIsCreated = false;
     //Create temp array for keys
     NSMutableArray *tempNames = [[NSMutableArray alloc] init];
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
-    for (int i=0; i< 141; i++) {
+    NSMutableArray *defOptions = [[NSMutableArray alloc] init];
+    for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:3] isEqualToString:@""]) {
                 [titleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                
+                //Creates array of all the possible definitions for each term
+                NSMutableArray *temp = [[NSMutableArray alloc]init];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                [defOptions addObject:temp];
             }
         }
     }
+    
+    //Adds all Embryology terms and their designated definitions to the overall dictionary
+    NSDictionary *tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
+    [masterDictionary addEntriesFromDictionary:tempDict];
+    
     
     //Create Dictionary for terms and their definitions
     NSDictionary *nTerms = [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
@@ -112,39 +128,127 @@ static bool tableViewIsCreated = false;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // Access expanding cell
     static NSString *cellIdentifier = @"expandingCell";
-    
     ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
+    cell = [nib objectAtIndex:0];
     
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-        
-        // Set preselected term in the segmented control (tag 1000):
-        UIView *nibView = [nib objectAtIndex:0];
-        UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
-        
-        // in Embryo
-        [segmentedControl setSelectedSegmentIndex:2];
+    // Set segmentedController and Media Buttons
+    UIView *nibView = [nib objectAtIndex:0];
+    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+    UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
+    UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
+    
+    switch(selectedDiscipline)
+    {
+        {case 0: //Neuro
+            [segmentedControl setSelectedSegmentIndex:0];
+            
+            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 1: //Histo
+            [segmentedControl setSelectedSegmentIndex:1];
+            
+            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 2: //Embryo
+            [segmentedControl setSelectedSegmentIndex:2];
+            
+            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
+            
+            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
+            //            [button1 addTarget:self
+            //                        action:@selector(doADifferentThing)
+            //              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 3: //Gross
+            [segmentedControl setSelectedSegmentIndex:3];
+            
+            [button1 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doADifferentThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
     }
     
-    
+    // Populate cells with terms and definitions
     NSString *term;
-    if (indexPath.row <= titleArray.count) {
+    if (selectedDiscipline == neuro)
+    {
+        if (indexPath.row <= titleArray.count) {
+            if (tableView == self.searchDisplayController.searchResultsTableView) {
+                term =[searchResults objectAtIndex:indexPath.row];
+                cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+            } else {
+                cell.titleLabel.text = [titleArray objectAtIndex:indexPath.row];
+                cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+                cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+            }
+        }
+    }
+    else if (selectedDiscipline == histo){
         if (tableView == self.searchDisplayController.searchResultsTableView) {
             term =[searchResults objectAtIndex:indexPath.row];
             cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
             cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
-            int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
-            cell.textLabel.text = [textArray objectAtIndex:pos];
+            //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+            
         } else {
-            cell.titleLabel.text = [titleArray objectAtIndex:indexPath.row];
+            cell.titleLabel.text = @"hist";
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-            cell.textLabel.text = [textArray objectAtIndex:indexPath.row];
+            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
         }
-        
     }
-    
+    else if (selectedDiscipline == embryo){
+        if (tableView == self.searchDisplayController.searchResultsTableView) {
+            term =[searchResults objectAtIndex:indexPath.row];
+            cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+            cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+            //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+        } else {
+            cell.titleLabel.text = @"emb";
+            cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+        }
+    }
+    else{
+        if (tableView == self.searchDisplayController.searchResultsTableView) {
+            term =[searchResults objectAtIndex:indexPath.row];
+            cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+            cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+            //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+            cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+        } else {
+            cell.titleLabel.text = @"gro";
+            cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
+            cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+        }
+    }
     //Formatting for definition text view
     cell.textLabel.layer.borderWidth = 2.0f;
     cell.textLabel.layer.borderColor = [[UIColor whiteColor] CGColor];
@@ -175,7 +279,7 @@ static bool tableViewIsCreated = false;
     UIView *nibView = [nib objectAtIndex:0];
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
     // Set segController to Embryo
-    [segmentedControl setSelectedSegmentIndex:2];
+    selectedDiscipline = embryo;
     
     // Track indexPath and table view
     globalIndexPath = indexPath;
@@ -198,6 +302,55 @@ static bool tableViewIsCreated = false;
         [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
+
+- (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl
+{
+    //Switches definitions and media based on selected subdiscipline
+    switch(segmentedControl.selectedSegmentIndex)
+    {
+        case 0:
+            selectedDiscipline = neuro;
+            break;
+        case 1:
+            selectedDiscipline = histo;
+            break;
+        case 2:
+            selectedDiscipline = embryo;
+            break;
+        case 3:
+            selectedDiscipline = gross;
+            break;
+    }
+    
+    [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+#pragma Media Button Methods
+
+- (void) doAThing
+{
+    self.title = @"works";
+    //[self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
+}
+
+- (void) doADifferentThing
+{
+    self.title = @"This is different!";
+}
+
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//
+//    //NeuroViewController* destViewController = segue.destinationViewController;
+//
+//    if([segue.identifier isEqualToString:@""])
+//    {
+//        //destViewController.infoPassingTest = 1;
+//    }
+//    else if([segue.identifier isEqualToString:@""]){
+//
+//    }
+//
+//}
 
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {

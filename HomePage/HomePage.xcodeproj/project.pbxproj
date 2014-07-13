@@ -469,6 +469,7 @@
 				5953AA0F1946802C00677409 /* Gross3DModelViewController.m */,
 				D00CA83C1947936900C01BBF /* GrossIndexViewController.h */,
 				D00CA83D1947936900C01BBF /* GrossIndexViewController.m */,
+				D0253F25193FD70F00CFE2AC /* Histology */,
 			);
 			name = "Gross Anatomy";
 			sourceTree = "<group>";
@@ -562,7 +563,6 @@
 				D0253F28193FD73400CFE2AC /* IndexAll */,
 				D0253F27193FD72100CFE2AC /* Neuroanatomy */,
 				D0253F26193FD71900CFE2AC /* Gross Anatomy */,
-				D0253F25193FD70F00CFE2AC /* Histology */,
 				D0253F24193FD6F700CFE2AC /* Embryology */,
 				462CB057193CFDD100B6CF72 /* Images */,
 				D06E5E39192FA51D00A12651 /* HomePage-Info.plist */,

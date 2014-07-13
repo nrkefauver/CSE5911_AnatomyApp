@@ -26,9 +26,12 @@
 @implementation IndexAllViewController
 NSArray *searchResults;
 static NSIndexPath *globalIndexPath;
+static NSInteger lastCellSection;
+static bool afterCellReset = false;
 static UITableView *globalTableView;
 static int nonsearchSelectedIndex;
 static bool afterSearch = false;
+static enum selectedDisciplineEnum selectedDiscipline = neuro;
 
 
 //COLLAPSIBLE TABLE CODE
@@ -77,9 +80,8 @@ CGFloat origin;
     NSMutableArray *tempNames = [[NSMutableArray alloc] init];
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
     NSMutableArray *defOptions = [[NSMutableArray alloc] init];
-    for (int i=0; i< 141; i++) {
+    for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
-            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:1] isEqualToString:@""]) {
                 [nTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
@@ -134,7 +136,7 @@ CGFloat origin;
     [tempNames removeAllObjects];
     [tempDefs removeAllObjects];
     [defOptions removeAllObjects];
-    for (int i=0; i< 141; i++) {
+    for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:2] isEqualToString:@""]) {
@@ -190,7 +192,7 @@ CGFloat origin;
     [tempNames removeAllObjects];
     [tempDefs removeAllObjects];
     [defOptions removeAllObjects];
-    for (int i=0; i< 141; i++) {
+    for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:3] isEqualToString:@""]) {
@@ -244,7 +246,7 @@ CGFloat origin;
     [tempNames removeAllObjects];
     [tempDefs removeAllObjects];
     [defOptions removeAllObjects];
-    for (int i=0; i< 141; i++) {
+    for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
@@ -392,70 +394,299 @@ CGFloat origin;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // Access expanding cell
     static NSString *cellIdentifier = @"expandingCell";
     ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
+    cell = [nib objectAtIndex:0];
     
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-        
-        // Set preselected term in the segmented control (tag 1000):
-        UIView *nibView = [nib objectAtIndex:0];
-        UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
-        
-        // in Neuro
-        if(indexPath.section==0)
-        {
+//    if (lastCellSection != indexPath.section)
+//    {
+//        selectedIndex = -1;
+//        lastCellSection = indexPath.section;
+//        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//    }
+    
+    // Set segmentedController and Media Buttons
+    UIView *nibView = [nib objectAtIndex:0];
+    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+    UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
+    UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
+    
+    switch(selectedDiscipline)
+    {
+        {case 0: //Neuro
             [segmentedControl setSelectedSegmentIndex:0];
-        }
-        // in Histo
-        else if(indexPath.section==1)
-        {
+            
+            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 1: //Histo
             [segmentedControl setSelectedSegmentIndex:1];
-        }
-        // in Embryo
-        else if(indexPath.section==2)
-        {
+            
+            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 2: //Embryo
             [segmentedControl setSelectedSegmentIndex:2];
-        }
-        // in Gross
-        else if(indexPath.section==3)
-        {
+            
+            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
+            
+            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
+            //            [button1 addTarget:self
+            //                        action:@selector(doADifferentThing)
+            //              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 3: //Gross
             [segmentedControl setSelectedSegmentIndex:3];
-        }
+            
+            [button1 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doADifferentThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
     }
     
-
     
-    // Populate terms and definitions
     NSString *term;
-    int pos = indexPath.row;
-    if (pos<= searchArray.count) {
-        if (tableView == self.searchDisplayController.searchResultsTableView) {
-            term =[searchResults objectAtIndex:indexPath.row];
-            cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
-            cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
-            int pos = [searchSubtitles indexOfObject:[searchResults objectAtIndex:indexPath.row]];
-            cell.textLabel.text = [searchText objectAtIndex:pos];
-        } else if (indexPath.section==0) {
-            cell.titleLabel.text = [nTitleArray objectAtIndex:indexPath.row];
-            cell.subtitleLabel.text = [subtitleNArray objectAtIndex:indexPath.row];
-            cell.textLabel.text = [textNArray objectAtIndex:indexPath.row];
-        } else if (indexPath.section==1) {
-        cell.titleLabel.text = [hTitleArray objectAtIndex:indexPath.row];
-        cell.subtitleLabel.text = [subtitleHArray objectAtIndex:indexPath.row];
-        cell.textLabel.text = [textHArray objectAtIndex:indexPath.row];
-        } else if (indexPath.section==2) {
-        cell.titleLabel.text = [eTitleArray objectAtIndex:indexPath.row];
-        cell.subtitleLabel.text = [subtitleEArray objectAtIndex:indexPath.row];
-        cell.textLabel.text = [textEArray objectAtIndex:indexPath.row];
-        } else if (indexPath.section == 3) {
-        cell.titleLabel.text = [gTitleArray objectAtIndex:indexPath.row];
-        cell.subtitleLabel.text = [subtitleGArray objectAtIndex:indexPath.row];
-        cell.textLabel.text = [textGArray objectAtIndex:indexPath.row];
-        }
-    
+    switch (indexPath.section) {
+            
+        case 0: // In Neuro Section
+            if (selectedDiscipline == neuro)
+            {
+                if (indexPath.row <= searchArray.count) {
+                    if (tableView == self.searchDisplayController.searchResultsTableView) {
+                        term =[searchResults objectAtIndex:indexPath.row];
+                        cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                        cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                        cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+                    } else {
+                        cell.subtitleLabel.text = [subtitleNArray objectAtIndex:indexPath.row];
+                        cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+                    }
+                }
+            }
+            else if (selectedDiscipline == histo){
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                    
+                } else {
+                    cell.subtitleLabel.text = [subtitleNArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                }
+            }
+            else if (selectedDiscipline == embryo){
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                } else {
+                    cell.subtitleLabel.text = [subtitleNArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                }
+            }
+            else{
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                } else {
+                    cell.subtitleLabel.text = [subtitleNArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                }
+            }
+        break;
+            
+        case 1: // In Histo Section
+            if (selectedDiscipline == neuro)
+            {
+                if (indexPath.row <= searchArray.count) {
+                    if (tableView == self.searchDisplayController.searchResultsTableView) {
+                        term =[searchResults objectAtIndex:indexPath.row];
+                        cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                        cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                        cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+                    } else {
+                        cell.subtitleLabel.text = [subtitleHArray objectAtIndex:indexPath.row];
+                        cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+                    }
+                }
+            }
+            else if (selectedDiscipline == histo){
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                    
+                } else {
+                    cell.subtitleLabel.text = [subtitleHArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                }
+            }
+            else if (selectedDiscipline == embryo){
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                } else {
+                    cell.subtitleLabel.text = [subtitleHArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                }
+            }
+            else{
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                } else {
+                    cell.subtitleLabel.text = [subtitleHArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                }
+            }
+        break;
+            
+        case 2: // In Embryo Section
+            if (selectedDiscipline == neuro)
+            {
+                if (indexPath.row <= searchArray.count) {
+                    if (tableView == self.searchDisplayController.searchResultsTableView) {
+                        term =[searchResults objectAtIndex:indexPath.row];
+                        cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                        cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                        cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+                    } else {
+                        cell.subtitleLabel.text = [subtitleEArray objectAtIndex:indexPath.row];
+                        cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+                    }
+                }
+            }
+            else if (selectedDiscipline == histo){
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                    
+                } else {
+                    cell.subtitleLabel.text = [subtitleEArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                }
+            }
+            else if (selectedDiscipline == embryo){
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                } else {
+                    cell.subtitleLabel.text = [subtitleEArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                }
+            }
+            else{
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                } else {
+                    cell.subtitleLabel.text = [subtitleEArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                }
+            }
+        break;
+            
+        case 3: // In Gross Section
+            if (selectedDiscipline == neuro)
+            {
+                if (indexPath.row <= searchArray.count) {
+                    if (tableView == self.searchDisplayController.searchResultsTableView) {
+                        term =[searchResults objectAtIndex:indexPath.row];
+                        cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                        cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                        cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+                    } else {
+                        cell.subtitleLabel.text = [subtitleGArray objectAtIndex:indexPath.row];
+                        cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+                    }
+                }
+            }
+            else if (selectedDiscipline == histo){
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                    
+                } else {
+                    cell.subtitleLabel.text = [subtitleGArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                }
+            }
+            else if (selectedDiscipline == embryo){
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                } else {
+                    cell.subtitleLabel.text = [subtitleGArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                }
+            }
+            else{
+                if (tableView == self.searchDisplayController.searchResultsTableView) {
+                    term =[searchResults objectAtIndex:indexPath.row];
+                    cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
+                    //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
+                    cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                } else {
+                    cell.subtitleLabel.text = [subtitleGArray objectAtIndex:indexPath.row];
+                    cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                }
+            }
+        break;
     }
+    
+    //Formatting for definition text view
     cell.textLabel.layer.borderWidth = 2.0f;
     cell.textLabel.layer.borderColor = [[UIColor whiteColor] CGColor];
     cell.textLabel.layer.cornerRadius = 8.0f;
@@ -487,19 +718,19 @@ CGFloat origin;
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
     // in Neuro
     if(indexPath.section==0){
-        [segmentedControl setSelectedSegmentIndex:0];
+        selectedDiscipline = neuro;
     }
     // in Histo
     else if(indexPath.section==1){
-        [segmentedControl setSelectedSegmentIndex:1];
+        selectedDiscipline = histo;
     }
     // in Embryo
     else if(indexPath.section==2){
-        [segmentedControl setSelectedSegmentIndex:2];
+        selectedDiscipline = embryo;
     }
     // in Gross
     else if(indexPath.section==3){
-        [segmentedControl setSelectedSegmentIndex:3];
+        selectedDiscipline = gross;
     }
     
     // Track indexPath and table view
@@ -548,6 +779,55 @@ CGFloat origin;
     }
 }
 
+- (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl
+{
+    //Switches definitions and media based on selected subdiscipline
+    switch(segmentedControl.selectedSegmentIndex)
+    {
+        case 0:
+            selectedDiscipline = neuro;
+            break;
+        case 1:
+            selectedDiscipline = histo;
+            break;
+        case 2:
+            selectedDiscipline = embryo;
+            break;
+        case 3:
+            selectedDiscipline = gross;
+            break;
+    }
+    
+    [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+#pragma Media Button Methods
+
+- (void) doAThing
+{
+    self.title = @"works";
+    //[self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
+}
+
+- (void) doADifferentThing
+{
+    self.title = @"This is different!";
+}
+
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//    
+//    NeuroViewController* destViewController = segue.destinationViewController;
+//    
+//    if([segue.identifier isEqualToString:@"NeuroIndexToNeuroHomeSegue"])
+//    {
+//        destViewController.infoPassingTest = 1;
+//    }
+//    else if([segue.identifier isEqualToString:@""]){
+//        
+//    }
+//    
+//}
+
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith [c] %@", searchText];
@@ -586,45 +866,45 @@ CGFloat origin;
     [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
 }
 
-- (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl
-{
-    [self tableView:self.tableView cellForRowAtIndexPath:globalIndexPath];
-
-    // Access cell
-    static NSString *cellIdentifier = @"expandingCell";
-    ExpandingCell *cell = (ExpandingCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
-    cell = [nib objectAtIndex:0];
-    NSString *key = cell.subtitleLabel.text;
-   
-    //Switches definitions and media based on selected subdiscipline
-    switch(segmentedControl.selectedSegmentIndex)
-    {
-        case 0:
-            //[segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
-            key =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
-            break;
-        case 1:
-        
-            self.title = @"Hip!";
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:1];
-            key= [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
-            [cell addButton:0];
-            break;
-        case 2:
-            self.title = @"Hip Hip!";
-            
-            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
-            
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:2];
-            break;
-        case 3:
-            self.title = @"Hip Hip Hooray!";
-            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
-            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:3];
-            break;
-    }
-}
+//- (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl
+//{
+//    [self tableView:self.tableView cellForRowAtIndexPath:globalIndexPath];
+//
+//    // Access cell
+//    static NSString *cellIdentifier = @"expandingCell";
+//    ExpandingCell *cell = (ExpandingCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+//    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
+//    cell = [nib objectAtIndex:0];
+//    NSString *key = cell.subtitleLabel.text;
+//   
+//    //Switches definitions and media based on selected subdiscipline
+//    switch(segmentedControl.selectedSegmentIndex)
+//    {
+//        case 0:
+//            //[segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
+//            key =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
+//            break;
+//        case 1:
+//        
+//            self.title = @"Hip!";
+//            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:1];
+//            key= [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+//            [cell addButton:0];
+//            break;
+//        case 2:
+//            self.title = @"Hip Hip!";
+//            
+//            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+//            
+//            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:2];
+//            break;
+//        case 3:
+//            self.title = @"Hip Hip Hooray!";
+//            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+//            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
+//            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:3];
+//            break;
+//    }
+//}
 
 @end

@@ -61,9 +61,8 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     NSMutableArray *tempNames = [[NSMutableArray alloc] init];
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
     NSMutableArray *defOptions = [[NSMutableArray alloc] init];
-    for (int i=0; i< 141; i++) {
+    for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
-            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:1] isEqualToString:@""]) {
                 [titleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
@@ -134,7 +133,7 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
     cell = [nib objectAtIndex:0];
     
-    // Set segmentedController and Media Buttons:
+    // Set segmentedController and Media Buttons
     UIView *nibView = [nib objectAtIndex:0];
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
     UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
@@ -201,12 +200,11 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
                 term =[searchResults objectAtIndex:indexPath.row];
                 cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
                 cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
-                int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
-                cell.textLabel.text = [textArray objectAtIndex:pos];
+                cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
             } else {
                 cell.titleLabel.text = [titleArray objectAtIndex:indexPath.row];
                 cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-                cell.textLabel.text = [textArray objectAtIndex:indexPath.row];
+                cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
             }
         }
     }
@@ -219,7 +217,6 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
 
         } else {
-            cell.titleLabel.text = @"hist";
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
             cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
         }
@@ -232,7 +229,6 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
             cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
         } else {
-            cell.titleLabel.text = @"emb";
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
             cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
         }
@@ -245,11 +241,12 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
             cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
         } else {
-            cell.titleLabel.text = @"gro";
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
             cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
         }
     }
+    
+    //Formatting for definition text view
     cell.textLabel.layer.borderWidth = 2.0f;
     cell.textLabel.layer.borderColor = [[UIColor whiteColor] CGColor];
     cell.textLabel.layer.cornerRadius = 8.0f;
@@ -257,20 +254,6 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     cell.textLabel.font = [UIFont fontWithName:@"Georgia" size:14.0];
     cell.clipsToBounds = YES;
     return cell;
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
-    NeuroViewController* destViewController = segue.destinationViewController;
-    
-    if([segue.identifier isEqualToString:@"NeuroIndexToNeuroHomeSegue"])
-    {
-        destViewController.infoPassingTest = 1;
-    }
-    else if([segue.identifier isEqualToString:@""]){
-        
-    }
-    
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -294,7 +277,6 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
     // Set segController to Neuro
     selectedDiscipline = neuro;
-    //[segmentedControl setSelectedSegmentIndex:0];
     
     // Track indexPath and table view
     globalIndexPath = indexPath;
@@ -337,8 +319,34 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             break;
     }
     
-    //[self tableView:globalTableView cellForRowAtIndexPath:globalIndexPath];
     [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+#pragma Media Button Methods
+
+- (void) doAThing
+{
+    self.title = @"works";
+    //[self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
+}
+
+- (void) doADifferentThing
+{
+    self.title = @"This is different!";
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    NeuroViewController* destViewController = segue.destinationViewController;
+    
+    if([segue.identifier isEqualToString:@"NeuroIndexToNeuroHomeSegue"])
+    {
+        destViewController.infoPassingTest = 1;
+    }
+    else if([segue.identifier isEqualToString:@""]){
+        
+    }
+    
 }
 
 #pragma Search Bar
@@ -383,15 +391,6 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
 }
 
-- (void) doAThing
-{
-    [self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
-}
-
-- (void) doADifferentThing
-{
-    self.title = @"This is different!";
-}
 
 #pragma Sidebar
 // Create navigation sidebar
