@@ -7,6 +7,7 @@
 //
 
 #import "NeuroIndexViewController.h"
+#import "NeuroViewController.h"
 #import "ExpandingCell.h"
 #import "Term.h"
 
@@ -134,10 +135,10 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             
             [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
             [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
-            UIImage* button1Image = [UIImage imageNamed:@"Letter N"];
-            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
             
-            [button1 addTarget:self
+            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
                        action:@selector(doAThing)
              forControlEvents:UIControlEventTouchUpInside];
             break;}
@@ -146,9 +147,10 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             
             [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
             [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            //[button2 setBackgroundImage:(UIImage*)@"histology.png" forState:UIControlStateNormal];
             
-            [button1 addTarget:self
+            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
                         action:@selector(doAThing)
               forControlEvents:UIControlEventTouchUpInside];
             break;}
@@ -156,12 +158,12 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             [segmentedControl setSelectedSegmentIndex:2];
             
             [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
-            //[button2 setBackgroundImage:(UIImage*)@"Embryo.png" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
             
-            [button1 addTarget:self
-                        action:@selector(doADifferentThing)
-              forControlEvents:UIControlEventTouchUpInside];
+            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
+//            [button1 addTarget:self
+//                        action:@selector(doADifferentThing)
+//              forControlEvents:UIControlEventTouchUpInside];
             break;}
         {case 3: //Gross
             [segmentedControl setSelectedSegmentIndex:3];
@@ -170,7 +172,9 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
             //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
             
-            [button1 addTarget:self
+            UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
                         action:@selector(doADifferentThing)
               forControlEvents:UIControlEventTouchUpInside];
             break;}
@@ -240,6 +244,20 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     cell.textLabel.font = [UIFont fontWithName:@"Georgia" size:14.0];
     cell.clipsToBounds = YES;
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    NeuroViewController* destViewController = segue.destinationViewController;
+    
+    if([segue.identifier isEqualToString:@"NeuroIndexToNeuroHomeSegue"])
+    {
+        destViewController.infoPassingTest = 1;
+    }
+    else if([segue.identifier isEqualToString:@""]){
+        
+    }
+    
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -354,7 +372,7 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
 
 - (void) doAThing
 {
-    self.title = @"Success";
+    [self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
 }
 
 - (void) doADifferentThing

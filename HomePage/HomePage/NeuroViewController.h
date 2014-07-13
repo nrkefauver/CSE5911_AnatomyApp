@@ -13,6 +13,7 @@
     UIImageView* imageView;
 }
 
+@property (nonatomic) NSInteger *infoPassingTest;
 @property (nonatomic, retain) IBOutlet UIImageView* imageView;
 
 - (IBAction) contentModeChanged: (UISegmentedControl*)segmentedControl;

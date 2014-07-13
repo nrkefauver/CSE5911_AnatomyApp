@@ -14,7 +14,7 @@
 
 @implementation NeuroViewController
 
-
+@synthesize infoPassingTest;
 @synthesize imageView = nImageView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +33,11 @@
     //Loads main image to Neuro main screen
     UIImage* image = [UIImage imageNamed:@"Cervical"];
     NSAssert(image, @"image is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
+    
+    if (infoPassingTest == 1)
+    {
+        self.title = @"One";
+    }
     
     self.imageView.backgroundColor = [UIColor blackColor];
     self.imageView.clipsToBounds = YES;
