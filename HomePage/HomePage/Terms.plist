@@ -549,10 +549,10 @@
 		<string>Largest neuroglial cells that provide physical and metabolic support to neurons. There are two types of astrocytes: protoplasmic (predominately found in the gray matter) and fibrous (predominately found in the white matter). Also play an important role in maintaining the blood-brain barrier.</string>
 		<string>Derived from glioblasts that differentiated into astroblasts. Astroblasts will further differentiate into either protoplasmic astrocytes or fibrous astrocytes.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Axoaxonic Synapse</string>
