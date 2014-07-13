@@ -49,8 +49,7 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     titleArray = [[NSMutableArray alloc] init];
     subtitleArray = [[NSMutableArray alloc] init];
     textArray = [[NSMutableArray alloc] init];
-
-    
+    masterDictionary = [[NSMutableDictionary alloc] init];
     
     //This declares the path to the Terms.plist where all the terms for the entire project are found
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
@@ -61,6 +60,7 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     //Create temp array for keys
     NSMutableArray *tempNames = [[NSMutableArray alloc] init];
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
+    NSMutableArray *defOptions = [[NSMutableArray alloc] init];
     for (int i=0; i< 141; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
@@ -68,9 +68,21 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
                 [titleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                
+                //Creates array of all the possible definitions for each term
+                NSMutableArray *temp = [[NSMutableArray alloc]init];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                [defOptions addObject:temp];
             }
         }
     }
+    
+    //Adds all Neuro terms and their designated definitions to the overall dictionary
+    NSDictionary *tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
+    [masterDictionary addEntriesFromDictionary:tempDict];
     
     //Create Dictionary for terms and their definitions
     NSDictionary *nTerms = [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
@@ -204,11 +216,12 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
             cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
             //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
-            cell.textLabel.text = @"this could grow up to be a searched histo definition one day";
+            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+
         } else {
             cell.titleLabel.text = @"hist";
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-            cell.textLabel.text = @"this could grow up to be a histo definition one day";
+            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
         }
     }
     else if (selectedDiscipline == embryo){
@@ -217,11 +230,11 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
             cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
             //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
-            cell.textLabel.text = @"Embryo searched def";
+            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
         } else {
             cell.titleLabel.text = @"emb";
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-            cell.textLabel.text = @"Embryo-yo";
+            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
         }
     }
     else{
@@ -230,11 +243,11 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
             cell.subtitleLabel.text = [searchResults objectAtIndex:indexPath.row];
             //int pos = [subtitleArray indexOfObject:[searchResults objectAtIndex:indexPath.row]];
-            cell.textLabel.text = @"Searching for the answers, all I'm getting is gross anatomy";
+            cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
         } else {
             cell.titleLabel.text = @"gro";
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
-            cell.textLabel.text = @"Gross";
+            cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
         }
     }
     cell.textLabel.layer.borderWidth = 2.0f;

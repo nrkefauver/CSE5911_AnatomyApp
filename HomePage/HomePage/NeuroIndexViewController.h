@@ -15,7 +15,8 @@
     NSMutableArray *titleArray;
     NSMutableArray *subtitleArray;
     NSMutableArray *textArray;
-    
+    NSMutableDictionary *masterDictionary;
+
     
 }
 

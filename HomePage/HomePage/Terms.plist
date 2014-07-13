@@ -5,9 +5,9 @@
 	<array>
 		<string>Anterior Corticospinal Tract</string>
 		<string>Small bundle of descending axons connecting the cerebral cortex to the spinal cord. The tract is located in close proximity to the anterior median fissure and is not present below the thoracic region of the spinal cord. Unlike axons of the lateral corticospinal tract, axons within the anterior corticospinal tract do not cross over in the medulla, but descend on the ipsilateral side of the spinal cord until close to the region of synapse and then the axons cross to the contralateral side. Neurons within the cerebral cortex often project bilaterally within the anterior cortical spinal tract to synapse with neurons within the anterior horn of gray matter responsible for innervating axial muscles. </string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>cat</string>
+		<string>dog</string>
+		<string>horse</string>
 		<string></string>
 		<string></string>
 		<string></string>
