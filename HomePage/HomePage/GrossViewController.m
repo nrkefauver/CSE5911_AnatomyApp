@@ -152,7 +152,7 @@
 {
     // Set index for term 40: SpinalNerve
     int index = 40;
-    [self showPopoverAbove:(id)sender index:(int)index];
+    [self showPopoverBelow:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Ventral Median Fissure"
@@ -160,7 +160,7 @@
 {
     // Set index for term 44: VentralMedianFissure
     int index = 44;
-    [self showPopoverAbove:(id)sender index:(int)index];
+    [self showPopoverBelow:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Ventral Roots"
@@ -168,7 +168,7 @@
 {
     // Set index for term 45: VentralRoots
     int index = 45;
-    [self showPopoverAbove:(id)sender index:(int)index];
+    [self showPopoverBelow:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Ventral Horn of Gray Matter"
