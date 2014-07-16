@@ -56,12 +56,15 @@
                                     <segue destination="Z1N-LW-t3Y" kind="push" id="Cbj-Qs-rfV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="aow-vj-q69">
-                                <rect key="frame" x="247" y="676" width="275" height="188"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="uKO-iF-93R">
+                                <rect key="frame" x="281" y="649" width="234" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Index" backgroundImage="IndexAll.png"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" backgroundImage="IndexAll.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
                                 <connections>
-                                    <segue destination="0HC-13-e6l" kind="push" id="SbS-2b-D5Y"/>
+                                    <segue destination="0HC-13-e6l" kind="push" id="vbX-ka-e0i"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cZR-Bz-VeM">
@@ -245,7 +248,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1914" y="-1010"/>
+            <point key="canvasLocation" x="1830" y="-1002"/>
         </scene>
         <!--Embryo View Controller - Embryology Home-->
         <scene sceneID="6gF-am-Wrc">
@@ -896,7 +899,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lbo-vY-zCP">
-                                <rect key="frame" x="92" y="199" width="85" height="31"/>
+                                <rect key="frame" x="92" y="199" width="85" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -970,6 +973,23 @@
                                     <action selector="onDorsalPrimaryRamus:" destination="W8x-iU-qGh" eventType="touchUpInside" id="1sZ-Ek-KeB"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="0V6-AD-htr">
+                                <rect key="frame" x="72" y="901" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="onTintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="yL9-Vy-JDb">
+                                <rect key="frame" x="195" y="903" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
