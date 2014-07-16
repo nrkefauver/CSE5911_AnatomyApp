@@ -895,74 +895,77 @@
                                 <rect key="frame" x="20" y="88" width="728" height="762"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.49999999999999961" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lbo-vY-zCP">
-                                <rect key="frame" x="131" y="186" width="68" height="30"/>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lbo-vY-zCP">
+                                <rect key="frame" x="92" y="199" width="85" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="onDorsalRoots:" destination="W8x-iU-qGh" eventType="touchUpInside" id="Ofe-kC-JLc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iSj-mv-JPj">
-                                <rect key="frame" x="88" y="708" width="68" height="30"/>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iSj-mv-JPj">
+                                <rect key="frame" x="92" y="724" width="85" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="onSpinalNerve:" destination="W8x-iU-qGh" eventType="touchUpInside" id="tJr-MP-wCu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cXo-of-LIz">
-                                <rect key="frame" x="212" y="729" width="72" height="30"/>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cXo-of-LIz">
+                                <rect key="frame" x="226" y="735" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="onVentralRoots:" destination="W8x-iU-qGh" eventType="touchUpInside" id="eA1-7o-khh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vID-ub-hG1">
-                                <rect key="frame" x="308" y="783" width="121" height="30"/>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vID-ub-hG1">
+                                <rect key="frame" x="313" y="781" width="162" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="onVentralMedianFissure:" destination="W8x-iU-qGh" eventType="touchUpInside" id="XFY-Mf-gLy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fgx-O3-qgn">
-                                <rect key="frame" x="207" y="130" width="143" height="30"/>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fgx-O3-qgn">
+                                <rect key="frame" x="190" y="123" width="183" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="onDorsalHornOfGrayMatter:" destination="W8x-iU-qGh" eventType="touchUpInside" id="0fd-5v-I01"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DKU-yT-dKC">
-                                <rect key="frame" x="462" y="175" width="143" height="30"/>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DKU-yT-dKC">
+                                <rect key="frame" x="474" y="175" width="193" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="onVentralHornOfGrayMatter:" destination="W8x-iU-qGh" eventType="touchUpInside" id="t2R-Eu-xOO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S9U-ls-Hko">
-                                <rect key="frame" x="549" y="318" width="118" height="30"/>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S9U-ls-Hko">
+                                <rect key="frame" x="572" y="311" width="147" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="onDorsalRootGanglion:" destination="W8x-iU-qGh" eventType="touchUpInside" id="jWh-Iz-QlI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j90-wk-RDX">
-                                <rect key="frame" x="630" y="492" width="118" height="30"/>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j90-wk-RDX">
+                                <rect key="frame" x="600" y="495" width="111" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="onVentralPrimaryRamus:" destination="W8x-iU-qGh" eventType="touchUpInside" id="g9p-nS-MzQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jps-Gh-7sS">
-                                <rect key="frame" x="590" y="572" width="115" height="30"/>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jps-Gh-7sS">
+                                <rect key="frame" x="614" y="554" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="onDorsalPrimaryRamus:" destination="W8x-iU-qGh" eventType="touchUpInside" id="1sZ-Ek-KeB"/>
                                 </connections>
@@ -1218,17 +1221,17 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xIp-rp-Izy"/>
+        <segue reference="32O-Pf-eqc"/>
+        <segue reference="Cbj-Qs-rfV"/>
+        <segue reference="HR3-33-3xN"/>
         <segue reference="2YT-sS-ArM"/>
-        <segue reference="EZM-zG-zgc"/>
+        <segue reference="bsx-wD-Vbr"/>
+        <segue reference="xIp-rp-Izy"/>
+        <segue reference="zth-Qd-6wy"/>
+        <segue reference="fdm-bw-BD5"/>
         <segue reference="TMk-2L-1Y4"/>
         <segue reference="8Ym-jz-PyO"/>
-        <segue reference="Cbj-Qs-rfV"/>
-        <segue reference="SbS-2b-D5Y"/>
-        <segue reference="32O-Pf-eqc"/>
         <segue reference="Rde-ZO-HXw"/>
-        <segue reference="TJa-hY-aVm"/>
-        <segue reference="8VA-9P-1Ft"/>
         <segue reference="qEZ-5V-GMV"/>
         <segue reference="psJ-mD-Iz2"/>
     </inferredMetricsTieBreakers>

@@ -144,7 +144,7 @@
 {
     // Set index for term 14: DorsalRootGanglion
     int index = 14;
-    [self showPopoverBelow:(id)sender index:(int)index];
+    [self showPopoverAbove:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Spinal Nerve"
@@ -183,7 +183,7 @@
 - (IBAction)onDorsalPrimaryRamus:(id)sender
 {
     // Set index for term 124: DorsalPrimaryRamus
-    int index = 124;
+    int index = 123;
     [self showPopoverAbove:(id)sender index:(int)index];
 }
 
@@ -191,7 +191,7 @@
 - (IBAction)onVentralPrimaryRamus:(id)sender
 {
     // Set index for term 140: VentralPrimaryRamus
-    int index = 140;
+    int index = 139;
     [self showPopoverBelow:(id)sender index:(int)index];
 }
 
