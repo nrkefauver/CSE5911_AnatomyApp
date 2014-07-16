@@ -120,6 +120,10 @@
 		D0D8CC24195B7125009ECF3E /* E5.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBEB195B7125009ECF3E /* E5.png */; };
 		D0D8CC25195B7125009ECF3E /* E6.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBEC195B7125009ECF3E /* E6.png */; };
 		D0D8CC26195B7125009ECF3E /* E7.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBED195B7125009ECF3E /* E7.png */; };
+		D0FFFB951977379900BA4D7B /* 2-D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0FFFB911977379900BA4D7B /* 2-D Image Media Button.PNG */; };
+		D0FFFB961977379900BA4D7B /* 3-D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0FFFB921977379900BA4D7B /* 3-D Model Media Button.PNG */; };
+		D0FFFB971977379900BA4D7B /* Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0FFFB931977379900BA4D7B /* Animation Media Button.PNG */; };
+		D0FFFB981977379900BA4D7B /* Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0FFFB941977379900BA4D7B /* Video Media Button.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +276,10 @@
 		D0D8CBEB195B7125009ECF3E /* E5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E5.png; path = Images/E5.png; sourceTree = "<group>"; };
 		D0D8CBEC195B7125009ECF3E /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E6.png; path = Images/E6.png; sourceTree = "<group>"; };
 		D0D8CBED195B7125009ECF3E /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E7.png; path = Images/E7.png; sourceTree = "<group>"; };
+		D0FFFB911977379900BA4D7B /* 2-D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2-D Image Media Button.PNG"; path = "Images/2-D Image Media Button.PNG"; sourceTree = "<group>"; };
+		D0FFFB921977379900BA4D7B /* 3-D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3-D Model Media Button.PNG"; path = "Images/3-D Model Media Button.PNG"; sourceTree = "<group>"; };
+		D0FFFB931977379900BA4D7B /* Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Animation Media Button.PNG"; path = "Images/Animation Media Button.PNG"; sourceTree = "<group>"; };
+		D0FFFB941977379900BA4D7B /* Video Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Video Media Button.PNG"; path = "Images/Video Media Button.PNG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,6 +612,10 @@
 		D082566B1958C92800620469 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D0FFFB911977379900BA4D7B /* 2-D Image Media Button.PNG */,
+				D0FFFB921977379900BA4D7B /* 3-D Model Media Button.PNG */,
+				D0FFFB931977379900BA4D7B /* Animation Media Button.PNG */,
+				D0FFFB941977379900BA4D7B /* Video Media Button.PNG */,
 				D0CE260A1964CB4900E39DFC /* books-icon-128.png */,
 				D0CE26081964C93500E39DFC /* green-book.png */,
 				D0CE26001964C55E00E39DFC /* Embryo.jpg */,
@@ -766,9 +778,11 @@
 				597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */,
 				D08A364E19587780005E5C77 /* openedIcon.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
+				D0FFFB971977379900BA4D7B /* Animation Media Button.PNG in Resources */,
 				5962243E19508A3A00701B76 /* neuro-thoracic.jpg in Resources */,
 				462CB053193CFDB200B6CF72 /* Letter G.png in Resources */,
 				59CAAC0C1962152900F06D88 /* SampleVideo.MOV in Resources */,
+				D0FFFB981977379900BA4D7B /* Video Media Button.PNG in Resources */,
 				466C49B4193BB914000B2A78 /* home.png in Resources */,
 				D0253F49193FE10A00CFE2AC /* E7.png in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
@@ -788,6 +802,7 @@
 				5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */,
 				D0D8CC20195B7125009ECF3E /* E1.png in Resources */,
 				D0253F48193FE10A00CFE2AC /* E6.png in Resources */,
+				D0FFFB961977379900BA4D7B /* 3-D Model Media Button.PNG in Resources */,
 				D0CE260B1964CB4900E39DFC /* books-icon-128.png in Resources */,
 				5962242F19508A3A00701B76 /* Neural Tube Formation.png in Resources */,
 				5962243419508A3A00701B76 /* Spinal Cord Further Development.png in Resources */,
@@ -797,6 +812,7 @@
 				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
 				46EC975A195B85D300E05CEB /* Grey Button.png in Resources */,
 				461B45E81950CE980000189B /* Lumbar_Drawing.png in Resources */,
+				D0FFFB951977379900BA4D7B /* 2-D Image Media Button.PNG in Resources */,
 				461B45ED1950CE980000189B /* Thoracic_Scan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

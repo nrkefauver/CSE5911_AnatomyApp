@@ -138,20 +138,34 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
     UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
     UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
+    UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
+    UIButton *button4 = (UIButton*)[nibView viewWithTag:40];
     
     switch(selectedDiscipline)
     {
         {case 0: //Neuro
             [segmentedControl setSelectedSegmentIndex:0];
             
-            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            [button1 setTitle:@"" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
+            [button3 setTitle:@"" forState:UIControlStateNormal];
             
-            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
+            UIImage* button1Image = [UIImage imageNamed:@"2-D Image Media Button"];
+            UIImage* button2Image = [UIImage imageNamed:@"3-D Model Media Button"];
+            UIImage* button3Image = [UIImage imageNamed:@"Video Media Button"];
+            
+            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+            [button1 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
             [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
             [button2 addTarget:self
                        action:@selector(doAThing)
              forControlEvents:UIControlEventTouchUpInside];
+            [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
+            [button3 addTarget:self
+                        action:@selector(doADifferentThing)
+              forControlEvents:UIControlEventTouchUpInside];
             break;}
         {case 1: //Histo
             [segmentedControl setSelectedSegmentIndex:1];

@@ -866,45 +866,6 @@ CGFloat origin;
     [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
 }
 
-//- (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl
-//{
-//    [self tableView:self.tableView cellForRowAtIndexPath:globalIndexPath];
-//
-//    // Access cell
-//    static NSString *cellIdentifier = @"expandingCell";
-//    ExpandingCell *cell = (ExpandingCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-//    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
-//    cell = [nib objectAtIndex:0];
-//    NSString *key = cell.subtitleLabel.text;
-//   
-//    //Switches definitions and media based on selected subdiscipline
-//    switch(segmentedControl.selectedSegmentIndex)
-//    {
-//        case 0:
-//            //[segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
-//            key =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0];
-//            break;
-//        case 1:
-//        
-//            self.title = @"Hip!";
-//            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:1];
-//            key= [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
-//            [cell addButton:0];
-//            break;
-//        case 2:
-//            self.title = @"Hip Hip!";
-//            
-//            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
-//            
-//            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:2];
-//            break;
-//        case 3:
-//            self.title = @"Hip Hip Hooray!";
-//            cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
-//            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:0];
-//            [segmentedControl setTitle:@"Booyah!" forSegmentAtIndex:3];
-//            break;
-//    }
-//}
+
 
 @end
