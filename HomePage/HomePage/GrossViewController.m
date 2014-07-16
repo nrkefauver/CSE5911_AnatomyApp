@@ -136,7 +136,7 @@
 {
     // Set index for term 10: DoralHornOfGrayMatter
     int index = 10;
-    [self showPopoverBelow:(id)sender index:(int)index];
+    [self showPopoverRight:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Dorsal Root Ganglion"
@@ -152,7 +152,7 @@
 {
     // Set index for term 40: SpinalNerve
     int index = 40;
-    [self showPopoverBelow:(id)sender index:(int)index];
+    [self showPopoverRight:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Ventral Median Fissure"
@@ -160,7 +160,7 @@
 {
     // Set index for term 44: VentralMedianFissure
     int index = 44;
-    [self showPopoverBelow:(id)sender index:(int)index];
+    [self showPopoverLeft:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Ventral Roots"
@@ -168,7 +168,7 @@
 {
     // Set index for term 45: VentralRoots
     int index = 45;
-    [self showPopoverBelow:(id)sender index:(int)index];
+    [self showPopoverRight:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Ventral Horn of Gray Matter"
@@ -176,7 +176,7 @@
 {
     // Set index for term 43: VentralHornOfGrayMatter
     int index = 43;
-    [self showPopoverBelow:(id)sender index:(int)index];
+    [self showPopoverLeft:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Dorsal Primary Ramus"
@@ -193,6 +193,24 @@
     // Set index for term 140: VentralPrimaryRamus
     int index = 139;
     [self showPopoverBelow:(id)sender index:(int)index];
+}
+
+// Create Popover menu BELOW button
+- (void)showPopoverLeft:(UIButton *)sender index:(int)termIndex
+{
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];
+    [PopoverView setIndex:(int)termIndex];
+    self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
+    [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionRight animated:YES];
+}
+
+// Create Popover menu BELOW button
+- (void)showPopoverRight:(UIButton *)sender index:(int)termIndex
+{
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];
+    [PopoverView setIndex:(int)termIndex];
+    self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
+    [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
 }
 
 // Create Popover menu BELOW button
