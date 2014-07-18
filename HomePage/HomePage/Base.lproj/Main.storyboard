@@ -137,6 +137,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="osu-web-header-horiz.png" id="4qG-59-Qch">
+                                <rect key="frame" x="205" y="872" width="387" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -770,7 +774,7 @@
             </objects>
             <point key="canvasLocation" x="4954" y="835"/>
         </scene>
-        <!--Neuro Animations List View Controller - Neuroanatomy Animations List-->
+        <!--Neuro Animations List View Controller - Neuroanatomy Animations -->
         <scene sceneID="BCY-Hm-ZMe">
             <objects>
                 <viewController id="A0d-hn-6U1" customClass="NeuroAnimationsListViewController" sceneMemberID="viewController">
@@ -779,7 +783,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Neuroanatomy Animations List" id="urP-bW-kRm">
+                    <navigationItem key="navigationItem" title="Neuroanatomy Animations " id="urP-bW-kRm">
                         <barButtonItem key="backBarButtonItem" title="Neuro Animations List" id="F2i-r2-fdG"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="zzJ-mn-o0M">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TBe-Vo-c87">
@@ -898,7 +902,7 @@
                                 <rect key="frame" x="20" y="88" width="728" height="762"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lbo-vY-zCP">
+                            <button opaque="NO" alpha="0.10000000000000001" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lbo-vY-zCP">
                                 <rect key="frame" x="92" y="199" width="85" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1234,6 +1238,7 @@
         <image name="IndexAll.png" width="226" height="151"/>
         <image name="histology.jpg" width="971" height="800"/>
         <image name="neuro-lumb-scan.jpg" width="1264" height="1189"/>
+        <image name="osu-web-header-horiz.png" width="344" height="114"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1241,17 +1246,17 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="32O-Pf-eqc"/>
-        <segue reference="Cbj-Qs-rfV"/>
-        <segue reference="HR3-33-3xN"/>
+        <segue reference="TMk-2L-1Y4"/>
+        <segue reference="Reg-0P-VLu"/>
+        <segue reference="f8e-Mr-dEL"/>
+        <segue reference="MZo-Sv-XyI"/>
+        <segue reference="c2K-YH-DqR"/>
+        <segue reference="8Ym-jz-PyO"/>
         <segue reference="2YT-sS-ArM"/>
         <segue reference="bsx-wD-Vbr"/>
-        <segue reference="xIp-rp-Izy"/>
         <segue reference="zth-Qd-6wy"/>
         <segue reference="fdm-bw-BD5"/>
-        <segue reference="TMk-2L-1Y4"/>
-        <segue reference="8Ym-jz-PyO"/>
-        <segue reference="Rde-ZO-HXw"/>
+        <segue reference="xIp-rp-Izy"/>
         <segue reference="qEZ-5V-GMV"/>
         <segue reference="psJ-mD-Iz2"/>
     </inferredMetricsTieBreakers>

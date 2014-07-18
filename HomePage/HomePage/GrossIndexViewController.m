@@ -7,6 +7,7 @@
 //
 
 #import "GrossIndexViewController.h"
+#import "GrossViewController.h"
 #import "ExpandingCell.h"
 #import "Term.h"
 
@@ -22,6 +23,8 @@ static NSIndexPath *globalIndexPath;
 static UITableView *globalTableView;
 static bool tableViewIsCreated = false;
 static enum selectedDisciplineEnum selectedDiscipline = gross;
+static int GrossMedia = 8; //Position in property list for all Gross Media options
+static NSString *partName; //Name of term to display with PopOver window open
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,26 +47,29 @@ static enum selectedDisciplineEnum selectedDiscipline = gross;
     //Set index to -1 saying no cell is expanded or should expand.
     selectedIndex = -1;
     
-    
+    //Initialize all necessary arrays
     titleArray = [[NSMutableArray alloc] init];
     subtitleArray = [[NSMutableArray alloc] init];
     textArray = [[NSMutableArray alloc] init];
     masterDictionary = [[NSMutableDictionary alloc] init];
-    
+    mediaDictionary = [[NSMutableDictionary alloc] init];
+
     
     //This declares the path to the Terms.plist where all the terms for the entire project are found
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
     
-    //Iterates through entire terms list and creates array containing all the Neuroanatomy (array) terms
+    //Iterates through entire terms list and creates array containing all the Gross (array) terms
     NSArray *terms = [[NSArray alloc] initWithContentsOfFile:path];
     
     //Create temp array for keys
     NSMutableArray *tempNames = [[NSMutableArray alloc] init];
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
     NSMutableArray *defOptions = [[NSMutableArray alloc] init];
+    NSMutableArray *mediaOptions = [[NSMutableArray alloc] init];
     for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
-            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
+            //The Gross definition field of each term is checked, and if it is not empty, then the term
+            //is added to the list of Gross terms
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:4] isEqualToString:@""]) {
                 [titleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
@@ -76,6 +82,16 @@ static enum selectedDisciplineEnum selectedDiscipline = gross;
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
                 [defOptions addObject:temp];
+                
+                //Creates array of all the possible media for each term
+                if([[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@"Dorsal Root Ganglion"]){
+                NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:GrossMedia] objectAtIndex:0]];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:GrossMedia] objectAtIndex:1]];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:GrossMedia] objectAtIndex:2]];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:GrossMedia] objectAtIndex:3]];
+                [mediaOptions addObject:tempMedia];
+                }
             }
         }
     }
@@ -83,6 +99,12 @@ static enum selectedDisciplineEnum selectedDiscipline = gross;
     //Adds all Gross terms and their designated definitions to the overall dictionary
     NSDictionary *tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
     [masterDictionary addEntriesFromDictionary:tempDict];
+    
+    //Adds all Gross terms and their designated media to the media dictionary
+    NSMutableArray *test = [[NSMutableArray alloc] init];
+    [test addObject:@"Dorsal Root Ganglion"];
+    NSDictionary *mediaDict = [[NSDictionary alloc] initWithObjects:mediaOptions forKeys:test];
+    [mediaDictionary addEntriesFromDictionary:mediaDict];
     
     //Create Dictionary for terms and their definitions
     NSDictionary *nTerms = [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
@@ -132,64 +154,6 @@ static enum selectedDisciplineEnum selectedDiscipline = gross;
     ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
     cell = [nib objectAtIndex:0];
-    
-    // Set segmentedController and Media Buttons
-    UIView *nibView = [nib objectAtIndex:0];
-    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
-    UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
-    UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
-    
-    switch(selectedDiscipline)
-    {
-        {case 0: //Neuro
-            [segmentedControl setSelectedSegmentIndex:0];
-            
-            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-        {case 1: //Histo
-            [segmentedControl setSelectedSegmentIndex:1];
-            
-            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-        {case 2: //Embryo
-            [segmentedControl setSelectedSegmentIndex:2];
-            
-            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"" forState:UIControlStateNormal];
-            
-            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
-            //            [button1 addTarget:self
-            //                        action:@selector(doADifferentThing)
-            //              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-        {case 3: //Gross
-            [segmentedControl setSelectedSegmentIndex:3];
-            
-            [button1 setTitle:@"Gross Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
-            //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doADifferentThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-    }
     
     // Populate cells with terms and definitions
     NSString *term;
@@ -247,6 +211,70 @@ static enum selectedDisciplineEnum selectedDiscipline = gross;
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
             cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
         }
+    }
+    
+    // Set segmentedController and Media Buttons
+    UIView *nibView = [nib objectAtIndex:0];
+    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+    UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
+    UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
+    UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
+    
+    switch(selectedDiscipline)
+    {
+        {case 0: //Neuro
+            [segmentedControl setSelectedSegmentIndex:0];
+            
+            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 1: //Histo
+            [segmentedControl setSelectedSegmentIndex:1];
+            
+            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 2: //Embryo
+            [segmentedControl setSelectedSegmentIndex:2];
+            
+            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
+            
+            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
+            //            [button1 addTarget:self
+            //                        action:@selector(doADifferentThing)
+            //              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 3: //Gross
+            [segmentedControl setSelectedSegmentIndex:3];
+            
+            if ([cell.subtitleLabel.text isEqual:@"Dorsal Root Ganglion"])
+            {
+                if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]isEqualToString:@""])
+                {
+                    UIImage* button1Image = [UIImage imageNamed:@"2-D Image Media Button"];
+                    [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                    [button1 addTarget:self
+                                action:@selector(gross2DButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    partName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                }
+            }
+            
+            break;}
     }
     
     //Formatting for definition text view
@@ -339,19 +367,24 @@ static enum selectedDisciplineEnum selectedDiscipline = gross;
     self.title = @"This is different!";
 }
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-//    
-//    //NeuroViewController* destViewController = segue.destinationViewController;
-//    
-//    if([segue.identifier isEqualToString:@""])
-//    {
-//        //destViewController.infoPassingTest = 1;
-//    }
-//    else if([segue.identifier isEqualToString:@""]){
-//        
-//    }
-//    
-//}
+- (void) gross2DButtonPressed
+{
+    [self performSegueWithIdentifier:@"GrossIndexToGrossHomeSegue" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    GrossViewController* destViewController = segue.destinationViewController;
+    
+    if([segue.identifier isEqualToString:@"GrossIndexToGrossHomeSegue"])
+    {
+        destViewController.initialPopupName = partName;
+    }
+    else if([segue.identifier isEqualToString:@""]){
+        
+    }
+    
+}
 
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {

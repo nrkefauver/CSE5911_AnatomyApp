@@ -14,6 +14,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *LabeledImage;
+@property (strong, nonatomic) NSString *initialPopupName;
 
 
 

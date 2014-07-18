@@ -15,6 +15,7 @@
 // Popover
 - (IBAction)showPopover:(UIButton *)sender;
 @property (nonatomic,strong) UIPopoverController *popOver;
+
 @end
 
 @implementation GrossViewController;
@@ -38,6 +39,11 @@
     UIImage *labeledImage = [UIImage imageNamed:@"Gross_labeled.jpg"];
     [super viewDidLoad];
     [LabeledImage setImage:labeledImage];
+    
+    if (self.initialPopupName != nil)
+    {
+        [self showInitialPopup];
+    }
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -121,6 +127,14 @@
 }
 - (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
+}
+
+// Popover menu upon loading view controller
+- (void) showInitialPopup
+{
+    // Set index for term 15: DoralRoots
+    int index = 15;
+    [self showPopoverBelow:nil index:(int)index];
 }
 
 // Show popover menu when user clicks "Dorsal Roots"

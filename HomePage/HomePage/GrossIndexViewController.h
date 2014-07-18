@@ -16,6 +16,7 @@
     NSMutableArray *subtitleArray;
     NSMutableArray *textArray;
     NSMutableDictionary *masterDictionary;
+    NSMutableDictionary *mediaDictionary;
 }
 
 - (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl;

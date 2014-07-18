@@ -8,10 +8,30 @@
 		<string>cat</string>
 		<string>dog</string>
 		<string>horse</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Anterior Spinothalamic Tract</string>
@@ -164,10 +184,20 @@
 		<string>Aggregation of pseudounipolar neurons situated within the dorsal roots. These are the cell bodies of the primary sensory neurons whose central processes pass into the spinal cord and peripheral processes travel through the spinal nerve. These pseudounipolar neurons are derived from neural crest cells. Satellite neuroglial cells are also present within the ganglion.</string>
 		<string>Aggregation of pseudounipolar neurons situated within the dorsal roots. These are the cell bodies of the primary sensory neurons whose central processes pass into the spinal cord and peripheral processes travel through the spinal nerve. These pseudounipolar neurons are derived from neural crest cells. Satellite neuroglial cells are also present within the ganglion.</string>
 		<string>Aggregation of pseudounipolar neurons situated within the dorsal roots. These are the cell bodies of the primary sensory neurons whose central processes pass into the spinal cord and peripheral processes travel through the spinal nerve. These pseudounipolar neurons are derived from neural crest cells. Satellite neuroglial cells are also present within the ganglion.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array/>
+		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string>Dorsal Rootlets</string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dorsal Rootlets</string>
@@ -175,10 +205,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string>Dorsal Roots</string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dorsal Spinocerebellar Tract</string>
