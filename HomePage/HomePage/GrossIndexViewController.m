@@ -220,6 +220,17 @@ static NSString *partName; //Name of term to display with PopOver window open
     UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
     UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
     
+    for (int i=0;i<3;i++) {
+        if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:i] isEqualToString:@""]) {
+            
+            [segmentedControl setBackgroundColor:[UIColor grayColor]];
+        }
+//        } else {
+//            [segmentedControl setBackgroundColor:[UIColor grayColor]];
+//
+//
+//        }
+    }
     switch(selectedDiscipline)
     {
         {case 0: //Neuro
@@ -233,6 +244,11 @@ static NSString *partName; //Name of term to display with PopOver window open
             [button2 addTarget:self
                         action:@selector(doAThing)
               forControlEvents:UIControlEventTouchUpInside];
+            
+            if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0] isEqualToString:@""]) {
+                [segmentedControl setTintColor:[UIColor grayColor]];
+            }
+            
             break;}
         {case 1: //Histo
             [segmentedControl setSelectedSegmentIndex:1];
@@ -245,7 +261,14 @@ static NSString *partName; //Name of term to display with PopOver window open
             [button2 addTarget:self
                         action:@selector(doAThing)
               forControlEvents:UIControlEventTouchUpInside];
-            break;}
+            
+            if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1] isEqualToString:@""]) {
+                [segmentedControl setTintColor:[UIColor grayColor]];
+            }
+
+            break;
+            
+        }
         {case 2: //Embryo
             [segmentedControl setSelectedSegmentIndex:2];
             
@@ -256,6 +279,11 @@ static NSString *partName; //Name of term to display with PopOver window open
             //            [button1 addTarget:self
             //                        action:@selector(doADifferentThing)
             //              forControlEvents:UIControlEventTouchUpInside];
+            
+            if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] isEqualToString:@""]) {
+                [segmentedControl setTintColor:[UIColor grayColor]];
+            }
+
             break;}
         {case 3: //Gross
             [segmentedControl setSelectedSegmentIndex:3];
@@ -273,6 +301,11 @@ static NSString *partName; //Name of term to display with PopOver window open
                     partName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
                 }
             }
+            
+            if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3] isEqualToString:@""]) {
+                [segmentedControl setTintColor:[UIColor grayColor]];
+            }
+
             
             break;}
     }
