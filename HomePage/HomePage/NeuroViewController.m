@@ -51,10 +51,15 @@
     [super viewDidUnload];
 }
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
+//Switches images based on tab clicked on Neuro main page
 - (IBAction)contentModeChanged:(UISegmentedControl *)segmentedControl
 {
-    //Switches images based on tab clicked on Neuro main page
     switch(segmentedControl.selectedSegmentIndex)
     {
         case 0:
@@ -64,7 +69,7 @@
             self.imageView.image = [UIImage imageNamed:@"Thoracic"];
             break;
         case 2:
-           self.imageView.image = [UIImage imageNamed:@"Lumbar"];
+            self.imageView.image = [UIImage imageNamed:@"Lumbar"];
             break;
         case 3:
             self.imageView.image = [UIImage imageNamed:@"Sacral"];
@@ -72,60 +77,24 @@
     }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+#pragma mark - Sidebar
 // Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
-                        [UIImage imageNamed:@"Tracts"],
-                        [UIImage imageNamed:@"Animations"],
+                        [UIImage imageNamed:@"videos"],
                         [UIImage imageNamed:@"Index"],
                         [UIImage imageNamed:@"Letter N"],
                         [UIImage imageNamed:@"home"],
                         ];
-
-    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+    NSArray *labels = @[@"Animations",
+                        @"Index",
+                        @"Neuro",
+                        @"Home",];
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:nil labelStrings:labels];
     callout.delegate = self;
     callout.showFromRight = YES;
     [callout showInViewController:self animated:YES];
 }
-
-// Set sidebar navigation
-- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    NSLog(@"Tapped item at index %i",index);
-    [sidebar dismissAnimated:YES completion:nil];
-    
-    //Tracts clicked
-    if (index == 0) {
-        //TODO
-    }
-    
-    //Animations clicked
-    else if (index == 1) {
-        [self performSegueWithIdentifier:@"NeuroHomeToAnimationsListSegue" sender:self];
-    }
-    
-    //Index clicked
-    else if (index == 2) {
-        [self performSegueWithIdentifier:@"NeuroHomeToNeuroIndex" sender:self];
-    }
-    
-    //Neuro Home clicked
-    else if (index == 3) {
-        // Do nothing
-    }
-    
-    //Home clicked
-    else if (index == 4) {
-        [self performSegueWithIdentifier:@"NeuroToHomeSegue" sender:self];
-    }
-    
-}
-
 - (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
     if (itemEnabled) {
         [self.optionIndices addIndex:index];
@@ -133,6 +102,29 @@
     else {
         [self.optionIndices removeIndex:index];
     }
+}
+
+// Set sidebar navigation
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    //Animations clicked
+    if (index == 0) {
+        [self performSegueWithIdentifier:@"NeuroHomeToAnimationsListSegue" sender:self];
+    }
+    //Index clicked
+    else if (index == 1) {
+        [self performSegueWithIdentifier:@"NeuroHomeToNeuroIndex" sender:self];
+    }
+    //Neuro Home clicked
+    else if (index == 2) {
+        // Do nothing
+    }
+    //Home clicked
+    else if (index == 3) {
+        [self performSegueWithIdentifier:@"NeuroToHomeSegue" sender:self];
+    }
+    
+    [sidebar dismissAnimated:YES];
 }
 
 // Hide navigation bar when sidebar is open

@@ -26,10 +26,10 @@
 		466C49B5193BB914000B2A78 /* Index.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AF193BB914000B2A78 /* Index.png */; };
 		466C49B6193BB914000B2A78 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B0193BB914000B2A78 /* videos.png */; };
 		466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B7193BBA0F000B2A78 /* Black Burger.png */; };
-		466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */; };
 		466C49C3193BC606000B2A78 /* 3D Models.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49C2193BC606000B2A78 /* 3D Models.png */; };
 		46B5359E19772D0000A2FC4F /* Gross_labeled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B5359C19772D0000A2FC4F /* Gross_labeled.jpg */; };
 		46B5359F19772D0000A2FC4F /* Gross_unlabeled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B5359D19772D0000A2FC4F /* Gross_unlabeled.jpg */; };
+		46D4E5B1197C35A400618D64 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D4E5B0197C35A400618D64 /* RNFrostedSidebar.m */; };
 		46EC9755195B84EF00E05CEB /* Cervical.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9751195B84EF00E05CEB /* Cervical.png */; };
 		46EC9756195B84EF00E05CEB /* Lumbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9752195B84EF00E05CEB /* Lumbar.png */; };
 		46EC9757195B84EF00E05CEB /* Sacral.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9753195B84EF00E05CEB /* Sacral.png */; };
@@ -158,11 +158,11 @@
 		466C49AF193BB914000B2A78 /* Index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Index.png; path = Images/Index.png; sourceTree = "<group>"; };
 		466C49B0193BB914000B2A78 /* videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = videos.png; path = Images/videos.png; sourceTree = "<group>"; };
 		466C49B7193BBA0F000B2A78 /* Black Burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Black Burger.png"; path = "Images/Black Burger.png"; sourceTree = "<group>"; };
-		466C49B9193BBA7D000B2A78 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
-		466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
 		466C49C2193BC606000B2A78 /* 3D Models.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3D Models.png"; path = "Images/3D Models.png"; sourceTree = "<group>"; };
 		46B5359C19772D0000A2FC4F /* Gross_labeled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gross_labeled.jpg; sourceTree = "<group>"; };
 		46B5359D19772D0000A2FC4F /* Gross_unlabeled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gross_unlabeled.jpg; sourceTree = "<group>"; };
+		46D4E5AF197C35A400618D64 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
+		46D4E5B0197C35A400618D64 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
 		46EC9751195B84EF00E05CEB /* Cervical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cervical.png; sourceTree = "<group>"; };
 		46EC9752195B84EF00E05CEB /* Lumbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lumbar.png; sourceTree = "<group>"; };
 		46EC9753195B84EF00E05CEB /* Sacral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sacral.png; sourceTree = "<group>"; };
@@ -513,8 +513,8 @@
 		D0253F29193FD77C00CFE2AC /* Sidebar */ = {
 			isa = PBXGroup;
 			children = (
-				466C49BA193BBA7D000B2A78 /* RNFrostedSidebar.m */,
-				466C49B9193BBA7D000B2A78 /* RNFrostedSidebar.h */,
+				46D4E5AF197C35A400618D64 /* RNFrostedSidebar.h */,
+				46D4E5B0197C35A400618D64 /* RNFrostedSidebar.m */,
 			);
 			name = Sidebar;
 			sourceTree = "<group>";
@@ -858,6 +858,7 @@
 				5953AA16194683B000677409 /* EmbryoAnimationsListViewController.m in Sources */,
 				D00CA83E1947936900C01BBF /* GrossIndexViewController.m in Sources */,
 				596224441950907000701B76 /* HistoSlide2ViewController.m in Sources */,
+				46D4E5B1197C35A400618D64 /* RNFrostedSidebar.m in Sources */,
 				597F1799195C82D600A722CD /* PopoverTableViewController.m in Sources */,
 				D06E5E6B192FA9F600A12651 /* IndexAllViewController.m in Sources */,
 				5962244119508F4000701B76 /* HistoSlide1ViewController.m in Sources */,
@@ -865,7 +866,6 @@
 				D0A0115719524E340051A7F4 /* EMAccordionTableViewController.m in Sources */,
 				D074CE6D192FF79300A2BAB1 /* EmbryoViewController.m in Sources */,
 				D074CE6A192FF77E00A2BAB1 /* GrossViewController.m in Sources */,
-				466C49BB193BBA7D000B2A78 /* RNFrostedSidebar.m in Sources */,
 				D00CA8411947941900C01BBF /* HistoIndexViewController.m in Sources */,
 				D00CA8441947948F00C01BBF /* EmbryoIndexViewController.m in Sources */,
 			);

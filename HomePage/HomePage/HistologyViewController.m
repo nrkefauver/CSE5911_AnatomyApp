@@ -52,9 +52,9 @@ static NSString *ItemIdentifier = @"ItemIdentifier";
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - UICollectionView DataSource & Delegate methods
+//#pragma mark - UICollectionView DataSource & Delegate methods
 
-
+#pragma mark - Sidebar
 // Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
@@ -62,35 +62,14 @@ static NSString *ItemIdentifier = @"ItemIdentifier";
                         [UIImage imageNamed:@"Letter H"],
                         [UIImage imageNamed:@"home"],
                         ];
-
-    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+    NSArray *labels = @[@"Index",
+                        @"Histo",
+                        @"Home",];
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:nil labelStrings:labels];
     callout.delegate = self;
     callout.showFromRight = YES;
     [callout showInViewController:self animated:YES];
 }
-
-// Set sidebar navigation
-- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    NSLog(@"Tapped item at index %i",index);
-    [sidebar dismissAnimated:YES completion:nil];
-    
-    //Index clicked
-    if (index == 0) {
-        [self performSegueWithIdentifier:@"HistoHomeToHistoIndex" sender:self];
-    }
-    
-    //Histo Home clicked
-    else if (index == 1) {
-        // Do nothing
-    }
-    
-    //Home clicked
-    else if (index == 2) {
-        [self performSegueWithIdentifier:@"HistoToHomeSegue" sender:self];
-    }
-    
-}
-
 - (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
     if (itemEnabled) {
         [self.optionIndices addIndex:index];
@@ -98,6 +77,25 @@ static NSString *ItemIdentifier = @"ItemIdentifier";
     else {
         [self.optionIndices removeIndex:index];
     }
+}
+
+// Set sidebar navigation
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    //Index clicked
+    if (index == 0) {
+        [self performSegueWithIdentifier:@"HistoHomeToHistoIndex" sender:self];
+    }
+    //Histo Home clicked
+    else if (index == 1) {
+        // Do nothing
+    }
+    //Home clicked
+    else if (index == 2) {
+        [self performSegueWithIdentifier:@"HistoToHomeSegue" sender:self];
+    }
+    
+    [sidebar dismissAnimated:YES];
 }
 
 // Hide navigation bar when sidebar is open

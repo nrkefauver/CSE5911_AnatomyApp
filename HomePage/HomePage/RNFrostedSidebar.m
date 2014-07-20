@@ -241,6 +241,7 @@
 @property (nonatomic, strong) UIImageView *blurView;
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 @property (nonatomic, strong) NSArray *images;
+@property (nonatomic, strong) NSMutableArray *labels;
 @property (nonatomic, strong) NSArray *borderColors;
 @property (nonatomic, strong) NSMutableArray *itemViews;
 @property (nonatomic, strong) NSMutableIndexSet *selectedIndices;
@@ -255,7 +256,8 @@ static RNFrostedSidebar *rn_frostedMenu;
     return rn_frostedMenu;
 }
 
-- (instancetype)initWithImages:(NSArray *)images selectedIndices:(NSIndexSet *)selectedIndices borderColors:(NSArray *)colors {
+- (instancetype)initWithImages:(NSArray *)images selectedIndices:(NSIndexSet *)selectedIndices borderColors:(NSArray *)colors labelStrings:(NSArray*)labels
+{
     if (self = [super init]) {
         _isSingleSelect = NO;
         _contentView = [[UIScrollView alloc] init];
@@ -266,16 +268,21 @@ static RNFrostedSidebar *rn_frostedMenu;
         _contentView.showsHorizontalScrollIndicator = NO;
         _contentView.showsVerticalScrollIndicator = NO;
         
-        _width = 100;
-        _animationDuration = 0.25f;
-        _itemSize = CGSizeMake(_width/2, _width/2);
+        _width = 115;
+        _animationDuration = 0.20f;
+        _itemSize = CGSizeMake(_width/1.6, _width/1.6);
         _itemViews = [NSMutableArray array];
         _tintColor = [UIColor colorWithWhite:0.2 alpha:0.73];
+		_labels = [@[] mutableCopy];
         _borderWidth = 2;
         _itemBackgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.25];
         
         if (colors) {
             NSAssert([colors count] == [images count], @"Border color count must match images count. If you want a blank border, use [UIColor clearColor].");
+        }
+		
+		if (labels) {
+            NSAssert([labels count] == [images count], @"Label count must match images count. If you don't want a labeled button, use @\"\"");
         }
         
         _selectedIndices = [selectedIndices mutableCopy] ?: [NSMutableIndexSet indexSet];
@@ -287,9 +294,19 @@ static RNFrostedSidebar *rn_frostedMenu;
             view.itemIndex = idx;
             view.clipsToBounds = YES;
             view.imageView.image = image;
+
             [_contentView addSubview:view];
-            
+
             [_itemViews addObject:view];
+			
+			UILabel* label = [[UILabel alloc] init];
+			label.textColor = [UIColor whiteColor];
+			label.font = [UIFont systemFontOfSize:14];
+			label.text = labels[idx];
+			label.backgroundColor = [UIColor clearColor];
+			label.textAlignment = NSTextAlignmentCenter;
+			[_labels addObject:label];
+			[_contentView addSubview:label];
             
             if (_borderColors && _selectedIndices && [_selectedIndices containsIndex:idx]) {
                 UIColor *color = _borderColors[idx];
@@ -301,6 +318,10 @@ static RNFrostedSidebar *rn_frostedMenu;
         }];
     }
     return self;
+}
+
+- (instancetype)initWithImages:(NSArray *)images selectedIndices:(NSIndexSet *)selectedIndices borderColors:(NSArray *)colors {
+	return [self initWithImages:images selectedIndices:selectedIndices borderColors:colors labelStrings:nil];
 }
 
 - (instancetype)initWithImages:(NSArray *)images selectedIndices:(NSIndexSet *)selectedIndices {
@@ -380,7 +401,7 @@ static RNFrostedSidebar *rn_frostedMenu;
 
 - (void)showInViewController:(UIViewController *)controller animated:(BOOL)animated {
     if (rn_frostedMenu != nil) {
-        [rn_frostedMenu dismissAnimated:NO completion:nil];
+        [rn_frostedMenu dismissAnimated:NO];
     }
     
     if ([self.delegate respondsToSelector:@selector(sidebar:willShowOnScreenAnimated:)]) {
@@ -472,23 +493,16 @@ static RNFrostedSidebar *rn_frostedMenu;
 #pragma mark - Dismiss
 
 - (void)dismiss {
-    [self dismissAnimated:YES completion:nil];
+    [self dismissAnimated:YES];
 }
 
 - (void)dismissAnimated:(BOOL)animated {
-    [self dismissAnimated:animated completion:nil];
-}
-
-- (void)dismissAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completion {
-    void (^completionBlock)(BOOL) = ^(BOOL finished){
+    void (^completion)(BOOL) = ^(BOOL finished){
         [self rn_removeFromParentViewControllerCallingAppearanceMethods:YES];
         
         if ([self.delegate respondsToSelector:@selector(sidebar:didDismissFromScreenAnimated:)]) {
             [self.delegate sidebar:self didDismissFromScreenAnimated:YES];
         }
-		if (completion) {
-			completion(finished);
-		}
     };
     
     if ([self.delegate respondsToSelector:@selector(sidebar:willDismissFromScreenAnimated:)]) {
@@ -511,10 +525,10 @@ static RNFrostedSidebar *rn_frostedMenu;
                              self.contentView.frame = contentFrame;
                              self.blurView.frame = blurFrame;
                          }
-                         completion:completionBlock];
+                         completion:completion];
     }
     else {
-        completionBlock(YES);
+        completion(YES);
     }
 }
 
@@ -523,7 +537,7 @@ static RNFrostedSidebar *rn_frostedMenu;
 - (void)handleTap:(UITapGestureRecognizer *)recognizer {
     CGPoint location = [recognizer locationInView:self.view];
     if (! CGRectContainsPoint(self.contentView.frame, location)) {
-        [self dismissAnimated:YES completion:nil];
+        [self dismissAnimated:YES];
     }
     else {
         NSInteger tapIndex = [self indexOfTap:[recognizer locationInView:self.contentView]];
@@ -616,13 +630,18 @@ static RNFrostedSidebar *rn_frostedMenu;
 
 - (void)layoutItems {
     CGFloat leftPadding = (self.width - self.itemSize.width)/2;
-    CGFloat topPadding = leftPadding;
+    CGFloat topPadding = leftPadding * 2;
     [self.itemViews enumerateObjectsUsingBlock:^(RNCalloutItemView *view, NSUInteger idx, BOOL *stop) {
         CGRect frame = CGRectMake(leftPadding, topPadding*idx + self.itemSize.height*idx + topPadding, self.itemSize.width, self.itemSize.height);
         view.frame = frame;
         view.layer.cornerRadius = frame.size.width/2.f;
     }];
-    
+
+	[self.labels enumerateObjectsUsingBlock:^(UILabel *label, NSUInteger idx, BOOL *stop) {
+        CGRect frame = CGRectMake(leftPadding, topPadding*idx + self.itemSize.height*(idx+1) + topPadding, self.itemSize.width, 24);
+        label.frame = frame;
+    }];
+	
     NSInteger items = [self.itemViews count];
     self.contentView.contentSize = CGSizeMake(0, items * (self.itemSize.height + leftPadding) + leftPadding);
 }

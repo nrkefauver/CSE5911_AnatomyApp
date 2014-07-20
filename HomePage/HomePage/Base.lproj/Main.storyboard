@@ -542,7 +542,7 @@
             <objects>
                 <viewController id="1Hf-Ur-mTZ" customClass="HistoSlide1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hly-wK-FfP">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="0.jpg" id="UDp-6O-roh">
@@ -587,11 +587,11 @@
             <objects>
                 <viewController id="Tua-02-U9a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B98-df-1hO">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="kif-OH-8bB">
-                                <rect key="frame" x="-16" y="-334" width="879" height="1358"/>
+                                <rect key="frame" x="-16" y="-334" width="879" height="1294"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
@@ -608,7 +608,7 @@
             <objects>
                 <viewController id="6wj-W4-l34" customClass="HistoSlide2ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EoW-Ke-XnU">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lml-r0-W0u">
@@ -1246,18 +1246,18 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TMk-2L-1Y4"/>
-        <segue reference="Reg-0P-VLu"/>
+        <segue reference="c2K-YH-DqR"/>
         <segue reference="f8e-Mr-dEL"/>
         <segue reference="MZo-Sv-XyI"/>
-        <segue reference="c2K-YH-DqR"/>
+        <segue reference="Reg-0P-VLu"/>
         <segue reference="8Ym-jz-PyO"/>
-        <segue reference="2YT-sS-ArM"/>
-        <segue reference="bsx-wD-Vbr"/>
-        <segue reference="zth-Qd-6wy"/>
-        <segue reference="fdm-bw-BD5"/>
-        <segue reference="xIp-rp-Izy"/>
-        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="TMk-2L-1Y4"/>
         <segue reference="psJ-mD-Iz2"/>
+        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="S6H-Ku-lpQ"/>
+        <segue reference="zth-Qd-6wy"/>
+        <segue reference="9Yg-Nh-qkQ"/>
+        <segue reference="bsx-wD-Vbr"/>
+        <segue reference="xIp-rp-Izy"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -64,6 +64,7 @@
     [super viewDidUnload];
 }
 
+#pragma mark - Sidebar
 // Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
@@ -73,45 +74,16 @@
                         [UIImage imageNamed:@"Letter G"],
                         [UIImage imageNamed:@"home"],
                         ];
-
-    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+    NSArray *labels = @[@"Videos",
+                        @"3D Model",
+                        @"Index",
+                        @"Gross",
+                        @"Home",];
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:nil labelStrings:labels];
     callout.delegate = self;
     callout.showFromRight = YES;
     [callout showInViewController:self animated:YES];
 }
-
-// Set sidebar navigation
-- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    NSLog(@"Tapped item at index %i",index);
-    [sidebar dismissAnimated:YES completion:nil];
-    
-    //Videos clicked
-    if (index == 0) {
-        [self performSegueWithIdentifier:@"GrossHomeToGrossVideosSegue" sender:self];
-    }
-    
-    //3D Models clicked
-    else if (index == 1) {
-        [self performSegueWithIdentifier:@"GrossHomeToGross3DModelSegue" sender:self];
-    }
-    
-    //Index clicked
-    else if (index == 2) {
-        [self performSegueWithIdentifier:@"GrossHomeToGrossIndex" sender:self];
-    }
-    
-    //Gross Home clicked
-    else if (index == 3) {
-        // Do nothing
-    }
-    
-    //Home clicked
-    else if (index == 4) {
-        [self performSegueWithIdentifier:@"GrossToHomeSegue" sender:self];
-    }
-    
-}
-
 - (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
     if (itemEnabled) {
         [self.optionIndices addIndex:index];
@@ -119,6 +91,33 @@
     else {
         [self.optionIndices removeIndex:index];
     }
+}
+
+// Set sidebar navigation
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    //Videos clicked
+    if (index == 0) {
+        [self performSegueWithIdentifier:@"GrossHomeToGrossVideosSegue" sender:self];
+    }
+    //3D Models clicked
+    else if (index == 1) {
+        [self performSegueWithIdentifier:@"GrossHomeToGross3DModelSegue" sender:self];
+    }
+    //Index clicked
+    else if (index == 2) {
+        [self performSegueWithIdentifier:@"GrossHomeToGrossIndex" sender:self];
+    }
+    //Gross Home clicked
+    else if (index == 3) {
+        // Do nothing
+    }
+    //Home clicked
+    else if (index == 4) {
+        [self performSegueWithIdentifier:@"GrossToHomeSegue" sender:self];
+    }
+    
+    [sidebar dismissAnimated:YES];
 }
 
 // Hide navigation bar when sidebar is open
@@ -129,6 +128,7 @@
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
 
+#pragma mark - Popover
 // Popover menu upon loading view controller
 - (void) showInitialPopup
 {

@@ -35,46 +35,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Sidebar
+// Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
-                        [UIImage imageNamed:@"Animations"],
+                        [UIImage imageNamed:@"videos"],
                         [UIImage imageNamed:@"Index"],
                         [UIImage imageNamed:@"Letter E"],
                         [UIImage imageNamed:@"home"],
                         ];
- 
-    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+    NSArray *labels = @[@"Animations",
+                        @"Index",
+                        @"Embryo",
+                        @"Home",];
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:nil labelStrings:labels];
     callout.delegate = self;
     callout.showFromRight = YES;
     [callout showInViewController:self animated:YES];
 }
-
-- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    NSLog(@"Tapped item at index %i",index);
-    [sidebar dismissAnimated:YES completion:nil];
-    
-    //Animations clicked
-    if (index == 0) {
-        //Do nothing
-    }
-    
-    //Index clicked
-    else if (index == 1) {
-        [self performSegueWithIdentifier:@"EmbryoAnimationsListToEmbryoIndexSegue" sender:self];
-    }
-    
-    //Embryo Home clicked
-    else if (index == 2) {
-        [self performSegueWithIdentifier:@"EmbryoAnimationsListToEmbryoHomeSegue" sender:self];
-    }
-    
-    //Home clicked
-    else if (index == 3) {
-        [self performSegueWithIdentifier:@"EmbryoAnimationsListToHomeSegue" sender:self];
-    }
-    
-}
-
 - (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
     if (itemEnabled) {
         [self.optionIndices addIndex:index];
@@ -84,6 +62,30 @@
     }
 }
 
+// Set sidebar navigation
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    //Animations clicked
+    if (index == 0) {
+        //Do nothing
+    }
+    //Index clicked
+    else if (index == 1) {
+        [self performSegueWithIdentifier:@"EmbryoAnimationsListToEmbryoIndexSegue" sender:self];
+    }
+    //Embryo Home clicked
+    else if (index == 2) {
+        [self performSegueWithIdentifier:@"EmbryoAnimationsListToEmbryoHomeSegue" sender:self];
+    }
+    //Home clicked
+    else if (index == 3) {
+        [self performSegueWithIdentifier:@"EmbryoAnimationsListToHomeSegue" sender:self];
+    }
+    
+    [sidebar dismissAnimated:YES];
+}
+
+// Hide navigation bar when sidebar is open
 - (void)sidebar:(RNFrostedSidebar *)sidebar willDismissFromScreenAnimated:(BOOL)animatedYesOrNo {
     [self.navigationController setNavigationBarHidden:NO animated:animatedYesOrNo];
 }
@@ -92,16 +94,20 @@
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
 
+#pragma mark - Videos
+// Neural Tube 001 button pressed
 - (IBAction)onNeuralTube001:(id)sender
 {
     [self playMovie:(id)sender movieName:(NSString*)@"Neuraltube_001" fileType:(NSString*)@"mp4"];
 }
 
+// Sample Video button pressed
 - (IBAction)onSampleVideo:(id)sender
 {
     [self playMovie:(id)sender movieName:(NSString*)@"SampleVideo" fileType:(NSString*)@"MOV"];
 }
 
+// Play video
 -(void)playMovie:(id)sender movieName:(NSString*)moviePath fileType:(NSString*)fileType
 {
     NSString*path=[[NSBundle mainBundle] pathForResource:moviePath ofType:fileType];
@@ -122,6 +128,7 @@
 
 }
 
+// End video
 - (void) moviePlayBackDidFinish:(NSNotification*)notification {
     MPMoviePlayerController *player = [notification object];
     [[NSNotificationCenter defaultCenter]
@@ -129,16 +136,5 @@
      name:MPMoviePlayerPlaybackDidFinishNotification
      object:player];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

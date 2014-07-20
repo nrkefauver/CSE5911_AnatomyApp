@@ -32,6 +32,13 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     return self;
 }
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table Contents
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -105,13 +112,6 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     
 }
 
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -125,7 +125,7 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     }
 }
 
-
+// Create cell contents
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Access expanding cell
@@ -140,6 +140,7 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
     UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
     
+    // Set media buttons based on the selected discipline
     switch(selectedDiscipline)
     {
         {case 0: //Neuro
@@ -303,9 +304,9 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     }
 }
 
+//Switches definitions and media based on selected subdiscipline
 - (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl
 {
-    //Switches definitions and media based on selected subdiscipline
     switch(segmentedControl.selectedSegmentIndex)
     {
         case 0:
@@ -325,7 +326,7 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
-#pragma Media Button Methods
+#pragma mark - Media Button Actions
 
 - (void) doAThing
 {
@@ -352,6 +353,7 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
 //
 //}
 
+#pragma mark - Search Bar
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith [c] %@", searchText];
@@ -392,48 +394,24 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
 }
 
+#pragma mark - Sidebar
 // Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
-                        [UIImage imageNamed:@"Animations"],
+                        [UIImage imageNamed:@"videos"],
                         [UIImage imageNamed:@"Index"],
                         [UIImage imageNamed:@"Letter E"],
                         [UIImage imageNamed:@"home"],
                         ];
-    
-    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+    NSArray *labels = @[@"Animations",
+                        @"Index",
+                        @"Embryo",
+                        @"Home",];
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:nil labelStrings:labels];
     callout.delegate = self;
     callout.showFromRight = YES;
     [callout showInViewController:self animated:YES];
 }
-
-// Set sidebar navigation
-- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    NSLog(@"Tapped item at index %i",index);
-    [sidebar dismissAnimated:YES completion:nil];
-    
-    //Animations clicked
-    if (index == 0) {
-        [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
-    }
-    
-    //Index clicked
-    else if (index == 1) {
-        // Do nothing
-    }
-    
-    //Embryo Home clicked
-    else if (index == 2) {
-        [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoHomeSegue" sender:self];
-    }
-    
-    //Home clicked
-    else if (index == 3) {
-        [self performSegueWithIdentifier:@"EmbryoIndexToHomeSegue" sender:self];
-    }
-    
-}
-
 - (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
     if (itemEnabled) {
         [self.optionIndices addIndex:index];
@@ -441,6 +419,29 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     else {
         [self.optionIndices removeIndex:index];
     }
+}
+
+// Set sidebar navigation
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    //Animations clicked
+    if (index == 0) {
+        [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+    }
+    //Index clicked
+    else if (index == 1) {
+        // Do nothing
+    }
+    //Embryo Home clicked
+    else if (index == 2) {
+        [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoHomeSegue" sender:self];
+    }
+    //Home clicked
+    else if (index == 3) {
+        [self performSegueWithIdentifier:@"EmbryoIndexToHomeSegue" sender:self];
+    }
+    
+    [sidebar dismissAnimated:YES];
 }
 
 // Hide navigation bar when sidebar is open
