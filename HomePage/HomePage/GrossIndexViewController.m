@@ -35,6 +35,13 @@ static NSString *partName; //Name of term to display with PopOver window open
     return self;
 }
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table Contents
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -126,13 +133,6 @@ static NSString *partName; //Name of term to display with PopOver window open
     
 }
 
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -146,7 +146,7 @@ static NSString *partName; //Name of term to display with PopOver window open
     }
 }
 
-
+// Create cell contents
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Access expanding cell
@@ -220,17 +220,7 @@ static NSString *partName; //Name of term to display with PopOver window open
     UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
     UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
     
-    for (int i=0;i<3;i++) {
-        if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:i] isEqualToString:@""]) {
-            
-            [segmentedControl setBackgroundColor:[UIColor grayColor]];
-        }
-//        } else {
-//            [segmentedControl setBackgroundColor:[UIColor grayColor]];
-//
-//
-//        }
-    }
+    // Set media buttons based on the selected discipline
     switch(selectedDiscipline)
     {
         {case 0: //Neuro
@@ -365,9 +355,9 @@ static NSString *partName; //Name of term to display with PopOver window open
     
 }
 
+//Switches definitions and media based on selected subdiscipline
 - (IBAction)switchSelectedDiscipline:(UISegmentedControl *)segmentedControl
 {
-    //Switches definitions and media based on selected subdiscipline
     switch(segmentedControl.selectedSegmentIndex)
     {
         case 0:
@@ -387,7 +377,7 @@ static NSString *partName; //Name of term to display with PopOver window open
     [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
-#pragma Media Button Methods
+#pragma mark - Media Button Actions
 
 - (void) doAThing
 {
@@ -405,20 +395,21 @@ static NSString *partName; //Name of term to display with PopOver window open
     [self performSegueWithIdentifier:@"GrossIndexToGrossHomeSegue" sender:self];
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
-    GrossViewController* destViewController = segue.destinationViewController;
-    
-    if([segue.identifier isEqualToString:@"GrossIndexToGrossHomeSegue"])
-    {
-        destViewController.initialPopupName = partName;
-    }
-    else if([segue.identifier isEqualToString:@""]){
-        
-    }
-    
-}
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//    
+//    GrossViewController* destViewController = segue.destinationViewController;
+//    
+//    if([segue.identifier isEqualToString:@"GrossIndexToGrossHomeSegue"])
+//    {
+//        destViewController.initialPopupName = partName;
+//    }
+//    else if([segue.identifier isEqualToString:@""]){
+//        
+//    }
+//    
+//}
 
+#pragma mark - Search Bar
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith [c] %@", searchText];
@@ -460,6 +451,7 @@ static NSString *partName; //Name of term to display with PopOver window open
     [self searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)@""];
 }
 
+#pragma mark - Sidebar
 // Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
@@ -469,45 +461,16 @@ static NSString *partName; //Name of term to display with PopOver window open
                         [UIImage imageNamed:@"Letter G"],
                         [UIImage imageNamed:@"home"],
                         ];
-    
-    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices];
+    NSArray *labels = @[@"Videos",
+                        @"3D Model",
+                        @"Index",
+                        @"Gross",
+                        @"Home",];
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:nil labelStrings:labels];
     callout.delegate = self;
     callout.showFromRight = YES;
     [callout showInViewController:self animated:YES];
 }
-
-// Set sidebar navigation
-- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
-    NSLog(@"Tapped item at index %i",index);
-    [sidebar dismissAnimated:YES completion:nil];
-    
-    //Videos clicked
-    if (index == 0) {
-        [self performSegueWithIdentifier:@"GrossIndexToGrossVideosSegue" sender:self];
-    }
-    
-    //3D Models clicked
-    else if (index == 1) {
-        [self performSegueWithIdentifier:@"GrossIndexToGross3DModelSegue" sender:self];
-    }
-    
-    //Index clicked
-    else if (index == 2) {
-        //Do nothing
-    }
-    
-    //Gross Home clicked
-    else if (index == 3) {
-        [self performSegueWithIdentifier:@"GrossIndexToGrossHomeSegue" sender:self];
-    }
-    
-    //Home clicked
-    else if (index == 4) {
-        [self performSegueWithIdentifier:@"GrossIndexToHomeSegue" sender:self];
-    }
-    
-}
-
 - (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
     if (itemEnabled) {
         [self.optionIndices addIndex:index];
@@ -515,6 +478,33 @@ static NSString *partName; //Name of term to display with PopOver window open
     else {
         [self.optionIndices removeIndex:index];
     }
+}
+
+// Set sidebar navigation
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    //Videos clicked
+    if (index == 0) {
+        [self performSegueWithIdentifier:@"GrossIndexToGrossVideosSegue" sender:self];
+    }
+    //3D Models clicked
+    else if (index == 1) {
+        [self performSegueWithIdentifier:@"GrossIndexToGross3DModelSegue" sender:self];
+    }
+    //Index clicked
+    else if (index == 2) {
+        //Do nothing
+    }
+    //Gross Home clicked
+    else if (index == 3) {
+        [self performSegueWithIdentifier:@"GrossIndexToGrossHomeSegue" sender:self];
+    }
+    //Home clicked
+    else if (index == 4) {
+        [self performSegueWithIdentifier:@"GrossIndexToHomeSegue" sender:self];
+    }
+    
+    [sidebar dismissAnimated:YES];
 }
 
 // Hide navigation bar when sidebar is open
