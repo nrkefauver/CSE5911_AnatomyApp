@@ -322,7 +322,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="JEi-Xj-tuB">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="JEi-Xj-tuB">
                                 <rect key="frame" x="240" y="203" width="289" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Grey Button.png">
@@ -542,7 +542,7 @@
             <objects>
                 <viewController id="1Hf-Ur-mTZ" customClass="HistoSlide1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hly-wK-FfP">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="0.jpg" id="UDp-6O-roh">
@@ -587,11 +587,11 @@
             <objects>
                 <viewController id="Tua-02-U9a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B98-df-1hO">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="kif-OH-8bB">
-                                <rect key="frame" x="-16" y="-334" width="879" height="1294"/>
+                                <rect key="frame" x="-16" y="-334" width="879" height="1358"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
@@ -1246,18 +1246,18 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="c2K-YH-DqR"/>
-        <segue reference="f8e-Mr-dEL"/>
         <segue reference="MZo-Sv-XyI"/>
-        <segue reference="Reg-0P-VLu"/>
-        <segue reference="8Ym-jz-PyO"/>
-        <segue reference="TMk-2L-1Y4"/>
-        <segue reference="psJ-mD-Iz2"/>
-        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="f8e-Mr-dEL"/>
+        <segue reference="c2K-YH-DqR"/>
+        <segue reference="bsx-wD-Vbr"/>
         <segue reference="S6H-Ku-lpQ"/>
         <segue reference="zth-Qd-6wy"/>
         <segue reference="9Yg-Nh-qkQ"/>
-        <segue reference="bsx-wD-Vbr"/>
         <segue reference="xIp-rp-Izy"/>
+        <segue reference="TMk-2L-1Y4"/>
+        <segue reference="qkd-fC-WYx"/>
+        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="sOv-Ov-78j"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,6 +13,8 @@
 @interface EmbryoAnimationsListViewController : UIViewController
 
 @property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
+@property (strong, nonatomic) NSString *startUpVideoName;
+@property (strong, nonatomic) NSString *startUpVideoType;
 
 - (IBAction)onBurger:(id)sender;
 - (IBAction)onNeuralTube001:(id)sender;

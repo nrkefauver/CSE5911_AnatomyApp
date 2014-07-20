@@ -26,7 +26,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIButton *placeholder = (UIButton*)[self.view viewWithTag:10];
+    NSLog(@"Got passed info: %@, %@",_startUpVideoName,_startUpVideoType);
+    // If triggered by a media button, play video
+    if ((_startUpVideoName != nil)&&(_startUpVideoType != nil))
+    {
+        NSLog(@"Not nil");
+        [self playMovie:placeholder movieName:_startUpVideoName fileType:_startUpVideoType];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -110,6 +118,7 @@
 // Play video
 -(void)playMovie:(id)sender movieName:(NSString*)moviePath fileType:(NSString*)fileType
 {
+    NSLog(@"play movie called with %p",sender);
     NSString*path=[[NSBundle mainBundle] pathForResource:moviePath ofType:fileType];
     NSURL*url=[NSURL fileURLWithPath:path];
     

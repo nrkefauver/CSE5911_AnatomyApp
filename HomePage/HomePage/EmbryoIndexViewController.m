@@ -7,6 +7,7 @@
 //
 
 #import "EmbryoIndexViewController.h"
+#import "EmbryoAnimationsListViewController.h"
 #import "ExpandingCell.h"
 #import "Term.h"
 
@@ -22,6 +23,9 @@ static NSIndexPath *globalIndexPath;
 static UITableView *globalTableView;
 static bool tableViewIsCreated = false;
 static enum selectedDisciplineEnum selectedDiscipline = embryo;
+static bool mediaButtonSegue = false;
+static NSString *videoName;
+static NSString *videoType;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -139,6 +143,7 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
     UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
     UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
+    UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
     
     // Set media buttons based on the selected discipline
     switch(selectedDiscipline)
@@ -146,10 +151,11 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
         {case 0: //Neuro
             [segmentedControl setSelectedSegmentIndex:0];
             
-            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            [button1 setTitle:@"" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
+            [button3 setTitle:@"" forState:UIControlStateNormal];
             
-            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
+            UIImage* button2Image = [UIImage imageNamed:@"videos"];
             [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
             [button2 addTarget:self
                         action:@selector(doAThing)
@@ -170,13 +176,28 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
         {case 2: //Embryo
             [segmentedControl setSelectedSegmentIndex:2];
             
-            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"" forState:UIControlStateNormal];
+            // Set images
+            UIImage* button1Image = [UIImage imageNamed:@"videos"];
+            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+            UIImage* button2Image = [UIImage imageNamed:@"2-D Image Media Button"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            UIImage* button3Image = [UIImage imageNamed:@"3-D Image Media Button"];
+            [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
             
-            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
-            //            [button1 addTarget:self
-            //                        action:@selector(doADifferentThing)
-            //              forControlEvents:UIControlEventTouchUpInside];
+            // Set actions
+            [button1 addTarget:self
+                        action:@selector(videoMediaButtonPressed)
+                        forControlEvents:UIControlEventTouchUpInside];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+                        forControlEvents:UIControlEventTouchUpInside];
+            [button3 addTarget:self
+                        action:@selector(doADifferentThing)
+                        forControlEvents:UIControlEventTouchUpInside];
+            
+            // Set information for actions
+            videoName = @"Neuraltube_001";
+            videoType = @"mp4";
             break;}
         {case 3: //Gross
             [segmentedControl setSelectedSegmentIndex:3];
@@ -330,8 +351,7 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
 
 - (void) doAThing
 {
-    self.title = @"works";
-    //[self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
+    self.title = @"Amazing!";
 }
 
 - (void) doADifferentThing
@@ -339,19 +359,31 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
     self.title = @"This is different!";
 }
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-//
-//    //NeuroViewController* destViewController = segue.destinationViewController;
-//
-//    if([segue.identifier isEqualToString:@""])
-//    {
-//        //destViewController.infoPassingTest = 1;
-//    }
-//    else if([segue.identifier isEqualToString:@""]){
-//
-//    }
-//
-//}
+// "Video" media button is pressed
+- (void) videoMediaButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
+    EmbryoAnimationsListViewController* destViewController = segue.destinationViewController;
+
+    // if segue is triggered by a media button, pass information
+    if (mediaButtonSegue)
+    {
+        if([segue.identifier isEqualToString:@"EmbryoIndexToEmbryoAnimationsListSegue"])
+        {
+            destViewController.startUpVideoName = videoName;
+            destViewController.startUpVideoType = videoType;
+            NSLog(@"Set passed info");
+        }
+        else if([segue.identifier isEqualToString:@""]){
+
+        }
+    }
+}
 
 #pragma mark - Search Bar
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
