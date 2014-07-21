@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Anterior corticospinal tract</string>
+	<string>Lateral corticospinal tract</string>
+	<string>Olivospinal tract</string>
+	<string>Reticulospinal tracts</string>
+	<string>Rubrospinal tracts</string>
+	<string>Vestibulospinal tracts</string>
+</array>
+</plist>

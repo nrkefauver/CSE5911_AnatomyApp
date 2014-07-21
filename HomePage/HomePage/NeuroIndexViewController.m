@@ -46,7 +46,6 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //Testing expandable cells code
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     

@@ -726,12 +726,12 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cervical_Scan.png" id="PQu-w0-D3b">
-                                <rect key="frame" x="158" y="253" width="453" height="366"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PQu-w0-D3b">
+                                <rect key="frame" x="85" y="124" width="577" height="472"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Vqo-Wl-v8I">
-                                <rect key="frame" x="158" y="200" width="453" height="29"/>
+                                <rect key="frame" x="85" y="88" width="577" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Cervical"/>
@@ -739,6 +739,7 @@
                                     <segment title="Lumbar"/>
                                     <segment title="Sacral"/>
                                 </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="contentModeChanged:" destination="Z1N-LW-t3Y" eventType="valueChanged" id="FiD-gu-sgL"/>
                                 </connections>
@@ -768,11 +769,12 @@
                         <segue destination="A0d-hn-6U1" kind="push" identifier="NeuroHomeToAnimationsListSegue" id="32O-Pf-eqc"/>
                         <segue destination="0HC-13-e6l" kind="push" identifier="NeuroHomeToIndexSegue" id="xgI-CB-z14"/>
                         <segue destination="0zu-PB-8PX" kind="push" identifier="NeuroHomeToNeuroIndex" id="Rde-ZO-HXw"/>
+                        <segue destination="9ZS-Ik-XvH" kind="push" identifier="NeuroHomeToTractsSegue" id="yDg-CP-p8k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igv-Zk-Ffw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4954" y="835"/>
+            <point key="canvasLocation" x="5008" y="983"/>
         </scene>
         <!--Neuro Animations List View Controller - Neuroanatomy Animations -->
         <scene sceneID="BCY-Hm-ZMe">
@@ -808,20 +810,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwd-uP-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4582" y="2185"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="eGR-tf-YJC">
-            <objects>
-                <viewController id="jmb-6c-gLm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tJa-pa-Swa">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="csN-7P-DJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5422" y="2185"/>
         </scene>
         <!--Neuro Index View Controller - Neuroanatomy Index-->
         <scene sceneID="jOQ-yD-bpZ">
@@ -889,6 +877,102 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="4582" y="3333"/>
+        </scene>
+        <!--Neuro Tracts View Controller - Spinal Tracts-->
+        <scene sceneID="Pwr-be-fJG">
+            <objects>
+                <viewController id="9ZS-Ik-XvH" customClass="NeuroTractsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G3H-Hd-fgE">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" id="zVZ-5d-gMF">
+                                <rect key="frame" x="39" y="109" width="344" height="461"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="pCI-72-Nhr" kind="embed" id="RPQ-mo-46b"/>
+                                </connections>
+                            </containerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5k9-gT-nsb">
+                                <rect key="frame" x="396" y="109" width="346" height="461"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <containerView key="tableFooterView" contentMode="scaleToFill" id="pXf-NU-zzw">
+                                    <rect key="frame" x="0.0" y="0.0" width="346" height="813"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <segue destination="Bm8-IM-9Jj" kind="embed" id="mrS-PC-CEg"/>
+                                    </connections>
+                                </containerView>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="50" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Iqa-T2-Rqz">
+                                <rect key="frame" x="39" y="109" width="344" height="461"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9ZS-Ik-XvH" id="LEZ-ee-ZpW"/>
+                                    <outlet property="delegate" destination="9ZS-Ik-XvH" id="k1n-d1-17Y"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9CS-aW-27R">
+                                <rect key="frame" x="112" y="80" width="199" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Afferent Tracts">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Georgia-Bold"/>
+                                            <font key="NSOriginalFont" size="24" name="Georgia-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n0q-lA-Zhu">
+                                <rect key="frame" x="471" y="80" width="197" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Efferent Tracts">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Georgia-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="60" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iWy-Fv-WMs">
+                                <rect key="frame" x="396" y="109" width="346" height="461"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9ZS-Ik-XvH" id="f8i-02-jTM"/>
+                                    <outlet property="delegate" destination="9ZS-Ik-XvH" id="J1z-C2-ftC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Spinal Tracts" id="Me2-87-GMJ">
+                        <barButtonItem key="backBarButtonItem" title="Spinal Tracts" id="2HS-ju-dLq"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="afferentTableView" destination="Iqa-T2-Rqz" id="YiE-lc-AXA"/>
+                        <outlet property="efferentTableView" destination="iWy-Fv-WMs" id="9qX-uC-NXo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="poC-Ho-tj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5422" y="3333"/>
         </scene>
         <!--Gross View Controller - Gross Anatomy Home-->
         <scene sceneID="ZqH-ui-cXm">
@@ -1225,12 +1309,39 @@
             </objects>
             <point key="canvasLocation" x="-3855" y="3338"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="EI8-Ue-Rx1">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="pCI-72-Nhr" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pjb-tL-mCN">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NnL-DN-WLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fz3-D1-lGg">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Bm8-IM-9Jj" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fMY-L0-Pir">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9D-gU-quH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="0.jpg" width="1280" height="1024"/>
         <image name="1.jpg" width="2453" height="1864"/>
         <image name="Black Burger.png" width="45" height="45"/>
-        <image name="Cervical_Scan.png" width="786" height="502"/>
         <image name="E0.png" width="147" height="195"/>
         <image name="Embryo.jpg" width="948" height="995"/>
         <image name="Grey Button.png" width="200" height="200"/>
@@ -1246,18 +1357,18 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="c2K-YH-DqR"/>
-        <segue reference="f8e-Mr-dEL"/>
-        <segue reference="MZo-Sv-XyI"/>
-        <segue reference="Reg-0P-VLu"/>
-        <segue reference="8Ym-jz-PyO"/>
         <segue reference="TMk-2L-1Y4"/>
+        <segue reference="hOH-RS-S2g"/>
+        <segue reference="PdE-pb-my7"/>
+        <segue reference="Rde-ZO-HXw"/>
+        <segue reference="xgI-CB-z14"/>
+        <segue reference="32O-Pf-eqc"/>
+        <segue reference="8Ym-jz-PyO"/>
+        <segue reference="9Yg-Nh-qkQ"/>
+        <segue reference="zth-Qd-6wy"/>
+        <segue reference="S6H-Ku-lpQ"/>
+        <segue reference="xIp-rp-Izy"/>
         <segue reference="psJ-mD-Iz2"/>
         <segue reference="qEZ-5V-GMV"/>
-        <segue reference="S6H-Ku-lpQ"/>
-        <segue reference="zth-Qd-6wy"/>
-        <segue reference="9Yg-Nh-qkQ"/>
-        <segue reference="bsx-wD-Vbr"/>
-        <segue reference="xIp-rp-Izy"/>
     </inferredMetricsTieBreakers>
 </document>

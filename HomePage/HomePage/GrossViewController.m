@@ -140,9 +140,10 @@
 // Show popover menu when user clicks "Dorsal Roots"
 - (IBAction)onDorsalRoots:(id)sender
 {
-    // Set index for term 15: DoralRoots
+    // Set index for term 15: DorsalRoots
     int index = 15;
     [self showPopoverBelow:(id)sender index:(int)index];
+    
 }
 
 // Show popover menu when user clicks "Dorsal Horn of Gray Matter"
