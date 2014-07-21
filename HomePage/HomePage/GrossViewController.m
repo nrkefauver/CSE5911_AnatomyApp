@@ -21,6 +21,7 @@
 @implementation GrossViewController;
 
 @synthesize LabeledImage;
+@synthesize annotations;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -244,6 +245,21 @@
     [PopoverView setIndex:(int)termIndex];
     self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
     [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+}
+
+- (IBAction) toggleAnnotationsSwitch: (id) sender {
+    // If the annotations button is on, draw the labeled image
+    if (annotations.on) {
+        UIImage *labeledImage = [UIImage imageNamed:@"Gross_labeled.jpg"];
+        [super viewDidLoad];
+        [LabeledImage setImage:labeledImage];
+    }
+    else {  // If annotations switch is off, draw unlabeled image
+        UIImage *labeledImage = [UIImage imageNamed:@"Gross_unlabeled.jpg"];
+        [super viewDidLoad];
+        [LabeledImage setImage:labeledImage];
+        
+    }
 }
 
 @end

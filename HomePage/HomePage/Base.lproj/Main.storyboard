@@ -1097,6 +1097,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="onTintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="toggleAnnotationsSwitch:" destination="W8x-iU-qGh" eventType="touchUpInside" id="VON-ZN-yEx"/>
+                                </connections>
                             </switch>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="yL9-Vy-JDb">
                                 <rect key="frame" x="195" y="903" width="280" height="29"/>
@@ -1108,6 +1111,13 @@
                                     <segment title=""/>
                                 </segments>
                             </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annotations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M8s-KK-fBd">
+                                <rect key="frame" x="72" y="930" width="61" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1129,6 +1139,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="LabeledImage" destination="OGJ-fo-5Uz" id="g05-aU-H8u"/>
+                        <outlet property="annotations" destination="0V6-AD-htr" id="crp-hh-OkR"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="GrossToHomeSegue" id="HR3-33-3xN"/>
                         <segue destination="PDT-Rl-dT5" kind="push" identifier="GrossHomeToGrossVideosSegue" id="fdm-bw-BD5"/>
                         <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossHomeToGross3DModelSegue" id="xIp-rp-Izy"/>
@@ -1387,18 +1398,18 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xIp-rp-Izy"/>
+        <segue reference="bsx-wD-Vbr"/>
         <segue reference="S6H-Ku-lpQ"/>
         <segue reference="zth-Qd-6wy"/>
-        <segue reference="9Yg-Nh-qkQ"/>
+        <segue reference="fdm-bw-BD5"/>
+        <segue reference="HR3-33-3xN"/>
+        <segue reference="xIp-rp-Izy"/>
         <segue reference="TMk-2L-1Y4"/>
-        <segue reference="AwG-wi-xhT"/>
         <segue reference="8Ym-jz-PyO"/>
-        <segue reference="far-xO-xjq"/>
-        <segue reference="32O-Pf-eqc"/>
-        <segue reference="PdE-pb-my7"/>
         <segue reference="Rde-ZO-HXw"/>
-        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="PdE-pb-my7"/>
+        <segue reference="32O-Pf-eqc"/>
         <segue reference="qEZ-5V-GMV"/>
+        <segue reference="psJ-mD-Iz2"/>
     </inferredMetricsTieBreakers>
 </document>
