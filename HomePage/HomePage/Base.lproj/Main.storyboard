@@ -489,7 +489,7 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                 </accessibility>
-                                <state key="normal" title="Red Spinal">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -499,13 +499,43 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lqm-Wk-X23">
                                 <rect key="frame" x="56" y="120" width="294" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Blue Spinal">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="1Hf-Ur-mTZ" kind="push" id="bUz-uz-hug"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" id="ISU-jt-vc0">
+                                <rect key="frame" x="56" y="324" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Blue Spinal">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Georgia-Bold"/>
+                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" id="sMn-C1-D9f">
+                                <rect key="frame" x="419" y="324" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Red Spinal">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99925926863857373" green="0.99925926863857373" blue="0.99925926863857373" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Georgia-Bold"/>
+                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -542,7 +572,7 @@
             <objects>
                 <viewController id="1Hf-Ur-mTZ" customClass="HistoSlide1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hly-wK-FfP">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="0.jpg" id="UDp-6O-roh">
@@ -587,11 +617,11 @@
             <objects>
                 <viewController id="Tua-02-U9a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B98-df-1hO">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="kif-OH-8bB">
-                                <rect key="frame" x="-16" y="-334" width="879" height="1294"/>
+                                <rect key="frame" x="-16" y="-334" width="879" height="1358"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
@@ -608,7 +638,7 @@
             <objects>
                 <viewController id="6wj-W4-l34" customClass="HistoSlide2ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EoW-Ke-XnU">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lml-r0-W0u">
@@ -1314,7 +1344,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="pCI-72-Nhr" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pjb-tL-mCN">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="461"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1328,7 +1358,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Bm8-IM-9Jj" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fMY-L0-Pir">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1357,17 +1387,17 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="xIp-rp-Izy"/>
+        <segue reference="S6H-Ku-lpQ"/>
+        <segue reference="zth-Qd-6wy"/>
+        <segue reference="9Yg-Nh-qkQ"/>
         <segue reference="TMk-2L-1Y4"/>
-        <segue reference="hOH-RS-S2g"/>
+        <segue reference="AwG-wi-xhT"/>
+        <segue reference="8Ym-jz-PyO"/>
+        <segue reference="far-xO-xjq"/>
+        <segue reference="32O-Pf-eqc"/>
         <segue reference="PdE-pb-my7"/>
         <segue reference="Rde-ZO-HXw"/>
-        <segue reference="xgI-CB-z14"/>
-        <segue reference="32O-Pf-eqc"/>
-        <segue reference="8Ym-jz-PyO"/>
-        <segue reference="9Yg-Nh-qkQ"/>
-        <segue reference="zth-Qd-6wy"/>
-        <segue reference="S6H-Ku-lpQ"/>
-        <segue reference="xIp-rp-Izy"/>
         <segue reference="psJ-mD-Iz2"/>
         <segue reference="qEZ-5V-GMV"/>
     </inferredMetricsTieBreakers>
