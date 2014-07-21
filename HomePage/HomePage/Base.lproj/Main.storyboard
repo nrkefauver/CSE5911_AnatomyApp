@@ -1056,6 +1056,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="button1:" destination="W8x-iU-qGh" eventType="touchUpInside" id="9np-YY-88E"/>
                                     <action selector="onDorsalHornOfGrayMatter:" destination="W8x-iU-qGh" eventType="touchUpInside" id="0fd-5v-I01"/>
                                 </connections>
                             </button>
@@ -1140,6 +1141,15 @@
                     <connections>
                         <outlet property="LabeledImage" destination="OGJ-fo-5Uz" id="g05-aU-H8u"/>
                         <outlet property="annotations" destination="0V6-AD-htr" id="crp-hh-OkR"/>
+                        <outlet property="button1" destination="fgx-O3-qgn" id="HDb-4g-NDK"/>
+                        <outlet property="button2" destination="lbo-vY-zCP" id="stf-Gc-ygF"/>
+                        <outlet property="button3" destination="DKU-yT-dKC" id="Sdj-qI-6Fc"/>
+                        <outlet property="button4" destination="S9U-ls-Hko" id="EvE-Dc-0ia"/>
+                        <outlet property="button5" destination="iSj-mv-JPj" id="BI5-3n-jKt"/>
+                        <outlet property="button6" destination="cXo-of-LIz" id="uhU-KL-JAm"/>
+                        <outlet property="button7" destination="vID-ub-hG1" id="hZM-wS-ocw"/>
+                        <outlet property="button8" destination="jps-Gh-7sS" id="Dmy-bA-DD3"/>
+                        <outlet property="button9" destination="j90-wk-RDX" id="qTn-Fl-ujf"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="GrossToHomeSegue" id="HR3-33-3xN"/>
                         <segue destination="PDT-Rl-dT5" kind="push" identifier="GrossHomeToGrossVideosSegue" id="fdm-bw-BD5"/>
                         <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossHomeToGross3DModelSegue" id="xIp-rp-Izy"/>
