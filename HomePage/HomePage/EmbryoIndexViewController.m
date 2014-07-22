@@ -145,75 +145,6 @@ static NSString *videoType;
     UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
     UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
     
-    // Set media buttons based on the selected discipline
-    switch(selectedDiscipline)
-    {
-        {case 0: //Neuro
-            [segmentedControl setSelectedSegmentIndex:0];
-            
-            [button1 setTitle:@"" forState:UIControlStateNormal];
-            [button2 setTitle:@"" forState:UIControlStateNormal];
-            [button3 setTitle:@"" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"videos"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-        {case 1: //Histo
-            [segmentedControl setSelectedSegmentIndex:1];
-            
-            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-        {case 2: //Embryo
-            [segmentedControl setSelectedSegmentIndex:2];
-            
-            // Set images
-            UIImage* button1Image = [UIImage imageNamed:@"videos"];
-            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
-            UIImage* button2Image = [UIImage imageNamed:@"2-D Image Media Button"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            UIImage* button3Image = [UIImage imageNamed:@"3-D Image Media Button"];
-            [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
-            
-            // Set actions
-            [button1 addTarget:self
-                        action:@selector(videoMediaButtonPressed)
-                        forControlEvents:UIControlEventTouchUpInside];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-                        forControlEvents:UIControlEventTouchUpInside];
-            [button3 addTarget:self
-                        action:@selector(doADifferentThing)
-                        forControlEvents:UIControlEventTouchUpInside];
-            
-            // Set information for actions
-            videoName = @"Neuraltube_001";
-            videoType = @"mp4";
-            break;}
-        {case 3: //Gross
-            [segmentedControl setSelectedSegmentIndex:3];
-            
-            [button1 setTitle:@"Gross Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
-            //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doADifferentThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-    }
-    
     // Populate cells with terms and definitions
     NSString *term;
     if (selectedDiscipline == neuro)
@@ -272,12 +203,6 @@ static NSString *videoType;
         }
     }
     
-    // Set segmentedController and Media Buttons
-    UIView *nibView = [nib objectAtIndex:0];
-    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
-    UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
-    UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
-    
     //Disables user interaction if a segment does not have a definition for the current term
     for (int i=0;i<4;i++) {
         if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:i] isEqualToString:@""]) {
@@ -291,10 +216,11 @@ static NSString *videoType;
         {case 0: //Neuro
             [segmentedControl setSelectedSegmentIndex:0];
             
-            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            [button1 setTitle:@"" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
+            [button3 setTitle:@"" forState:UIControlStateNormal];
             
-            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
+            UIImage* button2Image = [UIImage imageNamed:@"videos"];
             [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
             [button2 addTarget:self
                         action:@selector(doAThing)
@@ -315,13 +241,28 @@ static NSString *videoType;
         {case 2: //Embryo
             [segmentedControl setSelectedSegmentIndex:2];
             
-            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"" forState:UIControlStateNormal];
+            // Set images
+            UIImage* button1Image = [UIImage imageNamed:@"videos"];
+            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+            UIImage* button2Image = [UIImage imageNamed:@"2-D Image Media Button"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            UIImage* button3Image = [UIImage imageNamed:@"3-D Image Media Button"];
+            [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
             
-            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
-            //            [button1 addTarget:self
-            //                        action:@selector(doADifferentThing)
-            //              forControlEvents:UIControlEventTouchUpInside];
+            // Set actions
+            [button1 addTarget:self
+                        action:@selector(videoMediaButtonPressed)
+              forControlEvents:UIControlEventTouchUpInside];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            [button3 addTarget:self
+                        action:@selector(doADifferentThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            
+            // Set information for actions
+            videoName = @"Neuraltube_001";
+            videoType = @"mp4";
             break;}
         {case 3: //Gross
             [segmentedControl setSelectedSegmentIndex:3];
