@@ -9,7 +9,7 @@
 #import "NeuroTractsViewController.h"
 
 @interface NeuroTractsViewController ()
-
+@property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 @end
 
 @implementation NeuroTractsViewController
@@ -24,6 +24,13 @@ NSArray *aTracts, *eTracts;
     return self;
 }
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table Contents
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -50,12 +57,6 @@ NSArray *aTracts, *eTracts;
 
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (tableView == efferentTableView) {
@@ -65,6 +66,7 @@ NSArray *aTracts, *eTracts;
     }
 }
 
+// Create cell contents
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *simpleTableIdentifier = @"tractsCell";
@@ -90,15 +92,67 @@ NSArray *aTracts, *eTracts;
     return cell;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+//#pragma mark - Sidebar
+//// Create navigation sidebar
+//- (IBAction)onBurger:(id)sender {
+//    NSArray *images = @[
+//                        [UIImage imageNamed:@"Tracts"],
+//                        [UIImage imageNamed:@"videos"],
+//                        [UIImage imageNamed:@"Index"],
+//                        [UIImage imageNamed:@"Letter N"],
+//                        [UIImage imageNamed:@"home"],
+//                        ];
+//    NSArray *labels = @[@"Tracts",
+//                        @"Animations",
+//                        @"Index",
+//                        @"Neuro",
+//                        @"Home",];
+//    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:nil labelStrings:labels];
+//    callout.delegate = self;
+//    callout.showFromRight = YES;
+//    [callout showInViewController:self animated:YES];
+//}
+//- (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
+//    if (itemEnabled) {
+//        [self.optionIndices addIndex:index];
+//    }
+//    else {
+//        [self.optionIndices removeIndex:index];
+//    }
+//}
+//
+//// Set sidebar navigation
+//- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+//    
+//    //Animations clicked
+//    if (index == 0) {
+//        [self performSegueWithIdentifier:@"" sender:self];
+//    }
+//    if (index == 1) {
+//        [self performSegueWithIdentifier:@"" sender:self];
+//    }
+//    //Index clicked
+//    else if (index == 2) {
+//        [self performSegueWithIdentifier:@"" sender:self];
+//    }
+//    //Neuro Home clicked
+//    else if (index == 3) {
+//        // Do nothing
+//    }
+//    //Home clicked
+//    else if (index == 4) {
+//        [self performSegueWithIdentifier:@"" sender:self];
+//    }
+//    
+//    [sidebar dismissAnimated:YES];
+//}
+//
+//// Hide navigation bar when sidebar is open
+//- (void)sidebar:(RNFrostedSidebar *)sidebar willDismissFromScreenAnimated:(BOOL)animatedYesOrNo {
+//    [self.navigationController setNavigationBarHidden:NO animated:animatedYesOrNo];
+//}
+//- (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
+//    [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
+//}
 
 @end

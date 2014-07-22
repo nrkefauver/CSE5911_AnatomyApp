@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cZR-Bz-VeM">
-                                <rect key="frame" x="171" y="292" width="153" height="28"/>
+                                <rect key="frame" x="185" y="292" width="124" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Histology">
@@ -124,7 +124,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MZX-lp-fBh">
-                                <rect key="frame" x="348" y="878" width="72" height="28"/>
+                                <rect key="frame" x="362" y="851" width="72" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Index">
@@ -138,7 +138,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="osu-web-header-horiz.png" id="4qG-59-Qch">
-                                <rect key="frame" x="205" y="872" width="387" height="118"/>
+                                <rect key="frame" x="205" y="887" width="387" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -279,6 +279,7 @@
                                     <segment title="Day 7"/>
                                     <segment title="Day 8"/>
                                 </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="contentModeChanged:" destination="Zc9-b7-UI4" eventType="valueChanged" id="bDr-MH-3Hh"/>
                                 </connections>
@@ -503,7 +504,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1Hf-Ur-mTZ" kind="push" id="bUz-uz-hug"/>
+                                    <segue destination="1Hf-Ur-mTZ" kind="push" identifier="HistoSlideToHistoHomeSegue" id="bUz-uz-hug"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" id="ISU-jt-vc0">
@@ -567,32 +568,18 @@
             </objects>
             <point key="canvasLocation" x="-527" y="1005"/>
         </scene>
-        <!--Histo Slide1 View Controller-->
+        <!--Histo Slide1 View Controller - Histology Slide-->
         <scene sceneID="DEZ-54-Fyx">
             <objects>
                 <viewController id="1Hf-Ur-mTZ" customClass="HistoSlide1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hly-wK-FfP">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="0.jpg" id="UDp-6O-roh">
-                                <rect key="frame" x="122" y="262" width="500" height="500"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="842"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZBO-NV-QiH">
-                                <rect key="frame" x="240" y="143" width="205" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Slide 1">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="64" name="Georgia"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AVW-6T-fR8">
                                 <rect key="frame" x="179" y="962" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -606,11 +593,30 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Z9M-fH-5ft"/>
+                    <navigationItem key="navigationItem" title="Histology Slide" id="Z9M-fH-5ft">
+                        <barButtonItem key="backBarButtonItem" title="Histo Slide" id="JBf-Hq-l5K"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="59J-4t-4UK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rm1-Ve-4p9">
+                                <rect key="frame" x="707" y="-1" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Black Burger.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBurger:" destination="1Hf-Ur-mTZ" eventType="touchUpInside" id="IGc-Kg-lhu"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="zrV-VM-hcI" kind="push" identifier="HistoSlideToHistoIndexSegue" id="LlT-KC-nOI"/>
+                        <segue destination="Ifm-8S-R9e" kind="push" identifier="HistoSlideToHistoHomeSegue" id="h09-ZD-uY6"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="HistoSlideToHomeSegue" id="n3Y-FB-huH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcg-Mk-wn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-748" y="2193"/>
+            <point key="canvasLocation" x="-752" y="2201"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="09j-vo-O7n">
@@ -638,7 +644,7 @@
             <objects>
                 <viewController id="6wj-W4-l34" customClass="HistoSlide2ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EoW-Ke-XnU">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lml-r0-W0u">
@@ -1096,21 +1102,22 @@
                                 <rect key="frame" x="72" y="901" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="onTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="toggleAnnotationsSwitch:" destination="W8x-iU-qGh" eventType="touchUpInside" id="VON-ZN-yEx"/>
                                 </connections>
                             </switch>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="yL9-Vy-JDb">
-                                <rect key="frame" x="195" y="903" width="280" height="29"/>
+                                <rect key="frame" x="173" y="901" width="485" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title=""/>
-                                    <segment title=""/>
+                                    <segment title="First" width="120"/>
+                                    <segment title="Second" width="120"/>
+                                    <segment title="" width="120"/>
+                                    <segment title="" width="120"/>
                                 </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </segmentedControl>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annotations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M8s-KK-fBd">
                                 <rect key="frame" x="72" y="930" width="61" height="21"/>
@@ -1408,18 +1415,19 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="MZo-Sv-XyI"/>
-        <segue reference="f8e-Mr-dEL"/>
-        <segue reference="c2K-YH-DqR"/>
-        <segue reference="bsx-wD-Vbr"/>
-        <segue reference="S6H-Ku-lpQ"/>
-        <segue reference="zth-Qd-6wy"/>
-        <segue reference="9Yg-Nh-qkQ"/>
         <segue reference="xIp-rp-Izy"/>
-        <segue reference="TMk-2L-1Y4"/>
-        <segue reference="qkd-fC-WYx"/>
-        <segue reference="qEZ-5V-GMV"/>
-        <segue reference="psJ-mD-Iz2"/>
-        <segue reference="sOv-Ov-78j"/>
+        <segue reference="2YT-sS-ArM"/>
+        <segue reference="HR3-33-3xN"/>
+        <segue reference="8Ym-jz-PyO"/>
+        <segue reference="Cbj-Qs-rfV"/>
+        <segue reference="ang-sS-8TK"/>
+        <segue reference="KNf-OE-a5W"/>
+        <segue reference="bsx-wD-Vbr"/>
+        <segue reference="fdm-bw-BD5"/>
+        <segue reference="zth-Qd-6wy"/>
+        <segue reference="h09-ZD-uY6"/>
+        <segue reference="LlT-KC-nOI"/>
+        <segue reference="f8e-Mr-dEL"/>
+        <segue reference="MZo-Sv-XyI"/>
     </inferredMetricsTieBreakers>
 </document>
