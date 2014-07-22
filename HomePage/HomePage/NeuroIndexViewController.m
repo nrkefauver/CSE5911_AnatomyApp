@@ -46,7 +46,6 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //Testing expandable cells code
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
@@ -132,81 +131,7 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
     cell = [nib objectAtIndex:0];
     
-    // Set segmentedController and Media Buttons
-    UIView *nibView = [nib objectAtIndex:0];
-    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
-    UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
-    UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
-    UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
-    UIButton *button4 = (UIButton*)[nibView viewWithTag:40];
-    
-    // Set media buttons based on the selected discipline
-    switch(selectedDiscipline)
-    {
-        {case 0: //Neuro
-            [segmentedControl setSelectedSegmentIndex:0];
-            
-            [button1 setTitle:@"" forState:UIControlStateNormal];
-            [button2 setTitle:@"" forState:UIControlStateNormal];
-            [button3 setTitle:@"" forState:UIControlStateNormal];
-            
-            UIImage* button1Image = [UIImage imageNamed:@"2-D Image Media Button"];
-            UIImage* button2Image = [UIImage imageNamed:@"3-D Model Media Button"];
-            UIImage* button3Image = [UIImage imageNamed:@"Video Media Button"];
-            
-            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
-            [button1 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                       action:@selector(doAThing)
-             forControlEvents:UIControlEventTouchUpInside];
-            [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
-            [button3 addTarget:self
-                        action:@selector(doADifferentThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-        {case 1: //Histo
-            [segmentedControl setSelectedSegmentIndex:1];
-            
-            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-        {case 2: //Embryo
-            [segmentedControl setSelectedSegmentIndex:2];
-            
-            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"" forState:UIControlStateNormal];
-            
-            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
-//            [button1 addTarget:self
-//                        action:@selector(doADifferentThing)
-//              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-        {case 3: //Gross
-            [segmentedControl setSelectedSegmentIndex:3];
-            
-            [button1 setTitle:@"Gross Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
-            //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doADifferentThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            break;}
-    }
-
-
-    NSString *term;
+        NSString *term;
     if (selectedDiscipline == neuro)
     {
         if (indexPath.row <= titleArray.count) {
@@ -258,6 +183,85 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
             cell.subtitleLabel.text = [subtitleArray objectAtIndex:indexPath.row];
             cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
         }
+    }
+    
+    // Set segmentedController and Media Buttons
+    UIView *nibView = [nib objectAtIndex:0];
+    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+    UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
+    UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
+    UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
+    UIButton *button4 = (UIButton*)[nibView viewWithTag:40];
+    
+    //Disables user interaction if a segment does not have a definition for the current term
+    for (int i=0;i<4;i++) {
+        if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:i] isEqualToString:@""]) {
+            [segmentedControl setEnabled:NO forSegmentAtIndex:i];
+        }
+    }
+    // Set media buttons based on the selected discipline
+    switch(selectedDiscipline)
+    {
+        {case 0: //Neuro
+            [segmentedControl setSelectedSegmentIndex:0];
+            
+            [button1 setTitle:@"" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
+            [button3 setTitle:@"" forState:UIControlStateNormal];
+            
+            UIImage* button1Image = [UIImage imageNamed:@"2-D Image Media Button"];
+            UIImage* button2Image = [UIImage imageNamed:@"3-D Model Media Button"];
+            UIImage* button3Image = [UIImage imageNamed:@"Video Media Button"];
+            
+            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+            [button1 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
+            [button3 addTarget:self
+                        action:@selector(doADifferentThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 1: //Histo
+            [segmentedControl setSelectedSegmentIndex:1];
+            
+            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 2: //Embryo
+            [segmentedControl setSelectedSegmentIndex:2];
+            
+            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
+            
+            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
+            //            [button1 addTarget:self
+            //                        action:@selector(doADifferentThing)
+            //              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 3: //Gross
+            [segmentedControl setSelectedSegmentIndex:3];
+            
+            [button1 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doADifferentThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
     }
     
     //Formatting for definition text view

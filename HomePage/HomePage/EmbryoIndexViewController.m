@@ -271,6 +271,73 @@ static NSString *videoType;
             cell.textLabel.text =[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
         }
     }
+    
+    // Set segmentedController and Media Buttons
+    UIView *nibView = [nib objectAtIndex:0];
+    UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
+    UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
+    UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
+    
+    //Disables user interaction if a segment does not have a definition for the current term
+    for (int i=0;i<4;i++) {
+        if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:i] isEqualToString:@""]) {
+            [segmentedControl setEnabled:NO forSegmentAtIndex:i];
+        }
+    }
+    
+    // Set media buttons based on the selected discipline
+    switch(selectedDiscipline)
+    {
+        {case 0: //Neuro
+            [segmentedControl setSelectedSegmentIndex:0];
+            
+            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 1: //Histo
+            [segmentedControl setSelectedSegmentIndex:1];
+            
+            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doAThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 2: //Embryo
+            [segmentedControl setSelectedSegmentIndex:2];
+            
+            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"" forState:UIControlStateNormal];
+            
+            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
+            //            [button1 addTarget:self
+            //                        action:@selector(doADifferentThing)
+            //              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+        {case 3: //Gross
+            [segmentedControl setSelectedSegmentIndex:3];
+            
+            [button1 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
+            //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
+            
+            UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
+            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+            [button2 addTarget:self
+                        action:@selector(doADifferentThing)
+              forControlEvents:UIControlEventTouchUpInside];
+            break;}
+    }
+
     //Formatting for definition text view
     cell.textLabel.layer.borderWidth = 2.0f;
     cell.textLabel.layer.borderColor = [[UIColor whiteColor] CGColor];

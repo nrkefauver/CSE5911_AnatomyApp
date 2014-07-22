@@ -219,7 +219,13 @@ static NSString *partName; //Name of term to display with PopOver window open
     UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
     UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
     UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
-    
+  
+    //Disables user interaction if a segment does not have a definition for the current term
+    for (int i=0;i<4;i++) {
+        if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:i] isEqualToString:@""]) {
+            [segmentedControl setEnabled:NO forSegmentAtIndex:i];
+        }
+    }
     // Set media buttons based on the selected discipline
     switch(selectedDiscipline)
     {
@@ -235,9 +241,6 @@ static NSString *partName; //Name of term to display with PopOver window open
                         action:@selector(doAThing)
               forControlEvents:UIControlEventTouchUpInside];
             
-            if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0] isEqualToString:@""]) {
-                [segmentedControl setTintColor:[UIColor grayColor]];
-            }
             
             break;}
         {case 1: //Histo
@@ -251,10 +254,7 @@ static NSString *partName; //Name of term to display with PopOver window open
             [button2 addTarget:self
                         action:@selector(doAThing)
               forControlEvents:UIControlEventTouchUpInside];
-            
-            if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1] isEqualToString:@""]) {
-                [segmentedControl setTintColor:[UIColor grayColor]];
-            }
+
 
             break;
             
@@ -270,9 +270,6 @@ static NSString *partName; //Name of term to display with PopOver window open
             //                        action:@selector(doADifferentThing)
             //              forControlEvents:UIControlEventTouchUpInside];
             
-            if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] isEqualToString:@""]) {
-                [segmentedControl setTintColor:[UIColor grayColor]];
-            }
 
             break;}
         {case 3: //Gross
@@ -291,12 +288,6 @@ static NSString *partName; //Name of term to display with PopOver window open
                     partName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
                 }
             }
-            
-            if([[[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3] isEqualToString:@""]) {
-                [segmentedControl setTintColor:[UIColor grayColor]];
-            }
-
-            
             break;}
     }
     

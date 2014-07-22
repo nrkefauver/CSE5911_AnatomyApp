@@ -15,6 +15,16 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *LabeledImage;
 @property (strong, nonatomic) NSString *initialPopupName;
+@property (weak, nonatomic) IBOutlet UISwitch *annotations;
+@property (weak, nonatomic) IBOutlet UIButton *button1;
+@property (weak, nonatomic) IBOutlet UIButton *button2;
+@property (weak, nonatomic) IBOutlet UIButton *button3;
+@property (weak, nonatomic) IBOutlet UIButton *button4;
+@property (weak, nonatomic) IBOutlet UIButton *button5;
+@property (weak, nonatomic) IBOutlet UIButton *button6;
+@property (weak, nonatomic) IBOutlet UIButton *button7;
+@property (weak, nonatomic) IBOutlet UIButton *button8;
+@property (weak, nonatomic) IBOutlet UIButton *button9;
 
 
 
