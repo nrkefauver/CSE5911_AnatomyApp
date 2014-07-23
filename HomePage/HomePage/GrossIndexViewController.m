@@ -25,6 +25,7 @@ static bool tableViewIsCreated = false;
 static enum selectedDisciplineEnum selectedDiscipline = gross;
 static int GrossMedia = 8; //Position in property list for all Gross Media options
 static NSString *partName; //Name of term to display with PopOver window open
+static bool mediaButtonSegue = false;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -383,22 +384,27 @@ static NSString *partName; //Name of term to display with PopOver window open
 
 - (void) gross2DButtonPressed
 {
+    mediaButtonSegue = true;
     [self performSegueWithIdentifier:@"GrossIndexToGrossHomeSegue" sender:self];
 }
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-//    
-//    GrossViewController* destViewController = segue.destinationViewController;
-//    
-//    if([segue.identifier isEqualToString:@"GrossIndexToGrossHomeSegue"])
-//    {
-//        destViewController.initialPopupName = partName;
-//    }
-//    else if([segue.identifier isEqualToString:@""]){
-//        
-//    }
-//    
-//}
+// If segue is triggered by a media button, pass information
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    GrossViewController* destViewController = segue.destinationViewController;
+    
+    if (mediaButtonSegue)
+    {
+        if([segue.identifier isEqualToString:@"GrossIndexToGrossHomeSegue"])
+        {
+            destViewController.initialPopupName = partName;
+        }
+        else if([segue.identifier isEqualToString:@""]){
+            
+        }
+    }
+    
+}
 
 #pragma mark - Search Bar
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope

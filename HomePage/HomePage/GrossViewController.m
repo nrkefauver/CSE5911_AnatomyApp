@@ -52,17 +52,14 @@
     [super viewDidLoad];
     [LabeledImage setImage:labeledImage];
     
+    // If gross home has been passed a term to popup, show popup window
     if (self.initialPopupName != nil)
     {
-        [self showInitialPopup];
+        // Run in the background while the page finishes loading
+        [self performSelectorInBackground:@selector(showInitialPopup) withObject:nil];
     }
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Set navigation bar color
-    return YES;
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -141,12 +138,22 @@
 }
 
 #pragma mark - Popover
-// Popover menu upon loading view controller
+// Wait in the background then
 - (void) showInitialPopup
 {
-    // Set index for term 15: DoralRoots
-    int index = 15;
-    [self showPopoverBelow:nil index:(int)index];
+    // Wait to finish transition
+    sleep(0.75);
+    
+    // In the main thread, show popup window
+    [self performSelectorOnMainThread:@selector(initialPopup) withObject:nil waitUntilDone:NO];
+}
+
+// Show popup window upon page loading
+- (void) initialPopup
+{
+    UIButton *dorsalRoots = (UIButton*)[self.view viewWithTag:10];
+
+    [dorsalRoots sendActionsForControlEvents: UIControlEventTouchUpInside];
 }
 
 // Show popover menu when user clicks "Dorsal Roots"
@@ -178,8 +185,9 @@
 - (IBAction)onSpinalNerve:(id)sender
 {
     // Set index for term 40: SpinalNerve
-    int index = 40;
-    [self showPopoverRight:(id)sender index:(int)index];
+    //int index = 40;
+    //[self showPopoverRight:(id)sender index:(int)index];
+    [self showInitialPopup];
 }
 
 // Show popover menu when user clicks "Ventral Median Fissure"
