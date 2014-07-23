@@ -794,6 +794,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="577" height="401"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Iah-lz-Cz4" customClass="OBShapedButton">
+                                        <rect key="frame" x="289" y="45" width="98" height="132"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="cuneate.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onFasciculusCuneatus:" destination="Z1N-LW-t3Y" eventType="touchUpInside" id="1Ka-ei-yUc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <connections>
                                     <outlet property="delegate" destination="Z1N-LW-t3Y" id="gNk-wE-L4b"/>
@@ -865,7 +875,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwd-uP-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4582" y="2185"/>
+            <point key="canvasLocation" x="4854" y="2193"/>
         </scene>
         <!--Neuro Index View Controller - Neuroanatomy Index-->
         <scene sceneID="jOQ-yD-bpZ">
@@ -1230,7 +1240,7 @@
                     <view key="view" contentMode="scaleToFill" id="7Sn-hZ-Bbc">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gross Anatomy 3D Model" id="35b-8p-HNF">
                         <barButtonItem key="backBarButtonItem" title="Gross 3D Model" id="UeC-Xo-zvj"/>
@@ -1424,6 +1434,7 @@
         <image name="Grey Button.png" width="200" height="200"/>
         <image name="Gross.jpg" width="570" height="704"/>
         <image name="IndexAll.png" width="226" height="151"/>
+        <image name="cuneate.png" width="520" height="775"/>
         <image name="histology.jpg" width="971" height="800"/>
         <image name="neuro-lumb-scan.jpg" width="1264" height="1189"/>
         <image name="osu-web-header-horiz.png" width="344" height="114"/>
@@ -1436,17 +1447,17 @@
     <inferredMetricsTieBreakers>
         <segue reference="LlT-KC-nOI"/>
         <segue reference="yHH-64-pgG"/>
-        <segue reference="Cbj-Qs-rfV"/>
-        <segue reference="hOH-RS-S2g"/>
-        <segue reference="2YT-sS-ArM"/>
-        <segue reference="8Ym-jz-PyO"/>
+        <segue reference="fBN-DZ-xZq"/>
         <segue reference="xIp-rp-Izy"/>
         <segue reference="fdm-bw-BD5"/>
         <segue reference="zth-Qd-6wy"/>
-        <segue reference="KNf-OE-a5W"/>
-        <segue reference="ang-sS-8TK"/>
-        <segue reference="xgI-CB-z14"/>
+        <segue reference="c2K-YH-DqR"/>
         <segue reference="32O-Pf-eqc"/>
+        <segue reference="xgI-CB-z14"/>
+        <segue reference="hOH-RS-S2g"/>
         <segue reference="Rde-ZO-HXw"/>
+        <segue reference="8Ym-jz-PyO"/>
+        <segue reference="ang-sS-8TK"/>
+        <segue reference="KNf-OE-a5W"/>
     </inferredMetricsTieBreakers>
 </document>
