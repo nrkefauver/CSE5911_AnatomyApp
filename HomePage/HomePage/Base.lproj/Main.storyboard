@@ -276,7 +276,7 @@
                                 </connections>
                             </scrollView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="liJ-M2-NKb">
-                                <rect key="frame" x="142" y="718" width="484" height="29"/>
+                                <rect key="frame" x="142" y="645" width="484" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Day 1"/>
