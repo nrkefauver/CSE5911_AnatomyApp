@@ -212,7 +212,6 @@
     // Set index for term 15: DorsalRoots
     int index = 15;
     [self showPopoverBelow:(id)sender index:(int)index];
-    
 }
 
 // Show popover menu when user clicks "Dorsal Horn of Gray Matter"
@@ -279,7 +278,7 @@
     [self showPopoverBelow:(id)sender index:(int)index];
 }
 
-// Create Popover menu BELOW button
+// Create Popover menu LEFT button
 - (void)showPopoverLeft:(UIButton *)sender index:(int)termIndex
 {
     PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];
@@ -288,7 +287,7 @@
     [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionRight animated:YES];
 }
 
-// Create Popover menu BELOW button
+// Create Popover menu RIGHT button
 - (void)showPopoverRight:(UIButton *)sender index:(int)termIndex
 {
     PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];

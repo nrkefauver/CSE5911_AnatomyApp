@@ -15,6 +15,7 @@
 
 @property (nonatomic) NSInteger *infoPassingTest;
 @property (nonatomic, retain) IBOutlet UIImageView* imageView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 - (IBAction) contentModeChanged: (UISegmentedControl*)segmentedControl;
 
