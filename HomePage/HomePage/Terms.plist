@@ -5,9 +5,9 @@
 	<array>
 		<string>Anterior Corticospinal Tract</string>
 		<string>Small bundle of descending axons connecting the cerebral cortex to the spinal cord. The tract is located in close proximity to the anterior median fissure and is not present below the thoracic region of the spinal cord. Unlike axons of the lateral corticospinal tract, axons within the anterior corticospinal tract do not cross over in the medulla, but descend on the ipsilateral side of the spinal cord until close to the region of synapse and then the axons cross to the contralateral side. Neurons within the cerebral cortex often project bilaterally within the anterior cortical spinal tract to synapse with neurons within the anterior horn of gray matter responsible for innervating axial muscles. </string>
-		<string>cat</string>
-		<string>dog</string>
-		<string>horse</string>
+		<string></string>
+		<string></string>
+		<string></string>
 		<array>
 			<string></string>
 			<string></string>
@@ -39,10 +39,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Anterior White Commissure</string>
@@ -50,10 +50,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Anterolateral Sulcus</string>
@@ -61,10 +61,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Cauda Equina</string>
@@ -72,10 +72,10 @@
 		<string></string>
 		<string>A functional subdivision of the nervous system that functions largely outside of conscious control and acts to control visceral functions. The two subdivisions within the autonomic nervous system are the sympathetic and parasympathetic systems, which act as antagonistic to each other. Preganglionic cell bodies of the sympathetic nervous system reside within the intermediolateral cell column. Some of the preganglionic cell bodies of the parasympathetic nervous system reside in the sacral parasympathetic nuclei (S2-4).</string>
 		<string>A functional subdivision of the nervous system that functions largely outside of conscious control and acts to control visceral functions. The two subdivisions within the autonomic nervous system are the sympathetic and parasympathetic systems, which act as antagonistic to each other. Preganglionic cell bodies of the sympathetic nervous system reside within the intermediolateral cell column. Some of the preganglionic cell bodies of the parasympathetic nervous system reside in the sacral parasympathetic nuclei (S2-4).</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Cervical Enlargement</string>
@@ -83,10 +83,10 @@
 		<string></string>
 		<string></string>
 		<string>Enlarged segment of the spinal cord usually spanning from the fifth cervical level to the first thoracic level. The cervical enlargement is involved with innervation of the upper extremities.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Clarke’s Nucleus (nucleus dorsalis)</string>
@@ -94,10 +94,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Conus Medullaris
@@ -107,10 +107,10 @@
 		<string></string>
 		<string>The termination of the spinal cord, which traditionally is located in the adult between vertebral levels L1-L2.</string>
 		<string>The termination of the spinal cord, which traditionally is located in the adult between vertebral levels L1-L2.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dermatome	</string>
@@ -118,10 +118,10 @@
 		<string></string>
 		<string></string>
 		<string>A strip of skin that is innervated by a single spinal nerve. C1 is the only spinal nerve without a dermatome.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dorsal Column-Medial Lemniscus System</string>
@@ -129,10 +129,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dorsal Horn of Gray Matter</string>
@@ -140,10 +140,10 @@
 		<string>This column of gray matter is formed mainly by interneurons, afferent projection nuclei, and central neuroglia. Sensory information from the periphery is relayed from the afferent nuclei in the dorsal root ganglia to synapse with the afferent nuclei within the dorsal gray horn. Two prominent parts of the dorsal horn of gray mater are the substantia gelatinosa and the body of the dorsal horn. This section of the spinal cord in the adult is derived from the embryological alar plates.</string>
 		<string>This column of gray matter is formed mainly by interneurons, afferent projection nuclei, and central neuroglia. Sensory information from the periphery is relayed from the afferent nuclei in the dorsal root ganglia to synapse with the afferent nuclei within the dorsal gray horn. Two prominent parts of the dorsal horn of gray mater are the substantia gelatinosa and the body of the dorsal horn. This section of the spinal cord in the adult is derived from the embryological alar plates.</string>
 		<string>This column of gray matter is formed mainly by interneurons, afferent projection nuclei, and central neuroglia. Sensory information from the periphery is relayed from the afferent nuclei in the dorsal root ganglia to synapse with the afferent nuclei within the dorsal gray horn. Two prominent parts of the dorsal horn of gray mater are the substantia gelatinosa and the body of the dorsal horn. This section of the spinal cord in the adult is derived from the embryological alar plates.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dorsal Intermediate Sulcus</string>
@@ -151,10 +151,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dorsal Median Sulcus</string>
@@ -162,10 +162,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dorsal Roots of Spinal Nerves</string>
@@ -173,10 +173,10 @@
 		<string></string>
 		<string>Collection of central axon processes from pseudounipolar neurons within the dorsal root ganglion carrying sensory information. Continues as the dorsal rootlets into the spinal cord.</string>
 		<string>Collection of central axon processes from pseudounipolar neurons within the dorsal root ganglion carrying sensory information. Continues as the dorsal rootlets into the spinal cord.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dorsal Root Ganglion</string>
@@ -236,10 +236,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Fasciculus Cuneatus</string>
@@ -247,10 +247,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Fasciculus Gracilis</string>
@@ -258,10 +258,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Fasciculus Propius</string>
@@ -269,10 +269,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Filum Terminale</string>
@@ -280,10 +280,10 @@
 		<string></string>
 		<string>A long fibrous thread formed distal to the conus medullaris by the continuation of pia mater. The filum terminale continues inferiorly to attach to the coccyx, representing the original location of the developing spinal cord</string>
 		<string>A long fibrous thread formed distal to the conus medullaris by the continuation of pia mater. The filum terminale continues inferiorly to attach to the coccyx, representing the original location of the developing spinal cord</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Flaccid Paralysis</string>
@@ -291,10 +291,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Funiculus</string>
@@ -302,10 +302,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Fusimotor Neurons</string>
@@ -313,10 +313,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Intermediolateral Cell Column</string>
@@ -324,10 +324,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Lateral Corticospinal Tract</string>
@@ -335,10 +335,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Lateral Spinothalamic Tract</string>
@@ -346,10 +346,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Lissauer’s Tract</string>
@@ -357,10 +357,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Lower Motor Neuron</string>
@@ -368,10 +368,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Lumbar Cistern</string>
@@ -379,10 +379,10 @@
 		<string></string>
 		<string></string>
 		<string>Enlarged space between the termination of the spinal cord (L1-2) and the inferior extent of the arachnoid and dura mater (S2). Occupants within the space include: ventral and dorsal roots (cauda equina), filum terminale and cerebrospinal fluid.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Lumbar Enlargement</string>
@@ -390,10 +390,10 @@
 		<string></string>
 		<string></string>
 		<string>Enlarged segment of the spinal cord usually spanning from the second lumbar level to the third sacral level. The lumbar (or lumbosacral) enlargement is involved with innervation of the lower extremities.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Onuf’s Nucleus</string>
@@ -401,10 +401,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Phrenic Nucleus</string>
@@ -412,10 +412,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Posterolateral Sulcus</string>
@@ -423,10 +423,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Reticulospinal Tract</string>
@@ -434,10 +434,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Rubrospinal Tract</string>
@@ -445,10 +445,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Sacral Parasympathetic Nucleus</string>
@@ -456,10 +456,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Somatotopic </string>
@@ -467,10 +467,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Spastic Paralysis</string>
@@ -478,10 +478,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Spinal Accessory Nucleus</string>
@@ -489,10 +489,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Spinal Nerve</string>
@@ -500,10 +500,10 @@
 		<string></string>
 		<string></string>
 		<string>Generally a mixed nerve formed by the combination of the ventral and dorsal roots. There are thirty-one pairs of spinal nerves. These nerves are responsible for carrying motor, sensory and autonomic fibers. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Substantia Gelatinosa</string>
@@ -511,10 +511,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Upper Motor Neuron</string>
@@ -522,10 +522,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Ventral Horn of Gray Matter</string>
@@ -533,10 +533,10 @@
 		<string>This column of gray matter consists predominately of a large aggregation of basophilic alpha motor neuron cell bodies, dendrites, axons and central neuroglia. This section of the spinal cord in the adult is derived from the embryological basal plates. Axons of neurons located within the ventral horn of gray matter grow out of the spinal cord and form the majority of the ventral root of spinal nerves. </string>
 		<string>This column of gray matter consists predominately of a large aggregation of basophilic alpha motor neuron cell bodies, dendrites, axons and central neuroglia. This section of the spinal cord in the adult is derived from the embryological basal plates. Axons of neurons located within the ventral horn of gray matter grow out of the spinal cord and form the majority of the ventral root of spinal nerves. </string>
 		<string>This column of gray matter consists predominately of a large aggregation of basophilic alpha motor neuron cell bodies, dendrites, axons and central neuroglia. This section of the spinal cord in the adult is derived from the embryological basal plates. Axons of neurons located within the ventral horn of gray matter grow out of the spinal cord and form the majority of the ventral root of spinal nerves. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Ventral Median Fissure</string>
@@ -544,10 +544,10 @@
 		<string></string>
 		<string>A deep longitudinal groove that extends almost to the center of the cord. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Ventral Roots of Spinal Nerves</string>
@@ -555,10 +555,10 @@
 		<string></string>
 		<string>The ventral roots are made up of axons from multipolar motor neurons located in the ventral horn of gray mater, as well as axons of preganglionic sympathetic neurons. </string>
 		<string>The ventral roots are made up of axons from multipolar motor neurons located in the ventral horn of gray mater, as well as axons of preganglionic sympathetic neurons. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<dict/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Ventral Rootlets</string>
@@ -566,10 +566,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Action Potential</string>
@@ -577,10 +577,10 @@
 		<string>Electrochemical process initiated by impulses carried from the neuron cell body or dendrites to the axon hillock. The impulse then will continue to travel along the length of the axon. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Anterograde Transport</string>
@@ -588,10 +588,10 @@
 		<string>Carries cellular parts from the nerve cell body to the periphery along the axon. The cytoskeletal track used for the transport is made up largely of the protein kinesin. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Astrocyte</string>
@@ -610,10 +610,10 @@
 		<string>Synapse between the axon of one neuron (presynaptic) and axon of another neuron (postsynaptic).</string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Axodendritic Synapse</string>
@@ -621,10 +621,10 @@
 		<string>Synapse between the axon of one neuron (presynaptic) and dendrite of another neuron (postsynaptic).</string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Axon</string>
@@ -632,10 +632,10 @@
 		<string>Process extending from the neuron cell body, responsible for transmitting impulses away from the cell body usually to other neurons or effector cells.</string>
 		<string></string>
 		<string>Process extending from the neuron cell body, responsible for transmitting impulses away from the cell body usually to other neurons or effector cells.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Axon Hillock</string>
@@ -643,10 +643,10 @@
 		<string>Connection between the axon and the neuron cell body. Location of action potential initiation.</string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Axosomatic Synapse	</string>
@@ -654,10 +654,10 @@
 		<string>Synapse between the axon of one neuron (presynaptic) and the cell body of another neuron (postsynaptic).</string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Bipolar Neuron</string>
@@ -665,10 +665,10 @@
 		<string>Neurons that have a single axon and single dendrite. Bipolar neurons are rare and are most often associated with receptors for the special senses (smell, taste, hearing, sight and equilibrium).</string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Chemical Synapse	</string>
@@ -676,10 +676,10 @@
 		<string>Transmission of impulses is done via the release of chemical substances, neurotransmitters from the presynaptic neuron to bind on receptors of postsynaptic neurons or effector cells.</string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Choroid Plexus</string>
@@ -687,10 +687,10 @@
 		<string>Combination of the ependymal cells and associated capillaries. Responsible for producing cerebrospinal fluid. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dendrite</string>
@@ -698,10 +698,10 @@
 		<string>Process(es) extending from the neuron cell body that transmits impulses from the periphery towards the neuron cell body. Larger diameters compared to axons and are unmyelinated. </string>
 		<string></string>
 		<string>Process(es) extending from the neuron cell body that transmits impulses from the periphery towards the neuron cell body. Larger diameters compared to axons and are unmyelinated. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dendritic Tree</string>
@@ -709,10 +709,10 @@
 		<string>Term used to describe the arborization of all dendritic extensions for a single neuron. Greatly increase the receptor surface area of a neuron. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Electrical Synapse</string>
@@ -720,10 +720,10 @@
 		<string>Transmission of impulses is done via gap junctions, allowing the spread of electrical current from one cell to the next. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Ependymal Cells</string>
@@ -731,10 +731,10 @@
 		<string>Epithelial-type cells lining the ventricular cavities of the central nervous system. Cuboidal to columnar in morphological classification. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Ganglion</string>
@@ -742,10 +742,10 @@
 		<string>General term used to define an aggregation of neuron cell bodies specifically located in the peripheral nervous system.</string>
 		<string></string>
 		<string>General term used to define an aggregation of neuron cell bodies specifically located in the peripheral nervous system.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Gap Junctions</string>
@@ -754,10 +754,10 @@
 </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Gray Matter</string>
@@ -765,10 +765,10 @@
 		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is gray in appearance due to the large aggregation of neuron cell bodies. Also contains dendrites, axons and central neuroglia.</string>
 		<string></string>
 		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is gray in appearance due to the large aggregation of neuron cell bodies. Also contains dendrites, axons and central neuroglia.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Microglia</string>
@@ -776,10 +776,10 @@
 		<string>Small elongated phagocytic cells, which are considered to be a part of the mononuclear phagocytic system. The microglia precursor cells enter the central nervous system by way of the vascular system. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Multipolar Neuron</string>
@@ -787,10 +787,10 @@
 		<string>Neurons that have a single axons and two or more dendrites. Motor neurons and interneurons are the most common examples within the nervous system.</string>
 		<string></string>
 		<string>Neurons that have a single axons and two or more dendrites. Motor neurons and interneurons are the most common examples within the nervous system.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neuroglial Cells</string>
@@ -798,10 +798,10 @@
 		<string>Supporting, nonconducting cells located in close proximity to neurons.</string>
 		<string></string>
 		<string>Supporting, nonconducting cells located in close proximity to neurons.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neuron Cell Body (Perikaryon)</string>
@@ -809,10 +809,10 @@
 		<string>Contains the euchromatic nucleus and organelles that maintain the neuron.</string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neurotransmitters</string>
@@ -820,10 +820,10 @@
 		<string>Endogenous chemicals that are involved in chemical synapses. Located within synaptic vesicles of neurons, the neurotransmitters are released in response to an action potential across the synaptic cleft to bind to the postsynaptic receptors. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Nissl bodies</string>
@@ -831,10 +831,10 @@
 		<string>Appearance of each stack of rough endoplasmic reticulum within the nucleus of the neuron. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Oligodendrocytes</string>
@@ -842,10 +842,10 @@
 		<string>Neuroglial cells found exclusively in the central nervous system. Responsible for the formation and maintenance of myelin along multiple axons.  </string>
 		<string>Derived from glioblasts that differentiated into oligodendroblasts. Oligodendroblasts will further differentiate into oligodendrocytes. These cells are responsible for myelinating axons within the central nervous system. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Pseudounipolar Neuron</string>
@@ -853,10 +853,10 @@
 		<string>Neurons have a single axonal process. One end of the axon extends into the periphery and the other end of the axon extends into the central nervous system. Majority of the pseudounipolar neurons are sensory neurons.</string>
 		<string></string>
 		<string>Neurons have a single axonal process. One end of the axon extends into the periphery and the other end of the axon extends into the central nervous system. Majority of the pseudounipolar neurons are sensory neurons.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Retrograde Transport</string>
@@ -864,10 +864,10 @@
 		<string>Carries cellular parts away from the periphery and towards the neuron cell body. The cytoskeletal track used for transport is made up largely of the protein dynein. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Satellite Cells</string>
@@ -875,10 +875,10 @@
 		<string>Neuroglial cells found in the peripheral nervous system, surrounding nerve cell bodies within ganglia to help support the microenvironment.</string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Schwann Cells</string>
@@ -886,10 +886,10 @@
 		<string>Neuroglial cells found only in the peripheral nervous system. Responsible for supporting both myelinated and unmyelinated nerve cell fibers. Each segment of myelin along peripheral axons is composed of a single schwann cell. </string>
 		<string>Neuroglial cells found only in the peripheral nervous system. Responsible for supporting both myelinated and unmyelinated nerve cell fibers. Each segment of myelin along peripheral axons is composed of a single schwann cell. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Synapse</string>
@@ -899,10 +899,10 @@
 		<string></string>
 		<string>Specialized junction between neurons that facilitates the transmission of impulses from one neuron to another neuron, or between axons and effector cells. 
 </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>White Matter</string>
@@ -910,10 +910,10 @@
 		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is white in appearance due to the large aggregation of myelinated axons. Also contains unmyelinated axons and neuroglial cells.</string>
 		<string></string>
 		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is white in appearance due to the large aggregation of myelinated axons. Also contains unmyelinated axons and neuroglial cells.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Alar Plate (Lamina)</string>
@@ -921,10 +921,10 @@
 		<string></string>
 		<string>Portion of the developing neural tube located dorsal to the sulcus limitans. Develops into the future dorsal horn of gray matter and is associated with afferent functions.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Arachnoid Mater</string>
@@ -932,10 +932,10 @@
 		<string></string>
 		<string>Middle meningeal layer surrounding the tissue of the central nervous system. Both the arachnoid and pia mater make up the leptomeninges, and both are derived from neural crest cells.</string>
 		<string>Spinal arachnoid mater is an avascular membrane composed of fibrous and elastic connective tissue that lines the dural sac and dural root sheaths. Pressed against the deep surface of the dura mater due to the pressure of the cerebrospinal fluid within the subarachnoid space.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Arachnoid Trabeculae</string>
@@ -943,10 +943,10 @@
 		<string></string>
 		<string>Connective tissue structures found in the adult that connects the pia and arachnoid mater. These represent the origin of the pia and arachnoid mater as a single layer.</string>
 		<string>Connective tissue structures found in the adult that connects the pia and arachnoid mater. These represent the origin of the pia and arachnoid mater as a single layer.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Basal Plate (Lamina)</string>
@@ -954,10 +954,10 @@
 		<string>Portion of the developing neural tube located ventral to the sulcus limitans. Develops into the future ventral and lateral horns of gray matter and contains predominately primary motor neurons. The basal plates are separated on each side by the floor plate, which forms the future ventral median fissure. </string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Caudal Neuropore</string>
@@ -965,10 +965,10 @@
 		<string></string>
 		<string>Caudal opening of the neural tube; closes approximately on day 27.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dura Mater</string>
@@ -976,10 +976,10 @@
 		<string></string>
 		<string>The outer-most layer of meninges surrounding the central nervous system. This is the thickest of the three meningeal layers, and is the only layer to be derived from mesenchymal tissue surrounding the neural tube. </string>
 		<string>Outer-most meningeal layer composed of fibrous and elastic tissues. The dura mater layer is separated from the vertebrae by the extradural space. The dura mater forms the dural sac within the vertebral canal. The dural sac is pierced laterally by the spinal nerves and continues through the intervertebral foramina as the dural root sheaths. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Ependyma</string>
@@ -987,10 +987,10 @@
 		<string></string>
 		<string>Ependymal epithelial layer which forms following the formation of neuroblasts and glioblasts from the neuroepithelium. Ependymal cells will line the central canal of the spinal cord and the ventricles of the brain. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Glioblasts</string>
@@ -998,10 +998,10 @@
 		<string></string>
 		<string>Primordial supporting cells of the central nervous system, which differentiate from the neuroepithelial cells following cessation of neuroblast formation. These glial cell precursors migrate from the ventricular zone to the marginal zone and mantle zones.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Glioblasts</string>
@@ -1009,10 +1009,10 @@
 		<string></string>
 		<string>Primordial supporting cells of the central nervous system, which differentiate from the neuroepithelial cells following cessation of neuroblast formation. These glial cell precursors migrate from the ventricular zone to the marginal zone and mantle zones.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Lateral Gray Horn</string>
@@ -1020,10 +1020,10 @@
 		<string></string>
 		<string>Adult portion of the spinal cord derived from the embryological basal plates. Axons of neurons located within the lateral gray horn grow out of the spinal cord and form a portion the ventral root of spinal nerves. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Leptomeninges</string>
@@ -1031,10 +1031,10 @@
 		<string></string>
 		<string>Name given to both the pia and arachnoid mater meningeal layers. The two layers are combined into one name due to both coming from the same origin, neural crest cells.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Mantle Zone</string>
@@ -1042,10 +1042,10 @@
 		<string></string>
 		<string>Intermediate layer of the developing spinal cord. Neuroblasts that originated in the ventricular zone migrate superficially to occupy this space. Eventually this zone will form the gray matter of the spinal cord.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Marginal Zone</string>
@@ -1053,10 +1053,10 @@
 		<string></string>
 		<string>Superficial layer of the developing spinal cord. Composed of the outer parts of the neuroepithelial cells. Eventually this zone will form the white matter of the spinal cord. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Meninges</string>
@@ -1064,10 +1064,10 @@
 		<string></string>
 		<string>Membrane that covers the neural tube. The meninges form three different layers, the dura, arachnoid and pia mater. The dura mater develops from the overlying mesenchyme, while the arachnoid and pia mater layers develop from neural crest cells.</string>
 		<string>Membrane that covers the neural tube. The meninges form three different layers, the dura, arachnoid and pia mater. The dura mater develops from the overlying mesenchyme, while the arachnoid and pia mater layers develop from neural crest cells.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Meningomyelocele</string>
@@ -1075,10 +1075,10 @@
 		<string></string>
 		<string>Classification of spina bifida cystica, in which the spinal cord/nerve roots and mingeal layers/cerebrospinal fluid protrude through the neural arch defect</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Mesenchymal Cells</string>
@@ -1086,10 +1086,10 @@
 		<string></string>
 		<string>A type of embryonic connective tissue derived from mesoderm. Have the ability to differentiate into various cell types including: osteoblasts, chondroblasts, myocytes and adipocytes. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Microglial Cells</string>
@@ -1097,10 +1097,10 @@
 		<string></string>
 		<string>Derived from mesenchymal cells within the bone marrow and located throughout the gray and white matter.  Microglial cells invade the central nervous system late in the fetal period via blood vessels. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neural Canal</string>
@@ -1108,10 +1108,10 @@
 		<string></string>
 		<string>The lumen of the neural tube, which communicates openly with the amniotic cavity. Forms the future central canal of the spinal cord and ventricular system of the brain.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neural Crest</string>
@@ -1119,10 +1119,10 @@
 		<string></string>
 		<string>An area of cells that originate from the neural plate and non-neural ectoderm. During neurulation, both sides of the neural plate approach each other and fuse forming the neural tube. The neural crest is separated from the remaining ectoderm to occupy the location between the neural tube and ectoderm. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neural Crest Cells</string>
@@ -1130,10 +1130,10 @@
 		<string></string>
 		<string>The neural crest tissue separates into neural crest cells following neurulation. Neural crest cells have the ability to differentiate into numerous cells such as: smooth muscle cells, peripheral ganglia, glial cells, melanocytes and the craniofacial cartilage and bone.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neural Folds</string>
@@ -1141,10 +1141,10 @@
 		<string></string>
 		<string>Structure that arises from the neural plate (ectoderm) and during neurulation is induced to approach the other neural fold. Fusion of the neural folds forms the neural tube.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neural Groove</string>
@@ -1152,10 +1152,10 @@
 		<string></string>
 		<string>A shallow groove that develops within the neural plate between both neural folds. The neural groove upon fusion of the neural tube will form the ventricular system within the central nervous system.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neural Plate</string>
@@ -1163,10 +1163,10 @@
 		<string></string>
 		<string>Thickened area of ectoderm formed by both the neural folds and neural groove. Proliferation of the plate is induced by the notochord and underlying paraxial mesoderm.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neural Tube</string>
@@ -1174,10 +1174,10 @@
 		<string></string>
 		<string>Precursor to the central nervous system. Formed by fusion of the bilateral neural folds.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neural Tube Defects</string>
@@ -1185,10 +1185,10 @@
 		<string></string>
 		<string>General term used to describe any congenital anomalies affecting the developing neural tube. Commonly neural tube defects are caused by a failure of closing the neural tube.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neuroblasts</string>
@@ -1196,10 +1196,10 @@
 		<string></string>
 		<string>Primordial neurons, which are the first cells to develop from the neuroepithelial cells within the ventricular zone. These neuron precursors migrate from the ventricular zone to occupy the mantle zone. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neuroectoderm</string>
@@ -1207,10 +1207,10 @@
 		<string></string>
 		<string>Specialized section of ectoderm that receives protein signals to develop into the nervous system. The neuroectoderm will develop into the neural crest cells and the neural tube.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neurula</string>
@@ -1218,10 +1218,10 @@
 		<string></string>
 		<string>The name given to the developing embryo during the stage of neurulation.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neurulation</string>
@@ -1229,10 +1229,10 @@
 		<string></string>
 		<string>Term describing the formation of the neural plate and neural tube. Begins around days 22-23 near the region of somites 4-6.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Notochord</string>
@@ -1240,10 +1240,10 @@
 		<string></string>
 		<string>Rod-shaped structure that is derived from mesodermal tissue, and serves as the primitive axis of the developing embryo. Formation of the notochord induces the overlying ectoderm to thicken and form the neural plate. The notochord largely degenerates, but small portions persist as the nucleus pulposus portion of the intervertebral discs. </string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Pia Mater</string>
@@ -1251,10 +1251,10 @@
 		<string></string>
 		<string>Deepest meningeal layer surrounding the tissue of the central nervous system. Both the pia and arachnoid mater make up the leptomeninges, and both are derived from neural crest cells.</string>
 		<string>Innermost meningeal layer, which consists of flattened cells directly following the surface features of the spinal cord. The pia mater surrounds the nerve roots and spinal blood vessels. Distal to the conus medullaris the pia mater continues as the filum terminale.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Rostral Neuropore</string>
@@ -1262,10 +1262,10 @@
 		<string></string>
 		<string>Cranial opening of the developing neural tube; closes approximately on day 25.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Spina Bifida Cystica</string>
@@ -1273,10 +1273,10 @@
 		<string></string>
 		<string>Neural tube defect in which the neural arches do not grow and fuse together in the midline. This is the more severe case of spina bifida, where protrusion of the spinal cord and nervous tissue (meningomyelocele) and/or meninges (meningocele) may occupy a cyst-like space.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Spina Bifida Occulta</string>
@@ -1284,10 +1284,10 @@
 		<string></string>
 		<string></string>
 		<string>Neural tube defect in which the neural arches do not grow and fuse together in the midline. This is generally a small space between the neural arches and mostly produces no clinical symptoms. In the minor form, the patient may present with a small dimple and a tuft of hair in the lower back.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Spinal Ganglion Cells</string>
@@ -1295,10 +1295,10 @@
 		<string></string>
 		<string>The pseudounipolar neurons that occupy the dorsal root ganglion. The peripheral processes convey sensory endings from somatic and visceral structures. The central processes occupy the dorsal roots of spinal nerves and enter the spinal cord.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Subarachnoid Space</string>
@@ -1306,10 +1306,10 @@
 		<string></string>
 		<string>Fluid filled space that develops within the leptomeninges of the developing embryo. This space separates the pia and arachnoid mater in the adult. Cerebrospinal fluid occupies this space around the central nervous system. </string>
 		<string>Fluid filled space that develops within the leptomeninges of the developing embryo. This space separates the pia and arachnoid mater in the adult. Cerebrospinal fluid occupies this space around the central nervous system. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Sulcus Limitans</string>
@@ -1317,10 +1317,10 @@
 		<string></string>
 		<string>Shallow groove found bilaterally on the lateral side of the developing spinal cord. The sulcus limitans separates the alar and basal plates.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Ventricular Zone</string>
@@ -1328,10 +1328,10 @@
 		<string></string>
 		<string>The deepest layer (adjacent to the neural canal) of the developing spinal cord. Consists of neuroepithelial cells, which will give rise to all neurons and macroglial cells of the spinal cord.</string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Afferent Neurons</string>
@@ -1339,10 +1339,10 @@
 		<string></string>
 		<string></string>
 		<string>Neurons responsible for relaying sensory information. Cell bodies are located predominately within the dorsal root ganglion.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Anterior Spinal Artery</string>
@@ -1350,10 +1350,10 @@
 		<string></string>
 		<string></string>
 		<string>Formed by the union of branches of the vertebral arteries. Responsible for supplying blood to the anterior 1/3 of the spinal cord.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Arachnoid Mater</string>
@@ -1361,10 +1361,10 @@
 		<string></string>
 		<string></string>
 		<string>Spinal arachnoid mater is an avascular membrane composed of fibrous and elastic connective tissue that lines the dural sac and dural root sheaths. Pressed against the deep surface of the dura mater due to the pressure of the cerebrospinal fluid within the subarachnoid space.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Autonomic Nervous System</string>
@@ -1372,10 +1372,10 @@
 		<string></string>
 		<string></string>
 		<string>A functional subdivision of the nervous system that functions largely outside of conscious control and acts to control visceral functions. The two subdivisions within the autonomic nervous system are the sympathetic and parasympathetic systems, which act as antagonistic to each other. Preganglionic cell bodies of the sympathetic nervous system reside within the intermediolateral cell column. Some of the preganglionic cell bodies of the parasympathetic nervous system reside in the sacral parasympathetic nuclei (S2-4).</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Central Nervous System</string>
@@ -1383,10 +1383,10 @@
 		<string></string>
 		<string></string>
 		<string>A structural subdivision of the nervous system, which consists of the brain and spinal cord.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Cerebrospinal Fluid</string>
@@ -1394,10 +1394,10 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string>Clear fluid found surrounding the brain and spinal cord. The fluid is produced within the choroid plexus of the brain. The fluid acts as a cushion and immunological protection for the brain. The cerebrospinal fluid surrounds the brain and spinal cord within the subarachnoid space.</string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Denticulate Ligaments</string>
@@ -1405,10 +1405,10 @@
 		<string></string>
 		<string></string>
 		<string>Sawtooth shaped extensions of pia mater that attach the spinal cord to the dura mater. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Dorsal Rami of Spinal Nerves</string>
@@ -1416,10 +1416,10 @@
 		<string></string>
 		<string></string>
 		<string>Dorsal branch of the spinal nerves that consists of somatic motor and sensory axons as well as visceral motor axons. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Efferent Neurons</string>
@@ -1427,10 +1427,10 @@
 		<string></string>
 		<string></string>
 		<string>Neurons responsible for innervation of muscle tissue. Somatic efferent neurons are predominately located within the ventral horn of gray matter. Visceral efferent neurons are located through out the central nervous system. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Endoneurium</string>
@@ -1438,10 +1438,10 @@
 		<string></string>
 		<string></string>
 		<string>Thin connective tissue layer that surrounds individual axons.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Epidural Space</string>
@@ -1449,10 +1449,10 @@
 		<string></string>
 		<string></string>
 		<string>Space between the dura mater meningeal layer and the vertebrae. Consists predominately of fat and the internal vertebral venous plexus.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Epineurium</string>
@@ -1460,10 +1460,10 @@
 		<string></string>
 		<string></string>
 		<string>Thick connective tissue surrounding multiple nerve fascicles, forming the outer covering of nerves. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Lateral Horn of Gray Matter</string>
@@ -1471,10 +1471,10 @@
 		<string></string>
 		<string></string>
 		<string>Column of cells primarily involved in the sympathetic nervous system. This grouping of cells is also referred to as the intermediolateral cell column.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Myotome</string>
@@ -1482,10 +1482,10 @@
 		<string></string>
 		<string></string>
 		<string>The muscles fibers that receive innervation from a single spinal nerve. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Nerve Plexus</string>
@@ -1493,10 +1493,10 @@
 		<string></string>
 		<string></string>
 		<string>A branching network of interconnecting nerves. There are four major plexuses throughout the body (cervical, brachial, lumbar and sacral). All nerve plexuses are formed by ventral rami.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Neurons</string>
@@ -1504,10 +1504,10 @@
 		<string></string>
 		<string></string>
 		<string>The structural and functional units of the nervous system. These cells are specialized for rapid communication.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Perineurium</string>
@@ -1515,10 +1515,10 @@
 		<string></string>
 		<string></string>
 		<string>Dense connective tissue surrounding individual nerve fascicles.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Peripheral Nervous System</string>
@@ -1526,10 +1526,10 @@
 		<string></string>
 		<string></string>
 		<string>A structural subdivision of the nervous system, which consists of the nerves and ganglia located outside of the brain and spinal cord.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Posterior Spinal Artery</string>
@@ -1537,10 +1537,10 @@
 		<string></string>
 		<string></string>
 		<string>Paired branches of the vertebral or posterior inferior cerebellar arteries. Each is responsible for supplying blood for 1/3 of the spinal cord.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Radicular Arteries</string>
@@ -1548,10 +1548,10 @@
 		<string></string>
 		<string></string>
 		<string>Supplemental blood supply to the spinal cord. The anterior and posterior branches run along the ventral and dorsal roots respectively. Radicular arteries are branches off of various segmental arteries such as the ascending cervical, intercostal and lumbar arteries.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Segmental Medullary Arteries</string>
@@ -1559,10 +1559,10 @@
 		<string></string>
 		<string></string>
 		<string>Branches of the ascending cervical, deep cervical, vertebral, posterior intercostal and lumbar arteries that anastomose with the anterior and posterior spinal arteries. The largest anterior segmental medullary artery is the artery of Adamkiewicz, which typically branches off the left posterior intercostal artery.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Spinal Dural Sac</string>
@@ -1570,10 +1570,10 @@
 		<string></string>
 		<string></string>
 		<string>The continuation of the dura mater below the ending of the spinal cord (L1-2). The dural sac surrounds the lumbar cistern, cauda equina and the filum terminale.</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Somatic Nervous System</string>
@@ -1581,10 +1581,10 @@
 		<string></string>
 		<string></string>
 		<string>A functional subdivision of the nervous system that functions largely within conscious control. The somatic nervous system predominately innervates skeletal muscle (efferent) and provides innervation to the skin (afferent).</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 	<array>
 		<string>Ventral Rami of Spinal Nerves</string>
@@ -1592,10 +1592,10 @@
 		<string></string>
 		<string></string>
 		<string>Ventral branch of the spinal nerves that consists of somatic motor and sensory axons as well as visceral motor and sensory axons. Ventral rami at various levels of the spinal cord will combine to form the various plexuses of the body. </string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<array/>
+		<array/>
+		<array/>
+		<array/>
 	</array>
 </array>
 </plist>
