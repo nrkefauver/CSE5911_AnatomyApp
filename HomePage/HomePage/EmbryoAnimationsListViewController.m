@@ -28,12 +28,12 @@
     [super viewDidLoad];
     
     UIButton *placeholder = (UIButton*)[self.view viewWithTag:10];
-    NSLog(@"Got passed info: %@, %@",_startUpVideoName,_startUpVideoType);
+    
     // If triggered by a media button, play video
     if ((_startUpVideoName != nil)&&(_startUpVideoType != nil))
     {
-        NSLog(@"Not nil");
-        [self playMovie:placeholder movieName:_startUpVideoName fileType:_startUpVideoType];
+        // Run in the background while the page finishes loading
+        [self performSelectorInBackground:@selector(startWithMovie) withObject:nil];
     }
 }
 
@@ -103,6 +103,44 @@
 }
 
 #pragma mark - Videos
+// If sent movie information, autoplay video
+- (void) startWithMovie
+{
+    sleep(0.5);
+    
+    // In the main thread, show popup window
+    [self performSelectorOnMainThread:@selector(playStartupMovie) withObject:nil waitUntilDone:NO];
+}
+
+// Show movie upon startup
+- (void) playStartupMovie
+{
+    UIButton *button;
+    bool noMatch = false;
+    
+    // Find the appropriate button to call based on the passed information
+    if ([_startUpVideoName  isEqual: @"Neuraltube_001"])
+    {
+        button = (UIButton*)[self.view viewWithTag:10];
+    }
+    else if ([_startUpVideoName  isEqual: @"SampleVideo"])
+    {
+        button = (UIButton*)[self.view viewWithTag:20];
+    }
+    else
+    {
+        // Don't popup
+        noMatch = true;
+    }
+    
+    // If a the name passed matches a button, click it
+    if (!noMatch)
+    {
+        [button sendActionsForControlEvents: UIControlEventTouchUpInside];
+    }
+    
+}
+
 // Neural Tube 001 button pressed
 - (IBAction)onNeuralTube001:(id)sender
 {

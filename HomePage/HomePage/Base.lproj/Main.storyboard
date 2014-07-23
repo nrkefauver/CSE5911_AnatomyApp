@@ -1030,7 +1030,7 @@
                                     <action selector="onDorsalRoots:" destination="W8x-iU-qGh" eventType="touchUpInside" id="Ofe-kC-JLc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iSj-mv-JPj">
+                            <button opaque="NO" alpha="0.10000000000000001" tag="90" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iSj-mv-JPj">
                                 <rect key="frame" x="92" y="724" width="85" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1038,7 +1038,7 @@
                                     <action selector="onSpinalNerve:" destination="W8x-iU-qGh" eventType="touchUpInside" id="tJr-MP-wCu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cXo-of-LIz">
+                            <button opaque="NO" alpha="0.10000000000000001" tag="80" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cXo-of-LIz">
                                 <rect key="frame" x="226" y="735" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1046,7 +1046,7 @@
                                     <action selector="onVentralRoots:" destination="W8x-iU-qGh" eventType="touchUpInside" id="eA1-7o-khh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vID-ub-hG1">
+                            <button opaque="NO" alpha="0.10000000000000001" tag="70" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vID-ub-hG1">
                                 <rect key="frame" x="313" y="781" width="162" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1054,7 +1054,7 @@
                                     <action selector="onVentralMedianFissure:" destination="W8x-iU-qGh" eventType="touchUpInside" id="XFY-Mf-gLy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fgx-O3-qgn">
+                            <button opaque="NO" alpha="0.10000000000000001" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fgx-O3-qgn">
                                 <rect key="frame" x="190" y="123" width="183" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1066,7 +1066,7 @@
                                     <action selector="onDorsalHornOfGrayMatter:" destination="W8x-iU-qGh" eventType="touchUpInside" id="0fd-5v-I01"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DKU-yT-dKC">
+                            <button opaque="NO" alpha="0.10000000000000001" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DKU-yT-dKC">
                                 <rect key="frame" x="474" y="175" width="193" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1074,7 +1074,7 @@
                                     <action selector="onVentralHornOfGrayMatter:" destination="W8x-iU-qGh" eventType="touchUpInside" id="t2R-Eu-xOO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S9U-ls-Hko">
+                            <button opaque="NO" alpha="0.10000000000000001" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S9U-ls-Hko">
                                 <rect key="frame" x="572" y="311" width="147" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1082,7 +1082,7 @@
                                     <action selector="onDorsalRootGanglion:" destination="W8x-iU-qGh" eventType="touchUpInside" id="jWh-Iz-QlI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j90-wk-RDX">
+                            <button opaque="NO" alpha="0.10000000000000001" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j90-wk-RDX">
                                 <rect key="frame" x="600" y="495" width="111" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1090,7 +1090,7 @@
                                     <action selector="onVentralPrimaryRamus:" destination="W8x-iU-qGh" eventType="touchUpInside" id="g9p-nS-MzQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jps-Gh-7sS">
+                            <button opaque="NO" alpha="0.10000000000000001" tag="60" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jps-Gh-7sS">
                                 <rect key="frame" x="614" y="554" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1372,7 +1372,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="pCI-72-Nhr" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pjb-tL-mCN">
-                        <rect key="frame" x="0.0" y="0.0" width="344" height="461"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1386,7 +1386,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Bm8-IM-9Jj" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fMY-L0-Pir">
-                        <rect key="frame" x="0.0" y="0.0" width="346" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

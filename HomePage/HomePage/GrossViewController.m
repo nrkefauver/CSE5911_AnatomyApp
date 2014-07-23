@@ -55,6 +55,8 @@
     // If gross home has been passed a term to popup, show popup window
     if (self.initialPopupName != nil)
     {
+        self.initialPopupName = @"Ventral Horn of Gray Matter";
+        
         // Run in the background while the page finishes loading
         [self performSelectorInBackground:@selector(showInitialPopup) withObject:nil];
     }
@@ -142,7 +144,7 @@
 - (void) showInitialPopup
 {
     // Wait to finish transition
-    sleep(0.75);
+    sleep(0.9);
     
     // In the main thread, show popup window
     [self performSelectorOnMainThread:@selector(initialPopup) withObject:nil waitUntilDone:NO];
@@ -151,9 +153,57 @@
 // Show popup window upon page loading
 - (void) initialPopup
 {
-    UIButton *dorsalRoots = (UIButton*)[self.view viewWithTag:10];
-
-    [dorsalRoots sendActionsForControlEvents: UIControlEventTouchUpInside];
+    UIButton *button;
+    bool noMatch = false;
+    
+    // Find the appropriate button to call based on the passed information
+    if ([self.initialPopupName  isEqual: @"Dorsal Rootlets"])
+    {
+        button = (UIButton*)[self.view viewWithTag:10];
+    }
+    else if ([self.initialPopupName  isEqual: @"Dorsal Horn Gray Matter"])
+    {
+        button = (UIButton*)[self.view viewWithTag:20];
+    }
+    else if ([self.initialPopupName  isEqual: @"Ventral Horn of Gray Matter"])
+    {
+        button = (UIButton*)[self.view viewWithTag:30];
+    }
+    else if ([self.initialPopupName  isEqual: @"Dorsal Root Ganglion"])
+    {
+        button = (UIButton*)[self.view viewWithTag:40];
+    }
+    else if ([self.initialPopupName  isEqual: @"Ventral Rami of Spinal Nerves"])
+    {
+        button = (UIButton*)[self.view viewWithTag:50];
+    }
+    else if ([self.initialPopupName  isEqual: @"Dorsal Rami of Spinal Nerves"])
+    {
+        button = (UIButton*)[self.view viewWithTag:60];
+    }
+    else if ([self.initialPopupName  isEqual: @"Ventral Median Fissure"])
+    {
+        button = (UIButton*)[self.view viewWithTag:70];
+    }
+    else if ([self.initialPopupName  isEqual: @"Ventral Roots of Spinal Nerves"])
+    {
+        button = (UIButton*)[self.view viewWithTag:80];
+    }
+    else if ([self.initialPopupName  isEqual: @"Spinal Nerve"])
+    {
+        button = (UIButton*)[self.view viewWithTag:90];
+    }
+    else
+    {
+        // Don't popup
+        noMatch = true;
+    }
+    
+    // If a the name passed matches a button, click it
+    if (!noMatch)
+    {
+        [button sendActionsForControlEvents: UIControlEventTouchUpInside];
+    }
 }
 
 // Show popover menu when user clicks "Dorsal Roots"
@@ -185,9 +235,8 @@
 - (IBAction)onSpinalNerve:(id)sender
 {
     // Set index for term 40: SpinalNerve
-    //int index = 40;
-    //[self showPopoverRight:(id)sender index:(int)index];
-    [self showInitialPopup];
+    int index = 40;
+    [self showPopoverRight:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Ventral Median Fissure"
