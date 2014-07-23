@@ -39,10 +39,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Anterior White Commissure</string>
@@ -50,10 +70,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Anterolateral Sulcus</string>
@@ -61,10 +101,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Cauda Equina</string>
@@ -72,10 +132,30 @@
 		<string></string>
 		<string>A functional subdivision of the nervous system that functions largely outside of conscious control and acts to control visceral functions. The two subdivisions within the autonomic nervous system are the sympathetic and parasympathetic systems, which act as antagonistic to each other. Preganglionic cell bodies of the sympathetic nervous system reside within the intermediolateral cell column. Some of the preganglionic cell bodies of the parasympathetic nervous system reside in the sacral parasympathetic nuclei (S2-4).</string>
 		<string>A functional subdivision of the nervous system that functions largely outside of conscious control and acts to control visceral functions. The two subdivisions within the autonomic nervous system are the sympathetic and parasympathetic systems, which act as antagonistic to each other. Preganglionic cell bodies of the sympathetic nervous system reside within the intermediolateral cell column. Some of the preganglionic cell bodies of the parasympathetic nervous system reside in the sacral parasympathetic nuclei (S2-4).</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Cervical Enlargement</string>
@@ -83,10 +163,30 @@
 		<string></string>
 		<string></string>
 		<string>Enlarged segment of the spinal cord usually spanning from the fifth cervical level to the first thoracic level. The cervical enlargement is involved with innervation of the upper extremities.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Clarke’s Nucleus (nucleus dorsalis)</string>
@@ -94,10 +194,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Conus Medullaris
@@ -107,10 +227,30 @@
 		<string></string>
 		<string>The termination of the spinal cord, which traditionally is located in the adult between vertebral levels L1-L2.</string>
 		<string>The termination of the spinal cord, which traditionally is located in the adult between vertebral levels L1-L2.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dermatome	</string>
@@ -118,10 +258,30 @@
 		<string></string>
 		<string></string>
 		<string>A strip of skin that is innervated by a single spinal nerve. C1 is the only spinal nerve without a dermatome.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dorsal Column-Medial Lemniscus System</string>
@@ -129,10 +289,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dorsal Horn of Gray Matter</string>
@@ -140,10 +320,30 @@
 		<string>This column of gray matter is formed mainly by interneurons, afferent projection nuclei, and central neuroglia. Sensory information from the periphery is relayed from the afferent nuclei in the dorsal root ganglia to synapse with the afferent nuclei within the dorsal gray horn. Two prominent parts of the dorsal horn of gray mater are the substantia gelatinosa and the body of the dorsal horn. This section of the spinal cord in the adult is derived from the embryological alar plates.</string>
 		<string>This column of gray matter is formed mainly by interneurons, afferent projection nuclei, and central neuroglia. Sensory information from the periphery is relayed from the afferent nuclei in the dorsal root ganglia to synapse with the afferent nuclei within the dorsal gray horn. Two prominent parts of the dorsal horn of gray mater are the substantia gelatinosa and the body of the dorsal horn. This section of the spinal cord in the adult is derived from the embryological alar plates.</string>
 		<string>This column of gray matter is formed mainly by interneurons, afferent projection nuclei, and central neuroglia. Sensory information from the periphery is relayed from the afferent nuclei in the dorsal root ganglia to synapse with the afferent nuclei within the dorsal gray horn. Two prominent parts of the dorsal horn of gray mater are the substantia gelatinosa and the body of the dorsal horn. This section of the spinal cord in the adult is derived from the embryological alar plates.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dorsal Intermediate Sulcus</string>
@@ -151,10 +351,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dorsal Median Sulcus</string>
@@ -162,10 +382,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dorsal Roots of Spinal Nerves</string>
@@ -173,10 +413,30 @@
 		<string></string>
 		<string>Collection of central axon processes from pseudounipolar neurons within the dorsal root ganglion carrying sensory information. Continues as the dorsal rootlets into the spinal cord.</string>
 		<string>Collection of central axon processes from pseudounipolar neurons within the dorsal root ganglion carrying sensory information. Continues as the dorsal rootlets into the spinal cord.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dorsal Root Ganglion</string>
@@ -190,8 +450,18 @@
 			<string></string>
 			<string></string>
 		</array>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 		<array>
 			<string></string>
 			<string></string>
@@ -236,10 +506,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Fasciculus Cuneatus</string>
@@ -247,10 +537,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Fasciculus Gracilis</string>
@@ -258,10 +568,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Fasciculus Propius</string>
@@ -269,10 +599,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Filum Terminale</string>
@@ -280,10 +630,30 @@
 		<string></string>
 		<string>A long fibrous thread formed distal to the conus medullaris by the continuation of pia mater. The filum terminale continues inferiorly to attach to the coccyx, representing the original location of the developing spinal cord</string>
 		<string>A long fibrous thread formed distal to the conus medullaris by the continuation of pia mater. The filum terminale continues inferiorly to attach to the coccyx, representing the original location of the developing spinal cord</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Flaccid Paralysis</string>
@@ -291,10 +661,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Funiculus</string>
@@ -302,10 +692,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Fusimotor Neurons</string>
@@ -313,10 +723,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Intermediolateral Cell Column</string>
@@ -324,10 +754,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Lateral Corticospinal Tract</string>
@@ -335,10 +785,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Lateral Spinothalamic Tract</string>
@@ -346,10 +816,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Lissauer’s Tract</string>
@@ -357,10 +847,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Lower Motor Neuron</string>
@@ -368,10 +878,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Lumbar Cistern</string>
@@ -379,10 +909,30 @@
 		<string></string>
 		<string></string>
 		<string>Enlarged space between the termination of the spinal cord (L1-2) and the inferior extent of the arachnoid and dura mater (S2). Occupants within the space include: ventral and dorsal roots (cauda equina), filum terminale and cerebrospinal fluid.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Lumbar Enlargement</string>
@@ -390,10 +940,30 @@
 		<string></string>
 		<string></string>
 		<string>Enlarged segment of the spinal cord usually spanning from the second lumbar level to the third sacral level. The lumbar (or lumbosacral) enlargement is involved with innervation of the lower extremities.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Onuf’s Nucleus</string>
@@ -401,10 +971,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Phrenic Nucleus</string>
@@ -412,10 +1002,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Posterolateral Sulcus</string>
@@ -423,10 +1033,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Reticulospinal Tract</string>
@@ -434,10 +1064,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Rubrospinal Tract</string>
@@ -445,10 +1095,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Sacral Parasympathetic Nucleus</string>
@@ -456,10 +1126,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Somatotopic </string>
@@ -467,10 +1157,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Spastic Paralysis</string>
@@ -478,10 +1188,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Spinal Accessory Nucleus</string>
@@ -489,10 +1219,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Spinal Nerve</string>
@@ -500,10 +1250,30 @@
 		<string></string>
 		<string></string>
 		<string>Generally a mixed nerve formed by the combination of the ventral and dorsal roots. There are thirty-one pairs of spinal nerves. These nerves are responsible for carrying motor, sensory and autonomic fibers. </string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Substantia Gelatinosa</string>
@@ -511,10 +1281,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Upper Motor Neuron</string>
@@ -522,10 +1312,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Ventral Horn of Gray Matter</string>
@@ -533,10 +1343,30 @@
 		<string>This column of gray matter consists predominately of a large aggregation of basophilic alpha motor neuron cell bodies, dendrites, axons and central neuroglia. This section of the spinal cord in the adult is derived from the embryological basal plates. Axons of neurons located within the ventral horn of gray matter grow out of the spinal cord and form the majority of the ventral root of spinal nerves. </string>
 		<string>This column of gray matter consists predominately of a large aggregation of basophilic alpha motor neuron cell bodies, dendrites, axons and central neuroglia. This section of the spinal cord in the adult is derived from the embryological basal plates. Axons of neurons located within the ventral horn of gray matter grow out of the spinal cord and form the majority of the ventral root of spinal nerves. </string>
 		<string>This column of gray matter consists predominately of a large aggregation of basophilic alpha motor neuron cell bodies, dendrites, axons and central neuroglia. This section of the spinal cord in the adult is derived from the embryological basal plates. Axons of neurons located within the ventral horn of gray matter grow out of the spinal cord and form the majority of the ventral root of spinal nerves. </string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Ventral Median Fissure</string>
@@ -544,10 +1374,30 @@
 		<string></string>
 		<string>A deep longitudinal groove that extends almost to the center of the cord. </string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Ventral Roots of Spinal Nerves</string>
@@ -555,10 +1405,30 @@
 		<string></string>
 		<string>The ventral roots are made up of axons from multipolar motor neurons located in the ventral horn of gray mater, as well as axons of preganglionic sympathetic neurons. </string>
 		<string>The ventral roots are made up of axons from multipolar motor neurons located in the ventral horn of gray mater, as well as axons of preganglionic sympathetic neurons. </string>
-		<array/>
-		<dict/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Ventral Rootlets</string>
@@ -566,10 +1436,30 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Action Potential</string>
@@ -577,10 +1467,30 @@
 		<string>Electrochemical process initiated by impulses carried from the neuron cell body or dendrites to the axon hillock. The impulse then will continue to travel along the length of the axon. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Anterograde Transport</string>
@@ -588,10 +1498,30 @@
 		<string>Carries cellular parts from the nerve cell body to the periphery along the axon. The cytoskeletal track used for the transport is made up largely of the protein kinesin. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Astrocyte</string>
@@ -599,10 +1529,30 @@
 		<string>Largest neuroglial cells that provide physical and metabolic support to neurons. There are two types of astrocytes: protoplasmic (predominately found in the gray matter) and fibrous (predominately found in the white matter). Also play an important role in maintaining the blood-brain barrier.</string>
 		<string>Derived from glioblasts that differentiated into astroblasts. Astroblasts will further differentiate into either protoplasmic astrocytes or fibrous astrocytes.</string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Axoaxonic Synapse</string>
@@ -610,10 +1560,30 @@
 		<string>Synapse between the axon of one neuron (presynaptic) and axon of another neuron (postsynaptic).</string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Axodendritic Synapse</string>
@@ -621,10 +1591,30 @@
 		<string>Synapse between the axon of one neuron (presynaptic) and dendrite of another neuron (postsynaptic).</string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Axon</string>
@@ -632,10 +1622,30 @@
 		<string>Process extending from the neuron cell body, responsible for transmitting impulses away from the cell body usually to other neurons or effector cells.</string>
 		<string></string>
 		<string>Process extending from the neuron cell body, responsible for transmitting impulses away from the cell body usually to other neurons or effector cells.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Axon Hillock</string>
@@ -643,10 +1653,30 @@
 		<string>Connection between the axon and the neuron cell body. Location of action potential initiation.</string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Axosomatic Synapse	</string>
@@ -654,10 +1684,30 @@
 		<string>Synapse between the axon of one neuron (presynaptic) and the cell body of another neuron (postsynaptic).</string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Bipolar Neuron</string>
@@ -665,10 +1715,30 @@
 		<string>Neurons that have a single axon and single dendrite. Bipolar neurons are rare and are most often associated with receptors for the special senses (smell, taste, hearing, sight and equilibrium).</string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Chemical Synapse	</string>
@@ -676,10 +1746,30 @@
 		<string>Transmission of impulses is done via the release of chemical substances, neurotransmitters from the presynaptic neuron to bind on receptors of postsynaptic neurons or effector cells.</string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Choroid Plexus</string>
@@ -687,10 +1777,30 @@
 		<string>Combination of the ependymal cells and associated capillaries. Responsible for producing cerebrospinal fluid. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dendrite</string>
@@ -698,10 +1808,30 @@
 		<string>Process(es) extending from the neuron cell body that transmits impulses from the periphery towards the neuron cell body. Larger diameters compared to axons and are unmyelinated. </string>
 		<string></string>
 		<string>Process(es) extending from the neuron cell body that transmits impulses from the periphery towards the neuron cell body. Larger diameters compared to axons and are unmyelinated. </string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Dendritic Tree</string>
@@ -709,10 +1839,30 @@
 		<string>Term used to describe the arborization of all dendritic extensions for a single neuron. Greatly increase the receptor surface area of a neuron. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Electrical Synapse</string>
@@ -720,10 +1870,30 @@
 		<string>Transmission of impulses is done via gap junctions, allowing the spread of electrical current from one cell to the next. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Ependymal Cells</string>
@@ -731,10 +1901,30 @@
 		<string>Epithelial-type cells lining the ventricular cavities of the central nervous system. Cuboidal to columnar in morphological classification. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Ganglion</string>
@@ -742,10 +1932,30 @@
 		<string>General term used to define an aggregation of neuron cell bodies specifically located in the peripheral nervous system.</string>
 		<string></string>
 		<string>General term used to define an aggregation of neuron cell bodies specifically located in the peripheral nervous system.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Gap Junctions</string>
@@ -754,10 +1964,30 @@
 </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Gray Matter</string>
@@ -765,10 +1995,30 @@
 		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is gray in appearance due to the large aggregation of neuron cell bodies. Also contains dendrites, axons and central neuroglia.</string>
 		<string></string>
 		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is gray in appearance due to the large aggregation of neuron cell bodies. Also contains dendrites, axons and central neuroglia.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Microglia</string>
@@ -776,10 +2026,30 @@
 		<string>Small elongated phagocytic cells, which are considered to be a part of the mononuclear phagocytic system. The microglia precursor cells enter the central nervous system by way of the vascular system. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Multipolar Neuron</string>
@@ -787,10 +2057,30 @@
 		<string>Neurons that have a single axons and two or more dendrites. Motor neurons and interneurons are the most common examples within the nervous system.</string>
 		<string></string>
 		<string>Neurons that have a single axons and two or more dendrites. Motor neurons and interneurons are the most common examples within the nervous system.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Neuroglial Cells</string>
@@ -798,10 +2088,30 @@
 		<string>Supporting, nonconducting cells located in close proximity to neurons.</string>
 		<string></string>
 		<string>Supporting, nonconducting cells located in close proximity to neurons.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Neuron Cell Body (Perikaryon)</string>
@@ -809,10 +2119,30 @@
 		<string>Contains the euchromatic nucleus and organelles that maintain the neuron.</string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Neurotransmitters</string>
@@ -820,10 +2150,30 @@
 		<string>Endogenous chemicals that are involved in chemical synapses. Located within synaptic vesicles of neurons, the neurotransmitters are released in response to an action potential across the synaptic cleft to bind to the postsynaptic receptors. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Nissl bodies</string>
@@ -831,10 +2181,30 @@
 		<string>Appearance of each stack of rough endoplasmic reticulum within the nucleus of the neuron. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Oligodendrocytes</string>
@@ -842,10 +2212,30 @@
 		<string>Neuroglial cells found exclusively in the central nervous system. Responsible for the formation and maintenance of myelin along multiple axons.  </string>
 		<string>Derived from glioblasts that differentiated into oligodendroblasts. Oligodendroblasts will further differentiate into oligodendrocytes. These cells are responsible for myelinating axons within the central nervous system. </string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Pseudounipolar Neuron</string>
@@ -853,10 +2243,30 @@
 		<string>Neurons have a single axonal process. One end of the axon extends into the periphery and the other end of the axon extends into the central nervous system. Majority of the pseudounipolar neurons are sensory neurons.</string>
 		<string></string>
 		<string>Neurons have a single axonal process. One end of the axon extends into the periphery and the other end of the axon extends into the central nervous system. Majority of the pseudounipolar neurons are sensory neurons.</string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Retrograde Transport</string>
@@ -864,10 +2274,30 @@
 		<string>Carries cellular parts away from the periphery and towards the neuron cell body. The cytoskeletal track used for transport is made up largely of the protein dynein. </string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Satellite Cells</string>
@@ -875,10 +2305,30 @@
 		<string>Neuroglial cells found in the peripheral nervous system, surrounding nerve cell bodies within ganglia to help support the microenvironment.</string>
 		<string></string>
 		<string></string>
-		<array/>
-		<array/>
-		<array/>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 	</array>
 	<array>
 		<string>Schwann Cells</string>
@@ -886,7 +2336,12 @@
 		<string>Neuroglial cells found only in the peripheral nervous system. Responsible for supporting both myelinated and unmyelinated nerve cell fibers. Each segment of myelin along peripheral axons is composed of a single schwann cell. </string>
 		<string>Neuroglial cells found only in the peripheral nervous system. Responsible for supporting both myelinated and unmyelinated nerve cell fibers. Each segment of myelin along peripheral axons is composed of a single schwann cell. </string>
 		<string></string>
-		<array/>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
 		<array/>
 		<array/>
 		<array/>
