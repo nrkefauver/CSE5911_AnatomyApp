@@ -35,7 +35,8 @@
     self.imageView.image = image;
     
     [self.scrollView setMaximumZoomScale:7.0];
-    [self.scrollView setClipsToBounds:NO];
+    [self.scrollView setClipsToBounds:YES];
+    [self.scrollView delegate];
 }
 
 - (IBAction)contentModeChanged:(UISegmentedControl *)segmentedControl
