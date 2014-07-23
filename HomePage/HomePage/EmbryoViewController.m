@@ -33,6 +33,9 @@
     self.imageView.backgroundColor = [UIColor blackColor];
     self.imageView.clipsToBounds = YES;
     self.imageView.image = image;
+    
+    [self.scrollView setMaximumZoomScale:7.0];
+    [self.scrollView setClipsToBounds:NO];
 }
 
 - (IBAction)contentModeChanged:(UISegmentedControl *)segmentedControl
@@ -135,6 +138,10 @@
 }
 - (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
+}
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
+    return self.imageView;
 }
 
 @end
