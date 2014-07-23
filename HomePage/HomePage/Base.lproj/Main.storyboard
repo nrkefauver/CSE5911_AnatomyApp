@@ -1062,7 +1062,6 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="button1:" destination="W8x-iU-qGh" eventType="touchUpInside" id="9np-YY-88E"/>
                                     <action selector="onDorsalHornOfGrayMatter:" destination="W8x-iU-qGh" eventType="touchUpInside" id="0fd-5v-I01"/>
                                 </connections>
                             </button>
