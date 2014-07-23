@@ -262,12 +262,21 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="E0.png" id="XKw-ib-z0b">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="sgK-ek-a38">
                                 <rect key="frame" x="142" y="174" width="484" height="388"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="E0.png" id="XKw-ib-z0b">
+                                        <rect key="frame" x="0.0" y="0.0" width="484" height="388"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="Zc9-b7-UI4" id="bMF-Fh-byx"/>
+                                </connections>
+                            </scrollView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="liJ-M2-NKb">
-                                <rect key="frame" x="142" y="570" width="484" height="29"/>
+                                <rect key="frame" x="142" y="645" width="484" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Day 1"/>
@@ -305,6 +314,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="imageView" destination="XKw-ib-z0b" id="Nin-a8-Nun"/>
+                        <outlet property="scrollView" destination="sgK-ek-a38" id="38e-R1-0kD"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="EmbryoToHomeSegue" id="TtF-se-HDQ"/>
                         <segue destination="7sD-q7-0nW" kind="push" identifier="EmbryoHomeToAnimationsListSegue" id="KNf-OE-a5W"/>
                         <segue destination="0HC-13-e6l" kind="push" identifier="EmbryoHomeToIndexSegue" id="Xgb-47-Ueh"/>
@@ -1062,7 +1072,6 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="button1:" destination="W8x-iU-qGh" eventType="touchUpInside" id="9np-YY-88E"/>
                                     <action selector="onDorsalHornOfGrayMatter:" destination="W8x-iU-qGh" eventType="touchUpInside" id="0fd-5v-I01"/>
                                 </connections>
                             </button>
@@ -1415,19 +1424,19 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xIp-rp-Izy"/>
-        <segue reference="2YT-sS-ArM"/>
-        <segue reference="HR3-33-3xN"/>
-        <segue reference="8Ym-jz-PyO"/>
-        <segue reference="Cbj-Qs-rfV"/>
-        <segue reference="ang-sS-8TK"/>
-        <segue reference="KNf-OE-a5W"/>
-        <segue reference="bsx-wD-Vbr"/>
-        <segue reference="fdm-bw-BD5"/>
-        <segue reference="zth-Qd-6wy"/>
-        <segue reference="h09-ZD-uY6"/>
-        <segue reference="LlT-KC-nOI"/>
         <segue reference="f8e-Mr-dEL"/>
         <segue reference="MZo-Sv-XyI"/>
+        <segue reference="Cbj-Qs-rfV"/>
+        <segue reference="TtF-se-HDQ"/>
+        <segue reference="8Ym-jz-PyO"/>
+        <segue reference="Xgb-47-Ueh"/>
+        <segue reference="KNf-OE-a5W"/>
+        <segue reference="ang-sS-8TK"/>
+        <segue reference="2YT-sS-ArM"/>
+        <segue reference="zth-Qd-6wy"/>
+        <segue reference="xIp-rp-Izy"/>
+        <segue reference="fdm-bw-BD5"/>
+        <segue reference="h09-ZD-uY6"/>
+        <segue reference="LlT-KC-nOI"/>
     </inferredMetricsTieBreakers>
 </document>

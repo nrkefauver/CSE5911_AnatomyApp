@@ -9,11 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
 
-@interface EmbryoViewController : UIViewController{
-    UIImageView* imageView;
-}
+@interface EmbryoViewController : UIViewController<UIScrollViewDelegate>
 
 @property (nonatomic, retain) IBOutlet UIImageView* imageView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 - (IBAction) contentModeChanged: (UISegmentedControl*)segmentedControl;
 
