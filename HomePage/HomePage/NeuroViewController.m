@@ -42,7 +42,11 @@
     self.imageView.backgroundColor = [UIColor blackColor];
     self.imageView.clipsToBounds = YES;
     self.imageView.image = image;
-}
+    
+    
+    [self.scrollView setMaximumZoomScale:7.0];
+    [self.scrollView setClipsToBounds:YES];
+    [self.scrollView delegate];}
 
 //Used for tabbed images
 - (void)viewDidUnload
@@ -140,4 +144,7 @@
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
 
-@end
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
+    return self.imageView;
+}
+    @end

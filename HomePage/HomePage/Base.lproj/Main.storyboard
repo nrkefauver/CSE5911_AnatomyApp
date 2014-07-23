@@ -772,12 +772,8 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PQu-w0-D3b">
-                                <rect key="frame" x="85" y="124" width="577" height="472"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Vqo-Wl-v8I">
-                                <rect key="frame" x="85" y="88" width="577" height="29"/>
+                                <rect key="frame" x="96" y="94" width="577" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Cervical"/>
@@ -790,6 +786,19 @@
                                     <action selector="contentModeChanged:" destination="Z1N-LW-t3Y" eventType="valueChanged" id="FiD-gu-sgL"/>
                                 </connections>
                             </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yLE-6T-9dc">
+                                <rect key="frame" x="96" y="130" width="577" height="401"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PQu-w0-D3b">
+                                        <rect key="frame" x="0.0" y="0.0" width="577" height="401"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="Z1N-LW-t3Y" id="gNk-wE-L4b"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -811,6 +820,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="imageView" destination="PQu-w0-D3b" id="nuB-10-3Bh"/>
+                        <outlet property="scrollView" destination="yLE-6T-9dc" id="bo0-dU-7sc"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroToHomeSegue" id="hOH-RS-S2g"/>
                         <segue destination="A0d-hn-6U1" kind="push" identifier="NeuroHomeToAnimationsListSegue" id="32O-Pf-eqc"/>
                         <segue destination="0HC-13-e6l" kind="push" identifier="NeuroHomeToIndexSegue" id="xgI-CB-z14"/>
@@ -820,7 +830,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igv-Zk-Ffw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5008" y="983"/>
+            <point key="canvasLocation" x="5006" y="975"/>
         </scene>
         <!--Neuro Animations List View Controller - Neuroanatomy Animations -->
         <scene sceneID="BCY-Hm-ZMe">
@@ -1424,19 +1434,19 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="f8e-Mr-dEL"/>
-        <segue reference="MZo-Sv-XyI"/>
+        <segue reference="LlT-KC-nOI"/>
+        <segue reference="yHH-64-pgG"/>
         <segue reference="Cbj-Qs-rfV"/>
-        <segue reference="TtF-se-HDQ"/>
-        <segue reference="8Ym-jz-PyO"/>
-        <segue reference="Xgb-47-Ueh"/>
-        <segue reference="KNf-OE-a5W"/>
-        <segue reference="ang-sS-8TK"/>
+        <segue reference="hOH-RS-S2g"/>
         <segue reference="2YT-sS-ArM"/>
-        <segue reference="zth-Qd-6wy"/>
+        <segue reference="8Ym-jz-PyO"/>
         <segue reference="xIp-rp-Izy"/>
         <segue reference="fdm-bw-BD5"/>
-        <segue reference="h09-ZD-uY6"/>
-        <segue reference="LlT-KC-nOI"/>
+        <segue reference="zth-Qd-6wy"/>
+        <segue reference="KNf-OE-a5W"/>
+        <segue reference="ang-sS-8TK"/>
+        <segue reference="xgI-CB-z14"/>
+        <segue reference="32O-Pf-eqc"/>
+        <segue reference="Rde-ZO-HXw"/>
     </inferredMetricsTieBreakers>
 </document>
