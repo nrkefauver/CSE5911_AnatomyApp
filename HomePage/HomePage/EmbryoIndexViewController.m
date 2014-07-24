@@ -258,19 +258,19 @@ static NSString *videoType;
         {case 2: //Embryo
             [segmentedControl setSelectedSegmentIndex:2];
             
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]isEqualToString:@""])
+            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]isEqualToString:@""])
             {
                 // Set videos
-                UIImage* button1Image = [UIImage imageNamed:@"videos"];
+                UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
                [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                
                 // Set actions
                 [button1 addTarget:self
-                            action:@selector(videoMediaButtonPressed)
+                            action:@selector(embryoAnimationButtonPressed)
                   forControlEvents:UIControlEventTouchUpInside];
                 
                 // Set information for actions
-                videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
             }
     
             break;}
@@ -377,11 +377,46 @@ static NSString *videoType;
     self.title = @"This is different!";
 }
 
-// "Video" media button is pressed
-- (void) videoMediaButtonPressed
+- (void) neuro2DButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+- (void) neuroAnimationButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+- (void) histo2DButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+- (void) embryoAnimationButtonPressed
 {
     mediaButtonSegue = true;
     [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+- (void) embryo2DButtonPressed
+{
+//    mediaButtonSegue = true;
+//    [self performSegueWithIdentifier:@"" sender:self];
+}
+
+- (void) gross2DButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+- (void) gross3DButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -394,8 +429,6 @@ static NSString *videoType;
         if([segue.identifier isEqualToString:@"EmbryoIndexToEmbryoAnimationsListSegue"])
         {
             destViewController.startUpVideoName = videoName;
-            destViewController.startUpVideoType = videoType;
-            NSLog(@"Set passed info");
         }
         else if([segue.identifier isEqualToString:@""]){
 

@@ -55,7 +55,7 @@
     // If gross home has been passed a term to popup, show popup window
     if (self.initialPopupName != nil)
     {
-        self.initialPopupName = @"Ventral Horn of Gray Matter";
+        //self.initialPopupName = @"Ventral Horn of Gray Matter";
         
         // Run in the background while the page finishes loading
         [self performSelectorInBackground:@selector(showInitialPopup) withObject:nil];

@@ -336,7 +336,7 @@
 			<string></string>
 			<string></string>
 			<string></string>
-			<string></string>
+			<string>Neuraltube_001</string>
 		</array>
 		<array>
 			<string></string>
@@ -429,7 +429,7 @@
 			<string></string>
 			<string></string>
 			<string></string>
-			<string></string>
+			<string>Neuraltube_001</string>
 		</array>
 		<array>
 			<string></string>
@@ -460,11 +460,11 @@
 			<string></string>
 			<string></string>
 			<string></string>
-			<string></string>
+			<string>Neuraltube_001</string>
 		</array>
 		<array>
 			<string></string>
-			<string></string>
+			<string>Dorsal Root Ganglion</string>
 			<string>Dorsal Rootlets</string>
 			<string></string>
 		</array>
@@ -2447,7 +2447,7 @@
 			<string></string>
 			<string></string>
 			<string></string>
-			<string></string>
+			<string>Neuraltube_001</string>
 		</array>
 		<array>
 			<string></string>
@@ -2521,8 +2521,8 @@
 	<array>
 		<string>Basal Plate (Lamina)</string>
 		<string></string>
-		<string>Portion of the developing neural tube located ventral to the sulcus limitans. Develops into the future ventral and lateral horns of gray matter and contains predominately primary motor neurons. The basal plates are separated on each side by the floor plate, which forms the future ventral median fissure. </string>
 		<string></string>
+		<string>Portion of the developing neural tube located ventral to the sulcus limitans. Develops into the future ventral and lateral horns of gray matter and contains predominately primary motor neurons. The basal plates are separated on each side the floor plate, which forms the future ventral median fissure.</string>
 		<string></string>
 		<array>
 			<string></string>
@@ -2540,7 +2540,7 @@
 			<string></string>
 			<string></string>
 			<string></string>
-			<string></string>
+			<string>Neuraltube_001</string>
 		</array>
 		<array>
 			<string></string>
@@ -2571,7 +2571,7 @@
 			<string></string>
 			<string></string>
 			<string></string>
-			<string></string>
+			<string>Neuraltube_001</string>
 		</array>
 		<array>
 			<string></string>
@@ -2726,7 +2726,7 @@
 			<string></string>
 			<string></string>
 			<string></string>
-			<string></string>
+			<string>Neuraltube_001</string>
 		</array>
 		<array>
 			<string></string>
@@ -2819,7 +2819,7 @@
 			<string></string>
 			<string></string>
 			<string></string>
-			<string></string>
+			<string>Neuraltube_001</string>
 		</array>
 		<array>
 			<string></string>
