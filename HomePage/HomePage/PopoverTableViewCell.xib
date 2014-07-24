@@ -53,14 +53,14 @@
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yuX-FA-tiv">
                         <rect key="frame" x="12" y="192" width="70" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" backgroundImage="Popup Video Media Button.PNG">
+                        <state key="normal">
                             <attributedString key="attributedTitle"/>
                         </state>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d06-BF-FNH">
                         <rect key="frame" x="90" y="192" width="70" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" backgroundImage="Popup 3D Model Media Button.PNG">
+                        <state key="normal">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
@@ -82,8 +82,4 @@
             </connections>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Popup 3D Model Media Button.PNG" width="124" height="66"/>
-        <image name="Popup Video Media Button.PNG" width="122" height="67"/>
-    </resources>
 </document>
