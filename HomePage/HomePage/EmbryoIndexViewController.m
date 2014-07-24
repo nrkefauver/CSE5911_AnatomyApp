@@ -24,6 +24,7 @@ static UITableView *globalTableView;
 static bool tableViewIsCreated = false;
 static enum selectedDisciplineEnum selectedDiscipline = embryo;
 static bool mediaButtonSegue = false;
+static int EmbryoMedia = 7; //Position in property list for all Gross Media options
 static NSString *videoName;
 static NSString *videoType;
 
@@ -59,6 +60,7 @@ static NSString *videoType;
     subtitleArray = [[NSMutableArray alloc] init];
     textArray = [[NSMutableArray alloc] init];
     masterDictionary = [[NSMutableDictionary alloc] init];
+    mediaDictionary = [[NSMutableDictionary alloc] init];
 
     
     
@@ -72,6 +74,8 @@ static NSString *videoType;
     NSMutableArray *tempNames = [[NSMutableArray alloc] init];
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
     NSMutableArray *defOptions = [[NSMutableArray alloc] init];
+    NSMutableArray *mediaOptions = [[NSMutableArray alloc] init];
+
     for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
@@ -87,6 +91,16 @@ static NSString *videoType;
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
                 [defOptions addObject:temp];
+                
+                //Creates array of all the possible media for each term
+               // if([[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@"Dorsal Root Ganglion"]){
+                    NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
+                    [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] objectAtIndex:0]];
+                    [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] objectAtIndex:1]];
+                    [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] objectAtIndex:2]];
+                    [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] objectAtIndex:3]];
+                    [mediaOptions addObject:tempMedia];
+                //}
             }
         }
     }
@@ -95,7 +109,10 @@ static NSString *videoType;
     NSDictionary *tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
     [masterDictionary addEntriesFromDictionary:tempDict];
     
-    
+    //Adds all Gross terms and their designated media to the media dictionary
+    NSDictionary *mediaDict = [[NSDictionary alloc] initWithObjects:mediaOptions forKeys:tempNames];
+    [mediaDictionary addEntriesFromDictionary:mediaDict];
+        
     //Create Dictionary for terms and their definitions
     NSDictionary *nTerms = [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
     
@@ -241,6 +258,8 @@ static NSString *videoType;
         {case 2: //Embryo
             [segmentedControl setSelectedSegmentIndex:2];
             
+            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]isEqualToString:@""])
+            {
             // Set images
             UIImage* button1Image = [UIImage imageNamed:@"videos"];
             [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
@@ -248,7 +267,7 @@ static NSString *videoType;
             [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
             UIImage* button3Image = [UIImage imageNamed:@"3-D Image Media Button"];
             [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
-            
+            }
             // Set actions
             [button1 addTarget:self
                         action:@selector(videoMediaButtonPressed)
