@@ -260,28 +260,19 @@ static NSString *videoType;
             
             if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]isEqualToString:@""])
             {
-            // Set images
-            UIImage* button1Image = [UIImage imageNamed:@"videos"];
-            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
-            UIImage* button2Image = [UIImage imageNamed:@"2-D Image Media Button"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            UIImage* button3Image = [UIImage imageNamed:@"3-D Image Media Button"];
-            [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
+                // Set videos
+                UIImage* button1Image = [UIImage imageNamed:@"videos"];
+               [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+               
+                // Set actions
+                [button1 addTarget:self
+                            action:@selector(videoMediaButtonPressed)
+                  forControlEvents:UIControlEventTouchUpInside];
+                
+                // Set information for actions
+                videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
             }
-            // Set actions
-            [button1 addTarget:self
-                        action:@selector(videoMediaButtonPressed)
-              forControlEvents:UIControlEventTouchUpInside];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            [button3 addTarget:self
-                        action:@selector(doADifferentThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            
-            // Set information for actions
-            videoName = @"Neuraltube_001";
-            videoType = @"mp4";
+    
             break;}
         {case 3: //Gross
             [segmentedControl setSelectedSegmentIndex:3];
