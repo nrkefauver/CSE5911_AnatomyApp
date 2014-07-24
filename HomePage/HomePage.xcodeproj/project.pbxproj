@@ -35,6 +35,18 @@
 		46EC9757195B84EF00E05CEB /* Sacral.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9753195B84EF00E05CEB /* Sacral.png */; };
 		46EC9758195B84EF00E05CEB /* Thoracic.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9754195B84EF00E05CEB /* Thoracic.png */; };
 		46EC975A195B85D300E05CEB /* Grey Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9759195B85D300E05CEB /* Grey Button.png */; };
+		46EF428819807D83001022E8 /* 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF427C19807D83001022E8 /* 2D Image Media Button.PNG */; };
+		46EF428919807D83001022E8 /* 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF427D19807D83001022E8 /* 3D Model Media Button.PNG */; };
+		46EF428A19807D83001022E8 /* Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF427E19807D83001022E8 /* Animation Media Button.PNG */; };
+		46EF428B19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF427F19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG */; };
+		46EF428C19807D83001022E8 /* Blue Popup 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428019807D83001022E8 /* Blue Popup 3D Model Media Button.PNG */; };
+		46EF428D19807D83001022E8 /* Blue Popup Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428119807D83001022E8 /* Blue Popup Animation Media Button.PNG */; };
+		46EF428E19807D83001022E8 /* Blue Popup Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428219807D83001022E8 /* Blue Popup Video Media Button.PNG */; };
+		46EF428F19807D83001022E8 /* Popup 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428319807D83001022E8 /* Popup 2D Image Media Button.PNG */; };
+		46EF429019807D83001022E8 /* Popup 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428419807D83001022E8 /* Popup 3D Model Media Button.PNG */; };
+		46EF429119807D83001022E8 /* Popup Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428519807D83001022E8 /* Popup Animation Media Button.PNG */; };
+		46EF429219807D83001022E8 /* Popup Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428619807D83001022E8 /* Popup Video Media Button.PNG */; };
+		46EF429319807D83001022E8 /* Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428719807D83001022E8 /* Video Media Button.PNG */; };
 		5953AA0D19467D6500677409 /* GrossVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA0C19467D6500677409 /* GrossVideoListViewController.m */; };
 		5953AA101946802C00677409 /* Gross3DModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA0F1946802C00677409 /* Gross3DModelViewController.m */; };
 		5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */; };
@@ -174,6 +186,18 @@
 		46EC9753195B84EF00E05CEB /* Sacral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sacral.png; sourceTree = "<group>"; };
 		46EC9754195B84EF00E05CEB /* Thoracic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thoracic.png; sourceTree = "<group>"; };
 		46EC9759195B85D300E05CEB /* Grey Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Grey Button.png"; path = "Images/Grey Button.png"; sourceTree = "<group>"; };
+		46EF427C19807D83001022E8 /* 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2D Image Media Button.PNG"; sourceTree = "<group>"; };
+		46EF427D19807D83001022E8 /* 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3D Model Media Button.PNG"; sourceTree = "<group>"; };
+		46EF427E19807D83001022E8 /* Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Animation Media Button.PNG"; sourceTree = "<group>"; };
+		46EF427F19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Popup 2D Image Media Button.PNG"; sourceTree = "<group>"; };
+		46EF428019807D83001022E8 /* Blue Popup 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Popup 3D Model Media Button.PNG"; sourceTree = "<group>"; };
+		46EF428119807D83001022E8 /* Blue Popup Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Popup Animation Media Button.PNG"; sourceTree = "<group>"; };
+		46EF428219807D83001022E8 /* Blue Popup Video Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Popup Video Media Button.PNG"; sourceTree = "<group>"; };
+		46EF428319807D83001022E8 /* Popup 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popup 2D Image Media Button.PNG"; sourceTree = "<group>"; };
+		46EF428419807D83001022E8 /* Popup 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popup 3D Model Media Button.PNG"; sourceTree = "<group>"; };
+		46EF428519807D83001022E8 /* Popup Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popup Animation Media Button.PNG"; sourceTree = "<group>"; };
+		46EF428619807D83001022E8 /* Popup Video Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popup Video Media Button.PNG"; sourceTree = "<group>"; };
+		46EF428719807D83001022E8 /* Video Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video Media Button.PNG"; sourceTree = "<group>"; };
 		5953AA0B19467D6500677409 /* GrossVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrossVideoListViewController.h; sourceTree = "<group>"; };
 		5953AA0C19467D6500677409 /* GrossVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrossVideoListViewController.m; sourceTree = "<group>"; };
 		5953AA0E1946802C00677409 /* Gross3DModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gross3DModelViewController.h; sourceTree = "<group>"; };
@@ -649,6 +673,18 @@
 		D082566B1958C92800620469 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				46EF427C19807D83001022E8 /* 2D Image Media Button.PNG */,
+				46EF427D19807D83001022E8 /* 3D Model Media Button.PNG */,
+				46EF427E19807D83001022E8 /* Animation Media Button.PNG */,
+				46EF427F19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG */,
+				46EF428019807D83001022E8 /* Blue Popup 3D Model Media Button.PNG */,
+				46EF428119807D83001022E8 /* Blue Popup Animation Media Button.PNG */,
+				46EF428219807D83001022E8 /* Blue Popup Video Media Button.PNG */,
+				46EF428319807D83001022E8 /* Popup 2D Image Media Button.PNG */,
+				46EF428419807D83001022E8 /* Popup 3D Model Media Button.PNG */,
+				46EF428519807D83001022E8 /* Popup Animation Media Button.PNG */,
+				46EF428619807D83001022E8 /* Popup Video Media Button.PNG */,
+				46EF428719807D83001022E8 /* Video Media Button.PNG */,
 				D016FF9A19798C7700023668 /* osu-web-footer-wordmark-rev.png */,
 				D016FF9B19798C7700023668 /* osu-web-header-horiz.png */,
 				D016FF9C19798C7700023668 /* osu-web-header-vert2-rev.png */,
@@ -771,6 +807,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EF428B19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG in Resources */,
 				D0253F42193FE10A00CFE2AC /* E0.png in Resources */,
 				5962243D19508A3A00701B76 /* neuro-thoracic-scan.jpg in Resources */,
 				D0D8CC24195B7125009ECF3E /* E5.png in Resources */,
@@ -795,6 +832,8 @@
 				599DE238198070B700995432 /* cuneate.png in Resources */,
 				D0CE26051964C55E00E39DFC /* Gross.jpg in Resources */,
 				5962243519508A3A00701B76 /* 0.jpg in Resources */,
+				46EF429019807D83001022E8 /* Popup 3D Model Media Button.PNG in Resources */,
+				46EF428819807D83001022E8 /* 2D Image Media Button.PNG in Resources */,
 				5962243119508A3A00701B76 /* Neural Tube Patterning.png in Resources */,
 				D0D8CC23195B7125009ECF3E /* E4.png in Resources */,
 				462CB059193CFEDA00B6CF72 /* Animations.png in Resources */,
@@ -810,15 +849,21 @@
 				5962243619508A3A00701B76 /* 1.jpg in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
 				5962241519508A1500701B76 /* Neuraltube_001.mp4 in Resources */,
+				46EF428919807D83001022E8 /* 3D Model Media Button.PNG in Resources */,
+				46EF428E19807D83001022E8 /* Blue Popup Video Media Button.PNG in Resources */,
 				46EC9757195B84EF00E05CEB /* Sacral.png in Resources */,
+				46EF428A19807D83001022E8 /* Animation Media Button.PNG in Resources */,
 				46EC9755195B84EF00E05CEB /* Cervical.png in Resources */,
+				46EF429219807D83001022E8 /* Popup Video Media Button.PNG in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
 				461B45EC1950CE980000189B /* Thoracic_Drawing.png in Resources */,
 				D0253F43193FE10A00CFE2AC /* E1.png in Resources */,
 				D08A364C1958762F005E5C77 /* closedIcon.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				5962243319508A3A00701B76 /* SC change position.png in Resources */,
+				46EF428D19807D83001022E8 /* Blue Popup Animation Media Button.PNG in Resources */,
 				597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */,
+				46EF428F19807D83001022E8 /* Popup 2D Image Media Button.PNG in Resources */,
 				D08A364E19587780005E5C77 /* openedIcon.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
 				D0FFFB971977379900BA4D7B /* Animation Media Button.PNG in Resources */,
@@ -827,6 +872,7 @@
 				59CAAC0C1962152900F06D88 /* SampleVideo.MOV in Resources */,
 				D03DE5F0197D6BD300E674DC /* AfferentTracts.plist in Resources */,
 				D0FFFB981977379900BA4D7B /* Video Media Button.PNG in Resources */,
+				46EF429119807D83001022E8 /* Popup Animation Media Button.PNG in Resources */,
 				D016FF9D19798C7700023668 /* osu-web-footer-wordmark-rev.png in Resources */,
 				466C49B4193BB914000B2A78 /* home.png in Resources */,
 				D0253F49193FE10A00CFE2AC /* E7.png in Resources */,
@@ -836,6 +882,7 @@
 				D0253F45193FE10A00CFE2AC /* E3.png in Resources */,
 				461B45E91950CE980000189B /* Lumbar_Scan.png in Resources */,
 				D016FF9F19798C7700023668 /* osu-web-header-vert2-rev.png in Resources */,
+				46EF429319807D83001022E8 /* Video Media Button.PNG in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
 				D0CE26091964C93500E39DFC /* green-book.png in Resources */,
@@ -845,6 +892,7 @@
 				D085395F196B3B7D000962D8 /* IndexAll.png in Resources */,
 				D016FF9E19798C7700023668 /* osu-web-header-horiz.png in Resources */,
 				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
+				46EF428C19807D83001022E8 /* Blue Popup 3D Model Media Button.PNG in Resources */,
 				5962243C19508A3A00701B76 /* neuro-sacral.jpg in Resources */,
 				5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */,
 				D0D8CC20195B7125009ECF3E /* E1.png in Resources */,
