@@ -256,8 +256,13 @@ static NSString *videoType;
               forControlEvents:UIControlEventTouchUpInside];
             break;}
         {case 2: //Embryo
+            // Set the segmented control to Embryo
             [segmentedControl setSelectedSegmentIndex:2];
             
+            // Used for setting the media buttons from left to right
+            bool button1IsTaken = false;
+            
+            // Set button for Animation if applicable
             if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]isEqualToString:@""])
             {
                 // Set videos
@@ -271,6 +276,36 @@ static NSString *videoType;
                 
                 // Set information for actions
                 videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                
+                button1IsTaken = true;
+            }
+            if (button1IsTaken)
+            {
+                if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]isEqualToString:@""])
+                {
+                    // Set videos
+                    UIImage* button2Image = [UIImage imageNamed:@"2D Image Media Button"];
+                    [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button2 addTarget:self
+                                action:@selector(embryo2DButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                }
+            }
+            else // Button 1 is not taken
+            {
+                if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]isEqualToString:@""])
+                {
+                    // Set videos
+                    UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                    [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button1 addTarget:self
+                                action:@selector(embryo2DButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                }
             }
     
             break;}
@@ -403,8 +438,8 @@ static NSString *videoType;
 
 - (void) embryo2DButtonPressed
 {
-//    mediaButtonSegue = true;
-//    [self performSegueWithIdentifier:@"" sender:self];
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoHomeSegue" sender:self];
 }
 
 - (void) gross2DButtonPressed
