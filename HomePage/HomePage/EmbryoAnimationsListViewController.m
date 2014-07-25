@@ -30,7 +30,7 @@
     UIButton *placeholder = (UIButton*)[self.view viewWithTag:10];
     
     // If triggered by a media button, play video
-    if ((_startUpVideoName != nil)&&(_startUpVideoType != nil))
+    if (_startUpVideoName != nil)
     {
         // Run in the background while the page finishes loading
         [self performSelectorInBackground:@selector(startWithMovie) withObject:nil];

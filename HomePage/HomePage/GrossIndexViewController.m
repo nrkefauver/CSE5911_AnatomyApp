@@ -278,15 +278,15 @@ static bool mediaButtonSegue = false;
             
             if ([cell.subtitleLabel.text isEqual:@"Dorsal Root Ganglion"])
             {
-                if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]isEqualToString:@""])
+                if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]isEqualToString:@""])
                 {
-                    UIImage* button1Image = [UIImage imageNamed:@"2-D Image Media Button"];
+                    UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
                     [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                     [button1 addTarget:self
                                 action:@selector(gross2DButtonPressed)
                       forControlEvents:UIControlEventTouchUpInside];
                     
-                    partName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                    partName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
                 }
             }
             break;}
@@ -382,10 +382,46 @@ static bool mediaButtonSegue = false;
     self.title = @"This is different!";
 }
 
+- (void) neuro2DButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+- (void) neuroAnimationButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+- (void) histo2DButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+- (void) embryoAnimationButtonPressed
+{
+//    mediaButtonSegue = true;
+//    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+}
+
+- (void) embryo2DButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"" sender:self];
+}
+
 - (void) gross2DButtonPressed
 {
     mediaButtonSegue = true;
     [self performSegueWithIdentifier:@"GrossIndexToGrossHomeSegue" sender:self];
+}
+
+- (void) gross3DButtonPressed
+{
+    //    mediaButtonSegue = true;
+    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
 }
 
 // If segue is triggered by a media button, pass information

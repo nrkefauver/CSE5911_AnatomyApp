@@ -7,9 +7,15 @@
 //
 
 #import "NeuroViewController.h"
+#import "PopoverTableViewController.h"
 
 @interface NeuroViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
+
+// Popover
+- (IBAction)showPopover:(UIButton *)sender;
+@property (nonatomic,strong) UIPopoverController *popOver;
+
 @end
 
 @implementation NeuroViewController
@@ -42,7 +48,11 @@
     self.imageView.backgroundColor = [UIColor blackColor];
     self.imageView.clipsToBounds = YES;
     self.imageView.image = image;
-}
+    
+    
+    [self.scrollView setMaximumZoomScale:7.0];
+    [self.scrollView setClipsToBounds:YES];
+    [self.scrollView delegate];}
 
 //Used for tabbed images
 - (void)viewDidUnload
@@ -138,6 +148,57 @@
 }
 - (void)sidebar:(RNFrostedSidebar *)sidebar willShowOnScreenAnimated:(BOOL)animatedYesOrNo {
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
+}
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
+    return self.imageView;
+}
+
+// Show popover menu when user clicks "Fasciculus Cuneatus"
+- (IBAction)onFasciculusCuneatus:(id)sender
+{
+    // TODO: Change image to colored
+    
+    
+    // Set index for term 10: Fasciculus Cuneatus
+    int index = 17;
+    [self showPopoverRight:(id)sender index:(int)index];
+}
+
+// Create Popover menu LEFT button
+- (void)showPopoverLeft:(UIButton *)sender index:(int)termIndex
+{
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];
+    [PopoverView setIndex:(int)termIndex];
+    self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
+    [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionRight animated:YES];
+}
+
+// Create Popover menu RIGHT button
+- (void)showPopoverRight:(UIButton *)sender index:(int)termIndex
+{
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];
+    [PopoverView setIndex:(int)termIndex];
+    self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
+    [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
+}
+
+// Create Popover menu BELOW button
+- (void)showPopoverBelow:(UIButton *)sender index:(int)termIndex
+{
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];
+    [PopoverView setIndex:(int)termIndex];
+    self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
+    [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+}
+
+// Create Popover menu ABOVE button
+- (void)showPopoverAbove:(UIButton *)sender index:(int)termIndex
+{
+    PopoverTableViewController *PopoverView =[[PopoverTableViewController alloc] initWithNibName:@"PopoverTableViewController" bundle:nil ];
+    [PopoverView setIndex:(int)termIndex];
+    self.popOver =[[UIPopoverController alloc] initWithContentViewController:PopoverView];
+    [self.popOver presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
 }
 
 @end

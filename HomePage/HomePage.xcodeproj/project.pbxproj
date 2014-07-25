@@ -88,6 +88,9 @@
 		597F179A195C82D600A722CD /* PopoverTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F1798195C82D600A722CD /* PopoverTableViewController.xib */; };
 		597F179E195C873500A722CD /* PopoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 597F179C195C873500A722CD /* PopoverTableViewCell.m */; };
 		597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F179D195C873500A722CD /* PopoverTableViewCell.xib */; };
+		599DE2331980666D00995432 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DE2301980666D00995432 /* OBShapedButton.m */; };
+		599DE2341980666D00995432 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DE2321980666D00995432 /* UIImage+ColorAtPixel.m */; };
+		599DE238198070B700995432 /* cuneate.png in Resources */ = {isa = PBXBuildFile; fileRef = 599DE237198070B700995432 /* cuneate.png */; };
 		59CAAC0C1962152900F06D88 /* SampleVideo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 59CAAC0B1962152900F06D88 /* SampleVideo.MOV */; };
 		7CC1BD291958E24B00B70823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC1BD281958E24B00B70823 /* MapKit.framework */; };
 		D00CA83B194792CB00C01BBF /* NeuroIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA83A194792CB00C01BBF /* NeuroIndexViewController.m */; };
@@ -136,6 +139,16 @@
 		D08A364E19587780005E5C77 /* openedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D08A364D19587780005E5C77 /* openedIcon.png */; };
 		D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115319524DB80051A7F4 /* EMAccordionSection.m */; };
 		D0A0115719524E340051A7F4 /* EMAccordionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */; };
+		D0C65E63198089810061D626 /* 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E59198089810061D626 /* 2D Image Media Button.PNG */; };
+		D0C65E64198089810061D626 /* 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5A198089810061D626 /* 3D Model Media Button.PNG */; };
+		D0C65E65198089810061D626 /* Blue Popup 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5B198089810061D626 /* Blue Popup 2D Image Media Button.PNG */; };
+		D0C65E66198089810061D626 /* Blue Popup 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5C198089810061D626 /* Blue Popup 3D Model Media Button.PNG */; };
+		D0C65E67198089810061D626 /* Blue Popup Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5D198089810061D626 /* Blue Popup Animation Media Button.PNG */; };
+		D0C65E68198089810061D626 /* Blue Popup Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5E198089810061D626 /* Blue Popup Video Media Button.PNG */; };
+		D0C65E69198089810061D626 /* Popup 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5F198089810061D626 /* Popup 2D Image Media Button.PNG */; };
+		D0C65E6A198089810061D626 /* Popup 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E60198089810061D626 /* Popup 3D Model Media Button.PNG */; };
+		D0C65E6B198089810061D626 /* Popup Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E61198089810061D626 /* Popup Animation Media Button.PNG */; };
+		D0C65E6C198089810061D626 /* Popup Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E62198089810061D626 /* Popup Video Media Button.PNG */; };
 		D0CE26041964C55E00E39DFC /* Embryo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26001964C55E00E39DFC /* Embryo.jpg */; };
 		D0CE26051964C55E00E39DFC /* Gross.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26011964C55E00E39DFC /* Gross.jpg */; };
 		D0CE26061964C55E00E39DFC /* histology.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26021964C55E00E39DFC /* histology.jpg */; };
@@ -256,6 +269,11 @@
 		597F179B195C873500A722CD /* PopoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverTableViewCell.h; sourceTree = "<group>"; };
 		597F179C195C873500A722CD /* PopoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverTableViewCell.m; sourceTree = "<group>"; };
 		597F179D195C873500A722CD /* PopoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverTableViewCell.xib; sourceTree = "<group>"; };
+		599DE22F1980666D00995432 /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBShapedButton.h; path = OBShapedButton/OBShapedButton.h; sourceTree = "<group>"; };
+		599DE2301980666D00995432 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBShapedButton.m; path = OBShapedButton/OBShapedButton.m; sourceTree = "<group>"; };
+		599DE2311980666D00995432 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ColorAtPixel.h"; path = "OBShapedButton/UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		599DE2321980666D00995432 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ColorAtPixel.m"; path = "OBShapedButton/UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		599DE237198070B700995432 /* cuneate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cuneate.png; sourceTree = "<group>"; };
 		59CAAC0B1962152900F06D88 /* SampleVideo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SampleVideo.MOV; sourceTree = "<group>"; };
 		7CC1BD281958E24B00B70823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D00CA839194792CB00C01BBF /* NeuroIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuroIndexViewController.h; sourceTree = "<group>"; };
@@ -323,6 +341,16 @@
 		D0A0115319524DB80051A7F4 /* EMAccordionSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAccordionSection.m; sourceTree = "<group>"; };
 		D0A0115519524E340051A7F4 /* EMAccordionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAccordionTableViewController.h; sourceTree = "<group>"; };
 		D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAccordionTableViewController.m; sourceTree = "<group>"; };
+		D0C65E59198089810061D626 /* 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2D Image Media Button.PNG"; path = "Images/2D Image Media Button.PNG"; sourceTree = "<group>"; };
+		D0C65E5A198089810061D626 /* 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3D Model Media Button.PNG"; path = "Images/3D Model Media Button.PNG"; sourceTree = "<group>"; };
+		D0C65E5B198089810061D626 /* Blue Popup 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Blue Popup 2D Image Media Button.PNG"; path = "Images/Blue Popup 2D Image Media Button.PNG"; sourceTree = "<group>"; };
+		D0C65E5C198089810061D626 /* Blue Popup 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Blue Popup 3D Model Media Button.PNG"; path = "Images/Blue Popup 3D Model Media Button.PNG"; sourceTree = "<group>"; };
+		D0C65E5D198089810061D626 /* Blue Popup Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Blue Popup Animation Media Button.PNG"; path = "Images/Blue Popup Animation Media Button.PNG"; sourceTree = "<group>"; };
+		D0C65E5E198089810061D626 /* Blue Popup Video Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Blue Popup Video Media Button.PNG"; path = "Images/Blue Popup Video Media Button.PNG"; sourceTree = "<group>"; };
+		D0C65E5F198089810061D626 /* Popup 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Popup 2D Image Media Button.PNG"; path = "Images/Popup 2D Image Media Button.PNG"; sourceTree = "<group>"; };
+		D0C65E60198089810061D626 /* Popup 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Popup 3D Model Media Button.PNG"; path = "Images/Popup 3D Model Media Button.PNG"; sourceTree = "<group>"; };
+		D0C65E61198089810061D626 /* Popup Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Popup Animation Media Button.PNG"; path = "Images/Popup Animation Media Button.PNG"; sourceTree = "<group>"; };
+		D0C65E62198089810061D626 /* Popup Video Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Popup Video Media Button.PNG"; path = "Images/Popup Video Media Button.PNG"; sourceTree = "<group>"; };
 		D0CE26001964C55E00E39DFC /* Embryo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Embryo.jpg; path = Images/Embryo.jpg; sourceTree = "<group>"; };
 		D0CE26011964C55E00E39DFC /* Gross.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Gross.jpg; path = Images/Gross.jpg; sourceTree = "<group>"; };
 		D0CE26021964C55E00E39DFC /* histology.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = histology.jpg; path = Images/histology.jpg; sourceTree = "<group>"; };
@@ -443,6 +471,7 @@
 		5962242419508A3A00701B76 /* Neuro */ = {
 			isa = PBXGroup;
 			children = (
+				599DE237198070B700995432 /* cuneate.png */,
 				46EC9751195B84EF00E05CEB /* Cervical.png */,
 				46EC9752195B84EF00E05CEB /* Lumbar.png */,
 				46EC9753195B84EF00E05CEB /* Sacral.png */,
@@ -479,6 +508,17 @@
 				597F179D195C873500A722CD /* PopoverTableViewCell.xib */,
 			);
 			name = PopoverTable;
+			sourceTree = "<group>";
+		};
+		599DE22E1980661800995432 /* OBShapedButton */ = {
+			isa = PBXGroup;
+			children = (
+				599DE22F1980666D00995432 /* OBShapedButton.h */,
+				599DE2301980666D00995432 /* OBShapedButton.m */,
+				599DE2311980666D00995432 /* UIImage+ColorAtPixel.h */,
+				599DE2321980666D00995432 /* UIImage+ColorAtPixel.m */,
+			);
+			name = OBShapedButton;
 			sourceTree = "<group>";
 		};
 		59B307C6194A3C3200B4D251 /* Videos */ = {
@@ -623,6 +663,7 @@
 		D06E5E37192FA51D00A12651 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				599DE22E1980661800995432 /* OBShapedButton */,
 				597F1795195C829400A722CD /* PopoverTable */,
 				D0A0115119524D760051A7F4 /* EMAccordionTable */,
 				D0253F29193FD77C00CFE2AC /* Sidebar */,
@@ -688,18 +729,16 @@
 		D082566B1958C92800620469 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				46EF427C19807D83001022E8 /* 2D Image Media Button.PNG */,
-				46EF427D19807D83001022E8 /* 3D Model Media Button.PNG */,
-				46EF427E19807D83001022E8 /* Animation Media Button.PNG */,
-				46EF427F19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG */,
-				46EF428019807D83001022E8 /* Blue Popup 3D Model Media Button.PNG */,
-				46EF428119807D83001022E8 /* Blue Popup Animation Media Button.PNG */,
-				46EF428219807D83001022E8 /* Blue Popup Video Media Button.PNG */,
-				46EF428319807D83001022E8 /* Popup 2D Image Media Button.PNG */,
-				46EF428419807D83001022E8 /* Popup 3D Model Media Button.PNG */,
-				46EF428519807D83001022E8 /* Popup Animation Media Button.PNG */,
-				46EF428619807D83001022E8 /* Popup Video Media Button.PNG */,
-				46EF428719807D83001022E8 /* Video Media Button.PNG */,
+				D0C65E59198089810061D626 /* 2D Image Media Button.PNG */,
+				D0C65E5A198089810061D626 /* 3D Model Media Button.PNG */,
+				D0C65E5B198089810061D626 /* Blue Popup 2D Image Media Button.PNG */,
+				D0C65E5C198089810061D626 /* Blue Popup 3D Model Media Button.PNG */,
+				D0C65E5D198089810061D626 /* Blue Popup Animation Media Button.PNG */,
+				D0C65E5E198089810061D626 /* Blue Popup Video Media Button.PNG */,
+				D0C65E5F198089810061D626 /* Popup 2D Image Media Button.PNG */,
+				D0C65E60198089810061D626 /* Popup 3D Model Media Button.PNG */,
+				D0C65E61198089810061D626 /* Popup Animation Media Button.PNG */,
+				D0C65E62198089810061D626 /* Popup Video Media Button.PNG */,
 				D016FF9A19798C7700023668 /* osu-web-footer-wordmark-rev.png */,
 				D016FF9B19798C7700023668 /* osu-web-header-horiz.png */,
 				D016FF9C19798C7700023668 /* osu-web-header-vert2-rev.png */,
@@ -822,7 +861,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EF428B19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG in Resources */,
+				D0C65E64198089810061D626 /* 3D Model Media Button.PNG in Resources */,
 				D0253F42193FE10A00CFE2AC /* E0.png in Resources */,
 				5962243D19508A3A00701B76 /* neuro-thoracic-scan.jpg in Resources */,
 				D0D8CC24195B7125009ECF3E /* E5.png in Resources */,
@@ -843,13 +882,13 @@
 				46EC9756195B84EF00E05CEB /* Lumbar.png in Resources */,
 				5962242D19508A3A00701B76 /* CNS Development.png in Resources */,
 				46EC9758195B84EF00E05CEB /* Thoracic.png in Resources */,
+				D0C65E6C198089810061D626 /* Popup Video Media Button.PNG in Resources */,
 				462CB055193CFDB200B6CF72 /* Letter N.png in Resources */,
 				46EF42AA1980883D001022E8 /* Popup Video Media Button.PNG in Resources */,
 				D0CE26051964C55E00E39DFC /* Gross.jpg in Resources */,
 				5962243519508A3A00701B76 /* 0.jpg in Resources */,
-				46EF429019807D83001022E8 /* Popup 3D Model Media Button.PNG in Resources */,
-				46EF428819807D83001022E8 /* 2D Image Media Button.PNG in Resources */,
 				5962243119508A3A00701B76 /* Neural Tube Patterning.png in Resources */,
+				D0C65E68198089810061D626 /* Blue Popup Video Media Button.PNG in Resources */,
 				D0D8CC23195B7125009ECF3E /* E4.png in Resources */,
 				462CB059193CFEDA00B6CF72 /* Animations.png in Resources */,
 				46EF42A61980883D001022E8 /* Blue Popup Video Media Button.PNG in Resources */,
@@ -865,19 +904,15 @@
 				5962243619508A3A00701B76 /* 1.jpg in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
 				5962241519508A1500701B76 /* Neuraltube_001.mp4 in Resources */,
-				46EF428919807D83001022E8 /* 3D Model Media Button.PNG in Resources */,
-				46EF428E19807D83001022E8 /* Blue Popup Video Media Button.PNG in Resources */,
 				46EC9757195B84EF00E05CEB /* Sacral.png in Resources */,
-				46EF428A19807D83001022E8 /* Animation Media Button.PNG in Resources */,
 				46EC9755195B84EF00E05CEB /* Cervical.png in Resources */,
-				46EF429219807D83001022E8 /* Popup Video Media Button.PNG in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
 				461B45EC1950CE980000189B /* Thoracic_Drawing.png in Resources */,
 				D0253F43193FE10A00CFE2AC /* E1.png in Resources */,
 				D08A364C1958762F005E5C77 /* closedIcon.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				5962243319508A3A00701B76 /* SC change position.png in Resources */,
-				46EF428D19807D83001022E8 /* Blue Popup Animation Media Button.PNG in Resources */,
+				D0C65E6A198089810061D626 /* Popup 3D Model Media Button.PNG in Resources */,
 				597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */,
 				46EF42AB1980883D001022E8 /* Video Media Button.PNG in Resources */,
 				46EF42A81980883D001022E8 /* Popup 3D Model Media Button.PNG in Resources */,
@@ -896,13 +931,13 @@
 				D016FF9D19798C7700023668 /* osu-web-footer-wordmark-rev.png in Resources */,
 				466C49B4193BB914000B2A78 /* home.png in Resources */,
 				D0253F49193FE10A00CFE2AC /* E7.png in Resources */,
+				D0C65E63198089810061D626 /* 2D Image Media Button.PNG in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
 				D0253F44193FE10A00CFE2AC /* E2.png in Resources */,
 				D0CE26061964C55E00E39DFC /* histology.jpg in Resources */,
 				D0253F45193FE10A00CFE2AC /* E3.png in Resources */,
 				461B45E91950CE980000189B /* Lumbar_Scan.png in Resources */,
 				D016FF9F19798C7700023668 /* osu-web-header-vert2-rev.png in Resources */,
-				46EF429319807D83001022E8 /* Video Media Button.PNG in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
 				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
 				D0CE26091964C93500E39DFC /* green-book.png in Resources */,
@@ -911,11 +946,11 @@
 				461B45EB1950CE980000189B /* Sacral_Scan.png in Resources */,
 				46EF42A41980883D001022E8 /* Blue Popup 3D Model Media Button.PNG in Resources */,
 				D06E5E45192FA51D00A12651 /* Main.storyboard in Resources */,
+				D0C65E69198089810061D626 /* Popup 2D Image Media Button.PNG in Resources */,
 				D085395F196B3B7D000962D8 /* IndexAll.png in Resources */,
 				46EF42A71980883D001022E8 /* Popup 2D Image Media Button.PNG in Resources */,
 				D016FF9E19798C7700023668 /* osu-web-header-horiz.png in Resources */,
 				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
-				46EF428C19807D83001022E8 /* Blue Popup 3D Model Media Button.PNG in Resources */,
 				5962243C19508A3A00701B76 /* neuro-sacral.jpg in Resources */,
 				5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */,
 				D0D8CC20195B7125009ECF3E /* E1.png in Resources */,
@@ -954,9 +989,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5953AA101946802C00677409 /* Gross3DModelViewController.m in Sources */,
+				599DE2331980666D00995432 /* OBShapedButton.m in Sources */,
 				D0774D8D193CD8D300821D51 /* ExpandingCell.m in Sources */,
 				D074CE70192FF7A000A2BAB1 /* NeuroViewController.m in Sources */,
 				5953AA131946828B00677409 /* NeuroAnimationsListViewController.m in Sources */,
+				599DE2341980666D00995432 /* UIImage+ColorAtPixel.m in Sources */,
 				D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */,
 				D06E5E42192FA51D00A12651 /* HomePageAppDelegate.m in Sources */,
 				D074CE64192FF3CB00A2BAB1 /* HistologyViewController.m in Sources */,
