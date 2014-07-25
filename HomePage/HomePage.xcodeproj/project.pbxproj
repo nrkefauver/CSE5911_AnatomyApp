@@ -35,18 +35,6 @@
 		46EC9757195B84EF00E05CEB /* Sacral.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9753195B84EF00E05CEB /* Sacral.png */; };
 		46EC9758195B84EF00E05CEB /* Thoracic.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9754195B84EF00E05CEB /* Thoracic.png */; };
 		46EC975A195B85D300E05CEB /* Grey Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9759195B85D300E05CEB /* Grey Button.png */; };
-		46EF428819807D83001022E8 /* 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF427C19807D83001022E8 /* 2D Image Media Button.PNG */; };
-		46EF428919807D83001022E8 /* 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF427D19807D83001022E8 /* 3D Model Media Button.PNG */; };
-		46EF428A19807D83001022E8 /* Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF427E19807D83001022E8 /* Animation Media Button.PNG */; };
-		46EF428B19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF427F19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG */; };
-		46EF428C19807D83001022E8 /* Blue Popup 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428019807D83001022E8 /* Blue Popup 3D Model Media Button.PNG */; };
-		46EF428D19807D83001022E8 /* Blue Popup Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428119807D83001022E8 /* Blue Popup Animation Media Button.PNG */; };
-		46EF428E19807D83001022E8 /* Blue Popup Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428219807D83001022E8 /* Blue Popup Video Media Button.PNG */; };
-		46EF428F19807D83001022E8 /* Popup 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428319807D83001022E8 /* Popup 2D Image Media Button.PNG */; };
-		46EF429019807D83001022E8 /* Popup 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428419807D83001022E8 /* Popup 3D Model Media Button.PNG */; };
-		46EF429119807D83001022E8 /* Popup Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428519807D83001022E8 /* Popup Animation Media Button.PNG */; };
-		46EF429219807D83001022E8 /* Popup Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428619807D83001022E8 /* Popup Video Media Button.PNG */; };
-		46EF429319807D83001022E8 /* Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF428719807D83001022E8 /* Video Media Button.PNG */; };
 		46EF42A01980883D001022E8 /* 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF42941980883D001022E8 /* 2D Image Media Button.PNG */; };
 		46EF42A11980883D001022E8 /* 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF42951980883D001022E8 /* 3D Model Media Button.PNG */; };
 		46EF42A21980883D001022E8 /* Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF42961980883D001022E8 /* Animation Media Button.PNG */; };
@@ -90,7 +78,6 @@
 		597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597F179D195C873500A722CD /* PopoverTableViewCell.xib */; };
 		599DE2331980666D00995432 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DE2301980666D00995432 /* OBShapedButton.m */; };
 		599DE2341980666D00995432 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DE2321980666D00995432 /* UIImage+ColorAtPixel.m */; };
-		599DE238198070B700995432 /* cuneate.png in Resources */ = {isa = PBXBuildFile; fileRef = 599DE237198070B700995432 /* cuneate.png */; };
 		59CAAC0C1962152900F06D88 /* SampleVideo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 59CAAC0B1962152900F06D88 /* SampleVideo.MOV */; };
 		7CC1BD291958E24B00B70823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC1BD281958E24B00B70823 /* MapKit.framework */; };
 		D00CA83B194792CB00C01BBF /* NeuroIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CA83A194792CB00C01BBF /* NeuroIndexViewController.m */; };
@@ -141,13 +128,9 @@
 		D0A0115719524E340051A7F4 /* EMAccordionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */; };
 		D0C65E63198089810061D626 /* 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E59198089810061D626 /* 2D Image Media Button.PNG */; };
 		D0C65E64198089810061D626 /* 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5A198089810061D626 /* 3D Model Media Button.PNG */; };
-		D0C65E65198089810061D626 /* Blue Popup 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5B198089810061D626 /* Blue Popup 2D Image Media Button.PNG */; };
-		D0C65E66198089810061D626 /* Blue Popup 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5C198089810061D626 /* Blue Popup 3D Model Media Button.PNG */; };
-		D0C65E67198089810061D626 /* Blue Popup Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5D198089810061D626 /* Blue Popup Animation Media Button.PNG */; };
 		D0C65E68198089810061D626 /* Blue Popup Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5E198089810061D626 /* Blue Popup Video Media Button.PNG */; };
 		D0C65E69198089810061D626 /* Popup 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E5F198089810061D626 /* Popup 2D Image Media Button.PNG */; };
 		D0C65E6A198089810061D626 /* Popup 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E60198089810061D626 /* Popup 3D Model Media Button.PNG */; };
-		D0C65E6B198089810061D626 /* Popup Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E61198089810061D626 /* Popup Animation Media Button.PNG */; };
 		D0C65E6C198089810061D626 /* Popup Video Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0C65E62198089810061D626 /* Popup Video Media Button.PNG */; };
 		D0CE26041964C55E00E39DFC /* Embryo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26001964C55E00E39DFC /* Embryo.jpg */; };
 		D0CE26051964C55E00E39DFC /* Gross.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26011964C55E00E39DFC /* Gross.jpg */; };
@@ -208,18 +191,6 @@
 		46EC9753195B84EF00E05CEB /* Sacral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sacral.png; sourceTree = "<group>"; };
 		46EC9754195B84EF00E05CEB /* Thoracic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thoracic.png; sourceTree = "<group>"; };
 		46EC9759195B85D300E05CEB /* Grey Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Grey Button.png"; path = "Images/Grey Button.png"; sourceTree = "<group>"; };
-		46EF427C19807D83001022E8 /* 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2D Image Media Button.PNG"; sourceTree = "<group>"; };
-		46EF427D19807D83001022E8 /* 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3D Model Media Button.PNG"; sourceTree = "<group>"; };
-		46EF427E19807D83001022E8 /* Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Animation Media Button.PNG"; sourceTree = "<group>"; };
-		46EF427F19807D83001022E8 /* Blue Popup 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Popup 2D Image Media Button.PNG"; sourceTree = "<group>"; };
-		46EF428019807D83001022E8 /* Blue Popup 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Popup 3D Model Media Button.PNG"; sourceTree = "<group>"; };
-		46EF428119807D83001022E8 /* Blue Popup Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Popup Animation Media Button.PNG"; sourceTree = "<group>"; };
-		46EF428219807D83001022E8 /* Blue Popup Video Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Popup Video Media Button.PNG"; sourceTree = "<group>"; };
-		46EF428319807D83001022E8 /* Popup 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popup 2D Image Media Button.PNG"; sourceTree = "<group>"; };
-		46EF428419807D83001022E8 /* Popup 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popup 3D Model Media Button.PNG"; sourceTree = "<group>"; };
-		46EF428519807D83001022E8 /* Popup Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popup Animation Media Button.PNG"; sourceTree = "<group>"; };
-		46EF428619807D83001022E8 /* Popup Video Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popup Video Media Button.PNG"; sourceTree = "<group>"; };
-		46EF428719807D83001022E8 /* Video Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video Media Button.PNG"; sourceTree = "<group>"; };
 		46EF42941980883D001022E8 /* 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2D Image Media Button.PNG"; sourceTree = "<group>"; };
 		46EF42951980883D001022E8 /* 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3D Model Media Button.PNG"; sourceTree = "<group>"; };
 		46EF42961980883D001022E8 /* Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Animation Media Button.PNG"; sourceTree = "<group>"; };
@@ -916,7 +887,6 @@
 				597F179F195C873500A722CD /* PopoverTableViewCell.xib in Resources */,
 				46EF42AB1980883D001022E8 /* Video Media Button.PNG in Resources */,
 				46EF42A81980883D001022E8 /* Popup 3D Model Media Button.PNG in Resources */,
-				46EF428F19807D83001022E8 /* Popup 2D Image Media Button.PNG in Resources */,
 				D08A364E19587780005E5C77 /* openedIcon.png in Resources */,
 				466C49B6193BB914000B2A78 /* videos.png in Resources */,
 				D0FFFB971977379900BA4D7B /* Animation Media Button.PNG in Resources */,
@@ -925,7 +895,6 @@
 				59CAAC0C1962152900F06D88 /* SampleVideo.MOV in Resources */,
 				D03DE5F0197D6BD300E674DC /* AfferentTracts.plist in Resources */,
 				D0FFFB981977379900BA4D7B /* Video Media Button.PNG in Resources */,
-				46EF429119807D83001022E8 /* Popup Animation Media Button.PNG in Resources */,
 				46EF42A21980883D001022E8 /* Animation Media Button.PNG in Resources */,
 				46EF42A31980883D001022E8 /* Blue Popup 2D Image Media Button.PNG in Resources */,
 				D016FF9D19798C7700023668 /* osu-web-footer-wordmark-rev.png in Resources */,
