@@ -263,16 +263,16 @@
 // Show popover menu when user clicks "Dorsal Primary Ramus"
 - (IBAction)onDorsalPrimaryRamus:(id)sender
 {
-    // Set index for term 124: DorsalPrimaryRamus
-    int index = 123;
+    // Set index for term 122: DorsalPrimaryRamus
+    int index = 122;
     [self showPopoverAbove:(id)sender index:(int)index];
 }
 
 // Show popover menu when user clicks "Ventral Primary Ramus"
 - (IBAction)onVentralPrimaryRamus:(id)sender
 {
-    // Set index for term 140: VentralPrimaryRamus
-    int index = 139;
+    // Set index for term 138: VentralPrimaryRamus
+    int index = 138;
     [self showPopoverBelow:(id)sender index:(int)index];
 }
 

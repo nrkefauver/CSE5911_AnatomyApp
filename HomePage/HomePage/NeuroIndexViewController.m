@@ -24,6 +24,7 @@ static NSIndexPath *globalIndexPath;
 static UITableView *globalTableView;
 static bool tableViewIsCreated = false;
 static enum selectedDisciplineEnum selectedDiscipline = neuro;
+static int NeuroMedia = 5; //Position in property list for all Neuro Media options
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -56,7 +57,8 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     subtitleArray = [[NSMutableArray alloc] init];
     textArray = [[NSMutableArray alloc] init];
     masterDictionary = [[NSMutableDictionary alloc] init];
-    
+    mediaDictionary = [[NSMutableDictionary alloc] init];
+
     //This declares the path to the Terms.plist where all the terms for the entire project are found
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
     
@@ -67,6 +69,8 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     NSMutableArray *tempNames = [[NSMutableArray alloc] init];
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
     NSMutableArray *defOptions = [[NSMutableArray alloc] init];
+    NSMutableArray *mediaOptions = [[NSMutableArray alloc] init];
+
     for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:1] isEqualToString:@""]) {
@@ -81,6 +85,15 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
                 [defOptions addObject:temp];
+                
+                //Creates array of all the possible media for each term
+                NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:NeuroMedia] objectAtIndex:0]];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:NeuroMedia] objectAtIndex:1]];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:NeuroMedia] objectAtIndex:2]];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:NeuroMedia] objectAtIndex:3]];
+                [mediaOptions addObject:tempMedia];
+
             }
         }
     }
@@ -88,6 +101,10 @@ static enum selectedDisciplineEnum selectedDiscipline = neuro;
     //Adds all Neuro terms and their designated definitions to the overall dictionary
     NSDictionary *tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
     [masterDictionary addEntriesFromDictionary:tempDict];
+    
+    //Adds all Neuro terms and their designated media to the media dictionary
+    NSDictionary *mediaDict = [[NSDictionary alloc] initWithObjects:mediaOptions forKeys:tempNames];
+    [mediaDictionary addEntriesFromDictionary:mediaDict];
     
     //Create Dictionary for terms and their definitions
     NSDictionary *nTerms = [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];

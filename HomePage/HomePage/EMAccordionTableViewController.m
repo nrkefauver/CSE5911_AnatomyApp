@@ -163,7 +163,7 @@
     NSNumber *updatedValue = [NSNumber numberWithBool:!value];
     
     [sectionsOpened setObject:updatedValue atIndexedSubscript:index];
-    
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
     [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:index] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 

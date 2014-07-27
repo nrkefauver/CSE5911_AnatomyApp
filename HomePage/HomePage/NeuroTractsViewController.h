@@ -10,6 +10,7 @@
 #import "RNFrostedSidebar.h"
 
 @interface NeuroTractsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UITableView *afferentTableView;
 @property (weak, nonatomic) IBOutlet UITableView *efferentTableView;
 
