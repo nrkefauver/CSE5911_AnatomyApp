@@ -156,7 +156,6 @@
 // Play video
 -(void)playMovie:(id)sender movieName:(NSString*)moviePath fileType:(NSString*)fileType
 {
-    NSLog(@"play movie called with %p",sender);
     NSString*path=[[NSBundle mainBundle] pathForResource:moviePath ofType:fileType];
     NSURL*url=[NSURL fileURLWithPath:path];
     

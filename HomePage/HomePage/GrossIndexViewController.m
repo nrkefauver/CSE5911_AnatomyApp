@@ -249,18 +249,21 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             
             break;}
         {case 1: //Histo
+            // Set the segmented control to Histo
             [segmentedControl setSelectedSegmentIndex:1];
             
-            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-
-
+            // Set button for 3D Model if applicable
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]objectAtIndex:1]isEqualToString:@""])
+            {
+                // Set videos
+                UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                
+                // Set actions
+                [button1 addTarget:self
+                            action:@selector(histo2DButtonPressed)
+                  forControlEvents:UIControlEventTouchUpInside];
+            }
             break;
             
         }
@@ -287,10 +290,6 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             }
             
             // Set button for Animation if applicable
-//            NSLog(@"3d: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]);
-//            NSLog(@"2d: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]);
-//            NSLog(@"vid: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]);
-//            NSLog(@"anim: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]);
             if (button1IsTaken)
             {
                 if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3]isEqualToString:@""])
@@ -544,8 +543,8 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
 
 - (void) histo2DButtonPressed
 {
-    //    mediaButtonSegue = true;
-    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"GrossIndexToHistoSlideSegue" sender:self];
 }
 
 - (void) embryoAnimationButtonPressed
@@ -587,25 +586,37 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
     
     if (mediaButtonSegue)
     {
+        // Gross 2D
         if([segue.identifier isEqualToString:@"GrossIndexToGrossHomeSegue"])
         {
             grossHomeVC = segue.destinationViewController;
             grossHomeVC.initialPopupName = partName;
         }
-        //        else if([segue.identifier isEqualToString:@"GrossIndexToGross3DModelSegue"])
-        //        {
+        // Gross 3D
+        //else if([segue.identifier isEqualToString:@"GrossIndexToGross3DModelSegue"])
+        //{
         //
-        //        }
+        //}
+        // Gross Video
         else if([segue.identifier isEqualToString:@"GrossIndexToGrossVideosSegue"])
         {
             grossVideoVC = segue.destinationViewController;
             grossVideoVC.startUpVideoName = videoName;
         }
+        // Embryo Animation
         else if([segue.identifier isEqualToString:@"GrossIndexToEmbryoAnimationsListSegue"])
         {
             embryoAnimationVC = segue.destinationViewController;
             embryoAnimationVC.startUpVideoName = videoName;
         }
+        // Embryo 2D
+        //else if([segue.identifier isEqualToString:@""])
+        //{
+        //}
+        // Histo 2D
+        //else if([segue.identifier isEqualToString:@""])
+        //{
+        //}
     }
     
 }

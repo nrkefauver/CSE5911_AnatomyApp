@@ -246,16 +246,21 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
               forControlEvents:UIControlEventTouchUpInside];
             break;}
         {case 1: //Histo
+            // Set the segmented control to Histo
             [segmentedControl setSelectedSegmentIndex:1];
             
-            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            
-            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
+            // Set button for 3D Model if applicable
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]objectAtIndex:1]isEqualToString:@""])
+            {
+                // Set videos
+                UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                
+                // Set actions
+                [button1 addTarget:self
+                            action:@selector(histo2DButtonPressed)
+                  forControlEvents:UIControlEventTouchUpInside];
+            }
             break;}
         {case 2: //Embryo
             // Set the segmented control to Embryo
@@ -529,8 +534,8 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
 
 - (void) histo2DButtonPressed
 {
-    //    mediaButtonSegue = true;
-    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"EmbryoIndexToHistoSlideSegue" sender:self];
 }
 
 - (void) embryoAnimationButtonPressed
@@ -579,7 +584,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
             grossHomeVC.initialPopupName = partName;
         }
         // Gross 3D
-        // else if([segue.identifier isEqualToString:@"GrossIndexToGross3DModelSegue"])
+        // else if([segue.identifier isEqualToString:@""])
         // {
         // }
         // Gross Video
@@ -596,6 +601,10 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
         }
         // Embryo 2D
         //else if([segue.identifier isEqualToString:@"EmbryoIndexToEmbryoHomeSegue"])
+        //{
+        //}
+        // Histo 2D
+        //else if([segue.identifier isEqualToString:@"EmbryoIndexToHistoSlideSegue"])
         //{
         //}
     }

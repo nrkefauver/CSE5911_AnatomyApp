@@ -466,6 +466,7 @@
                         <segue destination="W8x-iU-qGh" kind="push" identifier="EmbryoIndexToGrossHomeSegue" id="Sqy-U0-VmQ"/>
                         <segue destination="PDT-Rl-dT5" kind="push" identifier="EmbryoIndexToGrossVideoListSegue" id="GqQ-Lq-WQk"/>
                         <segue destination="VUO-9Z-0Vc" kind="push" identifier="EmbryoIndexToGross3DModelSegue" id="2en-Sb-DRb"/>
+                        <segue destination="1Hf-Ur-mTZ" kind="push" identifier="EmbryoIndexToHistoSlideSegue" id="ds3-wK-1ri"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFl-85-1Ew" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -479,7 +480,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-5719" y="1277"/>
+            <point key="canvasLocation" x="1968" y="3341"/>
         </scene>
         <!--Histology View Controller - Histology Home-->
         <scene sceneID="gpV-p3-EIy">
@@ -738,6 +739,12 @@
                         <outlet property="searchDisplayController" destination="gWi-yz-qNN" id="8bR-9g-rAD"/>
                         <segue destination="Ifm-8S-R9e" kind="push" identifier="HistoIndexToHistoHomeSegue" id="yHH-64-pgG"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="HistoIndexToHomeSegue" id="McJ-mb-FCH"/>
+                        <segue destination="1Hf-Ur-mTZ" kind="push" identifier="HistoIndexToHistoSlideSegue" id="Nn5-yA-XOy"/>
+                        <segue destination="W8x-iU-qGh" kind="push" identifier="HistoIndexToGrossHomeSegue" id="H0N-IX-A69"/>
+                        <segue destination="VUO-9Z-0Vc" kind="push" identifier="HistoIndexToGross3DSegue" id="mT3-zS-oQT"/>
+                        <segue destination="PDT-Rl-dT5" kind="push" identifier="HistoIndexToGrossVideoListSegue" id="3I1-Gg-gOo"/>
+                        <segue destination="Zc9-b7-UI4" kind="push" identifier="HistoIndexToEmbryoHomeSegue" id="DpL-XP-x1r"/>
+                        <segue destination="7sD-q7-0nW" kind="push" identifier="HistoIndexToEmbryoAnimationListSegue" id="K7A-Jp-NgL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWW-fn-tqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -767,7 +774,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-2035" y="2193"/>
+            <point key="canvasLocation" x="-1719" y="2201"/>
         </scene>
         <!--Neuro View Controller - Neuroanatomy Home-->
         <scene sceneID="3Rl-AI-FEK">
@@ -1360,6 +1367,7 @@
                         <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossIndexToGross3DModelSegue" id="xBs-ZS-VPb"/>
                         <segue destination="Zc9-b7-UI4" kind="push" identifier="GrossIndexToEmbryoHomeSegue" id="ZNh-68-9tr"/>
                         <segue destination="7sD-q7-0nW" kind="push" identifier="GrossIndexToEmbryoAnimationsListSegue" id="aWh-HB-gvx"/>
+                        <segue destination="1Hf-Ur-mTZ" kind="push" identifier="GrossIndexToHistoSlideSegue" id="las-UW-kvN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPL-fQ-Ra6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1413,7 +1421,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-3847" y="3354"/>
+            <point key="canvasLocation" x="-4035" y="3341"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EI8-Ue-Rx1">
@@ -1464,19 +1472,20 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8VA-9P-1Ft"/>
-        <segue reference="2en-Sb-DRb"/>
         <segue reference="psJ-mD-Iz2"/>
-        <segue reference="qEZ-5V-GMV"/>
-        <segue reference="gyO-mB-WHb"/>
+        <segue reference="aWh-HB-gvx"/>
         <segue reference="TJa-hY-aVm"/>
-        <segue reference="EZM-zG-zgc"/>
-        <segue reference="fBN-DZ-xZq"/>
-        <segue reference="TMk-2L-1Y4"/>
-        <segue reference="far-xO-xjq"/>
+        <segue reference="xBs-ZS-VPb"/>
+        <segue reference="las-UW-kvN"/>
+        <segue reference="S6H-Ku-lpQ"/>
+        <segue reference="9Yg-Nh-qkQ"/>
+        <segue reference="bx9-rw-uZM"/>
+        <segue reference="ZNh-68-9tr"/>
         <segue reference="iXe-hZ-jWL"/>
-        <segue reference="PdE-pb-my7"/>
+        <segue reference="yHH-64-pgG"/>
+        <segue reference="far-xO-xjq"/>
         <segue reference="Rde-ZO-HXw"/>
+        <segue reference="PdE-pb-my7"/>
         <segue reference="f8e-Mr-dEL"/>
     </inferredMetricsTieBreakers>
 </document>
