@@ -151,9 +151,9 @@
 			<string></string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -182,9 +182,9 @@
 			<string></string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -246,9 +246,9 @@
 			<string></string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -339,9 +339,9 @@
 			<string>Neuraltube_001</string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -432,9 +432,9 @@
 			<string>Neuraltube_001</string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -463,9 +463,9 @@
 			<string>Neuraltube_001</string>
 		</array>
 		<array>
-			<string></string>
+			<string>3D_Model</string>
 			<string>Dorsal Root Ganglion</string>
-			<string>Dorsal Rootlets</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -649,9 +649,9 @@
 			<string></string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -1992,9 +1992,9 @@
 	<array>
 		<string>Gray Matter</string>
 		<string></string>
-		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is gray in appearance due to the large aggregation of neuron cell bodies. Also contains dendrites, axons and central neuroglia.</string>
 		<string></string>
 		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is gray in appearance due to the large aggregation of neuron cell bodies. Also contains dendrites, axons and central neuroglia.</string>
+		<string>General term used to describe the color seen grossly in the central nervous system. The neural tissue is gray in appearance due to the large aggregation of neuron cell bodies. Also contains dendrites, axons and central neuroglia.</string>
 		<array>
 			<string></string>
 			<string></string>
@@ -2015,8 +2015,8 @@
 		</array>
 		<array>
 			<string></string>
-			<string></string>
-			<string></string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -2605,9 +2605,9 @@
 			<string></string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -3629,7 +3629,7 @@
 		</array>
 		<array>
 			<string></string>
-			<string></string>
+			<string>Image</string>
 			<string></string>
 			<string></string>
 		</array>
@@ -3690,9 +3690,9 @@
 			<string></string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -3815,8 +3815,8 @@
 		</array>
 		<array>
 			<string></string>
-			<string></string>
-			<string></string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -3845,9 +3845,9 @@
 			<string></string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Dorsal Rami of Spinal Nerves</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
@@ -3938,9 +3938,9 @@
 			<string></string>
 		</array>
 		<array>
-			<string></string>
-			<string></string>
-			<string></string>
+			<string>3D_Model</string>
+			<string>Image</string>
+			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
 	</array>
