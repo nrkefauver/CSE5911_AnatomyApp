@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>Anterior corticospinal tract</string>
-	<string>Lateral corticospinal tract</string>
-	<string>Olivospinal tract</string>
-	<string>Reticulospinal tracts</string>
-	<string>Rubrospinal tracts</string>
-	<string>Vestibulospinal tracts</string>
+	<string>Anterior Corticospinal Tract</string>
+	<string>Lateral Corticospinal Tract</string>
+	<string>Olivospinal Tract</string>
+	<string>Reticulospinal Tracts</string>
+	<string>Rubrospinal Tracts</string>
+	<string>Vestibulospinal Tracts</string>
 </array>
 </plist>
