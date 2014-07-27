@@ -13,6 +13,24 @@
 @end
 
 @implementation Gross3DModelViewController
+- (IBAction)UnityButtonPushed:(id)sender {
+    NSString *customURL = @"OSUanatomyapp://edu.osu.unitymodel1";
+    //  NSString *customURL = @"iOSDevTips2://";
+    
+    
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:customURL]])
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:customURL]];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"URL error"
+                                                        message:[NSString stringWithFormat:@"No custom URL defined for %@", customURL]
+                                                       delegate:self cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
