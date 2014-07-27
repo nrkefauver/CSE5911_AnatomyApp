@@ -22,6 +22,7 @@ static NSIndexPath *globalIndexPath;
 static UITableView *globalTableView;
 static bool tableViewIsCreated = false;
 static enum selectedDisciplineEnum selectedDiscipline = histo;
+static int HistoMedia = 6; //Position in property list for all Histo Media options
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -55,7 +56,8 @@ static enum selectedDisciplineEnum selectedDiscipline = histo;
     subtitleArray = [[NSMutableArray alloc] init];
     textArray = [[NSMutableArray alloc] init];
     masterDictionary = [[NSMutableDictionary alloc] init];
-    
+    mediaDictionary = [[NSMutableDictionary alloc] init];
+
     //This declares the path to the Terms.plist where all the terms for the entire project are found
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
     
@@ -66,6 +68,7 @@ static enum selectedDisciplineEnum selectedDiscipline = histo;
     NSMutableArray *tempNames = [[NSMutableArray alloc] init];
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
     NSMutableArray *defOptions = [[NSMutableArray alloc] init];
+    NSMutableArray *mediaOptions = [[NSMutableArray alloc] init];
 
     for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
@@ -81,6 +84,14 @@ static enum selectedDisciplineEnum selectedDiscipline = histo;
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
                 [defOptions addObject:temp];
+                
+                //Creates array of all the possible media for each term
+                NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:HistoMedia] objectAtIndex:0]];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:HistoMedia] objectAtIndex:1]];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:HistoMedia] objectAtIndex:2]];
+                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:HistoMedia] objectAtIndex:3]];
+                [mediaOptions addObject:tempMedia];
 
             }
         }
@@ -88,6 +99,10 @@ static enum selectedDisciplineEnum selectedDiscipline = histo;
     //Adds all Histo terms and their designated definitions to the overall dictionary
     NSDictionary *tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
     [masterDictionary addEntriesFromDictionary:tempDict];
+    
+    //Adds all Gross terms and their designated media to the media dictionary
+    NSDictionary *mediaDict = [[NSDictionary alloc] initWithObjects:mediaOptions forKeys:tempNames];
+    [mediaDictionary addEntriesFromDictionary:mediaDict];
     
     //Create Dictionary for terms and their definitions
     NSDictionary *nTerms = [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];

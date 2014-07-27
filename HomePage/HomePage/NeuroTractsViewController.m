@@ -15,6 +15,7 @@
 @implementation NeuroTractsViewController
 @synthesize efferentTableView, afferentTableView;
 NSArray *aTracts, *eTracts;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
