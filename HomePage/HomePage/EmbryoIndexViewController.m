@@ -26,7 +26,10 @@ static UITableView *globalTableView;
 static bool tableViewIsCreated = false;
 static enum selectedDisciplineEnum selectedDiscipline = embryo;
 static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a media button or not
-static int EmbryoMedia = 7; //Position in property list for all Gross Media options
+static int NeuroMedia = 5; //Position in property list for all Neuro Media options
+static int HistoMedia = 6; //Position in property list for all Histo Media options
+static int EmbryoMedia = 7; //Position in property list for all Embryo Media options
+static int GrossMedia = 8; //Position in property list for all Gross Media optionsstatic NSString *partName; //Name of term to display with Popover window in Gross Home
 static NSString *partName; //Name of term to display with Popover window in Gross Home
 static NSString *videoName; //Name of video to play in Embryo Animations List or Gross Video List
 
@@ -93,16 +96,14 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
                 [defOptions addObject:temp];
                 
-                //Creates array of all the possible media for each term
-               // if([[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@"Dorsal Root Ganglion"]){
-                    NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
-                    [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] objectAtIndex:0]];
-                    [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] objectAtIndex:1]];
-                    [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] objectAtIndex:2]];
-                    [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] objectAtIndex:3]];
-                    [mediaOptions addObject:tempMedia];
-                //}
-            }
+                
+                //Creates array of all the media arrays for each term
+                NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
+                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:NeuroMedia]] ;
+                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:HistoMedia] ];
+                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] ];
+                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:GrossMedia]];
+                [mediaOptions addObject:tempMedia];            }
         }
     }
     
@@ -264,7 +265,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
             bool button1IsTaken = false;
             
             // Set button for 2D Image if applicable
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]isEqualToString:@""])
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] objectAtIndex:1]isEqualToString:@""])
             {
                 // Set videos
                 UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
@@ -281,7 +282,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
             // Set button for Animation if applicable
             if (button1IsTaken)
             {
-                if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]isEqualToString:@""])
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] objectAtIndex:3]isEqualToString:@""])
                 {
                     // Set videos
                     UIImage* button2Image = [UIImage imageNamed:@"Animation Media Button"];
@@ -293,12 +294,12 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information for actions
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] objectAtIndex:3];
                 }
             }
             else // Button 1 is not taken
             {
-                if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]isEqualToString:@""])
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3]isEqualToString:@""])
                 {
                     // Set videos
                     UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
@@ -310,7 +311,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information for actions
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3];
                 }
             }
     
@@ -323,7 +324,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
             bool button2IsTaken = false;
             
             // Set button for 3D Model if applicable
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]isEqualToString:@""])
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:0]isEqualToString:@""])
             {
                 // Set videos
                 UIImage* button1Image = [UIImage imageNamed:@"3D Model Media Button"];
@@ -338,7 +339,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
             }
             
             //Set button for 2D Image if applicable
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]isEqualToString:@""])
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1]isEqualToString:@""])
             {
                 if (button1IsTaken)
                 {
@@ -352,7 +353,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    partName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                    partName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1];
                     
                     button2IsTaken = true;
                 }
@@ -368,14 +369,14 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    partName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                    partName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1];
                     
                     button1IsTaken = true;
                 }
             }
             
             //Set button for Video if applicable
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]isEqualToString:@""])
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2]isEqualToString:@""])
             {
                 if ((button1IsTaken)&&(button2IsTaken))
                 {
@@ -390,7 +391,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
                 }
                 else if (button1IsTaken)
                 {
@@ -405,7 +406,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
                 }
                 else
                 {
@@ -420,7 +421,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
                 }
             }
             break;}

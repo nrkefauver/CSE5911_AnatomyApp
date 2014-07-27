@@ -22,8 +22,10 @@ static NSIndexPath *globalIndexPath;
 static UITableView *globalTableView;
 static bool tableViewIsCreated = false;
 static enum selectedDisciplineEnum selectedDiscipline = histo;
+static int NeuroMedia = 5; //Position in property list for all Neuro Media options
 static int HistoMedia = 6; //Position in property list for all Histo Media options
-
+static int EmbryoMedia = 7; //Position in property list for all Embryo Media options
+static int GrossMedia = 8; //Position in property list for all Gross Media options
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -85,12 +87,12 @@ static int HistoMedia = 6; //Position in property list for all Histo Media optio
                 [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
                 [defOptions addObject:temp];
                 
-                //Creates array of all the possible media for each term
+                //Creates array of all the media arrays for each term
                 NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
-                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:HistoMedia] objectAtIndex:0]];
-                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:HistoMedia] objectAtIndex:1]];
-                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:HistoMedia] objectAtIndex:2]];
-                [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:HistoMedia] objectAtIndex:3]];
+                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:NeuroMedia]] ;
+                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:HistoMedia] ];
+                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] ];
+                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:GrossMedia]];
                 [mediaOptions addObject:tempMedia];
 
             }
@@ -121,8 +123,6 @@ static int HistoMedia = 6; //Position in property list for all Histo Media optio
     
     //Creates array of definitions
     textArray = sortedValues;
-    
-    
     
 }
 

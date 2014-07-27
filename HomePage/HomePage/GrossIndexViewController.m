@@ -81,7 +81,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
     NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
     NSMutableArray *defOptions = [[NSMutableArray alloc] init];
     NSMutableArray *mediaOptions = [[NSMutableArray alloc] init];
-    for (int i=0; i< 140; i++) {
+    for (int i=0; i< terms.count; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             //The Gross definition field of each term is checked, and if it is not empty, then the term
             //is added to the list of Gross terms
@@ -272,7 +272,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             bool button1IsTaken = false;
             
             // Set button for 2D Image if applicable
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]isEqualToString:@""])
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:1]isEqualToString:@""])
             {
                 // Set videos
                 UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
@@ -287,15 +287,15 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             }
             
             // Set button for Animation if applicable
-            NSLog(@"3d: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]);
-            NSLog(@"2d: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]);
-            NSLog(@"vid: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]);
-            NSLog(@"anim: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]);
+//            NSLog(@"3d: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]);
+//            NSLog(@"2d: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]);
+//            NSLog(@"vid: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]);
+//            NSLog(@"anim: %@",[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]);
             if (button1IsTaken)
             {
-                if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]isEqualToString:@""])
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3]isEqualToString:@""])
                 {
-                    // Set videos
+                    // Set animation
                     UIImage* button2Image = [UIImage imageNamed:@"Animation Media Button"];
                     [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
                     
@@ -305,12 +305,12 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information for actions
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3];
                 }
             }
             else // Button 1 is not taken
             {
-                if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]isEqualToString:@""])
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] objectAtIndex:3]isEqualToString:@""])
                 {
                     // Set videos
                     UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
@@ -322,7 +322,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information for actions
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3];
                 }
             }
             
@@ -335,7 +335,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             bool button2IsTaken = false;
             
             // Set button for 3D Model if applicable
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]isEqualToString:@""])
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:0]isEqualToString:@""])
             {
                 // Set videos
                 UIImage* button1Image = [UIImage imageNamed:@"3D Model Media Button"];
@@ -350,7 +350,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             }
             
             //Set button for 2D Image if applicable
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]isEqualToString:@""])
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1]isEqualToString:@""])
             {
                 if (button1IsTaken)
                 {
@@ -364,7 +364,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    partName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                    partName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1];
                     
                     button2IsTaken = true;
                 }
@@ -380,14 +380,14 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    partName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
+                    partName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1];
                     
                     button1IsTaken = true;
                 }
             }
             
             //Set button for Video if applicable
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]isEqualToString:@""])
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2]isEqualToString:@""])
             {
                 if ((button1IsTaken)&&(button2IsTaken))
                 {
@@ -402,7 +402,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
                 }
                 else if (button1IsTaken)
                 {
@@ -417,7 +417,8 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
+
                 }
                 else
                 {
@@ -432,7 +433,8 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                       forControlEvents:UIControlEventTouchUpInside];
                     
                     // Set information to be passed
-                    videoName = [[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2];
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
+
                 }
             }
             break;}
