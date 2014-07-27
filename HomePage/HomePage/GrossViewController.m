@@ -55,8 +55,6 @@
     // If gross home has been passed a term to popup, show popup window
     if (self.initialPopupName != nil)
     {
-        //self.initialPopupName = @"Ventral Horn of Gray Matter";
-        
         // Run in the background while the page finishes loading
         [self performSelectorInBackground:@selector(showInitialPopup) withObject:nil];
     }
@@ -161,7 +159,7 @@
     {
         button = (UIButton*)[self.view viewWithTag:10];
     }
-    else if ([self.initialPopupName  isEqual: @"Dorsal Horn Gray Matter"])
+    else if ([self.initialPopupName  isEqual: @"Dorsal Horn of Gray Matter"])
     {
         button = (UIButton*)[self.view viewWithTag:20];
     }

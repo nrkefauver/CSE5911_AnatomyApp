@@ -340,7 +340,7 @@
 		</array>
 		<array>
 			<string>3D_Model</string>
-			<string>Image</string>
+			<string>Dorsal Horn of Gray Matter</string>
 			<string>Neuraltube_001</string>
 			<string></string>
 		</array>
@@ -495,8 +495,8 @@
 		</array>
 		<array>
 			<string></string>
+			<string>Dorsal Rootlets</string>
 			<string></string>
-			<string>Dorsal Roots</string>
 			<string></string>
 		</array>
 	</array>
@@ -1270,7 +1270,7 @@
 		</array>
 		<array>
 			<string></string>
-			<string></string>
+			<string>Spinal Nerve</string>
 			<string></string>
 			<string></string>
 		</array>
@@ -1363,7 +1363,7 @@
 		</array>
 		<array>
 			<string></string>
-			<string></string>
+			<string>Ventral Horn of Gray Matter</string>
 			<string></string>
 			<string></string>
 		</array>
@@ -1394,7 +1394,7 @@
 		</array>
 		<array>
 			<string></string>
-			<string></string>
+			<string>Ventral Median Fissure</string>
 			<string></string>
 			<string></string>
 		</array>
@@ -1425,7 +1425,7 @@
 		</array>
 		<array>
 			<string></string>
-			<string></string>
+			<string>Ventral Roots of Spinal Nerves</string>
 			<string></string>
 			<string></string>
 		</array>
@@ -3598,7 +3598,7 @@
 		</array>
 		<array>
 			<string></string>
-			<string>Image</string>
+			<string></string>
 			<string></string>
 			<string></string>
 		</array>
@@ -3629,7 +3629,7 @@
 		</array>
 		<array>
 			<string></string>
-			<string></string>
+			<string>Image</string>
 			<string></string>
 			<string></string>
 		</array>
@@ -3732,7 +3732,7 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
+		<string>Clear fluid found surrounding the brain and spinal cord. The fluid is produced within the choroid plexus of the brain. The fluid acts as a cushion and immunological protection for the brain. The cerebrospinal fluid surrounds the brain and spinal cord within the subarachnoid space.</string>
 		<array>
 			<string></string>
 			<string></string>
@@ -4311,7 +4311,7 @@
 		</array>
 		<array>
 			<string></string>
-			<string></string>
+			<string>Ventral Rami of Spinal Nerves</string>
 			<string></string>
 			<string></string>
 		</array>
