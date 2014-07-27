@@ -92,14 +92,13 @@ static bool mediaButtonSegue = false;
                 [defOptions addObject:temp];
                 
                 //Creates array of all the possible media for each term
-                if([[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@"Dorsal Root Ganglion"]){
                 NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
                 [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:GrossMedia] objectAtIndex:0]];
                 [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:GrossMedia] objectAtIndex:1]];
                 [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:GrossMedia] objectAtIndex:2]];
                 [tempMedia addObject:[[[terms objectAtIndex:i] objectAtIndex:GrossMedia] objectAtIndex:3]];
                 [mediaOptions addObject:tempMedia];
-                }
+                
             }
         }
     }
