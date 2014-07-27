@@ -463,6 +463,9 @@
                         <segue destination="7sD-q7-0nW" kind="push" identifier="EmbryoIndexToEmbryoAnimationsListSegue" id="qEZ-5V-GMV"/>
                         <segue destination="Zc9-b7-UI4" kind="push" identifier="EmbryoIndexToEmbryoHomeSegue" id="gyO-mB-WHb"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="EmbryoIndexToHomeSegue" id="40z-R1-3Bt"/>
+                        <segue destination="W8x-iU-qGh" kind="push" identifier="EmbryoIndexToGrossHomeSegue" id="Sqy-U0-VmQ"/>
+                        <segue destination="PDT-Rl-dT5" kind="push" identifier="EmbryoIndexToGrossVideoListSegue" id="GqQ-Lq-WQk"/>
+                        <segue destination="VUO-9Z-0Vc" kind="push" identifier="EmbryoIndexToGross3DModelSegue" id="2en-Sb-DRb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFl-85-1Ew" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -476,7 +479,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1504" y="3333"/>
+            <point key="canvasLocation" x="-5719" y="1277"/>
         </scene>
         <!--Histology View Controller - Histology Home-->
         <scene sceneID="gpV-p3-EIy">
@@ -944,7 +947,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="4582" y="3333"/>
+            <point key="canvasLocation" x="4494" y="3354"/>
         </scene>
         <!--Neuro Tracts View Controller - Spinal Tracts-->
         <scene sceneID="Pwr-be-fJG">
@@ -1343,6 +1346,8 @@
                         <segue destination="W8x-iU-qGh" kind="push" identifier="GrossIndexToGrossHomeSegue" id="S6H-Ku-lpQ"/>
                         <segue destination="PDT-Rl-dT5" kind="push" identifier="GrossIndexToGrossVideosSegue" id="9Yg-Nh-qkQ"/>
                         <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossIndexToGross3DModelSegue" id="xBs-ZS-VPb"/>
+                        <segue destination="Zc9-b7-UI4" kind="push" identifier="GrossIndexToEmbryoHomeSegue" id="ZNh-68-9tr"/>
+                        <segue destination="7sD-q7-0nW" kind="push" identifier="GrossIndexToEmbryoAnimationsListSegue" id="aWh-HB-gvx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPL-fQ-Ra6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1396,14 +1401,14 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-3855" y="3338"/>
+            <point key="canvasLocation" x="-3847" y="3354"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EI8-Ue-Rx1">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="pCI-72-Nhr" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pjb-tL-mCN">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="461"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1417,7 +1422,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Bm8-IM-9Jj" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fMY-L0-Pir">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1447,19 +1452,19 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="far-xO-xjq"/>
-        <segue reference="TMk-2L-1Y4"/>
-        <segue reference="AwG-wi-xhT"/>
-        <segue reference="Cbj-Qs-rfV"/>
-        <segue reference="8Ym-jz-PyO"/>
+        <segue reference="PdE-pb-my7"/>
         <segue reference="Rde-ZO-HXw"/>
-        <segue reference="32O-Pf-eqc"/>
-        <segue reference="KNf-OE-a5W"/>
-        <segue reference="ang-sS-8TK"/>
+        <segue reference="f8e-Mr-dEL"/>
+        <segue reference="TMk-2L-1Y4"/>
+        <segue reference="40z-R1-3Bt"/>
+        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="gyO-mB-WHb"/>
+        <segue reference="Sqy-U0-VmQ"/>
+        <segue reference="GqQ-Lq-WQk"/>
+        <segue reference="2en-Sb-DRb"/>
+        <segue reference="rGW-JB-R7R"/>
         <segue reference="iXe-hZ-jWL"/>
-        <segue reference="zth-Qd-6wy"/>
-        <segue reference="S6H-Ku-lpQ"/>
-        <segue reference="xBs-ZS-VPb"/>
-        <segue reference="9Yg-Nh-qkQ"/>
+        <segue reference="far-xO-xjq"/>
     </inferredMetricsTieBreakers>
 </document>
