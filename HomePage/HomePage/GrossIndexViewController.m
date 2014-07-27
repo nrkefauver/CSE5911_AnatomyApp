@@ -109,9 +109,7 @@ static bool mediaButtonSegue = false;
     [masterDictionary addEntriesFromDictionary:tempDict];
     
     //Adds all Gross terms and their designated media to the media dictionary
-    NSMutableArray *test = [[NSMutableArray alloc] init];
-    [test addObject:@"Dorsal Root Ganglion"];
-    NSDictionary *mediaDict = [[NSDictionary alloc] initWithObjects:mediaOptions forKeys:test];
+    NSDictionary *mediaDict = [[NSDictionary alloc] initWithObjects:mediaOptions forKeys:tempNames];
     [mediaDictionary addEntriesFromDictionary:mediaDict];
     
     //Create Dictionary for terms and their definitions
