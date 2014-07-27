@@ -281,7 +281,7 @@ static bool mediaButtonSegue = false;
             bool button2IsTaken = false;
             
             // Set button for 3D Model if applicable
-            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]isEqualToString:@""])
+            if (![[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]isEqualToString:@""])
             {
                 // Set videos
                 UIImage* button1Image = [UIImage imageNamed:@"3D Model Media Button"];
