@@ -11,4 +11,6 @@
 
 @interface GrossVideoListViewController : UIViewController
 
+@property (strong, nonatomic) NSString *startUpVideoName;
+
 @end

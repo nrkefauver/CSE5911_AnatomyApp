@@ -26,7 +26,6 @@ static enum selectedDisciplineEnum selectedDiscipline = embryo;
 static bool mediaButtonSegue = false;
 static int EmbryoMedia = 7; //Position in property list for all Gross Media options
 static NSString *videoName;
-static NSString *videoType;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

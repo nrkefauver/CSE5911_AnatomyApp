@@ -585,7 +585,7 @@
             <objects>
                 <viewController id="1Hf-Ur-mTZ" customClass="HistoSlide1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hly-wK-FfP">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="0.jpg" id="UDp-6O-roh">
@@ -656,7 +656,7 @@
             <objects>
                 <viewController id="6wj-W4-l34" customClass="HistoSlide2ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EoW-Ke-XnU">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lml-r0-W0u">
@@ -1447,19 +1447,19 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Rde-ZO-HXw"/>
-        <segue reference="Cbj-Qs-rfV"/>
-        <segue reference="AwG-wi-xhT"/>
-        <segue reference="TMk-2L-1Y4"/>
-        <segue reference="iXe-hZ-jWL"/>
         <segue reference="far-xO-xjq"/>
-        <segue reference="2YT-sS-ArM"/>
+        <segue reference="TMk-2L-1Y4"/>
+        <segue reference="AwG-wi-xhT"/>
+        <segue reference="Cbj-Qs-rfV"/>
         <segue reference="8Ym-jz-PyO"/>
-        <segue reference="fdm-bw-BD5"/>
-        <segue reference="zth-Qd-6wy"/>
-        <segue reference="xIp-rp-Izy"/>
+        <segue reference="Rde-ZO-HXw"/>
+        <segue reference="32O-Pf-eqc"/>
         <segue reference="KNf-OE-a5W"/>
         <segue reference="ang-sS-8TK"/>
-        <segue reference="32O-Pf-eqc"/>
+        <segue reference="iXe-hZ-jWL"/>
+        <segue reference="zth-Qd-6wy"/>
+        <segue reference="S6H-Ku-lpQ"/>
+        <segue reference="xBs-ZS-VPb"/>
+        <segue reference="9Yg-Nh-qkQ"/>
     </inferredMetricsTieBreakers>
 </document>
