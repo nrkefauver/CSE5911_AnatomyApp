@@ -78,7 +78,6 @@ static NSString *videoType;
 
     for (int i=0; i< 140; i++) {
         if ([terms objectAtIndex:i]!= nil) {
-            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:3] isEqualToString:@""]) {
                 [titleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
                 [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
