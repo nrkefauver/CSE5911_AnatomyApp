@@ -22,6 +22,7 @@
 
 @synthesize infoPassingTest;
 @synthesize imageView = nImageView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -162,7 +163,7 @@
     
     // Set index for term 10: Fasciculus Cuneatus
     int index = 17;
-    [self showPopoverRight:(id)sender index:(int)index];
+    [self showPopoverLeft:(id)sender index:(int)index];
 }
 
 // Create Popover menu LEFT button

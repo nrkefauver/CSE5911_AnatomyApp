@@ -521,10 +521,6 @@
                                     <segue destination="1Hf-Ur-mTZ" kind="push" identifier="HistoSlideToHistoHomeSegue" id="bUz-uz-hug"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" id="KJB-xI-uSl">
-                                <rect key="frame" x="-181" y="316" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tw0-Nn-z79">
                                 <rect key="frame" x="132" y="324" width="142" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -802,18 +798,18 @@
                                 <rect key="frame" x="96" y="130" width="577" height="401"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PQu-w0-D3b">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cervical.png" id="PQu-w0-D3b">
                                         <rect key="frame" x="0.0" y="0.0" width="577" height="401"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Iah-lz-Cz4" customClass="OBShapedButton">
-                                        <rect key="frame" x="289" y="45" width="98" height="132"/>
+                                    <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LH9-dl-ddS" customClass="OBShapedButton">
+                                        <rect key="frame" x="293" y="46" width="92" height="131"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="cuneate.png">
+                                        <state key="normal" image="cuneate2.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="onFasciculusCuneatus:" destination="Z1N-LW-t3Y" eventType="touchUpInside" id="1Ka-ei-yUc"/>
+                                            <action selector="onFasciculusCuneatus:" destination="Z1N-LW-t3Y" eventType="touchUpInside" id="GhZ-Ds-AJt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -861,7 +857,7 @@
                     <view key="view" contentMode="scaleToFill" id="KHV-82-mzu">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Neuroanatomy Animations " id="urP-bW-kRm">
                         <barButtonItem key="backBarButtonItem" title="Neuro Animations List" id="F2i-r2-fdG"/>
@@ -1456,12 +1452,13 @@
         <image name="0.jpg" width="1280" height="1024"/>
         <image name="1.jpg" width="2453" height="1864"/>
         <image name="Black Burger.png" width="45" height="45"/>
+        <image name="Cervical.png" width="3200" height="2240"/>
         <image name="E0.png" width="147" height="195"/>
         <image name="Embryo.jpg" width="948" height="995"/>
         <image name="Grey Button.png" width="200" height="200"/>
         <image name="Gross.jpg" width="570" height="704"/>
         <image name="IndexAll.png" width="226" height="151"/>
-        <image name="cuneate.png" width="520" height="775"/>
+        <image name="cuneate2.png" width="192" height="290"/>
         <image name="histology.jpg" width="971" height="800"/>
         <image name="neuro-lumb-scan.jpg" width="1264" height="1189"/>
         <image name="osu-web-header-horiz.png" width="344" height="114"/>
@@ -1472,20 +1469,20 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="psJ-mD-Iz2"/>
-        <segue reference="aWh-HB-gvx"/>
+        <segue reference="c2K-YH-DqR"/>
+        <segue reference="32O-Pf-eqc"/>
+        <segue reference="MZo-Sv-XyI"/>
         <segue reference="TJa-hY-aVm"/>
         <segue reference="xBs-ZS-VPb"/>
-        <segue reference="las-UW-kvN"/>
         <segue reference="S6H-Ku-lpQ"/>
         <segue reference="9Yg-Nh-qkQ"/>
-        <segue reference="bx9-rw-uZM"/>
+        <segue reference="aWh-HB-gvx"/>
         <segue reference="ZNh-68-9tr"/>
-        <segue reference="iXe-hZ-jWL"/>
+        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="bUz-uz-hug"/>
         <segue reference="yHH-64-pgG"/>
+        <segue reference="iXe-hZ-jWL"/>
+        <segue reference="AwG-wi-xhT"/>
         <segue reference="far-xO-xjq"/>
-        <segue reference="Rde-ZO-HXw"/>
-        <segue reference="PdE-pb-my7"/>
-        <segue reference="f8e-Mr-dEL"/>
     </inferredMetricsTieBreakers>
 </document>
