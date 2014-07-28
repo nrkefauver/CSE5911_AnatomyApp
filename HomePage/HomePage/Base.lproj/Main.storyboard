@@ -802,23 +802,23 @@
                                         <rect key="frame" x="0.0" y="0.0" width="621" height="431"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LH9-dl-ddS" customClass="OBShapedButton">
-                                        <rect key="frame" x="293" y="46" width="92" height="131"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="cuneate2.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onFasciculusCuneatus:" destination="Z1N-LW-t3Y" eventType="touchUpInside" id="GhZ-Ds-AJt"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <connections>
                                     <outlet property="delegate" destination="Z1N-LW-t3Y" id="gNk-wE-L4b"/>
                                 </connections>
                             </scrollView>
+                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n2y-PY-Acw" customClass="OBShapedButton">
+                                <rect key="frame" x="387" y="250" width="128" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cuneate2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onFasciculusCuneatus:" destination="Z1N-LW-t3Y" eventType="touchUpInside" id="Ii4-Ef-al1"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Neuroanatomy Home" id="dfa-Uc-t4u">
                         <barButtonItem key="backBarButtonItem" title="Neuro Home" id="rFO-XY-4kw"/>
