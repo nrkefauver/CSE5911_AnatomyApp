@@ -38,7 +38,7 @@
     // Do any additional setup after loading the view.
     
     //Loads main image to Neuro main screen
-    UIImage* image = [UIImage imageNamed:@"Cervical"];
+    UIImage* image = [UIImage imageNamed:@"CervicalBlack"];
     NSAssert(image, @"image is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
     
     if (infoPassingTest == 1)
@@ -74,16 +74,16 @@
     switch(segmentedControl.selectedSegmentIndex)
     {
         case 0:
-            self.imageView.image = [UIImage imageNamed:@"Cervical"];
+            self.imageView.image = [UIImage imageNamed:@"CervicalBlack"];
             break;
         case 1:
-            self.imageView.image = [UIImage imageNamed:@"Thoracic"];
+            self.imageView.image = [UIImage imageNamed:@"ThoracicBlack"];
             break;
         case 2:
-            self.imageView.image = [UIImage imageNamed:@"Lumbar"];
+            self.imageView.image = [UIImage imageNamed:@"LumbarBlack"];
             break;
         case 3:
-            self.imageView.image = [UIImage imageNamed:@"Sacral"];
+            self.imageView.image = [UIImage imageNamed:@"SacralBlack"];
             break;
     }
 }

@@ -795,11 +795,11 @@
                                 </connections>
                             </segmentedControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yLE-6T-9dc">
-                                <rect key="frame" x="96" y="130" width="577" height="401"/>
+                                <rect key="frame" x="67" y="144" width="621" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PQu-w0-D3b">
-                                        <rect key="frame" x="0.0" y="0.0" width="577" height="401"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="621" height="431"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LH9-dl-ddS" customClass="OBShapedButton">
@@ -1490,11 +1490,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="f8e-Mr-dEL"/>
-        <segue reference="MZo-Sv-XyI"/>
-        <segue reference="Reg-0P-VLu"/>
+        <segue reference="32O-Pf-eqc"/>
         <segue reference="c2K-YH-DqR"/>
+        <segue reference="Rde-ZO-HXw"/>
         <segue reference="xgI-CB-z14"/>
+        <segue reference="hOH-RS-S2g"/>
         <segue reference="bUz-uz-hug"/>
         <segue reference="yHH-64-pgG"/>
         <segue reference="iXe-hZ-jWL"/>
