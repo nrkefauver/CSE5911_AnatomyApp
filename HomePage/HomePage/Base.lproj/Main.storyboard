@@ -798,7 +798,7 @@
                                 <rect key="frame" x="96" y="130" width="577" height="401"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cervical.png" id="PQu-w0-D3b">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PQu-w0-D3b">
                                         <rect key="frame" x="0.0" y="0.0" width="577" height="401"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -848,7 +848,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igv-Zk-Ffw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5006" y="975"/>
+            <point key="canvasLocation" x="4894" y="879"/>
         </scene>
         <!--Neuro Animations List View Controller - Neuroanatomy Animations -->
         <scene sceneID="BCY-Hm-ZMe">
@@ -857,7 +857,26 @@
                     <view key="view" contentMode="scaleToFill" id="KHV-82-mzu">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7ed-XR-bpx">
+                                <rect key="frame" x="444" y="113" width="63" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="videos.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNeuralTube001:" destination="A0d-hn-6U1" eventType="touchUpInside" id="rB2-4G-Hjv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Animation 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eug-RC-Hel">
+                                <rect key="frame" x="155" y="128" width="281" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Neuroanatomy Animations " id="urP-bW-kRm">
                         <barButtonItem key="backBarButtonItem" title="Neuro Animations List" id="F2i-r2-fdG"/>
@@ -950,7 +969,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="4494" y="3354"/>
+            <point key="canvasLocation" x="4390" y="3402"/>
         </scene>
         <!--Neuro Tracts View Controller - Spinal Tracts-->
         <scene sceneID="Pwr-be-fJG">
@@ -1424,7 +1443,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="pCI-72-Nhr" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pjb-tL-mCN">
-                        <rect key="frame" x="0.0" y="0.0" width="344" height="461"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1432,13 +1451,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnL-DN-WLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="6598" y="2761"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Fz3-D1-lGg">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Bm8-IM-9Jj" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fMY-L0-Pir">
-                        <rect key="frame" x="0.0" y="0.0" width="346" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1446,13 +1466,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9D-gU-quH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="6598" y="4038"/>
         </scene>
     </scenes>
     <resources>
         <image name="0.jpg" width="1280" height="1024"/>
         <image name="1.jpg" width="2453" height="1864"/>
         <image name="Black Burger.png" width="45" height="45"/>
-        <image name="Cervical.png" width="3200" height="2240"/>
         <image name="E0.png" width="147" height="195"/>
         <image name="Embryo.jpg" width="948" height="995"/>
         <image name="Grey Button.png" width="200" height="200"/>
@@ -1462,6 +1482,7 @@
         <image name="histology.jpg" width="971" height="800"/>
         <image name="neuro-lumb-scan.jpg" width="1264" height="1189"/>
         <image name="osu-web-header-horiz.png" width="344" height="114"/>
+        <image name="videos.png" width="64" height="64"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1469,20 +1490,20 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="c2K-YH-DqR"/>
-        <segue reference="32O-Pf-eqc"/>
+        <segue reference="f8e-Mr-dEL"/>
         <segue reference="MZo-Sv-XyI"/>
-        <segue reference="TJa-hY-aVm"/>
-        <segue reference="xBs-ZS-VPb"/>
-        <segue reference="S6H-Ku-lpQ"/>
-        <segue reference="9Yg-Nh-qkQ"/>
-        <segue reference="aWh-HB-gvx"/>
-        <segue reference="ZNh-68-9tr"/>
-        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="Reg-0P-VLu"/>
+        <segue reference="c2K-YH-DqR"/>
+        <segue reference="xgI-CB-z14"/>
         <segue reference="bUz-uz-hug"/>
         <segue reference="yHH-64-pgG"/>
         <segue reference="iXe-hZ-jWL"/>
-        <segue reference="AwG-wi-xhT"/>
-        <segue reference="far-xO-xjq"/>
+        <segue reference="S6H-Ku-lpQ"/>
+        <segue reference="TJa-hY-aVm"/>
+        <segue reference="xBs-ZS-VPb"/>
+        <segue reference="9Yg-Nh-qkQ"/>
+        <segue reference="aWh-HB-gvx"/>
+        <segue reference="sOv-Ov-78j"/>
+        <segue reference="psJ-mD-Iz2"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -93,4 +93,41 @@
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
 
+// Example Animation button pressed
+- (IBAction)onNeuralTube001:(id)sender
+{
+    [self playMovie:(id)sender movieName:(NSString*)@"Neuraltube_001" fileType:(NSString*)@"mp4"];
+}
+
+// Play video
+-(void)playMovie:(id)sender movieName:(NSString*)moviePath fileType:(NSString*)fileType
+{
+    NSString*path=[[NSBundle mainBundle] pathForResource:moviePath ofType:fileType];
+    NSURL*url=[NSURL fileURLWithPath:path];
+    
+    _moviePlayer =  [[MPMoviePlayerController alloc]
+                     initWithContentURL:url];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(moviePlayBackDidFinish:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:_moviePlayer];
+    
+    _moviePlayer.controlStyle = MPMovieControlStyleDefault;
+    _moviePlayer.shouldAutoplay = YES;
+    [self.view addSubview:_moviePlayer.view];
+    [_moviePlayer setFullscreen:YES animated:YES];
+    
+}
+
+// End video
+- (void) moviePlayBackDidFinish:(NSNotification*)notification {
+    MPMoviePlayerController *player = [notification object];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:MPMoviePlayerPlaybackDidFinishNotification
+     object:player];
+}
+
+
 @end
