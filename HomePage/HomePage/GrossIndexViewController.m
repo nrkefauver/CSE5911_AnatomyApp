@@ -252,6 +252,8 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             // Set the segmented control to Histo
             [segmentedControl setSelectedSegmentIndex:1];
             
+            bool button1IsTaken = false;
+            
             // Set button for 3D Model if applicable
             if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]objectAtIndex:1]isEqualToString:@""])
             {
@@ -263,6 +265,14 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 [button1 addTarget:self
                             action:@selector(histo2DButtonPressed)
                   forControlEvents:UIControlEventTouchUpInside];
+                
+                button1IsTaken = true;
+            }
+            
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
             }
             break;
             
@@ -325,7 +335,13 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 }
             }
             
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
+            }
             break;}
+            
         {case 3: //Gross
             [segmentedControl setSelectedSegmentIndex:3];
             
@@ -435,6 +451,12 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                     videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
 
                 }
+            }
+ 
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
             }
             break;}
     }

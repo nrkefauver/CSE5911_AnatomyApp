@@ -249,6 +249,8 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
             // Set the segmented control to Histo
             [segmentedControl setSelectedSegmentIndex:1];
             
+            bool button1IsTaken = false;
+            
             // Set button for 3D Model if applicable
             if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]objectAtIndex:1]isEqualToString:@""])
             {
@@ -260,8 +262,17 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                 [button1 addTarget:self
                             action:@selector(histo2DButtonPressed)
                   forControlEvents:UIControlEventTouchUpInside];
+                
+                button1IsTaken = true;
+            }
+            
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
             }
             break;}
+            
         {case 2: //Embryo
             // Set the segmented control to Embryo
             [segmentedControl setSelectedSegmentIndex:2];
@@ -320,7 +331,13 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                 }
             }
     
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
+            }
             break;}
+            
         {case 3: //Gross
             [segmentedControl setSelectedSegmentIndex:3];
             
@@ -428,6 +445,12 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
                     // Set information to be passed
                     videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
                 }
+            }
+            
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
             }
             break;}
     }
