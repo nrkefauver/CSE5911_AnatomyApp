@@ -467,6 +467,8 @@
                         <segue destination="PDT-Rl-dT5" kind="push" identifier="EmbryoIndexToGrossVideoListSegue" id="GqQ-Lq-WQk"/>
                         <segue destination="VUO-9Z-0Vc" kind="push" identifier="EmbryoIndexToGross3DModelSegue" id="2en-Sb-DRb"/>
                         <segue destination="1Hf-Ur-mTZ" kind="push" identifier="EmbryoIndexToHistoSlideSegue" id="ds3-wK-1ri"/>
+                        <segue destination="Z1N-LW-t3Y" kind="push" identifier="EmbryoIndexToNeuroHomeSegue" id="xYM-eC-wDP"/>
+                        <segue destination="9ZS-Ik-XvH" kind="push" identifier="EmbryoIndexToNeuroTractsSegue" id="TOI-VB-LJ6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFl-85-1Ew" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -480,7 +482,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1968" y="3341"/>
+            <point key="canvasLocation" x="1952" y="3413"/>
         </scene>
         <!--Histology View Controller - Histology Home-->
         <scene sceneID="gpV-p3-EIy">
@@ -741,6 +743,8 @@
                         <segue destination="PDT-Rl-dT5" kind="push" identifier="HistoIndexToGrossVideoListSegue" id="3I1-Gg-gOo"/>
                         <segue destination="Zc9-b7-UI4" kind="push" identifier="HistoIndexToEmbryoHomeSegue" id="DpL-XP-x1r"/>
                         <segue destination="7sD-q7-0nW" kind="push" identifier="HistoIndexToEmbryoAnimationListSegue" id="K7A-Jp-NgL"/>
+                        <segue destination="Z1N-LW-t3Y" kind="push" identifier="HistoIndexToNeuroHomeSegue" id="ddY-hK-4Y7"/>
+                        <segue destination="9ZS-Ik-XvH" kind="push" identifier="HistoIndexToNeuroTractsSegue" id="tR9-Rf-7Jq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWW-fn-tqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -770,7 +774,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-1719" y="2201"/>
+            <point key="canvasLocation" x="-1629" y="2201"/>
         </scene>
         <!--Neuro View Controller - Neuroanatomy Home-->
         <scene sceneID="3Rl-AI-FEK">
@@ -843,12 +847,12 @@
                         <segue destination="A0d-hn-6U1" kind="push" identifier="NeuroHomeToAnimationsListSegue" id="32O-Pf-eqc"/>
                         <segue destination="0HC-13-e6l" kind="push" identifier="NeuroHomeToIndexSegue" id="xgI-CB-z14"/>
                         <segue destination="0zu-PB-8PX" kind="push" identifier="NeuroHomeToNeuroIndex" id="Rde-ZO-HXw"/>
-                        <segue destination="9ZS-Ik-XvH" kind="push" identifier="NeuroHomeToTractsSegue" id="yDg-CP-p8k"/>
+                        <segue destination="9ZS-Ik-XvH" kind="push" identifier="NeuroHomeToNeuroTractsSegue" id="yDg-CP-p8k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igv-Zk-Ffw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4894" y="879"/>
+            <point key="canvasLocation" x="4726" y="1063"/>
         </scene>
         <!--Neuro Animations List View Controller - Neuroanatomy Animations -->
         <scene sceneID="BCY-Hm-ZMe">
@@ -858,7 +862,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7ed-XR-bpx">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7ed-XR-bpx">
                                 <rect key="frame" x="444" y="113" width="63" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="videos.png">
@@ -956,6 +960,13 @@
                         <segue destination="A0d-hn-6U1" kind="push" identifier="NeuroIndexToNeuroAnimationsListSegue" id="f8e-Mr-dEL"/>
                         <segue destination="Z1N-LW-t3Y" kind="push" identifier="NeuroIndexToNeuroHomeSegue" id="PdE-pb-my7"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroIndexToHomeSegue" id="Wkm-CE-bDW"/>
+                        <segue destination="Zc9-b7-UI4" kind="push" identifier="NeuroIndexToEmbryoHomeSegue" id="qwc-Q0-Xib"/>
+                        <segue destination="7sD-q7-0nW" kind="push" identifier="NeuroIndexToEmbryoAnimationListSegue" id="0tC-Rr-ewx"/>
+                        <segue destination="1Hf-Ur-mTZ" kind="push" identifier="NeuroIndexToHistoSlideSegue" id="DV7-9B-JW7"/>
+                        <segue destination="W8x-iU-qGh" kind="push" identifier="NeuroIndexToGrossHomeSegue" id="mHh-JG-WcZ"/>
+                        <segue destination="VUO-9Z-0Vc" kind="push" identifier="NeuroIndexToGross3DSegue" id="WY3-Cd-svW"/>
+                        <segue destination="PDT-Rl-dT5" kind="push" identifier="NeuroIndexToGrossVideoListSegue" id="PUX-Ut-5Th"/>
+                        <segue destination="9ZS-Ik-XvH" kind="push" identifier="NeuroIndexToNeuroTractsSegue" id="oMx-h3-xr5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3f-vG-hEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -969,7 +980,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="4390" y="3402"/>
+            <point key="canvasLocation" x="4188" y="3369"/>
         </scene>
         <!--Neuro Tracts View Controller - Spinal Tracts-->
         <scene sceneID="Pwr-be-fJG">
@@ -1056,16 +1067,31 @@
                     </view>
                     <navigationItem key="navigationItem" title="Spinal Tracts" id="Me2-87-GMJ">
                         <barButtonItem key="backBarButtonItem" title="Spinal Tracts" id="2HS-ju-dLq"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="ipz-si-6ak">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KBQ-q2-hBg">
+                                <rect key="frame" x="707" y="-1" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Black Burger.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBurger:" destination="9ZS-Ik-XvH" eventType="touchUpInside" id="FUF-iE-FE4"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="afferentTableView" destination="Iqa-T2-Rqz" id="YiE-lc-AXA"/>
                         <outlet property="efferentTableView" destination="iWy-Fv-WMs" id="9qX-uC-NXo"/>
+                        <segue destination="Z1N-LW-t3Y" kind="push" identifier="NeuroTractsToNeuroHomeSegue" id="why-n5-B9i"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroTactsToHomeSegue" id="fbF-XV-cHb"/>
+                        <segue destination="0zu-PB-8PX" kind="push" identifier="NeuroTractsToNeuroIndexSegue" id="M3k-y5-9Yd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poC-Ho-tj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5422" y="3333"/>
+            <point key="canvasLocation" x="5152" y="3369"/>
         </scene>
         <!--Gross View Controller - Gross Anatomy Home-->
         <scene sceneID="ZqH-ui-cXm">
@@ -1383,6 +1409,8 @@
                         <segue destination="Zc9-b7-UI4" kind="push" identifier="GrossIndexToEmbryoHomeSegue" id="ZNh-68-9tr"/>
                         <segue destination="7sD-q7-0nW" kind="push" identifier="GrossIndexToEmbryoAnimationsListSegue" id="aWh-HB-gvx"/>
                         <segue destination="1Hf-Ur-mTZ" kind="push" identifier="GrossIndexToHistoSlideSegue" id="las-UW-kvN"/>
+                        <segue destination="Z1N-LW-t3Y" kind="push" identifier="GrossIndexToNeuroHomeSegue" id="Qj6-bI-Vtz"/>
+                        <segue destination="9ZS-Ik-XvH" kind="push" identifier="GrossIndexToNeuroTractsSegue" id="bi4-dP-Zbc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPL-fQ-Ra6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1436,7 +1464,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-4035" y="3341"/>
+            <point key="canvasLocation" x="-4201" y="3333"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EI8-Ue-Rx1">
@@ -1490,20 +1518,21 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="32O-Pf-eqc"/>
-        <segue reference="c2K-YH-DqR"/>
-        <segue reference="Rde-ZO-HXw"/>
+        <segue reference="TOI-VB-LJ6"/>
+        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="ds3-wK-1ri"/>
+        <segue reference="2en-Sb-DRb"/>
+        <segue reference="xYM-eC-wDP"/>
+        <segue reference="GqQ-Lq-WQk"/>
+        <segue reference="40z-R1-3Bt"/>
+        <segue reference="Sqy-U0-VmQ"/>
+        <segue reference="gyO-mB-WHb"/>
+        <segue reference="TJa-hY-aVm"/>
         <segue reference="xgI-CB-z14"/>
-        <segue reference="hOH-RS-S2g"/>
-        <segue reference="bUz-uz-hug"/>
+        <segue reference="M3k-y5-9Yd"/>
+        <segue reference="f8e-Mr-dEL"/>
         <segue reference="yHH-64-pgG"/>
         <segue reference="iXe-hZ-jWL"/>
-        <segue reference="S6H-Ku-lpQ"/>
-        <segue reference="TJa-hY-aVm"/>
-        <segue reference="xBs-ZS-VPb"/>
-        <segue reference="9Yg-Nh-qkQ"/>
-        <segue reference="aWh-HB-gvx"/>
-        <segue reference="sOv-Ov-78j"/>
-        <segue reference="psJ-mD-Iz2"/>
     </inferredMetricsTieBreakers>
 </document>

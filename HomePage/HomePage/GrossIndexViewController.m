@@ -7,9 +7,14 @@
 //
 
 #import "GrossIndexViewController.h"
+#import "NeuroViewController.h"
+#import "NeuroTractsViewController.h"
+#import "HistoSlide1ViewController.h"
+#import "EmbryoViewController.h"
+#import "EmbryoAnimationsListViewController.h"
+#import "Gross3DModelViewController.h"
 #import "GrossViewController.h"
 #import "GrossVideoListViewController.h"
-#import "EmbryoAnimationsListViewController.h"
 #import "ExpandingCell.h"
 #import "Term.h"
 
@@ -235,19 +240,70 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
     switch(selectedDiscipline)
     {
         {case 0: //Neuro
+            // Set the segmented control to Neuro
             [segmentedControl setSelectedSegmentIndex:0];
             
-            [button1 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Neuro Button!" forState:UIControlStateNormal];
+            // Used for setting the media buttons from left to right
+            bool button1IsTaken = false;
             
-            UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
+            // Set button for 2D Image if applicable
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:1]isEqualToString:@""])
+            {
+                // Set videos
+                UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                
+                // Set actions
+                [button1 addTarget:self
+                            action:@selector(neuro2DButtonPressed)
+                  forControlEvents:UIControlEventTouchUpInside];
+                
+                button1IsTaken = true;
+            }
             
+            // Set button for Animation if applicable
+            if (button1IsTaken)
+            {
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:3]isEqualToString:@""])
+                {
+                    // Set animation
+                    UIImage* button2Image = [UIImage imageNamed:@"Animation Media Button"];
+                    [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button2 addTarget:self
+                                action:@selector(neuroAnimationButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information for actions
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:3];
+                }
+            }
+            else // Button 1 is not taken
+            {
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0] objectAtIndex:3]isEqualToString:@""])
+                {
+                    // Set videos
+                    UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
+                    [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button1 addTarget:self
+                                action:@selector(neuroAnimationButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information for actions
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:3];
+                }
+            }
             
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
+            }
             break;}
+            
         {case 1: //Histo
             // Set the segmented control to Histo
             [segmentedControl setSelectedSegmentIndex:1];
@@ -275,8 +331,8 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 [button1 setTitle:@"None" forState:UIControlStateNormal];
             }
             break;
-            
         }
+            
         {case 2: //Embryo
             // Set the segmented control to Embryo
             [segmentedControl setSelectedSegmentIndex:2];
@@ -343,6 +399,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             break;}
             
         {case 3: //Gross
+            // Set segmented control to Gross
             [segmentedControl setSelectedSegmentIndex:3];
             
             // Used for setting the media buttons from left to right
@@ -539,28 +596,16 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
 }
 
 #pragma mark - Media Button Actions
-
-- (void) doAThing
-{
-    self.title = @"works";
-    //[self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
-}
-
-- (void) doADifferentThing
-{
-    self.title = @"This is different!";
-}
-
 - (void) neuro2DButtonPressed
 {
-    //    mediaButtonSegue = true;
-    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"GrossIndexToNeuroHomeSegue" sender:self];
 }
 
 - (void) neuroAnimationButtonPressed
 {
-    //    mediaButtonSegue = true;
-    //    [self performSegueWithIdentifier:@"EmbryoIndexToEmbryoAnimationsListSegue" sender:self];
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"GrossIndexToNeuroTractsSegue" sender:self];
 }
 
 - (void) histo2DButtonPressed
@@ -602,12 +647,49 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
 // If segue is triggered by a media button, pass information
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
+    //NeuroViewController* neuroHomeVC;
+    NeuroTractsViewController* neuroTractsVC;
+    //HistoSlide1ViewController* histoSlideVC;
+    //EmbryoViewController* embryoHomeVC;
+    EmbryoAnimationsListViewController* embryoAnimationVC;
+    //Gross3DModelViewController* gross3DVC;
     GrossViewController* grossHomeVC;
     GrossVideoListViewController* grossVideoVC;
-    EmbryoAnimationsListViewController* embryoAnimationVC;
     
     if (mediaButtonSegue)
     {
+        // Neuro 2D
+        //if([segue.identifier isEqualToString:@"GrossIndexToNeuroHomeSegue"])
+        //{
+        //    neuroHomeVC = segue.destinationViewController;
+              //Set passed info
+        
+              //When this code is written, change the following "if" to an "else if"
+        //}
+        // Neuro Animation
+        if([segue.identifier isEqualToString:@"GrossIndexToNeuroTractsSegue"])
+        {
+            neuroTractsVC = segue.destinationViewController;
+            neuroTractsVC.startUpVideoName = videoName;
+        }
+        // Histo 2D
+        //else if([segue.identifier isEqualToString:@""])
+        //{
+        //    histoSlideVC = segue.destinationViewController;
+              //Set passed info
+        //}
+        // Embryo 2D
+        //else if([segue.identifier isEqualToString:@""])
+        //{
+        //    embryoHomeVC = segue.destinationViewController;
+              //Set passed info
+        //}
+        // Embryo Animation
+        else if([segue.identifier isEqualToString:@"GrossIndexToEmbryoAnimationsListSegue"])
+        {
+            embryoAnimationVC = segue.destinationViewController;
+            embryoAnimationVC.startUpVideoName = videoName;
+        }
         // Gross 2D
         if([segue.identifier isEqualToString:@"GrossIndexToGrossHomeSegue"])
         {
@@ -617,7 +699,8 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
         // Gross 3D
         //else if([segue.identifier isEqualToString:@"GrossIndexToGross3DModelSegue"])
         //{
-        //
+        //    gross3DVC = segue.destinationViewController;
+              //Set passed info
         //}
         // Gross Video
         else if([segue.identifier isEqualToString:@"GrossIndexToGrossVideosSegue"])
@@ -625,22 +708,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             grossVideoVC = segue.destinationViewController;
             grossVideoVC.startUpVideoName = videoName;
         }
-        // Embryo Animation
-        else if([segue.identifier isEqualToString:@"GrossIndexToEmbryoAnimationsListSegue"])
-        {
-            embryoAnimationVC = segue.destinationViewController;
-            embryoAnimationVC.startUpVideoName = videoName;
-        }
-        // Embryo 2D
-        //else if([segue.identifier isEqualToString:@""])
-        //{
-        //}
-        // Histo 2D
-        //else if([segue.identifier isEqualToString:@""])
-        //{
-        //}
     }
-    
 }
 
 #pragma mark - Search Bar

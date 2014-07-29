@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface NeuroTractsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *afferentTableView;
 @property (weak, nonatomic) IBOutlet UITableView *efferentTableView;
+@property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
+@property (strong, nonatomic) NSString *startUpVideoName;
 
 @end

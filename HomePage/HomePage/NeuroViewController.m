@@ -92,14 +92,12 @@
 // Create navigation sidebar
 - (IBAction)onBurger:(id)sender {
     NSArray *images = @[
-                        [UIImage imageNamed:@"Tracts"],
                         [UIImage imageNamed:@"videos"],
                         [UIImage imageNamed:@"Index"],
                         [UIImage imageNamed:@"Letter N"],
                         [UIImage imageNamed:@"home"],
                         ];
     NSArray *labels = @[@"Tracts",
-                        @"Animations",
                         @"Index",
                         @"Neuro",
                         @"Home",];
@@ -122,21 +120,18 @@
     
     //Animations clicked
     if (index == 0) {
-        [self performSegueWithIdentifier:@"NeuroHomeToTractsSegue" sender:self];
-    }
-    if (index == 1) {
-        [self performSegueWithIdentifier:@"NeuroHomeToAnimationsListSegue" sender:self];
+        [self performSegueWithIdentifier:@"NeuroHomeToNeuroTractsSegue" sender:self];
     }
     //Index clicked
-    else if (index == 2) {
+    else if (index == 1) {
         [self performSegueWithIdentifier:@"NeuroHomeToNeuroIndex" sender:self];
     }
     //Neuro Home clicked
-    else if (index == 3) {
+    else if (index == 2) {
         // Do nothing
     }
     //Home clicked
-    else if (index == 4) {
+    else if (index == 3) {
         [self performSegueWithIdentifier:@"NeuroToHomeSegue" sender:self];
     }
     

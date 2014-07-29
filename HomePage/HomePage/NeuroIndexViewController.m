@@ -8,6 +8,13 @@
 
 #import "NeuroIndexViewController.h"
 #import "NeuroViewController.h"
+#import "NeuroTractsViewController.h"
+#import "HistoSlide1ViewController.h"
+#import "EmbryoViewController.h"
+#import "EmbryoAnimationsListViewController.h"
+#import "Gross3DModelViewController.h"
+#import "GrossViewController.h"
+#import "GrossVideoListViewController.h"
 #import "ExpandingCell.h"
 #import "Term.h"
 
@@ -28,6 +35,10 @@ static int NeuroMedia = 5; //Position in property list for all Neuro Media optio
 static int HistoMedia = 6; //Position in property list for all Histo Media options
 static int EmbryoMedia = 7; //Position in property list for all Embryo Media options
 static int GrossMedia = 8; //Position in property list for all Gross Media options
+static NSString *partName; //Name of term to display with Popover window in Gross Home
+static NSString *videoName; //Name of video to play in Embryo Animations List or Gross Video List
+static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a media button or not
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -73,7 +84,7 @@ static int GrossMedia = 8; //Position in property list for all Gross Media optio
     NSMutableArray *defOptions = [[NSMutableArray alloc] init];
     NSMutableArray *mediaOptions = [[NSMutableArray alloc] init];
 
-    for (int i=0; i< 140; i++) {
+    for (int i=0; i< 141; i++) {
         if ([terms objectAtIndex:i]!= nil) {
             if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:1] isEqualToString:@""]) {
                 [titleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
@@ -211,7 +222,6 @@ static int GrossMedia = 8; //Position in property list for all Gross Media optio
     UIButton *button1 = (UIButton*)[nibView viewWithTag:10];
     UIButton *button2 = (UIButton*)[nibView viewWithTag:20];
     UIButton *button3 = (UIButton*)[nibView viewWithTag:30];
-    UIButton *button4 = (UIButton*)[nibView viewWithTag:40];
     
     //Disables user interaction if a segment does not have a definition for the current term
     for (int i=0;i<4;i++) {
@@ -223,64 +233,279 @@ static int GrossMedia = 8; //Position in property list for all Gross Media optio
     switch(selectedDiscipline)
     {
         {case 0: //Neuro
+            // Set the segmented control to Neuro
             [segmentedControl setSelectedSegmentIndex:0];
+
+            // Used for setting the media buttons from left to right
+            bool button1IsTaken = false;
             
-            [button1 setTitle:@"" forState:UIControlStateNormal];
-            [button2 setTitle:@"" forState:UIControlStateNormal];
-            [button3 setTitle:@"" forState:UIControlStateNormal];
+            // Set button for 2D Image if applicable
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:1]isEqualToString:@""])
+            {
+                // Set videos
+                UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                
+                // Set actions
+                [button1 addTarget:self
+                            action:@selector(neuro2DButtonPressed)
+                  forControlEvents:UIControlEventTouchUpInside];
+                
+                button1IsTaken = true;
+            }
             
-            UIImage* button1Image = [UIImage imageNamed:@"2-D Image Media Button"];
-            UIImage* button2Image = [UIImage imageNamed:@"3-D Model Media Button"];
-            UIImage* button3Image = [UIImage imageNamed:@"Video Media Button"];
+            // Set button for Animation if applicable
+            if (button1IsTaken)
+            {
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:3]isEqualToString:@""])
+                {
+                    // Set animation
+                    UIImage* button2Image = [UIImage imageNamed:@"Animation Media Button"];
+                    [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button2 addTarget:self
+                                action:@selector(neuroAnimationButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information for actions
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:3];
+                }
+            }
+            else // Button 1 is not taken
+            {
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0] objectAtIndex:3]isEqualToString:@""])
+                {
+                    // Set videos
+                    UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
+                    [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button1 addTarget:self
+                                action:@selector(neuroAnimationButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information for actions
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:3];
+                }
+            }
             
-            [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
-            [button1 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
-            [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
-            [button3 addTarget:self
-                        action:@selector(doADifferentThing)
-              forControlEvents:UIControlEventTouchUpInside];
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
+            }
             break;}
+            
         {case 1: //Histo
+            // Set the segmented control to Histo
             [segmentedControl setSelectedSegmentIndex:1];
             
-            [button1 setTitle:@"Histo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Histo Button!" forState:UIControlStateNormal];
+            bool button1IsTaken = false;
             
-            UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
+            // Set button for 3D Model if applicable
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]objectAtIndex:1]isEqualToString:@""])
+            {
+                // Set videos
+                UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                
+                // Set actions
+                [button1 addTarget:self
+                            action:@selector(histo2DButtonPressed)
+                  forControlEvents:UIControlEventTouchUpInside];
+                
+                button1IsTaken = true;
+            }
+            
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
+            }
             break;}
+            
         {case 2: //Embryo
+            // Set the segmented control to Embryo
             [segmentedControl setSelectedSegmentIndex:2];
             
-            [button1 setTitle:@"Embryo Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"" forState:UIControlStateNormal];
+            // Used for setting the media buttons from left to right
+            bool button1IsTaken = false;
             
-            [button2 setBackgroundImage:nil forState:UIControlStateNormal];
-            //            [button1 addTarget:self
-            //                        action:@selector(doADifferentThing)
-            //              forControlEvents:UIControlEventTouchUpInside];
+            // Set button for 2D Image if applicable
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:1]isEqualToString:@""])
+            {
+                // Set videos
+                UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                
+                // Set actions
+                [button1 addTarget:self
+                            action:@selector(embryo2DButtonPressed)
+                  forControlEvents:UIControlEventTouchUpInside];
+                
+                button1IsTaken = true;
+            }
+            
+            // Set button for Animation if applicable
+            if (button1IsTaken)
+            {
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3]isEqualToString:@""])
+                {
+                    // Set animation
+                    UIImage* button2Image = [UIImage imageNamed:@"Animation Media Button"];
+                    [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button2 addTarget:self
+                                action:@selector(embryoAnimationButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information for actions
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3];
+                }
+            }
+            else // Button 1 is not taken
+            {
+                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] objectAtIndex:3]isEqualToString:@""])
+                {
+                    // Set videos
+                    UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
+                    [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button1 addTarget:self
+                                action:@selector(embryoAnimationButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information for actions
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3];
+                }
+            }
+            
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
+            }
             break;}
+            
         {case 3: //Gross
+            // Set segmented control to Gross
             [segmentedControl setSelectedSegmentIndex:3];
             
-            [button1 setTitle:@"Gross Button!" forState:UIControlStateNormal];
-            [button2 setTitle:@"Gross Button!" forState:UIControlStateNormal];
-            //[button2 setBackgroundImage:(UIImage*)@"Gross.png" forState:UIControlStateNormal];
+            // Used for setting the media buttons from left to right
+            bool button1IsTaken = false;
+            bool button2IsTaken = false;
             
-            UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
-            [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doADifferentThing)
-              forControlEvents:UIControlEventTouchUpInside];
+            // Set button for 3D Model if applicable
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:0]isEqualToString:@""])
+            {
+                // Set videos
+                UIImage* button1Image = [UIImage imageNamed:@"3D Model Media Button"];
+                [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                
+                // Set actions
+                [button1 addTarget:self
+                            action:@selector(gross3DButtonPressed)
+                  forControlEvents:UIControlEventTouchUpInside];
+                
+                button1IsTaken = true;
+            }
+            
+            //Set button for 2D Image if applicable
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1]isEqualToString:@""])
+            {
+                if (button1IsTaken)
+                {
+                    // Set videos
+                    UIImage* button2Image = [UIImage imageNamed:@"2D Image Media Button"];
+                    [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button2 addTarget:self
+                                action:@selector(gross2DButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information to be passed
+                    partName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1];
+                    
+                    button2IsTaken = true;
+                }
+                else // Button 1 is not taken
+                {
+                    // Set videos
+                    UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                    [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button1 addTarget:self
+                                action:@selector(gross2DButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information to be passed
+                    partName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1];
+                    
+                    button1IsTaken = true;
+                }
+            }
+            
+            //Set button for Video if applicable
+            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2]isEqualToString:@""])
+            {
+                if ((button1IsTaken)&&(button2IsTaken))
+                {
+                    
+                    // Set videos
+                    UIImage* button3Image = [UIImage imageNamed:@"Video Media Button"];
+                    [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button3 addTarget:self
+                                action:@selector(grossVideoButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information to be passed
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
+                }
+                else if (button1IsTaken)
+                {
+                    
+                    // Set videos
+                    UIImage* button2Image = [UIImage imageNamed:@"Video Media Button"];
+                    [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button2 addTarget:self
+                                action:@selector(grossVideoButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information to be passed
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
+                    
+                }
+                else
+                {
+                    
+                    // Set videos
+                    UIImage* button1Image = [UIImage imageNamed:@"Video Media Button"];
+                    [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
+                    
+                    // Set actions
+                    [button1 addTarget:self
+                                action:@selector(grossVideoButtonPressed)
+                      forControlEvents:UIControlEventTouchUpInside];
+                    
+                    // Set information to be passed
+                    videoName = [[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2];
+                }
+            }
+            
+            // If there is no media, display "None"
+            if (!button1IsTaken)
+            {
+                [button1 setTitle:@"None" forState:UIControlStateNormal];
+            }
             break;}
     }
     
@@ -361,30 +586,119 @@ static int GrossMedia = 8; //Position in property list for all Gross Media optio
 }
 
 #pragma mark - Media Button Actions
-
-- (void) doAThing
+- (void) neuro2DButtonPressed
 {
-    self.title = @"works";
-    //[self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
 }
 
-- (void) doADifferentThing
+- (void) neuroAnimationButtonPressed
 {
-    self.title = @"This is different!";
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"NeuroIndexToNeuroTractsSegue" sender:self];
 }
 
+- (void) histo2DButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"NeuroIndexToHistoSlideSegue" sender:self];
+}
+
+- (void) embryo2DButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"NeuroIndexToEmbryoHomeSegue" sender:self];
+}
+
+- (void) embryoAnimationButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"NeuroIndexToEmbryoAnimationListSegue" sender:self];
+}
+
+- (void) gross3DButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"NeuroIndexToGross3DSegue" sender:self];
+}
+
+- (void) gross2DButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"NeuroIndexToGrossHomeSegue" sender:self];
+}
+
+- (void) grossVideoButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"NeuroIndexToGrossVideoListSegue" sender:self];
+}
+
+// Pass information if segue is triggered by a media button
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    NeuroViewController* destViewController = segue.destinationViewController;
+    //NeuroViewController* neuroHomeVC;
+    NeuroTractsViewController* neuroTractsVC;
+    //HistoSlide1ViewController* histoSlideVC;
+    //EmbryoViewController* embryoHomeVC;
+    EmbryoAnimationsListViewController* embryoAnimationVC;
+    //Gross3DModelViewController* gross3DVC;
+    GrossViewController* grossHomeVC;
+    GrossVideoListViewController* grossVideoVC;
     
-    if([segue.identifier isEqualToString:@"NeuroIndexToNeuroHomeSegue"])
+    if (mediaButtonSegue)
     {
-        //destViewController.infoPassingTest = 1;
-    }
-    else if([segue.identifier isEqualToString:@""]){
+        // Neuro 2D
+        //if([segue.identifier isEqualToString:@"NeuroIndexToNeuroHomeSegue"])
+        //{
+        //    neuroHomeVC = segue.destinationViewController;
+              //Set passed info
         
+        //  When this code is written, change the following "if" to an "else if"
+        //}
+        // Neuro Animation
+        if([segue.identifier isEqualToString:@"NeuroIndexToNeuroTractsSegue"])
+        {
+            neuroTractsVC = segue.destinationViewController;
+            neuroTractsVC.startUpVideoName = videoName;
+        }
+        // Histo 2D
+        //else if([segue.identifier isEqualToString:@"NeuroIndexToHistoSlideSegue"])
+        //{
+        //    histoSlideVC = segue.destinationViewController;
+              //Set passed info
+        //}
+        // Embryo 2D
+        //else if([segue.identifier isEqualToString:@"NeuroIndexToEmbryoHomeSegue"])
+        //{
+        //    embryoHomeVC = segue.destinationViewController;
+              //Set passed info
+        //}
+        // Embryo Animation
+        else if([segue.identifier isEqualToString:@"NeuroIndexToEmbryoAnimationListSegue"])
+        {
+            embryoAnimationVC = segue.destinationViewController;
+            embryoAnimationVC.startUpVideoName = videoName;
+        }
+        // Gross 3D
+        //else if([segue.identifier isEqualToString:@"NeuroIndexToGross3DSegue"])
+        //{
+        //    gross3DVC = segue.destinationViewController;
+              //Set passed info
+        //}
+        // Gross 2D
+        else if([segue.identifier isEqualToString:@"NeuroIndexToGrossHomeSegue"])
+        {
+            grossHomeVC = segue.destinationViewController;
+            grossHomeVC.initialPopupName = partName;
+        }
+        // Gross Video
+        else if([segue.identifier isEqualToString:@"NeuroIndexToGrossVideoListSegue"])
+        {
+            grossVideoVC = segue.destinationViewController;
+            grossVideoVC.startUpVideoName = videoName;
+        }
     }
-    
 }
 
 #pragma mark - Search Bar
@@ -439,7 +753,7 @@ static int GrossMedia = 8; //Position in property list for all Gross Media optio
                         [UIImage imageNamed:@"Letter N"],
                         [UIImage imageNamed:@"home"],
                         ];
-    NSArray *labels = @[@"Animations",
+    NSArray *labels = @[@"Tracts",
                         @"Index",
                         @"Neuro",
                         @"Home",];
@@ -462,7 +776,7 @@ static int GrossMedia = 8; //Position in property list for all Gross Media optio
     
     //Animations clicked
     if (index == 0) {
-        [self performSegueWithIdentifier:@"NeuroIndexToNeuroAnimationsListSegue" sender:self];
+        [self performSegueWithIdentifier:@"NeuroIndexToNeuroTractsSegue" sender:self];
     }
     //Index clicked
     else if (index == 1) {
