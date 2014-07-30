@@ -678,13 +678,13 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
               //Set passed info
         //}
         // Embryo Animation
-        else if([segue.identifier isEqualToString:@""])
+        else if([segue.identifier isEqualToString:@"EmbryoIndexToEmbryoAnimationsListSegue"])
         {
             embryoAnimationVC = segue.destinationViewController;
             embryoAnimationVC.startUpVideoName = videoName;
         }
         // Gross 2D
-        if([segue.identifier isEqualToString:@""])
+        if([segue.identifier isEqualToString:@"EmbryoIndexToGrossHomeSegue"])
         {
             grossHomeVC = segue.destinationViewController;
             grossHomeVC.initialPopupName = partName;
@@ -696,7 +696,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
               //Set passed info
         //}
         // Gross Video
-        else if([segue.identifier isEqualToString:@""])
+        else if([segue.identifier isEqualToString:@"EmbryoIndexToGrossVideoListSegue"])
         {
             grossVideoVC = segue.destinationViewController;
             grossVideoVC.startUpVideoName = videoName;
