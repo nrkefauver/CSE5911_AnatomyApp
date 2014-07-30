@@ -217,8 +217,8 @@
 		5953AA0F1946802C00677409 /* Gross3DModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gross3DModelViewController.m; sourceTree = "<group>"; };
 		5953AA111946828B00677409 /* NeuroAnimationsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuroAnimationsListViewController.h; sourceTree = "<group>"; };
 		5953AA121946828B00677409 /* NeuroAnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroAnimationsListViewController.m; sourceTree = "<group>"; };
-		5953AA14194683B000677409 /* EmbryoAnimationsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbryoAnimationsListViewController.h; sourceTree = "<group>"; };
-		5953AA15194683B000677409 /* EmbryoAnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoAnimationsListViewController.m; sourceTree = "<group>"; };
+		5953AA14194683B000677409 /* EmbryoAnimationsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmbryoAnimationsListViewController.h; path = Embryo/EmbryoAnimationsListViewController.h; sourceTree = "<group>"; };
+		5953AA15194683B000677409 /* EmbryoAnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmbryoAnimationsListViewController.m; path = Embryo/EmbryoAnimationsListViewController.m; sourceTree = "<group>"; };
 		5962241319508A1500701B76 /* Neuraltube_001.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neuraltube_001.mp4; sourceTree = "<group>"; };
 		5962241819508A3A00701B76 /* CNS Development.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CNS Development.png"; sourceTree = "<group>"; };
 		5962241919508A3A00701B76 /* Initial Spinal Cord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Initial Spinal Cord.png"; sourceTree = "<group>"; };
