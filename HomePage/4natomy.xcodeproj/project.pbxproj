@@ -272,8 +272,8 @@
 		D00CA83D1947936900C01BBF /* GrossIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrossIndexViewController.m; sourceTree = "<group>"; };
 		D00CA83F1947941900C01BBF /* HistoIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoIndexViewController.h; sourceTree = "<group>"; };
 		D00CA8401947941900C01BBF /* HistoIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoIndexViewController.m; sourceTree = "<group>"; };
-		D00CA8421947948F00C01BBF /* EmbryoIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbryoIndexViewController.h; sourceTree = "<group>"; };
-		D00CA8431947948F00C01BBF /* EmbryoIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoIndexViewController.m; sourceTree = "<group>"; };
+		D00CA8421947948F00C01BBF /* EmbryoIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmbryoIndexViewController.h; path = Embryo/EmbryoIndexViewController.h; sourceTree = "<group>"; };
+		D00CA8431947948F00C01BBF /* EmbryoIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmbryoIndexViewController.m; path = Embryo/EmbryoIndexViewController.m; sourceTree = "<group>"; };
 		D016FF9A19798C7700023668 /* osu-web-footer-wordmark-rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "osu-web-footer-wordmark-rev.png"; path = "Images/osu-web-footer-wordmark-rev.png"; sourceTree = "<group>"; };
 		D016FF9B19798C7700023668 /* osu-web-header-horiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "osu-web-header-horiz.png"; path = "Images/osu-web-header-horiz.png"; sourceTree = "<group>"; };
 		D016FF9C19798C7700023668 /* osu-web-header-vert2-rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "osu-web-header-vert2-rev.png"; path = "Images/osu-web-header-vert2-rev.png"; sourceTree = "<group>"; };
@@ -316,8 +316,8 @@
 		D074CE63192FF3CB00A2BAB1 /* HistologyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistologyViewController.m; sourceTree = "<group>"; };
 		D074CE68192FF77E00A2BAB1 /* GrossViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrossViewController.h; sourceTree = "<group>"; };
 		D074CE69192FF77E00A2BAB1 /* GrossViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrossViewController.m; sourceTree = "<group>"; };
-		D074CE6B192FF79300A2BAB1 /* EmbryoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbryoViewController.h; sourceTree = "<group>"; };
-		D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbryoViewController.m; sourceTree = "<group>"; };
+		D074CE6B192FF79300A2BAB1 /* EmbryoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmbryoViewController.h; path = Embryo/EmbryoViewController.h; sourceTree = "<group>"; };
+		D074CE6C192FF79300A2BAB1 /* EmbryoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmbryoViewController.m; path = Embryo/EmbryoViewController.m; sourceTree = "<group>"; };
 		D074CE6E192FF7A000A2BAB1 /* NeuroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuroViewController.h; sourceTree = "<group>"; };
 		D074CE6F192FF7A000A2BAB1 /* NeuroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuroViewController.m; sourceTree = "<group>"; };
 		D0774D89193CD5D400821D51 /* ExpandingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandingCell.xib; sourceTree = "<group>"; };
