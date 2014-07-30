@@ -22,6 +22,8 @@
 
 @synthesize infoPassingTest;
 @synthesize imageView = nImageView;
+@synthesize FasciculusCuneatusCervicalButton;
+@synthesize FasciculusCuneatusThoracicButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -49,11 +51,7 @@
     self.imageView.backgroundColor = [UIColor blackColor];
     self.imageView.clipsToBounds = YES;
     self.imageView.image = image;
-    
-    
-    [self.scrollView setMaximumZoomScale:7.0];
-    [self.scrollView setClipsToBounds:YES];
-    [self.scrollView delegate];}
+}
 
 //Used for tabbed images
 - (void)viewDidUnload
@@ -75,15 +73,23 @@
     {
         case 0:
             self.imageView.image = [UIImage imageNamed:@"CervicalBlack"];
+            FasciculusCuneatusCervicalButton.hidden = NO;
+            FasciculusCuneatusThoracicButton.hidden = YES;
             break;
         case 1:
             self.imageView.image = [UIImage imageNamed:@"ThoracicBlack"];
+            FasciculusCuneatusCervicalButton.hidden = YES;
+            FasciculusCuneatusThoracicButton.hidden = NO;
             break;
         case 2:
             self.imageView.image = [UIImage imageNamed:@"LumbarBlack"];
+            FasciculusCuneatusCervicalButton.hidden = YES;
+            FasciculusCuneatusThoracicButton.hidden = YES;
             break;
         case 3:
             self.imageView.image = [UIImage imageNamed:@"SacralBlack"];
+            FasciculusCuneatusCervicalButton.hidden = YES;
+            FasciculusCuneatusThoracicButton.hidden = YES;
             break;
     }
 }

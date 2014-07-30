@@ -805,17 +805,28 @@
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PQu-w0-D3b">
-                                <rect key="frame" x="73" y="265" width="621" height="431"/>
+                                <rect key="frame" x="74" y="264" width="621" height="431"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n2y-PY-Acw" customClass="OBShapedButton">
+                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n2y-PY-Acw" userLabel="Cervical" customClass="OBShapedButton">
                                 <rect key="frame" x="391" y="280" width="139" height="235"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cuneate2.png">
+                                <state key="normal" image="FasciculusCuneatus-Cervical.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="onFasciculusCuneatus:" destination="Z1N-LW-t3Y" eventType="touchUpInside" id="Ii4-Ef-al1"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EJ2-vH-qAD" userLabel="Thoracic" customClass="OBShapedButton">
+                                <rect key="frame" x="406" y="283" width="165" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="FasciculusCuneatus-Thoracic.png">
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onFasciculusCuneatus:" destination="Z1N-LW-t3Y" eventType="touchUpInside" id="z5i-r5-w9P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -838,6 +849,8 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="FasciculusCuneatusCervicalButton" destination="n2y-PY-Acw" id="OH5-gn-xNc"/>
+                        <outlet property="FasciculusCuneatusThoracicButton" destination="EJ2-vH-qAD" id="u99-mX-trw"/>
                         <outlet property="imageView" destination="PQu-w0-D3b" id="nuB-10-3Bh"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroToHomeSegue" id="hOH-RS-S2g"/>
                         <segue destination="A0d-hn-6U1" kind="push" identifier="NeuroHomeToAnimationsListSegue" id="32O-Pf-eqc"/>
@@ -1497,10 +1510,11 @@
         <image name="Black Burger.png" width="45" height="45"/>
         <image name="E0.png" width="147" height="195"/>
         <image name="Embryo.jpg" width="948" height="995"/>
+        <image name="FasciculusCuneatus-Cervical.png" width="192" height="290"/>
+        <image name="FasciculusCuneatus-Thoracic.png" width="220" height="337"/>
         <image name="Grey Button.png" width="200" height="200"/>
         <image name="Gross.jpg" width="570" height="704"/>
         <image name="IndexAll.png" width="226" height="151"/>
-        <image name="cuneate2.png" width="192" height="290"/>
         <image name="histology.jpg" width="971" height="800"/>
         <image name="neuro-lumb-scan.jpg" width="1264" height="1189"/>
         <image name="osu-web-header-horiz.png" width="344" height="114"/>

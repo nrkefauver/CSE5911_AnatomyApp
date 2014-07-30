@@ -15,7 +15,8 @@
 
 @property (nonatomic) NSInteger *infoPassingTest;
 @property (nonatomic, retain) IBOutlet UIImageView* imageView;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIButton* FasciculusCuneatusCervicalButton;
+@property (weak, nonatomic) IBOutlet UIButton* FasciculusCuneatusThoracicButton;
 
 - (IBAction) contentModeChanged: (UISegmentedControl*)segmentedControl;
 

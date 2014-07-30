@@ -23,6 +23,7 @@
 		462CB056193CFDB200B6CF72 /* Tracts.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB051193CFDB200B6CF72 /* Tracts.png */; };
 		462CB059193CFEDA00B6CF72 /* Animations.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB058193CFEDA00B6CF72 /* Animations.png */; };
 		464AA400198992ED00123D7E /* CervicalBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 464AA3FF198992ED00123D7E /* CervicalBlack.png */; };
+		464AA40219899C2800123D7E /* FasciculusCuneatus-Thoracic.png in Resources */ = {isa = PBXBuildFile; fileRef = 464AA40119899C2800123D7E /* FasciculusCuneatus-Thoracic.png */; };
 		466C49B4193BB914000B2A78 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AE193BB914000B2A78 /* home.png */; };
 		466C49B5193BB914000B2A78 /* Index.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AF193BB914000B2A78 /* Index.png */; };
 		466C49B6193BB914000B2A78 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B0193BB914000B2A78 /* videos.png */; };
@@ -81,7 +82,7 @@
 		598E99B51986F0F0007418C0 /* Neuroepithelium.png in Resources */ = {isa = PBXBuildFile; fileRef = 598E99AD1986F0F0007418C0 /* Neuroepithelium.png */; };
 		598E99B61986F0F0007418C0 /* SC change position.png in Resources */ = {isa = PBXBuildFile; fileRef = 598E99AE1986F0F0007418C0 /* SC change position.png */; };
 		598E99B71986F0F0007418C0 /* Spinal Cord Further Development.png in Resources */ = {isa = PBXBuildFile; fileRef = 598E99AF1986F0F0007418C0 /* Spinal Cord Further Development.png */; };
-		598E99B91986F115007418C0 /* cuneate2.png in Resources */ = {isa = PBXBuildFile; fileRef = 598E99B81986F115007418C0 /* cuneate2.png */; };
+		598E99B91986F115007418C0 /* FasciculusCuneatus-Cervical.png in Resources */ = {isa = PBXBuildFile; fileRef = 598E99B81986F115007418C0 /* FasciculusCuneatus-Cervical.png */; };
 		599DE2331980666D00995432 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DE2301980666D00995432 /* OBShapedButton.m */; };
 		599DE2341980666D00995432 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DE2321980666D00995432 /* UIImage+ColorAtPixel.m */; };
 		59A69FBF19870AE8001C6D2E /* LumbarBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A69FBC19870AE8001C6D2E /* LumbarBlack.png */; };
@@ -187,6 +188,7 @@
 		462CB051193CFDB200B6CF72 /* Tracts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tracts.png; path = Images/Tracts.png; sourceTree = "<group>"; };
 		462CB058193CFEDA00B6CF72 /* Animations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Animations.png; path = Images/Animations.png; sourceTree = "<group>"; };
 		464AA3FF198992ED00123D7E /* CervicalBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CervicalBlack.png; sourceTree = "<group>"; };
+		464AA40119899C2800123D7E /* FasciculusCuneatus-Thoracic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FasciculusCuneatus-Thoracic.png"; sourceTree = "<group>"; };
 		466C49AE193BB914000B2A78 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Images/home.png; sourceTree = "<group>"; };
 		466C49AF193BB914000B2A78 /* Index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Index.png; path = Images/Index.png; sourceTree = "<group>"; };
 		466C49B0193BB914000B2A78 /* videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = videos.png; path = Images/videos.png; sourceTree = "<group>"; };
@@ -254,7 +256,7 @@
 		598E99AD1986F0F0007418C0 /* Neuroepithelium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Neuroepithelium.png; sourceTree = "<group>"; };
 		598E99AE1986F0F0007418C0 /* SC change position.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SC change position.png"; sourceTree = "<group>"; };
 		598E99AF1986F0F0007418C0 /* Spinal Cord Further Development.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spinal Cord Further Development.png"; sourceTree = "<group>"; };
-		598E99B81986F115007418C0 /* cuneate2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cuneate2.png; sourceTree = "<group>"; };
+		598E99B81986F115007418C0 /* FasciculusCuneatus-Cervical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FasciculusCuneatus-Cervical.png"; sourceTree = "<group>"; };
 		599DE22F1980666D00995432 /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBShapedButton.h; path = OBShapedButton/OBShapedButton.h; sourceTree = "<group>"; };
 		599DE2301980666D00995432 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBShapedButton.m; path = OBShapedButton/OBShapedButton.m; sourceTree = "<group>"; };
 		599DE2311980666D00995432 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ColorAtPixel.h"; path = "OBShapedButton/UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
@@ -459,8 +461,9 @@
 		5962242419508A3A00701B76 /* Neuro */ = {
 			isa = PBXGroup;
 			children = (
+				598E99B81986F115007418C0 /* FasciculusCuneatus-Cervical.png */,
+				464AA40119899C2800123D7E /* FasciculusCuneatus-Thoracic.png */,
 				464AA3FF198992ED00123D7E /* CervicalBlack.png */,
-				598E99B81986F115007418C0 /* cuneate2.png */,
 				59A69FBC19870AE8001C6D2E /* LumbarBlack.png */,
 				59A69FBD19870AE8001C6D2E /* SacralBlack.png */,
 				59A69FBE19870AE8001C6D2E /* ThoracicBlack.png */,
@@ -909,7 +912,7 @@
 				5962243619508A3A00701B76 /* 1.jpg in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
 				5962241519508A1500701B76 /* Neuraltube_001.mp4 in Resources */,
-				598E99B91986F115007418C0 /* cuneate2.png in Resources */,
+				598E99B91986F115007418C0 /* FasciculusCuneatus-Cervical.png in Resources */,
 				59A69FC119870AE8001C6D2E /* ThoracicBlack.png in Resources */,
 				D06E5E4A192FA51D00A12651 /* Images.xcassets in Resources */,
 				461B45EC1950CE980000189B /* Thoracic_Drawing.png in Resources */,
@@ -944,6 +947,7 @@
 				D0253F49193FE10A00CFE2AC /* E7.png in Resources */,
 				D0C65E63198089810061D626 /* 2D Image Media Button.PNG in Resources */,
 				D06E5E3C192FA51D00A12651 /* InfoPlist.strings in Resources */,
+				464AA40219899C2800123D7E /* FasciculusCuneatus-Thoracic.png in Resources */,
 				D0253F44193FE10A00CFE2AC /* E2.png in Resources */,
 				D0CE26061964C55E00E39DFC /* histology.jpg in Resources */,
 				D0253F45193FE10A00CFE2AC /* E3.png in Resources */,
