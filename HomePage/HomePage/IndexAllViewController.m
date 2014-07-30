@@ -7,6 +7,14 @@
 //
 
 #import "IndexAllViewController.h"
+#import "NeuroViewController.h"
+#import "NeuroTractsViewController.h"
+#import "HistoSlide1ViewController.h"
+#import "EmbryoViewController.h"
+#import "EmbryoAnimationsListViewController.h"
+#import "Gross3DModelViewController.h"
+#import "GrossViewController.h"
+#import "GrossVideoListViewController.h"
 #import "ExpandingCell.h"
 
 //COLLAPSIBLE CODE
@@ -32,6 +40,13 @@ static UITableView *globalTableView;
 static int nonsearchSelectedIndex;
 static bool afterSearch = false;
 static enum selectedDisciplineEnum selectedDiscipline = neuro;
+static int NeuroMedia = 5; //Position in property list for all Neuro Media options
+static int HistoMedia = 6; //Position in property list for all Histo Media options
+static int EmbryoMedia = 7; //Position in property list for all Embryo Media options
+static int GrossMedia = 8; //Position in property list for all Gross Media options
+static NSString *partName; //Name of term to display with Popover window in Gross Home
+static NSString *videoName; //Name of video to play in Embryo Animations List or Gross Video List
+static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a media button or not
 
 
 //COLLAPSIBLE TABLE CODE
@@ -651,9 +666,7 @@ CGFloat origin;
             
             UIImage* button2Image = [UIImage imageNamed:@"Letter N"];
             [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
+            
             break;}
         {case 1: //Histo
             [segmentedControl setSelectedSegmentIndex:1];
@@ -663,9 +676,7 @@ CGFloat origin;
             
             UIImage* button2Image = [UIImage imageNamed:@"Letter H"];
             [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doAThing)
-              forControlEvents:UIControlEventTouchUpInside];
+            
             break;}
         {case 2: //Embryo
             [segmentedControl setSelectedSegmentIndex:2];
@@ -687,9 +698,7 @@ CGFloat origin;
             
             UIImage* button2Image = [UIImage imageNamed:@"Letter G"];
             [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
-            [button2 addTarget:self
-                        action:@selector(doADifferentThing)
-              forControlEvents:UIControlEventTouchUpInside];
+            
             break;}
     }
     
@@ -810,33 +819,123 @@ CGFloat origin;
     [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
-#pragma Media Button Methods
-
-- (void) doAThing
+#pragma mark - Media Button Actions
+- (void) neuro2DButtonPressed
 {
-    self.title = @"works";
-    //[self performSegueWithIdentifier:@"NeuroIndexToNeuroHomeSegue" sender:self];
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"IndexAllToNeuroHomeSegue" sender:self];
 }
 
-- (void) doADifferentThing
+- (void) neuroAnimationButtonPressed
 {
-    self.title = @"This is different!";
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"IndexAllToNeuroTractsSegue" sender:self];
 }
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-//    
-//    NeuroViewController* destViewController = segue.destinationViewController;
-//    
-//    if([segue.identifier isEqualToString:@"NeuroIndexToNeuroHomeSegue"])
-//    {
-//        destViewController.infoPassingTest = 1;
-//    }
-//    else if([segue.identifier isEqualToString:@""]){
-//        
-//    }
-//    
-//}
+- (void) histo2DButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"IndexAllToHistoSlideSegue" sender:self];
+}
 
+- (void) embryo2DButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"IndexAllToEmbryoHomeSegue" sender:self];
+}
+
+- (void) embryoAnimationButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"IndexAllToEmbryoAnimationListSegue" sender:self];
+}
+
+- (void) gross3DButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"IndexAllToGross3DSegue" sender:self];
+}
+
+- (void) gross2DButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"IndexAllToGrossHomeSegue" sender:self];
+}
+
+- (void) grossVideoButtonPressed
+{
+    mediaButtonSegue = true;
+    [self performSegueWithIdentifier:@"IndexAllToGrossVideoListSegue" sender:self];
+}
+
+// Pass information if segue is triggered by a media button
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    //NeuroViewController* neuroHomeVC;
+    NeuroTractsViewController* neuroTractsVC;
+    //HistoSlide1ViewController* histoSlideVC;
+    //EmbryoViewController* embryoHomeVC;
+    EmbryoAnimationsListViewController* embryoAnimationVC;
+    //Gross3DModelViewController* gross3DVC;
+    GrossViewController* grossHomeVC;
+    GrossVideoListViewController* grossVideoVC;
+    
+    if (mediaButtonSegue)
+    {
+        // Neuro 2D
+        //if([segue.identifier isEqualToString:@"IndexAllToNeuroHomeSegue"])
+        //{
+        //    neuroHomeVC = segue.destinationViewController;
+              //Set passed info
+        
+        //  When this code is written, change the following "if" to an "else if"
+        //}
+        // Neuro Animation
+        if([segue.identifier isEqualToString:@"IndexAllToNeuroTractsSegue"])
+        {
+            neuroTractsVC = segue.destinationViewController;
+            neuroTractsVC.startUpVideoName = videoName;
+        }
+        // Histo 2D
+        //else if([segue.identifier isEqualToString:@"IndexAllToHistoSlideSegue"])
+        //{
+        //    histoSlideVC = segue.destinationViewController;
+              //Set passed info
+        //}
+        // Embryo 2D
+        //else if([segue.identifier isEqualToString:@"IndexAllToEmbryoHomeSegue"])
+        //{
+        //    embryoHomeVC = segue.destinationViewController;
+              //Set passed info
+        //}
+        // Embryo Animation
+        else if([segue.identifier isEqualToString:@"IndexAllToEmbryoAnimationListSegue"])
+        {
+            embryoAnimationVC = segue.destinationViewController;
+            embryoAnimationVC.startUpVideoName = videoName;
+        }
+        // Gross 3D
+        //else if([segue.identifier isEqualToString:@"IndexAllToGross3DSegue"])
+        //{
+        //    gross3DVC = segue.destinationViewController;
+              //Set passed info
+        //}
+        // Gross 2D
+        else if([segue.identifier isEqualToString:@"IndexAllToGrossHomeSegue"])
+        {
+            grossHomeVC = segue.destinationViewController;
+            grossHomeVC.initialPopupName = partName;
+        }
+        // Gross Video
+        else if([segue.identifier isEqualToString:@"IndexAllToGrossVideoListSegue"])
+        {
+            grossVideoVC = segue.destinationViewController;
+            grossVideoVC.startUpVideoName = videoName;
+        }
+    }
+}
+
+#pragma mark - Search Bar
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith [c] %@", searchText];

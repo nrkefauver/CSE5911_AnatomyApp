@@ -191,6 +191,14 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="qQT-DS-eTX" id="R5a-LZ-WXx"/>
+                        <segue destination="W8x-iU-qGh" kind="push" identifier="IndexAllToGrossHomeSegue" id="E61-7V-nK5"/>
+                        <segue destination="PDT-Rl-dT5" kind="push" identifier="IndexAllToGrossVideoListSegue" id="CV4-W5-lYs"/>
+                        <segue destination="VUO-9Z-0Vc" kind="push" identifier="IndexAllToGross3DSegue" id="1xR-Sz-n9v"/>
+                        <segue destination="1Hf-Ur-mTZ" kind="push" identifier="IndexAllToHistoSlideSegue" id="A8p-So-4gq"/>
+                        <segue destination="Zc9-b7-UI4" kind="push" identifier="IndexAllToEmbryoHomeSegue" id="g1d-cf-3uC"/>
+                        <segue destination="7sD-q7-0nW" kind="push" identifier="IndexAllToEmbryoAnimationListSegue" id="fDb-k1-LcV"/>
+                        <segue destination="Z1N-LW-t3Y" kind="push" identifier="IndexAllToNeuroHomeSegue" id="kZK-6S-lN0"/>
+                        <segue destination="9ZS-Ik-XvH" kind="push" identifier="IndexAllToNeuroTractsSegue" id="osL-gx-dWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vof-kY-caO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -252,7 +260,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1830" y="-1002"/>
+            <point key="canvasLocation" x="2934" y="-1002"/>
         </scene>
         <!--Embryo View Controller - Embryology Home-->
         <scene sceneID="6gF-am-Wrc">
@@ -317,7 +325,6 @@
                         <outlet property="scrollView" destination="sgK-ek-a38" id="38e-R1-0kD"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="EmbryoToHomeSegue" id="TtF-se-HDQ"/>
                         <segue destination="7sD-q7-0nW" kind="push" identifier="EmbryoHomeToAnimationsListSegue" id="KNf-OE-a5W"/>
-                        <segue destination="0HC-13-e6l" kind="push" identifier="EmbryoHomeToIndexSegue" id="Xgb-47-Ueh"/>
                         <segue destination="i3k-1k-qne" kind="push" identifier="EmbryoHomeToEmbryoIndex" id="ang-sS-8TK"/>
                     </connections>
                 </viewController>
@@ -574,7 +581,6 @@
                         <outlet property="BlueSpinal" destination="7mq-mO-TCq" id="cvd-a4-yAb"/>
                         <outlet property="RedSpinal" destination="zoZ-9K-97c" id="KnF-WL-GXQ"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="HistoToHomeSegue" id="AwG-wi-xhT"/>
-                        <segue destination="0HC-13-e6l" kind="push" identifier="HistoHomeToIndexSegue" id="far-xO-xjq"/>
                         <segue destination="zrV-VM-hcI" kind="push" identifier="HistoHomeToHistoIndex" id="iXe-hZ-jWL"/>
                     </connections>
                 </viewController>
@@ -587,7 +593,7 @@
             <objects>
                 <viewController id="1Hf-Ur-mTZ" customClass="HistoSlide1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hly-wK-FfP">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="0.jpg" id="UDp-6O-roh">
@@ -637,11 +643,11 @@
             <objects>
                 <viewController id="Tua-02-U9a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B98-df-1hO">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="kif-OH-8bB">
-                                <rect key="frame" x="-16" y="-334" width="879" height="1358"/>
+                                <rect key="frame" x="-16" y="-334" width="879" height="1294"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
@@ -845,7 +851,6 @@
                         <outlet property="scrollView" destination="yLE-6T-9dc" id="bo0-dU-7sc"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroToHomeSegue" id="hOH-RS-S2g"/>
                         <segue destination="A0d-hn-6U1" kind="push" identifier="NeuroHomeToAnimationsListSegue" id="32O-Pf-eqc"/>
-                        <segue destination="0HC-13-e6l" kind="push" identifier="NeuroHomeToIndexSegue" id="xgI-CB-z14"/>
                         <segue destination="0zu-PB-8PX" kind="push" identifier="NeuroHomeToNeuroIndex" id="Rde-ZO-HXw"/>
                         <segue destination="9ZS-Ik-XvH" kind="push" identifier="NeuroHomeToNeuroTractsSegue" id="yDg-CP-p8k"/>
                     </connections>
@@ -1242,7 +1247,6 @@
                         <segue destination="BYZ-38-t0r" kind="push" identifier="GrossToHomeSegue" id="HR3-33-3xN"/>
                         <segue destination="PDT-Rl-dT5" kind="push" identifier="GrossHomeToGrossVideosSegue" id="fdm-bw-BD5"/>
                         <segue destination="VUO-9Z-0Vc" kind="push" identifier="GrossHomeToGross3DModelSegue" id="xIp-rp-Izy"/>
-                        <segue destination="0HC-13-e6l" kind="push" identifier="GrossHomeToIndexSegue" id="bsx-wD-Vbr"/>
                         <segue destination="1zj-il-MAi" kind="push" identifier="GrossHomeToGrossIndex" id="zth-Qd-6wy"/>
                     </connections>
                 </viewController>
@@ -1471,7 +1475,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="pCI-72-Nhr" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pjb-tL-mCN">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="461"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1486,7 +1490,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Bm8-IM-9Jj" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fMY-L0-Pir">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1518,18 +1522,17 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TOI-VB-LJ6"/>
-        <segue reference="psJ-mD-Iz2"/>
-        <segue reference="qEZ-5V-GMV"/>
-        <segue reference="ds3-wK-1ri"/>
-        <segue reference="2en-Sb-DRb"/>
-        <segue reference="xYM-eC-wDP"/>
-        <segue reference="GqQ-Lq-WQk"/>
+        <segue reference="fDb-k1-LcV"/>
         <segue reference="40z-R1-3Bt"/>
-        <segue reference="Sqy-U0-VmQ"/>
-        <segue reference="gyO-mB-WHb"/>
+        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="A8p-So-4gq"/>
+        <segue reference="CV4-W5-lYs"/>
+        <segue reference="kZK-6S-lN0"/>
+        <segue reference="E61-7V-nK5"/>
+        <segue reference="1xR-Sz-n9v"/>
+        <segue reference="g1d-cf-3uC"/>
+        <segue reference="osL-gx-dWF"/>
         <segue reference="TJa-hY-aVm"/>
-        <segue reference="xgI-CB-z14"/>
         <segue reference="M3k-y5-9Yd"/>
         <segue reference="f8e-Mr-dEL"/>
         <segue reference="yHH-64-pgG"/>
