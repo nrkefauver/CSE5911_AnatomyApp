@@ -138,6 +138,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
     //Creates array of definitions
     textArray = sortedValues;
     
+    mediaButtonSegue = false;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -648,6 +649,7 @@ static NSString *videoName; //Name of video to play in Embryo Animations List or
     GrossViewController* grossHomeVC;
     GrossVideoListViewController* grossVideoVC;
 
+    NSLog(@"%d",mediaButtonSegue);
     // if segue is triggered by a media button, pass information
     if (mediaButtonSegue)
     {

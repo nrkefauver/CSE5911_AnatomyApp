@@ -136,6 +136,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
     //Creates array of definitions
     textArray = sortedValues;
     
+    mediaButtonSegue = false;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

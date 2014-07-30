@@ -75,6 +75,8 @@ CGFloat origin;
     
     //Set index to -1 saying no cell is expanded or should expand.
     selectedIndex = -1;
+    
+    mediaButtonSegue = false;
 }
 
 #pragma mark - Table Contents
