@@ -134,7 +134,6 @@
 		D085395F196B3B7D000962D8 /* IndexAll.png in Resources */ = {isa = PBXBuildFile; fileRef = D085395E196B3B7D000962D8 /* IndexAll.png */; };
 		D08A364C1958762F005E5C77 /* closedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D08A364B1958762F005E5C77 /* closedIcon.png */; };
 		D08A364E19587780005E5C77 /* openedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D08A364D19587780005E5C77 /* openedIcon.png */; };
-		D09D74A21989999800729A2F /* 20140623_165806.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D09D74A01989999800729A2F /* 20140623_165806.mp4 */; };
 		D09D74A419899BC500729A2F /* 4natomy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D09D74A319899BC500729A2F /* 4natomy 2.png */; };
 		D0A0115419524DB80051A7F4 /* EMAccordionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115319524DB80051A7F4 /* EMAccordionSection.m */; };
 		D0A0115719524E340051A7F4 /* EMAccordionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0115619524E340051A7F4 /* EMAccordionTableViewController.m */; };
@@ -327,7 +326,6 @@
 		D08A364B1958762F005E5C77 /* closedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = closedIcon.png; path = Images/closedIcon.png; sourceTree = "<group>"; };
 		D08A364D19587780005E5C77 /* openedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = openedIcon.png; path = Images/openedIcon.png; sourceTree = "<group>"; };
 		D08A364F19588BCB005E5C77 /* Terms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Terms.plist; sourceTree = "<group>"; };
-		D09D74A01989999800729A2F /* 20140623_165806.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 20140623_165806.mp4; sourceTree = "<group>"; };
 		D09D74A319899BC500729A2F /* 4natomy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4natomy 2.png"; sourceTree = "<group>"; };
 		D0A0115219524DB80051A7F4 /* EMAccordionSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAccordionSection.h; sourceTree = "<group>"; };
 		D0A0115319524DB80051A7F4 /* EMAccordionSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAccordionSection.m; sourceTree = "<group>"; };
@@ -717,7 +715,6 @@
 			isa = PBXGroup;
 			children = (
 				D09D74A319899BC500729A2F /* 4natomy 2.png */,
-				D09D74A01989999800729A2F /* 20140623_165806.mp4 */,
 				46EF42941980883D001022E8 /* 2D Image Media Button.PNG */,
 				46EF42951980883D001022E8 /* 3D Model Media Button.PNG */,
 				46EF42961980883D001022E8 /* Animation Media Button.PNG */,
@@ -932,7 +929,6 @@
 				598E99B21986F0F0007418C0 /* Neural Tube Formation.png in Resources */,
 				D0FFFB981977379900BA4D7B /* Video Media Button.PNG in Resources */,
 				46EF42A21980883D001022E8 /* Animation Media Button.PNG in Resources */,
-				D09D74A21989999800729A2F /* 20140623_165806.mp4 in Resources */,
 				46EF42A31980883D001022E8 /* Blue Popup 2D Image Media Button.PNG in Resources */,
 				D016FF9D19798C7700023668 /* osu-web-footer-wordmark-rev.png in Resources */,
 				466C49B4193BB914000B2A78 /* home.png in Resources */,
