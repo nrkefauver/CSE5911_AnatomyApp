@@ -67,15 +67,13 @@ CGFloat origin;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    //Testing expandable cells code
-    //self.tableView.delegate = self;
+
     self.tableView.dataSource = self;
     
     //Set index to -1 saying no cell is expanded or should expand.
     selectedIndex = -1;
     
+    //Any segues other than those triggered by media buttons don't pass info
     mediaButtonSegue = false;
 }
 
@@ -395,6 +393,7 @@ CGFloat origin;
         emTV.tableView.tag = 100;
         [self.view addSubview:emTV.tableView];
         
+        // Don't re-enter this code (i.e. via back button)
         viewAlreadyCreated = true;
     }
 }
@@ -409,9 +408,6 @@ CGFloat origin;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
     return self;
 }
 
@@ -428,7 +424,7 @@ CGFloat origin;
     }
 }
 
-
+// Create cell contents
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Access expanding cell
