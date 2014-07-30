@@ -72,7 +72,7 @@ int termIndex;
     cell.textLabel.text = [[terms objectAtIndex: termIndex] objectAtIndex:1];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
 
-    int height = 250;
+    int height = 160;
     CGSize size = CGSizeMake(300, height);
     self.preferredContentSize = size;
     
