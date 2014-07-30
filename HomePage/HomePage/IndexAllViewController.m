@@ -47,7 +47,7 @@ static int GrossMedia = 8; //Position in property list for all Gross Media optio
 static NSString *partName; //Name of term to display with Popover window in Gross Home
 static NSString *videoName; //Name of video to play in Embryo Animations List or Gross Video List
 static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a media button or not
-
+static bool viewAlreadyCreated = false; //Tracks if Index All has already been created
 
 //COLLAPSIBLE TABLE CODE
 NSMutableArray *dataSection01;
@@ -81,315 +81,322 @@ CGFloat origin;
 
 #pragma mark - Table Contents
 - (void) viewDidAppear:(BOOL)animated {
-    // Setup the EMAccordionTableViewController
-    origin = 20.0f;
-    if ([[UIDevice currentDevice].model hasPrefix:@"iPad"])
-        origin = 100.0f;
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(origin, origin, self.view.bounds.size.width - origin*2, self.view.bounds.size.height - origin*2) style:UITableViewStylePlain];
-    [tableView setSectionHeaderHeight:kTableHeaderHeight];
-    /*
-     ... set here some other tableView properties ...
-     */
-    
-    // Setup the EMAccordionTableViewController
-    emTV = [[EMAccordionTableViewController alloc] initWithTable:tableView];
-    [emTV setDelegate:self];
-    
-    [emTV setClosedSectionIcon:[UIImage imageNamed:@"closedIcon"]];
-    [emTV setOpenedSectionIcon:[UIImage imageNamed:@"openedIcon"]];
-    
-    
-    searchArray = [[NSMutableArray alloc] init];
-    searchSubtitles = [[NSMutableArray alloc] init];
-    searchText = [[NSMutableArray alloc] init];
-    
-    //Initialize the dictionary that will contain all the definition options
-    masterDictionary = [[NSMutableDictionary alloc] init];
-    mediaDictionary = [[NSMutableDictionary alloc] init];
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
-    
-    //Iterates through entire terms list and creates array containing all the Neuroanatomy (array) terms
-    NSArray *terms = [[NSArray alloc] initWithContentsOfFile:path];
-    
-    //Create temp array for keys
-    NSMutableArray *tempNames = [[NSMutableArray alloc] init];
-    NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
-    NSMutableArray *defOptions = [[NSMutableArray alloc] init];
-    NSMutableArray *mediaOptions = [[NSMutableArray alloc] init];
-    
-    for (int i=0; i< 140; i++) {
-        if ([terms objectAtIndex:i]!= nil) {
-            if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:1] isEqualToString:@""]) {
-                [nTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
-                [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
-                [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+    // If viewDidAppear has yet to be entered
+    if (!viewAlreadyCreated)
+    {
+        // Setup the EMAccordionTableViewController
+        origin = 20.0f;
+        if ([[UIDevice currentDevice].model hasPrefix:@"iPad"])
+            origin = 100.0f;
+        
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(origin, origin, self.view.bounds.size.width - origin*2, self.view.bounds.size.height - origin*2) style:UITableViewStylePlain];
+        [tableView setSectionHeaderHeight:kTableHeaderHeight];
+        /*
+         ... set here some other tableView properties ...
+         */
+        
+        // Setup the EMAccordionTableViewController
+        emTV = [[EMAccordionTableViewController alloc] initWithTable:tableView];
+        [emTV setDelegate:self];
+        
+        [emTV setClosedSectionIcon:[UIImage imageNamed:@"closedIcon"]];
+        [emTV setOpenedSectionIcon:[UIImage imageNamed:@"openedIcon"]];
+        
+        
+        searchArray = [[NSMutableArray alloc] init];
+        searchSubtitles = [[NSMutableArray alloc] init];
+        searchText = [[NSMutableArray alloc] init];
+        
+        //Initialize the dictionary that will contain all the definition options
+        masterDictionary = [[NSMutableDictionary alloc] init];
+        mediaDictionary = [[NSMutableDictionary alloc] init];
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Terms" ofType:@"plist"];
+        
+        //Iterates through entire terms list and creates array containing all the Neuroanatomy (array) terms
+        NSArray *terms = [[NSArray alloc] initWithContentsOfFile:path];
+        
+        //Create temp array for keys
+        NSMutableArray *tempNames = [[NSMutableArray alloc] init];
+        NSMutableArray *tempDefs = [[NSMutableArray alloc] init];
+        NSMutableArray *defOptions = [[NSMutableArray alloc] init];
+        NSMutableArray *mediaOptions = [[NSMutableArray alloc] init];
+        
+        for (int i=0; i< 140; i++) {
+            if ([terms objectAtIndex:i]!= nil) {
+                if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:1] isEqualToString:@""]) {
+                    [nTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                    [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                    [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
 
-                //Creates array of all the possible definitions for each term
-                NSMutableArray *temp = [[NSMutableArray alloc]init];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
-                [defOptions addObject:temp];
-                
-                //Creates array of all the media arrays for each term
-                NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
-                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:NeuroMedia]] ;
-                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:HistoMedia] ];
-                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] ];
-                [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:GrossMedia]];
-                [mediaOptions addObject:tempMedia];
+                    //Creates array of all the possible definitions for each term
+                    NSMutableArray *temp = [[NSMutableArray alloc]init];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                    [defOptions addObject:temp];
+                    
+                    //Creates array of all the media arrays for each term
+                    NSMutableArray *tempMedia = [[NSMutableArray alloc]init];
+                    [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:NeuroMedia]] ;
+                    [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:HistoMedia] ];
+                    [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:EmbryoMedia] ];
+                    [tempMedia addObject:[[terms objectAtIndex:i] objectAtIndex:GrossMedia]];
+                    [mediaOptions addObject:tempMedia];
+                }
             }
         }
-    }
-    
-    //Adds all Neuro terms and their designated definitions to the overall dictionary
-    NSDictionary *tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
-    [masterDictionary addEntriesFromDictionary:tempDict];
-    
-    //Adds all Neuro terms and their designated media to the media dictionary
-    NSDictionary *mediaDict = [[NSDictionary alloc] initWithObjects:mediaOptions forKeys:tempNames];
-    [mediaDictionary addEntriesFromDictionary:mediaDict];
-    
-    //Create Dictionary for terms and their definitions
-    NSDictionary *dictN= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
-    
-    
-    //Create alphabetical list of definition names
-    NSArray * sortedNKeys = [[dictN allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
-    
-    //Create alphabetical list of definitions
-    NSArray * sortedNValues = [dictN objectsForKeys: sortedNKeys notFoundMarker: [NSNull null]];
-    
-    //Creates an array of all the definition names to be searched through
-    nTitleArray = sortedNKeys;
-    
-    //Adds to overall list of definitions for searching
-    [searchArray addObjectsFromArray:sortedNKeys];
-    
-    //Creates an array of definition names
-    subtitleNArray = sortedNKeys;
-    [searchSubtitles addObjectsFromArray:subtitleNArray];
-    
-    //Creates array of definitions
-    textNArray = sortedNValues;
-    [searchText addObjectsFromArray:textNArray];
-    
-    // Setup some test data
-    dataSection01 = nTitleArray;
-    
-    
-    
+        
+        //Adds all Neuro terms and their designated definitions to the overall dictionary
+        NSDictionary *tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
+        [masterDictionary addEntriesFromDictionary:tempDict];
+        
+        //Adds all Neuro terms and their designated media to the media dictionary
+        NSDictionary *mediaDict = [[NSDictionary alloc] initWithObjects:mediaOptions forKeys:tempNames];
+        [mediaDictionary addEntriesFromDictionary:mediaDict];
+        
+        //Create Dictionary for terms and their definitions
+        NSDictionary *dictN= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
+        
+        
+        //Create alphabetical list of definition names
+        NSArray * sortedNKeys = [[dictN allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+        
+        //Create alphabetical list of definitions
+        NSArray * sortedNValues = [dictN objectsForKeys: sortedNKeys notFoundMarker: [NSNull null]];
+        
+        //Creates an array of all the definition names to be searched through
+        nTitleArray = sortedNKeys;
+        
+        //Adds to overall list of definitions for searching
+        [searchArray addObjectsFromArray:sortedNKeys];
+        
+        //Creates an array of definition names
+        subtitleNArray = sortedNKeys;
+        [searchSubtitles addObjectsFromArray:subtitleNArray];
+        
+        //Creates array of definitions
+        textNArray = sortedNValues;
+        [searchText addObjectsFromArray:textNArray];
+        
+        // Setup some test data
+        dataSection01 = nTitleArray;
+        
+        
+        
 
-    //Create temp array for keys
-    [tempNames removeAllObjects];
-    [tempDefs removeAllObjects];
-    [defOptions removeAllObjects];
-    for (int i=0; i< 140; i++) {
-        if ([terms objectAtIndex:i]!= nil) {
-            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
-            if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:2] isEqualToString:@""]) {
-                [hTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
-                [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
-                [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
-                
-                
-                //Creates array of all the possible definitions for each term
-                NSMutableArray *temp = [[NSMutableArray alloc]init];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
-                [defOptions addObject:temp];
+        //Create temp array for keys
+        [tempNames removeAllObjects];
+        [tempDefs removeAllObjects];
+        [defOptions removeAllObjects];
+        for (int i=0; i< 140; i++) {
+            if ([terms objectAtIndex:i]!= nil) {
+                NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
+                if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:2] isEqualToString:@""]) {
+                    [hTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                    [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                    [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                    
+                    
+                    //Creates array of all the possible definitions for each term
+                    NSMutableArray *temp = [[NSMutableArray alloc]init];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                    [defOptions addObject:temp];
+                }
             }
         }
-    }
-    
-    //Adds all Histology terms and their designated definitions to the overall dictionary
-    tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
-    [masterDictionary addEntriesFromDictionary:tempDict];
-    
-    //Create Dictionary for terms and their definitions
-    NSDictionary *dictH= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
-    
-    
-    //Create alphabetical list of definition names
-    NSArray * sortedHKeys = [[dictH allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
-    
-    //Create alphabetical list of definitions
-    NSArray * sortedHValues = [dictH objectsForKeys: sortedHKeys notFoundMarker: [NSNull null]];
-    
-    //Creates an array of all the definition names to be searched through
-    hTitleArray = sortedHKeys;
+        
+        //Adds all Histology terms and their designated definitions to the overall dictionary
+        tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
+        [masterDictionary addEntriesFromDictionary:tempDict];
+        
+        //Create Dictionary for terms and their definitions
+        NSDictionary *dictH= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
+        
+        
+        //Create alphabetical list of definition names
+        NSArray * sortedHKeys = [[dictH allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+        
+        //Create alphabetical list of definitions
+        NSArray * sortedHValues = [dictH objectsForKeys: sortedHKeys notFoundMarker: [NSNull null]];
+        
+        //Creates an array of all the definition names to be searched through
+        hTitleArray = sortedHKeys;
 
-    //Adds to overall list of definitions for searching
-    [searchArray addObjectsFromArray:sortedHKeys];
-    
-    //Creates an array of definition names
-    subtitleHArray = sortedHKeys;
-    [searchSubtitles addObjectsFromArray:sortedHKeys];
-    
-    //Creates array of definitions
-    textHArray = sortedHValues;
-    [searchText addObjectsFromArray:sortedHValues];
+        //Adds to overall list of definitions for searching
+        [searchArray addObjectsFromArray:sortedHKeys];
+        
+        //Creates an array of definition names
+        subtitleHArray = sortedHKeys;
+        [searchSubtitles addObjectsFromArray:sortedHKeys];
+        
+        //Creates array of definitions
+        textHArray = sortedHValues;
+        [searchText addObjectsFromArray:sortedHValues];
 
-    dataSection02 = hTitleArray;
-  
-    //Create temp array for keys
-    [tempNames removeAllObjects];
-    [tempDefs removeAllObjects];
-    [defOptions removeAllObjects];
-    for (int i=0; i< 140; i++) {
-        if ([terms objectAtIndex:i]!= nil) {
-            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
-            if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:3] isEqualToString:@""]) {
-                [eTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
-                [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
-                [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
-                
-                //Creates array of all the possible definitions for each term
-                NSMutableArray *temp = [[NSMutableArray alloc]init];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
-                [defOptions addObject:temp];
+        dataSection02 = hTitleArray;
+      
+        //Create temp array for keys
+        [tempNames removeAllObjects];
+        [tempDefs removeAllObjects];
+        [defOptions removeAllObjects];
+        for (int i=0; i< 140; i++) {
+            if ([terms objectAtIndex:i]!= nil) {
+                NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
+                if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:3] isEqualToString:@""]) {
+                    [eTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                    [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                    [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                    
+                    //Creates array of all the possible definitions for each term
+                    NSMutableArray *temp = [[NSMutableArray alloc]init];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                    [defOptions addObject:temp];
+                }
             }
         }
-    }
-    
-    //Adds all Embryology terms and their designated definitions to the overall dictionary
-    tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
-    [masterDictionary addEntriesFromDictionary:tempDict];
+        
+        //Adds all Embryology terms and their designated definitions to the overall dictionary
+        tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
+        [masterDictionary addEntriesFromDictionary:tempDict];
 
-    //Create Dictionary for terms and their definitions
-    NSDictionary *dictE= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
-    
-    
-    //Create alphabetical list of definition names
-    NSArray * sortedEKeys = [[dictE allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
-    
-    //Create alphabetical list of definitions
-    NSArray * sortedEValues = [dictE objectsForKeys: sortedEKeys notFoundMarker: [NSNull null]];
-    
-    //Creates an array of all the definition names to be searched through
-    eTitleArray = sortedEKeys;
+        //Create Dictionary for terms and their definitions
+        NSDictionary *dictE= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
+        
+        
+        //Create alphabetical list of definition names
+        NSArray * sortedEKeys = [[dictE allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+        
+        //Create alphabetical list of definitions
+        NSArray * sortedEValues = [dictE objectsForKeys: sortedEKeys notFoundMarker: [NSNull null]];
+        
+        //Creates an array of all the definition names to be searched through
+        eTitleArray = sortedEKeys;
 
-    //Adds to overall list of definitions for searching
-    [searchArray addObjectsFromArray:sortedEKeys];
-    
-    //Creates an array of definition names
-    subtitleEArray = sortedEKeys;
-    [searchSubtitles addObjectsFromArray:sortedEKeys];
-    
-    //Creates array of definitions
-    textEArray = sortedEValues;
-    [searchText addObjectsFromArray:sortedEValues];
-    
-    dataSection03 = eTitleArray;
-    
-    
-    //Create temp array for keys
-    [tempNames removeAllObjects];
-    [tempDefs removeAllObjects];
-    [defOptions removeAllObjects];
-    for (int i=0; i< 140; i++) {
-        if ([terms objectAtIndex:i]!= nil) {
-            
-            NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
-            if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:4] isEqualToString:@""]) {
-                [gTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
-                [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
-                [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+        //Adds to overall list of definitions for searching
+        [searchArray addObjectsFromArray:sortedEKeys];
+        
+        //Creates an array of definition names
+        subtitleEArray = sortedEKeys;
+        [searchSubtitles addObjectsFromArray:sortedEKeys];
+        
+        //Creates array of definitions
+        textEArray = sortedEValues;
+        [searchText addObjectsFromArray:sortedEValues];
+        
+        dataSection03 = eTitleArray;
+        
+        
+        //Create temp array for keys
+        [tempNames removeAllObjects];
+        [tempDefs removeAllObjects];
+        [defOptions removeAllObjects];
+        for (int i=0; i< 140; i++) {
+            if ([terms objectAtIndex:i]!= nil) {
                 
-                //Creates array of all the possible definitions for each term
-                NSMutableArray *temp = [[NSMutableArray alloc]init];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
-                [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
-                [defOptions addObject:temp];
+                NSString *check =[[terms objectAtIndex:i] objectAtIndex:1];
+                if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:4] isEqualToString:@""]) {
+                    [gTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                    [tempNames addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
+                    [tempDefs addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                    
+                    //Creates array of all the possible definitions for each term
+                    NSMutableArray *temp = [[NSMutableArray alloc]init];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:1] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:2] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:3] ];
+                    [temp addObject:[[terms objectAtIndex:i] objectAtIndex:4] ];
+                    [defOptions addObject:temp];
+                }
             }
         }
+        
+        //Adds all Gross terms and their designated definitions to the overall dictionary
+        tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
+        [masterDictionary addEntriesFromDictionary:tempDict];
+
+        
+        //Create Dictionary for terms and their definitions
+        NSDictionary *dictG= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
+        
+        
+        //Create alphabetical list of definition names
+        NSArray * sortedGKeys = [[dictG allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
+        
+        //Create alphabetical list of definitions
+        NSArray * sortedGValues = [dictG objectsForKeys: sortedGKeys notFoundMarker: [NSNull null]];
+        
+        //Creates an array of all the definition names to be searched through
+        gTitleArray = sortedGKeys;
+
+        //Adds to overall list of definitions for searching
+        [searchArray addObjectsFromArray:sortedGKeys];
+        
+        //Creates an array of definition names
+        subtitleGArray = sortedGKeys;
+        [searchSubtitles addObjectsFromArray:sortedGKeys];
+        
+        //Creates array of definitions
+        textGArray = sortedGValues;
+        [searchText addObjectsFromArray:sortedGValues];
+        
+        dataSection04 = gTitleArray;
+
+        //
+        
+        // Section graphics
+        UIColor *sectionsColor = [UIColor blackColor];
+        UIColor *sectionTitleColor = [UIColor whiteColor];
+        UIFont *sectionTitleFont = [UIFont fontWithName:@"Georgia-Bold" size:24.0f];
+        
+        // Add the sections to the controller
+        EMAccordionSection *section01 = [[EMAccordionSection alloc] init];
+        [section01 setBackgroundColor:sectionsColor];
+        [section01 setItems:dataSection01];
+        [section01 setTitle:@"Neuroanatomy"];
+        [section01 setTitleFont:[UIFont fontWithName:@"Georgia-Bold" size:24.0f]];
+        [section01 setTitleColor:sectionTitleColor];
+        [emTV addAccordionSection:section01];
+        
+        EMAccordionSection *section02 = [[EMAccordionSection alloc] init];
+        [section02 setBackgroundColor:sectionsColor];
+        [section02 setItems:dataSection02];
+        [section02 setTitle:@"Histology"];
+        [section02 setTitleColor:sectionTitleColor];
+        [section02 setTitleFont:sectionTitleFont];
+        [emTV addAccordionSection:section02];
+        
+        EMAccordionSection *section03 = [[EMAccordionSection alloc] init];
+        [section03 setBackgroundColor:sectionsColor];
+        [section03 setItems:dataSection03];
+        [section03 setTitle:@"Embryology"];
+        [section03 setTitleColor:sectionTitleColor];
+        [section03 setTitleFont:sectionTitleFont];
+        [emTV addAccordionSection:section03];
+        
+        EMAccordionSection *section04 = [[EMAccordionSection alloc] init];
+        [section04 setBackgroundColor:sectionsColor];
+        [section04 setItems:dataSection04];
+        [section04 setTitle:@"Gross Anatomy"];
+        [section04 setTitleColor:sectionTitleColor];
+        [section04 setTitleFont:sectionTitleFont];
+        [emTV addAccordionSection:section04];
+
+        sections = [[NSArray alloc] initWithObjects:section01,section02,section03, section04, nil];
+        
+        emTV.tableView.tag = 100;
+        [self.view addSubview:emTV.tableView];
+        
+        viewAlreadyCreated = true;
     }
-    
-    //Adds all Gross terms and their designated definitions to the overall dictionary
-    tempDict = [[NSDictionary alloc] initWithObjects:defOptions forKeys:tempNames];
-    [masterDictionary addEntriesFromDictionary:tempDict];
-
-    
-    //Create Dictionary for terms and their definitions
-    NSDictionary *dictG= [[NSDictionary alloc] initWithObjects:tempDefs forKeys:tempNames];
-    
-    
-    //Create alphabetical list of definition names
-    NSArray * sortedGKeys = [[dictG allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
-    
-    //Create alphabetical list of definitions
-    NSArray * sortedGValues = [dictG objectsForKeys: sortedGKeys notFoundMarker: [NSNull null]];
-    
-    //Creates an array of all the definition names to be searched through
-    gTitleArray = sortedGKeys;
-
-    //Adds to overall list of definitions for searching
-    [searchArray addObjectsFromArray:sortedGKeys];
-    
-    //Creates an array of definition names
-    subtitleGArray = sortedGKeys;
-    [searchSubtitles addObjectsFromArray:sortedGKeys];
-    
-    //Creates array of definitions
-    textGArray = sortedGValues;
-    [searchText addObjectsFromArray:sortedGValues];
-    
-    dataSection04 = gTitleArray;
-
-    //
-    
-    // Section graphics
-    UIColor *sectionsColor = [UIColor blackColor];
-    UIColor *sectionTitleColor = [UIColor whiteColor];
-    UIFont *sectionTitleFont = [UIFont fontWithName:@"Georgia-Bold" size:24.0f];
-    
-    // Add the sections to the controller
-    EMAccordionSection *section01 = [[EMAccordionSection alloc] init];
-    [section01 setBackgroundColor:sectionsColor];
-    [section01 setItems:dataSection01];
-    [section01 setTitle:@"Neuroanatomy"];
-    [section01 setTitleFont:[UIFont fontWithName:@"Georgia-Bold" size:24.0f]];
-    [section01 setTitleColor:sectionTitleColor];
-    [emTV addAccordionSection:section01];
-    
-    EMAccordionSection *section02 = [[EMAccordionSection alloc] init];
-    [section02 setBackgroundColor:sectionsColor];
-    [section02 setItems:dataSection02];
-    [section02 setTitle:@"Histology"];
-    [section02 setTitleColor:sectionTitleColor];
-    [section02 setTitleFont:sectionTitleFont];
-    [emTV addAccordionSection:section02];
-    
-    EMAccordionSection *section03 = [[EMAccordionSection alloc] init];
-    [section03 setBackgroundColor:sectionsColor];
-    [section03 setItems:dataSection03];
-    [section03 setTitle:@"Embryology"];
-    [section03 setTitleColor:sectionTitleColor];
-    [section03 setTitleFont:sectionTitleFont];
-    [emTV addAccordionSection:section03];
-    
-    EMAccordionSection *section04 = [[EMAccordionSection alloc] init];
-    [section04 setBackgroundColor:sectionsColor];
-    [section04 setItems:dataSection04];
-    [section04 setTitle:@"Gross Anatomy"];
-    [section04 setTitleColor:sectionTitleColor];
-    [section04 setTitleFont:sectionTitleFont];
-    [emTV addAccordionSection:section04];
-
-    sections = [[NSArray alloc] initWithObjects:section01,section02,section03, section04, nil];
-    
-    emTV.tableView.tag = 100;
-    [self.view addSubview:emTV.tableView];
 }
 
 - (NSMutableArray *) dataFromIndexPath: (NSIndexPath *)indexPath {
