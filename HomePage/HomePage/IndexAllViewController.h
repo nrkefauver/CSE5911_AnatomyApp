@@ -15,6 +15,7 @@
     NSMutableArray *searchSubtitles;
     NSMutableArray *searchText;
     NSMutableDictionary *masterDictionary;
+    NSMutableDictionary *mediaDictionary;
     
     NSMutableArray *nTitleArray;
     NSMutableArray  *nArray;
