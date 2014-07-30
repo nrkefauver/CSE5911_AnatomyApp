@@ -22,6 +22,7 @@
 		462CB055193CFDB200B6CF72 /* Letter N.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB050193CFDB200B6CF72 /* Letter N.png */; };
 		462CB056193CFDB200B6CF72 /* Tracts.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB051193CFDB200B6CF72 /* Tracts.png */; };
 		462CB059193CFEDA00B6CF72 /* Animations.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB058193CFEDA00B6CF72 /* Animations.png */; };
+		464AA400198992ED00123D7E /* CervicalBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 464AA3FF198992ED00123D7E /* CervicalBlack.png */; };
 		466C49B4193BB914000B2A78 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AE193BB914000B2A78 /* home.png */; };
 		466C49B5193BB914000B2A78 /* Index.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49AF193BB914000B2A78 /* Index.png */; };
 		466C49B6193BB914000B2A78 /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = 466C49B0193BB914000B2A78 /* videos.png */; };
@@ -83,7 +84,6 @@
 		598E99B91986F115007418C0 /* cuneate2.png in Resources */ = {isa = PBXBuildFile; fileRef = 598E99B81986F115007418C0 /* cuneate2.png */; };
 		599DE2331980666D00995432 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DE2301980666D00995432 /* OBShapedButton.m */; };
 		599DE2341980666D00995432 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DE2321980666D00995432 /* UIImage+ColorAtPixel.m */; };
-		59A69FBB198708FD001C6D2E /* CervicalBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A69FBA198708FD001C6D2E /* CervicalBlack.png */; };
 		59A69FBF19870AE8001C6D2E /* LumbarBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A69FBC19870AE8001C6D2E /* LumbarBlack.png */; };
 		59A69FC019870AE8001C6D2E /* SacralBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A69FBD19870AE8001C6D2E /* SacralBlack.png */; };
 		59A69FC119870AE8001C6D2E /* ThoracicBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A69FBE19870AE8001C6D2E /* ThoracicBlack.png */; };
@@ -186,6 +186,7 @@
 		462CB050193CFDB200B6CF72 /* Letter N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Letter N.png"; path = "Images/Letter N.png"; sourceTree = "<group>"; };
 		462CB051193CFDB200B6CF72 /* Tracts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tracts.png; path = Images/Tracts.png; sourceTree = "<group>"; };
 		462CB058193CFEDA00B6CF72 /* Animations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Animations.png; path = Images/Animations.png; sourceTree = "<group>"; };
+		464AA3FF198992ED00123D7E /* CervicalBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CervicalBlack.png; sourceTree = "<group>"; };
 		466C49AE193BB914000B2A78 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Images/home.png; sourceTree = "<group>"; };
 		466C49AF193BB914000B2A78 /* Index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Index.png; path = Images/Index.png; sourceTree = "<group>"; };
 		466C49B0193BB914000B2A78 /* videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = videos.png; path = Images/videos.png; sourceTree = "<group>"; };
@@ -258,7 +259,6 @@
 		599DE2301980666D00995432 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBShapedButton.m; path = OBShapedButton/OBShapedButton.m; sourceTree = "<group>"; };
 		599DE2311980666D00995432 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ColorAtPixel.h"; path = "OBShapedButton/UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
 		599DE2321980666D00995432 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ColorAtPixel.m"; path = "OBShapedButton/UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
-		59A69FBA198708FD001C6D2E /* CervicalBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CervicalBlack.png; sourceTree = "<group>"; };
 		59A69FBC19870AE8001C6D2E /* LumbarBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LumbarBlack.png; sourceTree = "<group>"; };
 		59A69FBD19870AE8001C6D2E /* SacralBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SacralBlack.png; sourceTree = "<group>"; };
 		59A69FBE19870AE8001C6D2E /* ThoracicBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThoracicBlack.png; sourceTree = "<group>"; };
@@ -459,11 +459,11 @@
 		5962242419508A3A00701B76 /* Neuro */ = {
 			isa = PBXGroup;
 			children = (
+				464AA3FF198992ED00123D7E /* CervicalBlack.png */,
 				598E99B81986F115007418C0 /* cuneate2.png */,
 				59A69FBC19870AE8001C6D2E /* LumbarBlack.png */,
 				59A69FBD19870AE8001C6D2E /* SacralBlack.png */,
 				59A69FBE19870AE8001C6D2E /* ThoracicBlack.png */,
-				59A69FBA198708FD001C6D2E /* CervicalBlack.png */,
 				461B45DE1950CE980000189B /* Cervical_Drawing.png */,
 				461B45DF1950CE980000189B /* Cervical_Scan.png */,
 				461B45E01950CE980000189B /* Lumbar_Drawing.png */,
@@ -892,7 +892,6 @@
 				5962243519508A3A00701B76 /* 0.jpg in Resources */,
 				5962243119508A3A00701B76 /* Neural Tube Patterning.png in Resources */,
 				D0C65E68198089810061D626 /* Blue Popup Video Media Button.PNG in Resources */,
-				59A69FBB198708FD001C6D2E /* CervicalBlack.png in Resources */,
 				D0D8CC23195B7125009ECF3E /* E4.png in Resources */,
 				462CB059193CFEDA00B6CF72 /* Animations.png in Resources */,
 				46EF42A61980883D001022E8 /* Blue Popup Video Media Button.PNG in Resources */,
@@ -917,6 +916,7 @@
 				59A69FBF19870AE8001C6D2E /* LumbarBlack.png in Resources */,
 				598E99B41986F0F0007418C0 /* Neural Tube Patterning.png in Resources */,
 				D0253F43193FE10A00CFE2AC /* E1.png in Resources */,
+				464AA400198992ED00123D7E /* CervicalBlack.png in Resources */,
 				D08A364C1958762F005E5C77 /* closedIcon.png in Resources */,
 				462CB052193CFDB200B6CF72 /* Letter E.png in Resources */,
 				5962243319508A3A00701B76 /* SC change position.png in Resources */,

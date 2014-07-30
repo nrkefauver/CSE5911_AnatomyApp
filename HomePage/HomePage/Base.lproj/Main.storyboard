@@ -804,21 +804,12 @@
                                     <action selector="contentModeChanged:" destination="Z1N-LW-t3Y" eventType="valueChanged" id="FiD-gu-sgL"/>
                                 </connections>
                             </segmentedControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yLE-6T-9dc">
-                                <rect key="frame" x="67" y="144" width="621" height="433"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PQu-w0-D3b">
-                                        <rect key="frame" x="0.0" y="0.0" width="621" height="431"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <connections>
-                                    <outlet property="delegate" destination="Z1N-LW-t3Y" id="gNk-wE-L4b"/>
-                                </connections>
-                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PQu-w0-D3b">
+                                <rect key="frame" x="73" y="265" width="621" height="431"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n2y-PY-Acw" customClass="OBShapedButton">
-                                <rect key="frame" x="387" y="250" width="128" height="218"/>
+                                <rect key="frame" x="391" y="280" width="139" height="235"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="cuneate2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -848,7 +839,6 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="imageView" destination="PQu-w0-D3b" id="nuB-10-3Bh"/>
-                        <outlet property="scrollView" destination="yLE-6T-9dc" id="bo0-dU-7sc"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="NeuroToHomeSegue" id="hOH-RS-S2g"/>
                         <segue destination="A0d-hn-6U1" kind="push" identifier="NeuroHomeToAnimationsListSegue" id="32O-Pf-eqc"/>
                         <segue destination="0zu-PB-8PX" kind="push" identifier="NeuroHomeToNeuroIndex" id="Rde-ZO-HXw"/>
@@ -1525,17 +1515,17 @@
         <segue reference="yHH-64-pgG"/>
         <segue reference="iXe-hZ-jWL"/>
         <segue reference="kZK-6S-lN0"/>
-        <segue reference="40z-R1-3Bt"/>
-        <segue reference="psJ-mD-Iz2"/>
-        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="hOH-RS-S2g"/>
         <segue reference="CV4-W5-lYs"/>
         <segue reference="g1d-cf-3uC"/>
         <segue reference="1xR-Sz-n9v"/>
-        <segue reference="osL-gx-dWF"/>
         <segue reference="A8p-So-4gq"/>
         <segue reference="TJa-hY-aVm"/>
-        <segue reference="M3k-y5-9Yd"/>
+        <segue reference="32O-Pf-eqc"/>
+        <segue reference="Rde-ZO-HXw"/>
+        <segue reference="yDg-CP-p8k"/>
         <segue reference="mHh-JG-WcZ"/>
-        <segue reference="f8e-Mr-dEL"/>
+        <segue reference="qEZ-5V-GMV"/>
+        <segue reference="psJ-mD-Iz2"/>
     </inferredMetricsTieBreakers>
 </document>
