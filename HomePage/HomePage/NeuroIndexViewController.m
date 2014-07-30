@@ -16,7 +16,6 @@
 #import "GrossViewController.h"
 #import "GrossVideoListViewController.h"
 #import "ExpandingCell.h"
-#import "Term.h"
 
 @interface NeuroIndexViewController ()
 
