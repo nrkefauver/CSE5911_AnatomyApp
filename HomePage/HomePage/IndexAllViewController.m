@@ -39,7 +39,6 @@ static bool afterCellReset = false;
 static UITableView *globalTableView;
 static int nonsearchSelectedIndex;
 static bool afterSearch = false;
-static enum selectedDisciplineEnum selectedDiscipline = neuro;
 static int NeuroMedia = 5; //Position in property list for all Neuro Media options
 static int HistoMedia = 6; //Position in property list for all Histo Media options
 static int EmbryoMedia = 7; //Position in property list for all Embryo Media options
@@ -121,7 +120,7 @@ CGFloat origin;
         NSMutableArray *defOptions = [[NSMutableArray alloc] init];
         NSMutableArray *mediaOptions = [[NSMutableArray alloc] init];
         
-        for (int i=0; i< 140; i++) {
+        for (int i=0; i< 141; i++) {
             if ([terms objectAtIndex:i]!= nil) {
                 if (![[[terms objectAtIndex:i] objectAtIndex:0] isEqualToString:@""] && ![[[terms objectAtIndex:i] objectAtIndex:1] isEqualToString:@""]) {
                     [nTitleArray addObject:[[terms objectAtIndex:i] objectAtIndex:0] ];
@@ -433,19 +432,27 @@ CGFloat origin;
     NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ExpandingCell"  owner:self options:nil];
     cell = [nib objectAtIndex:0];
     
-//    if (lastCellSection != indexPath.section)
-//    {
+    // If a new section has been opened
+    if (emTV.lastClickOpenedSection)
+    {
+//        // Close all cells
 //        selectedIndex = -1;
-//        lastCellSection = indexPath.section;
+//        [self tableView:tableView heightForRowAtIndexPath:indexPath];
 //        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-//    }
+        
+        //selectedIndex = indexPath.row;
+        //[self tableView:tableView didSelectRowAtIndexPath:indexPath];
+        
+        
+        emTV.lastClickOpenedSection = false;
+    }
     
     NSString *term;
     switch (indexPath.section)
     {
             
         case 0: // In Neuro Section
-            if (selectedDiscipline == neuro)
+            if (emTV.selectedDiscipline == neuro)
             {
                 if (indexPath.row <= searchArray.count) {
                     if (tableView == self.searchDisplayController.searchResultsTableView) {
@@ -459,7 +466,7 @@ CGFloat origin;
                     }
                 }
             }
-            else if (selectedDiscipline == histo){
+            else if (emTV.selectedDiscipline == histo){
                 if (tableView == self.searchDisplayController.searchResultsTableView) {
                     term =[searchResults objectAtIndex:indexPath.row];
                     cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
@@ -472,7 +479,7 @@ CGFloat origin;
                     cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
                 }
             }
-            else if (selectedDiscipline == embryo){
+            else if (emTV.selectedDiscipline == embryo){
                 if (tableView == self.searchDisplayController.searchResultsTableView) {
                     term =[searchResults objectAtIndex:indexPath.row];
                     cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
@@ -499,7 +506,7 @@ CGFloat origin;
         break;
             
         case 1: // In Histo Section
-            if (selectedDiscipline == neuro)
+            if (emTV.selectedDiscipline == neuro)
             {
                 if (indexPath.row <= searchArray.count) {
                     if (tableView == self.searchDisplayController.searchResultsTableView) {
@@ -513,7 +520,7 @@ CGFloat origin;
                     }
                 }
             }
-            else if (selectedDiscipline == histo){
+            else if (emTV.selectedDiscipline == histo){
                 if (tableView == self.searchDisplayController.searchResultsTableView) {
                     term =[searchResults objectAtIndex:indexPath.row];
                     cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
@@ -526,7 +533,7 @@ CGFloat origin;
                     cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
                 }
             }
-            else if (selectedDiscipline == embryo){
+            else if (emTV.selectedDiscipline == embryo){
                 if (tableView == self.searchDisplayController.searchResultsTableView) {
                     term =[searchResults objectAtIndex:indexPath.row];
                     cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
@@ -553,7 +560,7 @@ CGFloat origin;
         break;
             
         case 2: // In Embryo Section
-            if (selectedDiscipline == neuro)
+            if (emTV.selectedDiscipline == neuro)
             {
                 if (indexPath.row <= searchArray.count) {
                     if (tableView == self.searchDisplayController.searchResultsTableView) {
@@ -567,7 +574,7 @@ CGFloat origin;
                     }
                 }
             }
-            else if (selectedDiscipline == histo){
+            else if (emTV.selectedDiscipline == histo){
                 if (tableView == self.searchDisplayController.searchResultsTableView) {
                     term =[searchResults objectAtIndex:indexPath.row];
                     cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
@@ -580,7 +587,7 @@ CGFloat origin;
                     cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
                 }
             }
-            else if (selectedDiscipline == embryo){
+            else if (emTV.selectedDiscipline == embryo){
                 if (tableView == self.searchDisplayController.searchResultsTableView) {
                     term =[searchResults objectAtIndex:indexPath.row];
                     cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
@@ -607,7 +614,7 @@ CGFloat origin;
         break;
             
         case 3: // In Gross Section
-            if (selectedDiscipline == neuro)
+            if (emTV.selectedDiscipline == neuro)
             {
                 if (indexPath.row <= searchArray.count) {
                     if (tableView == self.searchDisplayController.searchResultsTableView) {
@@ -621,7 +628,7 @@ CGFloat origin;
                     }
                 }
             }
-            else if (selectedDiscipline == histo){
+            else if (emTV.selectedDiscipline == histo){
                 if (tableView == self.searchDisplayController.searchResultsTableView) {
                     term =[searchResults objectAtIndex:indexPath.row];
                     cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
@@ -634,7 +641,7 @@ CGFloat origin;
                     cell.textLabel.text = [[masterDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1];
                 }
             }
-            else if (selectedDiscipline == embryo){
+            else if (emTV.selectedDiscipline == embryo){
                 if (tableView == self.searchDisplayController.searchResultsTableView) {
                     term =[searchResults objectAtIndex:indexPath.row];
                     cell.titleLabel.text = [searchResults objectAtIndex:indexPath.row];
@@ -676,7 +683,7 @@ CGFloat origin;
         }
     }
     // Set media buttons based on the selected discipline
-    switch(selectedDiscipline)
+    switch(emTV.selectedDiscipline)
     {
         {case 0: //Neuro
             // Set the segmented control to Neuro
@@ -686,7 +693,7 @@ CGFloat origin;
             bool button1IsTaken = false;
             
             // Set button for 2D Image if applicable
-            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:1]isEqualToString:@""])
+            if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:1] length] == 0))
             {
                 // Set videos
                 UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
@@ -703,7 +710,7 @@ CGFloat origin;
             // Set button for Animation if applicable
             if (button1IsTaken)
             {
-                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:3]isEqualToString:@""])
+                if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:3] length] == 0))
                 {
                     // Set animation
                     UIImage* button2Image = [UIImage imageNamed:@"Animation Media Button"];
@@ -720,7 +727,7 @@ CGFloat origin;
             }
             else // Button 1 is not taken
             {
-                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0] objectAtIndex:3]isEqualToString:@""])
+                if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0] objectAtIndex:3] length] == 0))
                 {
                     // Set videos
                     UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
@@ -750,7 +757,7 @@ CGFloat origin;
             bool button1IsTaken = false;
             
             // Set button for 3D Model if applicable
-            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]objectAtIndex:1]isEqualToString:@""])
+            if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]objectAtIndex:1] length] == 0))
             {
                 // Set videos
                 UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
@@ -779,7 +786,7 @@ CGFloat origin;
             bool button1IsTaken = false;
             
             // Set button for 2D Image if applicable
-            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:1]isEqualToString:@""])
+            if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:1] length] == 0))
             {
                 // Set videos
                 UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
@@ -796,7 +803,7 @@ CGFloat origin;
             // Set button for Animation if applicable
             if (button1IsTaken)
             {
-                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3]isEqualToString:@""])
+                if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3] length] == 0))
                 {
                     // Set animation
                     UIImage* button2Image = [UIImage imageNamed:@"Animation Media Button"];
@@ -813,7 +820,7 @@ CGFloat origin;
             }
             else // Button 1 is not taken
             {
-                if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] objectAtIndex:3]isEqualToString:@""])
+                if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] objectAtIndex:3] length] == 0))
                 {
                     // Set videos
                     UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
@@ -845,7 +852,7 @@ CGFloat origin;
             bool button2IsTaken = false;
             
             // Set button for 3D Model if applicable
-            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:0]isEqualToString:@""])
+            if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:0] length] == 0))
             {
                 // Set videos
                 UIImage* button1Image = [UIImage imageNamed:@"3D Model Media Button"];
@@ -860,7 +867,7 @@ CGFloat origin;
             }
             
             //Set button for 2D Image if applicable
-            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1]isEqualToString:@""])
+            if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:1] length] == 0))
             {
                 if (button1IsTaken)
                 {
@@ -897,7 +904,7 @@ CGFloat origin;
             }
             
             //Set button for Video if applicable
-            if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2]isEqualToString:@""])
+            if (!([[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:2] length] == 0))
             {
                 if ((button1IsTaken)&&(button2IsTaken))
                 {
@@ -987,19 +994,19 @@ CGFloat origin;
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
     // in Neuro
     if(indexPath.section==0){
-        selectedDiscipline = neuro;
+        emTV.selectedDiscipline = neuro;
     }
     // in Histo
     else if(indexPath.section==1){
-        selectedDiscipline = histo;
+        emTV.selectedDiscipline = histo;
     }
     // in Embryo
     else if(indexPath.section==2){
-        selectedDiscipline = embryo;
+        emTV.selectedDiscipline = embryo;
     }
     // in Gross
     else if(indexPath.section==3){
-        selectedDiscipline = gross;
+        emTV.selectedDiscipline = gross;
     }
     
     // Track indexPath and table view
@@ -1054,20 +1061,20 @@ CGFloat origin;
     switch(segmentedControl.selectedSegmentIndex)
     {
         case 0:
-            selectedDiscipline = neuro;
+            emTV.selectedDiscipline = neuro;
             break;
         case 1:
-            selectedDiscipline = histo;
+            emTV.selectedDiscipline = histo;
             break;
         case 2:
-            selectedDiscipline = embryo;
+            emTV.selectedDiscipline = embryo;
             break;
         case 3:
-            selectedDiscipline = gross;
+            emTV.selectedDiscipline = gross;
             break;
     }
     
-    [globalTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:globalIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+    [globalTableView reloadData];
 }
 
 #pragma mark - Media Button Actions

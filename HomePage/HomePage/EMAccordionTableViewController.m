@@ -28,8 +28,13 @@
 @synthesize openedSectionIcon = _openedSectionIcon;
 @synthesize tableView = _tableView;
 
+enum selectedDisciplineEnum selectedDiscipline = neuro;
+static int lastSection;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.lastClickOpenedSection = false;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -159,8 +164,55 @@
 - (IBAction)openTheSection:(id)sender {
     int index = [sender tag] - kSectionTag;
     
+    // Record if you're opening a new section
+    if (index != lastSection)
+    {
+        self.lastClickOpenedSection = true;
+        lastSection = index;
+    }
+    else
+    {
+        self.lastClickOpenedSection = false;
+    }
+    
+    // Track which discipline is selected
+    switch (index)
+    {
+        case 0: //Neuro
+            self.selectedDiscipline = neuro;
+            break;
+        case 1: //Histo
+            self.selectedDiscipline = histo;
+            break;
+        case 2: //Embryo
+            self.selectedDiscipline = embryo;
+            break;
+        case 3: //Gross
+            self.selectedDiscipline = gross;
+            break;
+    }
+    
     BOOL value = [[sectionsOpened objectAtIndex:index] boolValue];
     NSNumber *updatedValue = [NSNumber numberWithBool:!value];
+    //NSNumber *falseValue = [NSNumber numberWithBool:false];
+    
+//    // Close all non-selected sections
+//    if (index != 0) //Neuro
+//    {
+//        [sectionsOpened setObject:falseValue atIndexedSubscript:0];
+//    }
+//    if (index != 1) //Histo
+//    {
+//        [sectionsOpened setObject:falseValue atIndexedSubscript:1];
+//    }
+//    if (index != 2) //Embryo
+//    {
+//        [sectionsOpened setObject:falseValue atIndexedSubscript:2];
+//    }
+//    if (index != 3) //Gross
+//    {
+//        [sectionsOpened setObject:falseValue atIndexedSubscript:3];
+//    }
     
     [sectionsOpened setObject:updatedValue atIndexedSubscript:index];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];

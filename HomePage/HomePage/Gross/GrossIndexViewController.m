@@ -341,6 +341,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             bool button1IsTaken = false;
             
             // Set button for 2D Image if applicable
+            NSLog(@"_%@_",[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:1]);
             if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:1]isEqualToString:@""])
             {
                 // Set videos
