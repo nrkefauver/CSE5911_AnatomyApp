@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D06E5E2D192FA51D00A12651"
-            BuildableName = "HomePage.app"
-            BlueprintName = "HomePage"
-            ReferencedContainer = "container:HomePage.xcodeproj">
+            BuildableName = "4natomy.app"
+            BlueprintName = "4natomy"
+            ReferencedContainer = "container:4natomy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D06E5E2D192FA51D00A12651"
-            BuildableName = "HomePage.app"
-            BlueprintName = "HomePage"
-            ReferencedContainer = "container:HomePage.xcodeproj">
+            BuildableName = "4natomy.app"
+            BlueprintName = "4natomy"
+            ReferencedContainer = "container:4natomy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
