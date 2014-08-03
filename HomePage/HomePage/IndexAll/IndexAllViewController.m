@@ -78,6 +78,15 @@ CGFloat origin;
 }
 
 #pragma mark - Table Contents
+-(void) viewWillDisappear:(BOOL)animated {
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        // back button was pressed.  We know this is true because self is no longer
+        // in the navigation stack.
+        viewAlreadyCreated = false;
+    }
+    [super viewWillDisappear:animated];
+}
+
 - (void) viewDidAppear:(BOOL)animated {
     
     // If viewDidAppear has yet to be entered
