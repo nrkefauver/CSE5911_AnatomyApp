@@ -17,6 +17,5 @@
 
 - (IBAction)onBurger:(id)sender;
 - (IBAction)onNeuralTube001:(id)sender;
-- (IBAction)onSampleVideo:(id)sender;
 
 @end
