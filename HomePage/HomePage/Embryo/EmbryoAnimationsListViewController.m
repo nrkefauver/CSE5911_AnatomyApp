@@ -147,12 +147,6 @@
     [self playMovie:(id)sender movieName:(NSString*)@"Neuraltube_001" fileType:(NSString*)@"mp4"];
 }
 
-// Sample Video button pressed
-- (IBAction)onSampleVideo:(id)sender
-{
-    [self playMovie:(id)sender movieName:(NSString*)@"SampleVideo" fileType:(NSString*)@"MOV"];
-}
-
 // Play video
 -(void)playMovie:(id)sender movieName:(NSString*)moviePath fileType:(NSString*)fileType
 {
