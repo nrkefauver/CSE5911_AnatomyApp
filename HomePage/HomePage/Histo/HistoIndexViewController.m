@@ -246,7 +246,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:1]isEqualToString:@""])
             {
                 // Set videos
-                UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                UIImage* button1Image = [UIImage imageNamed:@"2DImageMediaButton"];
                 [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                 
                 // Set actions
@@ -263,7 +263,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0]objectAtIndex:3]isEqualToString:@""])
                 {
                     // Set animation
-                    UIImage* button2Image = [UIImage imageNamed:@"Animation Media Button"];
+                    UIImage* button2Image = [UIImage imageNamed:@"AnimationMediaButton"];
                     [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
                     
                     // Set actions
@@ -280,7 +280,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:0] objectAtIndex:3]isEqualToString:@""])
                 {
                     // Set videos
-                    UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
+                    UIImage* button1Image = [UIImage imageNamed:@"AnimationMediaButton"];
                     [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                     
                     // Set actions
@@ -310,7 +310,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:1]objectAtIndex:1]isEqualToString:@""])
             {
                 // Set videos
-                UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                UIImage* button1Image = [UIImage imageNamed:@"2DImageMediaButton"];
                 [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                 
                 // Set actions
@@ -339,7 +339,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:1]isEqualToString:@""])
             {
                 // Set videos
-                UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                UIImage* button1Image = [UIImage imageNamed:@"2DImageMediaButton"];
                 [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                 
                 // Set actions
@@ -356,7 +356,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2]objectAtIndex:3]isEqualToString:@""])
                 {
                     // Set animation
-                    UIImage* button2Image = [UIImage imageNamed:@"Animation Media Button"];
+                    UIImage* button2Image = [UIImage imageNamed:@"AnimationMediaButton"];
                     [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
                     
                     // Set actions
@@ -373,7 +373,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:2] objectAtIndex:3]isEqualToString:@""])
                 {
                     // Set videos
-                    UIImage* button1Image = [UIImage imageNamed:@"Animation Media Button"];
+                    UIImage* button1Image = [UIImage imageNamed:@"AnimationMediaButton"];
                     [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                     
                     // Set actions
@@ -405,7 +405,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
             if (![[[[mediaDictionary objectForKey:cell.subtitleLabel.text] objectAtIndex:3]objectAtIndex:0]isEqualToString:@""])
             {
                 // Set videos
-                UIImage* button1Image = [UIImage imageNamed:@"3D Model Media Button"];
+                UIImage* button1Image = [UIImage imageNamed:@"3DModelMediaButton"];
                 [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                 
                 // Set actions
@@ -422,7 +422,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 if (button1IsTaken)
                 {
                     // Set videos
-                    UIImage* button2Image = [UIImage imageNamed:@"2D Image Media Button"];
+                    UIImage* button2Image = [UIImage imageNamed:@"2DImageMediaButton"];
                     [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
                     
                     // Set actions
@@ -438,7 +438,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 else // Button 1 is not taken
                 {
                     // Set videos
-                    UIImage* button1Image = [UIImage imageNamed:@"2D Image Media Button"];
+                    UIImage* button1Image = [UIImage imageNamed:@"2DImageMediaButton"];
                     [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                     
                     // Set actions
@@ -460,7 +460,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 {
                     
                     // Set videos
-                    UIImage* button3Image = [UIImage imageNamed:@"Video Media Button"];
+                    UIImage* button3Image = [UIImage imageNamed:@"VideoMediaButton"];
                     [button3 setBackgroundImage:button3Image forState:UIControlStateNormal];
                     
                     // Set actions
@@ -475,7 +475,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 {
                     
                     // Set videos
-                    UIImage* button2Image = [UIImage imageNamed:@"Video Media Button"];
+                    UIImage* button2Image = [UIImage imageNamed:@"VideoMediaButton"];
                     [button2 setBackgroundImage:button2Image forState:UIControlStateNormal];
                     
                     // Set actions
@@ -491,7 +491,7 @@ static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a medi
                 {
                     
                     // Set videos
-                    UIImage* button1Image = [UIImage imageNamed:@"Video Media Button"];
+                    UIImage* button1Image = [UIImage imageNamed:@"VideoMediaButton"];
                     [button1 setBackgroundImage:button1Image forState:UIControlStateNormal];
                     
                     // Set actions
