@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "RNFrostedSidebar.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface GrossVideoListViewController : UIViewController
 
+@property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
 @property (strong, nonatomic) NSString *startUpVideoName;
 
 @end

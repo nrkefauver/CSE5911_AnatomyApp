@@ -103,6 +103,7 @@ NSArray *aTracts, *eTracts;
 // If sent movie information, autoplay video
 - (void) startWithMovie
 {
+    // Wait for page to finish animation
     sleep(0.5);
     
     // In the main thread, show popup window

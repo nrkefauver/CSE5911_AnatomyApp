@@ -25,13 +25,67 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // If triggered by a media button, play video
+    if (_startUpVideoName != nil)
+    {
+        // Run in the background while the page finishes loading
+        [self performSelectorInBackground:@selector(startWithMovie) withObject:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Videos
+// If sent movie information, autoplay video
+- (void) startWithMovie
+{
+    // Wait for page to finish animation
+    sleep(0.5);
+    
+    // In the main thread, show popup window
+    [self performSelectorOnMainThread:@selector(playStartupMovie) withObject:nil waitUntilDone:NO];
+}
+
+// Show movie upon startup
+- (void) playStartupMovie
+{
+    // TODO - change hardcoded values
+    [self playMovie:self movieName:(NSString*)@"Neuraltube_001" fileType:(NSString*)@"mp4"];
+}
+
+// Play video
+-(void)playMovie:(id)sender movieName:(NSString*)moviePath fileType:(NSString*)fileType
+{
+    NSString*path=[[NSBundle mainBundle] pathForResource:moviePath ofType:fileType];
+    NSURL*url=[NSURL fileURLWithPath:path];
+    
+    _moviePlayer =  [[MPMoviePlayerController alloc]
+                     initWithContentURL:url];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(moviePlayBackDidFinish:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:_moviePlayer];
+    
+    _moviePlayer.controlStyle = MPMovieControlStyleDefault;
+    _moviePlayer.shouldAutoplay = YES;
+    [self.view addSubview:_moviePlayer.view];
+    [_moviePlayer setFullscreen:YES animated:YES];
+    
+}
+
+// End video
+- (void) moviePlayBackDidFinish:(NSNotification*)notification {
+    MPMoviePlayerController *player = [notification object];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:MPMoviePlayerPlaybackDidFinishNotification
+     object:player];
 }
 
 #pragma mark - Sidebar
