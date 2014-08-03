@@ -600,13 +600,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="842"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AVW-6T-fR8">
-                                <rect key="frame" x="179" y="962" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="MAP">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nHd-PV-WsU">
                                 <rect key="frame" x="236" y="890" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1536,15 +1529,15 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="osL-gx-dWF"/>
-        <segue reference="zrs-fU-6x2"/>
-        <segue reference="OvQ-SF-81s"/>
-        <segue reference="RJi-oO-lJw"/>
+        <segue reference="n3Y-FB-huH"/>
+        <segue reference="A8p-So-4gq"/>
+        <segue reference="h09-ZD-uY6"/>
+        <segue reference="LlT-KC-nOI"/>
         <segue reference="fDb-k1-LcV"/>
         <segue reference="kZK-6S-lN0"/>
         <segue reference="CV4-W5-lYs"/>
         <segue reference="g1d-cf-3uC"/>
         <segue reference="1xR-Sz-n9v"/>
-        <segue reference="A8p-So-4gq"/>
         <segue reference="E61-7V-nK5"/>
         <segue reference="Rde-ZO-HXw"/>
         <segue reference="32O-Pf-eqc"/>
