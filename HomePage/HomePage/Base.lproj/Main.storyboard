@@ -589,7 +589,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Histology Slides" id="Z9M-fH-5ft">
-                        <barButtonItem key="backBarButtonItem" title="Blue Spinal" id="JBf-Hq-l5K"/>
+                        <barButtonItem key="backBarButtonItem" title="Histo Slide" id="JBf-Hq-l5K"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="59J-4t-4UK">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rm1-Ve-4p9">
                                 <rect key="frame" x="707" y="-1" width="45" height="45"/>
@@ -1445,20 +1445,20 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="LlT-KC-nOI"/>
+        <segue reference="awz-GU-5G4"/>
+        <segue reference="h09-ZD-uY6"/>
+        <segue reference="n3Y-FB-huH"/>
+        <segue reference="fDb-k1-LcV"/>
+        <segue reference="kZK-6S-lN0"/>
         <segue reference="osL-gx-dWF"/>
-        <segue reference="HR3-33-3xN"/>
+        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="sOv-Ov-78j"/>
+        <segue reference="32O-Pf-eqc"/>
+        <segue reference="Rde-ZO-HXw"/>
         <segue reference="fBN-DZ-xZq"/>
         <segue reference="xIp-rp-Izy"/>
         <segue reference="fdm-bw-BD5"/>
         <segue reference="zth-Qd-6wy"/>
-        <segue reference="kZK-6S-lN0"/>
-        <segue reference="fDb-k1-LcV"/>
-        <segue reference="Rde-ZO-HXw"/>
-        <segue reference="32O-Pf-eqc"/>
-        <segue reference="psJ-mD-Iz2"/>
-        <segue reference="sOv-Ov-78j"/>
-        <segue reference="LlT-KC-nOI"/>
-        <segue reference="awz-GU-5G4"/>
-        <segue reference="h09-ZD-uY6"/>
     </inferredMetricsTieBreakers>
 </document>
