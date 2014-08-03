@@ -161,7 +161,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Itw-7R-c1T">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Itw-7R-c1T">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -588,7 +588,7 @@
             </objects>
             <point key="canvasLocation" x="-527" y="1005"/>
         </scene>
-        <!--Histo Slide1 View Controller - Histology Slide-->
+        <!--Histo Slide1 View Controller - Blue Spinal Slide-->
         <scene sceneID="DEZ-54-Fyx">
             <objects>
                 <viewController id="1Hf-Ur-mTZ" customClass="HistoSlide1ViewController" sceneMemberID="viewController">
@@ -606,15 +606,22 @@
                                 <state key="normal" title="MAP">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nHd-PV-WsU">
+                                <rect key="frame" x="236" y="890" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <segue destination="Tua-02-U9a" kind="push" id="PNw-Li-fif"/>
+                                    <segue destination="iPL-y5-bw7" kind="push" id="B1C-O6-wY8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Histology Slide" id="Z9M-fH-5ft">
-                        <barButtonItem key="backBarButtonItem" title="Histo Slide" id="JBf-Hq-l5K"/>
+                    <navigationItem key="navigationItem" title="Blue Spinal Slide" id="Z9M-fH-5ft">
+                        <barButtonItem key="backBarButtonItem" title="Blue Spinal" id="JBf-Hq-l5K"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="59J-4t-4UK">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rm1-Ve-4p9">
                                 <rect key="frame" x="707" y="-1" width="45" height="45"/>
@@ -629,70 +636,72 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="zrV-VM-hcI" kind="push" identifier="HistoSlideToHistoIndexSegue" id="LlT-KC-nOI"/>
-                        <segue destination="Ifm-8S-R9e" kind="push" identifier="HistoSlideToHistoHomeSegue" id="h09-ZD-uY6"/>
-                        <segue destination="BYZ-38-t0r" kind="push" identifier="HistoSlideToHomeSegue" id="n3Y-FB-huH"/>
+                        <segue destination="zrV-VM-hcI" kind="push" identifier="HistoBlueSlideToHistoIndexSegue" id="LlT-KC-nOI"/>
+                        <segue destination="Ifm-8S-R9e" kind="push" identifier="HistoBlueSlideToHistoHomeSegue" id="h09-ZD-uY6"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="HistoBlueSlideToHomeSegue" id="n3Y-FB-huH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcg-Mk-wn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-752" y="2201"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="09j-vo-O7n">
+        <!--Histo Map View Controller - Histology Slide-->
+        <scene sceneID="emh-dp-h9e">
             <objects>
-                <viewController id="Tua-02-U9a" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="B98-df-1hO">
+                <viewController id="iPL-y5-bw7" customClass="HistoMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CGB-PJ-vZO">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="kif-OH-8bB">
-                                <rect key="frame" x="-16" y="-334" width="879" height="1294"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sfz-dW-M5W"/>
+                    <navigationItem key="navigationItem" title="Histology Slide" id="7aL-H3-dqu">
+                        <barButtonItem key="backBarButtonItem" title="Histo Slide" id="oSU-SP-01V"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uqw-bZ-Mu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Er-uo-bRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1174" y="3333"/>
+            <point key="canvasLocation" x="-738" y="3449"/>
         </scene>
-        <!--Histo Slide2 View Controller-->
+        <!--Histo Slide2 View Controller - Red Spinal Slide-->
         <scene sceneID="8cG-m2-GEk">
             <objects>
                 <viewController id="6wj-W4-l34" customClass="HistoSlide2ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EoW-Ke-XnU">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lml-r0-W0u">
-                                <rect key="frame" x="266" y="154" width="236" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Slide 2">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="64" name="Georgia"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="1.jpg" id="02c-Uf-04b">
-                                <rect key="frame" x="134" y="262" width="500" height="500"/>
+                                <rect key="frame" x="0.0" y="-7" width="768" height="853"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ttK-YO-I66"/>
+                    <navigationItem key="navigationItem" title="Red Spinal Slide" id="ttK-YO-I66">
+                        <barButtonItem key="backBarButtonItem" title="Red Spinal" id="gyz-mA-ZRk"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="h7W-au-Tun">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VnO-M3-OP6">
+                                <rect key="frame" x="707" y="-1" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Black Burger.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBurger:" destination="6wj-W4-l34" eventType="touchUpInside" id="dvk-s3-Xbh"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Ifm-8S-R9e" kind="push" identifier="HistoRedSlideToHistoHomeSegue" id="OvQ-SF-81s"/>
+                        <segue destination="zrV-VM-hcI" kind="push" identifier="HistoRedSlideToHistoIndexSegue" id="RJi-oO-lJw"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="HistoRedSlideToHomeSegue" id="zrs-fU-6x2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2QC-DX-m7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="2193"/>
+            <point key="canvasLocation" x="292" y="2201"/>
         </scene>
         <!--Histo Index View Controller - Histology Index-->
         <scene sceneID="axA-tU-bwz">
@@ -1526,20 +1535,20 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="yDg-CP-p8k"/>
+        <segue reference="osL-gx-dWF"/>
+        <segue reference="zrs-fU-6x2"/>
+        <segue reference="OvQ-SF-81s"/>
+        <segue reference="RJi-oO-lJw"/>
+        <segue reference="fDb-k1-LcV"/>
         <segue reference="kZK-6S-lN0"/>
-        <segue reference="TtF-se-HDQ"/>
-        <segue reference="sOv-Ov-78j"/>
-        <segue reference="KNf-OE-a5W"/>
-        <segue reference="ang-sS-8TK"/>
-        <segue reference="A8p-So-4gq"/>
-        <segue reference="1xR-Sz-n9v"/>
         <segue reference="CV4-W5-lYs"/>
-        <segue reference="TJa-hY-aVm"/>
+        <segue reference="g1d-cf-3uC"/>
+        <segue reference="1xR-Sz-n9v"/>
+        <segue reference="A8p-So-4gq"/>
+        <segue reference="E61-7V-nK5"/>
         <segue reference="Rde-ZO-HXw"/>
         <segue reference="32O-Pf-eqc"/>
-        <segue reference="mHh-JG-WcZ"/>
-        <segue reference="yHH-64-pgG"/>
-        <segue reference="iXe-hZ-jWL"/>
+        <segue reference="ang-sS-8TK"/>
+        <segue reference="TJa-hY-aVm"/>
     </inferredMetricsTieBreakers>
 </document>

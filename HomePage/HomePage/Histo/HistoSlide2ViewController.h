@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RNFrostedSidebar.h"
 
 @interface HistoSlide2ViewController : UIViewController {
     UIImageView* imageView;

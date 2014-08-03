@@ -70,15 +70,15 @@
     
     //Index clicked
     if (index == 0) {
-        [self performSegueWithIdentifier:@"HistoSlideToHistoIndexSegue" sender:self];
+        [self performSegueWithIdentifier:@"HistoBlueSlideToHistoIndexSegue" sender:self];
     }
     //Histo Home clicked
     else if (index == 1) {
-        [self performSegueWithIdentifier:@"HistoSlideToHistoHomeSegue" sender:self];
+        [self performSegueWithIdentifier:@"HistoBlueSlideToHistoHomeSegue" sender:self];
     }
     //Home clicked
     else if (index == 2) {
-        [self performSegueWithIdentifier:@"HistoSlideToHomeSegue" sender:self];
+        [self performSegueWithIdentifier:@"HistoBlueSlideToHomeSegue" sender:self];
     }
     
     [sidebar dismissAnimated:YES];
