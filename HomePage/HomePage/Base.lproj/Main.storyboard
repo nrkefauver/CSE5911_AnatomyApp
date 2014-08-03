@@ -1124,8 +1124,8 @@
                                 <segments>
                                     <segment title="First" width="120"/>
                                     <segment title="Second" width="120"/>
-                                    <segment title="" width="120"/>
-                                    <segment title="" width="120"/>
+                                    <segment title="Third" width="120"/>
+                                    <segment title="Fourth" width="120"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </segmentedControl>
@@ -1446,11 +1446,11 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="osL-gx-dWF"/>
-        <segue reference="EZM-zG-zgc"/>
-        <segue reference="1xR-Sz-n9v"/>
-        <segue reference="8VA-9P-1Ft"/>
-        <segue reference="TJa-hY-aVm"/>
+        <segue reference="HR3-33-3xN"/>
         <segue reference="fBN-DZ-xZq"/>
+        <segue reference="xIp-rp-Izy"/>
+        <segue reference="fdm-bw-BD5"/>
+        <segue reference="zth-Qd-6wy"/>
         <segue reference="kZK-6S-lN0"/>
         <segue reference="fDb-k1-LcV"/>
         <segue reference="Rde-ZO-HXw"/>
