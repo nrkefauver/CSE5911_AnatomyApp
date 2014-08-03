@@ -39,6 +39,7 @@ static bool afterCellReset = false;
 static UITableView *globalTableView;
 static int nonsearchSelectedIndex;
 static bool afterSearch = false;
+static bool duringSearch = false;
 static int NeuroMedia = 5; //Position in property list for all Neuro Media options
 static int HistoMedia = 6; //Position in property list for all Histo Media options
 static int EmbryoMedia = 7; //Position in property list for all Embryo Media options
@@ -102,7 +103,6 @@ CGFloat origin;
         
         
         searchArray = [[NSMutableArray alloc] init];
-        searchSubtitles = [[NSMutableArray alloc] init];
         searchText = [[NSMutableArray alloc] init];
         
         //Initialize the dictionary that will contain all the definition options
@@ -167,12 +167,8 @@ CGFloat origin;
         //Creates an array of all the definition names to be searched through
         nTitleArray = sortedNKeys;
         
-        //Adds to overall list of definitions for searching
-        [searchArray addObjectsFromArray:sortedNKeys];
-        
         //Creates an array of definition names
         subtitleNArray = sortedNKeys;
-        [searchSubtitles addObjectsFromArray:subtitleNArray];
         
         //Creates array of definitions
         textNArray = sortedNValues;
@@ -225,12 +221,8 @@ CGFloat origin;
         //Creates an array of all the definition names to be searched through
         hTitleArray = sortedHKeys;
 
-        //Adds to overall list of definitions for searching
-        [searchArray addObjectsFromArray:sortedHKeys];
-        
         //Creates an array of definition names
         subtitleHArray = sortedHKeys;
-        [searchSubtitles addObjectsFromArray:sortedHKeys];
         
         //Creates array of definitions
         textHArray = sortedHValues;
@@ -278,12 +270,8 @@ CGFloat origin;
         //Creates an array of all the definition names to be searched through
         eTitleArray = sortedEKeys;
 
-        //Adds to overall list of definitions for searching
-        [searchArray addObjectsFromArray:sortedEKeys];
-        
         //Creates an array of definition names
         subtitleEArray = sortedEKeys;
-        [searchSubtitles addObjectsFromArray:sortedEKeys];
         
         //Creates array of definitions
         textEArray = sortedEValues;
@@ -334,12 +322,8 @@ CGFloat origin;
         //Creates an array of all the definition names to be searched through
         gTitleArray = sortedGKeys;
 
-        //Adds to overall list of definitions for searching
-        [searchArray addObjectsFromArray:sortedGKeys];
-        
         //Creates an array of definition names
         subtitleGArray = sortedGKeys;
-        [searchSubtitles addObjectsFromArray:sortedGKeys];
         
         //Creates array of definitions
         textGArray = sortedGValues;
@@ -347,7 +331,10 @@ CGFloat origin;
         
         dataSection04 = gTitleArray;
 
-        //
+        //Creates array of terms to search through (no duplicates)
+        NSArray *searchNames = [masterDictionary allKeys];
+        [searchArray addObjectsFromArray:searchNames];
+        
         
         // Section graphics
         UIColor *sectionsColor = [UIColor blackColor];
@@ -992,21 +979,55 @@ CGFloat origin;
     // Set preselected term in the segmented control (tag 1000):
     UIView *nibView = [nib objectAtIndex:0];
     UISegmentedControl *segmentedControl = (UISegmentedControl*)[nibView viewWithTag:1000];
-    // in Neuro
-    if(indexPath.section==0){
-        emTV.selectedDiscipline = neuro;
+    
+    // In search, set the default discipline to the first one with a definition
+    if (duringSearch)
+    {
+        // If neuro has a definition, set default to neuro
+        NSString *check= [searchResults objectAtIndex:indexPath.row];
+        if (!([[[masterDictionary objectForKey:check] objectAtIndex:0] isEqualToString:@""]))
+        {
+            emTV.selectedDiscipline = neuro;
+        }
+        // Histo
+        else if (!([[[masterDictionary objectForKey:check] objectAtIndex:1] isEqualToString:@""]))
+        {
+            emTV.selectedDiscipline = histo;
+        }
+        // Embryo
+        else if (!([[[masterDictionary objectForKey:check] objectAtIndex:2] isEqualToString:@""]))
+        {
+            emTV.selectedDiscipline = embryo;
+        }
+        //Gross
+        else if (!([[[masterDictionary objectForKey:check] objectAtIndex:3] isEqualToString:@""]))
+        {
+            emTV.selectedDiscipline = gross;
+        }
+        else
+        {
+            emTV.selectedDiscipline = neuro;
+        }
     }
-    // in Histo
-    else if(indexPath.section==1){
-        emTV.selectedDiscipline = histo;
-    }
-    // in Embryo
-    else if(indexPath.section==2){
-        emTV.selectedDiscipline = embryo;
-    }
-    // in Gross
-    else if(indexPath.section==3){
-        emTV.selectedDiscipline = gross;
+    // Outside of search, set the default discipline to the section the user is in
+    else
+    {
+        // in Neuro
+        if(indexPath.section==0){
+            emTV.selectedDiscipline = neuro;
+        }
+        // in Histo
+        else if(indexPath.section==1){
+            emTV.selectedDiscipline = histo;
+        }
+        // in Embryo
+        else if(indexPath.section==2){
+            emTV.selectedDiscipline = embryo;
+        }
+        // in Gross
+        else if(indexPath.section==3){
+            emTV.selectedDiscipline = gross;
+        }
     }
     
     // Track indexPath and table view
@@ -1202,8 +1223,7 @@ CGFloat origin;
 }
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
-   //controller.displaysSearchBarInNavigationBar = YES;
-
+    
     [controller.searchResultsTableView setBackgroundColor:[UIColor blackColor]];
     [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
                                                          objectAtIndex:[self.searchDisplayController.searchBar
@@ -1218,12 +1238,14 @@ CGFloat origin;
 - (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
 {
     nonsearchSelectedIndex = selectedIndex;
+    duringSearch = true;
 }
 
 // Don't let searchDisplayControllerWillBeginSearch reload globalTableView if it hasn't been established
 - (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
 {
     afterSearch = true;
+    duringSearch = false;
 }
 
 // Prevent other indices from crashing if "cancel" was hit while results were being displayed
