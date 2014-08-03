@@ -13,5 +13,8 @@
     UIImageView* imageView;
 }
 
+@property (weak, nonatomic) IBOutlet UIWebView *HistoWeb;
+
 @property (nonatomic, retain) IBOutlet UIImageView* imageView;
+@property (nonatomic) int histoSlideNumber;
 @end

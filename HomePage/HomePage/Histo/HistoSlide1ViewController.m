@@ -10,10 +10,12 @@
 
 @interface HistoSlide1ViewController ()
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
+
 @end
 
-@implementation HistoSlide1ViewController
 
+@implementation HistoSlide1ViewController
+@synthesize HistoWeb;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,6 +34,35 @@
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"%d",self.histoSlideNumber);
+    
+    //1
+    NSString *urlString=@"https://a.tiles.mapbox.com/v4/nrkefauver.j1n13p1d/page.html?access_token=pk.eyJ1IjoibnJrZWZhdXZlciIsImEiOiJycUY1bngwIn0.oDZn8xaNJXUNGXCaRgC1wg#3/15.03/14.68";
+    if(self.histoSlideNumber==1){
+        urlString=@"https://a.tiles.mapbox.com/v4/nrkefauver.j1n13p1d/page.html?access_token=pk.eyJ1IjoibnJrZWZhdXZlciIsImEiOiJycUY1bngwIn0.oDZn8xaNJXUNGXCaRgC1wg#3/15.03/14.68";
+    }else if(self.histoSlideNumber==2){
+        urlString = @"https://a.tiles.mapbox.com/v4/nrkefauver.j4n9ndfh/page.html?access_token=pk.eyJ1IjoibnJrZWZhdXZlciIsImEiOiJycUY1bngwIn0.oDZn8xaNJXUNGXCaRgC1wg#3/0.00/0.00";
+    }
+    
+    //2
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    //3
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    //4
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    //5
+    [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+     {
+         if ([data length] > 0 && error == nil) [HistoWeb loadRequest:request];
+         else if (error != nil) NSLog(@"Error: %@", error);
+     }];
+    
+   
+    
 }
 
 - (void)didReceiveMemoryWarning
