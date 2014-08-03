@@ -142,7 +142,7 @@
 - (void) showInitialPopup
 {
     // Wait to finish transition
-    sleep(0.9);
+    //sleep(0.9);
     
     // In the main thread, show popup window
     [self performSelectorOnMainThread:@selector(initialPopup) withObject:nil waitUntilDone:NO];
