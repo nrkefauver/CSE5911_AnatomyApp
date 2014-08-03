@@ -20,7 +20,6 @@
 		462CB053193CFDB200B6CF72 /* Letter G.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB04E193CFDB200B6CF72 /* Letter G.png */; };
 		462CB054193CFDB200B6CF72 /* Letter H.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB04F193CFDB200B6CF72 /* Letter H.png */; };
 		462CB055193CFDB200B6CF72 /* Letter N.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB050193CFDB200B6CF72 /* Letter N.png */; };
-		462CB056193CFDB200B6CF72 /* Tracts.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB051193CFDB200B6CF72 /* Tracts.png */; };
 		462CB059193CFEDA00B6CF72 /* Animations.png in Resources */ = {isa = PBXBuildFile; fileRef = 462CB058193CFEDA00B6CF72 /* Animations.png */; };
 		464AA400198992ED00123D7E /* CervicalBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 464AA3FF198992ED00123D7E /* CervicalBlack.png */; };
 		464AA40219899C2800123D7E /* FasciculusCuneatus-Thoracic.png in Resources */ = {isa = PBXBuildFile; fileRef = 464AA40119899C2800123D7E /* FasciculusCuneatus-Thoracic.png */; };
@@ -32,7 +31,6 @@
 		46B5359E19772D0000A2FC4F /* Gross_labeled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B5359C19772D0000A2FC4F /* Gross_labeled.jpg */; };
 		46B5359F19772D0000A2FC4F /* Gross_unlabeled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46B5359D19772D0000A2FC4F /* Gross_unlabeled.jpg */; };
 		46D4E5B1197C35A400618D64 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D4E5B0197C35A400618D64 /* RNFrostedSidebar.m */; };
-		46EC975A195B85D300E05CEB /* Grey Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EC9759195B85D300E05CEB /* Grey Button.png */; };
 		46EF42A01980883D001022E8 /* 2D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF42941980883D001022E8 /* 2D Image Media Button.PNG */; };
 		46EF42A11980883D001022E8 /* 3D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF42951980883D001022E8 /* 3D Model Media Button.PNG */; };
 		46EF42A21980883D001022E8 /* Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 46EF42961980883D001022E8 /* Animation Media Button.PNG */; };
@@ -97,8 +95,6 @@
 		D016FF9D19798C7700023668 /* osu-web-footer-wordmark-rev.png in Resources */ = {isa = PBXBuildFile; fileRef = D016FF9A19798C7700023668 /* osu-web-footer-wordmark-rev.png */; };
 		D016FF9E19798C7700023668 /* osu-web-header-horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = D016FF9B19798C7700023668 /* osu-web-header-horiz.png */; };
 		D016FF9F19798C7700023668 /* osu-web-header-vert2-rev.png in Resources */ = {isa = PBXBuildFile; fileRef = D016FF9C19798C7700023668 /* osu-web-header-vert2-rev.png */; };
-		D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */ = {isa = PBXBuildFile; fileRef = D02074EB1944FE9F00AADFDA /* Blue Button.gif */; };
-		D02074EE1944FF8700AADFDA /* White Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = D02074ED1944FF8700AADFDA /* White Burger.png */; };
 		D0253F42193FE10A00CFE2AC /* E0.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F3A193FE10A00CFE2AC /* E0.png */; };
 		D0253F43193FE10A00CFE2AC /* E1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F3B193FE10A00CFE2AC /* E1.png */; };
 		D0253F44193FE10A00CFE2AC /* E2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0253F3C193FE10A00CFE2AC /* E2.png */; };
@@ -147,14 +143,6 @@
 		D0CE26051964C55E00E39DFC /* Gross.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26011964C55E00E39DFC /* Gross.jpg */; };
 		D0CE26061964C55E00E39DFC /* histology.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26021964C55E00E39DFC /* histology.jpg */; };
 		D0CE26071964C55E00E39DFC /* Neuro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0CE26031964C55E00E39DFC /* Neuro.jpg */; };
-		D0D8CC1F195B7125009ECF3E /* E0.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBE6195B7125009ECF3E /* E0.png */; };
-		D0D8CC20195B7125009ECF3E /* E1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBE7195B7125009ECF3E /* E1.png */; };
-		D0D8CC21195B7125009ECF3E /* E2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBE8195B7125009ECF3E /* E2.png */; };
-		D0D8CC22195B7125009ECF3E /* E3.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBE9195B7125009ECF3E /* E3.png */; };
-		D0D8CC23195B7125009ECF3E /* E4.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBEA195B7125009ECF3E /* E4.png */; };
-		D0D8CC24195B7125009ECF3E /* E5.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBEB195B7125009ECF3E /* E5.png */; };
-		D0D8CC25195B7125009ECF3E /* E6.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBEC195B7125009ECF3E /* E6.png */; };
-		D0D8CC26195B7125009ECF3E /* E7.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D8CBED195B7125009ECF3E /* E7.png */; };
 		D0FFFB951977379900BA4D7B /* 2-D Image Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0FFFB911977379900BA4D7B /* 2-D Image Media Button.PNG */; };
 		D0FFFB961977379900BA4D7B /* 3-D Model Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0FFFB921977379900BA4D7B /* 3-D Model Media Button.PNG */; };
 		D0FFFB971977379900BA4D7B /* Animation Media Button.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D0FFFB931977379900BA4D7B /* Animation Media Button.PNG */; };
@@ -184,7 +172,6 @@
 		462CB04E193CFDB200B6CF72 /* Letter G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Letter G.png"; path = "Images/Letter G.png"; sourceTree = "<group>"; };
 		462CB04F193CFDB200B6CF72 /* Letter H.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Letter H.png"; path = "Images/Letter H.png"; sourceTree = "<group>"; };
 		462CB050193CFDB200B6CF72 /* Letter N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Letter N.png"; path = "Images/Letter N.png"; sourceTree = "<group>"; };
-		462CB051193CFDB200B6CF72 /* Tracts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tracts.png; path = Images/Tracts.png; sourceTree = "<group>"; };
 		462CB058193CFEDA00B6CF72 /* Animations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Animations.png; path = Images/Animations.png; sourceTree = "<group>"; };
 		464AA3FF198992ED00123D7E /* CervicalBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CervicalBlack.png; sourceTree = "<group>"; };
 		464AA40119899C2800123D7E /* FasciculusCuneatus-Thoracic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FasciculusCuneatus-Thoracic.png"; sourceTree = "<group>"; };
@@ -197,7 +184,6 @@
 		46B5359D19772D0000A2FC4F /* Gross_unlabeled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gross_unlabeled.jpg; sourceTree = "<group>"; };
 		46D4E5AF197C35A400618D64 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNFrostedSidebar.h; path = Sidebar/RNFrostedSidebar.h; sourceTree = "<group>"; };
 		46D4E5B0197C35A400618D64 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNFrostedSidebar.m; path = Sidebar/RNFrostedSidebar.m; sourceTree = "<group>"; };
-		46EC9759195B85D300E05CEB /* Grey Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Grey Button.png"; path = "Images/Grey Button.png"; sourceTree = "<group>"; };
 		46EF42941980883D001022E8 /* 2D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2D Image Media Button.PNG"; path = "Images/Index/2D Image Media Button.PNG"; sourceTree = "<group>"; };
 		46EF42951980883D001022E8 /* 3D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3D Model Media Button.PNG"; path = "Images/Index/3D Model Media Button.PNG"; sourceTree = "<group>"; };
 		46EF42961980883D001022E8 /* Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Animation Media Button.PNG"; path = "Images/Index/Animation Media Button.PNG"; sourceTree = "<group>"; };
@@ -276,16 +262,14 @@
 		D016FF9A19798C7700023668 /* osu-web-footer-wordmark-rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "osu-web-footer-wordmark-rev.png"; path = "Images/osu-web-footer-wordmark-rev.png"; sourceTree = "<group>"; };
 		D016FF9B19798C7700023668 /* osu-web-header-horiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "osu-web-header-horiz.png"; path = "Images/osu-web-header-horiz.png"; sourceTree = "<group>"; };
 		D016FF9C19798C7700023668 /* osu-web-header-vert2-rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "osu-web-header-vert2-rev.png"; path = "Images/osu-web-header-vert2-rev.png"; sourceTree = "<group>"; };
-		D02074EB1944FE9F00AADFDA /* Blue Button.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Blue Button.gif"; path = "Images/Blue Button.gif"; sourceTree = "<group>"; };
-		D02074ED1944FF8700AADFDA /* White Burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "White Burger.png"; path = "Images/White Burger.png"; sourceTree = "<group>"; };
-		D0253F3A193FE10A00CFE2AC /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E0.png; path = ../E0.png; sourceTree = "<group>"; };
-		D0253F3B193FE10A00CFE2AC /* E1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E1.png; path = ../E1.png; sourceTree = "<group>"; };
-		D0253F3C193FE10A00CFE2AC /* E2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E2.png; path = ../E2.png; sourceTree = "<group>"; };
-		D0253F3D193FE10A00CFE2AC /* E3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E3.png; path = ../E3.png; sourceTree = "<group>"; };
-		D0253F3E193FE10A00CFE2AC /* E4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E4.png; path = ../E4.png; sourceTree = "<group>"; };
-		D0253F3F193FE10A00CFE2AC /* E5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E5.png; path = ../E5.png; sourceTree = "<group>"; };
-		D0253F40193FE10A00CFE2AC /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E6.png; path = ../E6.png; sourceTree = "<group>"; };
-		D0253F41193FE10A00CFE2AC /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E7.png; path = ../E7.png; sourceTree = "<group>"; };
+		D0253F3A193FE10A00CFE2AC /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E0.png; sourceTree = "<group>"; };
+		D0253F3B193FE10A00CFE2AC /* E1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E1.png; sourceTree = "<group>"; };
+		D0253F3C193FE10A00CFE2AC /* E2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E2.png; sourceTree = "<group>"; };
+		D0253F3D193FE10A00CFE2AC /* E3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E3.png; sourceTree = "<group>"; };
+		D0253F3E193FE10A00CFE2AC /* E4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E4.png; sourceTree = "<group>"; };
+		D0253F3F193FE10A00CFE2AC /* E5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E5.png; sourceTree = "<group>"; };
+		D0253F40193FE10A00CFE2AC /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E6.png; sourceTree = "<group>"; };
+		D0253F41193FE10A00CFE2AC /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E7.png; sourceTree = "<group>"; };
 		D03DE5EC197D69E000E674DC /* NeuroTractsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeuroTractsViewController.h; path = Neuro/NeuroTractsViewController.h; sourceTree = "<group>"; };
 		D03DE5ED197D69E000E674DC /* NeuroTractsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NeuroTractsViewController.m; path = Neuro/NeuroTractsViewController.m; sourceTree = "<group>"; };
 		D03DE5EF197D6BD300E674DC /* AfferentTracts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AfferentTracts.plist; path = XML/AfferentTracts.plist; sourceTree = "<group>"; };
@@ -345,14 +329,6 @@
 		D0CE26011964C55E00E39DFC /* Gross.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Gross.jpg; path = Images/Gross.jpg; sourceTree = "<group>"; };
 		D0CE26021964C55E00E39DFC /* histology.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = histology.jpg; path = Images/histology.jpg; sourceTree = "<group>"; };
 		D0CE26031964C55E00E39DFC /* Neuro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Neuro.jpg; path = Images/Neuro.jpg; sourceTree = "<group>"; };
-		D0D8CBE6195B7125009ECF3E /* E0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E0.png; path = Images/E0.png; sourceTree = "<group>"; };
-		D0D8CBE7195B7125009ECF3E /* E1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E1.png; path = Images/E1.png; sourceTree = "<group>"; };
-		D0D8CBE8195B7125009ECF3E /* E2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E2.png; path = Images/E2.png; sourceTree = "<group>"; };
-		D0D8CBE9195B7125009ECF3E /* E3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E3.png; path = Images/E3.png; sourceTree = "<group>"; };
-		D0D8CBEA195B7125009ECF3E /* E4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E4.png; path = Images/E4.png; sourceTree = "<group>"; };
-		D0D8CBEB195B7125009ECF3E /* E5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E5.png; path = Images/E5.png; sourceTree = "<group>"; };
-		D0D8CBEC195B7125009ECF3E /* E6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E6.png; path = Images/E6.png; sourceTree = "<group>"; };
-		D0D8CBED195B7125009ECF3E /* E7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E7.png; path = Images/E7.png; sourceTree = "<group>"; };
 		D0FFFB911977379900BA4D7B /* 2-D Image Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2-D Image Media Button.PNG"; path = "Images/2-D Image Media Button.PNG"; sourceTree = "<group>"; };
 		D0FFFB921977379900BA4D7B /* 3-D Model Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3-D Model Media Button.PNG"; path = "Images/3-D Model Media Button.PNG"; sourceTree = "<group>"; };
 		D0FFFB931977379900BA4D7B /* Animation Media Button.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Animation Media Button.PNG"; path = "Images/Animation Media Button.PNG"; sourceTree = "<group>"; };
@@ -387,14 +363,6 @@
 		462CB057193CFDD100B6CF72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D0D8CBE6195B7125009ECF3E /* E0.png */,
-				D0D8CBE7195B7125009ECF3E /* E1.png */,
-				D0D8CBE8195B7125009ECF3E /* E2.png */,
-				D0D8CBE9195B7125009ECF3E /* E3.png */,
-				D0D8CBEA195B7125009ECF3E /* E4.png */,
-				D0D8CBEB195B7125009ECF3E /* E5.png */,
-				D0D8CBEC195B7125009ECF3E /* E6.png */,
-				D0D8CBED195B7125009ECF3E /* E7.png */,
 				D082566B1958C92800620469 /* Icons */,
 				5962241719508A3A00701B76 /* Embryo */,
 				5962242019508A3A00701B76 /* Gross */,
@@ -749,9 +717,7 @@
 				D0CE26011964C55E00E39DFC /* Gross.jpg */,
 				D0CE26021964C55E00E39DFC /* histology.jpg */,
 				D0CE26031964C55E00E39DFC /* Neuro.jpg */,
-				46EC9759195B85D300E05CEB /* Grey Button.png */,
 				466C49AF193BB914000B2A78 /* Index.png */,
-				462CB051193CFDB200B6CF72 /* Tracts.png */,
 				462CB050193CFDB200B6CF72 /* Letter N.png */,
 				462CB04F193CFDB200B6CF72 /* Letter H.png */,
 				462CB04E193CFDB200B6CF72 /* Letter G.png */,
@@ -761,8 +727,6 @@
 				466C49AE193BB914000B2A78 /* home.png */,
 				466C49B0193BB914000B2A78 /* videos.png */,
 				466C49B7193BBA0F000B2A78 /* Black Burger.png */,
-				D02074EB1944FE9F00AADFDA /* Blue Button.gif */,
-				D02074ED1944FF8700AADFDA /* White Burger.png */,
 				D08A364B1958762F005E5C77 /* closedIcon.png */,
 				D08A364D19587780005E5C77 /* openedIcon.png */,
 			);
@@ -860,7 +824,6 @@
 				D0C65E64198089810061D626 /* 3D Model Media Button.PNG in Resources */,
 				D0253F42193FE10A00CFE2AC /* E0.png in Resources */,
 				5962243D19508A3A00701B76 /* neuro-thoracic-scan.jpg in Resources */,
-				D0D8CC24195B7125009ECF3E /* E5.png in Resources */,
 				5962243019508A3A00701B76 /* Neural Tube Labelled.png in Resources */,
 				D03DE5F2197D6C1F00E674DC /* EfferentTracts.plist in Resources */,
 				D0CE26071964C55E00E39DFC /* Neuro.jpg in Resources */,
@@ -868,12 +831,9 @@
 				466C49B8193BBA0F000B2A78 /* Black Burger.png in Resources */,
 				5962243819508A3A00701B76 /* neuro-cerv.jpg in Resources */,
 				461B45EA1950CE980000189B /* Sacral_Drawing.png in Resources */,
-				D02074EE1944FF8700AADFDA /* White Burger.png in Resources */,
 				461B45E71950CE980000189B /* Cervical_Scan.png in Resources */,
-				D0D8CC21195B7125009ECF3E /* E2.png in Resources */,
 				D0253F47193FE10A00CFE2AC /* E5.png in Resources */,
 				5962243219508A3A00701B76 /* Neuroepithelium.png in Resources */,
-				D0D8CC25195B7125009ECF3E /* E6.png in Resources */,
 				461B45E61950CE980000189B /* Cervical_Drawing.png in Resources */,
 				5962242D19508A3A00701B76 /* CNS Development.png in Resources */,
 				D0C65E6C198089810061D626 /* Popup Video Media Button.PNG in Resources */,
@@ -883,7 +843,6 @@
 				5962243519508A3A00701B76 /* 0.jpg in Resources */,
 				5962243119508A3A00701B76 /* Neural Tube Patterning.png in Resources */,
 				D0C65E68198089810061D626 /* Blue Popup Video Media Button.PNG in Resources */,
-				D0D8CC23195B7125009ECF3E /* E4.png in Resources */,
 				462CB059193CFEDA00B6CF72 /* Animations.png in Resources */,
 				46EF42A61980883D001022E8 /* Blue Popup Video Media Button.PNG in Resources */,
 				D0253F46193FE10A00CFE2AC /* E4.png in Resources */,
@@ -891,12 +850,9 @@
 				597F179A195C82D600A722CD /* PopoverTableViewController.xib in Resources */,
 				46B5359E19772D0000A2FC4F /* Gross_labeled.jpg in Resources */,
 				598E99B71986F0F0007418C0 /* Spinal Cord Further Development.png in Resources */,
-				D0D8CC22195B7125009ECF3E /* E3.png in Resources */,
 				462CB054193CFDB200B6CF72 /* Letter H.png in Resources */,
 				598E99B01986F0F0007418C0 /* CNS Development.png in Resources */,
-				D0D8CC1F195B7125009ECF3E /* E0.png in Resources */,
 				5962243A19508A3A00701B76 /* neuro-lumb.jpg in Resources */,
-				D0D8CC26195B7125009ECF3E /* E7.png in Resources */,
 				5962243619508A3A00701B76 /* 1.jpg in Resources */,
 				466C49C3193BC606000B2A78 /* 3D Models.png in Resources */,
 				5962241519508A1500701B76 /* Neuraltube_001.mp4 in Resources */,
@@ -942,7 +898,6 @@
 				461B45E91950CE980000189B /* Lumbar_Scan.png in Resources */,
 				D016FF9F19798C7700023668 /* osu-web-header-vert2-rev.png in Resources */,
 				466C49B5193BB914000B2A78 /* Index.png in Resources */,
-				462CB056193CFDB200B6CF72 /* Tracts.png in Resources */,
 				5962243B19508A3A00701B76 /* neuro-sacral-scan.jpg in Resources */,
 				46EF42A11980883D001022E8 /* 3D Model Media Button.PNG in Resources */,
 				461B45EB1950CE980000189B /* Sacral_Scan.png in Resources */,
@@ -952,10 +907,8 @@
 				D085395F196B3B7D000962D8 /* IndexAll.png in Resources */,
 				46EF42A71980883D001022E8 /* Popup 2D Image Media Button.PNG in Resources */,
 				D016FF9E19798C7700023668 /* osu-web-header-horiz.png in Resources */,
-				D02074EC1944FE9F00AADFDA /* Blue Button.gif in Resources */,
 				5962243C19508A3A00701B76 /* neuro-sacral.jpg in Resources */,
 				5962243719508A3A00701B76 /* neuro-cerv-scan.jpg in Resources */,
-				D0D8CC20195B7125009ECF3E /* E1.png in Resources */,
 				D0253F48193FE10A00CFE2AC /* E6.png in Resources */,
 				59A69FC019870AE8001C6D2E /* SacralBlack.png in Resources */,
 				46EF42A01980883D001022E8 /* 2D Image Media Button.PNG in Resources */,
@@ -969,7 +922,6 @@
 				5962243919508A3A00701B76 /* neuro-lumb-scan.jpg in Resources */,
 				46B5359F19772D0000A2FC4F /* Gross_unlabeled.jpg in Resources */,
 				D0774D8A193CD5D400821D51 /* ExpandingCell.xib in Resources */,
-				46EC975A195B85D300E05CEB /* Grey Button.png in Resources */,
 				461B45E81950CE980000189B /* Lumbar_Drawing.png in Resources */,
 				D0FFFB951977379900BA4D7B /* 2-D Image Media Button.PNG in Resources */,
 				461B45ED1950CE980000189B /* Thoracic_Scan.png in Resources */,
