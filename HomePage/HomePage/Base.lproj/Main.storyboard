@@ -357,23 +357,6 @@
                                     <action selector="onNeuralTube001:" destination="7sD-q7-0nW" eventType="touchUpInside" id="8he-kC-HbF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="6w1-WI-hd3">
-                                <rect key="frame" x="240" y="303" width="289" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Grey Button.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Sample Video">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="24" name="Georgia-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="onSampleVideo:" destination="7sD-q7-0nW" eventType="touchUpInside" id="g6N-ca-o0a"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1535,20 +1518,20 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="osL-gx-dWF"/>
-        <segue reference="zrs-fU-6x2"/>
-        <segue reference="OvQ-SF-81s"/>
-        <segue reference="RJi-oO-lJw"/>
-        <segue reference="fDb-k1-LcV"/>
-        <segue reference="kZK-6S-lN0"/>
-        <segue reference="CV4-W5-lYs"/>
-        <segue reference="g1d-cf-3uC"/>
-        <segue reference="1xR-Sz-n9v"/>
-        <segue reference="A8p-So-4gq"/>
         <segue reference="E61-7V-nK5"/>
+        <segue reference="qkd-fC-WYx"/>
+        <segue reference="fDb-k1-LcV"/>
+        <segue reference="sOv-Ov-78j"/>
+        <segue reference="psJ-mD-Iz2"/>
+        <segue reference="osL-gx-dWF"/>
+        <segue reference="kZK-6S-lN0"/>
+        <segue reference="1xR-Sz-n9v"/>
+        <segue reference="CV4-W5-lYs"/>
+        <segue reference="A8p-So-4gq"/>
         <segue reference="Rde-ZO-HXw"/>
         <segue reference="32O-Pf-eqc"/>
-        <segue reference="ang-sS-8TK"/>
         <segue reference="TJa-hY-aVm"/>
+        <segue reference="RJi-oO-lJw"/>
+        <segue reference="OvQ-SF-81s"/>
     </inferredMetricsTieBreakers>
 </document>
