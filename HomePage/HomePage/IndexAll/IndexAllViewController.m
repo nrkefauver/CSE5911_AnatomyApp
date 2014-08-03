@@ -48,6 +48,7 @@ static NSString *partName; //Name of term to display with Popover window in Gros
 static NSString *videoName; //Name of video to play in Embryo Animations List or Gross Video List
 static bool mediaButtonSegue = false; //Tracks if a segue is triggered by a media button or not
 static bool viewAlreadyCreated = false; //Tracks if Index All has already been created
+static bool secondInstance = false; //Tracks multiple instances of Index All
 
 //COLLAPSIBLE TABLE CODE
 NSMutableArray *dataSection01;
@@ -75,14 +76,25 @@ CGFloat origin;
     
     //Any segues other than those triggered by media buttons don't pass info
     mediaButtonSegue = false;
+    
+    //Need to load view
+    if (viewAlreadyCreated == true)
+    {
+        viewAlreadyCreated = false;
+        secondInstance = true;
+    }
 }
 
 #pragma mark - Table Contents
+// If back button is pressed, the view will need to be created again
 -(void) viewWillDisappear:(BOOL)animated {
     if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
         // back button was pressed.  We know this is true because self is no longer
         // in the navigation stack.
-        viewAlreadyCreated = false;
+        if (!secondInstance)
+        {
+            viewAlreadyCreated = false;
+        }
     }
     [super viewWillDisappear:animated];
 }
