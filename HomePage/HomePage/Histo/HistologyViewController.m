@@ -7,17 +7,33 @@
 //
 
 #import "HistologyViewController.h"
+#import "HistoSlide1ViewController.h"
 
 
 @interface HistologyViewController ()
+
 @property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 @end
 
 static NSString *ItemIdentifier = @"ItemIdentifier";
+static int slideNumber=2;
 
 @implementation HistologyViewController
 @synthesize BlueSpinal;
 @synthesize RedSpinal;
+- (IBAction)hsb1Clicked:(id)sender {
+    slideNumber=1;
+    [self performSegueWithIdentifier:@"hssegue" sender:self];
+    
+}
+- (IBAction)hsb2Clicked:(id)sender {
+    slideNumber=2;
+    [self performSegueWithIdentifier:@"hssegue" sender:self];
+    
+}
+
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +55,8 @@ static NSString *ItemIdentifier = @"ItemIdentifier";
     [BlueSpinal setImage:BSpinal];
     [RedSpinal setImage:RSpinal];
     // Do any additional setup after loading the view.
+    
+    
 }
 
 - (void)viewDidUnload
@@ -52,7 +70,18 @@ static NSString *ItemIdentifier = @"ItemIdentifier";
     // Dispose of any resources that can be recreated.
 }
 
-//#pragma mark - UICollectionView DataSource & Delegate methods
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    HistoSlide1ViewController* histoSlideVC;
+
+    // Neuro Animation
+    if([segue.identifier isEqualToString:@"hssegue"])
+    {
+        histoSlideVC = segue.destinationViewController;
+        histoSlideVC.histoSlideNumber = slideNumber;
+    }
+    
+}
 
 #pragma mark - Sidebar
 // Create navigation sidebar
@@ -106,4 +135,6 @@ static NSString *ItemIdentifier = @"ItemIdentifier";
     [self.navigationController setNavigationBarHidden:YES animated:animatedYesOrNo];
 }
 
+- (IBAction)histoslide1buttonclick:(id)sender {
+}
 @end
